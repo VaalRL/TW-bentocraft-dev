@@ -164,6 +164,8 @@ export function parseShareUrl(
 
 ## 三、GitHub Pages 自動構建與發布流水線 (CI/CD Deploy Workflow)
 
+> **實作狀態（2026-10）**：前端在 [`web/`](web/)（React 19 ＋ Vite ＋ TypeScript），約束引擎在 [`web/src/engine/`](web/src/engine/)。實際的部署流程為 [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)：先以 `scripts/build_web_data.py` 把規格庫與報價轉成前端精簡資料，再於 `web/` 執行測試與建置。PR 只建置與測試、不部署。下方為原始規劃，路徑以實作為準。首次部署前需在 repo 的 Settings → Pages 把 Source 設為「GitHub Actions」。
+
 在開源倉庫的根目錄配置 `.github/workflows/deploy.yml`，任何對 `main` 分支的代碼變更或規格庫 PR 合併，先驗證規格庫，再執行 Vite 構建並部署至 GitHub Pages。
 
 每日報價更新**不經過這個 workflow**：以 `GITHUB_TOKEN` 推送的提交不會觸發其他 workflow，所以每日報價在 `daily-prices.yml` 內自行建置與部署（見 [`01`](01-system-architecture-and-data-pipeline.md) 第三節）。兩者共用 `concurrency: pages`，且不取消進行中的部署，避免程式更新把當天的報價部署中斷：

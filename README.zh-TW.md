@@ -101,11 +101,11 @@ sequenceDiagram
 
 ## 🚀 快速上手與本機開發
 
-前端尚未實作。目前可執行的是每日報價管線（[`pipeline/`](pipeline/)、[`scripts/`](scripts/)）、PoC（見 [`poc/README.md`](poc/README.md)）與規格庫驗證。
+前端在 [`web/`](web/)（React ＋ Vite ＋ TypeScript），資料管線在 [`pipeline/`](pipeline/)、[`scripts/`](scripts/)。
 
 ### 環境需求
-- Python 3.11+
-- `jsonschema`（規格庫驗證用）
+- Python 3.11+、`jsonschema`（規格庫驗證用）
+- Node.js 22.12+（前端）
 
 ### 1. 複製倉庫
 ```bash
@@ -120,7 +120,14 @@ python -m unittest discover -s tests -t .
 (cd schema && python -m unittest test_schema)
 ```
 
-### 3. 抓取原價屋並更新報價快照（需能連到 coolpc.com.tw）
+### 3. 啟動前端
+```bash
+python scripts/build_web_data.py     # 產生 web/public/data/（規格庫與報價的前端精簡版）
+cd web && npm install && npm run dev  # http://localhost:5173
+npm test                              # 約束引擎測試
+```
+
+### 4. 抓取原價屋並更新報價快照（需能連到 coolpc.com.tw）
 ```bash
 python scripts/update_prices.py --out data/prices/coolpc.json --save-html page.html
 python scripts/bootstrap_catalog.py --html page.html   # 新增規格庫中沒有的型號（以 PR 送審）
