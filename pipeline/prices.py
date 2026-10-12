@@ -26,7 +26,8 @@ def offer_key(item: dict) -> str:
     head = text[: text.rfind(", $")] if ", $" in text else text
     for rx in _VOLATILE_RES:
         head = rx.sub("", head)
-    return f"{item.get('select', '')}|{re.sub(r'\s+', ' ', head).strip()}"
+    head = re.sub(r"\s+", " ", head).strip()
+    return f"{item.get('select', '')}|{head}"
 
 
 def offer_id(item: dict) -> str:
