@@ -51,7 +51,13 @@ BRANDS = {
     "鈦鉭": ("鈦鉭 TCOMAS", "tcomas"), "快睿": ("快睿 CRYORIG", "cryorig"), "旋剛": ("旋剛 Sharkoon", "sharkoon"),
     "艾湃": ("Apexgaming", "apexgaming"), "宏碁": ("宏碁 Acer", "acer"), "影馳": ("影馳 GALAX", "galax"),
     "瑞昱": ("Realtek", "realtek"), "佰微": ("佰微 BIWIN", "biwin"), "鎧俠": ("鎧俠 KIOXIA", "kioxia"),
-    "致態": ("致態 ZhiTai", "zhitai"), "希捷": ("希捷 Seagate", "seagate"), "東芝": ("東芝 Toshiba", "toshiba"),
+    "致態": ("致態 ZhiTai", "zhitai"), "視博通": ("視博通", "shibotong"), "希捷": ("希捷 Seagate", "seagate"), "東芝": ("東芝 Toshiba", "toshiba"),
+}
+# 多字英文品牌：以品名開頭比對，避免「Fractal Design」被拆成品牌 Fractal、型號 Design …
+LATIN_BRANDS = {
+    "fractal design": "fractal-design", "cooler master": "coolermaster", "lian li": "lian-li",
+    "1st player": "1stplayer", "micron crucial": "crucial", "super flower": "superflower",
+    "be quiet!": "bequiet", "g.skill": "gskill", "western digital": "wd",
 }
 COLORS = [
     ("燕麥", "other"), ("胡桃木", "wood"), ("木紋", "wood"), ("黑", "black"), ("白", "white"), ("銀", "silver"),
@@ -69,9 +75,13 @@ def short_hash(text: str, n: int = 8) -> str:
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:n]
 
 
+_PROMO_PREFIX_RE = re.compile(r"^\s*(?:限搭機|任搭價|限搭|任搭)\s*(?=｛)")
+
+
 def main_text(item: dict) -> str:
-    parts = split_combo(item["text"])
-    return parts[0]["text"] if parts else item["text"]
+    text = _PROMO_PREFIX_RE.sub("", item["text"])
+    parts = split_combo(text)
+    return parts[0]["text"] if parts else text
 
 
 _PART_NO_RE = re.compile(r"｛([A-Za-z0-9][A-Za-z0-9./-]{5,})｝")
@@ -108,14 +118,17 @@ def split_name(text: str) -> tuple[str, str, str]:
         # 大括號在規格之後的（記憶體料號）不在 head 內，不影響
         name = f"{m.group(1).strip()} {m.group(2)}" if m else head.split("｛")[0]
     name = re.sub(r"^\[[^\]]*\]\s*", "", name).strip()
+    for latin, code in LATIN_BRANDS.items():
+        if name.lower().startswith(latin):
+            return name[: len(latin)], code, _strip_colors(name[len(latin):].strip()) or text[:40]
     first = name.split()[0] if name.split() else name
     brand, bslug = None, None
     for zh, (disp, code) in BRANDS.items():
         if first.startswith(zh):
             brand, bslug = disp, code
             name = name[len(zh):].strip()
-            latin = disp.split()[-1]
-            if name.upper().startswith(latin.upper()):  # 「宏碁 ACER｛RE100｝」不重複品牌
+            latin = disp[len(zh):].strip() if disp.startswith(zh) else disp
+            if latin and re.match(re.escape(latin) + r"(\s|$)", name, re.I):  # 「宏碁 ACER｛RE100｝」不重複品牌
                 name = name[len(latin):].strip()
             break
     if brand is None:
@@ -125,9 +138,13 @@ def split_name(text: str) -> tuple[str, str, str]:
             name = name[len(first):].strip()
         else:
             brand, bslug = "unknown", "unknown"
+    return brand, bslug, _strip_colors(name) or text[:40]
+
+
+def _strip_colors(name: str) -> str:
     for zh, _ in COLORS:  # 型號名稱不含顏色
         name = re.sub(zh + r"(?:色|化版|版)?(?=\s|$)", "", name).strip()
-    return brand, bslug, re.sub(r"\s+", " ", name).strip() or text[:40]
+    return re.sub(r"\s+", " ", name).strip()
 
 
 def detect_variant(text: str) -> tuple[str, dict] | None:

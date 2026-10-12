@@ -50,6 +50,7 @@ class ExtractTest(unittest.TestCase):
         self.assertTrue(extract("cpu", "｛AMD R5 8400F盒｝65W【任搭主機板】, $4450 ◆ ★ ↓酷幣200↓")["bundle_only"])
         self.assertTrue(extract("motherboard", "｛華碩 B860M-E-CSM｝M-ATX/6+1+1+1相 *任搭優惠價, $3390 ◆ ★")["bundle_only"])
         self.assertFalse(extract("motherboard", "｛X｝ATX, $10990 ◆ ★ ↓任搭290↓")["bundle_only"])
+        self.assertTrue(extract("ssd", "任搭價｛Acer RE100 512GB｝/2.5吋, $2390 ◆ ★")["bundle_only"])
         self.assertEqual(extract("gpu", "｛ZOTAC RTX3060 Twin Edge｝1777MHz/23cm/雙風扇/註四年 *送 全漢 650W(金牌), $15890 ◆ ★ 熱賣 ↓任搭190↓")["gift"],
                          "全漢 650W(金牌)")
         self.assertEqual(extract("psu", "｛華碩 ROG STRIX 1000W(白色)｝全模/ATX3.1(PCIe 5.1) 送 ESD-T1W外接盒▼下殺到 10/31 20:00, $6590 ◆ ★")["gift"],
