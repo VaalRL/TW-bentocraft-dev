@@ -183,7 +183,8 @@ def analyse(html: str, audit_per_category: int = 0) -> dict:
             if not cat:
                 continue
             if fields["in_scope"]:
-                per_cat[cat].append({"text": opt["text"], "group": opt["group"], **fields})
+                per_cat[cat].append({"text": opt["text"], "group": opt["group"], "select": sel["name"],
+                                     "select_label": sel["label"], "vendor_ref": opt["value"], **fields})
             else:
                 out_of_scope[cat] += 1
         report["selects"].append(
@@ -239,6 +240,7 @@ def analyse(html: str, audit_per_category: int = 0) -> dict:
             "samples": items[:SAMPLES_PER_CATEGORY],
             "missing_samples": [i["text"] for i in items if not ok(i)][:MISSING_SAMPLES],
         }
+    report["items"] = per_cat
     return report
 
 
@@ -279,6 +281,7 @@ def main() -> int:
     ap.add_argument("--out", default="poc/out")
     ap.add_argument("--save-html", action="store_true", help="保存原始 HTML 至輸出目錄")
     ap.add_argument("--audit", type=int, default=0, help="每類別固定種子抽樣 N 筆，供人工核對")
+    ap.add_argument("--dump-items", action="store_true", help="輸出全部範圍內品項至 items.jsonl（供 to_catalog.py）")
     args = ap.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -306,6 +309,16 @@ def main() -> int:
     if args.save_html:
         (out / "evaluate.html").write_bytes(body)
     report = analyse(html, args.audit)
+    meta["fetched_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    if args.dump_items:
+        with open(out / "items.jsonl", "w", encoding="utf-8") as f:
+            f.write(json.dumps({"meta": {"fetched_at": meta["fetched_at"], "source_url": EVALUATE_URL}},
+                               ensure_ascii=False) + "\n")
+            for cat, items in sorted(report.pop("items").items()):
+                for i in items:
+                    f.write(json.dumps({"category": cat, **i}, ensure_ascii=False) + "\n")
+    else:
+        report.pop("items")
     md = to_markdown(meta, report)
     (out / "report.md").write_text(md, encoding="utf-8")
     (out / "report.json").write_text(json.dumps({"meta": meta, "report": report}, ensure_ascii=False, indent=2), encoding="utf-8")

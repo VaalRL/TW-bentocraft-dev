@@ -1,0 +1,61 @@
+{
+  "$schema": "../prices.schema.json",
+  "schema_version": "1.0",
+  "vendor": "coolpc",
+  "source_url": "https://www.coolpc.com.tw/evaluate.php",
+  "fetched_at": "2026-10-12T06:06:47Z",
+  "status": "ok",
+  "offers": [
+    {
+      "offer_id": "coolpc:3f2a9c1e",
+      "category": "cpu",
+      "vendor_section": { "id": "n4", "group": "AMD AM5 8000系列" },
+      "raw_title": "｛AMD R5 8400F盒｝【6核/12緒】4.2G(↑4.7G)65W【任搭主機板】, $4450 ◆ ★ ↓酷幣200↓",
+      "price": 4450,
+      "price_condition": { "type": "requires_category", "requires": ["motherboard"], "note": "【任搭主機板】" },
+      "items": [{ "role": "main", "model_id": "cpu:amd:ryzen-5-8400f", "match": "model_key" }]
+    },
+    {
+      "offer_id": "coolpc:7b01d4aa",
+      "category": "cpu",
+      "vendor_section": { "id": "n4", "group": "AMD AM5 8000系列" },
+      "price": 4950,
+      "items": [{ "role": "main", "model_id": "cpu:amd:ryzen-5-8400f", "match": "model_key" }]
+    },
+    {
+      "offer_id": "coolpc:c55e0b12",
+      "category": "gpu",
+      "vendor_section": { "id": "n12", "group": "NVIDIA RTX5080-16GB(GDDR7)" },
+      "price": 53990,
+      "combo_discount": 190,
+      "items": [{ "role": "main", "model_id": "gpu:msi:rtx5080-16g-ventus-3x-oc", "match": "model_key" }]
+    },
+    {
+      "offer_id": "coolpc:0d9e77f3",
+      "category": "gpu",
+      "price": 15890,
+      "combo_discount": 190,
+      "gift": { "text": "全漢 650W(金牌)" },
+      "items": [{ "role": "main", "match": "unmatched", "text": "ZOTAC RTX3060 Twin Edge" }]
+    },
+    {
+      "offer_id": "coolpc:9a4c6d20",
+      "category": "case",
+      "vendor_section": { "id": "n14", "group": "特價 or 活動專區" },
+      "price": 3790,
+      "savings": 1190,
+      "items": [
+        { "role": "main", "model_id": "case:montech:hs02-pro", "variant": "white", "match": "model_key" },
+        { "role": "aio", "match": "unmatched", "text": "Montech PureFlow 360 ARGB(白)水冷" }
+      ]
+    },
+    {
+      "offer_id": "coolpc:51be2f08",
+      "category": "psu",
+      "price": 6590,
+      "gift": { "text": "ESD-T1W外接盒" },
+      "valid_until": "2026-10-31T20:00:00+08:00",
+      "items": [{ "role": "main", "match": "unmatched", "text": "華碩 ROG STRIX 1000W(白色) 白金" }]
+    }
+  ]
+}

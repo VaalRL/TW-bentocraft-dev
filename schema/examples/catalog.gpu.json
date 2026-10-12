@@ -1,0 +1,45 @@
+{
+  "$schema": "../catalog.schema.json",
+  "schema_version": "1.0",
+  "category": "gpu",
+  "models": {
+    "gpu:msi:rtx5080-16g-ventus-3x-oc": {
+      "category": "gpu",
+      "brand": "微星 MSI",
+      "name": "RTX5080 16G VENTUS 3X OC",
+      "status": "active",
+      "aliases": { "model_keys": ["微星RTX508016GVENTUS3XOC"] },
+      "specs": {
+        "length_mm": {
+          "value": 303,
+          "source": "retailer_spec",
+          "ref": "https://www.inet.se/produkt/5415131/msi-geforce-rtx-5080-16gb-ventus-3x-oc",
+          "note": "品名寫 31cm"
+        },
+        "thickness_slots": { "value": 2, "source": "retailer_spec", "ref": "https://www.inet.se/produkt/5415131/msi-geforce-rtx-5080-16gb-ventus-3x-oc" }
+      },
+      "review": { "status": "verified", "by": "poc-audit", "at": "2026-10-12" }
+    },
+    "gpu:gigabyte:rtx5060ti-eagle-oc-8g": {
+      "category": "gpu",
+      "brand": "技嘉 GIGABYTE",
+      "name": "RTX5060Ti EAGLE OC 8G",
+      "status": "active",
+      "aliases": { "model_keys": ["技嘉RTX5060TIEAGLEOC8G"] },
+      "specs": {
+        "length_mm": { "value": 220, "tolerance": 10, "source": "title", "note": "品名只到公分；零售商規格為 215 mm" }
+      },
+      "review": { "status": "auto" }
+    },
+    "gpu:gigabyte:aorus-rtx5060ti-ai-box": {
+      "category": "gpu",
+      "brand": "技嘉 GIGABYTE",
+      "name": "AORUS RTX5060Ti AI BOX",
+      "status": "active",
+      "specs": {
+        "external": { "value": true, "source": "title", "note": "外接式顯示卡/Thunderbolt 5" }
+      },
+      "review": { "status": "auto" }
+    }
+  }
+}

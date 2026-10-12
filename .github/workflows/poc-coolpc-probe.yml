@@ -6,6 +6,8 @@ on:
   push:
     paths:
       - 'poc/**.py'
+      - 'schema/**.py'
+      - 'schema/**.json'
       - '.github/workflows/poc-coolpc-probe.yml'
   workflow_dispatch:
 
@@ -27,9 +29,16 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install schema validator
+        run: pip install 'jsonschema==4.26.0'
+
       - name: Unit tests (extraction rules)
         working-directory: poc
         run: python -m unittest -v test_spec_extract
+
+      - name: Unit tests (catalog / prices schema)
+        working-directory: schema
+        run: python -m unittest -v test_schema
 
       - name: Runner egress info
         run: |
@@ -39,10 +48,16 @@ jobs:
       - name: Probe CoolPC
         run: |
           set +e
-          python poc/coolpc_probe.py --out poc/out --save-html --audit 30
+          python poc/coolpc_probe.py --out poc/out --save-html --audit 30 --dump-items
           code=$?
           cat poc/out/report.md >> "$GITHUB_STEP_SUMMARY"
           exit $code
+
+      - name: Build draft catalog and validate against schema
+        run: |
+          set -o pipefail
+          python poc/to_catalog.py poc/out/items.jsonl --out poc/out/draft | tee poc/out/draft-report.md
+          cat poc/out/draft-report.md >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload raw HTML and report
         if: always()
