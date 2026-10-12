@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import random
 import re
 import sys
 import time
@@ -28,6 +29,7 @@ ROBOTS_URL = "https://www.coolpc.com.tw/robots.txt"
 USER_AGENT = "TW-bentocraft-PoC/0.1 (+https://github.com/VaalRL/TW-bentocraft)"
 SAMPLES_PER_CATEGORY = 3
 MISSING_SAMPLES = 25
+AUDIT_SEED = 20261012
 
 
 def fetch(url: str, timeout: int = 30) -> dict:
@@ -141,7 +143,27 @@ class SelectParser(HTMLParser):
         self._opt = None
 
 
-def analyse(html: str) -> dict:
+def inherit_case_specs(items: list[dict]) -> int:
+    """組合列（機殼+電源等）或缺值的機殼，從同型號單品列繼承間隙規格。回傳補上的列數。"""
+    fields = ("gpu_clearance_mm", "cooler_clearance_mm")
+    donors: dict[str, dict] = {}
+    for i in items:
+        if not i.get("combo_parts") and all(i.get(f) for f in fields):
+            donors.setdefault(i["model_key"], i)
+    filled = 0
+    for i in items:
+        if all(i.get(f) for f in fields):
+            continue
+        donor = donors.get(i["model_key"])
+        if donor:
+            for f in fields:
+                i[f] = i.get(f) or donor[f]
+            i["inherited_from"] = donor["text"][:60]
+            filled += 1
+    return filled
+
+
+def analyse(html: str, audit_per_category: int = 0) -> dict:
     parser = SelectParser()
     parser.feed(html)
     parser.close()
@@ -170,6 +192,19 @@ def analyse(html: str) -> dict:
              "groups": sorted({o["group"] for o in sel["options"] if o["group"]})}
         )
 
+    raw_ok: dict[str, float] = {}
+    for cat, items in per_cat.items():
+        required = REQUIRED_FIELDS.get(cat, ())
+        if required:
+            raw_ok[cat] = round(sum(1 for i in items if all(i.get(f) for f in required)) / len(items), 3)
+    inherited = inherit_case_specs(per_cat["case"]) if per_cat.get("case") else 0
+
+    rng = random.Random(AUDIT_SEED)
+    report["audit"] = {
+        cat: rng.sample(items, min(audit_per_category, len(items)))
+        for cat, items in sorted(per_cat.items()) if audit_per_category
+    }
+
     for cat, items in per_cat.items():
         required = REQUIRED_FIELDS.get(cat, ())
 
@@ -186,6 +221,11 @@ def analyse(html: str) -> dict:
             "combo_discount": sum(1 for i in items if i.get("combo_discount")),
             "field_coverage": {f: round(sum(1 for i in items if i.get(f)) / len(items), 3) for f in required},
             "all_required_fields": round(sum(1 for i in items if ok(i)) / len(items), 3) if required else None,
+            "all_required_fields_raw": raw_ok.get(cat),
+            "combo_rows": sum(1 for i in items if i.get("combo_parts")),
+            "combo_kinds": Counter(k for i in items for k in (i.get("combo_parts") or [])).most_common(),
+            "inherited": inherited if cat == "case" else 0,
+            "with_alt_value": sum(1 for i in items if i.get("gpu_clearance_alt_mm") or i.get("cooler_clearance_alt_mm")),
             "group_coverage": sorted(
                 ((g, len(v), round(sum(1 for i in v if ok(i)) / len(v), 2)) for g, v in by_group.items()),
                 key=lambda x: x[2],
@@ -213,13 +253,18 @@ def to_markdown(meta: dict, report: dict | None) -> str:
     if not report:
         return "\n".join(lines) + "\n"
     lines += ["", f"`<select>` 數量：{report['select_count']}", ""]
-    lines.append("| 類別 | 範圍內品項 | 排除 | 組裝/搭機價 | 任搭折抵 | 必要欄位全數擷取 | 各欄位擷取率 |")
+    lines.append("| 類別 | 範圍內品項 | 排除 | 組裝/搭機價 | 任搭折抵 | 必要欄位全數擷取（直接 → 含繼承） | 各欄位擷取率 |")
     lines.append("| :-- | --: | --: | --: | --: | --: | :-- |")
     for cat, c in sorted(report["categories"].items()):
         cov = ", ".join(f"{k} {v:.0%}" for k, v in c["field_coverage"].items()) or "—"
-        allf = "—" if c["all_required_fields"] is None else f"{c['all_required_fields']:.0%}"
+        allf = "—" if c["all_required_fields"] is None else (
+            f"{c['all_required_fields_raw']:.0%} → {c['all_required_fields']:.0%}")
         lines.append(f"| {cat} | {c['items']} | {c['out_of_scope']} | {c['bundle_only']} | "
                      f"{c['combo_discount']} | {allf} | {cov} |")
+    case = report["categories"].get("case")
+    if case:
+        lines += ["", f"機殼組合列：{case['combo_rows']}（{case['combo_kinds']}）；"
+                  f"由同型號單品繼承規格：{case['inherited']}；含括號條件值：{case['with_alt_value']}"]
     unmapped = [s for s in report["selects"] if not s["category"] and s["priced_options"]]
     if unmapped:
         lines += ["", "未對應類別的下拉選單：", ""]
@@ -232,6 +277,7 @@ def main() -> int:
     ap.add_argument("--html", help="解析本機 HTML 檔，不連網")
     ap.add_argument("--out", default="poc/out")
     ap.add_argument("--save-html", action="store_true", help="保存原始 HTML 至輸出目錄")
+    ap.add_argument("--audit", type=int, default=0, help="每類別固定種子抽樣 N 筆，供人工核對")
     args = ap.parse_args()
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -258,7 +304,7 @@ def main() -> int:
     meta["encoding"] = enc
     if args.save_html:
         (out / "evaluate.html").write_bytes(body)
-    report = analyse(html)
+    report = analyse(html, args.audit)
     md = to_markdown(meta, report)
     (out / "report.md").write_text(md, encoding="utf-8")
     (out / "report.json").write_text(json.dumps({"meta": meta, "report": report}, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -272,12 +318,20 @@ def main() -> int:
         print(f"## {cat} group coverage (group, items, all-required ratio)")
         for g in c["group_coverage"]:
             print("  ", json.dumps(g, ensure_ascii=False))
-        print(f"## {cat} samples")
-        for s in c["samples"]:
-            print(json.dumps(s, ensure_ascii=False))
         print(f"## {cat} missing required fields")
         for t in c["missing_samples"]:
             print("  -", t)
+    audit_keys = ("price", "list_price", "combo_discount", "bundle_only", "socket", "no_igpu", "memory_type",
+                  "form_factor", "capacity_gb", "length_mm", "height_mm", "radiator_mm", "gpu_clearance_mm",
+                  "gpu_clearance_alt_mm", "cooler_clearance_mm", "cooler_clearance_alt_mm", "max_form_factor",
+                  "combo_parts", "inherited_from", "wattage", "psu_form")
+    with open(out / "audit.jsonl", "w", encoding="utf-8") as f:
+        for cat, items in report.get("audit", {}).items():
+            print(f"\n## AUDIT {cat}")
+            for n, i in enumerate(items, 1):
+                vals = {k: i[k] for k in audit_keys if i.get(k) not in (None, False)}
+                print(f"A {cat} {n:02d} | {json.dumps(vals, ensure_ascii=False)} | [{i['group'][:30]}] {i['text']}")
+                f.write(json.dumps({"category": cat, **i}, ensure_ascii=False) + "\n")
     print("\n## selects")
     for s in report["selects"]:
         if s["priced_options"]:

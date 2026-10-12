@@ -1,7 +1,7 @@
 """擷取規則單元測試。字串格式取自 2026-10-12 Actions 實測抓到的原價屋品名。"""
 import unittest
 
-from spec_extract import classify_category, extract, extract_prices, is_in_scope
+from spec_extract import classify_category, extract, extract_prices, is_in_scope, model_key, split_combo
 
 
 class PriceTest(unittest.TestCase):
@@ -18,6 +18,10 @@ class PriceTest(unittest.TestCase):
     def test_combo_discount(self):
         p = extract_prices("｛華碩 PRO WS W680-ACE｝/ATX/1A1H1P/雙2.5G/註四年 穩定.可靠性高, $10990 ◆ ★ ↓任搭290↓")
         self.assertEqual((p["price"], p["combo_discount"]), (10990, 290))
+
+    def test_note_rows_are_not_products(self):
+        self.assertIsNone(extract_prices("↪ 買華碩 GT502+Prime MR120 ARGB(3+1)組合,送GT502 磁吸燈條套件(黑) 市價$1290！ ★"))
+        self.assertIsNone(extract_prices("【提醒】NH-U12/NH-U14/NH-D15/NH-D15S,搭ROG Strix 系列主機板,請查詢相容列表, $1 ◆ ★ 熱賣"))
 
     def test_markdown_arrow(self):
         self.assertEqual(extract_prices("X, $4590↘$4290 ◆")["price"], 4290)
@@ -49,6 +53,41 @@ class ExtractTest(unittest.TestCase):
         f = extract("case", "｛聯力 A4-H2O 黑｝PCIe 5.0/顯卡長32.2/CPU高5.5/鋁合金/ITX【SFX】, $4700 ◆ ★")
         self.assertEqual((f["gpu_clearance_mm"], f["cooler_clearance_mm"]), (322.0, 55.0))
         self.assertEqual(extract("case", "｛Mavoly M16 黑｝顯卡長20/U高7/內附400W電源, $1390")["cooler_clearance_mm"], 70.0)
+
+    def test_case_abbreviations(self):
+        f = extract("case", "｛華碩 ProArt PA401 Wood 黑色 透側版｝卡31.5/U16/玻璃透側/ATX 送 ESD-A1A(灰)外接盒▼下殺到 10/31 20:00, $2990 ◆ ★")
+        self.assertEqual((f["gpu_clearance_mm"], f["cooler_clearance_mm"]), (315.0, 160.0))
+        f = extract("case", "｛華碩 TUF Gaming GT502 Horizon｝無界版 卡長40/U高16.3/分艙設計/全景玻璃透側/ATX, $4690 ◆ ★")
+        self.assertEqual((f["gpu_clearance_mm"], f["cooler_clearance_mm"]), (400.0, 163.0))
+
+    def test_case_u_not_inside_words(self):
+        f = extract("case", "華碩 TUF Gaming GT302 ARGB 黑/E-ATX+TUF GAMING LC III 360 ARGB LCD(黑)水冷, $8180 ◆ ★")
+        self.assertIsNone(f["cooler_clearance_mm"])
+        self.assertIsNone(extract("case", "｛X｝USB*4/ATX, $1990")["cooler_clearance_mm"])
+
+    def test_case_conditional_values(self):
+        f = extract("case", "｛Fractal Design Ridge 黑｝顯卡長33.5(32.5)/厚8.2(5.7)/高13.7(12.5)/CPU高7/ITX【SFX】, $4890 ◆ ★")
+        self.assertEqual((f["gpu_clearance_mm"], f["gpu_clearance_alt_mm"]), (335.0, 325.0))
+        self.assertEqual(f["cooler_clearance_mm"], 70.0)
+        f = extract("case", "｛銀欣 ML09 黑｝顯卡長17.5(LP)/CPU高3.7(7)/ITX(ML09B)【SFX】【客訂】, $2040 ◆ ★")
+        self.assertEqual((f["cooler_clearance_mm"], f["cooler_clearance_alt_mm"]), (37.0, 70.0))
+        self.assertIsNone(f["gpu_clearance_alt_mm"])
+
+    def test_combo_split(self):
+        parts = split_combo("華碩 A31 PLUS 黑 /全景玻璃/支援背插/ATX+華碩 TUF GAMING 750W EVO 銅牌/全模, $3990 ◆ ★ 熱賣")
+        self.assertEqual([p["kind"] for p in parts], ["main", "psu"])
+        parts = split_combo("Montech HS02 PRO(黑) 玻璃透側/ATX+Montech PureFlow 360 ARGB(黑)水冷 現省$1190！, $3790 ◆ ★")
+        self.assertEqual(parts[1]["kind"], "aio")
+        parts = split_combo("華碩 TUF Gaming GT502 Horizon/ATX+Prime MR120 ARGB(黑)反向扇(三入)+正向(單顆), $5689 ◆ ★ 熱賣")
+        self.assertEqual(parts[1]["kind"], "fans")
+        parts = split_combo("[合購優惠] 華碩 PRIME B550M-K WIFI + AMD R5 5600X MPK【6核/12緒】, $7380 ★")
+        self.assertEqual((parts[0]["text"], parts[1]["kind"]), ("華碩 PRIME B550M-K WIFI", "cpu"))
+        self.assertIsNone(split_combo("｛華碩 PRO WS W680M-ACE SE｝M-ATX/雙2.5G+LAN 1G *支援BMC遠端管理, $13990 ◆ ★"))
+        self.assertIsNone(split_combo("｛技嘉 B650M GAMING X AX｝6+2+1相電源, $4690"))
+
+    def test_model_key_ignores_color(self):
+        self.assertEqual(model_key("華碩 A31 PLUS 黑 /全景玻璃/支援背插/ATX"), model_key("｛華碩 A31 PLUS 白｝顯卡長40/U高17/ATX"))
+        self.assertEqual(model_key("｛華碩 ProArt PA401 Wood 黑色 透側版｝卡31.5"), model_key("｛華碩 ProArt PA401 Wood 燕麥色 網狀版｝卡31.5"))
 
     def test_gpu(self):
         f = extract("gpu", "微星 RTX4060 VENTUS 2X BLACK 8G OC(2490MHz/19.9cm/雙風扇/註四年), $8990 ◆")

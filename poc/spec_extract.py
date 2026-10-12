@@ -65,10 +65,12 @@ def _int(v: str) -> int:
 
 def extract_prices(text: str) -> dict | None:
     """回傳 {'price': 現價, 'list_price': 原價或 None, 'combo_discount': 任搭折抵或 None}。"""
-    # 現價取最後一個「, $」之後的最後一個金額（可涵蓋「, $4590↘$4290」降價寫法）
-    tail = text[text.rfind(", $"):] if ", $" in text else text
-    finals = _PRICE_RE.findall(tail)
-    if not finals:
+    # 現價取最後一個「, $」之後的最後一個金額（可涵蓋「, $4590↘$4290」降價寫法）。
+    # 沒有「, $」的列是附註（如「↪ 買…組合,送… 市價$1290！」），不是商品
+    if ", $" not in text:
+        return None
+    finals = _PRICE_RE.findall(text[text.rfind(", $"):])
+    if not finals or _int(finals[-1]) <= 1:  # 「【提醒】…, $1」為公告列
         return None
     lp = _LIST_PRICE_RE.search(text)
     combo = _COMBO_RE.search(text)
@@ -97,20 +99,41 @@ def extract_gpu_length_mm(text: str) -> float | None:
     return mm if 100 <= mm <= 450 else None
 
 
-def extract_case_gpu_clearance_mm(text: str) -> float | None:
-    m = re.search(r"(?:顯卡|VGA)[^\d/]{0,4}" + _NUM + r"\s?(cm|mm)?", text, re.I)
+_ALT = r"(?:\s?[(（]\s?" + _NUM1 + r"\s?(?:cm|mm)?\s?[)）])?"
+
+
+def _clearance(pattern: str, text: str, lo: float, hi: float) -> tuple[float | None, float | None]:
+    """回傳 (主要值, 括號條件值)。如「顯卡長33.5(32.5)」→ (335.0, 325.0)。"""
+    m = re.search(pattern + _NUM1 + r"\s?(cm|mm)?" + _ALT, text, re.I)
     if not m:
-        return None
+        return None, None
     mm = _to_mm(m.group(1), m.group(2))
-    return mm if 150 <= mm <= 600 else None
+    if not lo <= mm <= hi:
+        return None, None
+    alt = _to_mm(m.group(3), m.group(2)) if m.group(3) else None
+    return mm, (alt if alt and lo / 2 <= alt <= hi else None)
+
+
+# 「顯卡長40」「顯卡40」「卡長40」「卡31.5」；「卡」前不可為英文字母（避免誤抓型號）
+_GPU_CLEAR_RE = r"(?:顯卡|VGA|(?<![A-Za-z])卡)長?[^\d/]{0,3}"
+# 「CPU高17.5」「U高18」「U16」「散熱器高16」；U 前不可為字母（避免 TUF、PLUS、USB）
+_COOLER_CLEAR_RE = r"(?:(?:散熱器?|CPU|塔散)高?[^\d/]{0,4}|(?<![A-Za-z])U高?\s?)"
+
+
+def extract_case_gpu_clearance(text: str) -> tuple[float | None, float | None]:
+    return _clearance(_GPU_CLEAR_RE, text, 150, 600)
+
+
+def extract_case_cooler_clearance(text: str) -> tuple[float | None, float | None]:
+    return _clearance(_COOLER_CLEAR_RE, text, 30, 220)
+
+
+def extract_case_gpu_clearance_mm(text: str) -> float | None:
+    return extract_case_gpu_clearance(text)[0]
 
 
 def extract_case_cooler_clearance_mm(text: str) -> float | None:
-    m = re.search(r"(?:散熱器?|CPU|U|塔散)高?[^\d/]{0,4}" + _NUM1 + r"\s?(cm|mm)?", text, re.I)
-    if not m:
-        return None
-    mm = _to_mm(m.group(1), m.group(2))
-    return mm if 30 <= mm <= 220 else None
+    return extract_case_cooler_clearance(text)[0]
 
 
 def extract_cooler_height_mm(text: str) -> float | None:
@@ -185,6 +208,57 @@ def extract_ram_capacity_gb(text: str) -> int | None:
     return int(m.group(1)) if m else None
 
 
+_COMBO_PART_KINDS = [
+    ("psu", re.compile(r"(?<!\d)\d{3,4}\s?W|電源")),
+    ("aio", re.compile(r"水冷")),
+    ("fans", re.compile(r"扇")),
+    ("cpu", re.compile(r"Ryzen|(?<![A-Za-z])R[3579]\s?\d{4}|Core|i[3579]-\d")),
+    ("ram", re.compile(r"DDR[45]")),
+]
+
+
+def _top_level_plus(text: str) -> list[int]:
+    """回傳不在括號內的「+」位置。"""
+    depth, out = 0, []
+    for i, ch in enumerate(text):
+        if ch in "(（｛[【":
+            depth += 1
+        elif ch in ")）｝]】":
+            depth = max(0, depth - 1)
+        elif ch in "+＋" and depth == 0:
+            out.append(i)
+    return out
+
+
+def split_combo(text: str) -> list[dict] | None:
+    """把「機殼+電源」「機殼+水冷」「主機板 + CPU」這類組合列拆成零件。
+
+    只在「+」右側含有可辨識的零件特徵（瓦數、水冷、風扇、CPU、DDR）時才拆，
+    避免誤拆「2.5G+LAN 1G」這類規格寫法。回傳 [{'kind', 'text'}]；非組合列回傳 None。
+    """
+    body = text[: text.rfind(", $")] if ", $" in text else text
+    body = re.sub(r"^\s*\[[^\]]*\]\s*", "", body)  # 去掉「[合購優惠]」前綴
+    for pos in _top_level_plus(body):
+        left, right = body[:pos].strip(), body[pos + 1 :].strip()
+        if not right or right[0].isdigit():
+            continue
+        kind = next((k for k, rx in _COMBO_PART_KINDS if rx.search(right)), None)
+        if kind:
+            return [{"kind": "main", "text": left}, {"kind": kind, "text": right}]
+    return None
+
+
+_COLOR_RE = re.compile(r"(?:黑|白|銀|灰|粉|藍|綠|紅|紫|燕麥|木紋)色?(?:版)?|黑化|白化|透側版|網狀版")
+
+
+def model_key(text: str) -> str:
+    """同型號不同顏色歸為同一鍵，用於組合列繼承單品規格。"""
+    m = re.match(r"\s*｛([^｝]+)｝", text)
+    name = m.group(1) if m else re.split(r"[/(（]", text, maxsplit=1)[0]
+    name = _COLOR_RE.sub("", name)
+    return re.sub(r"[\s\-_.·]", "", name).upper()
+
+
 def has_no_igpu(text: str) -> bool:
     return "無內顯" in text or bool(re.search(r"\d{3,5}F\b|\d{4}KF\b", text))
 
@@ -234,9 +308,13 @@ def extract(category: str | None, text: str, group_label: str = "", select_label
         out["radiator_mm"] = extract_radiator_mm(text, liquid="水冷" in ctx)
         out["height_or_radiator"] = out["height_mm"] or out["radiator_mm"]
     elif category == "case":
-        out["gpu_clearance_mm"] = extract_case_gpu_clearance_mm(text)
-        out["cooler_clearance_mm"] = extract_case_cooler_clearance_mm(text)
-        out["max_form_factor"] = extract_form_factor(text)
+        parts = split_combo(text)
+        main = parts[0]["text"] if parts else text
+        out["combo_parts"] = [p["kind"] for p in parts[1:]] if parts else None
+        out["model_key"] = model_key(main)
+        out["gpu_clearance_mm"], out["gpu_clearance_alt_mm"] = extract_case_gpu_clearance(main)
+        out["cooler_clearance_mm"], out["cooler_clearance_alt_mm"] = extract_case_cooler_clearance(main)
+        out["max_form_factor"] = extract_form_factor(main)
     elif category == "psu":
         out["wattage"] = extract_wattage(text)
         out["psu_form"] = extract_psu_form(text)

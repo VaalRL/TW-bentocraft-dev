@@ -39,7 +39,7 @@ jobs:
       - name: Probe CoolPC
         run: |
           set +e
-          python poc/coolpc_probe.py --out poc/out --save-html
+          python poc/coolpc_probe.py --out poc/out --save-html --audit 30
           code=$?
           cat poc/out/report.md >> "$GITHUB_STEP_SUMMARY"
           exit $code
