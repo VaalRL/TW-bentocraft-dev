@@ -153,7 +153,8 @@ def analyse(html: str) -> dict:
         cat = classify_category(sel["label"])
         priced = 0
         for opt in sel["options"]:
-            fields = extract(cat, opt["text"], opt["group"])
+            # 下拉選單標籤（如「封閉式｜開放式水冷」）與 optgroup 一起作為擷取上下文
+            fields = extract(cat, opt["text"], opt["group"], sel["label"])
             if "price" not in fields:
                 continue
             priced += 1

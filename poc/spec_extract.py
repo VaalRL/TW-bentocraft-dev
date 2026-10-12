@@ -19,6 +19,8 @@ CATEGORY_KEYWORDS = [
 ]
 
 _NUM = r"(\d{2,3}(?:\.\d{1,2})?)"
+_NUM1 = r"(\d{1,3}(?:\.\d{1,2})?)"  # 允許個位數：「CPU高5.5」「U高7」
+_PROMO_COMBO_RE = re.compile(r"^\s*\[(?:加購|合購)")  # 跨類別合購促銷，不是單一零件
 _PRICE_RE = re.compile(r"\$\s?(\d{1,3}(?:,\d{3})+|\d+)")
 # 原價屋品名結尾為「…, $現價 ◆ ★」；「原價$X」為原價，「現省$X」為折扣金額
 _LIST_PRICE_RE = re.compile(r"原價\s?\$\s?(\d{1,3}(?:,\d{3})+|\d+)")
@@ -78,6 +80,8 @@ def extract_prices(text: str) -> dict | None:
 
 
 def is_in_scope(category: str | None, group_label: str, text: str) -> bool:
+    if _PROMO_COMBO_RE.search(text):
+        return False
     rule = OUT_OF_SCOPE.get(category or "")
     return not (rule and (rule.search(group_label) or rule.search(text)))
 
@@ -102,7 +106,7 @@ def extract_case_gpu_clearance_mm(text: str) -> float | None:
 
 
 def extract_case_cooler_clearance_mm(text: str) -> float | None:
-    m = re.search(r"(?:散熱器?|CPU|U|塔散)高?[^\d/]{0,4}" + _NUM + r"\s?(cm|mm)?", text, re.I)
+    m = re.search(r"(?:散熱器?|CPU|U|塔散)高?[^\d/]{0,4}" + _NUM1 + r"\s?(cm|mm)?", text, re.I)
     if not m:
         return None
     mm = _to_mm(m.group(1), m.group(2))
@@ -110,14 +114,19 @@ def extract_case_cooler_clearance_mm(text: str) -> float | None:
 
 
 def extract_cooler_height_mm(text: str) -> float | None:
-    m = re.search(r"高(?:度)?\s?" + _NUM + r"\s?(cm|mm)", text, re.I)
+    # 原價屋常省略單位：「高15.7」為公分
+    m = re.search(r"高(?:度)?\s?" + _NUM1 + r"\s?(cm|mm)?", text, re.I)
     if not m:
         return None
     mm = _to_mm(m.group(1), m.group(2))
     return mm if 25 <= mm <= 200 else None
 
 
-def extract_radiator_mm(text: str) -> int | None:
+def extract_radiator_mm(text: str, liquid: bool = False) -> int | None:
+    if liquid:  # 已知為水冷品項時，品名中獨立出現的冷排尺寸即可採用
+        m = re.search(r"(?<![\d.])(120|140|240|280|360|420)(?![\d.]|\s?W)", text)
+        if m:
+            return int(m.group(1))
     m = re.search(r"(?<!\d)(120|140|240|280|360|420)\s?(?:mm)?\s?(?:水冷|冷排|一體)", text)
     if not m:
         m = re.search(r"(?:水冷|冷排)[^\d]{0,6}(120|140|240|280|360|420)(?!\d)", text)
@@ -129,7 +138,7 @@ def extract_wattage(text: str) -> int | None:
     if not m:
         return None
     w = int(m.group(1))
-    return w if 200 <= w <= 2000 else None
+    return w if 200 <= w <= 3000 else None
 
 
 def extract_socket(text: str) -> str | None:
@@ -197,9 +206,13 @@ REQUIRED_FIELDS = {
 }
 
 
-def extract(category: str | None, text: str, group_label: str = "") -> dict:
-    """依類別擷取欄位；group_label 為所屬 optgroup 標籤（常含腳位等資訊）。"""
-    ctx = f"{group_label} {text}"
+def extract(category: str | None, text: str, group_label: str = "", select_label: str = "") -> dict:
+    """依類別擷取欄位。
+
+    group_label 為所屬 optgroup 標籤（常含腳位等資訊），也用於範圍界定；
+    select_label 為下拉選單標籤（如「封閉式｜開放式水冷」），只作擷取上下文。
+    """
+    ctx = f"{select_label} {group_label} {text}"
     out: dict = {"bundle_only": is_bundle_only(text), "in_scope": is_in_scope(category, group_label, text)}
     prices = extract_prices(text)
     if prices:
@@ -218,7 +231,7 @@ def extract(category: str | None, text: str, group_label: str = "") -> dict:
         out["length_mm"] = extract_gpu_length_mm(text)
     elif category == "cooler":
         out["height_mm"] = extract_cooler_height_mm(text)
-        out["radiator_mm"] = extract_radiator_mm(ctx)
+        out["radiator_mm"] = extract_radiator_mm(text, liquid="水冷" in ctx)
         out["height_or_radiator"] = out["height_mm"] or out["radiator_mm"]
     elif category == "case":
         out["gpu_clearance_mm"] = extract_case_gpu_clearance_mm(text)

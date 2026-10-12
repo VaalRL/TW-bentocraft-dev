@@ -45,6 +45,11 @@ class ExtractTest(unittest.TestCase):
         self.assertEqual((f["gpu_clearance_mm"], f["cooler_clearance_mm"]), (450.0, 180.0))
         self.assertEqual(f["max_form_factor"], "ATX")
 
+    def test_case_single_digit_clearance(self):
+        f = extract("case", "｛聯力 A4-H2O 黑｝PCIe 5.0/顯卡長32.2/CPU高5.5/鋁合金/ITX【SFX】, $4700 ◆ ★")
+        self.assertEqual((f["gpu_clearance_mm"], f["cooler_clearance_mm"]), (322.0, 55.0))
+        self.assertEqual(extract("case", "｛Mavoly M16 黑｝顯卡長20/U高7/內附400W電源, $1390")["cooler_clearance_mm"], 70.0)
+
     def test_gpu(self):
         f = extract("gpu", "微星 RTX4060 VENTUS 2X BLACK 8G OC(2490MHz/19.9cm/雙風扇/註四年), $8990 ◆")
         self.assertEqual(f["length_mm"], 199.0)
@@ -60,6 +65,21 @@ class ExtractTest(unittest.TestCase):
         f = extract("ram", "｛UMAX 單條16GB DDR5-5600｝/CL46, $7300 ◆ ★ 熱賣", group_label="桌上型記憶體 DDR5 單條")
         self.assertEqual((f["memory_type"], f["capacity_gb"]), ("DDR5", 16))
         self.assertFalse(extract("ram", "｛UMAX 8GB DDR3-1600｝, $780", group_label="桌上型記憶體 DDR3")["in_scope"])
+
+    def test_cooler_height_without_unit(self):
+        f = extract("cooler", "｛利民 Phantom Spirit 120 EVO｝7導管(6mm)/雙塔雙扇(ARGB)/高15.7/全黑化【WXZ】, $1890 ◆ ★")
+        self.assertEqual(f["height_mm"], 157.0)
+        self.assertEqual(extract("cooler", "｛ID-COOLING IS-40X 散熱器｝下吹式/4導管/高4.5/TDP:100W, $790")["height_mm"], 45.0)
+
+    def test_aio_radiator_from_select_label(self):
+        f = extract("cooler", "｛恩傑 NZXT Kraken Elite 360 RGB｝LCD, $8990 ◆", group_label="恩傑 NZXT", select_label="封閉式｜開放式水冷")
+        self.assertEqual(f["radiator_mm"], 360)
+        self.assertIsNone(extract("cooler", "｛X｝TDP:240W, $1", select_label="封閉式｜開放式水冷")["radiator_mm"])
+        f = extract("cooler", "｛利民 PA120｝高15.5, $1", group_label="利民", select_label="散熱器｜散熱墊｜散熱膏")
+        self.assertTrue(f["in_scope"])
+
+    def test_promo_combo_out_of_scope(self):
+        self.assertFalse(extract("motherboard", "[合購優惠] 華碩 PRIME B550M-K WIFI + AMD R5 5600X MPK, $7380 ★")["in_scope"])
 
     def test_cooler_scope(self):
         self.assertFalse(extract("cooler", "｛利民 HR-09 2280｝SSD 固態硬碟散熱器, $550", group_label="M.2 SSD散熱片")["in_scope"])
