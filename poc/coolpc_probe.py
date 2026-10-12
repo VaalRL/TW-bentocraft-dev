@@ -26,7 +26,8 @@ from spec_extract import REQUIRED_FIELDS, classify_category, extract  # noqa: E4
 EVALUATE_URL = "https://www.coolpc.com.tw/evaluate.php"
 ROBOTS_URL = "https://www.coolpc.com.tw/robots.txt"
 USER_AGENT = "TW-bentocraft-PoC/0.1 (+https://github.com/VaalRL/TW-bentocraft)"
-SAMPLES_PER_CATEGORY = 5
+SAMPLES_PER_CATEGORY = 3
+MISSING_SAMPLES = 25
 
 
 def fetch(url: str, timeout: int = 30) -> dict:
@@ -147,37 +148,54 @@ def analyse(html: str) -> dict:
 
     report: dict = {"select_count": len(parser.selects), "selects": [], "categories": {}}
     per_cat: dict[str, list[dict]] = defaultdict(list)
+    out_of_scope: Counter = Counter()
     for sel in parser.selects:
         cat = classify_category(sel["label"])
         priced = 0
         for opt in sel["options"]:
             fields = extract(cat, opt["text"], opt["group"])
-            if "price" in fields:
-                priced += 1
-                if cat:
-                    per_cat[cat].append({"text": opt["text"], "group": opt["group"], **fields})
+            if "price" not in fields:
+                continue
+            priced += 1
+            if not cat:
+                continue
+            if fields["in_scope"]:
+                per_cat[cat].append({"text": opt["text"], "group": opt["group"], **fields})
+            else:
+                out_of_scope[cat] += 1
         report["selects"].append(
             {"name": sel["name"], "label": sel["label"], "category": cat,
              "options": len(sel["options"]), "priced_options": priced,
-             "groups": sorted({o["group"] for o in sel["options"] if o["group"]})[:30]}
+             "groups": sorted({o["group"] for o in sel["options"] if o["group"]})}
         )
 
     for cat, items in per_cat.items():
         required = REQUIRED_FIELDS.get(cat, ())
-        coverage = {f: round(sum(1 for i in items if i.get(f)) / len(items), 3) for f in required}
-        all_ok = sum(1 for i in items if all(i.get(f) for f in required))
+
+        def ok(i):
+            return all(i.get(f) for f in required)
+
+        by_group: dict[str, list[dict]] = defaultdict(list)
+        for i in items:
+            by_group[i["group"]].append(i)
         report["categories"][cat] = {
             "items": len(items),
+            "out_of_scope": out_of_scope[cat],
             "bundle_only": sum(1 for i in items if i["bundle_only"]),
-            "field_coverage": coverage,
-            "all_required_fields": round(all_ok / len(items), 3) if required else None,
+            "combo_discount": sum(1 for i in items if i.get("combo_discount")),
+            "field_coverage": {f: round(sum(1 for i in items if i.get(f)) / len(items), 3) for f in required},
+            "all_required_fields": round(sum(1 for i in items if ok(i)) / len(items), 3) if required else None,
+            "group_coverage": sorted(
+                ((g, len(v), round(sum(1 for i in v if ok(i)) / len(v), 2)) for g, v in by_group.items()),
+                key=lambda x: x[2],
+            ),
             "value_counts": {
-                f: Counter(str(i.get(f)) for i in items).most_common(8)
-                for f in ("socket", "memory_type", "form_factor", "psu_form", "max_form_factor")
+                f: Counter(str(i.get(f)) for i in items).most_common(10)
+                for f in ("socket", "memory_type", "form_factor", "psu_form", "max_form_factor", "no_igpu")
                 if any(f in i for i in items)
             },
             "samples": items[:SAMPLES_PER_CATEGORY],
-            "missing_samples": [i["text"] for i in items if not all(i.get(f) for f in required)][:SAMPLES_PER_CATEGORY],
+            "missing_samples": [i["text"] for i in items if not ok(i)][:MISSING_SAMPLES],
         }
     return report
 
@@ -194,12 +212,13 @@ def to_markdown(meta: dict, report: dict | None) -> str:
     if not report:
         return "\n".join(lines) + "\n"
     lines += ["", f"`<select>` 數量：{report['select_count']}", ""]
-    lines.append("| 類別 | 品項 | 搭機限定 | 必要欄位全數擷取 | 各欄位擷取率 |")
-    lines.append("| :-- | --: | --: | --: | :-- |")
+    lines.append("| 類別 | 範圍內品項 | 排除 | 組裝/搭機價 | 任搭折抵 | 必要欄位全數擷取 | 各欄位擷取率 |")
+    lines.append("| :-- | --: | --: | --: | --: | --: | :-- |")
     for cat, c in sorted(report["categories"].items()):
         cov = ", ".join(f"{k} {v:.0%}" for k, v in c["field_coverage"].items()) or "—"
         allf = "—" if c["all_required_fields"] is None else f"{c['all_required_fields']:.0%}"
-        lines.append(f"| {cat} | {c['items']} | {c['bundle_only']} | {allf} | {cov} |")
+        lines.append(f"| {cat} | {c['items']} | {c['out_of_scope']} | {c['bundle_only']} | "
+                     f"{c['combo_discount']} | {allf} | {cov} |")
     unmapped = [s for s in report["selects"] if not s["category"] and s["priced_options"]]
     if unmapped:
         lines += ["", "未對應類別的下拉選單：", ""]
@@ -247,7 +266,12 @@ def main() -> int:
         print("## robots.txt\n```\n" + meta["robots_txt"] + "\n```")
     # 日誌中列出少量樣本，供下一輪調整擷取規則
     for cat, c in sorted(report["categories"].items()):
-        print(f"\n## {cat} samples")
+        print(f"\n## {cat} value counts")
+        print(json.dumps(c["value_counts"], ensure_ascii=False))
+        print(f"## {cat} group coverage (group, items, all-required ratio)")
+        for g in c["group_coverage"]:
+            print("  ", json.dumps(g, ensure_ascii=False))
+        print(f"## {cat} samples")
         for s in c["samples"]:
             print(json.dumps(s, ensure_ascii=False))
         print(f"## {cat} missing required fields")
@@ -255,7 +279,8 @@ def main() -> int:
             print("  -", t)
     print("\n## selects")
     for s in report["selects"]:
-        print(json.dumps(s, ensure_ascii=False))
+        if s["priced_options"]:
+            print(json.dumps({k: v for k, v in s.items() if k != "groups"}, ensure_ascii=False))
     return 0 if report["categories"] else 2
 
 

@@ -20,10 +20,28 @@ CATEGORY_KEYWORDS = [
 
 _NUM = r"(\d{2,3}(?:\.\d{1,2})?)"
 _PRICE_RE = re.compile(r"\$\s?(\d{1,3}(?:,\d{3})+|\d+)")
-_BUNDLE_RE = re.compile(r"搭機|限搭|組裝價|任搭|搭購|搭板|搭卡")
+# 原價屋品名結尾為「…, $現價 ◆ ★」；「原價$X」為原價，「現省$X」為折扣金額
+_LIST_PRICE_RE = re.compile(r"原價\s?\$\s?(\d{1,3}(?:,\d{3})+|\d+)")
+# 不可單買的價格（組裝價 / 搭機價）；「↓任搭290↓」是任意搭配時再折抵，不算限定
+_BUNDLE_RE = re.compile(r"組裝價|搭機價|限搭|搭機|搭購價")
+_COMBO_RE = re.compile(r"任搭\s?(\d+)")
+_NOT_ALNUM_BEFORE = r"(?<![A-Za-z0-9])"
+_NOT_DIGIT_AFTER = r"(?![0-9])"
+
+# 各類別下拉選單內混有配件與非消費級產品，以 optgroup / 品名排除（PoC 階段的範圍界定）
+OUT_OF_SCOPE = {
+    "cpu": re.compile(r"Threadripper|Xeon|4677|sTR5"),
+    "motherboard": re.compile(r"TRX50|WRX90|W790|sTR5|4677"),
+    "ram": re.compile(r"伺服器|筆記型|NB |DDR3|RDIMM|ECC"),
+    "gpu": re.compile(r"周邊|配件|支撐架|支架|專業級|工作站"),
+    "cooler": re.compile(r"SSD|散熱膏|散熱墊|導熱|矽脂|硅脂|散熱片"),
+    "case": re.compile(r"機架式|NAS"),
+}
 
 
 def classify_category(label: str) -> str | None:
+    if "風扇" in label or "配件" in label:  # 「機殼風扇｜機殼配件」不是機殼
+        return None
     for cat, words in CATEGORY_KEYWORDS:
         if any(w in label for w in words):
             return cat
@@ -39,17 +57,29 @@ def _to_mm(value: str, unit: str | None) -> float:
     return v
 
 
-def extract_prices(text: str) -> dict | None:
-    """回傳 {'price': 最終價, 'list_price': 原價或 None}。
+def _int(v: str) -> int:
+    return int(v.replace(",", ""))
 
-    原價屋常見「$4590↘$4290」的降價寫法，最後一個金額視為現價。
-    """
-    found = [int(p.replace(",", "")) for p in _PRICE_RE.findall(text)]
-    if not found:
+
+def extract_prices(text: str) -> dict | None:
+    """回傳 {'price': 現價, 'list_price': 原價或 None, 'combo_discount': 任搭折抵或 None}。"""
+    # 現價取最後一個「, $」之後的最後一個金額（可涵蓋「, $4590↘$4290」降價寫法）
+    tail = text[text.rfind(", $"):] if ", $" in text else text
+    finals = _PRICE_RE.findall(tail)
+    if not finals:
         return None
-    price = found[-1]
-    list_price = found[0] if len(found) > 1 and found[0] != price else None
-    return {"price": price, "list_price": list_price}
+    lp = _LIST_PRICE_RE.search(text)
+    combo = _COMBO_RE.search(text)
+    return {
+        "price": _int(finals[-1]),
+        "list_price": _int(lp.group(1)) if lp else None,
+        "combo_discount": int(combo.group(1)) if combo else None,
+    }
+
+
+def is_in_scope(category: str | None, group_label: str, text: str) -> bool:
+    rule = OUT_OF_SCOPE.get(category or "")
+    return not (rule and (rule.search(group_label) or rule.search(text)))
 
 
 def extract_gpu_length_mm(text: str) -> float | None:
@@ -72,7 +102,7 @@ def extract_case_gpu_clearance_mm(text: str) -> float | None:
 
 
 def extract_case_cooler_clearance_mm(text: str) -> float | None:
-    m = re.search(r"(?:散熱器?|CPU|塔散)[^\d/]{0,4}" + _NUM + r"\s?(cm|mm)?", text, re.I)
+    m = re.search(r"(?:散熱器?|CPU|U|塔散)高?[^\d/]{0,4}" + _NUM + r"\s?(cm|mm)?", text, re.I)
     if not m:
         return None
     mm = _to_mm(m.group(1), m.group(2))
@@ -103,15 +133,16 @@ def extract_wattage(text: str) -> int | None:
 
 
 def extract_socket(text: str) -> str | None:
-    m = re.search(r"\b(AM4|AM5)\b", text, re.I)
+    # 中文字屬於 \w，「AM5腳位」不能用 \b 判斷邊界
+    m = re.search(_NOT_ALNUM_BEFORE + r"(AM4|AM5)" + _NOT_DIGIT_AFTER, text, re.I)
     if m:
         return m.group(1).upper()
-    m = re.search(r"(?:LGA\s?)?(1700|1851)(?!\d)", text)
+    m = re.search(r"(?:LGA\s?)?(?<!\d)(1151|1200|1700|1851)" + _NOT_DIGIT_AFTER, text)
     return f"LGA{m.group(1)}" if m else None
 
 
 def extract_memory_type(text: str) -> str | None:
-    m = re.search(r"\bD(?:DR)?([45])\b", text, re.I)
+    m = re.search(_NOT_ALNUM_BEFORE + r"D(?:DR)?([345])" + _NOT_DIGIT_AFTER, text, re.I)
     return f"DDR{m.group(1)}" if m else None
 
 
@@ -169,7 +200,7 @@ REQUIRED_FIELDS = {
 def extract(category: str | None, text: str, group_label: str = "") -> dict:
     """依類別擷取欄位；group_label 為所屬 optgroup 標籤（常含腳位等資訊）。"""
     ctx = f"{group_label} {text}"
-    out: dict = {"bundle_only": is_bundle_only(text)}
+    out: dict = {"bundle_only": is_bundle_only(text), "in_scope": is_in_scope(category, group_label, text)}
     prices = extract_prices(text)
     if prices:
         out.update(prices)
