@@ -149,13 +149,29 @@ export function constraintInvolves(constraint: string, cat: Category): boolean {
 
 export const recommendedWattage = (load: number) => Math.ceil((load * 1.25) / 50) * 50;
 
-/** 任一必要功耗欄位缺少時回傳 null（未知），不以預設值估算。 */
-export function estimateLoad(sel: Selection): number | null {
-  if (!sel.cpu || !sel.gpu) return null;
-  const cpuW = spec<number>(sel.cpu, 'max_power_w'), gpuW = spec<number>(sel.gpu, 'board_power_w');
-  if (!cpuW || !gpuW) return null;
+export interface Load {
+  watts: number;
+  /** 顯卡功耗是依晶片參考值推定的 */
+  inferred: boolean;
+}
+
+/**
+ * 估計整機滿載功耗。未選 CPU 或必要功耗欄位缺少時回傳 null（未知），不以預設值估算。
+ * 未選顯卡、或顯卡是自帶電源的外接顯卡盒時，不計顯卡功耗。
+ */
+export function estimateLoad(sel: Selection): Load | null {
+  if (!sel.cpu) return null;
+  const cpuW = spec<number>(sel.cpu, 'max_power_w');
+  if (!cpuW) return null;
+  let gpuW = 0, inferred = cpuW.inferred;
+  if (sel.gpu && !spec<boolean>(sel.gpu, 'external')?.value) {
+    const g = spec<number>(sel.gpu, 'board_power_w');
+    if (!g) return null;
+    gpuW = g.value;
+    inferred ||= g.inferred;
+  }
   const pump = sel.cooler && spec<string>(sel.cooler, 'cooler_type')?.value === 'aio' ? 15 : 0;
-  return cpuW.value + gpuW.value + 50 + pump;
+  return { watts: cpuW.value + gpuW + 50 + pump, inferred };
 }
 
 /** 整機層級的檢查（功耗、缺少必要零件）。 */
@@ -169,11 +185,13 @@ export function buildChecks(sel: Selection): Check[] {
   if (psu) {
     const load = estimateLoad(sel);
     const watt = spec<number>(psu, 'wattage');
-    if (load === null || !watt) checks.push(result('C7', 'unknown', 'CPU 或顯卡功耗未確認，無法估算電源瓦數'));
-    else if (watt.value < load) checks.push(result('C7', 'fail', `額定 ${watt.value} W 低於估計滿載 ${load} W`));
-    else if (watt.value < recommendedWattage(load))
-      checks.push(result('C7', 'warn', `估計滿載 ${load} W，建議至少 ${recommendedWattage(load)} W`));
-    else checks.push(result('C7', 'pass'));
+    if (!cpu) checks.push(result('C7', 'unknown', '尚未選擇 CPU，無法估算電源瓦數'));
+    else if (load === null || !watt) checks.push(result('C7', 'unknown', 'CPU 或顯卡功耗未確認，無法估算電源瓦數'));
+    else if (watt.value < load.watts)
+      checks.push(result('C7', 'fail', `額定 ${watt.value} W 低於估計滿載 ${load.watts} W`, load.inferred));
+    else if (watt.value < recommendedWattage(load.watts))
+      checks.push(result('C7', 'warn', `估計滿載 ${load.watts} W，建議至少 ${recommendedWattage(load.watts)} W`, load.inferred));
+    else checks.push(result('C7', 'pass', '', load.inferred));
   }
   return checks;
 }

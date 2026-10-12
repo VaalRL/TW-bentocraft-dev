@@ -24,6 +24,11 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
     }
    },
    "review": {
@@ -48,6 +53,16 @@
     "cooler_included": {
      "value": true,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    },
+    "igpu": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：無內顯"
     }
    },
    "review": {
@@ -76,6 +91,11 @@
     "cooler_included": {
      "value": true,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
     }
    },
    "review": {
@@ -104,6 +124,16 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "manual",
+     "note": "盒裝附 Wraith Stealth"
     }
    },
    "review": {
@@ -132,6 +162,16 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "manual",
+     "note": "盒裝附 Wraith Stealth"
     }
    },
    "review": {
@@ -160,6 +200,16 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "manual",
+     "note": "盒裝附 Wraith Stealth"
     }
    },
    "review": {
@@ -188,6 +238,16 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -212,6 +272,21 @@
     "tdp_w": {
      "value": 105,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 142,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 105 W × 1.35）"
+    },
+    "igpu": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：無內顯"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -244,6 +319,11 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
     }
    },
    "review": {
@@ -272,6 +352,16 @@
     "tdp_w": {
      "value": 120,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 162,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 120 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -300,6 +390,16 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -328,6 +428,16 @@
     "tdp_w": {
      "value": 120,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 162,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 120 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -356,6 +466,16 @@
     "tdp_w": {
      "value": 120,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 162,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 120 W × 1.35），與 9800X3D 相同"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -384,6 +504,16 @@
     "tdp_w": {
      "value": 120,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 162,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 120 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -412,6 +542,16 @@
     "tdp_w": {
      "value": 120,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 162,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 120 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -440,6 +580,16 @@
     "tdp_w": {
      "value": 170,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 230,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 170 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -468,6 +618,16 @@
     "tdp_w": {
      "value": 170,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 230,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 170 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -496,6 +656,11 @@
     "tdp_w": {
      "value": 200,
      "source": "title"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -520,6 +685,11 @@
     "igpu": {
      "value": true,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 121,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -544,6 +714,11 @@
     "igpu": {
      "value": false,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 121,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -572,6 +747,11 @@
     "cooler_included": {
      "value": false,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 159,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -600,6 +780,11 @@
     "cooler_included": {
      "value": false,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 159,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -628,6 +813,11 @@
     "cooler_included": {
      "value": false,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 159,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -656,6 +846,11 @@
     "cooler_included": {
      "value": false,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 250,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -684,6 +879,11 @@
     "cooler_included": {
      "value": false,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 250,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -712,6 +912,11 @@
     "cooler_included": {
      "value": false,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 250,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -740,6 +945,11 @@
     "tdp_w": {
      "value": 60,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 110,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -768,6 +978,11 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 117,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -796,6 +1011,11 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 117,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -824,6 +1044,11 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 148,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -852,6 +1077,11 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 148,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {
@@ -880,6 +1110,11 @@
     "tdp_w": {
      "value": 65,
      "source": "title"
+    },
+    "max_power_w": {
+     "value": 219,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {

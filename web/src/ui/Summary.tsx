@@ -18,6 +18,14 @@ function conditionLabel(o: Offer): string {
 
 const ORDER: Status[] = ['fail', 'warn', 'unknown'];
 
+function powerText(selection: Selection): string {
+  if (!selection.cpu) return '尚未選擇 CPU';
+  const load = estimateLoad(selection);
+  if (load === null) return 'CPU 或顯卡功耗資料未確認';
+  const text = `${load.watts} W，建議電源 ${recommendedWattage(load.watts)} W 以上`;
+  return load.inferred ? `${text}（顯卡依晶片參考功耗推定，非公版超頻卡可能更高）` : text;
+}
+
 export function Summary({ selection, offers, prices, assembly, onAssemblyChange, onRemove, onFocus }: {
   selection: Selection;
   offers: Map<string, Offer[]>;
@@ -31,7 +39,6 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
   const priced = priceSelection(selection, offers, { assembly });
   const checks = selectionChecks(selection).filter(c => c.status !== 'pass');
   const overall = worst(checks);
-  const load = estimateLoad(selection);
   const picked = CATEGORIES.filter(c => selection[c]);
 
   const flash = async (text: string, label: string) => {
@@ -49,7 +56,7 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
     lines.push('='.repeat(40));
     lines.push(`【總金額】NT${formatPrice(priced.total)}（原價屋 ${formatDate(prices.fetched_at)} 報價）`);
     if (priced.discount) lines.push(`【任搭折抵】-${formatPrice(priced.discount)}`);
-    lines.push(`【預估功耗】${load === null ? '功耗資料未確認' : `${load} W，建議 ${recommendedWattage(load)} W 以上`}`);
+    lines.push(`【預估功耗】${powerText(selection)}`);
     const counts = ORDER.map(s => [s, checks.filter(c => c.status === s).length] as const).filter(([, n]) => n);
     lines.push(`【相容性】${counts.length ? counts.map(([s, n]) => `${STATUS_LABEL[s]} ${n} 項`).join('、') : '全部通過'}`);
     lines.push(`【線上配單】${location.href}`);
@@ -108,7 +115,7 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
             <span className={`badge status-${overall}`}>{overall === 'pass' ? '全部通過' : STATUS_LABEL[overall]}</span>
           </h3>
           <p className="muted">
-            預估功耗：{load === null ? 'CPU 或顯卡功耗資料未確認' : `${load} W，建議電源 ${recommendedWattage(load)} W 以上`}
+            預估功耗：{powerText(selection)}
           </p>
           <ul>
             {ORDER.flatMap(s => checks.filter(c => c.status === s)).map((c, i) => (

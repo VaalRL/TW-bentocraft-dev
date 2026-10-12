@@ -102,12 +102,26 @@ describe('整機檢查', () => {
   });
 
   it('C7 有功耗資料時計算瓦數（9800X3D ＋ RTX5080 = 572 W，建議 750 W）', () => {
-    expect(estimateLoad({ cpu: cpu9800x3d, gpu: gpu5080 })).toBe(572);
+    expect(estimateLoad({ cpu: cpu9800x3d, gpu: gpu5080 })).toEqual({ watts: 572, inferred: false });
     expect(recommendedWattage(572)).toBe(750);
     expect(status(buildChecks({ cpu: cpu9800x3d, gpu: gpu5080, psu: psuAtx }), 'C7')).toBe('pass');
     expect(status(buildChecks({ cpu: cpu9800x3d, gpu: gpu5080, psu: psu650 }), 'C7')).toBe('warn');
     const psu500 = M('psu:x:500', { wattage: 500, form_factor: 'ATX' });
     expect(status(buildChecks({ cpu: cpu9800x3d, gpu: gpu5080, psu: psu500 }), 'C7')).toBe('fail');
+  });
+
+  it('C7 未選顯卡或外接顯卡盒時不計顯卡功耗', () => {
+    expect(estimateLoad({ cpu: cpu9800x3d })).toEqual({ watts: 212, inferred: false });
+    expect(estimateLoad({ cpu: cpu9800x3d, gpu: gpuBox })).toEqual({ watts: 212, inferred: false });
+    expect(estimateLoad({ gpu: gpu5080 })).toBeNull();
+    expect(buildChecks({ gpu: gpu5080, psu: psu650 }).find(c => c.constraint === 'C7')?.message).toContain('尚未選擇 CPU');
+  });
+
+  it('C7 顯卡功耗為推定值時，結果標為依推定規格', () => {
+    const gpu5070 = M('gpu:x:rtx5070', { length_mm: 250, board_power_w: 250 }, { board_power_w: { i: 1 } });
+    expect(estimateLoad({ cpu: cpu9800x3d, gpu: gpu5070 })).toEqual({ watts: 462, inferred: true });
+    const c7 = buildChecks({ cpu: cpu9800x3d, gpu: gpu5070, psu: psu650 }).find(c => c.constraint === 'C7');
+    expect(c7).toMatchObject({ status: 'pass', inferred: true });
   });
 
   it('selectionChecks 每對只算一次', () => {
