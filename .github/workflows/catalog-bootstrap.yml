@@ -1,0 +1,49 @@
+name: Catalog bootstrap
+
+# 手動觸發：從當天的原價屋估價頁產生規格庫中尚不存在的型號，推到獨立分支供 PR 審查。
+# 既有型號不會被修改；新型號為 review.status = auto（規格衝突者為 draft）。
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      # 只抓一次頁面：update_prices 另存 HTML，後續步驟都讀這份存檔
+      - name: Fetch page
+        run: python scripts/update_prices.py --out "$RUNNER_TEMP/prices.json" --save-html "$RUNNER_TEMP/page.html"
+
+      - name: Add new models to the catalog
+        run: python scripts/bootstrap_catalog.py --html "$RUNNER_TEMP/page.html" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Preview prices with the new catalog
+        run: python scripts/update_prices.py --html "$RUNNER_TEMP/page.html" --out "$RUNNER_TEMP/prices.json"
+
+      - name: Validate
+        run: |
+          shopt -s nullglob
+          python schema/validate.py --catalog data/catalog/*.json --prices "$RUNNER_TEMP/prices.json"
+
+      - name: Push branch for review
+        run: |
+          branch="catalog-bootstrap/$(date -u +%Y%m%d)-${{ github.run_id }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add data/catalog/
+          git commit -m "data(catalog): add models from coolpc $(date -u +%F)"
+          git push origin "$branch"
+          echo "已推送分支 \`$branch\`，請開 PR 審查。" >> "$GITHUB_STEP_SUMMARY"

@@ -1,16 +1,18 @@
 name: PoC - CoolPC reachability & spec extraction
 
-# PoC 階段：推送 poc/、schema/ 下的程式變更時自動執行一次，也可手動觸發（文件變更不觸發，避免多餘請求）。
-# 合併到預設分支後每日執行一次，連續觀察可達性與 offer_id 跨日穩定性（排程只在預設分支生效）。
-# 每次只對原價屋發出 robots.txt 與 evaluate.php 各一次請求。
+# PoC／管線驗證：推送程式變更時自動執行一次，也可手動觸發（文件變更不觸發，避免多餘請求）。
+# 每日觀察已改由 daily-prices.yml 負責，本 workflow 不再排程，以免每天對原價屋多發一次請求。
+# 每次只對原價屋發出 robots.txt 與 evaluate.php 各一次請求；後續步驟都讀同一份存檔。
 on:
-  schedule:
-    - cron: '17 3 * * *'  # UTC 03:17 = 台灣 11:17
   push:
     paths:
       - 'poc/**.py'
+      - 'pipeline/**.py'
+      - 'scripts/**.py'
+      - 'tests/**.py'
       - 'schema/**.py'
       - 'schema/**.json'
+      - 'requirements.txt'
       - '.github/workflows/poc-coolpc-probe.yml'
   workflow_dispatch:
 
@@ -32,12 +34,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install schema validator
-        run: pip install 'jsonschema==4.26.0'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-      - name: Unit tests (extraction rules)
-        working-directory: poc
-        run: python -m unittest -v test_spec_extract
+      - name: Unit tests (extraction rules, pipeline)
+        run: python -m unittest discover -v -s tests -t .
 
       - name: Unit tests (catalog / prices schema)
         working-directory: schema
@@ -61,6 +62,17 @@ jobs:
           set -o pipefail
           python poc/to_catalog.py poc/out/items.jsonl --out poc/out/draft | tee poc/out/draft-report.md
           cat poc/out/draft-report.md >> "$GITHUB_STEP_SUMMARY"
+
+      # 以同一份存檔跑一次正式管線：產生草稿規格庫 → 產生報價快照 → 驗證
+      - name: Pipeline end-to-end on the fetched page
+        run: |
+          set -o pipefail
+          python scripts/bootstrap_catalog.py --html poc/out/evaluate.html --catalog-dir poc/out/pipeline/catalog \
+            | tee -a "$GITHUB_STEP_SUMMARY"
+          python scripts/update_prices.py --html poc/out/evaluate.html --catalog-dir poc/out/pipeline/catalog \
+            --out poc/out/pipeline/prices/coolpc.json
+          python schema/validate.py --catalog poc/out/pipeline/catalog/*.json --prices poc/out/pipeline/prices/coolpc.json
+          ls -l poc/out/pipeline/prices/ poc/out/pipeline/catalog/ | tee -a "$GITHUB_STEP_SUMMARY"
 
       - name: Upload raw HTML and report
         if: always()

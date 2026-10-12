@@ -101,7 +101,7 @@ sequenceDiagram
 
 ## 🚀 快速上手與本機開發
 
-前端尚未實作。目前可執行的是資料管線的 PoC（見 [`poc/README.md`](poc/README.md)）與規格庫驗證。
+前端尚未實作。目前可執行的是每日報價管線（[`pipeline/`](pipeline/)、[`scripts/`](scripts/)）、PoC（見 [`poc/README.md`](poc/README.md)）與規格庫驗證。
 
 ### 環境需求
 - Python 3.11+
@@ -111,19 +111,19 @@ sequenceDiagram
 ```bash
 git clone https://github.com/VaalRL/TW-bentocraft.git
 cd TW-bentocraft
-pip install 'jsonschema==4.26.0'
+pip install -r requirements.txt
 ```
 
 ### 2. 執行測試
 ```bash
-python -m unittest discover -s poc -p 'test_*.py'
+python -m unittest discover -s tests -t .
 (cd schema && python -m unittest test_schema)
 ```
 
-### 3. 抓取原價屋並產生草稿規格庫（需能連到 coolpc.com.tw）
+### 3. 抓取原價屋並更新報價快照（需能連到 coolpc.com.tw）
 ```bash
-python poc/coolpc_probe.py --out poc/out --dump-items
-python poc/to_catalog.py poc/out/items.jsonl --out poc/out/draft
+python scripts/update_prices.py --out data/prices/coolpc.json --save-html page.html
+python scripts/bootstrap_catalog.py --html page.html   # 新增規格庫中沒有的型號（以 PR 送審）
 ```
 
 ---

@@ -10,137 +10,20 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import random
-import re
 import sys
 import time
-import urllib.error
-import urllib.request
 from collections import Counter, defaultdict
-from html.parser import HTMLParser
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from spec_extract import REQUIRED_FIELDS, classify_category, extract  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from pipeline.coolpc import EVALUATE_URL, ROBOTS_URL, SelectParser, decode_html, fetch  # noqa: E402
+from pipeline.extract import REQUIRED_FIELDS, classify_category, extract  # noqa: E402
 
-EVALUATE_URL = "https://www.coolpc.com.tw/evaluate.php"
-ROBOTS_URL = "https://www.coolpc.com.tw/robots.txt"
 USER_AGENT = "TW-bentocraft-PoC/0.1 (+https://github.com/VaalRL/TW-bentocraft)"
 SAMPLES_PER_CATEGORY = 3
 MISSING_SAMPLES = 25
 AUDIT_SEED = 20261012
-
-
-def fetch(url: str, timeout: int = 30) -> dict:
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": USER_AGENT,
-            "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
-            "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
-        },
-    )
-    started = time.monotonic()
-    result: dict = {"url": url}
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            body = resp.read()
-            result.update(
-                status=resp.status,
-                final_url=resp.geturl(),
-                content_type=resp.headers.get("Content-Type"),
-                server=resp.headers.get("Server"),
-                body=body,
-            )
-    except urllib.error.HTTPError as e:
-        result.update(status=e.code, error=str(e), body=e.read() or b"")
-    except Exception as e:  # 連線逾時、DNS、TLS 等
-        result.update(status=None, error=f"{type(e).__name__}: {e}", body=b"")
-    result["elapsed_s"] = round(time.monotonic() - started, 2)
-    result["bytes"] = len(result["body"])
-    return result
-
-
-def decode_html(body: bytes, content_type: str | None) -> tuple[str, str]:
-    """依 Content-Type / meta charset 解碼；都沒有時比較 utf-8 與 cp950 的錯誤數。"""
-    candidates = []
-    for source in (content_type or "", body[:4096].decode("ascii", "ignore")):
-        m = re.search(r"charset=[\"']?([\w-]+)", source, re.I)
-        if m:
-            candidates.append(m.group(1).lower())
-    candidates += ["utf-8", "cp950"]
-    best = None
-    for enc in dict.fromkeys("cp950" if c in ("big5", "big5-hkscs") else c for c in candidates):
-        try:
-            text = body.decode(enc, errors="replace")
-        except LookupError:
-            continue
-        bad = text.count("�")
-        if best is None or bad < best[2]:
-            best = (text, enc, bad)
-        if bad == 0:
-            break
-    return best[0], best[1]
-
-
-class SelectParser(HTMLParser):
-    """收集每個 <select> 的類別標籤、optgroup 與 option 文字。
-
-    類別標籤取 <select> 之前最近一段非空文字（估價頁通常在同一列的前一格）。
-    """
-
-    def __init__(self) -> None:
-        super().__init__(convert_charrefs=True)
-        self.selects: list[dict] = []
-        self._last_text = ""
-        self._cur: dict | None = None
-        self._group = ""
-        self._opt: list[str] | None = None
-        self._opt_attrs: dict = {}
-
-    def handle_starttag(self, tag, attrs):
-        a = dict(attrs)
-        if tag == "select":
-            self._cur = {"name": a.get("name") or a.get("id") or "", "label": self._last_text, "options": []}
-            self._group = ""
-        elif tag == "optgroup" and self._cur is not None:
-            self._group = (a.get("label") or "").strip()
-        elif tag == "option" and self._cur is not None:
-            self._close_option()
-            self._opt = []
-            self._opt_attrs = a
-
-    def handle_endtag(self, tag):
-        if tag == "option":
-            self._close_option()
-        elif tag == "optgroup":
-            self._close_option()
-            self._group = ""
-        elif tag == "select" and self._cur is not None:
-            self._close_option()
-            self.selects.append(self._cur)
-            self._cur = None
-
-    def handle_data(self, data):
-        if self._opt is not None:
-            self._opt.append(data)
-        elif self._cur is None:
-            text = " ".join(data.split())
-            if text:
-                self._last_text = text[:60]
-
-    def _close_option(self):
-        if self._opt is None or self._cur is None:
-            self._opt = None
-            return
-        text = " ".join("".join(self._opt).split())
-        if text:
-            self._cur["options"].append(
-                {"text": text, "group": self._group, "value": self._opt_attrs.get("value"),
-                 "disabled": "disabled" in self._opt_attrs}
-            )
-        self._opt = None
 
 
 def inherit_case_specs(items: list[dict]) -> int:
@@ -291,10 +174,10 @@ def main() -> int:
         body, ctype = Path(args.html).read_bytes(), None
         meta["requests"].append({"url": args.html, "status": "local", "bytes": len(body), "elapsed_s": 0})
     else:
-        robots = fetch(ROBOTS_URL)
+        robots = fetch(ROBOTS_URL, user_agent=USER_AGENT)
         meta["robots_txt"] = robots["body"].decode("utf-8", "replace")[:4000] if robots["status"] == 200 else None
         time.sleep(2)
-        page = fetch(EVALUATE_URL, timeout=60)
+        page = fetch(EVALUATE_URL, timeout=60, user_agent=USER_AGENT)
         for r in (robots, page):
             meta["requests"].append({k: v for k, v in r.items() if k != "body"})
         body, ctype = page["body"], page.get("content_type")

@@ -202,7 +202,7 @@ jobs:
 
       - name: Validate spec catalog and prices
         run: |
-          pip install 'jsonschema==4.26.0'
+          pip install -r requirements.txt
           python schema/validate.py --catalog data/catalog/*.json --prices data/prices/*.json
 
       - name: Setup Node.js

@@ -118,6 +118,8 @@ flowchart TD
 
 ### 2. Workflow
 
+> **實作狀態（2026-10）**：[`.github/workflows/daily-prices.yml`](.github/workflows/daily-prices.yml) 已實作抓取、驗證、提交與失敗開 issue；建置與部署步驟等前端完成後加入。程式在 [`pipeline/`](pipeline/) 與 [`scripts/update_prices.py`](scripts/update_prices.py)；初始規格庫由手動觸發的 [`catalog-bootstrap.yml`](.github/workflows/catalog-bootstrap.yml) 產生並以 PR 送審。下方為完成後的目標樣貌。
+
 ```yaml
 name: Daily price update
 
@@ -151,13 +153,13 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
 
-      - run: pip install -r scripts/requirements.txt
+      - run: pip install -r requirements.txt
 
       # 抓取失敗時不覆寫 offers，改寫 status: stale 並保留上次的 fetched_at；
       # 以 step output 回報，讓後續仍可提交心跳並部署「資料過舊」提示
       - name: Crawl price snapshot
         id: crawl
-        run: python scripts/update_prices.py --vendor coolpc --out data/prices/coolpc.json
+        run: python scripts/update_prices.py --out data/prices/coolpc.json
 
       - name: Validate catalog and prices
         run: python schema/validate.py --catalog data/catalog/*.json --prices data/prices/*.json

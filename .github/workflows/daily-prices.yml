@@ -1,0 +1,76 @@
+name: Daily price update
+
+# 每日抓取原價屋報價 → 對應規格庫 → 驗證 → 提交 data/prices/coolpc.json。
+# 設計見 01-system-architecture-and-data-pipeline.md 第三節。
+# 前端完成後，在本 job 末端加上建置與 actions/deploy-pages：以 GITHUB_TOKEN 推送的提交
+# 不會觸發其他 workflow，報價更新必須在這裡自行部署。
+on:
+  schedule:
+    - cron: '17 3 * * *'  # UTC 03:17 = 台灣 11:17
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 提交報價快照
+  issues: write     # 抓取失敗時開 issue
+
+concurrency:
+  group: daily-prices
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Tests
+        run: python -m unittest discover -s tests -t .
+
+      # 失敗時沿用上次的報價列並標記 status: stale（仍以 0 結束），以 crawl_ok 回報
+      - name: Crawl price snapshot
+        id: crawl
+        run: python scripts/update_prices.py --out data/prices/coolpc.json
+
+      - name: Validate catalog and prices
+        run: |
+          shopt -s nullglob   # 規格庫尚未建立時不傳入字面上的 *.json
+          python schema/validate.py --catalog data/catalog/*.json --prices data/prices/coolpc.json
+
+      # last_attempt_at 每次都會更新，因此每次都有變更可提交，兼作心跳（避免排程因 60 天無活動被停用）
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/prices/coolpc.json
+          git commit -m "chore(data): coolpc price snapshot $(date -u +%F)"
+          for i in 1 2 3; do
+            git pull --rebase --quiet origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
+
+      - name: Open issue when the crawl failed
+        if: steps.crawl.outputs.crawl_ok == 'false' || failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REASON: ${{ steps.crawl.outputs.reason }}
+        run: |
+          gh label create price-crawler --color d93f0b --description "每日報價更新失敗" 2>/dev/null || true
+          existing=$(gh issue list --label price-crawler --state open --json number --jq '.[0].number')
+          if [ -z "$existing" ]; then
+            gh issue create --label price-crawler \
+              --title "每日報價更新失敗 $(date -u +%F)" \
+              --body "原因：${REASON:-workflow 步驟失敗}
+
+          執行紀錄：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          else
+            gh issue comment "$existing" --body "$(date -u +%F) 仍失敗：${REASON:-workflow 步驟失敗}（${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}）"
+          fi
