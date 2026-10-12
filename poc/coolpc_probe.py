@@ -225,6 +225,7 @@ def analyse(html: str, audit_per_category: int = 0) -> dict:
             "combo_rows": sum(1 for i in items if i.get("combo_parts")),
             "combo_kinds": Counter(k for i in items for k in (i.get("combo_parts") or [])).most_common(),
             "inherited": inherited if cat == "case" else 0,
+            "with_gift": sum(1 for i in items if i.get("gift")),
             "with_alt_value": sum(1 for i in items if i.get("gpu_clearance_alt_mm") or i.get("cooler_clearance_alt_mm")),
             "group_coverage": sorted(
                 ((g, len(v), round(sum(1 for i in v if ok(i)) / len(v), 2)) for g, v in by_group.items()),
@@ -232,7 +233,7 @@ def analyse(html: str, audit_per_category: int = 0) -> dict:
             ),
             "value_counts": {
                 f: Counter(str(i.get(f)) for i in items).most_common(10)
-                for f in ("socket", "memory_type", "form_factor", "psu_form", "max_form_factor", "no_igpu")
+                for f in ("socket", "memory_type", "form_factor", "psu_form", "max_form_factor", "igpu")
                 if any(f in i for i in items)
             },
             "samples": items[:SAMPLES_PER_CATEGORY],
@@ -253,7 +254,7 @@ def to_markdown(meta: dict, report: dict | None) -> str:
     if not report:
         return "\n".join(lines) + "\n"
     lines += ["", f"`<select>` 數量：{report['select_count']}", ""]
-    lines.append("| 類別 | 範圍內品項 | 排除 | 組裝/搭機價 | 任搭折抵 | 必要欄位全數擷取（直接 → 含繼承） | 各欄位擷取率 |")
+    lines.append("| 類別 | 範圍內品項 | 排除 | 附條件價 | 任搭折抵 | 必要欄位全數擷取（直接 → 含繼承） | 各欄位擷取率 |")
     lines.append("| :-- | --: | --: | --: | --: | --: | :-- |")
     for cat, c in sorted(report["categories"].items()):
         cov = ", ".join(f"{k} {v:.0%}" for k, v in c["field_coverage"].items()) or "—"
@@ -321,7 +322,7 @@ def main() -> int:
         print(f"## {cat} missing required fields")
         for t in c["missing_samples"]:
             print("  -", t)
-    audit_keys = ("price", "list_price", "combo_discount", "bundle_only", "socket", "no_igpu", "memory_type",
+    audit_keys = ("price", "list_price", "combo_discount", "bundle_only", "gift", "socket", "igpu", "memory_type",
                   "form_factor", "capacity_gb", "length_mm", "height_mm", "radiator_mm", "gpu_clearance_mm",
                   "gpu_clearance_alt_mm", "cooler_clearance_mm", "cooler_clearance_alt_mm", "max_form_factor",
                   "combo_parts", "inherited_from", "wattage", "psu_form")
@@ -329,7 +330,7 @@ def main() -> int:
         for cat, items in report.get("audit", {}).items():
             print(f"\n## AUDIT {cat}")
             for n, i in enumerate(items, 1):
-                vals = {k: i[k] for k in audit_keys if i.get(k) not in (None, False)}
+                vals = {k: i[k] for k in audit_keys if i.get(k) is not None and (i[k] is not False or k == "igpu")}
                 print(f"A {cat} {n:02d} | {json.dumps(vals, ensure_ascii=False)} | [{i['group'][:30]}] {i['text']}")
                 f.write(json.dumps({"category": cat, **i}, ensure_ascii=False) + "\n")
     print("\n## selects")

@@ -25,10 +25,13 @@ _PRICE_RE = re.compile(r"\$\s?(\d{1,3}(?:,\d{3})+|\d+)")
 # 原價屋品名結尾為「…, $現價 ◆ ★」；「原價$X」為原價，「現省$X」為折扣金額
 _LIST_PRICE_RE = re.compile(r"原價\s?\$\s?(\d{1,3}(?:,\d{3})+|\d+)")
 # 不可單買的價格（組裝價 / 搭機價）；「↓任搭290↓」是任意搭配時再折抵，不算限定
-_BUNDLE_RE = re.compile(r"組裝價|搭機價|限搭|搭機|搭購價")
+# 「【任搭主機板】」「*任搭優惠價」也是附條件價格（需同時購買其他零件）
+_BUNDLE_RE = re.compile(r"組裝價|搭機價|限搭|搭機|搭購價|【任搭[^】]*】|任搭優惠價")
+_GIFT_RE = re.compile(r"(?:^|[\s*])送\s?([^,▼◆]+?)(?=▼|,\s*\$|$)")
 _COMBO_RE = re.compile(r"任搭\s?(\d+)")
 _NOT_ALNUM_BEFORE = r"(?<![A-Za-z0-9])"
 _NOT_DIGIT_AFTER = r"(?![0-9])"
+_NOT_ALNUM_AFTER = r"(?![A-Za-z0-9])"  # 「8400F盒」：中文字緊接時 \b 失效
 
 # 各類別下拉選單內混有配件與非消費級產品，以 optgroup / 品名排除（PoC 階段的範圍界定）
 OUT_OF_SCOPE = {
@@ -259,8 +262,22 @@ def model_key(text: str) -> str:
     return re.sub(r"[\s\-_.·]", "", name).upper()
 
 
-def has_no_igpu(text: str) -> bool:
-    return "無內顯" in text or bool(re.search(r"\d{3,5}F\b|\d{4}KF\b", text))
+def extract_igpu(text: str) -> bool | None:
+    """CPU 是否有內顯：True / False / None（品名未說明，需由規格庫補）。
+
+    「無內顯」與 F、KF 型號為 False；「內顯」「UHD」「Xe」「RDNA」與 AMD G 型號為 True。
+    5600X、5800X3D 這類品名沒寫的，回傳 None 而不是猜。
+    """
+    if "無內顯" in text or re.search(r"\d{3,5}K?F" + _NOT_ALNUM_AFTER, text):
+        return False
+    if re.search(r"內顯|UHD|Xe-?core|RDNA|\d{4}G" + _NOT_ALNUM_AFTER, text):
+        return True
+    return None
+
+
+def extract_gift(text: str) -> str | None:
+    m = _GIFT_RE.search(text)
+    return m.group(1).strip() if m else None
 
 
 def is_bundle_only(text: str) -> bool:
@@ -291,9 +308,10 @@ def extract(category: str | None, text: str, group_label: str = "", select_label
     prices = extract_prices(text)
     if prices:
         out.update(prices)
+        out["gift"] = extract_gift(text)
     if category == "cpu":
         out["socket"] = extract_socket(ctx)
-        out["no_igpu"] = has_no_igpu(text)
+        out["igpu"] = extract_igpu(text)
     elif category == "motherboard":
         out["socket"] = extract_socket(ctx)
         out["memory_type"] = extract_memory_type(ctx)
