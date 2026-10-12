@@ -108,5 +108,5 @@
 1. **PoC**：確認 GitHub Actions 能抓到原價屋，並量測品名可自動擷取規格的比例。（第一階段完成：兩項皆成立，詳見 [`poc/README.md`](poc/README.md)；PoC 另外發現組合列、多色 SKU、條件式間隙、任搭折抵等新問題）
 2. 修正 workflow 觸發鏈，加上心跳與失敗通知。
 3. CSP 改為宣告式約束 ＋ 前向檢查 ＋ `unknown` 第三態；補上 PSU 規格、無內顯、扣具。
-4. 規格庫：JSON Schema ＋ CI 驗證，「品名擷取 → 人工確認」流程。
+4. 規格庫：JSON Schema ＋ CI 驗證，「品名擷取 → 人工確認」流程。（schema 已定義，見 [`07-spec-catalog-schema.md`](07-spec-catalog-schema.md)）
 5. 3D 延到 MVP 之後，且只呈現 CSP 結果。

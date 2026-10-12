@@ -29,6 +29,7 @@
 - `spec_extract.py`：品名字串的價格與規格擷取規則（啟發式，擷取不到回傳 `None`，不填預設值）。
 - `test_spec_extract.py`：擷取規則單元測試（字串取自規格文件範例，不代表真實頁面格式）。
 - `AUDIT-2026-10-12.md`：擷取正確率抽樣核對紀錄。
+- `to_catalog.py`：把 `coolpc_probe.py --dump-items` 輸出的品項轉成草稿規格庫與報價檔，並以 [`schema/`](../schema/) 驗證、量測檔案大小。
 - `.github/workflows/poc-coolpc-probe.yml`：推送 `poc/**.py` 時在 Actions 上執行；原始 HTML 以 artifact 保存 7 天，不 commit 進倉庫。
 
 ## 執行
@@ -119,7 +120,7 @@ python poc/coolpc_probe.py --html evaluate.html --out poc/out   # 解析存檔
 - 已完成：
   1. 人工抽樣核對擷取正確率（[紀錄](AUDIT-2026-10-12.md)）；
   2. 機殼簡寫規則與組合列拆解。
+  3. 規格庫 schema（[07-spec-catalog-schema.md](../07-spec-catalog-schema.md)），並以 `to_catalog.py` 把全量品項轉成草稿規格庫驗證通過。
 - 下一步：
-  1. 在預設分支設定每日排程，連續觀察可達性一至兩週；
-  2. 確認 `【WXZ】` 圖例；
-  3. 依核對結論定義規格庫 schema：欄位來源（品名／人工）、近似值標記、條件式間隙、組合品關係、型號與 SKU 兩層。
+  1. 在預設分支設定每日排程，連續觀察可達性與 `offer_id` 跨日穩定性一至兩週；
+  2. 確認 `【WXZ】` 圖例。
