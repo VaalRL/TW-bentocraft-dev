@@ -1,0 +1,8964 @@
+{
+ "schema_version": "1.0",
+ "category": "psu",
+ "models": {
+  "psu:antec:csk550dc-550w": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "CSK550DC(550W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECCSK550DC(550W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:antec:csk650dc-650w": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "CSK650DC(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECCSK650DC(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:antec:csk750dc-750w": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "CSK750DC(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECCSK750DC(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:antec:csk750h-750w": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "CSK750H(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECCSK750H(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:antec:gsk-1000w": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "GSK 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECGSK1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:antec:gsk-750w-v2": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "GSK 750W V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECGSK750WV2"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:antec:gsk-850w-v2": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "GSK 850W V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECGSK850WV2"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:antec:ne1000-1000w-platinum": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "NE1000(1000W) Platinum",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECNE1000(1000W)PLATINUM"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:antec:ne1000g-m-atx3-0-1000w": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "NE1000G M ATX3.0(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECNE1000GMATX30(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:antec:ne1200-1200w-platinum": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "NE1200(1200W) Platinum",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECNE1200(1200W)PLATINUM"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:antec:ne1300g-m-atx3-0-1300w": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "NE1300G M ATX3.0(1300W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECNE1300GMATX30(1300W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1300,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:antec:ne750gm-750w": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "NE750GM(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECNE750GM(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:antec:ne850-850w-platinum": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "NE850(850W) Platinum",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECNE850(850W)PLATINUM"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:antec:ne850gm-850w": {
+   "category": "psu",
+   "brand": "Antec",
+   "name": "NE850GM(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECNE850GM(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:apexgaming:a-550-550w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "A-550(550W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMING(首利)A550(550W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "silver",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:apexgaming:a-650-650w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "A-650(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMING(首利)A650(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "silver",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:apexgaming:a-750-750w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "A-750(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMING(首利)A750(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "silver",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:apexgaming:a-850-850w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "A-850(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMING(首利)A850(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "silver",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:apexgaming:aj-650m-650w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "AJ-650M(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMING(首利)AJ650M(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:apexgaming:gtr-750m-750w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "GTR-750M(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMINGGTR750M(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:apexgaming:gtr-750mw-750w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "GTR-750MW(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMINGGTR750MW(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:apexgaming:gtr-850m-850w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "GTR-850M(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMINGGTR850M(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:apexgaming:gtr-850mw-850w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "GTR-850MW(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMINGGTR850MW(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:apexgaming:gtr-plus-1000m-1000w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "GTR Plus-1000M(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMINGGTRPLUS1000M(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:apexgaming:gtr-plus-1000mw-1000w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "GTR Plus-1000MW(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMINGGTRPLUS1000MW(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:apexgaming:kr-750m-750w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "KR-750M(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMINGKR750M(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:apexgaming:kr-850mw-850w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "KR-850MW(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMINGKR850MW(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:apexgaming:odin-1200w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "ODIN 1200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMING(首利)ODIN1200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:apexgaming:odin-1650w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "ODIN 1650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMING(首利)ODIN1650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:apexgaming:str650mw-650w": {
+   "category": "psu",
+   "brand": "Apexgaming",
+   "name": "STR650MW(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMING(首利)STR650MW(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:asrock:sl-1000g-1000w": {
+   "category": "psu",
+   "brand": "ASRock",
+   "name": "SL-1000G(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ASROCKSL1000G(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "psu:asrock:sl-1000gw-1000w": {
+   "category": "psu",
+   "brand": "ASRock",
+   "name": "SL-1000GW(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ASROCKSL1000GW(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:asrock:sl-750g-750w": {
+   "category": "psu",
+   "brand": "ASRock",
+   "name": "SL-750G(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ASROCKSL750G(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "psu:asrock:sl-850g-850w": {
+   "category": "psu",
+   "brand": "ASRock",
+   "name": "SL-850G(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ASROCKSL850G(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "psu:asrock:sl-850gw-850w": {
+   "category": "psu",
+   "brand": "ASRock",
+   "name": "SL-850GW(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ASROCKSL850GW(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:asus:prime-750w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "PRIME 750W 銅牌 白色版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PRIME750W銅牌"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:pro-ws-2200w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "Pro WS 2200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PROWS2200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 2200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:pro-ws-3000w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "Pro WS 3000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PROWS3000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 3000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:rog-loki-1000w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG LOKI 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGLOKI1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX-L",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:rog-loki-1200w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG LOKI 1200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGLOKI1200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX-L",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "titanium",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:rog-loki-750w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG LOKI 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGLOKI750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX-L",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:rog-loki-850w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG LOKI 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGLOKI850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX-L",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:rog-strix-1000w-equalizer": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX 1000W 白金(Equalizer",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIX1000W金(EQUALIZER"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:rog-strix-1000w-equalizer-90b2": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX 1000W(白色) 白金(Equalizer",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIX1000W()金(EQUALIZER"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:asus:rog-strix-1200w-equalizer": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX 1200W 白金(Equalizer",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIX1200W金(EQUALIZER"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:rog-thor-iii-1000w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG THOR III 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGTHORIII1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:rog-thor-iii-1200w-rog-equalizer": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG THOR III 1200W 白金 ROG Equalizer",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGTHORIII1200W金ROGEQUALIZER"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:rog-thor-iii-1200w-rog-equalizer-c5ea": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG THOR III 1200W(白色) 白金 ROG Equalizer",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGTHORIII1200W()金ROGEQUALIZER"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:asus:rog-thor-iii-evo-1600w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG THOR III EVO 1600W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGTHORIIIEVO1600W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1600,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "titanium",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:tuf-gaming-1000w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING 1000W 白金",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMING1000W金"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:tuf-gaming-1000w-gold": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING 1000W Gold",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMING1000WGOLD"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:tuf-gaming-1000w-gold-evo": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING 1000W Gold EVO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMING1000WGOLDEVO"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:tuf-gaming-1200w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING 1200W 白金",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMING1200W金"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:tuf-gaming-1200w-gold-evo": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING 1200W Gold EVO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMING1200WGOLDEVO"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:tuf-gaming-650w-evo": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING 650W EVO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMING650WEVO"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:tuf-gaming-650w-gold-evo": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING 650W Gold EVO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMING650WGOLDEVO"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:tuf-gaming-750w-evo": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING 750W EVO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMING750WEVO"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:tuf-gaming-750w-gold-evo": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING 750W Gold EVO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMING750WGOLDEVO"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:tuf-gaming-850w": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING 850W 白金",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMING850W金"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:tuf-gaming-850w-gold-evo": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING 850W Gold EVO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMING850WGOLDEVO"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:coolermaster:elite-platinum-1000w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "ELITE PLATINUM 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼ELITEPLATINUM1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:coolermaster:elite-platinum-850w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "ELITE PLATINUM 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼ELITEPLATINUM850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:coolermaster:gx-ii-gold-750w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "GX II GOLD 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼GXIIGOLD750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:coolermaster:mwe-bronze-v2-450w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "MWE BRONZE V2 450W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MWEBRONZEV2450W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 450,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:coolermaster:mwe-gold-v3-550w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "MWE GOLD V3 550W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MWEGOLDV3550W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:coolermaster:mwe-gold-v3-650w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "MWE GOLD V3 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MWEGOLDV3650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:coolermaster:mwe-gold-v3-750w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "MWE GOLD V3 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MWEGOLDV3750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:coolermaster:mwe-gold-v3-850w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "MWE GOLD V3 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MWEGOLDV3850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:coolermaster:mwe-gold-v4-1000w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "MWE GOLD V4 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MWEGOLDV41000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:coolermaster:mwe-gold-v4-850w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "MWE GOLD V4 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MWEGOLDV4850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:coolermaster:v-platinum-v2-1100w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "V Platinum V2 1100W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼VPLATINUMV21100W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1100,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:coolermaster:v-platinum-v2-1300w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "V Platinum V2 1300W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼VPLATINUMV21300W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1300,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:coolermaster:v-platinum-v2-1600w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "V Platinum V2 1600W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼VPLATINUMV21600W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1600,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:coolermaster:v-sfx-gold-850w-atx3-1": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "V SFX GOLD 850W ATX3.1",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼VSFXGOLD850WATX31"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:coolermaster:x-silent-max-platinum-1300w": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "X Silent Max Platinum 1300W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼XSILENTMAXPLATINUM1300W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1300,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:cougar:atlas-550w": {
+   "category": "psu",
+   "brand": "COUGAR",
+   "name": "ATLAS 550W 銅牌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARATLAS550W銅牌"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:cougar:atlas-650w": {
+   "category": "psu",
+   "brand": "COUGAR",
+   "name": "ATLAS 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARATLAS650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:cougar:atlas-750w": {
+   "category": "psu",
+   "brand": "COUGAR",
+   "name": "ATLAS 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARATLAS750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:cougar:gex-pro-850w": {
+   "category": "psu",
+   "brand": "COUGAR",
+   "name": "GEX PRO 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARGEXPRO850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:cougar:gr-1000w": {
+   "category": "psu",
+   "brand": "COUGAR",
+   "name": "GR 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARGR1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:cougar:gr-750w": {
+   "category": "psu",
+   "brand": "COUGAR",
+   "name": "GR 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARGR750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:cougar:gr-850w": {
+   "category": "psu",
+   "brand": "COUGAR",
+   "name": "GR 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARGR850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:cougar:polar-x2-1050w": {
+   "category": "psu",
+   "brand": "COUGAR",
+   "name": "POLAR X2 1050W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARPOLARX21050W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1050,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:cougar:polar-x2-1200w": {
+   "category": "psu",
+   "brand": "COUGAR",
+   "name": "POLAR X2 1200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARPOLARX21200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:cougar:vte-400w": {
+   "category": "psu",
+   "brand": "COUGAR",
+   "name": "VTE 400W 銅牌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARVTE400W銅牌"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 400,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:darkflash:pmt-750w": {
+   "category": "psu",
+   "brand": "darkFlash",
+   "name": "PMT 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DARKFLASHPMT750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:darkflash:pmt-850w": {
+   "category": "psu",
+   "brand": "darkFlash",
+   "name": "PMT 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DARKFLASHPMT850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:deepcool:pk550d-550w": {
+   "category": "psu",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "PK550D(550W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神PK550D(550W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:deepcool:pk650d-650w": {
+   "category": "psu",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "PK650D(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神PK650D(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:deepcool:pn650d-650w": {
+   "category": "psu",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "PN650D(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神PN650D(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:deepcool:pn650m-650w": {
+   "category": "psu",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "PN650M(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神PN650M(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:deepcool:pn750d-750w": {
+   "category": "psu",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "PN750D(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神PN750D(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:deepcool:pn750m-750w": {
+   "category": "psu",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "PN750M(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神PN750M(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:deepcool:pn850d-850w": {
+   "category": "psu",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "PN850D(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神PN850D(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:deepcool:pn850m-850w": {
+   "category": "psu",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "PN850M(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神PN850M(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:deepcool:pn850m-wh-850w": {
+   "category": "psu",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "PN850M WH(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神PN850MWH(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:delta:1100w": {
+   "category": "psu",
+   "brand": "台達 Delta",
+   "name": "超實在 1100W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "台達超實在1100W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1100,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:delta:1100w-5c26": {
+   "category": "psu",
+   "brand": "台達 Delta",
+   "name": "超實在 1100W 白金",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "台達超實在1100W金"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1100,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:delta:550w": {
+   "category": "psu",
+   "brand": "台達 Delta",
+   "name": "550W 銅牌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "台達550W銅牌"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:delta:650w": {
+   "category": "psu",
+   "brand": "台達 Delta",
+   "name": "650W 銅牌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "台達650W銅牌"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:delta:650w-12d1": {
+   "category": "psu",
+   "brand": "台達 Delta",
+   "name": "650W 金牌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "台達650W金牌"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:delta:850w": {
+   "category": "psu",
+   "brand": "台達 Delta",
+   "name": "超實在 850W 金牌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "台達超實在850W金牌"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:enermax:cyberbron-ii-700w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "Cyberbron II 700W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳CYBERBRONII700W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 700,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:enermax:cyberg-ii-650w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "CyberG II 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳CYBERGII650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:enermax:cyberg-ii-750w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "CyberG II 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳CYBERGII750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:enermax:cyberg-ii-850w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "CyberG II 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳CYBERGII850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:enermax:eb450-c-450w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "EB450-C 450W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳EB450C450W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 450,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:enermax:eb550-c-550w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "EB550-C 550W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳EB550C550W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:enermax:eb650-c-650w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "EB650-C 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳EB650C650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:enermax:platigemini-1200w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "PlatiGemini 1200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳PLATIGEMINI1200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:enermax:platimaxii-1200df-1200w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "PlatimaxII 1200DF(1200W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳PLATIMAXII1200DF(1200W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:enermax:revolution-iii-1000w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "Revolution III 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳REVOLUTIONIII1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:enermax:revolution-iii-650w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "Revolution III 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳REVOLUTIONIII650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:enermax:revolution-iii-750w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "Revolution III 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳REVOLUTIONIII750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:enermax:revolution-iii-850w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "Revolution III 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳REVOLUTIONIII850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:enermax:revolution-iii-s-1000w": {
+   "category": "psu",
+   "brand": "保銳 ENERMAX",
+   "name": "Revolution III S 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳REVOLUTIONIIIS1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:fsp:650w": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "金鋼彈 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢金鋼彈650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:750w-atx3-1-pcie-5-1": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "金鋼彈 750W ATX3.1(PCIe 5.1)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢金鋼彈750WATX31(PCIE51)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:850w-atx3-0-pcie-5-0": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "金鋼彈 850W ATX3.0(PCIe 5.0)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢金鋼彈850WATX30(PCIE50)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:fsp:850w-atx3-1-pcie-5-1": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "金鋼彈 850W ATX3.1(PCIe 5.1)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢金鋼彈850WATX31(PCIE51)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:cannon-pro-2500w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "CANNON PRO 2500W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢CANNONPRO2500W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 2500,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:dagger-pm-1200w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "DAGGER PM 1200W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢DAGGERPM1200W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX-L",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:hexa-85-pro-gen5-750w": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "HEXA 85+ PRO GEN5 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢HEXA85+PROGEN5750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:hydro-g-pro-1200w-atx3-0-pcie-5-0": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "HYDRO G PRO 1200W ATX3.0(PCIe 5.0)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢HYDROGPRO1200WATX30(PCIE50)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:mega-gm-1000w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "MEGA GM 1000W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢MEGAGM1000W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:mega-gm-1200w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "MEGA GM 1200W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢MEGAGM1200W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:mega-gm-850w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "MEGA GM 850W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢MEGAGM850W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:mega-ti-1350w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "MEGA TI 1350W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢MEGATI1350W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1350,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "titanium",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:mega-ti-1650w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "MEGA TI 1650W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢MEGATI1650W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "titanium",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vic-bd-550w": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VIC BD+ 550W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VICBD+550W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vic-bd-650w": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VIC BD+ 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VICBD+650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vic-gd-650w": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VIC GD 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VICGD650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vic-gm-850w": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VIC GM 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VICGM850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vita-gd-750w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VITA GD 750W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VITAGD750W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vita-gd-850w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VITA GD 850W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VITAGD850W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vita-gm-1000w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VITA GM 1000W(MIT) 白色版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VITAGM1000W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vita-gm-650w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VITA GM 650W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VITAGM650W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vita-gm-750w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VITA GM 750W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VITAGM750W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vita-gm-850w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VITA GM 850W(MIT) 白色版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VITAGM850W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vita-pm-1000w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VITA PM 1000W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VITAPM1000W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vita-pm-750w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VITA PM 750W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VITAPM750W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:fsp:vita-pm-850w-mit": {
+   "category": "psu",
+   "brand": "全漢 FSP",
+   "name": "VITA PM 850W(MIT)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢VITAPM850W(MIT)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:gigabyte:aorus-elite-1000w": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS ELITE 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSELITE1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:gigabyte:aorus-elite-1000w-ice": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS ELITE 1000W ICE(白色)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSELITE1000WICE()"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:gigabyte:gaming-1000gm-pg5-1000w": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "GAMING 1000GM PG5(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉GAMING1000GMPG5(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:gigabyte:p550b-550w": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "P550B(550W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉P550B(550W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:gigabyte:p650g-pg5-650w": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "P650G PG5(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉P650GPG5(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:gigabyte:ud1000gm-pg5-v2-1000w": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "UD1000GM PG5 V2(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉UD1000GMPG5V2(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:gigabyte:ud1000gm-pg5-v2-ice-1000w": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "UD1000GM PG5 V2 ICE(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉UD1000GMPG5V2ICE(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:gigabyte:ud1600pm-pg5-1600w": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "UD1600PM PG5(1600W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉UD1600PMPG5(1600W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1600,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:gigabyte:ud750gm-pg5-v2-750w": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "UD750GM PG5 V2(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉UD750GMPG5V2(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:gigabyte:ud750gm-pg5-v2-ice-750w": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "UD750GM PG5 V2 ICE(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉UD750GMPG5V2ICE(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:gigabyte:ud850gm-pg5-v2-850w": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "UD850GM PG5 V2(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉UD850GMPG5V2(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:gigabyte:ud850gm-pg5-v2-ice-850w": {
+   "category": "psu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "UD850GM PG5 V2 ICE(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉UD850GMPG5V2ICE(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:lian-li:rs1000g-1000w": {
+   "category": "psu",
+   "brand": "聯力 Lian Li",
+   "name": "RS1000G(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力RS1000G(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "psu:lian-li:rs1200g-1200w": {
+   "category": "psu",
+   "brand": "聯力 Lian Li",
+   "name": "RS1200G(1200W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力RS1200G(1200W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:montech:beta-2-550w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "BETA 2 550W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHBETA2550W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:beta-2-650w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "BETA 2 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHBETA2650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:beta-2-750w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "BETA 2 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHBETA2750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:beta-2-850w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "BETA 2 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHBETA2850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:century-ii-1050w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "CENTURY II 1050W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHCENTURYII1050W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1050,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:century-ii-1200w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "CENTURY II 1200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHCENTURYII1200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:century-ii-650w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "CENTURY II 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHCENTURYII650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:century-ii-850w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "CENTURY II 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHCENTURYII850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:gamma-3-650w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "GAMMA 3 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHGAMMA3650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:gamma-3-750w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "GAMMA 3 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHGAMMA3750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:gamma-3-850w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "GAMMA 3 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHGAMMA3850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:titan-gold-1200w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "TITAN GOLD 1200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHTITANGOLD1200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:titan-gold-750w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "TITAN GOLD 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHTITANGOLD750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:montech:titan-pla-1000w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "TITAN PLA 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHTITANPLA1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:montech:titan-pla-1200w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "TITAN PLA 1200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHTITANPLA1200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:montech:titan-pla-750w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "TITAN PLA 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHTITANPLA750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:montech:titan-pla-850w": {
+   "category": "psu",
+   "brand": "Montech",
+   "name": "TITAN PLA 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHTITANPLA850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:msi:mag-a1000gl-pcie5-1000w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A1000GL PCIE5 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA1000GLPCIE51000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:msi:mag-a1000pls-pcie5-1000w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A1000PLS PCIE5 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA1000PLSPCIE51000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:msi:mag-a550bn-550w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A550BN 550W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA550BN550W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:msi:mag-a650bn-650w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A650BN 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA650BN650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:msi:mag-a650bnl-white-650w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A650BNL WHITE 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA650BNLWHITE650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:msi:mag-a650gl-650w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A650GL 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA650GL650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:msi:mag-a750bn-pcie5-iii-750w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A750BN PCIE5 III 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA750BNPCIE5III750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:msi:mag-a750gl-pcie5-750w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A750GL PCIE5 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA750GLPCIE5750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:msi:mag-a750gls-pcie5-750w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A750GLS PCIE5 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA750GLSPCIE5750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:msi:mag-a850gl-pcie5-white-850w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A850GL PCIE5 WHITE 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA850GLPCIE5WHITE850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:msi:mpg-ai1300ts-pcie5-1300w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MPG Ai1300TS PCIE5 1300W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MPGAI1300TSPCIE51300W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1300,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "titanium",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:msi:mpg-ai1600ts-pcie5-1600w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MPG Ai1600TS PCIE5 1600W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MPGAI1600TSPCIE51600W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1600,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "titanium",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:msi:pro-a1000pl-pcie5-1000w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "PRO A1000PL PCIE5 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星PROA1000PLPCIE51000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:msi:pro-a850pl-pcie5-850w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "PRO A850PL PCIE5 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星PROA850PLPCIE5850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:nzxt:c1000-1000w-atx3-1": {
+   "category": "psu",
+   "brand": "NZXT",
+   "name": "C1000(1000W) ATX3.1",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTC1000(1000W)ATX31"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:nzxt:c1200-1200w-atx3-1": {
+   "category": "psu",
+   "brand": "NZXT",
+   "name": "C1200(1200W) ATX3.1",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTC1200(1200W)ATX31"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "psu:nzxt:c1500-1500w-atx3-1": {
+   "category": "psu",
+   "brand": "NZXT",
+   "name": "C1500(1500W) ATX3.1",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTC1500(1500W)ATX31"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1500,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:nzxt:c750-750w": {
+   "category": "psu",
+   "brand": "NZXT",
+   "name": "C750(750W) 銅牌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTC750(750W)銅牌"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:nzxt:c850-850w-atx3-1": {
+   "category": "psu",
+   "brand": "NZXT",
+   "name": "C850(850W) ATX3.1",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTC850(850W)ATX31"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:nzxt:c850-850w-core": {
+   "category": "psu",
+   "brand": "NZXT",
+   "name": "C850(850W) CORE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTC850(850W)CORE"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "psu:seasonic:core-gx-650-atx3-650w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "CORE GX-650 ATX3(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻COREGX650ATX3(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:core-gx-750-atx3-750w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "CORE GX-750 ATX3(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻COREGX750ATX3(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:core-gx-850-atx3-850w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "CORE GX-850 ATX3(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻COREGX850ATX3(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:focus-gx-1000-atx3-1000w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "FOCUS GX-1000 ATX3(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻FOCUSGX1000ATX3(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:focus-gx-550-550w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "FOCUS GX-550(550W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻FOCUSGX550(550W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:focus-gx-650-650w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "FOCUS GX-650(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻FOCUSGX650(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:focus-gx-750-750w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "FOCUS GX-750(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻FOCUSGX750(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:focus-gx-750-atx3-750w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "FOCUS GX-750 ATX3(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻FOCUSGX750ATX3(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:focus-gx-850-850w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "FOCUS GX-850(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻FOCUSGX850(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:focus-gx-850-atx3-850w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "FOCUS GX-850 ATX3(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻FOCUSGX850ATX3(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:focus-px-1000-atx3-1-1000w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "FOCUS PX-1000 ATX3.1(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻FOCUSPX1000ATX31(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:focus-px-850-atx3-1-850w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "FOCUS PX-850 ATX3.1(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻FOCUSPX850ATX31(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:prime-px-1600-atx3-0-1600w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "PRIME PX-1600 ATX3.0(1600W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻PRIMEPX1600ATX30(1600W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1600,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:prime-px-2200-atx3-2200w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "PRIME PX-2200 ATX3(2200W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻PRIMEPX2200ATX3(2200W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 2200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:prime-tx-1300-atx3-1300w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "PRIME TX-1300 ATX3(1300W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻PRIMETX1300ATX3(1300W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1300,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "titanium",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:prime-tx-1600-atx3-1600w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "PRIME TX-1600 ATX3(1600W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻PRIMETX1600ATX3(1600W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1600,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "titanium",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:s12iii-500w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "S12III-500W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻S12III500W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 500,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:s12iii-550w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "S12III-550W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻S12III550W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:s12iii-650w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "S12III-650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻S12III650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:vertex-gx-1200-1200w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "VERTEX GX-1200(1200W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻VERTEXGX1200(1200W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:seasonic:vertex-px-1200-1200w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "VERTEX PX-1200(1200W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻VERTEXPX1200(1200W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:silverstone:attis-650r-650w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "ATTIS 650R(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣ATTIS650R(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:silverstone:attis-750r-750w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "ATTIS 750R(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣ATTIS750R(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "psu:silverstone:da750r-gold-750w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "DA750R Gold(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣DA750RGOLD(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:silverstone:da850r-gold-850w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "DA850R Gold(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣DA850RGOLD(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:silverstone:et450-b-450w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "ET450-B(450W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣ET450B(450W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 450,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:silverstone:et650-b-650w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "ET650-B(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣ET650B(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:silverstone:extreme-550rz-550w-gold": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "Extreme 550Rz(550W) Gold",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣EXTREME550RZ(550W)GOLD"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:silverstone:extreme-650rz-650w-gold": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "Extreme 650Rz(650W) Gold",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣EXTREME650RZ(650W)GOLD"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:silverstone:hela-850r-platinum-850w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "HELA 850R Platinum(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣HELA850RPLATINUM(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:silverstone:st30sf-300w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "ST30SF 300W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣ST30SF300W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 300,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:silverstone:st45sf-450w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "ST45SF 450W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣ST45SF450W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 450,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "SFX",
+     "source": "title"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:silverstone:triton-650rx-650w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "Triton 650Rx(650W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣TRITON650RX(650W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:silverstone:triton-750rx-750w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "Triton 750Rx(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣TRITON750RX(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:silverstone:triton-850rx-850w": {
+   "category": "psu",
+   "brand": "銀欣 SilverStone",
+   "name": "Triton 850Rx(850W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣TRITON850RX(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:bronze-king-ii-400w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "BRONZE KING II 400W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華BRONZEKINGII400W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 400,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:bronze-king-ii-500w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "BRONZE KING II 500W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華BRONZEKINGII500W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 500,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:bronze-king-ii-plus-650w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "BRONZE KING II PLUS 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華BRONZEKINGIIPLUS650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:combat-dg-1000w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "COMBAT DG 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華COMBATDG1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:combat-dg-750w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "COMBAT DG 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華COMBATDG750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:combat-fg-650w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "COMBAT FG 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華COMBATFG650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:superflower:combat-fg-850w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "COMBAT FG 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華COMBATFG850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:superflower:combat-sg-plus-550w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "COMBAT SG PLUS 550W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華COMBATSGPLUS550W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:combat-sg-plus-650w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "COMBAT SG PLUS 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華COMBATSGPLUS650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:combat-sg-plus-850w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "COMBAT SG PLUS 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華COMBATSGPLUS850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:leadex-iii-1000w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX III 1000W 金牌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXIII1000W金牌"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:leadex-iii-1000w-7c5b": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX III 1000W 白金",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXIII1000W金"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:leadex-iii-1300w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX III 1300W 白金",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXIII1300W金"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1300,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:leadex-iii-750w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX III 750W(黑色) 白金",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXIII750W()金"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:superflower:leadex-iii-850w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX III 850W 金牌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXIII850W金牌"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:leadex-iii-850w-27fb": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX III 850W(黑色) 白金",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXIII850W()金"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "psu:superflower:leadex-titanium-2800w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX Titanium 2800W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXTITANIUM2800W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 2800,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "titanium",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:superflower:leadex-vii-pro-1200w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX VII PRO 1200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXVIIPRO1200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:superflower:leadex-vii-pro-850w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX VII PRO 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXVIIPRO850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:thermaltake:toughpower-gf-a3-750w": {
+   "category": "psu",
+   "brand": "曜越 Thermaltake",
+   "name": "Toughpower GF A3 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "曜越TOUGHPOWERGFA3750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:thermaltake:toughpower-gf-a3-850w": {
+   "category": "psu",
+   "brand": "曜越 Thermaltake",
+   "name": "Toughpower GF A3 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "曜越TOUGHPOWERGFA3850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:thermaltake:toughpower-gf3-1350w-atx3-0-pcie-5-0": {
+   "category": "psu",
+   "brand": "曜越 Thermaltake",
+   "name": "Toughpower GF3 1350W ATX3.0(PCIe 5.0)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "曜越TOUGHPOWERGF31350WATX30(PCIE50)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1350,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:core-pylon-ii-550w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "CORE PYLON II 550W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGCOREPYLONII550W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 550,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:core-pylon-ii-650w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "CORE PYLON II 650W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGCOREPYLONII650W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 650,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:core-pylon-ii-750w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "CORE PYLON II 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGCOREPYLONII750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:core-reactor-ii-1000w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "CORE REACTOR II 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGCOREREACTORII1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:core-reactor-ii-1200w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "CORE REACTOR II 1200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGCOREREACTORII1200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:core-reactor-ii-750w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "CORE REACTOR II 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGCOREREACTORII750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:core-reactor-ii-850w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "CORE REACTOR II 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGCOREREACTORII850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:xpg:core-reactor-ii-ve-750w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "CORE REACTOR II VE 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGCOREREACTORIIVE750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:core-reactor-ii-ve-850w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "CORE REACTOR II VE 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGCOREREACTORIIVE850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:core-shift-ii-ve-750w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "CORE SHIFT II VE 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGCORESHIFTIIVE750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:core-shift-ii-ve-850w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "CORE SHIFT II VE 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGCORESHIFTIIVE850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:fusion-1600w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "FUSION 1600W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGFUSION1600W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1600,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "titanium",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:kyber-ii-750w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "KYBER II 750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGKYBERII750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:xpg:kyber-ii-850w": {
+   "category": "psu",
+   "brand": "XPG",
+   "name": "KYBER II 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGKYBERII850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  }
+ }
+}

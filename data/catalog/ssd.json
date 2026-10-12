@@ -1,0 +1,3946 @@
+{
+ "schema_version": "1.0",
+ "category": "ssd",
+ "models": {
+  "ssd:acer:fa200-2tb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "FA200 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERFA2002TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:fa200-4tb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "FA200 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERFA2004TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:predator-gm7-1tb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "Predator GM7 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERPREDATORGM71TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:predator-gm7-2tb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "Predator GM7 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERPREDATORGM72TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:predator-gm7-4tb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "Predator GM7 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERPREDATORGM74TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:predator-gm7-512gb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "Predator GM7 512GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERPREDATORGM7512GB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 512,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:predator-gm7000-2tb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "Predator GM7000 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERPREDATORGM70002TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:predator-gm9-1tb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "Predator GM9 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERPREDATORGM91TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:predator-gm9-2tb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "Predator GM9 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERPREDATORGM92TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:predator-gm9000-1tb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "Predator GM9000 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERPREDATORGM90001TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:re100-1tb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "RE100 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERRE1001TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:re100-256gb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "RE100 256GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERRE100256GB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 256,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:re100-2tb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "RE100 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERRE1002TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:acer:re100-512gb": {
+   "category": "ssd",
+   "brand": "宏碁 Acer",
+   "name": "RE100 512GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "宏碁｛ACERRE100512GB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 512,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:legend-710-512g": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "LEGEND 710 512G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛ADATALEGEND710512G｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie3",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 512,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:legend-860-1tb": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "LEGEND 860 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛ADATALEGEND8601TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:legend-860-2tb": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "LEGEND 860 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛ADATALEGEND8602TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:legend-860-500gb": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "LEGEND 860 500GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛ADATALEGEND860500GB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 500,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:legend-900-1tb": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "LEGEND 900 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛ADATALEGEND9001TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:legend-900-2tb": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "LEGEND 900 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛ADATALEGEND9002TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:legend-900-512gb": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "LEGEND 900 512GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛ADATALEGEND900512GB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 512,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:ultimate-su650-240g": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "Ultimate SU650 240G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛ULTIMATESU650240G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 240,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:ultimate-su650-480g": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "Ultimate SU650 480G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛ULTIMATESU650480G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 480,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:xpg-mars-980blade-1tb": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "XPG MARS 980Blade 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛XPGMARS980BLADE1TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:xpg-mars-980blade-2tb": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "XPG MARS 980Blade 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛XPGMARS980BLADE2TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:xpg-mars-980blade-4tb": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "XPG MARS 980Blade 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛XPGMARS980BLADE4TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:xpg-s70-blade-1t": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "XPG S70 BLADE 1T",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛XPGS70BLADE1T｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:xpg-s70-blade-2t": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "XPG S70 BLADE 2T",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛XPGS70BLADE2T｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:adata:xpg-s70-blade-512g": {
+   "category": "ssd",
+   "brand": "威剛 ADATA",
+   "name": "XPG S70 BLADE 512G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛｛XPGS70BLADE512G｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 512,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:biwin:m350-4tb": {
+   "category": "ssd",
+   "brand": "Biwin",
+   "name": "佰維 M350 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維M3504TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:biwin:nv3500-1tb": {
+   "category": "ssd",
+   "brand": "Biwin",
+   "name": "佰維 NV3500 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維｛NV35001TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie3",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:biwin:nv3500-512g": {
+   "category": "ssd",
+   "brand": "Biwin",
+   "name": "佰維 NV3500 512G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維｛NV3500512G｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie3",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 512,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:biwin:nv7400-1tb": {
+   "category": "ssd",
+   "brand": "Biwin",
+   "name": "佰維 NV7400 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維NV74001TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:biwin:nv7400-2tb": {
+   "category": "ssd",
+   "brand": "Biwin",
+   "name": "佰維 NV7400 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維NV74002TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:biwin:nv7400-4tb": {
+   "category": "ssd",
+   "brand": "Biwin",
+   "name": "佰維 NV7400 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維NV74004TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:biwin:x570-1tb": {
+   "category": "ssd",
+   "brand": "Biwin",
+   "name": "佰維 X570 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維X5701TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:biwin:x570-2tb": {
+   "category": "ssd",
+   "brand": "Biwin",
+   "name": "佰維 X570 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維X5702TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:biwin:x570-4tb": {
+   "category": "ssd",
+   "brand": "Biwin",
+   "name": "佰維 X570 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維X5704TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:biwin:x570-pro-1tb": {
+   "category": "ssd",
+   "brand": "Biwin",
+   "name": "佰維X570 PRO 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維X570PRO1TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:biwin:x570-pro-2tb": {
+   "category": "ssd",
+   "brand": "Biwin",
+   "name": "佰維X570 PRO 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維X570PRO2TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:corsair:mp600-micro-1tb": {
+   "category": "ssd",
+   "brand": "海盜船 CORSAIR",
+   "name": "MP600 MICRO 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海盜船CORSAIRMP600MICRO1TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "m2-2242",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:corsair:mp600-micro-2tb": {
+   "category": "ssd",
+   "brand": "海盜船 CORSAIR",
+   "name": "MP600 MICRO 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海盜船CORSAIRMP600MICRO2TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "m2-2242",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:corsair:mp600-mini-1tb": {
+   "category": "ssd",
+   "brand": "海盜船 CORSAIR",
+   "name": "MP600 MINI 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海盜船CORSAIRMP600MINI1TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "m2-2230",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:corsair:mp600-mini-2tb": {
+   "category": "ssd",
+   "brand": "海盜船 CORSAIR",
+   "name": "MP600 MINI 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海盜船CORSAIRMP600MINI2TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "m2-2230",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:a400-240g": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "A400 240G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓A400240G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 240,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:a400-480g": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "A400 480G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓A400480G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 480,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:a400-960g": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "A400 960G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓A400960G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 960,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:fury-renegade-g5-1tb": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "FURY Renegade G5 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓FURYRENEGADEG51TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:fury-renegade-g5-2tb": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "FURY Renegade G5 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓FURYRENEGADEG52TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:fury-renegade-g5-4tb": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "FURY Renegade G5 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓FURYRENEGADEG54TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:kc3000-1tb": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "KC3000 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓KC30001TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:kc3000-2tb": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "KC3000 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓KC30002TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:kc3000-4tb": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "KC3000 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓KC30004TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:kc3000-512g": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "KC3000 512G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓KC3000512G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 512,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:nv3-1tb": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "NV3 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓NV31TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:nv3-2tb": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "NV3 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓NV32TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:nv3-4tb": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "NV3 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓NV34TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:nv3-500g": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "NV3 500G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓NV3500G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 500,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:nv3sm-1tb": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "NV3SM 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓NV3SM1TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "m2-2230",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:nv3sm-2tb": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "NV3SM 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓NV3SM2TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "m2-2230",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:nv3sm-500g": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "NV3SM 500G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓NV3SM500G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "m2-2230",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 500,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:skc600-1024g": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "SKC600 1024G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓SKC6001024G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1024,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:skc600-2048g": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "SKC600 2048G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓SKC6002048G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2048,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:skc600-256g": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "SKC600 256G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓SKC600256G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 256,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kingston:skc600-512g": {
+   "category": "ssd",
+   "brand": "金士頓 Kingston",
+   "name": "SKC600 512G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓SKC600512G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 512,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kioxia:exceria-basic-1tb": {
+   "category": "ssd",
+   "brand": "鎧俠 KIOXIA",
+   "name": "EXCERIA BASIC 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鎧俠｛KIOXIAEXCERIABASIC1TB｝PCIE40讀7200"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kioxia:exceria-basic-2tb": {
+   "category": "ssd",
+   "brand": "鎧俠 KIOXIA",
+   "name": "EXCERIA BASIC 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鎧俠｛KIOXIAEXCERIABASIC2TB｝PCIE40讀7300"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kioxia:exceria-g3-1tb": {
+   "category": "ssd",
+   "brand": "鎧俠 KIOXIA",
+   "name": "EXCERIA G3 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鎧俠｛KIOXIAEXCERIAG31TB｝PCIE50讀10000"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kioxia:exceria-g3-2tb": {
+   "category": "ssd",
+   "brand": "鎧俠 KIOXIA",
+   "name": "EXCERIA G3 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鎧俠｛KIOXIAEXCERIAG32TB｝PCIE50讀10000"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kioxia:exceria-plus-g3-2tb": {
+   "category": "ssd",
+   "brand": "鎧俠 KIOXIA",
+   "name": "EXCERIA PLUS G3 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鎧俠｛KIOXIAEXCERIAPLUSG32TB｝PCIE40讀5000"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kioxia:exceria-plus-g4-2tb": {
+   "category": "ssd",
+   "brand": "鎧俠 KIOXIA",
+   "name": "EXCERIA PLUS G4 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鎧俠｛KIOXIAEXCERIAPLUSG42TB｝GEN5PCIE50讀10000"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kioxia:exceria-pro-g2-1tb": {
+   "category": "ssd",
+   "brand": "鎧俠 KIOXIA",
+   "name": "EXCERIA PRO G2 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鎧俠｛KIOXIAEXCERIAPROG21TB｝GEN5PCIE50讀14400"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:kioxia:exceria-pro-g2-2tb": {
+   "category": "ssd",
+   "brand": "鎧俠 KIOXIA",
+   "name": "EXCERIA PRO G2 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鎧俠｛KIOXIAEXCERIAPROG22TB｝GEN5PCIE50讀14900"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:klevv:cras-c930-2tb": {
+   "category": "ssd",
+   "brand": "KLEVV",
+   "name": "CRAS C930 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVVCRASC9302TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-bx500-1tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial BX500 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛BX5001TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-bx500-240g": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial BX500 240G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛BX500240G｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 240,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-bx500-4tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial BX500 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛BX5004TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-p310-2tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial P310 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛P3102TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-p310-2tb-f0c2": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial P310 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛P3102TB｝含散熱片"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-p310-4tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial P310 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛P3104TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-p310-4tb-7d3f": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial P310 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛P3104TB｝含散熱片"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-p510-1tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial P510 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛P5101TB｝含散熱片GEN5PCIE50讀11000"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-p510-2tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial P510 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛P5102TB｝GEN5PCIE50讀11000"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-p510-2tb-a2cf": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial P510 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛P5102TB｝含散熱片GEN5PCIE50讀11000"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t500-1tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T500 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T5001TB｝含散熱片"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t500-4tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T500 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T5004TB｝含散熱片"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t705-1tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T705 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T7051TB｝含散熱片GEN5PCIE50讀13000"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t705-2tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T705 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T7052TB｝GEN5PCIE50讀14500"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t705-2tb-1164": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T705 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T7052TB｝含散熱片GEN5PCIE50讀14500"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t705-4tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T705 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T7054TB｝GEN5PCIE50讀14100"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t705-4tb-233b": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T705 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T7054TB｝含散熱片GEN5PCIE50讀14100"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t710-1tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T710 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T7101TB｝GEN5PCIE50讀14900"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t710-1tb-335f": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T710 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T7101TB｝含散熱片GEN5PCIE50讀14900"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t710-2tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T710 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T7102TB｝含散熱片GEN5PCIE50讀14500"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t710-4tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T710 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T7104TB｝GEN5PCIE50讀14500"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:crucial-t710-4tb-f876": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial T710 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛T7104TB｝含散熱片GEN5PCIE50讀14500"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:micron:e100-2tb": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "E100 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRON｛E1002TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:msi:m470pro-1tb": {
+   "category": "ssd",
+   "brand": "MSI",
+   "name": "微星 M470PRO 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MSI微星｛M470PRO1TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:msi:m470pro-2tb": {
+   "category": "ssd",
+   "brand": "MSI",
+   "name": "微星 M470PRO 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MSI微星｛M470PRO2TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:msi:m480pro-1tb": {
+   "category": "ssd",
+   "brand": "MSI",
+   "name": "微星 M480PRO 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MSI微星｛M480PRO1TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:msi:m480pro-2tb": {
+   "category": "ssd",
+   "brand": "MSI",
+   "name": "微星 M480PRO 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MSI微星｛M480PRO2TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:msi:m480pro-4tb": {
+   "category": "ssd",
+   "brand": "MSI",
+   "name": "微星 M480PRO 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MSI微星｛M480PRO4TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:msi:spatium-m560-1tb": {
+   "category": "ssd",
+   "brand": "微星 MSI",
+   "name": "SPATIUM M560 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星｛SPATIUMM5601TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:msi:spatium-m560-2tb": {
+   "category": "ssd",
+   "brand": "微星 MSI",
+   "name": "SPATIUM M560 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星｛SPATIUMM5602TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:870-evo-1tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "870 EVO 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛870EVO1TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:870-evo-2tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "870 EVO 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛870EVO2TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:870-evo-4tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "870 EVO 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛870EVO4TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:870-evo-500g": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "870 EVO 500G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛870EVO500G｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 500,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:870-evo-8tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "870 EVO 8TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛870EVO8TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 8000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:870-qvo-8tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "870 QVO 8TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛870QVO8TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 8000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:9100-pro-1tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "9100 PRO 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛9100PRO1TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:9100-pro-1tb-7254": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "9100 PRO 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛9100PRO1TB｝含散熱片"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:9100-pro-2tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "9100 PRO 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛9100PRO2TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:9100-pro-2tb-b6cc": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "9100 PRO 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛9100PRO2TB｝含散熱片"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:9100-pro-4tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "9100 PRO 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛9100PRO4TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:9100-pro-4tb-ccd0": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "9100 PRO 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛9100PRO4TB｝含散熱片"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:9100-pro-8tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "9100 PRO 8TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛9100PRO8TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 8000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:9100-pro-8tb-c4cd": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "9100 PRO 8TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛9100PRO8TB｝含散熱片"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 8000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:990-evo-plus-1tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "990 EVO Plus 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛990EVOPLUS1TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:990-evo-plus-2tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "990 EVO Plus 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛990EVOPLUS2TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:990-evo-plus-4tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "990 EVO Plus 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛990EVOPLUS4TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:990-pro-1tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "990 PRO 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛990PRO1TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:990-pro-1tb-124e": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "990 PRO 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛990PRO1TB｝含散熱片"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:990-pro-2tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "990 PRO 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛990PRO2TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:990-pro-4tb": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "990 PRO 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛990PRO4TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:990-pro-4tb-9e0c": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "990 PRO 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛990PRO4TB｝含散熱片"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:teamgroup:t-force-gc-pro": {
+   "category": "ssd",
+   "brand": "十銓 TEAMGROUP",
+   "name": "T-Force GC PRO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "十銓TFORCEGCPRO"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:teamgroup:t-force-vulcan-z-z-256g": {
+   "category": "ssd",
+   "brand": "十銓 TEAMGROUP",
+   "name": "T-Force Vulcan Z 火神Z 256G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "十銓TFORCEVULCANZ火神Z256G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 256,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:umax:s330-240gb": {
+   "category": "ssd",
+   "brand": "UMAX",
+   "name": "S330 240GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAXS330240GB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 240,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:umax:s330-480gb": {
+   "category": "ssd",
+   "brand": "UMAX",
+   "name": "S330 480GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAXS330480GB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 480,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:unknown:wd-sn8100-2tb-gen5-pcie-5-0-14900": {
+   "category": "ssd",
+   "brand": "unknown",
+   "name": "｛WD 黑標 SN8100 2TB/Gen5 PCIe 5.0/讀14900/寫",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "｛WD標SN81002TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:wd:blue-sa510-1tb": {
+   "category": "ssd",
+   "brand": "WD",
+   "name": "Blue SA510 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "WDBLUE｛SA5101TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:wd:blue-sa510-4tb": {
+   "category": "ssd",
+   "brand": "WD",
+   "name": "Blue SA510 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "WDBLUE｛SA5104TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:wd:blue-sa510-500gb": {
+   "category": "ssd",
+   "brand": "WD",
+   "name": "Blue SA510 500GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "WDBLUE｛SA510500GB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 500,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:wd:sn5100-1tb": {
+   "category": "ssd",
+   "brand": "WD",
+   "name": "藍標 SN5100 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "WD標｛SN51001TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:wd:sn5100-500gb": {
+   "category": "ssd",
+   "brand": "WD",
+   "name": "藍標 SN5100 500GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "WD標｛SN5100500GB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 500,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:wd:sn850x-1tb": {
+   "category": "ssd",
+   "brand": "WD",
+   "name": "黑標 SN850X 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "WD標｛SN850X1TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:wd:sn850x-2tb": {
+   "category": "ssd",
+   "brand": "WD",
+   "name": "黑標 SN850X 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "WD標｛SN850X2TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:e7-1tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "小翼e7 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態小翼E71TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:e7-500gb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "小翼e7 500GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態小翼E7500GB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 500,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:s001-1tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "致態小翼 S001 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAI致態小翼S0011TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:s001-500gb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "致態小翼 S001 500GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAI致態小翼S001500GB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "sata",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "2.5in",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 500,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:ti600-1tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "Ti600 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITI6001TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:ti600-2tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "Ti600 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITI6002TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:ti600-4tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "Ti600 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITI6004TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:ti600-500g": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "Ti600 500G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITI600500G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 500,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:ti600s-1024g": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "Ti600s 1024G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITI600S1024G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1024,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:ti600s-2048g": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "Ti600s 2048G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITI600S2048G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2048,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:ti600s-4096g": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "Ti600s 4096G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITI600S4096G"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4096,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:tiplus-9100-1tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "TiPlus 9100 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITIPLUS91001TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:tiplus-9100-2tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "TiPlus 9100 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITIPLUS91002TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:tiplus-9100-4tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "TiPlus 9100 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITIPLUS91004TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:tiplus7100s-1tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "TiPlus7100s 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITIPLUS7100S1TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:tiplus7100s-2tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "TiPlus7100s 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITIPLUS7100S2TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:tiplus7100s-4tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "TiPlus7100s 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITIPLUS7100S4TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:tipro9000-1tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "TiPro9000 1TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITIPRO90001TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 1000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:tipro9000-2tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "TiPro9000 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITIPRO90002TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:zhitai:tipro9000-4tb": {
+   "category": "ssd",
+   "brand": "致態 ZhiTai",
+   "name": "TiPro9000 4TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "致態ZHITAITIPRO90004TB"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  }
+ }
+}
