@@ -95,7 +95,7 @@ graph LR
 
 ## 🚀 Quickstart & Local Development
 
-The frontend is not implemented yet. What runs today is the data-pipeline PoC (see [`poc/README.md`](poc/README.md)) and the spec catalog validation.
+The frontend is not implemented yet. What runs today is the daily price pipeline ([`pipeline/`](pipeline/), [`scripts/`](scripts/)), the PoC (see [`poc/README.md`](poc/README.md)) and the spec catalog validation.
 
 ### Prerequisites
 - Python 3.11+
@@ -105,19 +105,19 @@ The frontend is not implemented yet. What runs today is the data-pipeline PoC (s
 ```bash
 git clone https://github.com/VaalRL/TW-bentocraft.git
 cd TW-bentocraft
-pip install 'jsonschema==4.26.0'
+pip install -r requirements.txt
 ```
 
 ### 2. Run Tests
 ```bash
-python -m unittest discover -s poc -p 'test_*.py'
+python -m unittest discover -s tests -t .
 (cd schema && python -m unittest test_schema)
 ```
 
-### 3. Fetch CoolPC and Build a Draft Catalog (needs access to coolpc.com.tw)
+### 3. Fetch CoolPC and Update the Price Snapshot (needs access to coolpc.com.tw)
 ```bash
-python poc/coolpc_probe.py --out poc/out --dump-items
-python poc/to_catalog.py poc/out/items.jsonl --out poc/out/draft
+python scripts/update_prices.py --out data/prices/coolpc.json --save-html page.html
+python scripts/bootstrap_catalog.py --html page.html   # add models missing from the catalog (review via PR)
 ```
 
 ---

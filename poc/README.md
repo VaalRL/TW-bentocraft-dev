@@ -26,16 +26,15 @@
 ## 檔案
 
 - `coolpc_probe.py`：抓取（或讀本機存檔）→ 解碼 → 解析下拉選單 → 輸出 `out/report.md`、`out/report.json`。只用標準函式庫。
-- `spec_extract.py`：品名字串的價格與規格擷取規則（啟發式，擷取不到回傳 `None`，不填預設值）。
-- `test_spec_extract.py`：擷取規則單元測試（字串取自規格文件範例，不代表真實頁面格式）。
+- `spec_extract.py`：相容層。擷取規則已移至 [`pipeline/extract.py`](../pipeline/extract.py)，測試在 [`tests/test_extract.py`](../tests/test_extract.py)。
 - `AUDIT-2026-10-12.md`：擷取正確率抽樣核對紀錄。
 - `to_catalog.py`：把 `coolpc_probe.py --dump-items` 輸出的品項轉成草稿規格庫與報價檔，並以 [`schema/`](../schema/) 驗證、量測檔案大小。
-- `.github/workflows/poc-coolpc-probe.yml`：推送 `poc/`、`schema/` 下的程式時，以及合併到預設分支後每日 UTC 03:17 在 Actions 上執行；原始 HTML 以 artifact 保存 14 天，不 commit 進倉庫。
+- `.github/workflows/poc-coolpc-probe.yml`：推送 `poc/`、`pipeline/`、`scripts/`、`tests/`、`schema/` 下的程式時在 Actions 上執行，並以同一份頁面跑一次正式管線；原始 HTML 以 artifact 保存 14 天，不 commit 進倉庫。每日觀察已改由 `daily-prices.yml` 負責。
 
 ## 執行
 
 ```bash
-python -m unittest discover -s poc -p 'test_*.py'
+python -m unittest discover -s tests -t .
 python poc/coolpc_probe.py --out poc/out --save-html     # 需能連到 coolpc.com.tw
 python poc/coolpc_probe.py --html evaluate.html --out poc/out   # 解析存檔
 ```

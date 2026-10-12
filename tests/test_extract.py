@@ -1,7 +1,7 @@
-"""擷取規則單元測試。字串格式取自 2026-10-12 Actions 實測抓到的原價屋品名。"""
+"""擷取規則單元測試。字串格式取自 2026-10-12 PoC 實測抓到的原價屋品名。"""
 import unittest
 
-from spec_extract import classify_category, extract, extract_prices, is_in_scope, model_key, split_combo
+from pipeline.extract import classify_category, extract, extract_prices, is_in_scope, model_key, split_combo
 
 
 class PriceTest(unittest.TestCase):
