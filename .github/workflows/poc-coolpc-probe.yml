@@ -1,11 +1,11 @@
 name: PoC - CoolPC reachability & spec extraction
 
-# PoC 階段：推送 poc/ 變更時自動執行一次，也可手動觸發。
+# PoC 階段：推送 poc/ 下的 Python 變更時自動執行一次，也可手動觸發（文件變更不觸發，避免多餘請求）。
 # 每次只對原價屋發出 robots.txt 與 evaluate.php 各一次請求。
 on:
   push:
     paths:
-      - 'poc/**'
+      - 'poc/**.py'
       - '.github/workflows/poc-coolpc-probe.yml'
   workflow_dispatch:
 
