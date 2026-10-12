@@ -11,13 +11,14 @@
    - 資料交換格式：非結構化 HTML Option 字串雜燴與混亂標籤。
    - 資料分類：30 大分類下拉選單（`n1` 到 `n30`），包含品名、現金特價、活動搭機限制、規格簡述。
    - 逆向解析文獻：
-     - 工作區前案研究：[`taiwan-pc-hardware-retail-pricing-free-resources-frontier-3.0`](../taiwan-pc-hardware-retail-pricing-free-resources-frontier-3.0/README.md)
+     - 前案研究：[`docs/pricing-research/`](../docs/pricing-research/README.md)
+     - 本專案 PoC 實測（2026-10-12）：[`poc/README.md`](../poc/README.md)
      - 開源 MCP 伺服器：`shyuan/coolpc-mcp-server` (GitHub)
      - 歷史報價追蹤器：`coolpc-price-tracker` (GitHub)
 
 2. **欣亞數位線上估價與電商結構 (Sinya PC Builder)**
    - 網址：`https://www.sinya.com.tw/diy`
-   - 資料交換：RESTful / JSON 結構化分頁請求，包含標準條碼（EAN/UPC）與品號。
+   - 資料交換：尚未實測。先前研調對欣亞是否有可用的 JSON 介面說法不一致（本文件舊版稱有 RESTful JSON，`docs/pricing-research/sources/` 稱前端動態渲染、無公開 API），需實際抓取確認。
 
 3. **TWBuyer.info 電腦零件價格歷史走勢**
    - 網址：`https://twbuyer.info/`

@@ -3,8 +3,8 @@
 # 原價煮便當 (TW-bentocraft / ComputerboxTW)：零維運開源台灣 3D 電腦自組估價與相容性排除引擎
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen)](https://username.github.io/TW-bentocraft/)
-[![GitHub Stars](https://img.shields.io/github/stars/username/TW-bentocraft?style=social)](https://github.com/username/TW-bentocraft)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen)](https://vaalrl.github.io/TW-bentocraft/)
+[![GitHub Stars](https://img.shields.io/github/stars/VaalRL/TW-bentocraft?style=social)](https://github.com/VaalRL/TW-bentocraft)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-yellow.svg?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/username)
 
 > 🍱 **原價煮便當（ComputerboxTW / Repo: `TW-bentocraft`）** 是一個專為台灣電腦硬體零售通路（原價屋、欣亞數位）打造之**永久零主機維運成本（$0/月）**開源 3D 自組電腦估價系統與硬體相容性約束排除引擎。  
@@ -26,9 +26,11 @@
 1. [**壹、系統架構與資料流水線設計**](01-system-architecture-and-data-pipeline.md)：
    - GitHub Actions 每日定時爬蟲與免費運算時間精算（月耗 $<15$ 分鐘）。
    - 原價屋非結構化字串三階清洗流水線與防爬蟲安全防禦。
-   - 關注點分離：高頻每日報價（`daily_prices.json`）✕ 低頻物理規格本體庫（`spec_catalog.json`）。
+   - 型號規格（`data/catalog/<類別>.json`）✕ 每日報價（`data/prices/<通路>.json`）兩層資料，格式見第柒章。
+   - 每日排程在同一個 workflow 內完成抓取、驗證、提交與部署；抓取失敗時沿用舊資料並自動開 issue。
 2. [**貳、硬體相容性約束求解引擎**](02-hardware-compatibility-constraint-engine.md)：
-   - 六大維度約束矩陣（CPU 腳位、RAM 代數、板型尺寸包含鏈、顯卡限長、散熱器限高/冷排、動態瓦數安全預算）。
+   - 約束矩陣（CPU 腳位、RAM 代數與條數、板型、顯卡限長、散熱器限高/冷排/扣具、瓦數、電源規格↔機殼、無內顯 CPU、背插）。
+   - 檢查結果分為通過、警告、不通過、未知；規格缺漏時回傳「未知」，品名近似值在誤差內給警告。
    - 雙向約束傳播狀態機（Reactive Constraint Propagation）與 TypeScript 核心演算法。
    - 硬性阻斷（無法開機/無法裝入）與軟性預警（供電偏弱/需更新 BIOS）分流機制。
 3. [**參、前端使用者體驗與零維運部署**](03-frontend-ux-and-zero-maintenance-deployment.md)：
@@ -82,13 +84,13 @@ sequenceDiagram
 
     Dev->>GA: 發起 PR 擴充規格庫 (spec_catalog.json)
     GA-->>GHP: 自動構建並發布靜態資產
-    Note over GA: 每日 UTC 03:00 自動定時觸發
+    Note over GA: 每日 UTC 03:17 自動定時觸發
     GA->>GA: 抓取通路最新牌價，比對規格指紋
-    GA->>GHP: Commit 產出 daily_prices.json (~80 KB)
+    GA->>GA: 驗證並提交 data/prices/coolpc.json
     
     User->>GHP: 瀏覽器開啟網站 (載入 SPA + 規格庫 + 價格)
     User->>User: 點選主機板 (例如技嘉 B650M AM5 / M-ATX / DDR5)
-    Note over User: 前端 CSP 約束引擎即時運算 (<1ms)
+    Note over User: 前端約束引擎即時運算
     User->>User: CPU 選單自動排除 Intel LGA1700，僅留 AM5
     User->>User: 記憶體選單自動排除 DDR4，僅留 DDR5
     User->>User: 機殼選單標記 ITX 專用機殼無法容納 M-ATX
@@ -99,27 +101,29 @@ sequenceDiagram
 
 ## 🚀 快速上手與本機開發
 
+前端尚未實作。目前可執行的是資料管線的 PoC（見 [`poc/README.md`](poc/README.md)）與規格庫驗證。
+
 ### 環境需求
-- Node.js 20+
-- Python 3.11+（僅本地執行爬蟲測試時需要）
+- Python 3.11+
+- `jsonschema`（規格庫驗證用）
 
-### 1. 複製倉庫與安裝前端依賴
+### 1. 複製倉庫
 ```bash
-git clone https://github.com/username/open-pc-builder.git
-cd open-pc-builder
-npm install
+git clone https://github.com/VaalRL/TW-bentocraft.git
+cd TW-bentocraft
+pip install 'jsonschema==4.26.0'
 ```
 
-### 2. 啟動本機開發伺服器
+### 2. 執行測試
 ```bash
-npm run dev
-# 瀏覽器存取 http://localhost:5173
+python -m unittest discover -s poc -p 'test_*.py'
+(cd schema && python -m unittest test_schema)
 ```
 
-### 3. 本機測試爬蟲與規格對齊腳本
+### 3. 抓取原價屋並產生草稿規格庫（需能連到 coolpc.com.tw）
 ```bash
-python scripts/crawler_coolpc.py
-# 將於 data/daily_prices.json 產出最新報價快照
+python poc/coolpc_probe.py --out poc/out --dump-items
+python poc/to_catalog.py poc/out/items.jsonl --out poc/out/draft
 ```
 
 ---

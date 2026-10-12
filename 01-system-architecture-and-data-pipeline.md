@@ -1,190 +1,228 @@
 # 壹、系統架構與資料流水線設計 (System Architecture & Data Pipeline)
 
-> **核心架構裁決**：使用者所提議的「**GitHub Pages 託管純前端 ＋ GitHub Actions 每日定時爬取報價快照 ＋ 前端離線約束求解器自組電腦**」方案，**不僅 100% 完全可行，而且是目前開源公民科技與 PC DIY 社群中最優雅、高可用且永久零主機維運成本（$0/month TCO）的極致架構典範**。
+> **核心架構裁決**：「**GitHub Pages 託管純前端 ＋ GitHub Actions 每日抓取報價快照 ＋ 前端相容性約束求解**」可行，[PoC](poc/README.md) 已在 GitHub Actions 上實測驗證：能抓到原價屋估價頁，並能從品名自動擷取大部分相容性規格。
+> 主機費用為 $0／月，但並非零維運：維運工作轉移到**規格庫整理**與**通路改版時修正爬蟲**兩件事（見本文第四節）。
+>
+> 2026-10 依 [設計審查](06-design-review.md) 與 [規格庫 schema](07-spec-catalog-schema.md) 修訂。主要改動：每日流程改為單一 workflow 完成「抓取 → 驗證 → 提交 → 建置 → 部署」；資料格式改為型號／報價兩層。
 
 ---
 
 ## 一、系統架構全景拓撲 (System Architecture Topology)
 
-整個系統採用**端到端解耦（Decoupled Pipeline）**與**運算全面下沉用戶端（Client-Edge Computing）**設計：
-
 ```mermaid
 flowchart TD
-    subgraph S1["【雲端資料管線層：GitHub Actions ETL】(每日定時 03:00 UTC)"]
-        Cron["⏰ 定時排程 (POSIX Cron)"] --> Runner["🐧 Ubuntu 虛擬機 (GitHub-hosted Runner)"]
-        Runner --> Fetch["📡 抽取爬取：原價屋 evaluate.php / 欣亞 DIY API"]
-        Fetch --> Parse["🧹 三階資料清洗與正則正規化引擎"]
-        
-        subgraph S1_DB["【規格指紋掛接庫】"]
-            SpecDB["📚 靜態規格本體論庫 (spec_catalog.json)<br>• CPU 腳位/TDP • 主板板型/RAM 代數<br>• 機殼顯卡限長 • 散熱器限高 (社群 PR 維護)"]
-        end
-        
-        Parse <-->|"精準指紋比對 (Canonical ID)"| SpecDB
-        Parse --> BuildJSON["📦 產出每日精簡快照：<br>• daily_prices.json (~80 KB)<br>• bundle_rules.json (搭機限制)"]
-        BuildJSON --> GitPush["🚀 Git Commit & Push 靜態檔案至 gh-pages 分支"]
+    subgraph S1["【每日資料管線：daily-prices.yml】(每日 UTC 03:17)"]
+        Cron["⏰ 排程觸發"] --> Fetch["📡 抓取原價屋 evaluate.php（每日 1 次）"]
+        Fetch --> Parse["🧹 品名解析：價格、促銷、規格擷取"]
+        Parse <-->|"型號鍵比對"| Catalog["📚 規格庫 data/catalog/*.json<br>（社群 PR 維護，含來源）"]
+        Parse --> Prices["📦 報價快照 data/prices/coolpc.json"]
+        Prices --> Validate["✅ schema 驗證"]
+        Validate --> Commit["📝 提交報價快照（每次都提交，兼作心跳）"]
+        Commit --> Build["🔨 建置前端（npm run build）"]
+        Build --> Deploy["🚀 actions/deploy-pages"]
+        Fetch -.->|"失敗"| Stale["⚠️ 沿用上次報價，status: stale<br>並自動開 issue"]
+        Stale --> Validate
     end
 
-    subgraph S2["【靜態資產分發層：GitHub Pages & 全球 CDN】"]
-        GitPush --> GHPages["🌐 GitHub Pages 靜態伺服器 (Fastly CDN 加速)"]
-        GHPages --> AssetHTML["📄 index.html (SPA 單頁應用)"]
-        GHPages --> AssetData["📊 daily_prices.json + spec_catalog.json"]
+    subgraph S0["【程式與規格庫變更：deploy.yml】"]
+        PR["🔀 PR 合併至 main"] --> CI["✅ 驗證規格庫 ＋ 建置"] --> Deploy2["🚀 actions/deploy-pages"]
     end
 
-    subgraph S3["【用戶端運行層：瀏覽器純前端邊緣運算 (Client-Side Edge)】"]
-        Browser["💻 使用者瀏覽器 (Chrome / Safari / Firefox / 行動端)"]
-        Browser --> FetchAssets["⚡ 首次載入：拉取 HTML + 規格庫 + 當日價格 (Gzip < 300 KB)"]
-        FetchAssets --> IDB["💾 本機快取：IndexedDB / localStorage (支援完全離線運作)"]
-        
-        subgraph Engine["【前端相容性約束求解器 (Client CSP Engine)】"]
-            RuleEngine["🧠 雙向約束傳播狀態機 (Reactive Constraint Solver)"]
-            RuleEngine --> Filter["🚫 動態排除與灰色停用 (自動過濾不相容零件)"]
-            RuleEngine --> PowerCalc["⚡ 動態總功耗與電源餘量安全試算器"]
-            RuleEngine --> Warning["⚠️ 物理干涉與性能降頻軟性預警 (Clearance Check)"]
-        end
-        
-        IDB --> RuleEngine
-        RuleEngine --> UI["🖥️ 響應式 DIY 配單器 UI (預設淺色 / 深淺色切換)"]
-        UI --> Share["🔗 估價單一鍵分享 (Base64 URL Hash / 匯出 Markdown / PDF)"]
+    subgraph S2["【靜態資產分發：GitHub Pages CDN】"]
+        Deploy --> GHPages["🌐 GitHub Pages"]
+        Deploy2 --> GHPages
+        GHPages --> AssetHTML["📄 index.html ＋ JS bundle"]
+        GHPages --> AssetData["📊 catalog.min.json ＋ prices.min.json"]
     end
 
-    S1 --> S2 --> S3
+    subgraph S3["【使用者瀏覽器】"]
+        Browser["💻 瀏覽器"] --> Load["⚡ 載入 SPA ＋ 規格庫 ＋ 報價"]
+        Load --> Engine["🧠 相容性約束求解器<br>（通過／警告／不通過／未知）"]
+        Engine --> UI["🖥️ 配單 UI ＋ 報價日期提示"]
+        UI --> Share["🔗 分享連結（只存型號 ID）"]
+    end
+
+    S1 --> S2
+    S0 --> S2
+    S2 --> S3
 ```
+
+**為什麼價格更新必須在同一個 workflow 內部署**：以預設 `GITHUB_TOKEN` 推送的 commit 不會觸發其他 workflow。若像舊版設計一樣「爬蟲 commit → 由 `deploy.yml` 的 `on: push` 部署」，價格永遠不會上線。
 
 ---
 
-## 二、關注點分離：報價高頻變動 vs 規格低頻變動 (Separation of Concerns)
+## 二、資料分層：型號規格 vs 每日報價
 
-傳統爬蟲自組電腦系統之所以容易崩潰或難以維護，核心痛點在於「**將價格與硬體規格混在一起爬取**」：
-- **通路報價（High-frequency, Volatile）**：每天甚至每小時都在變動，字串極其混亂（例如原價屋品名混雜「贈品送完為止」、「現折500」、「限整組搭機」）。
-- **硬體物理規格（Low-frequency, Immutable）**：CPU 是 AM5 腳位、主機板是 M-ATX、記憶體是 DDR5、顯卡長度是 304mm——這些物理屬性自出廠到停產**永不改變**。
+完整定義見 [`07-spec-catalog-schema.md`](07-spec-catalog-schema.md)；機器可讀 schema 在 [`schema/`](schema/)。
 
-因此，本架構採取**雙軌解耦本體論**：
+| 資料 | 檔案 | 更新頻率 | 維護方式 |
+| :--- | :--- | :--- | :--- |
+| **規格庫**（型號層） | `data/catalog/<類別>.json` | 新品上市、人工修正時 | 自動擷取產生草稿，社群以 PR 確認、修正 |
+| **報價快照**（報價層） | `data/prices/<通路>.json` | 每日 | 每日 workflow 自動產生 |
+| **前端用精簡檔** | `public/data/catalog.min.json`、`prices.min.json` | 建置時產生 | 去掉來源資訊與原始品名 |
 
-| 資料維度 | 檔案路徑 | 更新頻率 | 維護方式 | 檔案大小 |
-| :--- | :--- | :--- | :--- | :--- |
-| **硬體規格本體庫** | `data/spec_catalog.json` | 數週至數月（新硬體發表時） | 開源社群透過 PR 共同維護標準規格 | ~120 KB (Gzip: ~28 KB) |
-| **通路每日報價快照** | `data/daily_prices.json` | 每日一次（凌晨自動化） | GitHub Actions 排程爬蟲自動抽取並比對 | ~80 KB (Gzip: ~18 KB) |
-| **搭機促銷規則庫** | `data/promotions.json` | 每日一次 | 爬蟲自動萃取「限搭機/任搭折」關鍵字 | ~15 KB (Gzip: ~4 KB) |
+### 1. 為什麼分兩層
 
-### 核心掛接機制：規格指紋與 `canonical_id`
-爬蟲程式在解析原價屋字串時，不嘗試去猜測所有硬體參數，而是透過「**正則正規化別名比對（Alias Pattern Matching）**」，將通路商品綁定至標準規格庫的 `canonical_id`：
+通路報價每天變動、寫法混亂；型號的物理規格相對穩定。PoC 進一步發現**通路的一列不等於一個零件**：
+
+- 同型號黑、白各一列，價格不同 → 型號底下有「變體」，價格掛在報價列；
+- 機殼類有「機殼＋電源／水冷／風扇」組合列 → 一個報價列可以包含多個零件；
+- 原價屋 option value 在 2,320 列中有 370 個重複 → 不能直接當報價 ID。
+
+### 2. 規格值一律帶來源
+
+品名可以自動擷取大部分規格（CPU、記憶體、電源 100%，主機板 99%，機殼 98%，顯卡 97%，散熱器 96%），但品名本身是近似值：顯卡長度只到公分（實測高估 5 ~ 7 mm）、機殼間隙常省略條件。因此每個欄位都記錄來源（品名、原廠規格、人工……）與誤差，缺少的欄位視為「未知」，不填預設值。
 
 ```json
-// spec_catalog.json (由開源社群維護的精準物理規格)
-{
-  "mb_b650m_gaming_x_ax": {
-    "canonical_id": "mb_b650m_gaming_x_ax",
-    "category": "motherboard",
-    "brand": "Gigabyte",
-    "model": "B650M GAMING X AX",
-    "aliases": ["B650M GAMING X AX", "技嘉 B650M GAMING X AX"],
-    "specs": {
-      "socket": "AM5",
-      "chipset": "AMD B650",
-      "form_factor": "M-ATX",
-      "memory_type": "DDR5",
-      "memory_slots": 4,
-      "max_memory_gb": 192,
-      "pcie_x16_slots": 1,
-      "m2_slots": 2,
-      "sata_ports": 4,
-      "vrm_phases": 6,
-      "tdp_budget_recommend": 170
-    }
-  }
+// data/catalog/gpu.json（節錄）
+"gpu:msi:rtx5080-16g-ventus-3x-oc": {
+  "category": "gpu", "brand": "微星 MSI", "name": "RTX5080 16G VENTUS 3X OC", "status": "active",
+  "specs": {
+    "length_mm": { "value": 303, "source": "retailer_spec", "ref": "https://…", "note": "品名寫 31cm" }
+  },
+  "review": { "status": "verified" }
 }
 ```
 
 ```json
-// daily_prices.json (GitHub Actions 每日產出的輕量報價)
+// data/prices/coolpc.json（節錄）
 {
-  "updated_at": "2026-10-08T03:15:00Z",
-  "vendor": "coolpc",
-  "items": {
-    "mb_b650m_gaming_x_ax": {
-      "price": 4690,
-      "in_stock": true,
-      "raw_title": "技嘉 B650M GAMING X AX(M-ATX/Realtek 2.5G+Wi-Fi 6E/註冊五年)6+2+1相電源【任搭折$200】",
-      "bundle_condition": "combo_discount_200"
-    }
-  }
+  "offer_id": "coolpc:h3f2a9c1e",
+  "category": "cpu",
+  "price": 4450,
+  "price_condition": { "type": "requires_category", "requires": ["motherboard"], "note": "【任搭主機板】" },
+  "items": [{ "role": "main", "model_id": "cpu:amd:ryzen-5-8400f", "match": "model_key" }]
 }
 ```
 
+### 3. 實測體積（2026-10-12 原價屋全量）
+
+| 檔案 | 原始 | gzip |
+| :-- | --: | --: |
+| 前端規格庫 `catalog.min.json`（1,837 型號） | 270 KB | 31 KB |
+| 前端報價 `prices.min.json`（2,320 列，不含原始品名） | 542 KB | 40 KB |
+| repo 內報價快照（含原始品名） | 1,016 KB | 84 KB |
+
+舊版估計的報價快照 ~80 KB／gzip 18 KB 偏低約一倍。每日提交約 1 MB 的快照會讓 repo 歷史持續增長（gzip 後約 84 KB／日）；若成為問題，可改放獨立的資料分支或 release asset。
+
 ---
 
-## 三、GitHub Actions 爬蟲管線與排程防護 (ETL Workflow)
+## 三、每日資料管線 (`.github/workflows/daily-prices.yml`)
 
-### 1. 排程時間與執行成本
-- **排程時間**：每天 UTC 03:00（台灣時間 11:00 AM）。
-  - *原因*：台灣實體零售通路（原價屋、欣亞）多於上午 10:30~11:00 門市開工時更新當日報價單，此時抓取能取得最新鮮的牌價，且避開凌晨備份期。
-- **免費配額消耗精算**：
-  - 公開倉庫（Public Repo）：**GitHub Actions 分鐘數 100% 免費無上限**。
-  - 單次 Python 爬蟲執行時間：約 **18 ~ 25 秒**。
-  - 即使在私有倉庫（每月 2,000 分鐘配額），每月僅消耗約 $30 \times 0.5 = 15$ 分鐘（佔比僅 0.75%）。
+### 1. 排程與執行成本
 
-### 2. 生產級 GitHub Actions Workflow 腳本 (`.github/workflows/update_prices.yml`)
+- **排程**：每天 UTC 03:17（台灣 11:17）。選這個時間沒有實測依據，等每日資料累積後可比較各時段的價格變動再調整。
+- **排程不保證準時**：GitHub 的排程在尖峰時段可能延遲，偶爾會被跳過。前端以快照內的 `fetched_at` 顯示報價日期，不假設每天一定更新。
+- **公開 repo 60 天無活動會停用排程**：每次執行都會寫入 `last_attempt_at` 並提交，即使價格沒變也有提交，兼作心跳。
+- **費用**：公開 repo 的 GitHub-hosted runner 免費。PoC 實測單次抓取約 2 秒、解析與驗證數秒，加上前端建置，每次執行預估在數分鐘內。
+
+### 2. Workflow
 
 ```yaml
-name: Daily PC Hardware Price Crawler
+name: Daily price update
 
 on:
   schedule:
-    # 每天台灣時間 11:15 AM (UTC 03:15) 自動執行
-    - cron: '15 3 * * *'
-  workflow_dispatch: # 支援在 GitHub 網頁上手動一鍵觸發
+    - cron: '17 3 * * *'   # UTC 03:17 = 台灣 11:17
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write    # 提交報價快照
+  pages: write       # 部署
+  id-token: write    # 部署
+  issues: write      # 抓取失敗時開 issue
+
+concurrency:
+  group: pages             # 與 deploy.yml 共用，避免兩次部署互相覆蓋
+  cancel-in-progress: false
 
 jobs:
-  crawl-and-update:
+  update-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      - name: Install Dependencies
-        run: |
-          pip install requests beautifulsoup4 pydantic
+      - run: pip install -r scripts/requirements.txt
 
-      - name: Run Crawler & Spec Matcher
-        run: |
-          python scripts/crawler_coolpc.py
+      # 抓取失敗時不覆寫 offers，改寫 status: stale 並保留上次的 fetched_at；
+      # 以 step output 回報，讓後續仍可提交心跳並部署「資料過舊」提示
+      - name: Crawl price snapshot
+        id: crawl
+        run: python scripts/update_prices.py --vendor coolpc --out data/prices/coolpc.json
 
-      - name: Commit & Push Price Snapshot
+      - name: Validate catalog and prices
+        run: python schema/validate.py --catalog data/catalog/*.json --prices data/prices/*.json
+
+      # last_attempt_at 每次都會更新，因此每次都有變更可提交；
+      # 這個提交不會觸發其他 workflow（GITHUB_TOKEN 的限制），所以部署在本 job 內完成
+      - name: Commit snapshot (every run, doubles as heartbeat)
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/daily_prices.json data/promotions.json data/unmatched_items.log
-          
-          # 檢查是否有實際變動，避免空 Commit
-          if git diff --staged --quiet; then
-            echo "No price changes detected today."
-          else
-            git commit -m "chore(data): auto-update hardware prices $(date -u +'%Y-%m-%d')"
-            git push
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/prices/
+          git commit -m "chore(data): price snapshot $(date -u +%F)"
+          git push
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build   # 由 data/ 產生 public/data/*.min.json
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Open issue when crawling failed
+        if: steps.crawl.outputs.crawl_ok == 'false' || failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(gh issue list --label price-crawler --state open --json number --jq '.[0].number')" ]; then
+            gh issue create --label price-crawler \
+              --title "每日報價更新失敗 $(date -u +%F)" \
+              --body "執行紀錄：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           fi
 ```
 
-### 3. 反爬蟲防禦與優雅降級 (Resilience & Anti-Bot Protection)
-1. **單次請求，絕不高頻**：每日僅發起 1 次 HTTP GET 請求獲取靜態頁面，總頻寬 $< 150\text{ KB}$，對零售商伺服器負載為微秒級。
-2. **客製化合法識別標頭**：
+### 3. 抓取禮貌與故障處理
+
+1. **每日只請求一次**：估價頁約 1.07 MB（Big5 編碼），一次請求即包含全部類別，不需要逐類別抓取。
+2. **可識別的 User-Agent**，不偽裝瀏覽器：
    ```python
    headers = {
-       "User-Agent": "OpenPCBuilder-Taiwan-OpenData/1.0 (+https://github.com/username/open-pc-builder)",
-       "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+       "User-Agent": "TW-bentocraft/1.0 (+https://github.com/VaalRL/TW-bentocraft)",
        "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
    }
    ```
-3. **熔斷保護（Circuit Breaker）**：
-   - 若通路線上估價單出現驗證碼阻擋（HTTP 403/429）或網頁結構突變，爬蟲自動終止並保留**前一日有效快照**，絕不覆寫空白檔案，確保前端永遠可正常展示與試算。
-   - 將無法辨識的商品自動記錄至 `data/unmatched_items.log`，方便社群成員發起 PR 擴充別名字典。
+   請求前先讀 `robots.txt`；2026-10-12 時只對 Googlebot 限制 `/book/`，未限制估價頁。
+3. **抓取失敗**（HTTP 403／429、逾時、頁面結構改變導致解析出的品項大幅減少）：保留上次的報價列，`status` 改為 `stale`，自動開 issue。前端依 `status` 與 `fetched_at` 顯示「這是 N 天前的價格」。
+4. **比對率監測**：每次執行統計各類別「能對應到規格庫型號」與「必要欄位擷取成功」的比例，明顯下降時視為頁面改版，同樣開 issue。
+5. **未對應的商品**：在報價檔中以 `match: unmatched` 保留原文，供社群以 PR 補進規格庫。
+6. **可達性仍在觀察**：PoC 從美國 Azure 機房的 runner 抓取皆成功，但這是單日結果。PoC workflow 已在 main 上每日排程執行，持續觀察是否被阻擋。
+
+---
+
+## 四、維運成本：實際上要做什麼
+
+「$0／月」指主機費用。仍需持續投入的工作：
+
+| 工作 | 頻率 | 減輕方式 |
+| :-- | :-- | :-- |
+| 新品進入規格庫 | 每週數筆 | 自動擷取產生草稿，人工只確認顯卡長度、機殼間隙等近似值 |
+| 處理規格衝突 | 偶爾 | 驗證流程自動標出同型號不同列的值不一致（PoC 實測 7 筆） |
+| 通路改版修爬蟲 | 不定期 | 比對率下降自動開 issue；以存檔的 HTML 做解析器回歸測試 |
+| 型號命名 | 新品上市時 | 自動產生的 ID 只是草稿，發布前人工確認（ID 一經發布不得改名） |

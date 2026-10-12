@@ -1,6 +1,8 @@
 # 參、前端使用者體驗與零維運部署 (Frontend UX & Zero-Maintenance Deployment)
 
 > **設計哲學**：貫徹開源軟體規格架構師（`oss-spec-architect`）之**五大黃金支柱**，打造極致純淨、無侵入式廣告、毫秒級響應且具備出版級美學的純前端單頁應用（SPA）。
+>
+> 2026-10 依 [設計審查](06-design-review.md) 修訂：相容性結果改為四種狀態並新增「未確認」配色；顯示報價日期與非官方聲明；分享連結加入版本號與 ID 轉址；部署流程加入規格庫驗證，並與每日報價流程共用部署佇列。
 
 ---
 
@@ -18,7 +20,7 @@ flowchart LR
     subgraph Workspace["核心自組估價工作區 (Three-Column Layout)"]
         Col1["📋 零件類別選單<br>(CPU / 主機板 / 顯卡 / 機殼...)"]
         Col2["🔍 候選商品清單<br>(動態即時相容性過濾 + 搜尋)"]
-        Col3["🧾 目前估價單與功耗儀表<br>(即時總價 / 瓦數指針 / 衝突清單)"]
+        Col3["🧾 目前估價單與功耗儀表<br>(即時總價 / 瓦數指針 / 衝突與待確認清單 / 報價日期)"]
     end
 
     subgraph Actions["分享與匯出操作 (Zero-Database Export)"]
@@ -30,9 +32,10 @@ flowchart LR
     Header --> Workspace --> Actions
 ```
 
-### 1. 強制預設淺色模式與動態主題 Design Tokens (Default Light Mode)
-* **預設視覺**：初次開啟為清爽、明亮、高清晰度的白色與淺灰底色，拒絕昏暗與閱讀疲勞。
+**手機版面**：寬度不足時三欄改為單欄，依序為「零件類別 → 候選清單 → 估價單」，估價單收合為底部常駐列（顯示總價與衝突數，點開展開）。候選清單改用底部抽屜（bottom sheet），避免小螢幕上的浮動視窗被虛擬鍵盤遮住。
+
 ### 1. 模型工作室風格 (Model Kit Studio) ✕ 雙軌色系 Design Tokens
+* **預設視覺**：初次開啟為淺色模式，使用者切換後記住選擇。
 * **視覺風格**：**風格 3【模型工作室風 (Model Kit Studio)】**。UI 帶有模型拼裝工作台（Cutting Mat / Workbench）刻度感與零件板件（Runner）微切角設計，操作伴隨精準拼裝卡扣之立體反饋。
 * **色彩規範**：
   - **預設淺色模式 (Default Light)**：**【白金綠 (White-Gold-Emerald)】**──純白潔淨組裝台底色、翡翠綠通過/相容標記、奢雅金黃重點銘牌。
@@ -49,14 +52,17 @@ flowchart LR
 | `--status-error` | `#DC2626` (深紅警示 Red-600) | `#EF4444` (猩紅碰撞 Red-500) | 3D 穿模衝突與幾何碰撞警告 |
 | `--status-warn` | `#D97706` (琥珀金 Amber-600) | `#F59E0B` (熔岩金 Amber-500) | 供電偏緊/需刷 BIOS 預警 |
 | `--status-ok` | `#10B981` (健康綠 Emerald-500) | `#34D399` (螢光綠 Emerald-400) | 完全相容/安全功耗徽章 |
+| `--status-unknown` | `#64748B` (石板灰 Slate-500) | `#94A3B8` (霧灰 Slate-400) | 規格未確認（相容性結果為「未知」） |
+
+相容性結果與配色對應：不通過 → `--status-error`；警告 → `--status-warn`；未知 → `--status-unknown`；通過 → `--status-ok`。「未知」不可用綠色或省略標記，以免使用者誤以為已確認相容。
 
 
-* **防閃爍腳本 (Anti-FOUC)**：於 `index.html` 的 `<head>` 最頂部內聯 4 行原生 JS，於 CSS 載入前鎖定主題，保證重新整理 0 殘影：
+* **防閃爍腳本 (Anti-FOUC)**：於 `index.html` 的 `<head>` 最頂部內聯原生 JS，於 CSS 載入前鎖定主題。無痕模式或封鎖網站資料時 `localStorage` 可能丟出例外，必須包在 `try` 內，失敗時使用淺色：
   ```html
   <script>
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    if (savedTheme === 'dark') document.documentElement.classList.add('dark');
-    else document.documentElement.classList.remove('dark');
+    let savedTheme = 'light';
+    try { savedTheme = localStorage.getItem('theme') || 'light'; } catch (e) {}
+    document.documentElement.classList.toggle('dark', savedTheme === 'dark');
   </script>
   ```
 
@@ -68,6 +74,11 @@ flowchart LR
   - 統一端點：`https://www.buymeacoffee.com/<username>`。
   - 視覺：高質感黃黑相間經典配色膠囊按鈕，點擊支持開發者持續維護規格資料庫。
 
+### 3. 報價日期與非官方聲明
+* **報價日期**：估價單上方顯示「原價屋報價：2026-10-12 11:17 更新」，取自報價檔的 `fetched_at`。報價檔 `status` 為 `stale`（當日抓取失敗、沿用舊資料）或日期超過 2 天時，改用 `--status-warn` 色並提示「價格可能已變動，請以通路實際報價為準」。
+* **附條件價格**：需搭配其他零件才成立的價格（如【任搭主機板】）在條件不成立時不計入總價，並在該列註明；「任搭折抵」只在整單有其他零件時扣除。
+* **非官方聲明**：頁尾固定顯示「本站為非官方開源專案，與原價屋、欣亞等通路無關；價格與規格僅供參考，以通路實際報價為準」。
+
 ---
 
 ## 二、零資料庫分享與社群菜單匯出 (Zero-Backend Data Export)
@@ -77,67 +88,85 @@ flowchart LR
 本專案採用**完全無伺服器之密碼學/字串壓縮 URL 方案**：
 
 ### 1. URL Hash 壓縮分享演算法 (LZ-String / Base64 URL Sharing)
-使用者選好零件後，前端直接將清單序列化為緊湊的陣列（只存 `canonical_id`），並以純客戶端演算法壓縮進網址的 Hash 中：
+使用者選好零件後，前端把清單序列化為緊湊的物件（只存型號 ID 與變體），以純客戶端演算法壓縮進網址的 Hash 中。內容帶版本號，日後格式改變時仍能解讀舊連結：
 
 ```typescript
 // utils/shareUrl.ts
 import LZString from 'lz-string';
+import type { Category, Selection } from '../types/catalog';
 
-export function generateShareUrl(selection: BuildSelection): string {
-  // 僅萃取零件 ID，體積極小
-  const payload = Object.entries(selection).reduce((acc, [cat, item]) => {
-    if (item) acc[cat] = item.canonical_id;
-    return acc;
-  }, {} as Record<string, string>);
+interface SharePayload {
+  v: 1;                                         // 分享格式版本
+  items: Partial<Record<Category, string>>;     // 類別 → 型號 ID（可帶 #變體，如 case:montech:hs02-pro#white）
+}
 
-  const jsonStr = JSON.stringify(payload);
-  const compressed = LZString.compressToEncodedURIComponent(jsonStr);
-  
-  // 生成如：https://username.github.io/pc-builder/#/build?b=N4IgdghgtgpiBc5...
+export function generateShareUrl(selection: Selection, variants: Partial<Record<Category, string>> = {}): string {
+  const items: SharePayload['items'] = {};
+  for (const [cat, model] of Object.entries(selection) as [Category, { id: string }][]) {
+    items[cat] = variants[cat] ? `${model.id}#${variants[cat]}` : model.id;
+  }
+  const compressed = LZString.compressToEncodedURIComponent(JSON.stringify({ v: 1, items } satisfies SharePayload));
   return `${window.location.origin}${window.location.pathname}#/build?b=${compressed}`;
 }
 
-export function parseShareUrl(compressed: string): Record<string, string> | null {
+/** 解析分享連結。已棄用的型號依 replaced_by 轉址；找不到的型號回報給 UI 提示使用者。 */
+export function parseShareUrl(
+  compressed: string,
+  resolve: (id: string) => { id: string } | undefined,   // 查規格庫，含 replaced_by 轉址
+): { items: Partial<Record<Category, string>>; missing: string[] } | null {
   try {
-    const jsonStr = LZString.decompressFromEncodedURIComponent(compressed);
-    return jsonStr ? JSON.parse(jsonStr) : null;
+    const json = LZString.decompressFromEncodedURIComponent(compressed);
+    const payload = json ? (JSON.parse(json) as SharePayload) : null;
+    if (!payload || payload.v !== 1) return null;
+    const items: Partial<Record<Category, string>> = {};
+    const missing: string[] = [];
+    for (const [cat, ref] of Object.entries(payload.items) as [Category, string][]) {
+      const [id, variant] = ref.split('#');
+      const model = resolve(id);
+      if (model) items[cat] = variant ? `${model.id}#${variant}` : model.id;
+      else missing.push(id);
+    }
+    return { items, missing };
   } catch {
     return null;
   }
 }
 ```
 
-* **優勢**：
-  - **永久有效**：只要 GitHub Pages 存在，分享鏈結永不因資料庫過期而失效。
-  - **隱私安全**：完全無個人資料上傳，純客戶端本地編碼與解碼。
+* **優勢與限制**：
+  - **長期有效的條件**：型號 ID 一經發布不得改名或重用；需要更正時以 `replaced_by` 轉址（見 [`07`](07-spec-catalog-schema.md) 第三節）。型號被移除時，開啟連結會列出找不到的零件，而不是整份失效。
+  - **價格以開啟當天為準**：連結只存型號，不存價格。開啟時以當日報價計算，並顯示報價日期；與分享當時的價格可能不同。
+  - **隱私**：無個人資料上傳，純客戶端編碼與解碼。
   - **維運費用**：$0。
 
 ### 2. PTT PC_Shopping / 論壇標準菜單一鍵匯出
 一鍵產生符合 PTT 電腦採購板規之 Markdown / BBS 文字格式：
 
 ```text
-已選配備清單 (由 OpenPCBuilder 台灣 產出)：
+已選配備清單（由 原價煮便當 TW-bentocraft 產出，非官方）：
 ==================================================
-【處理器】AMD Ryzen 7 7800X3D【8核/16緒】         $12,250
-【主機板】技嘉 B650M GAMING X AX (M-ATX)          $4,690
-【記憶體】威剛 32GB(16G*2) DDR5-6000 XPG Lancer    $3,199
-【顯示卡】華碩 TUF-RTX4070S-O12G-GAMING (301mm)    $21,990
-【散熱器】利民 Peerless Assassin 120 (157mm)      $1,350
-【硬　碟】Solidigm P44 Pro 2TB M.2 PCIe 4.0        $4,299
-【機　殼】Montech Air 903 MAX 黑 (顯卡400/散熱180)  $1,890
-【電　源】海韻 FOCUS GX-750 ATX3 (750W/金牌)        $3,790
+【處理器】AMD R7 9800X3D【8核/16緒】                 $16,150
+【主機板】技嘉 X870 GAMING X WIFI7 (ATX)             $9,490
+【記憶體】威剛 32G(16G*2) D5-6000 CL30 LancerBlade   $19,099
+【顯示卡】微星 RTX5080 16G VENTUS 3X OC (31cm)       $53,990
+【散熱器】利民 Phantom Spirit 120 EVO (高15.7)      $1,890
+【硬　碟】金士頓 KC3000 1TB Gen4                     $6,488
+【機　殼】華碩 TUF Gaming GT502 Horizon (卡長40/U高16.3)  $4,690
+【電　源】華碩 TUF GAMING 1000W Gold                  $4,590
 ==================================================
-【總金額】NT$ 53,458 元 (含稅)
-【預估功耗】415 W ｜ 【建議電源】650W 以上 (當前配置 750W 餘量充裕)
-【相容性勘驗】全機物理尺寸與針腳規格 100% 通過，無干涉衝突
-【線上配單網址】https://username.github.io/pc-builder/#/build?b=...
+【總金額】NT$ 116,387 元（原價屋 2026-10-12 報價，現金價）
+【預估功耗】572 W ｜【建議電源】750W 以上（目前 1000W，餘量充裕）
+【相容性】10 項檢查：9 項通過、1 項規格未確認（散熱器扣具）
+【線上配單網址】https://vaalrl.github.io/TW-bentocraft/#/build?b=...
 ```
 
 ---
 
 ## 三、GitHub Pages 自動構建與發布流水線 (CI/CD Deploy Workflow)
 
-在開源倉庫的根目錄配置 `.github/workflows/deploy.yml`，任何對 `main` 分支的代碼變更或規格庫 PR 合併，均自動執行 Vite 構建並部署至 GitHub Pages：
+在開源倉庫的根目錄配置 `.github/workflows/deploy.yml`，任何對 `main` 分支的代碼變更或規格庫 PR 合併，先驗證規格庫，再執行 Vite 構建並部署至 GitHub Pages。
+
+每日報價更新**不經過這個 workflow**：以 `GITHUB_TOKEN` 推送的提交不會觸發其他 workflow，所以每日報價在 `daily-prices.yml` 內自行建置與部署（見 [`01`](01-system-architecture-and-data-pipeline.md) 第三節）。兩者共用 `concurrency: pages`，且不取消進行中的部署，避免程式更新把當天的報價部署中斷：
 
 ```yaml
 name: Deploy Web SPA to GitHub Pages
@@ -154,7 +183,7 @@ permissions:
 
 concurrency:
   group: 'pages'
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
@@ -165,6 +194,16 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate spec catalog and prices
+        run: |
+          pip install 'jsonschema==4.26.0'
+          python schema/validate.py --catalog data/catalog/*.json --prices data/prices/*.json
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

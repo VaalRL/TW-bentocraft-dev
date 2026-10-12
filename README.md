@@ -3,8 +3,8 @@
 # ComputerboxTW (TW-bentocraft): Zero-Maintenance Open-Source 3D PC Compatibility & Pricing Engine
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen)](https://username.github.io/TW-bentocraft/)
-[![GitHub Stars](https://img.shields.io/github/stars/username/TW-bentocraft?style=social)](https://github.com/username/TW-bentocraft)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen)](https://vaalrl.github.io/TW-bentocraft/)
+[![GitHub Stars](https://img.shields.io/github/stars/VaalRL/TW-bentocraft?style=social)](https://github.com/VaalRL/TW-bentocraft)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-yellow.svg?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/username)
 
 > 🍱 **ComputerboxTW (Repo: `TW-bentocraft` / 中文品牌: 原價煮便當)** is an open-source, serverless 3D PC building estimator and hardware compatibility engine tailored for Taiwan's retail hardware ecosystem (CoolPC / Sinya).  
@@ -35,13 +35,13 @@
 
 ```mermaid
 flowchart TD
-    subgraph Pipeline["1. GitHub Actions (Daily Cron 03:00 UTC)"]
+    subgraph Pipeline["1. GitHub Actions (Daily Cron 03:17 UTC)"]
         Cron["⏰ Daily Scheduler"] --> Runner["🐧 Ubuntu Runner (Free Tier)"]
         Runner --> Crawler["📡 Scrape CoolPC evaluate.php / Retail APIs"]
         Crawler --> SpecMatch["🧹 Three-Tier Sanitization & Spec Fingerprint Mapping"]
         SpecMatch <--> SpecCatalog["📚 Immutable Spec Ontology (spec_catalog.json)"]
-        SpecMatch --> Snapshot["📦 Generate daily_prices.json (~80 KB)"]
-        Snapshot --> DeployPages["🚀 Push to GitHub Pages branch"]
+        SpecMatch --> Snapshot["📦 Validate & commit data/prices/coolpc.json"]
+        Snapshot --> DeployPages["🚀 Build & deploy in the same workflow (actions/deploy-pages)"]
     end
 
     subgraph Distribution["2. Fastly Global Edge CDN"]
@@ -72,7 +72,7 @@ flowchart TD
 
 ## 🧩 Hardware Compatibility Constraint Matrix
 
-The browser-based engine evaluates candidate parts against currently selected parts across 6 core physical and electrical dimensions:
+The browser-based engine evaluates candidate parts against currently selected parts. Each check returns pass, warn, fail or unknown: missing specs yield unknown instead of a default value, and approximate values (GPU lengths from listings are only accurate to the centimetre) warn within their tolerance. The core dimensions are below; the full list, including PSU form factor vs case, CPUs without integrated graphics and back-connect boards, is in [02](02-hardware-compatibility-constraint-engine.md).
 
 ```mermaid
 graph LR
@@ -95,27 +95,29 @@ graph LR
 
 ## 🚀 Quickstart & Local Development
 
+The frontend is not implemented yet. What runs today is the data-pipeline PoC (see [`poc/README.md`](poc/README.md)) and the spec catalog validation.
+
 ### Prerequisites
-- Node.js 20+
-- Python 3.11+ (for local crawler execution)
+- Python 3.11+
+- `jsonschema` (catalog validation)
 
-### 1. Clone & Install Frontend
+### 1. Clone
 ```bash
-git clone https://github.com/username/open-pc-builder.git
-cd open-pc-builder
-npm install
+git clone https://github.com/VaalRL/TW-bentocraft.git
+cd TW-bentocraft
+pip install 'jsonschema==4.26.0'
 ```
 
-### 2. Run Local Development Server
+### 2. Run Tests
 ```bash
-npm run dev
-# Opens at http://localhost:5173
+python -m unittest discover -s poc -p 'test_*.py'
+(cd schema && python -m unittest test_schema)
 ```
 
-### 3. Run Test Crawler Locally
+### 3. Fetch CoolPC and Build a Draft Catalog (needs access to coolpc.com.tw)
 ```bash
-python scripts/crawler_coolpc.py
-# Generates local test snapshots in data/daily_prices.json
+python poc/coolpc_probe.py --out poc/out --dump-items
+python poc/to_catalog.py poc/out/items.jsonl --out poc/out/draft
 ```
 
 ---
