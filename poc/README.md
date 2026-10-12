@@ -30,7 +30,7 @@
 - `test_spec_extract.py`：擷取規則單元測試（字串取自規格文件範例，不代表真實頁面格式）。
 - `AUDIT-2026-10-12.md`：擷取正確率抽樣核對紀錄。
 - `to_catalog.py`：把 `coolpc_probe.py --dump-items` 輸出的品項轉成草稿規格庫與報價檔，並以 [`schema/`](../schema/) 驗證、量測檔案大小。
-- `.github/workflows/poc-coolpc-probe.yml`：推送 `poc/**.py` 時在 Actions 上執行；原始 HTML 以 artifact 保存 7 天，不 commit 進倉庫。
+- `.github/workflows/poc-coolpc-probe.yml`：推送 `poc/`、`schema/` 下的程式時，以及合併到預設分支後每日 UTC 03:17 在 Actions 上執行；原始 HTML 以 artifact 保存 14 天，不 commit 進倉庫。
 
 ## 執行
 
@@ -44,7 +44,7 @@ python poc/coolpc_probe.py --html evaluate.html --out poc/out   # 解析存檔
 
 - 每次執行僅請求 `robots.txt` 與 `evaluate.php` 各一次，間隔 2 秒。
 - 使用可識別的自訂 User-Agent，不偽裝瀏覽器。
-- 原始 HTML 只存在 Actions artifact（7 天），不公開於倉庫。
+- 原始 HTML 只存在 Actions artifact（14 天），不公開於倉庫。
 
 ## 結果（2026-10-12，五輪 Actions 執行）
 

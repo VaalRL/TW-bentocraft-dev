@@ -1,8 +1,11 @@
 name: PoC - CoolPC reachability & spec extraction
 
-# PoC 階段：推送 poc/ 下的 Python 變更時自動執行一次，也可手動觸發（文件變更不觸發，避免多餘請求）。
+# PoC 階段：推送 poc/、schema/ 下的程式變更時自動執行一次，也可手動觸發（文件變更不觸發，避免多餘請求）。
+# 合併到預設分支後每日執行一次，連續觀察可達性與 offer_id 跨日穩定性（排程只在預設分支生效）。
 # 每次只對原價屋發出 robots.txt 與 evaluate.php 各一次請求。
 on:
+  schedule:
+    - cron: '17 3 * * *'  # UTC 03:17 = 台灣 11:17
   push:
     paths:
       - 'poc/**.py'
@@ -65,5 +68,5 @@ jobs:
         with:
           name: coolpc-probe-${{ github.run_id }}
           path: poc/out/
-          retention-days: 7
+          retention-days: 14  # 涵蓋一至兩週的每日觀察
           if-no-files-found: ignore
