@@ -1,0 +1,9958 @@
+{
+ "schema_version": "1.0",
+ "category": "cooler",
+ "models": {
+  "cooler:antec:skeleton-240-argb": {
+   "category": "cooler",
+   "brand": "Antec",
+   "name": "Skeleton 240 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECSKELETON240ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:antec:skeleton-360-argb": {
+   "category": "cooler",
+   "brand": "Antec",
+   "name": "Skeleton 360 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECSKELETON360ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:antec:vortex-view-360": {
+   "category": "cooler",
+   "brand": "Antec",
+   "name": "Vortex View 360 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECVORTEXVIEW360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:apexgaming:nancool-pro-360": {
+   "category": "cooler",
+   "brand": "Apexgaming",
+   "name": "NANCOOL PRO 魔立方360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "APEXGAMINGNANCOOLPRO魔立方360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:asrock:pro-360-argb": {
+   "category": "cooler",
+   "brand": "ASRock",
+   "name": "Pro 360 ARGB(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ASROCKPRO360ARGB()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:asrock:pro-white-360-argb": {
+   "category": "cooler",
+   "brand": "ASRock",
+   "name": "Pro White 360 ARGB(白) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ASROCKPROWHITE360ARGB()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:asrock:steel-legend-360-lcd": {
+   "category": "cooler",
+   "brand": "ASRock",
+   "name": "Steel Legend 360 LCD(白) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ASROCKSTEELLEGEND360LCD()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:asrock:steel-legend-dark-360-lcd": {
+   "category": "cooler",
+   "brand": "ASRock",
+   "name": "Steel Legend Dark 360 LCD(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ASROCKSTEELLEGENDDARK360LCD()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:asus:lc-240-argb": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "LC 240 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ASUSLC240ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:lc-360-argb": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "LC 360 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ASUSLC360ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:max-gaming-lc-360-argb-lcd": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "MAX GAMING LC 360 ARGB LCD(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩MAXGAMINGLC360ARGBLCD()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 56.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:asus:prime-lc-360-argb": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "Prime LC 360 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PRIMELC360ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:prime-lc-ii-360-argb-lcd": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "Prime LC II 360 ARGB LCD(黑)水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PRIMELCII360ARGBLCD()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:asus:proart-lc-240": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ProArt LC 240 水冷散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PROARTLC240水冷散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:proart-lc-360": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ProArt LC 360 水冷散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PROARTLC360水冷散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:proart-lc-420": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ProArt LC 420 水冷散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PROARTLC420水冷散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 420,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:rog-ryujin-iii-360-argb-extreme": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG RYUJIN III 360 ARGB Extreme 龍神三代",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGRYUJINIII360ARGBEXTREME龍神三代"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:rog-ryujin-iii-360-argb-extreme-8342": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG RYUJIN III 360 ARGB Extreme 白龍神",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGRYUJINIII360ARGBEXTREME龍神"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:rog-ryuo-iv-360-argb": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG RYUO IV 360 ARGB(黑) 龍王四代",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGRYUOIV360ARGB()龍王四代"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:asus:rog-ryuo-iv-360-argb-c416": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG RYUO IV 360 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGRYUOIV360ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:asus:rog-ryuo-iv-slc-360-argb": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG RYUO IV SLC 360 ARGB(黑) 龍王四代",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGRYUOIVSLC360ARGB()龍王四代"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:asus:rog-strix-lc-iii-360": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX LC III 360 飛龍三代(無光風扇)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIXLCIII360飛龍三代(無光風扇)"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:rog-strix-lc-iii-360-argb": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX LC III 360 ARGB 白龍三代",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIXLCIII360ARGB龍三代"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:rog-strix-lc-iii-360-argb-lcd": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX LC III 360 ARGB LCD 白龍",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIXLCIII360ARGBLCD龍"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:rog-strix-lc-iv-360-argb-lcd": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX LC IV 360 ARGB LCD 飛龍",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIXLCIV360ARGBLCD飛龍"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:rog-strix-lc-iv-360-argb-lcd-f523": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX LC IV 360 ARGB LCD 白龍",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIXLCIV360ARGBLCD龍"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:rog-strix-slc-iv-360-argb-lcd": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX SLC IV 360 ARGB LCD 飛龍",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIXSLCIV360ARGBLCD飛龍"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:rog-strix-slc-iv-360-argb-lcd-d8d5": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX SLC IV 360 ARGB LCD 白龍",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIXSLCIV360ARGBLCD龍"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:asus:tuf-gaming-lc-iii-240-argb": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING LC III 240 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMINGLCIII240ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 53.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:asus:tuf-gaming-lc-iii-360-argb": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING LC III 360 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMINGLCIII360ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 53.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:asus:tuf-gaming-lc-iii-360-argb-lcd": {
+   "category": "cooler",
+   "brand": "華碩 ASUS",
+   "name": "TUF GAMING LC III 360 ARGB LCD",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFGAMINGLCIII360ARGBLCD"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 53.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:coolermaster:connect-stand": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "Connect Stand",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼CONNECTSTAND"
+    ]
+   },
+   "specs": {},
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:hyper-212-3dhp-black-argb": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "Hyper 212 3DHP Black ARGB 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼HYPER2123DHPBLACKARGB散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 158.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:hyper-212-spectrum-v3": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "Hyper 212 Spectrum V3 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼HYPER212SPECTRUMV3散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 152.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:hyper-411-nano": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "Hyper 411 Nano 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼HYPER411NANO散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 136.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:hyper-510": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "Hyper 510 下吹式 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼HYPER510下吹式散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 67.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "Z",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:hyper-612-apex": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "Hyper 612 APEX 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼HYPER612APEX散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 159.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:coolermaster:hyper-620s": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "Hyper 620S 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼HYPER620S散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 155.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:hyper-622-halo-white": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "Hyper 622 Halo White",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼HYPER622HALOWHITE"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:i50-lga1700": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "I50 LGA1700 下吹式 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼I50LGA1700下吹式散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 60.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "Z",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:i70c-argb-lga1700": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "I70C ARGB LGA1700 下吹式 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼I70CARGBLGA1700下吹式散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 70.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "Z",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:lga1700-a": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "LGA1700 空冷專用扣具(A)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼LGA1700空冷專用扣具(A)"
+    ]
+   },
+   "specs": {},
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:masterliquid-240-atmos-ii-stealth": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "MasterLiquid 240 Atmos II Stealth 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MASTERLIQUID240ATMOSIISTEALTH水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:masterliquid-360-atmos-ii-lcd-argb": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "MasterLiquid 360 Atmos II LCD ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MASTERLIQUID360ATMOSIILCDARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:coolermaster:masterliquid-360-atmos-ii-stealth": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "MasterLiquid 360 Atmos II Stealth 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MASTERLIQUID360ATMOSIISTEALTH水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:masterliquid-core-lcd-4-360": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "MasterLiquid Core LCD 4\" 360 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MASTERLIQUIDCORELCD4\"360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:coolermaster:masterliquid-core-lcd-6-360": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "MasterLiquid Core LCD 6\" 360 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MASTERLIQUIDCORELCD6\"360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:coolermaster:masterliquid-core-nex-240-argb": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "MasterLiquid Core Nex 240 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MASTERLIQUIDCORENEX240ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:coolermaster:masterliquid-core-nex-360-argb": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "MasterLiquid Core Nex 360 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MASTERLIQUIDCORENEX360ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:coolermaster:masterliquid-pl360-tr5-sp6": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "MasterLiquid PL360 TR5-SP6 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼MASTERLIQUIDPL360TR5SP6水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "Y",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:notepal-ergostand-iii": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "NotePal ErgoStand III 散熱座",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼NOTEPALERGOSTANDIII散熱座"
+    ]
+   },
+   "specs": {},
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:v4-alpha-3dhp-black": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "V4 ALPHA 3DHP Black 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼V4ALPHA3DHPBLACK散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 161.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:v8-ace-3dhp-amd": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "V8 Ace 3DHP AMD 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼V8ACE3DHPAMD散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 167.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "X",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:coolermaster:v8-ace-3dhp-intel": {
+   "category": "cooler",
+   "brand": "酷碼 Cooler Master",
+   "name": "V8 Ace 3DHP Intel 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼V8ACE3DHPINTEL散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 167.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:cougar:poseidon-gt-360": {
+   "category": "cooler",
+   "brand": "COUGAR",
+   "name": "POSEIDON-GT 360 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARPOSEIDONGT360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXYZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:cougar:poseidon-vistek-argb-240": {
+   "category": "cooler",
+   "brand": "COUGAR",
+   "name": "Poseidon Vistek ARGB 240(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARPOSEIDONVISTEKARGB240()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:cougar:poseidon-vistek-argb-360": {
+   "category": "cooler",
+   "brand": "COUGAR",
+   "name": "Poseidon Vistek ARGB 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARPOSEIDONVISTEKARGB360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:cougar:poseidon-vistek-pro-argb-240": {
+   "category": "cooler",
+   "brand": "COUGAR",
+   "name": "Poseidon Vistek Pro ARGB 240(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARPOSEIDONVISTEKPROARGB240()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:cougar:poseidon-vistek-pro-argb-360": {
+   "category": "cooler",
+   "brand": "COUGAR",
+   "name": "Poseidon Vistek Pro ARGB 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARPOSEIDONVISTEKPROARGB360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:cryorig:c5": {
+   "category": "cooler",
+   "brand": "快睿 CRYORIG",
+   "name": "C5 下吹式 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "快睿C5下吹式散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 54.9,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 165,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:cryorig:c5-cu": {
+   "category": "cooler",
+   "brand": "快睿 CRYORIG",
+   "name": "C5 Cu 下吹式 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "快睿C5CU下吹式散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 54.9,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 180,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:cryorig:cr401-argb": {
+   "category": "cooler",
+   "brand": "快睿 CRYORIG",
+   "name": "CR401 ARGB 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "快睿CR401ARGB散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 150.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:cryorig:cr6s": {
+   "category": "cooler",
+   "brand": "快睿 CRYORIG",
+   "name": "CR6S 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "快睿CR6S散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 250,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:cryorig:cryo-360": {
+   "category": "cooler",
+   "brand": "快睿 CRYORIG",
+   "name": "CRYO 360 快睿歐(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "快睿CRYO360快睿歐()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:cryorig:h4": {
+   "category": "cooler",
+   "brand": "快睿 CRYORIG",
+   "name": "H4 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "快睿H4散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 148.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 180,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:cryorig:h6": {
+   "category": "cooler",
+   "brand": "快睿 CRYORIG",
+   "name": "H6 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "快睿H6散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 148.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:cryorig:rheo-360": {
+   "category": "cooler",
+   "brand": "快睿 CRYORIG",
+   "name": "RHEO 360 睿歐 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "快睿RHEO360睿歐水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:darkflash:dn360d-v1-5": {
+   "category": "cooler",
+   "brand": "darkFlash",
+   "name": "DN360D V1.5 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DARKFLASHDN360DV15水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:darkflash:e400-plus": {
+   "category": "cooler",
+   "brand": "darkFlash",
+   "name": "E400 PLUS 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DARKFLASHE400PLUS散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 155.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 235,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:darkflash:nebula-dn240d": {
+   "category": "cooler",
+   "brand": "darkFlash",
+   "name": "Nebula DN240D 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DARKFLASHNEBULADN240D水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:darkflash:nebula-dn360d": {
+   "category": "cooler",
+   "brand": "darkFlash",
+   "name": "Nebula DN360D 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DARKFLASHNEBULADN360D水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:darkflash:nebula-dn360s-lcd": {
+   "category": "cooler",
+   "brand": "darkFlash",
+   "name": "Nebula DN360S LCD 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DARKFLASHNEBULADN360SLCD水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:darkflash:wave-dv360s-max": {
+   "category": "cooler",
+   "brand": "darkFlash",
+   "name": "WAVE DV360S MAX 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DARKFLASHWAVEDV360SMAX水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:deepcool:ag400": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AG400",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AG400"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 150.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:ag400-argb": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AG400 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AG400ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 150.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 220,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:ag400-plus": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AG400 PLUS",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AG400PLUS"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 150.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 220,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:ag500": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AG500",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AG500"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 155.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 240,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:ag600": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AG600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AG600"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 150.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:ag620-digital": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AG620 DIGITAL",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AG620DIGITAL"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 161.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 260,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:ag620-g2": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AG620 G2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AG620G2"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 159.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:ag620-g2-argb": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AG620 G2 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AG620G2ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 159.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:ag620-wh-argb-v2": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AG620 WH ARGB V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AG620WHARGBV2化版"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 161.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:deepcool:ak700-digital-nyx": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AK700 DIGITAL NYX",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AK700DIGITALNYX"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:ak700-digital-wh": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AK700 DIGITAL WH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AK700DIGITALWH"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:deepcool:assassin-iv-4": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "ASSASSIN IV 阿薩辛4",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神ASSASSINIV阿薩辛4"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 164.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:deepcool:assassin-iv-vc-vision": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "ASSASSIN IV VC VISION",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神ASSASSINIVVCVISION"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 172.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:assassin-vc-elite": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "ASSASSIN VC ELITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神ASSASSINVCELITE"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 164.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:deepcool:assassin-vc-elite-wh": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "ASSASSIN VC ELITE WH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神ASSASSINVCELITEWH"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 164.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:deepcool:le360-v2": {
+   "category": "cooler",
+   "brand": "DEEPCOOL",
+   "name": "LE360 V2 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DEEPCOOLLE360V2水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:le360-v2-wh": {
+   "category": "cooler",
+   "brand": "DEEPCOOL",
+   "name": "LE360 V2 WH(白) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DEEPCOOLLE360V2WH()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:deepcool:lm360": {
+   "category": "cooler",
+   "brand": "DEEPCOOL",
+   "name": "LM360 水冷散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DEEPCOOLLM360水冷散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:lm360-wh": {
+   "category": "cooler",
+   "brand": "DEEPCOOL",
+   "name": "LM360 WH(白) 水冷散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DEEPCOOLLM360WH()水冷散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:deepcool:lq360": {
+   "category": "cooler",
+   "brand": "DEEPCOOL",
+   "name": "LQ360 水冷散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DEEPCOOLLQ360水冷散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:lt360-argb": {
+   "category": "cooler",
+   "brand": "DEEPCOOL",
+   "name": "LT360 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DEEPCOOLLT360ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:lt360-vision-argb": {
+   "category": "cooler",
+   "brand": "DEEPCOOL",
+   "name": "LT360 VISION ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DEEPCOOLLT360VISIONARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:deepcool:lt360-vision-wh-argb": {
+   "category": "cooler",
+   "brand": "DEEPCOOL",
+   "name": "LT360 VISION WH ARGB(白) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DEEPCOOLLT360VISIONWHARGB()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:deepcool:spartacus-360": {
+   "category": "cooler",
+   "brand": "DEEPCOOL",
+   "name": "SPARTACUS 360 水冷散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DEEPCOOLSPARTACUS360水冷散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:enermax:aquafusion-ii-argb-240": {
+   "category": "cooler",
+   "brand": "保銳 ENERMAX",
+   "name": "AQUAFUSION II ARGB 240 幻彩晶蝶",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳AQUAFUSIONIIARGB240幻彩晶蝶"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 53.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:enermax:ets-td60d-argb": {
+   "category": "cooler",
+   "brand": "保銳 ENERMAX",
+   "name": "ETS-TD60D ARGB 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳ETSTD60DARGB散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 159.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 280,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:enermax:liqmax-iv-argb-360": {
+   "category": "cooler",
+   "brand": "保銳 ENERMAX",
+   "name": "LIQMAX IV ARGB 360 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳LIQMAXIVARGB360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 53.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:enermax:liqmaxflo-240": {
+   "category": "cooler",
+   "brand": "保銳 ENERMAX",
+   "name": "LIQMAXFLO 240 風晶凌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳LIQMAXFLO240風晶凌"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 65.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:enermax:liqmaxflo-360": {
+   "category": "cooler",
+   "brand": "保銳 ENERMAX",
+   "name": "LIQMAXFLO 360 風晶凌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳LIQMAXFLO360風晶凌"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 65.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:enermax:liqmaxflo-420": {
+   "category": "cooler",
+   "brand": "保銳 ENERMAX",
+   "name": "LIQMAXFLO 420 風晶凌",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳LIQMAXFLO420風晶凌"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 420,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 65.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:enermax:liqtech-xtr-360-argb": {
+   "category": "cooler",
+   "brand": "保銳 ENERMAX",
+   "name": "LIQTECH XTR 360 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "保銳LIQTECHXTR360ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "Y",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:fsp:ae24-240": {
+   "category": "cooler",
+   "brand": "全漢 FSP",
+   "name": "AE24 240水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢AE24240水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:fsp:ae36-360": {
+   "category": "cooler",
+   "brand": "全漢 FSP",
+   "name": "AE36 360水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢AE36360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:fsp:mp7-argb": {
+   "category": "cooler",
+   "brand": "全漢 FSP",
+   "name": "MP7 ARGB 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢MP7ARGB散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 153.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:fsp:mp7-black": {
+   "category": "cooler",
+   "brand": "全漢 FSP",
+   "name": "MP7 BLACK 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢MP7BLACK散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 153.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:fsp:mp7-white-argb": {
+   "category": "cooler",
+   "brand": "全漢 FSP",
+   "name": "MP7 WHITE ARGB 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢MP7WHITEARGB散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 153.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:fsp:ne5": {
+   "category": "cooler",
+   "brand": "全漢 FSP",
+   "name": "NE5 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢NE5散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 150.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:fsp:np5-argb": {
+   "category": "cooler",
+   "brand": "全漢 FSP",
+   "name": "NP5 ARGB 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢NP5ARGB散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 151.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:fsp:np5-black": {
+   "category": "cooler",
+   "brand": "全漢 FSP",
+   "name": "NP5 BLACK 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢NP5BLACK散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 151.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:fsp:np5-white-argb": {
+   "category": "cooler",
+   "brand": "全漢 FSP",
+   "name": "NP5 WHITE ARGB 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "全漢NP5WHITEARGB散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 151.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:geometric-future:eskimo-plus-36-360": {
+   "category": "cooler",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Eskimo 愛斯基摩 Plus 36 360水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來ESKIMO愛斯基摩PLUS36360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 57.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:geometric-future:eskimo-pro-36-360": {
+   "category": "cooler",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Eskimo 愛斯基摩 Pro 36 360水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來ESKIMO愛斯基摩PRO36360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:geometric-future:eskimo-pro-42-420": {
+   "category": "cooler",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Eskimo 愛斯基摩 Pro 42 420水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來ESKIMO愛斯基摩PRO42420水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 420,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:geometric-future:eskimo-ultra-42-420": {
+   "category": "cooler",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Eskimo 愛斯基摩 Ultra 42 420水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來ESKIMO愛斯基摩ULTRA42420水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 420,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 57.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:gigabyte:aorus-waterforce-ii-360": {
+   "category": "cooler",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS WATERFORCE II 360 鷹魂二代",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSWATERFORCEII360鷹魂二代"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:gigabyte:aorus-waterforce-ii-360-ice": {
+   "category": "cooler",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS WATERFORCE II 360 ICE(白) 鷹魂二代",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSWATERFORCEII360ICE()鷹魂二代"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:gigabyte:aorus-waterforce-x-ii-240": {
+   "category": "cooler",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS WATERFORCE X II 240 鷹神二代",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSWATERFORCEXII240鷹神二代"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXYZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:gigabyte:aorus-waterforce-x-ii-360": {
+   "category": "cooler",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS WATERFORCE X II 360 鷹神二代",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSWATERFORCEXII360鷹神二代"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXYZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:gigabyte:aorus-waterforce-x-ii-360-ice": {
+   "category": "cooler",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS WATERFORCE X II 360 ICE(白) 鷹神二代",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSWATERFORCEXII360ICE()鷹神二代"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXYZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:gigabyte:eagle-360": {
+   "category": "cooler",
+   "brand": "技嘉 GIGABYTE",
+   "name": "EAGLE 360 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉EAGLE360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:gigabyte:eagle-360-ice": {
+   "category": "cooler",
+   "brand": "技嘉 GIGABYTE",
+   "name": "EAGLE 360 ICE(白) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉EAGLE360ICE()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:gigabyte:gaming-360": {
+   "category": "cooler",
+   "brand": "技嘉 GIGABYTE",
+   "name": "GAMING 360 飛鷹水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉GAMING360飛鷹水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:gigabyte:gaming-360-ice": {
+   "category": "cooler",
+   "brand": "技嘉 GIGABYTE",
+   "name": "GAMING 360 ICE(白) 飛鷹水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉GAMING360ICE()飛鷹水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:id:frozn-a410-dk": {
+   "category": "cooler",
+   "brand": "ID",
+   "name": "FROZN A410 DK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "IDCOOLINGFROZNA410DK化版"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 152.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 230,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:id:frozn-a410-dw": {
+   "category": "cooler",
+   "brand": "ID",
+   "name": "FROZN A410 DW",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "IDCOOLINGFROZNA410DW化版"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 152.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 230,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:id:frozn-a610-argb": {
+   "category": "cooler",
+   "brand": "ID",
+   "name": "FROZN A610 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "IDCOOLINGFROZNA610ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 155.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:id:frozn-a620-pro-se": {
+   "category": "cooler",
+   "brand": "ID",
+   "name": "FROZN A620 PRO SE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "IDCOOLINGFROZNA620PROSE"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 260,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:id:frozn-a620-pro-se-argb": {
+   "category": "cooler",
+   "brand": "ID",
+   "name": "FROZN A620 PRO SE ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "IDCOOLINGFROZNA620PROSEARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:id:fx360-td": {
+   "category": "cooler",
+   "brand": "ID",
+   "name": "FX360 TD 水冷散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "IDCOOLINGFX360TD水冷散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:id:is-40x": {
+   "category": "cooler",
+   "brand": "ID",
+   "name": "IS-40X 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "IDCOOLINGIS40X散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 45.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 100,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:id:is-50x": {
+   "category": "cooler",
+   "brand": "ID",
+   "name": "IS-50X 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "IDCOOLINGIS50X散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 105,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:id:sl240-xe": {
+   "category": "cooler",
+   "brand": "ID",
+   "name": "SL240 XE 水冷散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "IDCOOLINGSL240XE水冷散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:id:sl360-xe": {
+   "category": "cooler",
+   "brand": "ID",
+   "name": "SL360 XE 水冷散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "IDCOOLINGSL360XE水冷散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:jonsbo:ca90": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "CA90 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯CA90散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 159.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 270,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:jonsbo:cb40": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "CB40 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯CB40散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 153.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 225,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:jonsbo:cb80": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "CB80 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯CB80散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 153.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 260,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:jonsbo:cc90": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "CC90 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯CC90散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 158.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 285,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:jonsbo:cr1400-dv2": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "CR1400 DV2 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯CR1400DV2散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 136.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 230,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:jonsbo:cr1400-evo": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "CR1400 EVO 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯CR1400EVO散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 130.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 180,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:jonsbo:cr3000": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "CR3000 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯CR3000散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 260,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:jonsbo:pisa-a5": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "PISA A5 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯PISAA5散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 153.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 265,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:jonsbo:tf3-360": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "TF3-360 黑色版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯TF3360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:jonsbo:th-240": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "TH-240 黑色版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯TH240"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:jonsbo:th-360": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "TH-360 黑色版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯TH360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:jonsbo:tx-360": {
+   "category": "cooler",
+   "brand": "喬思伯 JONSBO",
+   "name": "TX-360 黑色版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯TX360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:lian-li:hydroshift-ii-lcd-c-360n": {
+   "category": "cooler",
+   "brand": "聯力 Lian Li",
+   "name": "HydroShift II LCD-C 360N 裸排水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力HYDROSHIFTIILCDC360N裸排水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:lian-li:hydroshift-ii-lcd-s-360n": {
+   "category": "cooler",
+   "brand": "聯力 Lian Li",
+   "name": "HydroShift II LCD-S 360N 裸排水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力HYDROSHIFTIILCDS360N裸排水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:lian-li:hydroshift-ii-lcd-s-360tl": {
+   "category": "cooler",
+   "brand": "聯力 Lian Li",
+   "name": "HydroShift II LCD-S 360TL",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力HYDROSHIFTIILCDS360TL"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:lian-li:hydroshift-ii-oled-curved-360n": {
+   "category": "cooler",
+   "brand": "聯力 Lian Li",
+   "name": "HydroShift II OLED Curved 360N 裸排",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力HYDROSHIFTIIOLEDCURVED360N裸排"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:lian-li:hydroshift-ii-oled-curved-360p": {
+   "category": "cooler",
+   "brand": "聯力 Lian Li",
+   "name": "HydroShift II OLED Curved 360P",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力HYDROSHIFTIIOLEDCURVED360P"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:lian-li:hydroshift-ii-oled-curved-360tl": {
+   "category": "cooler",
+   "brand": "聯力 Lian Li",
+   "name": "HydroShift II OLED Curved 360TL",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力HYDROSHIFTIIOLEDCURVED360TL"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:hyperflow-argb-240": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "HyperFlow ARGB 240",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHHYPERFLOWARGB240"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:montech:hyperflow-argb-360": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "HyperFlow ARGB 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHHYPERFLOWARGB360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:hyperflow-digital-240": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "HyperFlow Digital 240",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHHYPERFLOWDIGITAL240"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:hyperflow-digital-360": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "HyperFlow Digital 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHHYPERFLOWDIGITAL360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:hyperflow-silent-240": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "HyperFlow Silent 240",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHHYPERFLOWSILENT240"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:hyperflow-silent-360": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "HyperFlow Silent 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHHYPERFLOWSILENT360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:nx400-argb": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "NX400 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHNX400ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 156.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:nx600": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "NX600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHNX600"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:nx600-argb": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "NX600 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHNX600ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:pureflow-argb-360": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "PureFlow ARGB 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHPUREFLOWARGB360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:msi:mag-corefrozr-aa13": {
+   "category": "cooler",
+   "brand": "微星 MSI",
+   "name": "MAG COREFROZR AA13(黑) 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGCOREFROZRAA13()散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 152.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 240,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:msi:mag-coreliquid-a13-240": {
+   "category": "cooler",
+   "brand": "微星 MSI",
+   "name": "MAG CoreLiquid A13 240",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGCORELIQUIDA13240"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:msi:mag-coreliquid-a13-360": {
+   "category": "cooler",
+   "brand": "微星 MSI",
+   "name": "MAG CoreLiquid A13 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGCORELIQUIDA13360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:msi:meg-coreliquid-e15-360": {
+   "category": "cooler",
+   "brand": "微星 MSI",
+   "name": "MEG CoreLiquid E15 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MEGCORELIQUIDE15360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:msi:mpg-coreliquid-p13-360": {
+   "category": "cooler",
+   "brand": "微星 MSI",
+   "name": "MPG CoreLiquid P13 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MPGCORELIQUIDP13360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:msi:mpg-coreliquid-p22-360": {
+   "category": "cooler",
+   "brand": "微星 MSI",
+   "name": "MPG CoreLiquid P22 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MPGCORELIQUIDP22360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:noctua:nh-c14s": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-C14S",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHC14S"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 115.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-d12l": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-D12L",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHD12L"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 145.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-d15": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-D15",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHD15"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 168.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-d15-chromax-black": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-D15 chromax.black",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHD15CHROMAXBLACK"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 168.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-d15-g2": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-D15 G2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHD15G2"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 168.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-d15-g2-chromax-black": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-D15 G2 chromax.black",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHD15G2CHROMAXBLACK"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 168.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-d15s": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-D15S",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHD15S"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-d15s-chromax-black": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-D15S chromax.black",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHD15SCHROMAXBLACK"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-d9l": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-D9L",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHD9L"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 110.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-l9a-am5": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-L9a-AM5",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHL9AAM5"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 37.0,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-l9a-am5-chromax-black": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-L9a-AM5 chromax.black",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHL9AAM5CHROMAXBLACK"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 37.0,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-l9i-17xx": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-L9i-17xx",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHL9I17XX"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 37.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "Z",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-l9i-17xx-chromax-black": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-L9i-17xx chromax.black",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHL9I17XXCHROMAXBLACK"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 37.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "Z",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-l9x65": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-L9x65",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHL9X65"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 65.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-u12a": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-U12A",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHU12A"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 158.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-u12a-chromax-black": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-U12A chromax.black",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHU12ACHROMAXBLACK化版"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 158.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:noctua:nh-u12s": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-U12S",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHU12S"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 158.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-u12s-chromax-black": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-U12S chromax.black",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHU12SCHROMAXBLACK"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 158.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-u14s": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-U14S",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHU14S"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 165.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-u14s-tr5-sp6": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-U14S TR5-SP6",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHU14STR5SP6"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 165.0,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nh-u9s": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NH-U9S",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NHU9S"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 125.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nl-acf1-vrm": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NL-ACF1 VRM 風扇",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NLACF1VRM風扇"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nl-lc1-24-240": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NL-LC1-24 240水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NLLC124240水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nl-lc1-36-360": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NL-LC1-36 360水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NLLC136360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:noctua:nl-lc1-42-420": {
+   "category": "cooler",
+   "brand": "貓頭鷹 Noctua",
+   "name": "NL-LC1-42 420水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "貓頭鷹NLLC142420水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 420,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:nzxt:kraken-core-240-rgb": {
+   "category": "cooler",
+   "brand": "NZXT",
+   "name": "Kraken Core 240 RGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTKRAKENCORE240RGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:nzxt:kraken-core-360-rgb": {
+   "category": "cooler",
+   "brand": "NZXT",
+   "name": "Kraken Core 360 RGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTKRAKENCORE360RGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:nzxt:kraken-elite-240-rgb-v2": {
+   "category": "cooler",
+   "brand": "NZXT",
+   "name": "Kraken Elite 240 RGB 黑(V2) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTKRAKENELITE240RGB(V2)水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:nzxt:kraken-elite-280-rgb-v2": {
+   "category": "cooler",
+   "brand": "NZXT",
+   "name": "Kraken Elite 280 RGB 黑(V2) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTKRAKENELITE280RGB(V2)水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 280,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:nzxt:kraken-elite-360-rgb-v2": {
+   "category": "cooler",
+   "brand": "NZXT",
+   "name": "Kraken Elite 360 RGB 黑(V2) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTKRAKENELITE360RGB(V2)水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:nzxt:kraken-elite-420-rgb": {
+   "category": "cooler",
+   "brand": "NZXT",
+   "name": "Kraken Elite 420 RGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTKRAKENELITE420RGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 420,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:nzxt:kraken-plus-240-rgb": {
+   "category": "cooler",
+   "brand": "NZXT",
+   "name": "Kraken Plus 240 RGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTKRAKENPLUS240RGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:nzxt:kraken-plus-360-rgb": {
+   "category": "cooler",
+   "brand": "NZXT",
+   "name": "Kraken Plus 360 RGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "NZXTKRAKENPLUS360RGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:ougar:poseidon-gt-240": {
+   "category": "cooler",
+   "brand": "OUGAR",
+   "name": "POSEIDON-GT 240 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "OUGARPOSEIDONGT240水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXYZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:phanteks:glacier-one-360-d30-x2": {
+   "category": "cooler",
+   "brand": "Phanteks",
+   "name": "Glacier One 360 D30 X2(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PHANTEKSGLACIERONE360D30X2()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 57.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:phanteks:glacier-one-360m25-g2": {
+   "category": "cooler",
+   "brand": "Phanteks",
+   "name": "Glacier One 360M25 G2(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PHANTEKSGLACIERONE360M25G2()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:phanteks:glacier-one-360m25-lcd": {
+   "category": "cooler",
+   "brand": "Phanteks",
+   "name": "Glacier One 360M25 LCD(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PHANTEKSGLACIERONE360M25LCD()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:raymii:d301-rgb": {
+   "category": "cooler",
+   "brand": "Raymii",
+   "name": "D301 鋁合金 RGB 風扇旋轉筆電支架",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "RAYMIID301鋁合金RGB風扇旋轉筆電支架"
+    ]
+   },
+   "specs": {},
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:raymii:rnf-k02-rgb": {
+   "category": "cooler",
+   "brand": "Raymii",
+   "name": "RNF-K02 RGB雙風扇散熱筆電架",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "RAYMIIRNFK02RGB雙風扇散熱筆電架"
+    ]
+   },
+   "specs": {},
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:raymii:rnf-k6-rgb": {
+   "category": "cooler",
+   "brand": "Raymii",
+   "name": "RNF-K6 大風扇RGB散熱筆電架",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "RAYMIIRNFK6大風扇RGB散熱筆電架"
+    ]
+   },
+   "specs": {},
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:sama:a40l": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "A40L 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAA40L散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 152.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 240,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:sama:a40l-501b": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "A40L 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAA40L化版散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 152.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 240,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:sama:a60l": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "A60L 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAA60L散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 265,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:sama:l50-240-bk": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "L50 240 BK(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAL50240BK()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:sama:l50-240-wh": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "L50 240 WH(白) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAL50240WH()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:sama:l50-360-bk": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "L50 360 BK(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAL50360BK()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:sama:l50-360-wh": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "L50 360 WH(白) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAL50360WH()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:sama:q70-bk-360": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "Q70 BK(黑) 360水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAQ70BK()360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:sama:q70-wh-360": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "Q70 WH(白) 360水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAQ70WH()360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 55.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:sama:x30": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "X30 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAX30散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 134.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:sama:x40l": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "X40L 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAX40L散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 134.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 220,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:sama:x40l-d040": {
+   "category": "cooler",
+   "brand": "SAMA",
+   "name": "X40L 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAX40L化版散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 134.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 220,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:scythe:3-scfm-3000": {
+   "category": "cooler",
+   "brand": "Scythe",
+   "name": "風魔3(SCFM-3000)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SCYTHE風魔3(SCFM3000)"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 154.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:scythe:3-scktt-3000": {
+   "category": "cooler",
+   "brand": "Scythe",
+   "name": "虎徹3(SCKTT-3000)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SCYTHE虎徹3(SCKTT3000)"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 154.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:scythe:3-scsk-3000": {
+   "category": "cooler",
+   "brand": "Scythe",
+   "name": "手裏劍3(SCSK-3000) 下吹式",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SCYTHE手裏劍3(SCSK3000)下吹式"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 39.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:scythe:4-argb-scktt-4000ar": {
+   "category": "cooler",
+   "brand": "Scythe",
+   "name": "虎徹4 ARGB(SCKTT-4000AR)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SCYTHE虎徹4ARGB(SCKTT4000AR)"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 155.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:scythe:4-scbsk-4000": {
+   "category": "cooler",
+   "brand": "Scythe",
+   "name": "大手裏劍4(SCBSK-4000) 下吹式",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SCYTHE大手裏劍4(SCBSK4000)下吹式"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 67.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:scythe:6": {
+   "category": "cooler",
+   "brand": "Scythe",
+   "name": "無限6 雪彩版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SCYTHE無限6雪彩版"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 154.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:scythe:6-scmg-6000": {
+   "category": "cooler",
+   "brand": "Scythe",
+   "name": "無限6(SCMG-6000)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SCYTHE無限6(SCMG6000)"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 154.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:scythe:6-scmg-6000dbe": {
+   "category": "cooler",
+   "brand": "Scythe",
+   "name": "無限6 闇黑版(SCMG-6000DBE)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SCYTHE無限6闇(SCMG6000DBE)"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 154.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:scythe:6-tuf": {
+   "category": "cooler",
+   "brand": "Scythe",
+   "name": "無限6 TUF",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SCYTHE無限6TUF"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 154.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:scythe:scmr-1000": {
+   "category": "cooler",
+   "brand": "Scythe",
+   "name": "孫六(SCMR-1000)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SCYTHE孫六(SCMR1000)"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 155.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:argon-v140-argb": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "Argon V140 ARGB 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣ARGONV140ARGB散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:hydrogon-d120-argb": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "Hydrogon D120 ARGB 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣HYDROGOND120ARGB散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 153.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:hydrogon-h90-argb": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "Hydrogon H90 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣HYDROGONH90ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 48.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:icemyst-360": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "IceMyst 360 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣ICEMYST360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:imf70-argb": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "IMF70 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣IMF70ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:novapeak-240-argb": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "NovaPeak 240 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣NOVAPEAK240ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:novapeak-360-argb": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "NovaPeak 360 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣NOVAPEAK360ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:xe02-2066": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "XE02-2066 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣XE022066散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 64.5,
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 165,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:xe02-3647n": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "XE02-3647N 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣XE023647N散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 64.0,
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 205,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:xe02-3647sb": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "XE02-3647SB 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣XE023647SB散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 64.0,
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 205,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:xe04-4677": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "XE04-4677 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣XE044677散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 126.0,
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 270,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:xe360-4677": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "XE360-4677 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣XE3604677水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:xe360-tr5-v2": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "XE360-TR5-V2 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣XE360TR5V2水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "Y",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:silverstone:xed120-4u": {
+   "category": "cooler",
+   "brand": "銀欣 SilverStone",
+   "name": "XED120 4U散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "欣XED1204U散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 145.0,
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 450,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:superflower:st4-argb": {
+   "category": "cooler",
+   "brand": "振華 Super Flower",
+   "name": "ST4 ARGB 散熱器",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華ST4ARGB散熱器"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 153.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:tcomas:cube-360": {
+   "category": "cooler",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "CUBE 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASCUBE360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 54.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tcomas:exit-d3-360": {
+   "category": "cooler",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "EXIT D3 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASEXITD3360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 54.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tcomas:exit-d3-pro-360": {
+   "category": "cooler",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "EXIT D3 PRO 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASEXITD3PRO360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 59.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tcomas:le200-240": {
+   "category": "cooler",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "LE200 240(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASLE200240()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 59.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tcomas:le200-360": {
+   "category": "cooler",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "LE200 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASLE200360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 59.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tcomas:neox-360": {
+   "category": "cooler",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "NEOX 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASNEOX360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 54.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tcomas:neox-pro-360": {
+   "category": "cooler",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "NEOX PRO 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASNEOXPRO360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 59.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:thermalright:assassin-king-120-se": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Assassin King 120 SE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民ASSASSINKING120SE"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 148.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:assassin-spirit-120-v2-plus": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Assassin Spirit 120 V2 Plus 刺靈",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民ASSASSINSPIRIT120V2PLUS刺靈"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 154.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:assassin-x-120-r-digital": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Assassin X 120 R Digital",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民ASSASSINX120RDIGITAL"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 151.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:thermalright:axp120-x67": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "AXP120-X67 下吹式",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民AXP120X67下吹式"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 67.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:axp90-x47": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "AXP90-X47 下吹式",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民AXP90X47下吹式"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 47.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:axp90-x47-808e": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "AXP90-X47 下吹式",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民AXP90X47化版下吹式"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 47.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:thermalright:burst-assassin-120": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Burst Assassin 120",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民BURSTASSASSIN120"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 154.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:burst-assassin-120-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Burst Assassin 120 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民BURSTASSASSIN120ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 154.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:frost-commander-140": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Frost Commander 140",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民FROSTCOMMANDER140"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:frost-commander-140-4fc7": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Frost Commander 140",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民FROSTCOMMANDER140化版"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:thermalright:frozen-warframe-240-black-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Frozen Warframe 240 BLACK ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民FROZENWARFRAME240BLACKARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:frozen-warframe-240-white-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Frozen Warframe 240 WHITE ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民FROZENWARFRAME240WHITEARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:frozen-warframe-360-black-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Frozen Warframe 360 BLACK ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民FROZENWARFRAME360BLACKARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:frozen-warframe-360-se-black-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Frozen Warframe 360 SE BLACK ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民FROZENWARFRAME360SEBLACKARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:frozen-warframe-360-se-white-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Frozen Warframe 360 SE WHITE ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民FROZENWARFRAME360SEWHITEARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:frozen-warframe-360-white-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Frozen Warframe 360 WHITE ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民FROZENWARFRAME360WHITEARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:frozen-warframe-420-black-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Frozen Warframe 420 BLACK ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民FROZENWARFRAME420BLACKARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 420,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:frozen-warframe-420-white-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Frozen Warframe 420 WHITE ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民FROZENWARFRAME420WHITEARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:grand-vision-360-argb-black": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Grand Vision 360 ARGB BLACK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民GRANDVISION360ARGBBLACK"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:grand-vision-360-argb-white": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Grand Vision 360 ARGB WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民GRANDVISION360ARGBWHITE"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:peerless-assassin-120-digital-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Peerless Assassin 120 Digital ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民PEERLESSASSASSIN120DIGITALARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 162.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:thermalright:peerless-assassin-120-mini": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Peerless Assassin 120 MINI",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民PEERLESSASSASSIN120MINI化版"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 135.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:thermalright:peerless-assassin-120-se-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Peerless Assassin 120 SE ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民PEERLESSASSASSIN120SEARGB化版"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 155.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:thermalright:peerless-assassin-120-v3": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Peerless Assassin 120 V3",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民PEERLESSASSASSIN120V3"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:thermalright:peerless-assassin-120-vision-max-argb": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Peerless Assassin 120 Vision Max ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民PEERLESSASSASSIN120VISIONMAXARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 164.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:thermalright:peerless-assassin-140": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Peerless Assassin 140",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民PEERLESSASSASSIN140化版"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 158.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:thermalright:phantom-spirit-120": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Phantom Spirit 120",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民PHANTOMSPIRIT120"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:phantom-spirit-120-evo": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Phantom Spirit 120 EVO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民PHANTOMSPIRIT120EVO"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:royal-knight-120": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Royal Knight 120",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民ROYALKNIGHT120"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 156.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:si-100": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "SI-100 下吹式",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民SI100下吹式"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 100.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:trofeo-vision-360-argb-black": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Trofeo Vision 360 ARGB BLACK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民TROFEOVISION360ARGBBLACK"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:trofeo-vision-360-argb-white": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Trofeo Vision 360 ARGB WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民TROFEOVISION360ARGBWHITE"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:wonder-vision-360-ub-argb-black": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Wonder Vision 360 UB ARGB BLACK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民WONDERVISION360UBARGBBLACK"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermalright:wonder-vision-360-ub-argb-white": {
+   "category": "cooler",
+   "brand": "利民 Thermalright",
+   "name": "Wonder Vision 360 UB ARGB WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "利民WONDERVISION360UBARGBWHITE"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:thermaltake:t1000": {
+   "category": "cooler",
+   "brand": "曜越 Thermaltake",
+   "name": "T1000 透明水冷液",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "曜越T1000透明水冷液"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:tryx:holo-360-argb": {
+   "category": "cooler",
+   "brand": "TRYX",
+   "name": "HOLO 360 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "TRYXHOLO360ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tryx:panorama-240-argb": {
+   "category": "cooler",
+   "brand": "TRYX",
+   "name": "Panorama 240 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "TRYXPANORAMA240ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tryx:panorama-360": {
+   "category": "cooler",
+   "brand": "TRYX",
+   "name": "Panorama 360 黑(無光)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "TRYXPANORAMA360(無光)"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:tryx:panorama-360-argb": {
+   "category": "cooler",
+   "brand": "TRYX",
+   "name": "Panorama 360 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "TRYXPANORAMA360ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tryx:panorama-se-240-argb": {
+   "category": "cooler",
+   "brand": "TRYX",
+   "name": "Panorama SE 240 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "TRYXPANORAMASE240ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 240,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tryx:panorama-se-360-argb": {
+   "category": "cooler",
+   "brand": "TRYX",
+   "name": "Panorama SE 360 ARGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "TRYXPANORAMASE360ARGB"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tryx:stage-360-argb": {
+   "category": "cooler",
+   "brand": "TRYX",
+   "name": "STAGE 360 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "TRYXSTAGE360ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tryx:turris-620": {
+   "category": "cooler",
+   "brand": "TRYX",
+   "name": "TURRIS 620",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "TRYXTURRIS620"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 165.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 280,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:xpg:levante-ii-360": {
+   "category": "cooler",
+   "brand": "XPG",
+   "name": "LEVANTE II 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGLEVANTEII360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 54.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:xpg:maestro-plus-42sa": {
+   "category": "cooler",
+   "brand": "XPG",
+   "name": "MAESTRO PLUS 42SA",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGMAESTROPLUS42SA"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 156.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 220,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:xpg:maestro-plus-62da": {
+   "category": "cooler",
+   "brand": "XPG",
+   "name": "MAESTRO PLUS 62DA",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGMAESTROPLUS62DA"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 156.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "tdp_rating_w": {
+     "value": 250,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cooler:xpg:triton-ii-360se": {
+   "category": "cooler",
+   "brand": "XPG",
+   "name": "TRITON II 360SE(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "XPGTRITONII360SE()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,4180 @@
+{
+ "schema_version": "1.0",
+ "category": "ram",
+ "models": {
+  "ram:adata:16gb-ddr4-3200-ad4u3200316g22-sgn": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "16GB DDR4-3200 AD4U3200316G22-SGN",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛16GBDDR43200｛AD4U3200316G22SGN｝"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:16gb-ddr5-4000-ad5u400016g-s": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "單條16GB DDR5-4000 AD5U400016G-S",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AD5U400016G-S"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 4000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:16gb-ddr5-4800-ad5u480016g-s": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "單條16GB DDR5-4800 AD5U480016G-S",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AD5U480016G-S"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 4800,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:16gb-ddr5-5600-ad5u560016g-s": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "單條16GB DDR5-5600 AD5U560016G-S",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AD5U560016G-S"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:16gb-ddr5-5600-ax5u5600c4616g-slabbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "單條16GB DDR5-5600 AX5U5600C4616G-SLABBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U5600C4616G-SLABBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:16gb-ddr5-6000-ax5u6000c4816g-slabbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "單條16GB DDR5-6000 AX5U6000C4816G-SLABBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C4816G-SLABBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u5600c4616g-dtlabbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U5600C4616G-DTLABBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U5600C4616G-DTLABBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u5600c4616g-dtlabwh": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U5600C4616G-DTLABWH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U5600C4616G-DTLABWH"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c3016g-dclarbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C3016G-DCLARBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3016G-DCLARBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c3016g-dclarwh": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C3016G-DCLARWH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3016G-DCLARWH"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c3016g-dtlabbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C3016G-DTLABBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3016G-DTLABBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c3016g-dtlabrbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C3016G-DTLABRBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3016G-DTLABRBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c3016g-dtlabrwh": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C3016G-DTLABRWH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3016G-DTLABRWH"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c3016g-dtlabwh": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C3016G-DTLABWH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3016G-DTLABWH"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c3616g-dtlabbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C3616G-DTLABBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3616G-DTLABBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c3616g-dtlabrbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C3616G-DTLABRBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3616G-DTLABRBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c3616g-dtlabrwh": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C3616G-DTLABRWH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3616G-DTLABRWH"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c3616g-dtlabwh": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C3616G-DTLABWH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3616G-DTLABWH"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c4816g-dtlabbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C4816G-DTLABBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C4816G-DTLABBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6000c4816g-dtlabwh": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6000C4816G-DTLABWH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C4816G-DTLABWH"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32g-ax5u6400c3216g-dtlabbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32G AX5U6400C3216G-DTLABBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6400C3216G-DTLABBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32gb-ax4u3200716g16a-db10": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32GB AX4U3200716G16A-DB10",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX4U3200716G16A-DB10"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32gb-ddr4-3200-ad4u3200732g22-sgn": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "32GB DDR4-3200 AD4U3200732G22-SGN",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛32GBDDR43200｛AD4U3200732G22SGN｝"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:32gb-ddr5-5600-ad5u560032g-s": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "單條32GB DDR5-5600 AD5U560032G-S",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AD5U560032G-S"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:64g-ax5u5600c4632g-dtlabbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "64G AX5U5600C4632G-DTLABBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U5600C4632G-DTLABBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:64g-ax5u6000c3032g-dclabk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "64G AX5U6000C3032G-DCLABK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3032G-DCLABK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:64g-ax5u6000c3032g-dclarbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "64G AX5U6000C3032G-DCLARBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3032G-DCLARBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:64g-ax5u6000c3032g-dclarwh": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "64G AX5U6000C3032G-DCLARWH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3032G-DCLARWH"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:64g-ax5u6000c3032g-dclawh": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "64G AX5U6000C3032G-DCLAWH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3032G-DCLAWH"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:64g-ax5u6000c3032g-dtlabbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "64G AX5U6000C3032G-DTLABBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3032G-DTLABBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:64g-ax5u6000c3032g-dtlabrbk": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "64G AX5U6000C3032G-DTLABRBK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3032G-DTLABRBK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:64g-ax5u6000c3032g-dtlabrwh": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "64G AX5U6000C3032G-DTLABRWH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3032G-DTLABRWH"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:64g-ax5u6000c3032g-dtlabwh": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "64G AX5U6000C3032G-DTLABWH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AX5U6000C3032G-DTLABWH"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:8gb-ddr4-3200-ad4u320038g22-sgn": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "8GB DDR4-3200 AD4U320038G22-SGN",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "威剛8GBDDR43200｛AD4U320038G22SGN｝"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 8,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:adata:8gb-ddr5-5600-ad5u56008g-s": {
+   "category": "ram",
+   "brand": "威剛 ADATA",
+   "name": "單條8GB DDR5-5600 AD5U56008G-S",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:AD5U56008G-S"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 8,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:biwin:black-opal-dw100-rgb-32gb-16gbx2-ddr5-6000": {
+   "category": "ram",
+   "brand": "Biwin",
+   "name": "佰維 Black Opal DW100 RGB 32GB(雙通16GBx2) DDR5-6000",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維BLACKOPALDW100RGB32GB(雙通16GBX2)DDR56000"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:biwin:black-opal-dw100-rgb-48gb-24gbx2-ddr5-6000": {
+   "category": "ram",
+   "brand": "Biwin",
+   "name": "佰維 Black Opal DW100 RGB 48GB(雙通24GBx2) DDR5-6000",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維BLACKOPALDW100RGB48GB(雙通24GBX2)DDR56000"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 48,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:biwin:black-opal-hx100-48gb-24gbx2-ddr5-6000": {
+   "category": "ram",
+   "brand": "Biwin",
+   "name": "佰維 Black Opal HX100 48GB(雙通24GBx2) DDR5-6000",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BIWIN佰維BLACKOPALHX10048GB(雙通24GBX2)DDR56000"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 48,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:corsair:dominator-titanium-32g-cmp32gx5m2b6000z30": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "DOMINATOR TITANIUM 32G CMP32GX5M2B6000Z30",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMP32GX5M2B6000Z30"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:corsair:dominator-titanium-32g-cmp32gx5m2x7200c3": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "DOMINATOR TITANIUM 32G CMP32GX5M2X7200C3",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMP32GX5M2X7200C3"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 7200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:corsair:vengeance-128g-cmk128gx5m2d6000c40": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "VENGEANCE 128G CMK128GX5M2D6000C40",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMK128GX5M2D6000C40"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 128,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:corsair:vengeance-32g-cmh32gx5m2b6000z30k": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "VENGEANCE 32G CMH32GX5M2B6000Z30K",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMH32GX5M2B6000Z30K"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "gray": {
+     "label": "灰",
+     "color": "gray"
+    }
+   }
+  },
+  "ram:corsair:vengeance-32g-cmh32gx5m2b6400z32": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "VENGEANCE 32G CMH32GX5M2B6400Z32",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMH32GX5M2B6400Z32"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "gray": {
+     "label": "灰",
+     "color": "gray"
+    }
+   }
+  },
+  "ram:corsair:vengeance-32g-cmh32gx5m2b6400z36": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "VENGEANCE 32G CMH32GX5M2B6400Z36",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMH32GX5M2B6400Z36"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "gray": {
+     "label": "灰",
+     "color": "gray"
+    }
+   }
+  },
+  "ram:corsair:vengeance-32g-cmh32gx5m2e6000z36": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "VENGEANCE 32G CMH32GX5M2E6000Z36",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMH32GX5M2E6000Z36"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "gray": {
+     "label": "灰",
+     "color": "gray"
+    }
+   }
+  },
+  "ram:corsair:vengeance-32g-cmk32gx5m2b6000z30": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "VENGEANCE 32G CMK32GX5M2B6000Z30",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMK32GX5M2B6000Z30"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "gray": {
+     "label": "灰",
+     "color": "gray"
+    }
+   }
+  },
+  "ram:corsair:vengeance-32g-cmk32gx5m2b6400z32": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "VENGEANCE 32G CMK32GX5M2B6400Z32",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMK32GX5M2B6400Z32"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "gray": {
+     "label": "灰",
+     "color": "gray"
+    }
+   }
+  },
+  "ram:corsair:vengeance-32g-cmk32gx5m2b6400z36": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "VENGEANCE 32G CMK32GX5M2B6400Z36",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMK32GX5M2B6400Z36"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "gray": {
+     "label": "灰",
+     "color": "gray"
+    }
+   }
+  },
+  "ram:corsair:vengeance-32g-cmk32gx5m2e6000z36": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "VENGEANCE 32G CMK32GX5M2E6000Z36",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMK32GX5M2E6000Z36"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "gray": {
+     "label": "灰",
+     "color": "gray"
+    }
+   }
+  },
+  "ram:corsair:vengeance-64g-cmk64gx5m2b6400c42": {
+   "category": "ram",
+   "brand": "海盜船 CORSAIR",
+   "name": "VENGEANCE 64G CMK64GX5M2B6400C42",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:CMK64GX5M2B6400C42"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "ram:gskill:16gb-f4-3200c16d-16gtzr": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "幻光戟 16GB F4-3200C16D-16GTZR",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F4-3200C16D-16GTZR"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:32gb-f4-3200c16d-32gtzn": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "焰光戟 32GB F4-3200C16D-32GTZN",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F4-3200C16D-32GTZN"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:32gb-f4-3200c16d-32gtzr": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "幻光戟 32GB F4-3200C16D-32GTZR",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F4-3200C16D-32GTZR"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:32gb-f4-3600c16d-32gtznc": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "焰光戟 32GB F4-3600C16D-32GTZNC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F4-3600C16D-32GTZNC"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:32gb-f4-3600c16d-32gtzrc": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "幻光戟 32GB F4-3600C16D-32GTZRC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F4-3600C16D-32GTZRC"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:flare-x5-128gb-f5-6000j3444f64gx2-fx5": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Flare X5 烈焰槍128GB F5-6000J3444F64GX2-FX5",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3444F64GX2-FX5"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 128,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:flare-x5-256gb-f5-6000j3444f64gx4-fx5": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Flare X5 烈焰槍256GB F5-6000J3444F64GX4-FX5",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3444F64GX4-FX5"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 256,
+     "source": "title"
+    },
+    "modules": {
+     "value": 4,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:flare-x5-32gb-f5-6000j2836g16gx2-fx5": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Flare X5 烈焰槍32GB F5-6000J2836G16GX2-FX5",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J2836G16GX2-FX5"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "ram:gskill:flare-x5-32gb-f5-6000j2836g16gx2-fx5w": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Flare X5 烈焰槍32GB F5-6000J2836G16GX2-FX5W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J2836G16GX2-FX5W"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "ram:gskill:flare-x5-64gb-f5-6000j2836g32gx2-fx5": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Flare X5 烈焰槍64GB F5-6000J2836G32GX2-FX5",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J2836G32GX2-FX5"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "ram:gskill:flare-x5-64gb-f5-6000j3040g32gx2-fx5": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Flare X5烈焰槍 64GB F5-6000J3040G32GX2-FX5",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3040G32GX2-FX5"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "ram:gskill:flare-x5-64gb-f5-6000j3040g32gx2-fx5w": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Flare X5烈焰槍 64GB F5-6000J3040G32GX2-FX5W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3040G32GX2-FX5W"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "ram:gskill:flare-x5-96gb-f5-6000j3036f48gx2-fx5": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Flare X5 烈焰槍96GB F5-6000J3036F48GX2-FX5",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3036F48GX2-FX5"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 96,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "ram:gskill:flare-x5-96gb-f5-6000j3036f48gx2-fx5w": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Flare X5 烈焰槍96GB F5-6000J3036F48GX2-FX5W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3036F48GX2-FX5W"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 96,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "ram:gskill:rgb-128gb-f5-6000j3444f64gx2-tz5nr": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "焰鋒戟RGB 128GB F5-6000J3444F64GX2-TZ5NR",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3444F64GX2-TZ5NR"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 128,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-32gb-f5-6000j3038f16gx2-tz5nr": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "焰鋒戟RGB 32GB F5-6000J3038F16GX2-TZ5NR",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3038F16GX2-TZ5NR"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-32gb-f5-6400j3039g16gx2-tz5nr": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "焰鋒戟RGB 32GB F5-6400J3039G16GX2-TZ5NR",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6400J3039G16GX2-TZ5NR"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-32gb-f5-6400j3039g16gx2-tz5nrw": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "焰鋒戟RGB 32GB F5-6400J3039G16GX2-TZ5NRW",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6400J3039G16GX2-TZ5NRW"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-32gb-f5-6400j3239g16gx2-tz5rk": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "幻鋒戟RGB 32GB F5-6400J3239G16GX2-TZ5RK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6400J3239G16GX2-TZ5RK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-32gb-f5-7200j3445g16gx2-tz5nr": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "焰鋒戟RGB 32GB F5-7200J3445G16GX2-TZ5NR",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-7200J3445G16GX2-TZ5NR"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 7200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-48gb-f5-6000j2836f24gx2-tr5ns": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "皇家戟RGB 48GB F5-6000J2836F24GX2-TR5NS",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J2836F24GX2-TR5NS"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 48,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-64gb-f5-6000j2836g32gx2-tr5ns": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "皇家戟RGB 64GB F5-6000J2836G32GX2-TR5NS",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J2836G32GX2-TR5NS"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-64gb-f5-6000j3040g32gx2-tz5nr": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "焰鋒戟RGB 64GB F5-6000J3040G32GX2-TZ5NR",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3040G32GX2-TZ5NR"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-64gb-f5-6000j3040g32gx2-tz5nrw": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "焰鋒戟RGB 64GB F5-6000J3040G32GX2-TZ5NRW",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3040G32GX2-TZ5NRW"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-64gb-f5-6000j3040g32gx2-tz5rw": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "幻鋒戟RGB 64GB F5-6000J3040G32GX2-TZ5RW",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3040G32GX2-TZ5RW"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-64gb-f5-6000j3636f32gx2-rm5nrk": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "烈焰槍RGB 64GB F5-6000J3636F32GX2-RM5NRK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3636F32GX2-RM5NRK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:rgb-64gb-f5-6000j3636f32gx2-rm5nrw": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "烈焰槍RGB 64GB F5-6000J3636F32GX2-RM5NRW",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3636F32GX2-RM5NRW"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:ripjaws-s5-32gb": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Ripjaws S5焰刃32GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "芝奇RIPJAWSS5焰刃32GB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:ripjaws-s5-64gb-f5-6000j3636f32gx2-rs5k": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Ripjaws S5焰刃64GB F5-6000J3636F32GX2-RS5K",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3636F32GX2-RS5K"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "ram:gskill:ripjaws-v-32gb-f4-3600c18d-32gvk": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "Ripjaws V 32GB F4-3600C18D-32GVK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F4-3600C18D-32GVK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:gskill:ripjawsm5-rgb-32gb-f5-6000j3636f16gx2-rm5rk": {
+   "category": "ram",
+   "brand": "芝奇 G.SKILL",
+   "name": "RipjawsM5 RGB焰刃32GB F5-6000J3636F16GX2-RM5RK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:F5-6000J3636F16GX2-RM5RK"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:16gb-ddr4-3200": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "16GB DDR4-3200",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓16GBDDR43200｛KVR32N22S8"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:16gb-ddr4-3200-fury-beast-kf432c16bb-16": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "16GB DDR4-3200 FURY Beast KF432C16BB/16",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:KF432C16BB/16"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:16gb-ddr5-5600": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "單條16GB DDR5-5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓單條16GBDDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:16gb-ddr5-6000": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "單條16GB DDR5-6000",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓單條16GBDDR56000"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:16gb-kf432c16bbk2-16": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "16GB KF432C16BBK2/16",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:KF432C16BBK2/16"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:32gb-16gb-2-ddr5-5600-cl36-fury-beast": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "32GB(雙通16GB*2) DDR5-5600/CL36 FURY Beast",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓32GB(雙通16GB*2)DDR55600/CL36FURYBEAST"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:32gb-16gb-2-ddr5-5600-cl36-fury-beast-rgb": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "32GB(雙通16GB*2) DDR5-5600/CL36 FURY Beast RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓32GB(雙通16GB*2)DDR55600/CL36FURYBEASTRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:32gb-16gb-2-ddr5-6000-cl30-fury-beast": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "32GB(雙通16GB*2) DDR5-6000/CL30 FURY Beast",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓32GB(雙通16GB*2)DDR56000/CL30FURYBEAST"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:32gb-ddr4-3200": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "32GB DDR4-3200",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓32GBDDR43200｛KVR32N22D8"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:32gb-ddr4-3200-fury-beast-kf432c16bb-32": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "32GB DDR4-3200 FURY Beast KF432C16BB/32",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:KF432C16BB/32"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:32gb-ddr5-5600": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "單條32GB DDR5-5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓單條32GBDDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:64gb-32gb-2-ddr5-5600-cl36-fury-beast": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "64GB(雙通32GB*2) DDR5-5600/CL36 FURY Beast",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓64GB(雙通32GB*2)DDR55600/CL36FURYBEAST"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:64gb-32gb-2-ddr5-6000-cl30-fury-beast": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "64GB(雙通32GB*2) DDR5-6000/CL30 FURY Beast",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓64GB(雙通32GB*2)DDR56000/CL30FURYBEAST"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:64gb-32gb-2-ddr5-6000-cl30-fury-beast-rgb": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "64GB(雙通32GB*2) DDR5-6000/CL30 FURY Beast RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓64GB(雙通32GB*2)DDR56000/CL30FURYBEASTRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:8gb-ddr4-3200-fury-beast-kf432c16bb-8": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "8GB DDR4-3200 FURY Beast KF432C16BB/8",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PN:KF432C16BB/8"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 8,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:kingston:8gb-ddr5-5600": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "單條8GB DDR5-5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓單條8GBDDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 8,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:6000-cl30-cras-v-rgb": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "6000/CL30 CRAS V RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)32GB(雙通道16GB*2)DDR56000/CL30CRASVRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:6000-cl30-cras-v-rgb-7aae": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "6000/CL30 CRAS V RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)64GB(雙通道32GB*2)DDR56000/CL30CRASVRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:ddr5-6000-cl28-urbane-v-rgb": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "DDR5 6000/CL28 URBANE V RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)32GB(雙通16GB*2)DDR56000/CL28URBANEVRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:ddr5-6000-cl30-bolt-v": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "DDR5 6000/CL30 BOLT V",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)32GB(雙通道16GB*2)DDR56000/CL30BOLTV"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:ddr5-6400-cl30-urbane-v-rgb": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "DDR5 6400/CL30 URBANE V RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)32GB(雙通16GB*2)DDR56400/CL30URBANEVRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:ddr5-6400-cl32-cras-v-rgb": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "DDR5 6400/CL32 CRAS V RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)32GB(雙通道16GB*2)DDR56400/CL32CRASVRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:ddr5-6400-cl32-cras-v-rgb-f5cb": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "DDR5 6400/CL32 CRAS V RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)64GB(雙通道32GB*2)DDR56400/CL32CRASVRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:ddr5-6400-cl32-urbane-v-rgb": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "DDR5 6400/CL32 URBANE V RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)32GB(雙通16GB*2)DDR56400/CL32URBANEVRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:ddr5-6400-cl32-urbane-v-rgb-e29c": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "DDR5 6400/CL32 URBANE V RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)48GB(雙通24GB*2)DDR56400/CL32URBANEVRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 48,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:micron:crucial-32gb-ddr5-5600": {
+   "category": "ram",
+   "brand": "美光 Micron",
+   "name": "Crucial 單條32GB DDR5 5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL單條32GBDDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:micron:micron-crucial-64gb-32gb-2-ddr5-56": {
+   "category": "ram",
+   "brand": "美光 Micron",
+   "name": "美光｛Micron Crucial 64GB(雙通32GB*2) DDR5 56",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光｛MICRONCRUCIAL64GB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:micron:micron-crucial-pro-32gb-16gb-2": {
+   "category": "ram",
+   "brand": "美光 Micron",
+   "name": "美光｛Micron Crucial PRO 超頻 32GB(雙通16GB*2) ",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光｛MICRONCRUCIALPRO超頻32GB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  "ram:micron:micron-crucial-pro-64gb-32gb-2": {
+   "category": "ram",
+   "brand": "美光 Micron",
+   "name": "美光｛Micron Crucial PRO 超頻 64GB(雙通32GB*2) ",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光｛MICRONCRUCIALPRO超頻64GB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "draft"
+   }
+  },
+  "ram:micron:micron-crucial-pro-96gb-48gb-2": {
+   "category": "ram",
+   "brand": "美光 Micron",
+   "name": "美光｛Micron Crucial PRO 超頻 96GB(雙通48GB*2) ",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光｛MICRONCRUCIALPRO超頻96GB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 96,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:origin:code-vortex-rgb-32gb-16gbx2-ddr5-6200": {
+   "category": "ram",
+   "brand": "Origin",
+   "name": "code Vortex RGB 32GB(雙通16GBx2) DDR5-6200",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ORIGINCODEVORTEXRGB32GB(雙通16GBX2)DDR56200"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:origin:code-vortex-rgb-48gb-24gbx2-ddr5-6000": {
+   "category": "ram",
+   "brand": "Origin",
+   "name": "code Vortex RGB 48GB(雙通24GBx2) DDR5-6000",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ORIGINCODEVORTEXRGB48GB(雙通24GBX2)DDR56000"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 48,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:teamgroup:t-create-expert-24g-ddr5-6000": {
+   "category": "ram",
+   "brand": "十銓 TEAMGROUP",
+   "name": "T-CREATE EXPERT 引領者 24G DDR5-6000",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "十銓｛TCREATEEXPERT引領者24GDDR56000｝"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 24,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:16gb-8gb-2-ddr4-2666": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "16GB(雙通8GB*2) DDR4-2666",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX16GB(雙通8GB*2)DDR42666"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 2666,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:16gb-8gb-2-ddr4-3200": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "16GB(雙通8GB*2) DDR4-3200",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX16GB(雙通8GB*2)DDR43200"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:16gb-ddr4-2666": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "16GB DDR4-2666",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX16GBDDR42666"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 2666,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:16gb-ddr4-3200": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "16GB DDR4-3200",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX16GBDDR43200"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:16gb-ddr5-5600": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "單條16GB DDR5-5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX單條16GBDDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:32gb-16gb-2-ddr4-2666": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "32GB(雙通16GB*2) DDR4-2666",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX32GB(雙通16GB*2)DDR42666"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 2666,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:32gb-16gb-2-ddr4-3200": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "32GB(雙通16GB*2) DDR4-3200",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX32GB(雙通16GB*2)DDR43200"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:32gb-16gb-2-ddr5-5600": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "32GB(雙通16GB*2) DDR5 5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX32GB(雙通16GB*2)DDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:32gb-ddr4-3200": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "32GB DDR4-3200",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX32GBDDR43200"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:32gb-ddr5-4800": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "單條32GB DDR5-4800",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX單條32GBDDR54800"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 4800,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:32gb-ddr5-5600": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "單條32GB DDR5-5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX單條32GBDDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:64gb-32gb-2-ddr4-3200": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "64GB(雙通32GB*2) DDR4-3200",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX64GB(雙通32GB*2)DDR43200"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:8gb-ddr4-2666": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "8GB DDR4-2666",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX8GBDDR42666"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 8,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 2666,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:8gb-ddr4-3200": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "8GB DDR4-3200",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX8GBDDR43200"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 8,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:8gb-ddr5-5600": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "單條8GB DDR5-5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX單條8GBDDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 8,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  }
+ }
+}

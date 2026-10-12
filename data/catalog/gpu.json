@@ -1,0 +1,4113 @@
+{
+ "schema_version": "1.0",
+ "category": "gpu",
+ "models": {
+  "gpu:acer:nitro-rx9060xt-oc-16gb": {
+   "category": "gpu",
+   "brand": "Acer",
+   "name": "Nitro RX9060XT OC 16GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ACERNITRORX9060XTOC16GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 270.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:acer:nitro-rx9070xt-16g-oc": {
+   "category": "gpu",
+   "brand": "Acer",
+   "name": "NITRO RX9070XT 16G OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ACERNITRORX9070XT16GOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asrock:rx9060xt-challenger-16gb-oc": {
+   "category": "gpu",
+   "brand": "華擎 ASRock",
+   "name": "RX9060XT Challenger 16GB OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎RX9060XTCHALLENGER16GBOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 250.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asrock:rx9070-challenger-16gb": {
+   "category": "gpu",
+   "brand": "華擎 ASRock",
+   "name": "RX9070 Challenger 16GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎RX9070CHALLENGER16GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 290.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asrock:rx9070gre-steel-legend-dark-12gb-oc": {
+   "category": "gpu",
+   "brand": "華擎 ASRock",
+   "name": "RX9070GRE Steel Legend Dark 12GB OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎RX9070GRESTEELLEGENDDARK12GBOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:ats-rx9070gre-o12g": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "ATS-RX9070GRE-O12G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ATSRX9070GREO12G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:dual-rtx3050-o6g": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "DUAL-RTX3050-O6G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩DUALRTX3050O6G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:dual-rtx3060-o12g-v2": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "DUAL-RTX3060-O12G-V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩DUALRTX3060O12GV2"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:dual-rtx5060-o8g-a": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "DUAL-RTX5060-O8G-A",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩DUALRTX5060O8GA"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:dual-rtx5060-o8g-white": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "DUAL-RTX5060-O8G-WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩DUALRTX5060O8GWHITE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:dual-rtx5060ti-o16g": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "DUAL-RTX5060TI-O16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩DUALRTX5060TIO16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:dual-rtx5060ti-o16g-white": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "DUAL-RTX5060TI-O16G-WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩DUALRTX5060TIO16GWHITE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:dual-rx9060xt-16g": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "DUAL-RX9060XT-16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩DUALRX9060XT16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 210.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:gt1030-sl-2g-brk": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "GT1030-SL-2G-BRK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩GT1030SL2GBRK"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 170.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:gt710-sl-2gd5-brk-evo": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "GT710-SL-2GD5-BRK-EVO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩GT710SL2GD5BRKEVO"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 170.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:gt730-4h-sl-2gd5": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "GT730-4H-SL-2GD5",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩GT7304HSL2GD5"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 148.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:gt730-sl-2gd5-brk": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "GT730-SL-2GD5-BRK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩GT730SL2GD5BRK"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 165.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:prime-rtx5060ti-16g": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "PRIME-RTX5060TI-16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PRIMERTX5060TI16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:prime-rtx5060ti-o16g": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "PRIME-RTX5060TI-O16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PRIMERTX5060TIO16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:prime-rtx5060ti-o8g": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "PRIME-RTX5060TI-O8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PRIMERTX5060TIO8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:prime-rtx5080-16g-evo": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "PRIME-RTX5080-16G-EVO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PRIMERTX508016GEVO"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:prime-rx9060xt-o16g": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "PRIME-RX9060XT-O16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PRIMERX9060XTO16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:prime-rx9070-o16g-evo": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "PRIME-RX9070-O16G-EVO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PRIMERX9070O16GEVO"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 320.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:t1-rtx5060ti-o8g-gaming": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "T1-RTX5060TI-O8G-GAMING",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩T1RTX5060TIO8GGAMING"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 267.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:t1-rtx5070-o12g-gaming": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "T1-RTX5070-O12G-GAMING",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩T1RTX5070O12GGAMING"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:tuf-rtx5060ti-o16g-gaming": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "TUF-RTX5060TI-O16G-GAMING",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩TUFRTX5060TIO16GGAMING"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:aorus-rtx5060-ari-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS RTX5060 ARI 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSRTX5060ARI8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 330.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:aorus-rtx5060-elite-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS RTX5060 ELITE 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSRTX5060ELITE8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 330.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:aorus-rtx5060ti-ai-box": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS RTX5060Ti AI BOX",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSRTX5060TIAIBOX"
+    ]
+   },
+   "specs": {
+    "external": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:aorus-rtx5070-infinity-12g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS RTX5070 INFINITY 12G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSRTX5070INFINITY12G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:aorus-rtx5070-master-12g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS RTX5070 MASTER 12G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSRTX5070MASTER12G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 320.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:aorus-rtx5080-infinity-wood-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS RTX5080 INFINITY WOOD 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSRTX5080INFINITYWOOD16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 330.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:aorus-rx9070xt-elite-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS RX9070XT ELITE 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSRX9070XTELITE16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 340.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:gt1030-low-profile-d4-2g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "GT1030 Low Profile D4 2G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉GT1030LOWPROFILED42G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 150.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "low_profile": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:n710d3-2gl": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "N710D3-2GL",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉N710D32GL"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 144.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx3050-windforce-oc-v2-6g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX3050 WINDFORCE OC V2 6G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX3050WINDFORCEOCV26G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 180.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx3050-windforce-oc-v2-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX3050 WINDFORCE OC V2 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX3050WINDFORCEOCV28G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx3060-windforce-oc-12g-rev2-0": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX3060 WINDFORCE OC 12G(rev2.0)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX3060WINDFORCEOC12G(REV20)"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 198.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5050-gaming-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5050 GAMING OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5050GAMINGOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5050-oc-low-profile-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5050 OC Low Profile 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5050OCLOWPROFILE8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 180.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "low_profile": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5050-windforce-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5050 WINDFORCE OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5050WINDFORCEOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060-aero-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060 AERO OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060AEROOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060-eagle-max-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060 EAGLE MAX OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060EAGLEMAXOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060-eagle-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060 EAGLE OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060EAGLEOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 210.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060-eagle-oc-ice-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060 EAGLE OC ICE 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060EAGLEOCICE8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 210.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "gpu:gigabyte:rtx5060-gaming-oc-v2-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060 GAMING OC V2 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060GAMINGOCV28G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060-oc-low-profile-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060 OC Low Profile 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060OCLOWPROFILE8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 190.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "low_profile": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060-windforce-max-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060 WINDFORCE MAX OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060WINDFORCEMAXOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060-windforce-max-oc-v2-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060 WINDFORCE MAX OC V2 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060WINDFORCEMAXOCV28G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060-windforce-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060 WINDFORCE OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060WINDFORCEOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060ti-aero-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti AERO OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060TIAEROOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060ti-eagle-max-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti EAGLE MAX OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060TIEAGLEMAXOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060ti-eagle-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti EAGLE OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060TIEAGLEOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060ti-eagle-oc-ice-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti EAGLE OC ICE 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060TIEAGLEOCICE16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060ti-eagle-oc-ice-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti EAGLE OC ICE 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060TIEAGLEOCICE8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060ti-gaming-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti GAMING OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060TIGAMINGOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060ti-windforce-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti WINDFORCE 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060TIWINDFORCE8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 210.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060ti-windforce-max-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti WINDFORCE MAX OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060TIWINDFORCEMAXOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 210.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060ti-windforce-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti WINDFORCE OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060TIWINDFORCEOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 210.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5070-aero-oc-12g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5070 AERO OC 12G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5070AEROOC12G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 330.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5070-eagle-oc-ice-sff-12g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5070 EAGLE OC ICE SFF 12G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5070EAGLEOCICESFF12G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 290.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5070-eagle-oc-sff-12g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5070 EAGLE OC SFF 12G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5070EAGLEOCSFF12G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 290.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5070-gaming-oc-12g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5070 GAMING OC 12G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5070GAMINGOC12G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 330.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5070-windforce-oc-sff-12g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5070 WINDFORCE OC SFF 12G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5070WINDFORCEOCSFF12G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 290.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5070ti-eagle-oc-ice-sff-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5070Ti EAGLE OC ICE SFF 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5070TIEAGLEOCICESFF16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5070ti-eagle-oc-sff-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5070Ti EAGLE OC SFF 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5070TIEAGLEOCSFF16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5070ti-gaming-oc-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5070Ti GAMING OC 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5070TIGAMINGOC16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 340.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5070ti-windforce-oc-sff-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5070Ti WINDFORCE OC SFF 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5070TIWINDFORCEOCSFF16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5080-gaming-oc-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5080 GAMING OC 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5080GAMINGOC16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 340.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5080-windforce-oc-sff-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5080 WINDFORCE OC SFF 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5080WINDFORCEOCSFF16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5080-windforce-oc-v2-sff-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5080 WINDFORCE OC V2 SFF 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5080WINDFORCEOCV2SFF16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rx9060xt-gaming-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RX9060XT GAMING 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RX9060XTGAMING16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rx9060xt-gaming-oc-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RX9060XT GAMING OC 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RX9060XTGAMINGOC16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rx9060xt-gaming-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RX9060XT GAMING OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RX9060XTGAMINGOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rx9060xt-gaming-oc-ice-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RX9060XT GAMING OC ICE 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RX9060XTGAMINGOCICE16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rx9070-gaming-oc-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RX9070 GAMING OC 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RX9070GAMINGOC16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 290.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rx9070gre-gaming-oc-12g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RX9070GRE GAMING OC 12G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RX9070GREGAMINGOC12G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 290.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rx9070xt-gaming-oc-ice-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RX9070XT GAMING OC ICE 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RX9070XTGAMINGOCICE16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 290.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:gt1030-2g": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "GT1030 2G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DGT10302G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 170.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:gt710-2gb-ddr3": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "GT710 2GB DDR3",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DGT7102GBDDR3"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 140.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:gt730-2gb-sddr3-lp": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "GT730 2GB SDDR3 LP",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DGT7302GBSDDR3LP"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 140.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "low_profile": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:gt730-4gb-sddr3-lp": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "GT730 4GB SDDR3 LP",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DGT7304GBSDDR3LP"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 150.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "low_profile": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx3050-6gb-twin-x2-v2": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX3050 6GB TWIN X2 V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX30506GBTWINX2V2"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx3050-twin-x2": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX3050 TWIN X2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX3050TWINX2"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 240.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5050-8gb-twin-x2": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5050 8GB TWIN X2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX50508GBTWINX2"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 225.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5060-8gb-twin-x2-oc-white": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5060 8GB TWIN X2 OC WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX50608GBTWINX2OCWHITE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 250.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5060-8gb-twin-x2-v2": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5060 8GB TWIN X2 V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX50608GBTWINX2V2"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5060-x3-low-profile": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5060 X3 LOW PROFILE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX5060X3LOWPROFILE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 180.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5060ti-16gb-twin-x2": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5060Ti 16GB TWIN X2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX5060TI16GBTWINX2"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 250.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5060ti-8gb-twin-x2": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5060Ti 8GB TWIN X2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX5060TI8GBTWINX2"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 250.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5060ti-8gb-twin-x2-oc-white": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5060Ti 8GB TWIN X2 OC WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX5060TI8GBTWINX2OCWHITE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 250.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5070-ichill-x3": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5070 iChill X3",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX5070ICHILLX3"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 340.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5070-twin-x2": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5070 TWIN X2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX5070TWINX2"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 250.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5070-twin-x2-oc-white": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5070 TWIN X2 OC WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX5070TWINX2OCWHITE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 250.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5080-ichill-x3-v2": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5080 iChill X3 V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX5080ICHILLX3V2"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 340.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5080-x3": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5080 X3",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX5080X3"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5080-x3-oc": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5080 X3 OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX5080X3OC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:inno3d:rtx5080-x3-oc-white": {
+   "category": "gpu",
+   "brand": "INNO3D",
+   "name": "RTX5080 X3 OC WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INNO3DRTX5080X3OCWHITE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:gt1030-2gd4-lp-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "GT1030 2GD4 LP OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星GT10302GD4LPOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 150.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "low_profile": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:gt1030-aero-itx-2gd4-ocv1": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "GT1030 AERO ITX 2GD4 OCV1",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星GT1030AEROITX2GD4OCV1"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 150.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:gt710-2gd3h-lp": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "GT710 2GD3H LP",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星GT7102GD3HLP"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 146.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "low_profile": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:n210-md1g-d3": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "N210-MD1G/D3",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星N210MD1G/D3"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 145.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:n730-2gd3v3": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "N730-2GD3V3",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星N7302GD3V3"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 145.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:n730k-2gd3-ocv5": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "N730K-2GD3/OCV5",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星N730K2GD3/OCV5"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 150.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx3050-gaming-x-6g": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX3050 GAMING X 6G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX3050GAMINGX6G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 210.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx3050-ventus-2x-e-6g-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX3050 VENTUS 2X E 6G OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX3050VENTUS2XE6GOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 190.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx3060-ventus-2x-12g-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX3060 VENTUS 2X 12G OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX3060VENTUS2X12GOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 235.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5050-8g-gaming-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5050 8G GAMING OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX50508GGAMINGOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 210.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5050-8g-inspire-itx-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5050 8G INSPIRE ITX OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX50508GINSPIREITXOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 150.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5050-8g-shadow-2x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5050 8G SHADOW 2X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX50508GSHADOW2XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5050-8g-ventus-2x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5050 8G VENTUS 2X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX50508GVENTUS2XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060-8g-cyclone-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060 8G CYCLONE OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX50608GCYCLONEOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 160.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060-8g-gaming-trio-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060 8G GAMING TRIO OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX50608GGAMINGTRIOOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060-8g-gaming-trio-oc-white": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060 8G GAMING TRIO OC WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX50608GGAMINGTRIOOCWHITE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060-8g-ventus-2x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060 8G VENTUS 2X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX50608GVENTUS2XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060-8g-ventus-2x-oc-v1": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060 8G VENTUS 2X OC V1",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX50608GVENTUS2XOCV1"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060-8g-ventus-2x-oc-white": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060 8G VENTUS 2X OC WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX50608GVENTUS2XOCWHITE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060-8g-ventus-3x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060 8G VENTUS 3X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX50608GVENTUS3XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-16g-cyclone-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 16G CYCLONE OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI16GCYCLONEOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 160.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-16g-gaming-trio-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 16G GAMING TRIO OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI16GGAMINGTRIOOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-16g-shadow-2x-oc-plus": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 16G SHADOW 2X OC PLUS",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI16GSHADOW2XOCPLUS"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-16g-ventus-2x-oc-plus": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 16G VENTUS 2X OC PLUS",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI16GVENTUS2XOCPLUS"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-8g-cyclone-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 8G CYCLONE OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI8GCYCLONEOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 160.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-8g-gaming-trio-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 8G GAMING TRIO OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI8GGAMINGTRIOOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-8g-gaming-trio-oc-white": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 8G GAMING TRIO OC WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI8GGAMINGTRIOOCWHITE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-8g-shadow-2x-oc-plus": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 8G SHADOW 2X OC PLUS",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI8GSHADOW2XOCPLUS"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-8g-ventus-2x-oc-plus": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 8G VENTUS 2X OC PLUS",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI8GVENTUS2XOCPLUS"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-8g-ventus-2x-oc-white-plus": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 8G VENTUS 2X OC WHITE PLUS",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI8GVENTUS2XOCWHITEPLUS"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-8g-ventus-2x-plus": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 8G VENTUS 2X PLUS",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI8GVENTUS2XPLUS"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5060ti-8g-ventus-3x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5060Ti 8G VENTUS 3X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5060TI8GVENTUS3XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5070-12g-gaming-trio-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5070 12G GAMING TRIO OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX507012GGAMINGTRIOOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 340.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5070-12g-inspire-3x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5070 12G INSPIRE 3X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX507012GINSPIRE3XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 290.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5070-12g-shadow-2x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5070 12G SHADOW 2X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX507012GSHADOW2XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 240.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5070-12g-ventus-2x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5070 12G VENTUS 2X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX507012GVENTUS2XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 240.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5070-12g-ventus-2x-oc-white": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5070 12G VENTUS 2X OC WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX507012GVENTUS2XOCWHITE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 240.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5070-12g-ventus-3x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5070 12G VENTUS 3X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX507012GVENTUS3XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5070ti-16g-inspire-3x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5070Ti 16G INSPIRE 3X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5070TI16GINSPIRE3XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 290.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5070ti-16g-shadow-3x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5070Ti 16G SHADOW 3X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX5070TI16GSHADOW3XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5080-16g-inspire-3x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5080 16G INSPIRE 3X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX508016GINSPIRE3XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 290.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:msi:rtx5080-16g-ventus-3x-oc": {
+   "category": "gpu",
+   "brand": "微星 MSI",
+   "name": "RTX5080 16G VENTUS 3X OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星RTX508016GVENTUS3XOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:powercolor:rx7650gre-8g-l-oc-hellhound": {
+   "category": "gpu",
+   "brand": "撼訊 PowerColor",
+   "name": "RX7650GRE 8G-L/OC Hellhound 暗黑犬",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "撼訊RX7650GRE8GL/OCHELLHOUND暗犬"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 240.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:powercolor:rx9060xt-16g-a-reaper": {
+   "category": "gpu",
+   "brand": "撼訊 PowerColor",
+   "name": "RX9060XT 16G-A Reaper 遊蕩者",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "撼訊RX9060XT16GAREAPER遊蕩者"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:powercolor:rx9060xt-8g-l-oc-hellhound": {
+   "category": "gpu",
+   "brand": "撼訊 PowerColor",
+   "name": "RX9060XT 8G-L/OC Hellhound 暗黑犬",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "撼訊RX9060XT8GL/OCHELLHOUND暗犬"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 330.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:powercolor:rx9070gre-12g-a-reaper": {
+   "category": "gpu",
+   "brand": "撼訊 PowerColor",
+   "name": "RX9070GRE 12G-A Reaper 遊蕩者",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "撼訊RX9070GRE12GAREAPER遊蕩者"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:powercolor:rx9070gre-12g-l-oc-hellhound": {
+   "category": "gpu",
+   "brand": "撼訊 PowerColor",
+   "name": "RX9070GRE 12G-L/OC Hellhound 暗黑犬",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "撼訊RX9070GRE12GL/OCHELLHOUND暗犬"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 330.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:powercolor:rx9070xt-16g-a": {
+   "category": "gpu",
+   "brand": "撼訊 PowerColor",
+   "name": "RX9070XT 16G-A 遊蕩者",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "撼訊RX9070XT16GA遊蕩者"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:powercolor:rx9070xt-16g-e-oc": {
+   "category": "gpu",
+   "brand": "撼訊 PowerColor",
+   "name": "RX9070XT 16G-E/OC 紅魔",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "撼訊RX9070XT16GE/OC魔"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 360.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:powercolor:rx9070xt-16g-l-oc": {
+   "category": "gpu",
+   "brand": "撼訊 PowerColor",
+   "name": "RX9070XT 16G-L/OC 暗黑犬",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "撼訊RX9070XT16GL/OC暗犬"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 340.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:powercolor:rx9070xt-16g-l-oc-reva": {
+   "category": "gpu",
+   "brand": "撼訊 PowerColor",
+   "name": "RX9070XT 16G-L/OC/REVA 夜嵐紀念版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "撼訊RX9070XT16GL/OC/REVA夜嵐紀念版"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 350.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:powercolor:rx9070xt-16g-l-oc-white": {
+   "category": "gpu",
+   "brand": "撼訊 PowerColor",
+   "name": "RX9070XT 16G-L/OC/WHITE 暗黑犬(白)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "撼訊RX9070XT16GL/OC/WHITE暗犬()"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 340.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "gpu:sapphire:nitro-rx9060xt-gaming-oc-16gb": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "氮動 NITRO+ RX9060XT GAMING OC 16GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石氮動NITRO+RX9060XTGAMINGOC16GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:sapphire:nitro-rx9070xt-crimson-desert": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "氮動 NITRO+ RX9070XT Crimson Desert",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石氮動NITRO+RX9070XTCRIMSONDESERT"
+    ]
+   },
+   "specs": {},
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:sapphire:nitro-rx9070xt-gaming-oc-16gb": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "氮動 NITRO+ RX9070XT GAMING OC 16GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石氮動NITRO+RX9070XTGAMINGOC16GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 330.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:sapphire:nitro-rx9070xt-oc-16gb-phantomlink": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "氮動 NITRO+ RX9070XT OC 16GB PhantomLink",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石氮動NITRO+RX9070XTOC16GBPHANTOMLINK"
+    ]
+   },
+   "specs": {},
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:sapphire:pulse-rx7650gre-gaming-8gb": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "白金版 PULSE RX7650GRE GAMING 8GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石金版PULSERX7650GREGAMING8GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 240.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:sapphire:pulse-rx9060xt-gaming-oc-16gb": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "脈動 PULSE RX9060XT GAMING OC 16GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石脈動PULSERX9060XTGAMINGOC16GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 250.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:sapphire:pulse-rx9070gre-gaming-12gb": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "脈動 PULSE RX9070GRE GAMING 12GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石脈動PULSERX9070GREGAMING12GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:sapphire:pulse-rx9070gre-gaming-oc-12gb": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "脈動 PULSE RX9070GRE GAMING OC 12GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石脈動PULSERX9070GREGAMINGOC12GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:sapphire:pure-rx7650gre-gaming-8gb": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "極地 PURE RX7650GRE GAMING 8GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石極地PURERX7650GREGAMING8GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 240.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:sapphire:pure-rx9060xt-gaming-oc-16gb": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "極地 PURE RX9060XT GAMING OC 16GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石極地PURERX9060XTGAMINGOC16GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 240.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:sapphire:pure-rx9070gre-gaming-oc-12gb": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "極地 PURE RX9070GRE GAMING OC 12GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石極地PURERX9070GREGAMINGOC12GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 320.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:sapphire:pure-rx9070xt-gaming-oc-16gb": {
+   "category": "gpu",
+   "brand": "藍寶石 SAPPHIRE",
+   "name": "極地 PURE RX9070XT GAMING OC 16GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "寶石極地PURERX9070XTGAMINGOC16GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 320.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:unknown:rtx5060ti-windforce-oc-16g-2587mhz-2": {
+   "category": "gpu",
+   "brand": "unknown",
+   "name": "｛技嘉 RTX5060Ti WINDFORCE OC 16G(2587MHz/2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "｛技嘉RTX5060TIWINDFORCEOC16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 210.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:gt1030-2gb-gddr5-hdmi-dvi-low-profile": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "GT1030 2GB GDDR5 HDMI/DVI Low Profile",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACGT10302GBGDDR5HDMI/DVILOWPROFILE"
+    ]
+   },
+   "specs": {
+    "low_profile": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:gt1030-2gb-gddr5-hdmi-vga-low-profile": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "GT1030 2GB GDDR5 HDMI/VGA Low Profile",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACGT10302GBGDDR5HDMI/VGALOWPROFILE"
+    ]
+   },
+   "specs": {
+    "low_profile": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:gt710-2gd3": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "GT710-2GD3",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACGT7102GD3"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 157.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:gt710-2gd3-l": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "GT710-2GD3-L",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACGT7102GD3L"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 146.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:gt730-2gb-zone-edition": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "GT730 2GB Zone Edition",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACGT7302GBZONEEDITION"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 150.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx3050-6gb-gddr6-lp": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX3050 6GB GDDR6 LP",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX30506GBGDDR6LP"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 160.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "low_profile": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx3050-6gb-gddr6-solo": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX3050 6GB GDDR6 Solo",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX30506GBGDDR6SOLO"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 150.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx3050-6gb-gddr6-twin-edge-oc": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX3050 6GB GDDR6 Twin Edge OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX30506GBGDDR6TWINEDGEOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 160.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx3050-eco-solo": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX3050 ECO SOLO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX3050ECOSOLO"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 150.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx3060-twin-edge": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX3060 Twin Edge",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX3060TWINEDGE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5050-solo": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5050 SOLO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5050SOLO"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 170.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5050-twin-edge-oc": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5050 Twin Edge OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5050TWINEDGEOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5050-twin-edge-oc-white-edition": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5050 Twin Edge OC White Edition",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5050TWINEDGEOCWHITEEDITION"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5060-8gb-oc": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5060 8GB 星辰 OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX50608GB星辰OC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 240.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5060-amp": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5060 AMP",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5060AMP"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5060-low-profile": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5060 Low Profile",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5060LOWPROFILE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 183.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "low_profile": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5060-solo": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5060 SOLO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5060SOLO"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 170.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5060-twin-edge-oc": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5060 Twin Edge OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5060TWINEDGEOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5060-twin-edge-oc-white-edition": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5060 Twin Edge OC White Edition",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5060TWINEDGEOCWHITEEDITION"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5060ti-8gb-amp": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5060Ti 8GB AMP",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5060TI8GBAMP"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5060ti-8gb-oc": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5060Ti 8GB 月 OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5060TI8GB月OC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 300.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "gpu:zotac:rtx5060ti-8gb-twin-edge-oc": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5060Ti 8GB Twin Edge OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5060TI8GBTWINEDGEOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 220.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5070-amp-white-edition": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5070 AMP White Edition",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5070AMPWHITEEDITION"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5070-solid": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5070 SOLID",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5070SOLID"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5070-solid-oc": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5070 SOLID OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5070SOLIDOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5070-twin-edge": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5070 Twin Edge",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5070TWINEDGE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 240.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5070-twin-edge-oc": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5070 Twin Edge OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5070TWINEDGEOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 240.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5070ti-16gb-oc": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5070Ti 16GB 天啟 OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5070TI16GB天啟OC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 360.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5080-solid-core-oc": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5080 SOLID CORE OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5080SOLIDCOREOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 310.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5080-solid-core-oc-20th-anniversary-edition": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5080 SOLID CORE OC 20th Anniversary Edition",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5080SOLIDCOREOC20THANNIVERSARYEDITION"
+    ]
+   },
+   "specs": {},
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:zotac:rtx5080-solid-oc-white-edition": {
+   "category": "gpu",
+   "brand": "ZOTAC",
+   "name": "RTX5080 SOLID OC White Edition",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ZOTACRTX5080SOLIDOCWHITEEDITION"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 330.0,
+     "source": "title",
+     "tolerance": 10
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  }
+ }
+}

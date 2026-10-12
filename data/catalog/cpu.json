@@ -1,0 +1,890 @@
+{
+ "schema_version": "1.0",
+ "category": "cpu",
+ "models": {
+  "cpu:amd:r5-3400g": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R5 3400G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR53400G"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM4",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r5-5600x-mpk": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R5 5600X MPK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR55600XMPK"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM4",
+     "source": "optgroup"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r5-7500f-mpk": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R5 7500F MPK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR57500FMPK"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": false,
+     "source": "title"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r5-8400f": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R5 8400F盒",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR58400F盒"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": false,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r5-8500g": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R5 8500G盒",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR58500G盒"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r5-8600g": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R5 8600G盒",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR58600G盒"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r5-9600x": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R5 9600X",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR59600X"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r7-5800x3d": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R7 5800X3D",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR75800X3D"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM4",
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 105,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r7-7700-mpk": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R7 7700 MPK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR77700MPK"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r7-7800x3d-tray": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R7 7800X3D Tray盤",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR77800X3DTRAY盤"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 120,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r7-9700x": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R7 9700X",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR79700X"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r7-9800x3d": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R7 9800X3D",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR79800X3D"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 120,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r7-9850x3d": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R7 9850X3D",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR79850X3D"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 120,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r9-9900x": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R9 9900X",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR99900X"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 120,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r9-9900x3d": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R9 9900X3D",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR99900X3D"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 120,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r9-9950x": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R9 9950X",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR99950X"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 170,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r9-9950x3d": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R9 9950X3D",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR99950X3D"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 170,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r9-9950x3d2": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R9 9950X3D2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "AMDR99950X3D2"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:core-ultra-5-225": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 225",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELCOREULTRA5225"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:core-ultra-5-225f": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 225F",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELCOREULTRA5225F"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": false,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:core-ultra-5-245kf": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 245KF",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELCOREULTRA5245KF"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": false,
+     "source": "title"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:core-ultra-5-250k-plus": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 250K Plus",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELCOREULTRA5250KPLUS"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:core-ultra-5-250kf-plus": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 5 250KF Plus",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELCOREULTRA5250KFPLUS"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": false,
+     "source": "title"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:core-ultra-7-265k": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 7 265K",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELCOREULTRA7265K"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:core-ultra-7-270k-plus": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 7 270K Plus",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELCOREULTRA7270KPLUS"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:core-ultra-9-285k": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 9 285K",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELCOREULTRA9285K"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:i3-14100": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "i3-14100",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELI314100"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 60,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:i5-12400": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "i5-12400",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELI512400"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:i5-12400f": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "i5-12400F",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELI512400F"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": false,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:i5-14400": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "i5-14400",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELI514400"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:i5-14400f": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "i5-14400F",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELI514400F"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": false,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:i7-14700": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "i7-14700",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELI714700"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": true,
+     "source": "title"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  }
+ }
+}
