@@ -1,0 +1,72 @@
+name: PoC - CoolPC reachability & spec extraction
+
+# PoC 階段：推送 poc/、schema/ 下的程式變更時自動執行一次，也可手動觸發（文件變更不觸發，避免多餘請求）。
+# 合併到預設分支後每日執行一次，連續觀察可達性與 offer_id 跨日穩定性（排程只在預設分支生效）。
+# 每次只對原價屋發出 robots.txt 與 evaluate.php 各一次請求。
+on:
+  schedule:
+    - cron: '17 3 * * *'  # UTC 03:17 = 台灣 11:17
+  push:
+    paths:
+      - 'poc/**.py'
+      - 'schema/**.py'
+      - 'schema/**.json'
+      - '.github/workflows/poc-coolpc-probe.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: poc-coolpc-probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install schema validator
+        run: pip install 'jsonschema==4.26.0'
+
+      - name: Unit tests (extraction rules)
+        working-directory: poc
+        run: python -m unittest -v test_spec_extract
+
+      - name: Unit tests (catalog / prices schema)
+        working-directory: schema
+        run: python -m unittest -v test_schema
+
+      - name: Runner egress info
+        run: |
+          echo "Runner public IP / geo (ipinfo.io):"
+          curl -sS -m 10 https://ipinfo.io/json | grep -E '"(ip|city|region|country|org)"' || true
+
+      - name: Probe CoolPC
+        run: |
+          set +e
+          python poc/coolpc_probe.py --out poc/out --save-html --audit 30 --dump-items
+          code=$?
+          cat poc/out/report.md >> "$GITHUB_STEP_SUMMARY"
+          exit $code
+
+      - name: Build draft catalog and validate against schema
+        run: |
+          set -o pipefail
+          python poc/to_catalog.py poc/out/items.jsonl --out poc/out/draft | tee poc/out/draft-report.md
+          cat poc/out/draft-report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload raw HTML and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coolpc-probe-${{ github.run_id }}
+          path: poc/out/
+          retention-days: 14  # 涵蓋一至兩週的每日觀察
+          if-no-files-found: ignore

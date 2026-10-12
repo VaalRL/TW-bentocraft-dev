@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/VaalRL/TW-bentocraft/schema/prices.schema.json",
+  "title": "TW-bentocraft 每日報價快照（每通路一檔）",
+  "description": "通路的一列（offer）可能是單一零件，也可能是組合（機殼+電源）。價格掛在 offer 上，透過 items 對應到規格庫型號。設計說明見 07-spec-catalog-schema.md。",
+  "type": "object",
+  "required": ["schema_version", "vendor", "source_url", "fetched_at", "status", "offers"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "const": "1.0" },
+    "vendor": { "enum": ["coolpc", "sinya"] },
+    "source_url": { "type": "string", "format": "uri" },
+    "fetched_at": { "type": "string", "format": "date-time", "description": "這份資料實際抓取成功的時間。" },
+    "status": {
+      "description": "ok=本次抓取成功；stale=本次失敗、沿用上次成功的 offers（fetched_at 不變，前端應提示資料日期）。",
+      "enum": ["ok", "stale"]
+    },
+    "last_attempt_at": { "type": "string", "format": "date-time" },
+    "offers": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/offer" }
+    }
+  },
+  "$defs": {
+    "category": { "enum": ["cpu", "motherboard", "ram", "gpu", "cooler", "case", "psu", "ssd"] },
+    "modelId": { "$ref": "catalog.schema.json#/$defs/modelId" },
+    "offer": {
+      "type": "object",
+      "required": ["offer_id", "category", "price", "items"],
+      "additionalProperties": false,
+      "properties": {
+        "offer_id": {
+          "description": "<通路>:<通路商品代碼或正規化品名雜湊>。同一列跨日應保持相同，供價格歷史對齊。",
+          "type": "string",
+          "pattern": "^(coolpc|sinya):[A-Za-z0-9_.-]+$"
+        },
+        "category": { "$ref": "#/$defs/category" },
+        "vendor_section": {
+          "description": "通路的分類位置，如原價屋 select 名稱 n12 與 optgroup 標籤。",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "id": { "type": "string" },
+            "group": { "type": "string" }
+          }
+        },
+        "raw_title": {
+          "description": "通路原始品名。僅供比對與除錯；公開發布前應評估是否縮減（見 06 設計審查第五節）。",
+          "type": "string"
+        },
+        "price": { "type": "integer", "minimum": 1, "description": "現價（新台幣）。" },
+        "list_price": { "type": "integer", "minimum": 1, "description": "通路標示的原價（「原價$1890」）。" },
+        "savings": { "type": "integer", "minimum": 1, "description": "通路標示的現省金額（「現省$1190」）。" },
+        "combo_discount": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "「↓任搭290↓」：與其他零件一起購買時再折抵的金額。現價本身可單買。"
+        },
+        "price_condition": {
+          "description": "現價附帶購買條件時才出現；沒有此欄位代表可單買。",
+          "type": "object",
+          "required": ["type"],
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "description": "assembly=整機組裝價（~組裝價~）；requires_category=需同時購買指定類別（【任搭主機板】）；unspecified=其他附條件寫法（*任搭優惠價）。",
+              "enum": ["assembly", "requires_category", "unspecified"]
+            },
+            "requires": { "type": "array", "items": { "$ref": "#/$defs/category" }, "uniqueItems": true },
+            "note": { "type": "string", "maxLength": 80 }
+          },
+          "allOf": [
+            {
+              "if": { "properties": { "type": { "const": "requires_category" } } },
+              "then": { "required": ["requires"] }
+            }
+          ]
+        },
+        "gift": {
+          "type": "object",
+          "required": ["text"],
+          "additionalProperties": false,
+          "properties": {
+            "text": { "type": "string", "maxLength": 80 },
+            "model_id": { "$ref": "#/$defs/modelId" }
+          }
+        },
+        "valid_until": {
+          "description": "限時價格的截止時間（「▼下殺到 10/31 20:00」），含 +08:00 時區。",
+          "type": "string",
+          "format": "date-time"
+        },
+        "items": {
+          "description": "這一列包含的零件。單品為 1 項；組合列（機殼+電源、主機板+CPU）為多項，第一項為主件。",
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/item" }
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "required": ["role", "match"],
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "description": "main=主件；其餘為組合中附帶的零件種類。",
+          "enum": ["main", "psu", "aio", "fans", "cpu", "ram"]
+        },
+        "model_id": { "$ref": "#/$defs/modelId" },
+        "variant": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "qty": { "type": "integer", "minimum": 1, "default": 1 },
+        "match": {
+          "description": "vendor_ref=通路商品代碼；model_key=正規化品名鍵；manual=人工指定；unmatched=尚未對應到規格庫。",
+          "enum": ["vendor_ref", "model_key", "manual", "unmatched"]
+        },
+        "text": { "type": "string", "description": "組合列中此零件的原文片段（未對應時供人工處理）。" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "match": { "const": "unmatched" } } },
+          "then": { "required": ["text"], "not": { "required": ["model_id"] } },
+          "else": { "required": ["model_id"] }
+        }
+      ]
+    }
+  }
+}

@@ -46,7 +46,13 @@
    - 3D 部件點擊射線拾取（Raycasting）、電影級平滑阻尼運鏡（Camera Controls Fly-to）。
    - Drei `<Html>` 空間錨定浮動 UI：在 3D 零件旁釘上即時搜尋、過濾與相容性排除抽屜。
    - 模組化參數資產管線（Procedural Parameterized Mesh）：以 15 個通用模型覆蓋全通路硬體之降維解法。
-6. [**一手資料來源與參考文獻庫**](sources/README.md)：原價屋資料結構、PCPartPicker 約束機制與 JEDEC / PCI-SIG 工業標準。
+6. [**陸、設計審查：缺口與可行性風險**](06-design-review.md)：
+   - 原設計的 CI 觸發鏈、排程停用、規格庫冷啟動、約束遺漏等問題與修正建議。
+   - [PoC](poc/README.md)：GitHub Actions 實測抓取原價屋與規格擷取率、[抽樣核對紀錄](poc/AUDIT-2026-10-12.md)。
+7. [**柒、規格庫與報價資料 Schema**](07-spec-catalog-schema.md)：
+   - 型號／變體／報價三層、欄位來源與誤差、條件式間隙、組合列與附條件價格。
+   - 機器可讀定義與驗證程式在 [`schema/`](schema/)。
+8. [**一手資料來源與參考文獻庫**](sources/README.md)：原價屋資料結構、PCPartPicker 約束機制與 JEDEC / PCI-SIG 工業標準。
 
 
 

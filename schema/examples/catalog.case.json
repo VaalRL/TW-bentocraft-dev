@@ -1,0 +1,100 @@
+{
+  "$schema": "../catalog.schema.json",
+  "schema_version": "1.0",
+  "category": "case",
+  "generated_at": "2026-10-12T14:00:00+08:00",
+  "models": {
+    "case:thermaltake:the-tower-300": {
+      "category": "case",
+      "brand": "曜越 Thermaltake",
+      "name": "The Tower 300",
+      "status": "active",
+      "aliases": { "model_keys": ["曜越THETOWER300"] },
+      "variants": { "white": { "label": "白", "color": "white" } },
+      "specs": {
+        "max_mb_form_factor": { "value": "M-ATX", "source": "title" },
+        "gpu_clearance_mm": {
+          "value": 400,
+          "source": "title",
+          "conditions": [
+            {
+              "value": 280,
+              "when": "psu_shroud_installed",
+              "source": "retailer_spec",
+              "ref": "https://computeralliance.com.au/parts?id=39059",
+              "note": "品名只寫「顯卡長40」，400 mm 為拆除電源護罩後的值"
+            }
+          ]
+        },
+        "cooler_clearance_mm": { "value": 210, "source": "title" },
+        "psu_form_factors": { "value": ["ATX"], "source": "inferred", "note": "品名未標【SFX】" },
+        "psu_max_length_mm": { "value": 220, "source": "retailer_spec", "ref": "https://www.adorama.com/thermaltake-tower-300-tempered-glass-micro-atx-chassis/p/thca1y4s" },
+        "back_connect_max_form_factor": { "value": "M-ATX", "source": "title", "note": "支援背插" }
+      },
+      "review": { "status": "auto" }
+    },
+    "case:lian-li:a4-h2o": {
+      "category": "case",
+      "brand": "聯力 Lian Li",
+      "name": "A4-H2O",
+      "status": "active",
+      "aliases": { "model_keys": ["聯力A4H2O"] },
+      "variants": {
+        "black": { "label": "黑", "color": "black" },
+        "silver": { "label": "銀", "color": "silver" }
+      },
+      "specs": {
+        "max_mb_form_factor": { "value": "Mini-ITX", "source": "title" },
+        "gpu_clearance_mm": { "value": 322, "source": "vendor_spec", "ref": "https://thepcenthusiast.com/lian-li-and-dan-cases-a4-h2o-itx-case/" },
+        "cooler_clearance_mm": { "value": 55, "source": "vendor_spec", "ref": "https://thepcenthusiast.com/lian-li-and-dan-cases-a4-h2o-itx-case/" },
+        "psu_form_factors": { "value": ["SFX"], "source": "title", "note": "品名標示【SFX】" },
+        "radiator_support": {
+          "value": [{ "position": "top", "sizes": [240], "max_thickness_mm": 55 }],
+          "source": "vendor_spec",
+          "ref": "https://thepcenthusiast.com/lian-li-and-dan-cases-a4-h2o-itx-case/"
+        }
+      },
+      "review": { "status": "verified", "by": "poc-audit", "at": "2026-10-12" }
+    },
+    "case:montech:hs02-pro": {
+      "category": "case",
+      "brand": "君主 Montech",
+      "name": "HS02 PRO",
+      "status": "active",
+      "aliases": { "model_keys": ["MONTECHHS02PRO"] },
+      "variants": {
+        "black": { "label": "黑", "color": "black" },
+        "white": { "label": "白", "color": "white" }
+      },
+      "specs": {
+        "max_mb_form_factor": { "value": "ATX", "source": "title" },
+        "gpu_clearance_mm": { "value": 420, "source": "title" },
+        "cooler_clearance_mm": { "value": 175, "source": "title" },
+        "back_connect_max_form_factor": { "value": "ATX", "source": "title" }
+      },
+      "review": { "status": "auto" }
+    },
+    "case:fractal-design:ridge": {
+      "category": "case",
+      "brand": "Fractal Design",
+      "name": "Ridge",
+      "status": "active",
+      "aliases": { "model_keys": ["FRACTALDESIGNRIDGE"] },
+      "variants": {
+        "black": { "label": "黑", "color": "black" },
+        "white": { "label": "白", "color": "white" }
+      },
+      "specs": {
+        "max_mb_form_factor": { "value": "Mini-ITX", "source": "title" },
+        "gpu_clearance_mm": {
+          "value": 335,
+          "source": "title",
+          "conditions": [{ "value": 325, "when": "unspecified", "source": "title", "note": "品名「顯卡長33.5(32.5)」" }]
+        },
+        "cooler_clearance_mm": { "value": 70, "source": "title" },
+        "psu_form_factors": { "value": ["SFX"], "source": "title" }
+      },
+      "review": { "status": "auto" }
+    }
+  }
+}

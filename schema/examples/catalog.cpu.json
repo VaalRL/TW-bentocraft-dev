@@ -1,0 +1,42 @@
+{
+  "$schema": "../catalog.schema.json",
+  "schema_version": "1.0",
+  "category": "cpu",
+  "models": {
+    "cpu:amd:ryzen-5-8400f": {
+      "category": "cpu",
+      "brand": "AMD",
+      "name": "Ryzen 5 8400F",
+      "status": "active",
+      "aliases": { "model_keys": ["AMDR58400F盒"] },
+      "specs": {
+        "socket": { "value": "AM5", "source": "optgroup" },
+        "igpu": { "value": false, "source": "title", "note": "F 型號" },
+        "tdp_w": { "value": 65, "source": "title" }
+      },
+      "review": { "status": "auto" }
+    },
+    "cpu:amd:ryzen-5-5600x": {
+      "category": "cpu",
+      "brand": "AMD",
+      "name": "Ryzen 5 5600X",
+      "status": "active",
+      "aliases": { "model_keys": ["AMDR55600XMPK"] },
+      "specs": {
+        "socket": { "value": "AM4", "source": "optgroup" },
+        "igpu": { "value": false, "source": "manual", "note": "品名未標示；Ryzen 5000 非 G 型號無內顯" },
+        "cooler_included": { "value": true, "source": "title", "note": "MPK (含風扇)" }
+      },
+      "review": { "status": "verified", "by": "poc-audit", "at": "2026-10-12" }
+    },
+    "cpu:amd:r5-5600x": {
+      "category": "cpu",
+      "brand": "AMD",
+      "name": "R5 5600X",
+      "status": "deprecated",
+      "replaced_by": "cpu:amd:ryzen-5-5600x",
+      "specs": {},
+      "review": { "status": "auto" }
+    }
+  }
+}

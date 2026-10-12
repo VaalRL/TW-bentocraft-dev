@@ -1,0 +1,385 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/VaalRL/TW-bentocraft/schema/catalog.schema.json",
+  "title": "TW-bentocraft 規格庫分片（每類別一檔）",
+  "description": "型號層的物理與電氣規格。每個欄位都帶來源；缺少的欄位代表「未知」，CSP 不得以預設值代替。設計說明見 07-spec-catalog-schema.md。",
+  "type": "object",
+  "required": ["schema_version", "category", "models"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "schema_version": { "const": "1.0" },
+    "category": { "$ref": "#/$defs/category" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "models": {
+      "type": "object",
+      "propertyNames": { "$ref": "#/$defs/modelId" },
+      "additionalProperties": { "$ref": "#/$defs/model" }
+    }
+  },
+  "$defs": {
+    "category": {
+      "enum": ["cpu", "motherboard", "ram", "gpu", "cooler", "case", "psu", "ssd"]
+    },
+    "modelId": {
+      "description": "穩定 ID：<類別>:<品牌>:<型號>。一經發布不得改名或重用；錯誤 ID 以 status=deprecated + replaced_by 轉址。",
+      "type": "string",
+      "pattern": "^(cpu|motherboard|ram|gpu|cooler|case|psu|ssd):[a-z0-9]+(-[a-z0-9]+)*:[a-z0-9]+([-.][a-z0-9]+)*$",
+      "maxLength": 120
+    },
+    "socket": { "enum": ["AM4", "AM5", "LGA1151", "LGA1200", "LGA1700", "LGA1851"] },
+    "memoryType": { "enum": ["DDR4", "DDR5"] },
+    "mbFormFactor": { "enum": ["Mini-ITX", "M-ATX", "ATX", "E-ATX"] },
+    "psuFormFactor": { "enum": ["ATX", "SFX", "SFX-L"] },
+    "source": {
+      "description": "title=通路品名；optgroup=通路分類標籤；inherited=由同型號其他列繼承；inferred=規則推定（需人工確認）；retailer_spec=零售商規格表；vendor_spec=原廠規格；manual=人工判定（須附 note 或 ref）。",
+      "enum": ["title", "optgroup", "inherited", "inferred", "retailer_spec", "vendor_spec", "manual"]
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["source"],
+      "properties": {
+        "source": { "$ref": "#/$defs/source" },
+        "ref": { "type": "string", "format": "uri" },
+        "inherited_from": { "$ref": "#/$defs/modelId" },
+        "note": { "type": "string", "maxLength": 200 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "source": { "const": "inherited" } } },
+          "then": { "required": ["inherited_from"] }
+        },
+        {
+          "if": { "properties": { "source": { "enum": ["retailer_spec", "vendor_spec"] } } },
+          "then": { "required": ["ref"] }
+        },
+        {
+          "if": { "properties": { "source": { "const": "manual" } } },
+          "then": { "anyOf": [{ "required": ["ref"] }, { "required": ["note"] }] }
+        }
+      ]
+    },
+    "num": {
+      "description": "數值欄位。tolerance 為已知誤差（同單位）；品名來源的長度通常只到公分，tolerance=10 mm。",
+      "type": "object",
+      "allOf": [{ "$ref": "#/$defs/provenance" }],
+      "required": ["value"],
+      "properties": {
+        "value": { "type": "number", "minimum": 0 },
+        "tolerance": { "type": "number", "minimum": 0 }
+      },
+      "unevaluatedProperties": false
+    },
+    "int": {
+      "type": "object",
+      "allOf": [{ "$ref": "#/$defs/provenance" }],
+      "required": ["value"],
+      "properties": { "value": { "type": "integer", "minimum": 0 } },
+      "unevaluatedProperties": false
+    },
+    "bool": {
+      "type": "object",
+      "allOf": [{ "$ref": "#/$defs/provenance" }],
+      "required": ["value"],
+      "properties": { "value": { "type": "boolean" } },
+      "unevaluatedProperties": false
+    },
+    "str": {
+      "type": "object",
+      "allOf": [{ "$ref": "#/$defs/provenance" }],
+      "required": ["value"],
+      "properties": { "value": { "type": "string", "minLength": 1, "maxLength": 80 } },
+      "unevaluatedProperties": false
+    },
+    "enumOf": {
+      "$comment": "以 $ref + 同層 properties.value 限定列舉值使用",
+      "type": "object",
+      "allOf": [{ "$ref": "#/$defs/provenance" }],
+      "required": ["value"],
+      "properties": { "value": true },
+      "unevaluatedProperties": false
+    },
+    "clearance": {
+      "description": "間隙上限（mm）。value 為最寬鬆配置下的上限；conditions 列出特定配置下較小的上限。",
+      "type": "object",
+      "allOf": [{ "$ref": "#/$defs/provenance" }],
+      "required": ["value"],
+      "properties": {
+        "value": { "type": "number", "minimum": 0 },
+        "tolerance": { "type": "number", "minimum": 0 },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "allOf": [{ "$ref": "#/$defs/provenance" }],
+            "required": ["value", "when"],
+            "properties": {
+              "value": { "type": "number", "minimum": 0 },
+              "when": {
+                "description": "unspecified=通路以括號標示但未說明條件（如「顯卡長33.5(32.5)」）。",
+                "enum": [
+                  "psu_shroud_installed",
+                  "front_fan_installed",
+                  "front_radiator_installed",
+                  "top_radiator_installed",
+                  "drive_cage_installed",
+                  "unspecified"
+                ]
+              }
+            },
+            "unevaluatedProperties": false
+          }
+        }
+      },
+      "unevaluatedProperties": false
+    },
+    "variant": {
+      "description": "同型號、規格相同但 SKU 不同的變體（顏色等）。價格掛在 SKU／報價層，不在這裡。",
+      "type": "object",
+      "required": ["label"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string", "maxLength": 40 },
+        "color": { "enum": ["black", "white", "silver", "gray", "pink", "blue", "green", "red", "purple", "wood", "other"] }
+      }
+    },
+    "model": {
+      "type": "object",
+      "required": ["category", "brand", "name", "status", "specs", "review"],
+      "additionalProperties": false,
+      "properties": {
+        "category": { "$ref": "#/$defs/category" },
+        "brand": { "type": "string", "minLength": 1, "maxLength": 40 },
+        "name": { "type": "string", "minLength": 1, "maxLength": 120 },
+        "status": { "enum": ["active", "discontinued", "deprecated"] },
+        "replaced_by": { "$ref": "#/$defs/modelId" },
+        "aliases": {
+          "description": "通路列與型號的對應鍵。model_keys 為正規化後的品名鍵；vendor_refs 為通路自有的商品代碼（穩定性待驗證）。",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "model_keys": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+            "vendor_refs": {
+              "type": "object",
+              "propertyNames": { "enum": ["coolpc", "sinya"] },
+              "additionalProperties": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+            }
+          }
+        },
+        "variants": {
+          "type": "object",
+          "propertyNames": { "pattern": "^[a-z0-9-]+$" },
+          "additionalProperties": { "$ref": "#/$defs/variant" }
+        },
+        "specs": { "type": "object" },
+        "review": {
+          "description": "draft=自動產生未看過；auto=自動產生且通過規則檢查；verified=人工以原廠規格確認過 CSP 必要欄位。",
+          "type": "object",
+          "required": ["status"],
+          "additionalProperties": false,
+          "properties": {
+            "status": { "enum": ["draft", "auto", "verified"] },
+            "by": { "type": "string", "maxLength": 60 },
+            "at": { "type": "string", "format": "date" }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "deprecated" } } },
+          "then": { "required": ["replaced_by"] }
+        },
+        { "if": { "properties": { "category": { "const": "cpu" } } }, "then": { "properties": { "specs": { "$ref": "#/$defs/cpuSpecs" } } } },
+        { "if": { "properties": { "category": { "const": "motherboard" } } }, "then": { "properties": { "specs": { "$ref": "#/$defs/motherboardSpecs" } } } },
+        { "if": { "properties": { "category": { "const": "ram" } } }, "then": { "properties": { "specs": { "$ref": "#/$defs/ramSpecs" } } } },
+        { "if": { "properties": { "category": { "const": "gpu" } } }, "then": { "properties": { "specs": { "$ref": "#/$defs/gpuSpecs" } } } },
+        { "if": { "properties": { "category": { "const": "cooler" } } }, "then": { "properties": { "specs": { "$ref": "#/$defs/coolerSpecs" } } } },
+        { "if": { "properties": { "category": { "const": "case" } } }, "then": { "properties": { "specs": { "$ref": "#/$defs/caseSpecs" } } } },
+        { "if": { "properties": { "category": { "const": "psu" } } }, "then": { "properties": { "specs": { "$ref": "#/$defs/psuSpecs" } } } },
+        { "if": { "properties": { "category": { "const": "ssd" } } }, "then": { "properties": { "specs": { "$ref": "#/$defs/ssdSpecs" } } } },
+        {
+          "$comment": "verified 型號必須具備該類別的 CSP 必要欄位（見各 *Specs 的 x-csp-required）。",
+          "if": { "required": ["review", "category"], "properties": { "review": { "properties": { "status": { "const": "verified" } } } } },
+          "then": {
+            "allOf": [
+              { "if": { "properties": { "category": { "const": "cpu" } } }, "then": { "properties": { "specs": { "required": ["socket", "igpu"] } } } },
+              { "if": { "properties": { "category": { "const": "motherboard" } } }, "then": { "properties": { "specs": { "required": ["socket", "memory_type", "form_factor"] } } } },
+              { "if": { "properties": { "category": { "const": "ram" } } }, "then": { "properties": { "specs": { "required": ["memory_type", "capacity_gb", "modules"] } } } },
+              { "if": { "properties": { "category": { "const": "gpu" } } }, "then": { "properties": { "specs": { "required": ["length_mm"] } } } },
+              { "if": { "properties": { "category": { "const": "cooler" } } }, "then": { "properties": { "specs": { "required": ["cooler_type"] } } } },
+              { "if": { "properties": { "category": { "const": "case" } } }, "then": { "properties": { "specs": { "required": ["max_mb_form_factor", "gpu_clearance_mm", "cooler_clearance_mm", "psu_form_factors"] } } } },
+              { "if": { "properties": { "category": { "const": "psu" } } }, "then": { "properties": { "specs": { "required": ["wattage", "form_factor"] } } } }
+            ]
+          }
+        }
+      ]
+    },
+    "cpuSpecs": {
+      "type": "object",
+      "x-csp-required": ["socket", "igpu"],
+      "additionalProperties": false,
+      "properties": {
+        "socket": { "$ref": "#/$defs/enumOf", "properties": { "value": { "$ref": "#/$defs/socket" } } },
+        "igpu": { "$ref": "#/$defs/bool", "description": "是否有內顯。未知時省略欄位，不得預設。" },
+        "cooler_included": { "$ref": "#/$defs/bool" },
+        "tdp_w": { "$ref": "#/$defs/num" },
+        "max_power_w": { "$ref": "#/$defs/num", "description": "Intel PL2 / AMD PPT，供功耗估算。" },
+        "generation": { "$ref": "#/$defs/str", "description": "如 Zen 5、Arrow Lake，供 BIOS 世代相容警示。" }
+      }
+    },
+    "motherboardSpecs": {
+      "type": "object",
+      "x-csp-required": ["socket", "memory_type", "form_factor"],
+      "additionalProperties": false,
+      "properties": {
+        "socket": { "$ref": "#/$defs/enumOf", "properties": { "value": { "$ref": "#/$defs/socket" } } },
+        "chipset": { "$ref": "#/$defs/str" },
+        "memory_type": { "$ref": "#/$defs/enumOf", "properties": { "value": { "$ref": "#/$defs/memoryType" } } },
+        "form_factor": { "$ref": "#/$defs/enumOf", "properties": { "value": { "$ref": "#/$defs/mbFormFactor" } } },
+        "dimm_slots": { "$ref": "#/$defs/int" },
+        "max_memory_gb": { "$ref": "#/$defs/int" },
+        "m2_slots": { "$ref": "#/$defs/int" },
+        "back_connect": { "$ref": "#/$defs/bool", "description": "背插式主機板（接頭在背面），需搭配支援背插的機殼。" },
+        "bios_flashback": { "$ref": "#/$defs/bool" },
+        "supported_cpu_generations": {
+          "type": "object",
+          "allOf": [{ "$ref": "#/$defs/provenance" }],
+          "required": ["value"],
+          "properties": { "value": { "type": "array", "items": { "type": "string" }, "uniqueItems": true } },
+          "unevaluatedProperties": false
+        }
+      }
+    },
+    "ramSpecs": {
+      "type": "object",
+      "x-csp-required": ["memory_type", "capacity_gb", "modules"],
+      "additionalProperties": false,
+      "properties": {
+        "memory_type": { "$ref": "#/$defs/enumOf", "properties": { "value": { "$ref": "#/$defs/memoryType" } } },
+        "capacity_gb": { "$ref": "#/$defs/int", "description": "整組總容量。" },
+        "modules": { "$ref": "#/$defs/int", "description": "整組條數，供插槽數檢查。" },
+        "speed_mts": { "$ref": "#/$defs/int" },
+        "height_mm": { "$ref": "#/$defs/num", "description": "含散熱片高度，供塔散干涉警示。" }
+      }
+    },
+    "gpuSpecs": {
+      "type": "object",
+      "x-csp-required": ["length_mm"],
+      "additionalProperties": false,
+      "properties": {
+        "length_mm": { "$ref": "#/$defs/num" },
+        "thickness_slots": { "$ref": "#/$defs/num" },
+        "board_power_w": { "$ref": "#/$defs/num" },
+        "power_connectors": {
+          "type": "object",
+          "allOf": [{ "$ref": "#/$defs/provenance" }],
+          "required": ["value"],
+          "properties": {
+            "value": { "type": "array", "items": { "enum": ["12V-2x6", "8-pin", "6-pin"] } }
+          },
+          "unevaluatedProperties": false
+        },
+        "low_profile": { "$ref": "#/$defs/bool" },
+        "external": { "$ref": "#/$defs/bool", "description": "外接式顯卡盒，不受機殼限長約束。" }
+      }
+    },
+    "coolerSpecs": {
+      "type": "object",
+      "x-csp-required": ["cooler_type"],
+      "x-csp-note": "air 需要 height_mm；aio 需要 radiator_mm。",
+      "additionalProperties": false,
+      "properties": {
+        "cooler_type": { "$ref": "#/$defs/enumOf", "properties": { "value": { "enum": ["air", "aio"] } } },
+        "height_mm": { "$ref": "#/$defs/num" },
+        "radiator_mm": { "$ref": "#/$defs/enumOf", "properties": { "value": { "enum": [120, 140, 240, 280, 360, 420] } } },
+        "radiator_thickness_mm": { "$ref": "#/$defs/num", "description": "冷排含風扇厚度，供前置冷排扣減顯卡空間。" },
+        "sockets": {
+          "type": "object",
+          "allOf": [{ "$ref": "#/$defs/provenance" }],
+          "required": ["value"],
+          "properties": { "value": { "type": "array", "items": { "$ref": "#/$defs/socket" }, "uniqueItems": true, "minItems": 1 } },
+          "unevaluatedProperties": false
+        },
+        "mount_codes": {
+          "description": "原價屋品名上的扣具代碼原文（如【WXZ】），圖例確認前僅保存不使用。",
+          "type": "object",
+          "allOf": [{ "$ref": "#/$defs/provenance" }],
+          "required": ["value"],
+          "properties": { "value": { "type": "string", "pattern": "^[A-Z]{1,8}$" } },
+          "unevaluatedProperties": false
+        },
+        "tdp_rating_w": { "$ref": "#/$defs/num" }
+      }
+    },
+    "caseSpecs": {
+      "type": "object",
+      "x-csp-required": ["max_mb_form_factor", "gpu_clearance_mm", "cooler_clearance_mm", "psu_form_factors"],
+      "additionalProperties": false,
+      "properties": {
+        "max_mb_form_factor": { "$ref": "#/$defs/enumOf", "properties": { "value": { "$ref": "#/$defs/mbFormFactor" } } },
+        "gpu_clearance_mm": { "$ref": "#/$defs/clearance" },
+        "cooler_clearance_mm": { "$ref": "#/$defs/clearance" },
+        "psu_form_factors": {
+          "description": "可安裝的電源規格。",
+          "type": "object",
+          "allOf": [{ "$ref": "#/$defs/provenance" }],
+          "required": ["value"],
+          "properties": { "value": { "type": "array", "items": { "$ref": "#/$defs/psuFormFactor" }, "uniqueItems": true, "minItems": 1 } },
+          "unevaluatedProperties": false
+        },
+        "psu_max_length_mm": { "$ref": "#/$defs/num" },
+        "radiator_support": {
+          "type": "object",
+          "allOf": [{ "$ref": "#/$defs/provenance" }],
+          "required": ["value"],
+          "properties": {
+            "value": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["position", "sizes"],
+                "additionalProperties": false,
+                "properties": {
+                  "position": { "enum": ["front", "top", "side", "rear", "bottom"] },
+                  "sizes": { "type": "array", "items": { "enum": [120, 140, 240, 280, 360, 420] }, "uniqueItems": true, "minItems": 1 },
+                  "max_thickness_mm": { "type": "number", "minimum": 0 }
+                }
+              }
+            }
+          },
+          "unevaluatedProperties": false
+        },
+        "expansion_slots": { "$ref": "#/$defs/int" },
+        "back_connect_max_form_factor": {
+          "$ref": "#/$defs/enumOf",
+          "properties": { "value": { "$ref": "#/$defs/mbFormFactor" } },
+          "description": "支援背插主機板的最大板型（如「背插(限ATX)」）；不支援時省略。"
+        },
+        "included_psu_w": { "$ref": "#/$defs/int", "description": "機殼內附電源瓦數（如「內附400W電源」）。" }
+      }
+    },
+    "psuSpecs": {
+      "type": "object",
+      "x-csp-required": ["wattage", "form_factor"],
+      "additionalProperties": false,
+      "properties": {
+        "wattage": { "$ref": "#/$defs/int" },
+        "form_factor": { "$ref": "#/$defs/enumOf", "properties": { "value": { "$ref": "#/$defs/psuFormFactor" } } },
+        "atx_version": { "$ref": "#/$defs/str", "description": "如 3.1；決定是否有原生 12V-2x6。" },
+        "pcie_12v2x6": { "$ref": "#/$defs/int", "description": "原生 12V-2x6 接頭數。" },
+        "efficiency": { "$ref": "#/$defs/enumOf", "properties": { "value": { "enum": ["white", "bronze", "silver", "gold", "platinum", "titanium"] } } },
+        "length_mm": { "$ref": "#/$defs/num" }
+      }
+    },
+    "ssdSpecs": {
+      "type": "object",
+      "x-csp-required": [],
+      "additionalProperties": false,
+      "properties": {
+        "interface": { "$ref": "#/$defs/enumOf", "properties": { "value": { "enum": ["sata", "pcie3", "pcie4", "pcie5"] } } },
+        "form_factor": { "$ref": "#/$defs/enumOf", "properties": { "value": { "enum": ["2.5in", "m2-2230", "m2-2242", "m2-2280"] } } },
+        "capacity_gb": { "$ref": "#/$defs/int" }
+      }
+    }
+  }
+}
