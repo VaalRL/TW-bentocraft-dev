@@ -1,0 +1,54 @@
+name: PoC - CoolPC reachability & spec extraction
+
+# PoC 階段：推送 poc/ 變更時自動執行一次，也可手動觸發。
+# 每次只對原價屋發出 robots.txt 與 evaluate.php 各一次請求。
+on:
+  push:
+    paths:
+      - 'poc/**'
+      - '.github/workflows/poc-coolpc-probe.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: poc-coolpc-probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Unit tests (extraction rules)
+        working-directory: poc
+        run: python -m unittest -v test_spec_extract
+
+      - name: Runner egress info
+        run: |
+          echo "Runner public IP / geo (ipinfo.io):"
+          curl -sS -m 10 https://ipinfo.io/json | grep -E '"(ip|city|region|country|org)"' || true
+
+      - name: Probe CoolPC
+        run: |
+          set +e
+          python poc/coolpc_probe.py --out poc/out --save-html
+          code=$?
+          cat poc/out/report.md >> "$GITHUB_STEP_SUMMARY"
+          exit $code
+
+      - name: Upload raw HTML and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coolpc-probe-${{ github.run_id }}
+          path: poc/out/
+          retention-days: 7
+          if-no-files-found: ignore
