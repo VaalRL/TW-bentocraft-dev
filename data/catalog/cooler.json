@@ -28,6 +28,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -60,6 +73,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -98,6 +124,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -130,6 +169,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -164,6 +216,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -198,6 +261,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -232,6 +306,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -266,6 +351,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -304,6 +400,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -336,6 +443,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -368,6 +486,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -410,6 +539,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -442,6 +584,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -480,6 +633,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -508,6 +674,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -536,6 +715,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -564,6 +756,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -592,6 +797,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -620,6 +838,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -692,6 +921,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -730,6 +970,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -758,6 +1011,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -786,6 +1052,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -814,6 +1093,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -842,6 +1132,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -870,6 +1171,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -898,6 +1210,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -930,6 +1253,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -968,6 +1304,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1010,6 +1359,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1064,6 +1426,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1093,6 +1468,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1122,6 +1510,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1151,6 +1552,15 @@
     "mount_codes": {
      "value": "Z",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1180,6 +1590,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1219,6 +1642,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1248,6 +1684,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1277,6 +1726,15 @@
     "mount_codes": {
      "value": "Z",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1306,6 +1764,15 @@
     "mount_codes": {
      "value": "Z",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1349,6 +1816,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1377,6 +1857,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1415,6 +1908,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1443,6 +1949,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1481,6 +2000,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1519,6 +2051,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1557,6 +2102,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1595,6 +2153,15 @@
     "mount_codes": {
      "value": "Y",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "sTR4",
+      "sTR5"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1639,6 +2206,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1668,6 +2248,15 @@
     "mount_codes": {
      "value": "X",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1697,6 +2286,17 @@
     "mount_codes": {
      "value": "WZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1725,6 +2325,21 @@
     "mount_codes": {
      "value": "WXYZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "sTR4",
+      "sTR5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1753,6 +2368,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1791,6 +2419,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1829,6 +2470,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1867,6 +2521,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1910,6 +2577,19 @@
     "tdp_rating_w": {
      "value": 165,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1943,6 +2623,19 @@
     "tdp_rating_w": {
      "value": 180,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -1976,6 +2669,19 @@
     "tdp_rating_w": {
      "value": 200,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2009,6 +2715,19 @@
     "tdp_rating_w": {
      "value": 250,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2041,6 +2760,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2084,6 +2816,19 @@
     "tdp_rating_w": {
      "value": 180,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2117,6 +2862,19 @@
     "tdp_rating_w": {
      "value": 200,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2149,6 +2907,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2181,6 +2952,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2220,6 +3004,19 @@
     "tdp_rating_w": {
      "value": 235,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2262,6 +3059,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2304,6 +3114,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2342,6 +3165,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2376,6 +3212,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2415,6 +3264,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2448,6 +3310,19 @@
     "tdp_rating_w": {
      "value": 220,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2481,6 +3356,19 @@
     "tdp_rating_w": {
      "value": 220,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2514,6 +3402,19 @@
     "tdp_rating_w": {
      "value": 240,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2543,6 +3444,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2576,6 +3488,19 @@
     "tdp_rating_w": {
      "value": 260,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2605,6 +3530,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2634,6 +3570,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2663,6 +3610,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2698,6 +3658,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2727,6 +3700,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2762,6 +3748,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2801,6 +3800,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2830,6 +3842,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2865,6 +3890,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2903,6 +3941,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2935,6 +3986,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -2973,6 +4037,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3001,6 +4078,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3039,6 +4129,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3071,6 +4174,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3103,6 +4219,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3135,6 +4264,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3169,6 +4311,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3201,6 +4356,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3234,6 +4402,19 @@
     "tdp_rating_w": {
      "value": 280,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3266,6 +4447,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3298,6 +4492,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3330,6 +4537,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3362,6 +4582,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3390,6 +4623,15 @@
     "mount_codes": {
      "value": "Y",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "sTR4",
+      "sTR5"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3422,6 +4664,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3464,6 +4719,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3503,6 +4771,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3532,6 +4813,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3561,6 +4855,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3590,6 +4897,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3619,6 +4939,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3648,6 +4981,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3677,6 +5023,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3709,6 +5068,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3751,6 +5123,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3793,6 +5178,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3835,6 +5233,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3873,6 +5284,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3901,6 +5325,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3935,6 +5372,21 @@
     "mount_codes": {
      "value": "WXYZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "sTR4",
+      "sTR5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3963,6 +5415,21 @@
     "mount_codes": {
      "value": "WXYZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "sTR4",
+      "sTR5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -3991,6 +5458,21 @@
     "mount_codes": {
      "value": "WXYZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "sTR4",
+      "sTR5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4025,6 +5507,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4059,6 +5554,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4093,6 +5601,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4127,6 +5648,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4166,6 +5700,19 @@
     "tdp_rating_w": {
      "value": 230,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4205,6 +5752,19 @@
     "tdp_rating_w": {
      "value": 230,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4240,6 +5800,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4283,6 +5856,19 @@
     "tdp_rating_w": {
      "value": 260,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4312,6 +5898,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4354,6 +5953,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4397,6 +6009,19 @@
     "tdp_rating_w": {
      "value": 100,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4430,6 +6055,19 @@
     "tdp_rating_w": {
      "value": 105,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4462,6 +6100,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4504,6 +6155,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4547,6 +6211,19 @@
     "tdp_rating_w": {
      "value": 270,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4586,6 +6263,19 @@
     "tdp_rating_w": {
      "value": 225,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4629,6 +6319,19 @@
     "tdp_rating_w": {
      "value": 260,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4672,6 +6375,19 @@
     "tdp_rating_w": {
      "value": 285,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4715,6 +6431,19 @@
     "tdp_rating_w": {
      "value": 230,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4758,6 +6487,19 @@
     "tdp_rating_w": {
      "value": 180,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4797,6 +6539,19 @@
     "tdp_rating_w": {
      "value": 260,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4836,6 +6591,19 @@
     "tdp_rating_w": {
      "value": 265,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4874,6 +6642,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4906,6 +6687,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4938,6 +6732,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4970,6 +6777,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -4998,6 +6818,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5036,6 +6867,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5108,6 +6950,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5146,6 +6999,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5184,6 +7048,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5226,6 +7101,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5264,6 +7152,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5306,6 +7207,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5348,6 +7262,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5390,6 +7317,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5432,6 +7372,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5471,6 +7424,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5510,6 +7476,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5549,6 +7528,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5587,6 +7579,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5630,6 +7635,17 @@
     "tdp_rating_w": {
      "value": 240,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5672,6 +7688,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5714,6 +7741,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5752,6 +7790,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5780,6 +7829,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5818,6 +7878,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5853,6 +7924,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5882,6 +7966,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5911,6 +8008,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5940,6 +8050,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5969,6 +8092,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -5998,6 +8134,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6027,6 +8176,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6056,6 +8218,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6085,6 +8260,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6164,6 +8352,15 @@
     "mount_codes": {
      "value": "Z",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6193,6 +8390,15 @@
     "mount_codes": {
      "value": "Z",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6222,6 +8428,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6251,6 +8470,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6280,6 +8512,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6315,6 +8560,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6344,6 +8602,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6373,6 +8644,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6427,6 +8711,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6475,6 +8772,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6503,6 +8811,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6531,6 +8850,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6559,6 +8889,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6587,6 +8930,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6615,6 +8971,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6643,6 +9012,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6671,6 +9053,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6699,6 +9094,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6737,6 +9145,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6775,6 +9196,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6809,6 +9243,21 @@
     "mount_codes": {
      "value": "WXYZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "sTR4",
+      "sTR5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6841,6 +9290,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6883,6 +9345,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -6921,6 +9396,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7009,6 +9497,19 @@
     "tdp_rating_w": {
      "value": 240,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7048,6 +9549,19 @@
     "tdp_rating_w": {
      "value": 240,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7087,6 +9601,19 @@
     "tdp_rating_w": {
      "value": 265,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7119,6 +9646,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7153,6 +9693,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7191,6 +9744,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7225,6 +9791,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7263,6 +9842,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7301,6 +9893,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7340,6 +9945,19 @@
     "tdp_rating_w": {
      "value": 200,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7373,6 +9991,19 @@
     "tdp_rating_w": {
      "value": 220,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7412,6 +10043,19 @@
     "tdp_rating_w": {
      "value": 220,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7447,6 +10091,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7476,6 +10133,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7505,6 +10175,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7534,6 +10217,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7563,6 +10259,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7592,6 +10301,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7621,6 +10343,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7650,6 +10385,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7679,6 +10427,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7718,6 +10479,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7747,6 +10521,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7776,6 +10563,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7805,6 +10605,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7833,6 +10646,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7881,6 +10707,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -7909,6 +10748,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8077,6 +10929,15 @@
     "mount_codes": {
      "value": "Y",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "sTR4",
+      "sTR5"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8135,6 +10996,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8173,6 +11047,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8215,6 +11100,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8257,6 +11153,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8299,6 +11206,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8341,6 +11259,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8383,6 +11312,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8425,6 +11365,17 @@
     "mount_codes": {
      "value": "XZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8464,6 +11415,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8493,6 +11457,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8522,6 +11499,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8561,6 +11551,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8590,6 +11593,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8619,6 +11635,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8654,6 +11683,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8683,6 +11725,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8712,6 +11767,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8741,6 +11809,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8779,6 +11860,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8803,6 +11897,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8831,6 +11938,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8859,6 +11979,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8887,6 +12020,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8911,6 +12057,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8939,6 +12098,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8963,6 +12135,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -8991,6 +12176,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9019,6 +12217,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9048,6 +12259,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9087,6 +12311,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9126,6 +12363,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9161,6 +12411,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9200,6 +12463,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9239,6 +12515,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9278,6 +12567,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9307,6 +12609,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9336,6 +12651,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9365,6 +12693,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9393,6 +12734,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9421,6 +12775,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9449,6 +12816,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9477,6 +12857,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9525,6 +12918,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9563,6 +12969,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9601,6 +13020,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9629,6 +13061,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9667,6 +13112,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9705,6 +13163,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9743,6 +13214,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9786,6 +13270,17 @@
     "tdp_rating_w": {
      "value": 280,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9824,6 +13319,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9867,6 +13375,19 @@
     "tdp_rating_w": {
      "value": 220,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9910,6 +13431,19 @@
     "tdp_rating_w": {
      "value": 250,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {
@@ -9938,6 +13472,19 @@
     "mount_codes": {
      "value": "WXZ",
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
    "review": {

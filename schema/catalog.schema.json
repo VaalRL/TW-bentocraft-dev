@@ -27,7 +27,7 @@
       "pattern": "^(cpu|motherboard|ram|gpu|cooler|case|psu|ssd):[a-z0-9]+(-[a-z0-9]+)*:[a-z0-9]+([-.][a-z0-9]+)*$",
       "maxLength": 120
     },
-    "socket": { "enum": ["AM4", "AM5", "LGA1151", "LGA1200", "LGA1700", "LGA1851"] },
+    "socket": { "enum": ["AM4", "AM5", "LGA1151", "LGA1200", "LGA1700", "LGA1851", "sTR4", "sTR5"] },
     "memoryType": { "enum": ["DDR4", "DDR5"] },
     "mbFormFactor": { "enum": ["Mini-ITX", "M-ATX", "ATX", "E-ATX"] },
     "psuFormFactor": { "enum": ["ATX", "SFX", "SFX-L"] },

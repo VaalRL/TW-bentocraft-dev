@@ -9,7 +9,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "schema"))
 
 from pipeline.catalog import load_catalog  # noqa: E402
-from pipeline.reference import apply_reference, load_reference, match_rule  # noqa: E402
+from pipeline.reference import apply_reference, load_reference, match_rule, sockets_from_mount_codes  # noqa: E402
 from validate import CATALOG_VALIDATOR, schema_errors  # noqa: E402
 
 REF = load_reference()
@@ -69,6 +69,20 @@ class TestRules(unittest.TestCase):
         self.assertIsNone(match_rule(REF, "ram", "RTX5080"))
 
 
+class TestMountCodes(unittest.TestCase):
+    def test_legend(self):
+        self.assertEqual(sockets_from_mount_codes("XZ"), ["AM4", "AM5", "LGA1700", "LGA1851"])
+        self.assertEqual(sockets_from_mount_codes("Z"), ["LGA1700", "LGA1851"])
+        self.assertIn("LGA1200", sockets_from_mount_codes("WXZ"))
+        self.assertEqual(sockets_from_mount_codes("Q"), [])  # 圖例以外的代碼不猜
+
+    def test_cooler_gets_sockets_from_codes(self):
+        m = model("cooler", "AG400", mount_codes={"value": "XZ", "source": "title"})
+        self.assertEqual(apply_reference(m, REF), ["sockets"])
+        self.assertEqual(m["specs"]["sockets"]["source"], "retailer_spec")
+        self.assertNotIn("LGA1200", m["specs"]["sockets"]["value"])
+
+
 class TestApply(unittest.TestCase):
     def test_existing_values_are_kept(self):
         m = model("gpu", "RTX5080 X3", board_power_w={"value": 400, "source": "manual", "note": "實測"})
@@ -93,7 +107,7 @@ class TestApply(unittest.TestCase):
 class TestCatalogInSync(unittest.TestCase):
     def test_catalog_has_reference_values_and_is_valid(self):
         shards = load_catalog(ROOT / "data/catalog")
-        for cat in ("cpu", "gpu"):
+        for cat in ("cpu", "gpu", "cooler"):
             for mid, m in shards[cat]["models"].items():
                 with self.subTest(model=mid):
                     self.assertEqual(apply_reference(copy.deepcopy(m), REF), [],
