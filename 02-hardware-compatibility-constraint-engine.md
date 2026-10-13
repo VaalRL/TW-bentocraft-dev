@@ -97,12 +97,12 @@ $$\text{rank}: \text{Mini-ITX}=1 < \text{M-ATX}=2 < \text{ATX}=3 < \text{E-ATX}=
 
 ### C5. 散熱器 ⟷ 機殼：限高與冷排
 - **風冷**：`cooler.height_mm` 對 `case.cooler_clearance_mm`，比較方式同 C4。例：利民 Phantom Spirit 120 EVO 高 157 mm，配 CPU 限高 155 mm 的機殼 → 不通過。
-- **一體式水冷**：`cooler.radiator_mm` 必須出現在 `case.radiator_support` 的任一位置；`radiator_support` 缺少時為 `unknown`。
+- **一體式水冷**：`cooler.radiator_mm` 出現在 `case.radiator_support` 的任一位置即通過；比所有冷排位的最大尺寸還大時不通過；沒被列出、但比某個位置的上限小時為 `warn`（原廠常只寫「頂部 360/420」，較小的冷排通常也能裝）。`radiator_support` 缺少時為 `unknown`。
 - **前置冷排扣減顯卡空間**：冷排只能裝在前方時，以 `cooler.radiator_thickness_mm`（品名多有標示，如 `厚:5.2`）扣減顯卡空間，並對照機殼的 `front_radiator_installed` 條件。不再使用固定的 52 mm。
 
 ### C6. 散熱器 ⟷ CPU：扣具
 - **不通過**：`cooler.sockets` 不含 CPU 腳位。
-- 原價屋散熱器品名上的 `【WXZ】` 標記可能是扣具代碼，圖例確認前只保存原文（`mount_codes`），不用於判斷；`sockets` 缺少時為 `unknown`。
+- 原價屋散熱器品名上的 `【WXZ】` 是扣具代碼，依原價屋圖例轉成 `sockets`（W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851，見 `pipeline/reference.py`）；`sockets` 缺少時為 `unknown`。
 
 ### C7. 電源 ⟷ 整機：瓦數
 $$P_{\text{load}} = P_{\text{cpu}} + P_{\text{gpu}} + 50\,\text{W（主機板、記憶體、SSD、風扇）} + 15\,\text{W（若為水冷泵）}$$
@@ -229,8 +229,10 @@ export const PAIR_CONSTRAINTS: PairConstraint[] = [
       if (type === 'aio') {
         const size = v<number>(k, 'radiator_mm'), support = v<{ sizes: number[] }[]>(c, 'radiator_support');
         if (!size || !support) return result('C5', 'unknown', '冷排尺寸或機殼冷排位未確認');
-        return support.value.some(p => p.sizes.includes(size.value))
-          ? result('C5', 'pass')
+        if (support.value.some(p => p.sizes.includes(size.value))) return result('C5', 'pass');
+        const largest = Math.max(...support.value.flatMap(p => p.sizes));
+        return size.value < largest
+          ? result('C5', 'warn', `原廠未列出 ${size.value} mm 冷排，較大的冷排位通常也能裝，請確認`)
           : result('C5', 'fail', `機殼不支援 ${size.value} mm 冷排`);
       }
       return result('C5', 'unknown', '散熱器類型未確認');
