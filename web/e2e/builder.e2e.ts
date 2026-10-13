@@ -84,4 +84,24 @@ test.describe('桌面版配單', () => {
     await expect(page.locator('.summary-items')).toContainText('A4-H2O');
     await expect(page.getByRole('status')).toContainText('1 個零件已不在規格庫中');
   });
+
+  test('尺寸比例圖：顯卡與散熱器依機殼上限著色，並標出條件式上限', async ({ page }) => {
+    await open(page);
+    await pick(page, '機殼', 'The Tower 300');
+    await pick(page, '顯示卡', 'RTX5080');
+    const fit = page.locator('.fit');
+    const gpuRow = fit.locator('.fit-row', { hasText: '顯卡長度' });
+    await expect(gpuRow).toContainText('顯卡 303 mm（±10）／機殼上限 400 mm：剩 97 mm');
+    await expect(gpuRow.locator('.badge')).toHaveText('注意'); // 裝上電源護罩時上限 280 mm
+    await expect(gpuRow).toContainText('裝上電源護罩時上限 280 mm');
+
+    await pick(page, '機殼', 'A4-H2O');
+    await category(page, '散熱器');
+    await page.getByLabel(/隱藏不相容/).uncheck();
+    await candidate(page, 'Phantom Spirit').click();
+    const coolerRow = fit.locator('.fit-row', { hasText: '風冷散熱器高度' });
+    await expect(coolerRow).toContainText('超出 102 mm');
+    await expect(coolerRow.locator('.badge')).toHaveText('不相容');
+    await expect(fit.locator('.fit-row', { hasText: '顯卡長度' }).locator('.badge')).toHaveText('相容');
+  });
 });
