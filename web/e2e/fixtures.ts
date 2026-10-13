@@ -22,7 +22,7 @@ export const CATALOG: CatalogData = {
       s: { socket: 'LGA1700', memory_type: 'DDR4', form_factor: 'M-ATX', dimm_slots: 2 },
     },
     'ram:adata:32gb-ddr5-6000': {
-      c: 'ram', b: '威剛 ADATA', n: '32GB(16GB×2) DDR5-6000', r: 'a',
+      c: 'ram', b: '威剛 ADATA', n: '32GB(16GB×2) DDR5-6000', r: 'a', v: { black: '黑', white: '白' },
       s: { memory_type: 'DDR5', capacity_gb: 32, modules: 2 },
     },
     'ram:kingston:32gb-ddr4-3200': {
@@ -69,7 +69,8 @@ export const PRICES: PricesData = {
     { m: 'cpu:amd:r7-9800x3d', p: 15990 },
     { m: 'cpu:intel:i5-14400', p: 6290 },
     { m: 'motherboard:gigabyte:x870-gaming-x', p: 7490 },
-    { m: 'ram:adata:32gb-ddr5-6000', p: 3290, d: 200 },
+    { m: 'ram:adata:32gb-ddr5-6000', p: 3290, d: 200, v: 'black' },
+    { m: 'ram:adata:32gb-ddr5-6000', p: 3390, d: 200, v: 'white' },
     { m: 'gpu:msi:rtx5080-ventus', p: 36990 },
     { m: 'case:lian-li:a4-h2o', p: 4990 },
     { m: 'psu:asus:tuf-1000w', p: 4490 },

@@ -81,6 +81,9 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
                 <span className="summary-name">{modelName(m)}</span>
                 <span className="summary-price">{item.offer ? formatPrice(item.offer.p) : '無報價'}</span>
                 <button className="remove" onClick={() => onRemove(cat)} aria-label={`移除${CATEGORY_LABEL[cat]}`}>×</button>
+                {item.offer?.v && m.v?.[item.offer.v] && (
+                  <span className="summary-note">此價格為「{m.v[item.offer.v]}」款（各顏色中最低價）</span>
+                )}
                 {item.offer?.x && <span className="summary-note">此價格為組合價，含：{item.offer.x.join('、')}</span>}
                 {item.offer?.g && <span className="summary-note">贈品：{item.offer.g}</span>}
                 {item.offer?.u && <span className="summary-note">限時價至 {formatDate(item.offer.u)}</span>}
