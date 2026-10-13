@@ -65,6 +65,54 @@
     "cooler_clearance_mm": {
      "value": 190.0,
      "source": "title"
+    },
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "vendor_spec",
+     "ref": "https://www.antec.com/product/case/900",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.antec.com/product/case/900",
+     "note": "ATX；不含線材 230 mm，側裝（iShift 90° 支架）170 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 230,
+     "source": "vendor_spec",
+     "ref": "https://www.antec.com/product/case/900",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.antec.com/product/case/900",
+     "note": "前、頂冷排厚度上限 52 mm；後方只能裝風扇；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1999,6 +2047,55 @@
     "gpu_clearance_mm": {
      "value": 400.0,
      "source": "title"
+    },
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/cases/rog-cronox-argb/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/cases/rog-cronox-argb/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 200,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/cases/rog-cronox-argb/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/cases/rog-cronox-argb/spec/",
+     "note": "側面為可旋轉風扇架；有零售商把頂部寫成只支援 120，以原廠頁面為準；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7592,6 +7689,62 @@
     "cooler_clearance_mm": {
      "value": 188.0,
      "source": "title"
+    },
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/torrent/torrent/black-solid/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/torrent/torrent/black-solid/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 230,
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/torrent/torrent/black-solid/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/torrent/torrent/black-solid/",
+     "note": "前置 420 與底部 360 同時安裝時，前方需用薄冷排；底部 420 視厚度可能干涉；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7667,6 +7820,62 @@
     "cooler_clearance_mm": {
      "value": 188.0,
      "source": "title"
+    },
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/torrent/torrent/black-solid/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/torrent/torrent/black-solid/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 230,
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/torrent/torrent/black-solid/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/torrent/torrent/black-solid/",
+     "note": "前置 420 與底部 360 同時安裝時，前方需用薄冷排；底部 420 視厚度可能干涉；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7920,6 +8129,33 @@
     "cooler_clearance_mm": {
      "value": 138.0,
      "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "SFX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/tw/product/CST351.html",
+     "note": "原廠寫「電源支援: SFX」，未提及 SFX-L；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        240
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/tw/product/CST351.html",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9330,6 +9566,54 @@
     "cooler_clearance_mm": {
      "value": 190.0,
      "source": "title"
+    },
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "vendor_spec",
+     "ref": "https://www.in-win.com/en/gaming-chassis/covalent",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.in-win.com/en/gaming-chassis/covalent",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 250,
+     "source": "vendor_spec",
+     "ref": "https://www.in-win.com/en/gaming-chassis/covalent",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360,
+        420
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        360,
+        420
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.in-win.com/en/gaming-chassis/covalent",
+     "note": "前方與底部只能裝風扇；可同時裝兩組 420；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -13955,6 +14239,39 @@
     "cooler_clearance_mm": {
      "value": 170.0,
      "source": "title"
+    },
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/eclipse-g370a-black/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/eclipse-g370a-black/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "front",
+       "sizes": [
+        240
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/eclipse-g370a-black/",
+     "note": "前置 240 與頂部 360 不能同時安裝；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -14028,6 +14345,20 @@
     "cooler_clearance_mm": {
      "value": 210.0,
      "source": "title"
+    },
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/enthoo-elite/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/enthoo-elite/",
+     "note": "可裝雙電源；原廠未列長度上限；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -14058,6 +14389,20 @@
     "cooler_clearance_mm": {
      "value": 195.0,
      "source": "title"
+    },
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/enthoo-pro-2-tg/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/enthoo-pro-2-tg/",
+     "note": "可裝雙電源；原廠未列長度上限；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -14088,6 +14433,20 @@
     "cooler_clearance_mm": {
      "value": 195.0,
      "source": "title"
+    },
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/enthoo-pro-2-tg/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/enthoo-pro-2-tg/",
+     "note": "可裝雙電源；原廠未列長度上限；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -14112,6 +14471,20 @@
     "cooler_clearance_mm": {
      "value": 195.0,
      "source": "title"
+    },
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/enthoo-pro-2-server-v2-black/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/enthoo-pro-2-server-v2-black/",
+     "note": "可裝雙電源，另附伺服器備援電源支架；原廠未列長度上限；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -15459,7 +15832,21 @@
      "視博通蒼龍戰士"
     ]
    },
-   "specs": {},
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "retailer_spec",
+     "ref": "https://www.momoshop.com.tw/TP/TP0001697/goodsDetail/TP00016970001880",
+     "note": "零售商標示 ATX；原廠頁面未寫主機板尺寸"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "原價屋以 ATX 電源搭售此機殼；原廠未寫電源規格"
+    }
+   },
    "review": {
     "status": "auto"
    }
@@ -15813,7 +16200,21 @@
      "視博通SA801"
     ]
    },
-   "specs": {},
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/tw/portfolio-items/視博通-sa801【atx】機殼-視博通-500w電源/",
+     "note": "零售商標示 ATX；原廠頁面未寫主機板尺寸"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "原價屋以 ATX 電源搭售此機殼；原廠未寫電源規格"
+    }
+   },
    "review": {
     "status": "auto"
    }
@@ -16936,6 +17337,34 @@
     "cooler_clearance_mm": {
      "value": 60.0,
      "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/computer-chassis/SG13/",
+     "note": "原廠只列標準 ATX（建議 140 mm），未列 SFX；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 150,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/computer-chassis/SG13/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/computer-chassis/SG13/",
+     "note": "冷排加風扇厚度上限 90 mm；140 冷排需拆上方硬碟架並縮減顯卡空間；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16964,6 +17393,34 @@
     "cooler_clearance_mm": {
      "value": 60.0,
      "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/computer-chassis/SG13/",
+     "note": "原廠只列標準 ATX（建議 140 mm），未列 SFX；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 150,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/computer-chassis/SG13/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/computer-chassis/SG13/",
+     "note": "冷排加風扇厚度上限 90 mm；140 冷排需拆上方硬碟架並縮減顯卡空間；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -17012,6 +17469,20 @@
      "source": "vendor_spec",
      "ref": "https://www.silverstonetek.com/en/product/info/computer-chassis/SUGO14/",
      "note": "240 mm 一體式水冷的水冷頭高度限 55 mm（數值取自原廠頁面的搜尋摘錄）"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/computer-chassis/SUGO14/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 150,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/computer-chassis/SUGO14/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -17179,6 +17650,35 @@
     "cooler_clearance_mm": {
      "value": 210.0,
      "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX",
+      "SFX"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.thermaltake.com/the-tower-250-mini-tower-chassis.html",
+     "note": "ATX 或 SFX，含支架長度上限 200 mm；SFX-L 未列出；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 200,
+     "source": "vendor_spec",
+     "ref": "https://www.thermaltake.com/the-tower-250-mini-tower-chassis.html",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "side",
+       "sizes": [
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.thermaltake.com/the-tower-250-mini-tower-chassis.html",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
