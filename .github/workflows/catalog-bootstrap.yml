@@ -1,43 +1,77 @@
 name: Catalog bootstrap
 
-# 手動觸發：從當天的原價屋估價頁產生規格庫中尚不存在的型號，推到獨立分支供 PR 審查。
-# 既有型號不會被修改；新型號為 review.status = auto（規格衝突者為 draft）。
+# 每週一次（也可手動觸發）：從當天的原價屋估價頁找出規格庫中尚不存在的型號，推到獨立分支並開 PR 審查。
+# 既有型號不會被修改；新型號為 review.status = auto（規格衝突者為 draft），並自動套用對照表。
+# 沒有新型號、或上一個 bootstrap PR 還沒處理時不開新 PR，避免重複。
+# 自動開 PR 需要 Settings → Actions → General 勾選「Allow GitHub Actions to create and approve pull requests」；
+# 未勾選時只推分支，摘要會提示手動開 PR。
 on:
+  schedule:
+    - cron: '37 4 * * 1'  # 每週一 UTC 04:37 = 台灣 12:37（避開每日報價的 03:17）
   workflow_dispatch:
 
 permissions:
   contents: write
+  pull-requests: write
+
+concurrency:
+  group: catalog-bootstrap
+  cancel-in-progress: false
 
 jobs:
   bootstrap:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v5
 
+      - name: Skip while a previous bootstrap PR is open
+        id: open
+        run: |
+          pr=$(gh pr list --state open --json number,headRefName \
+                 --jq '[.[] | select(.headRefName | startswith("catalog-bootstrap/"))][0].number // empty')
+          echo "pr=$pr" >> "$GITHUB_OUTPUT"
+          if [ -n "$pr" ]; then
+            echo "上一個規格庫 PR #$pr 尚未處理，本次不再新增。" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - uses: actions/setup-python@v6
+        if: steps.open.outputs.pr == ''
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      - run: pip install -r requirements.txt
+      - if: steps.open.outputs.pr == ''
+        run: pip install -r requirements.txt
 
       # 只抓一次頁面：update_prices 另存 HTML，後續步驟都讀這份存檔
       - name: Fetch page
+        if: steps.open.outputs.pr == ''
         run: python scripts/update_prices.py --out "$RUNNER_TEMP/prices.json" --save-html "$RUNNER_TEMP/page.html"
 
       - name: Add new models to the catalog
-        run: python scripts/bootstrap_catalog.py --html "$RUNNER_TEMP/page.html" | tee -a "$GITHUB_STEP_SUMMARY"
-
-      - name: Preview prices with the new catalog
-        run: python scripts/update_prices.py --html "$RUNNER_TEMP/page.html" --out "$RUNNER_TEMP/prices.json"
+        id: add
+        if: steps.open.outputs.pr == ''
+        run: |
+          python scripts/bootstrap_catalog.py --html "$RUNNER_TEMP/page.html" | tee "$RUNNER_TEMP/report.txt"
+          cat "$RUNNER_TEMP/report.txt" >> "$GITHUB_STEP_SUMMARY"
+          if git diff --quiet -- data/catalog/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "沒有新型號。" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Validate
+        if: steps.add.outputs.changed == 'true'
         run: |
-          shopt -s nullglob
+          python scripts/update_prices.py --html "$RUNNER_TEMP/page.html" --out "$RUNNER_TEMP/prices.json"
           python schema/validate.py --catalog data/catalog/*.json --prices "$RUNNER_TEMP/prices.json"
 
-      - name: Push branch for review
+      - name: Push branch and open PR
+        if: steps.add.outputs.changed == 'true'
         run: |
           branch="catalog-bootstrap/$(date -u +%Y%m%d)-${{ github.run_id }}"
           git config user.name "github-actions[bot]"
@@ -46,4 +80,21 @@ jobs:
           git add data/catalog/
           git commit -m "data(catalog): add models from coolpc $(date -u +%F)"
           git push origin "$branch"
-          echo "已推送分支 \`$branch\`，請開 PR 審查。" >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "原價屋 $(date -u +%F) 估價頁中，規格庫尚未收錄的型號（自動產生，請審查）。"
+            echo
+            echo '```'
+            cat "$RUNNER_TEMP/report.txt"
+            echo '```'
+            echo
+            echo "審查重點：型號 ID 與名稱、標為 draft 的規格衝突、推定（inferred）的欄位。"
+            echo "此 PR 由 GitHub Actions 建立，不會自動觸發其他 CI；schema 驗證已在本流程通過。"
+            echo
+            echo "執行紀錄：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          } > "$RUNNER_TEMP/body.md"
+          if gh pr create --base main --head "$branch" --title "規格庫：新增 $(date -u +%F) 原價屋新型號" \
+               --body-file "$RUNNER_TEMP/body.md"; then
+            echo "已開 PR。" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "已推送分支 \`$branch\`，但無法自動開 PR（請確認 Actions 可建立 PR），請手動開 PR。" >> "$GITHUB_STEP_SUMMARY"
+          fi
