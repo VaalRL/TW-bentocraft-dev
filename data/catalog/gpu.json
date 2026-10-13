@@ -321,32 +321,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華碩DUALRTX5060TIO16G"
-    ]
-   },
-   "specs": {
-    "length_mm": {
-     "value": 230.0,
-     "source": "title",
-     "tolerance": 10
-    },
-    "board_power_w": {
-     "value": 180,
-     "source": "inferred",
-     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "gpu:asus:dual-rtx5060ti-o16g-white": {
-   "category": "gpu",
-   "brand": "華碩 ASUS",
-   "name": "DUAL-RTX5060TI-O16G-WHITE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華碩DUALRTX5060TIO16G",
      "華碩DUALRTX5060TIO16GWHITE"
     ]
    },
@@ -364,6 +339,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "gpu:asus:dual-rx9060xt-16g": {
@@ -2788,39 +2769,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "INNO3DRTX5080X3OC"
-    ]
-   },
-   "specs": {
-    "length_mm": {
-     "value": 300.0,
-     "source": "title",
-     "tolerance": 10
-    },
-    "board_power_w": {
-     "value": 360,
-     "source": "inferred",
-     "note": "NVIDIA RTX 5080 參考 TGP"
-    },
-    "power_connectors": {
-     "value": [
-      "12V-2x6"
-     ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "gpu:inno3d:rtx5080-x3-oc-white": {
-   "category": "gpu",
-   "brand": "INNO3D",
-   "name": "RTX5080 X3 OC WHITE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "INNO3DRTX5080X3OC",
      "INNO3DRTX5080X3OCWHITE"
     ]
    },
@@ -2845,6 +2794,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "gpu:msi:gt1030-2gd4-lp-oc": {
@@ -3226,32 +3181,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "微星RTX50608GGAMINGTRIOOC"
-    ]
-   },
-   "specs": {
-    "length_mm": {
-     "value": 300.0,
-     "source": "title",
-     "tolerance": 10
-    },
-    "board_power_w": {
-     "value": 145,
-     "source": "inferred",
-     "note": "NVIDIA RTX 5060 參考 TGP"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "gpu:msi:rtx5060-8g-gaming-trio-oc-white": {
-   "category": "gpu",
-   "brand": "微星 MSI",
-   "name": "RTX5060 8G GAMING TRIO OC WHITE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "微星RTX50608GGAMINGTRIOOC",
      "微星RTX50608GGAMINGTRIOOCWHITE"
     ]
    },
@@ -3269,6 +3199,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "gpu:msi:rtx5060-8g-ventus-2x-oc": {
@@ -3278,7 +3214,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "微星RTX50608GVENTUS2XOC"
+     "微星RTX50608GVENTUS2XOC",
+     "微星RTX50608GVENTUS2XOCWHITE"
     ]
    },
    "specs": {
@@ -3295,6 +3232,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "gpu:msi:rtx5060-8g-ventus-2x-oc-v1": {
@@ -3305,32 +3248,6 @@
    "aliases": {
     "model_keys": [
      "微星RTX50608GVENTUS2XOCV1"
-    ]
-   },
-   "specs": {
-    "length_mm": {
-     "value": 200.0,
-     "source": "title",
-     "tolerance": 10
-    },
-    "board_power_w": {
-     "value": 145,
-     "source": "inferred",
-     "note": "NVIDIA RTX 5060 參考 TGP"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "gpu:msi:rtx5060-8g-ventus-2x-oc-white": {
-   "category": "gpu",
-   "brand": "微星 MSI",
-   "name": "RTX5060 8G VENTUS 2X OC WHITE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "微星RTX50608GVENTUS2XOCWHITE"
     ]
    },
    "specs": {
@@ -3512,32 +3429,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "微星RTX5060TI8GGAMINGTRIOOC"
-    ]
-   },
-   "specs": {
-    "length_mm": {
-     "value": 300.0,
-     "source": "title",
-     "tolerance": 10
-    },
-    "board_power_w": {
-     "value": 180,
-     "source": "inferred",
-     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "gpu:msi:rtx5060ti-8g-gaming-trio-oc-white": {
-   "category": "gpu",
-   "brand": "微星 MSI",
-   "name": "RTX5060Ti 8G GAMING TRIO OC WHITE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "微星RTX5060TI8GGAMINGTRIOOC",
      "微星RTX5060TI8GGAMINGTRIOOCWHITE"
     ]
    },
@@ -3555,6 +3447,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "gpu:msi:rtx5060ti-8g-shadow-2x-oc-plus": {
@@ -3590,32 +3488,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "微星RTX5060TI8GVENTUS2XOCPLUS"
-    ]
-   },
-   "specs": {
-    "length_mm": {
-     "value": 230.0,
-     "source": "title",
-     "tolerance": 10
-    },
-    "board_power_w": {
-     "value": 180,
-     "source": "inferred",
-     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "gpu:msi:rtx5060ti-8g-ventus-2x-oc-white-plus": {
-   "category": "gpu",
-   "brand": "微星 MSI",
-   "name": "RTX5060Ti 8G VENTUS 2X OC WHITE PLUS",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "微星RTX5060TI8GVENTUS2XOCPLUS",
      "微星RTX5060TI8GVENTUS2XOCWHITEPLUS"
     ]
    },
@@ -3633,6 +3506,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "gpu:msi:rtx5060ti-8g-ventus-2x-plus": {
@@ -3793,39 +3672,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "微星RTX507012GVENTUS2XOC"
-    ]
-   },
-   "specs": {
-    "length_mm": {
-     "value": 240.0,
-     "source": "title",
-     "tolerance": 10
-    },
-    "board_power_w": {
-     "value": 250,
-     "source": "inferred",
-     "note": "NVIDIA RTX 5070 參考 TGP"
-    },
-    "power_connectors": {
-     "value": [
-      "12V-2x6"
-     ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "gpu:msi:rtx5070-12g-ventus-2x-oc-white": {
-   "category": "gpu",
-   "brand": "微星 MSI",
-   "name": "RTX5070 12G VENTUS 2X OC WHITE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "微星RTX507012GVENTUS2XOC",
      "微星RTX507012GVENTUS2XOCWHITE"
     ]
    },
@@ -3850,6 +3697,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "gpu:msi:rtx5070-12g-ventus-3x-oc": {
@@ -4206,7 +4059,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "撼訊RX9070XT16GL/OC暗犬"
+     "撼訊RX9070XT16GL/OC暗犬",
+     "撼訊RX9070XT16GL/OC/WHITE暗犬()"
     ]
    },
    "specs": {
@@ -4223,6 +4077,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "gpu:powercolor:rx9070xt-16g-l-oc-reva": {
@@ -4249,38 +4109,6 @@
    },
    "review": {
     "status": "auto"
-   }
-  },
-  "gpu:powercolor:rx9070xt-16g-l-oc-white": {
-   "category": "gpu",
-   "brand": "撼訊 PowerColor",
-   "name": "RX9070XT 16G-L/OC/WHITE 暗黑犬(白)",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "撼訊RX9070XT16GL/OC/WHITE暗犬()"
-    ]
-   },
-   "specs": {
-    "length_mm": {
-     "value": 340.0,
-     "source": "title",
-     "tolerance": 10
-    },
-    "board_power_w": {
-     "value": 304,
-     "source": "inferred",
-     "note": "AMD RX 9070 XT 參考 TBP"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "white": {
-     "label": "白",
-     "color": "white"
-    }
    }
   },
   "gpu:sapphire:nitro-rx9060xt-gaming-oc-16gb": {

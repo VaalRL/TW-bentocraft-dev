@@ -511,38 +511,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華擎B850CHALLENGERWIFI"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "B850",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:asrock:b850-challenger-wifi-white": {
-   "category": "motherboard",
-   "brand": "華擎 ASRock",
-   "name": "B850 Challenger WiFi White",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華擎B850CHALLENGERWIFI",
      "華擎B850CHALLENGERWIFIWHITE"
     ]
    },
@@ -566,6 +535,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "motherboard:asrock:b850-pro-a": {
@@ -708,38 +683,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華擎B850MCHALLENGERWIFI"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "B850",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:asrock:b850m-challenger-wifi-white": {
-   "category": "motherboard",
-   "brand": "華擎 ASRock",
-   "name": "B850M Challenger WiFi White",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華擎B850MCHALLENGERWIFI",
      "華擎B850MCHALLENGERWIFIWHITE"
     ]
    },
@@ -763,6 +707,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "motherboard:asrock:b850m-pro-a": {
@@ -868,38 +818,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華擎B850MPRORSWIFI"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "B850",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:asrock:b850m-pro-rs-wifi-white": {
-   "category": "motherboard",
-   "brand": "華擎 ASRock",
-   "name": "B850M Pro RS WiFi White",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華擎B850MPRORSWIFI",
      "華擎B850MPRORSWIFIWHITE"
     ]
    },
@@ -923,6 +842,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "motherboard:asrock:b850m-riptide-wifi": {
@@ -4995,38 +4920,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華碩TUFGAMINGB850MPLUSWIFI7"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "B850",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:asus:tuf-gaming-b850m-plus-wifi7-w": {
-   "category": "motherboard",
-   "brand": "華碩 ASUS",
-   "name": "TUF GAMING B850M-PLUS WIFI7 W",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華碩TUFGAMINGB850MPLUSWIFI7",
      "華碩TUFGAMINGB850MPLUSWIFI7W"
     ]
    },
@@ -5050,6 +4944,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "motherboard:asus:tuf-gaming-b860-plus-wifi": {
@@ -11275,7 +11175,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "微星PROZ890SWIFI"
+     "微星PROZ890SWIFI",
+     "微星PROZ890SWIFIWHITE"
     ]
    },
    "specs": {
@@ -11294,10 +11195,26 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://br.msi.com/Motherboard/PRO-Z890-S-WIFI-WHITE/Specification"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://br.msi.com/Motherboard/PRO-Z890-S-WIFI-WHITE/Specification"
     }
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "motherboard:msi:pro-z890-s-wifi-pz": {
@@ -11330,48 +11247,6 @@
     "back_connect": {
      "value": true,
      "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:msi:pro-z890-s-wifi-white": {
-   "category": "motherboard",
-   "brand": "微星 MSI",
-   "name": "PRO Z890-S WIFI WHITE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "微星PROZ890SWIFIWHITE"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "LGA1851",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "Z890",
-     "source": "title"
-    },
-    "dimm_slots": {
-     "value": 4,
-     "source": "vendor_spec",
-     "ref": "https://br.msi.com/Motherboard/PRO-Z890-S-WIFI-WHITE/Specification"
-    },
-    "max_memory_gb": {
-     "value": 256,
-     "source": "vendor_spec",
-     "ref": "https://br.msi.com/Motherboard/PRO-Z890-S-WIFI-WHITE/Specification"
     }
    },
    "review": {

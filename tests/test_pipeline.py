@@ -18,7 +18,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "schema"))
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from pipeline.catalog import CatalogIndex, main_text, new_models, price_fields, specs_for, split_name  # noqa: E402
+from pipeline.catalog import CatalogIndex, detect_variant, main_text, new_models, price_fields, specs_for, split_name  # noqa: E402
 from pipeline.coolpc import parse_items  # noqa: E402
 from pipeline.prices import build_offers, offer_id, write_prices  # noqa: E402
 import update_prices  # noqa: E402
@@ -67,6 +67,13 @@ class TitleQuirksTest(unittest.TestCase):
         self.assertEqual(split_name("｛技嘉 Z890 AORUS XTREME AI TOP(E-ATX/2*10G LAN)/DDR5"),
                          ("技嘉 GIGABYTE", "gigabyte", "Z890 AORUS XTREME AI TOP"))
         self.assertEqual(split_name("｛WD 黑標 SN8100 2TB/Gen5 PCIe 5.0/讀14900")[1:], ("wd", "黑標 SN8100 2TB"))
+
+    def test_english_color_variant(self):
+        self.assertEqual(detect_variant("｛利民 Frozen Warframe 240 WHITE ARGB｝, $2990")[0], "white")
+        self.assertEqual(detect_variant("｛九州風神 PN850M WH(850W)｝金牌, $2990")[0], "white")
+        self.assertEqual(detect_variant("｛SAMA L50 360 BK｝水冷, $1990")[0], "black")
+        self.assertIsNone(detect_variant("｛微星 MAG A650BN｝銅牌, $1590"))  # 料號內的 BN、WH 不算
+        self.assertIsNone(detect_variant("｛華碩 ROG STRIX B850-A WHITEX｝, $1"))
 
     def test_assembly_prefix(self):
         text = "裝機價｛華碩 PRIME B850M-A｝M-ATX, $3990 ◆ ★"

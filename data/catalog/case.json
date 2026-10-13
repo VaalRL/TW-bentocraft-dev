@@ -9275,41 +9275,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "技嘉C301GLASS"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "E-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 400.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 170.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "case:gigabyte:c301-glass-white": {
-   "category": "case",
-   "brand": "技嘉 GIGABYTE",
-   "name": "C301 GLASS WHITE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "技嘉C301GLASS",
      "技嘉C301GLASSWHITE"
     ]
    },
@@ -9336,6 +9302,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "case:gigabyte:c500-panoramic-stealth": {
@@ -9515,7 +9487,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "HYTEY70TOUCHINFINITE"
+     "HYTEY70TOUCHINFINITE",
+     "HYTEY70TOUCHINFINITE雪"
     ]
    },
    "specs": {
@@ -9546,46 +9519,9 @@
     "black": {
      "label": "黑",
      "color": "black"
-    }
-   }
-  },
-  "case:hyte:y70-touch-infinite-snow": {
-   "category": "case",
-   "brand": "HYTE",
-   "name": "Y70 touch infinite 雪",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "HYTEY70TOUCHINFINITE雪"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "E-ATX",
-     "source": "title"
     },
-    "gpu_clearance_mm": {
-     "value": 422.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 180.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
     "white": {
-     "label": "白",
+     "label": "雪",
      "color": "white"
     }
    }
@@ -17823,7 +17759,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "曜越THETOWER250"
+     "曜越THETOWER250",
+     "曜越THETOWER250抹茶"
     ]
    },
    "specs": {
@@ -17851,6 +17788,10 @@
     "white": {
      "label": "白",
      "color": "white"
+    },
+    "green": {
+     "label": "抹茶綠",
+     "color": "green"
     }
    }
   },
@@ -17888,40 +17829,6 @@
     }
    }
   },
-  "case:thermaltake:the-tower-250-matcha": {
-   "category": "case",
-   "brand": "曜越 Thermaltake",
-   "name": "The Tower 250 抹茶",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "曜越THETOWER250抹茶"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "Mini-ITX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 360.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 210.0,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "green": {
-     "label": "綠",
-     "color": "green"
-    }
-   }
-  },
   "case:thermaltake:the-tower-300": {
    "category": "case",
    "brand": "曜越 Thermaltake",
@@ -17929,7 +17836,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "曜越THETOWER300"
+     "曜越THETOWER300",
+     "曜越THETOWER300抹茶"
     ]
    },
    "specs": {
@@ -17968,6 +17876,10 @@
     "white": {
      "label": "白",
      "color": "white"
+    },
+    "green": {
+     "label": "抹茶綠",
+     "color": "green"
     }
    }
   },
@@ -18061,51 +17973,6 @@
     }
    }
   },
-  "case:thermaltake:the-tower-300-matcha": {
-   "category": "case",
-   "brand": "曜越 Thermaltake",
-   "name": "The Tower 300 抹茶",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "曜越THETOWER300抹茶"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 400.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 210.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "back_connect_max_form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "green": {
-     "label": "綠",
-     "color": "green"
-    }
-   }
-  },
   "case:thermaltake:the-tower-600": {
    "category": "case",
    "brand": "曜越 Thermaltake",
@@ -18113,7 +17980,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "曜越THETOWER600"
+     "曜越THETOWER600",
+     "曜越THETOWER600抹茶"
     ]
    },
    "specs": {
@@ -18159,6 +18027,10 @@
     "white": {
      "label": "白",
      "color": "white"
+    },
+    "green": {
+     "label": "抹茶綠",
+     "color": "green"
     }
    }
   },
@@ -18211,58 +18083,6 @@
     "blue": {
      "label": "藍",
      "color": "blue"
-    }
-   }
-  },
-  "case:thermaltake:the-tower-600-matcha": {
-   "category": "case",
-   "brand": "曜越 Thermaltake",
-   "name": "The Tower 600 抹茶",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "曜越THETOWER600抹茶"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 280.0,
-     "source": "title",
-     "conditions": [
-      {
-       "value": 400.0,
-       "when": "unspecified",
-       "source": "title"
-      }
-     ]
-    },
-    "cooler_clearance_mm": {
-     "value": 210.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "back_connect_max_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "green": {
-     "label": "綠",
-     "color": "green"
     }
    }
   },

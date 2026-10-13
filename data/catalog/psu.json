@@ -3524,44 +3524,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "九州風神PN850M(850W)"
-    ]
-   },
-   "specs": {
-    "wattage": {
-     "value": 850,
-     "source": "title"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "efficiency": {
-     "value": "gold",
-     "source": "title"
-    },
-    "atx_version": {
-     "value": "3.1",
-     "source": "title"
-    },
-    "pcie_12v2x6": {
-     "value": 1,
-     "source": "title",
-     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "psu:deepcool:pn850m-wh-850w": {
-   "category": "psu",
-   "brand": "九州風神 DEEPCOOL",
-   "name": "PN850M WH(850W)",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "九州風神PN850M(850W)",
      "九州風神PN850MWH(850W)"
     ]
    },

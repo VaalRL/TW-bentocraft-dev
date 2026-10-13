@@ -197,11 +197,12 @@
   "cooler:asrock:pro-360-argb": {
    "category": "cooler",
    "brand": "ASRock",
-   "name": "Pro 360 ARGB(黑) 水冷",
+   "name": "Pro 360 ARGB 水冷",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "ASROCKPRO360ARGB()水冷"
+     "ASROCKPRO360ARGB()水冷",
+     "ASROCKPROWHITE360ARGB()水冷"
     ]
    },
    "specs": {
@@ -236,48 +237,7 @@
     "black": {
      "label": "黑",
      "color": "black"
-    }
-   }
-  },
-  "cooler:asrock:pro-white-360-argb": {
-   "category": "cooler",
-   "brand": "ASRock",
-   "name": "Pro White 360 ARGB(白) 水冷",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "ASROCKPROWHITE360ARGB()水冷"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
     },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "XZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
     "white": {
      "label": "白",
      "color": "white"
@@ -741,47 +701,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華碩ROGRYUJINIII360ARGBEXTREME龍神三代"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "optgroup"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:asus:rog-ryujin-iii-360-argb-extreme-white": {
-   "category": "cooler",
-   "brand": "華碩 ASUS",
-   "name": "ROG RYUJIN III 360 ARGB Extreme 白龍神",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華碩ROGRYUJINIII360ARGBEXTREME龍神三代",
      "華碩ROGRYUJINIII360ARGBEXTREME龍神"
     ]
    },
@@ -814,6 +734,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "cooler:asus:rog-ryuo-iv-360-argb": {
@@ -1045,45 +971,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華碩ROGSTRIXLCIV360ARGBLCD飛龍"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "optgroup"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "XZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:asus:rog-strix-lc-iv-360-argb-lcd-white": {
-   "category": "cooler",
-   "brand": "華碩 ASUS",
-   "name": "ROG STRIX LC IV 360 ARGB LCD 白龍",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華碩ROGSTRIXLCIV360ARGBLCD飛龍",
      "華碩ROGSTRIXLCIV360ARGBLCD龍"
     ]
    },
@@ -1114,6 +1002,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "cooler:asus:rog-strix-slc-iv-360-argb-lcd": {
@@ -1123,45 +1017,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華碩ROGSTRIXSLCIV360ARGBLCD飛龍"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "optgroup"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "XZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:asus:rog-strix-slc-iv-360-argb-lcd-white": {
-   "category": "cooler",
-   "brand": "華碩 ASUS",
-   "name": "ROG STRIX SLC IV 360 ARGB LCD 白龍",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華碩ROGSTRIXSLCIV360ARGBLCD飛龍",
      "華碩ROGSTRIXSLCIV360ARGBLCD龍"
     ]
    },
@@ -1192,6 +1048,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "cooler:asus:tuf-gaming-lc-iii-240-argb": {
@@ -3711,7 +3573,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "九州風神ASSASSINVCELITE"
+     "九州風神ASSASSINVCELITE",
+     "九州風神ASSASSINVCELITEWH"
     ]
    },
    "specs": {
@@ -3749,51 +3612,7 @@
     "black": {
      "label": "黑",
      "color": "black"
-    }
-   }
-  },
-  "cooler:deepcool:assassin-vc-elite-wh": {
-   "category": "cooler",
-   "brand": "九州風神 DEEPCOOL",
-   "name": "ASSASSIN VC ELITE WH",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "九州風神ASSASSINVCELITEWH"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
     },
-    "height_mm": {
-     "value": 164.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
     "white": {
      "label": "白",
      "color": "white"
@@ -3807,51 +3626,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "DEEPCOOLLE360V2水冷"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "radiator_thickness_mm": {
-     "value": 52.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:deepcool:le360-v2-wh": {
-   "category": "cooler",
-   "brand": "DEEPCOOL",
-   "name": "LE360 V2 WH(白) 水冷",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "DEEPCOOLLE360V2水冷",
      "DEEPCOOLLE360V2WH()水冷"
     ]
    },
@@ -3903,7 +3678,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "DEEPCOOLLM360水冷散熱器"
+     "DEEPCOOLLM360水冷散熱器",
+     "DEEPCOOLLM360WH()水冷散熱器"
     ]
    },
    "specs": {
@@ -3913,47 +3689,6 @@
     },
     "radiator_mm": {
      "value": 360,
-     "source": "title"
-    },
-    "radiator_thickness_mm": {
-     "value": 52.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:deepcool:lm360-wh": {
-   "category": "cooler",
-   "brand": "DEEPCOOL",
-   "name": "LM360 WH(白) 水冷散熱器",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "DEEPCOOLLM360WH()水冷散熱器"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
      "source": "title"
     },
     "radiator_thickness_mm": {
@@ -4085,51 +3820,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "DEEPCOOLLT360VISIONARGB水冷"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "radiator_thickness_mm": {
-     "value": 52.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:deepcool:lt360-vision-wh-argb": {
-   "category": "cooler",
-   "brand": "DEEPCOOL",
-   "name": "LT360 VISION WH ARGB(白) 水冷",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "DEEPCOOLLT360VISIONARGB水冷",
      "DEEPCOOLLT360VISIONWHARGB()水冷"
     ]
    },
@@ -4640,7 +4331,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "全漢MP7ARGB散熱器"
+     "全漢MP7ARGB散熱器",
+     "全漢MP7WHITEARGB散熱器"
     ]
    },
    "specs": {
@@ -4673,6 +4365,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "cooler:fsp:mp7-black": {
@@ -4683,48 +4381,6 @@
    "aliases": {
     "model_keys": [
      "全漢MP7BLACK散熱器"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 153.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:fsp:mp7-white-argb": {
-   "category": "cooler",
-   "brand": "全漢 FSP",
-   "name": "MP7 WHITE ARGB 散熱器",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "全漢MP7WHITEARGB散熱器"
     ]
    },
    "specs": {
@@ -4808,7 +4464,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "全漢NP5ARGB散熱器"
+     "全漢NP5ARGB散熱器",
+     "全漢NP5WHITEARGB散熱器"
     ]
    },
    "specs": {
@@ -4841,6 +4498,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "cooler:fsp:np5-black": {
@@ -4851,48 +4514,6 @@
    "aliases": {
     "model_keys": [
      "全漢NP5BLACK散熱器"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 151.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:fsp:np5-white-argb": {
-   "category": "cooler",
-   "brand": "全漢 FSP",
-   "name": "NP5 WHITE ARGB 散熱器",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "全漢NP5WHITEARGB散熱器"
     ]
    },
    "specs": {
@@ -9386,14 +9007,15 @@
     "status": "auto"
    }
   },
-  "cooler:sama:l50-240-bk": {
+  "cooler:sama:l50-240": {
    "category": "cooler",
    "brand": "SAMA",
-   "name": "L50 240 BK(黑) 水冷",
+   "name": "L50 240 水冷",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "SAMAL50240BK()水冷"
+     "SAMAL50240BK()水冷",
+     "SAMAL50240WH()水冷"
     ]
    },
    "specs": {
@@ -9434,114 +9056,21 @@
     "black": {
      "label": "黑",
      "color": "black"
-    }
-   }
-  },
-  "cooler:sama:l50-240-wh": {
-   "category": "cooler",
-   "brand": "SAMA",
-   "name": "L50 240 WH(白) 水冷",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "SAMAL50240WH()水冷"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
     },
-    "radiator_thickness_mm": {
-     "value": 55.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
     "white": {
      "label": "白",
      "color": "white"
     }
    }
   },
-  "cooler:sama:l50-360-bk": {
+  "cooler:sama:l50-360": {
    "category": "cooler",
    "brand": "SAMA",
-   "name": "L50 360 BK(黑) 水冷",
+   "name": "L50 360 水冷",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "SAMAL50360BK()水冷"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "radiator_thickness_mm": {
-     "value": 55.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "black": {
-     "label": "黑",
-     "color": "black"
-    }
-   }
-  },
-  "cooler:sama:l50-360-wh": {
-   "category": "cooler",
-   "brand": "SAMA",
-   "name": "L50 360 WH(白) 水冷",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "SAMAL50360BK()水冷",
      "SAMAL50360WH()水冷"
     ]
    },
@@ -9550,53 +9079,6 @@
      "value": "aio",
      "source": "title"
     },
-    "radiator_thickness_mm": {
-     "value": 55.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "white": {
-     "label": "白",
-     "color": "white"
-    }
-   }
-  },
-  "cooler:sama:q70-bk-360": {
-   "category": "cooler",
-   "brand": "SAMA",
-   "name": "Q70 BK(黑) 360水冷",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "SAMAQ70BK()360水冷"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
-    },
     "radiator_mm": {
      "value": 360,
      "source": "title"
@@ -9630,16 +9112,21 @@
     "black": {
      "label": "黑",
      "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
     }
    }
   },
-  "cooler:sama:q70-wh-360": {
+  "cooler:sama:q70-360": {
    "category": "cooler",
    "brand": "SAMA",
-   "name": "Q70 WH(白) 360水冷",
+   "name": "Q70 360水冷",
    "status": "active",
    "aliases": {
     "model_keys": [
+     "SAMAQ70BK()360水冷",
      "SAMAQ70WH()360水冷"
     ]
    },
@@ -9678,6 +9165,10 @@
     "status": "auto"
    },
    "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
     "white": {
      "label": "白",
      "color": "white"
@@ -11269,14 +10760,15 @@
     }
    }
   },
-  "cooler:thermalright:frozen-warframe-240-black-argb": {
+  "cooler:thermalright:frozen-warframe-240-argb": {
    "category": "cooler",
    "brand": "利民 Thermalright",
-   "name": "Frozen Warframe 240 BLACK ARGB",
+   "name": "Frozen Warframe 240 ARGB",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "利民FROZENWARFRAME240BLACKARGB"
+     "利民FROZENWARFRAME240BLACKARGB",
+     "利民FROZENWARFRAME240WHITEARGB"
     ]
    },
    "specs": {
@@ -11308,53 +10800,27 @@
    },
    "review": {
     "status": "auto"
-   }
-  },
-  "cooler:thermalright:frozen-warframe-240-white-argb": {
-   "category": "cooler",
-   "brand": "利民 Thermalright",
-   "name": "Frozen Warframe 240 WHITE ARGB",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "利民FROZENWARFRAME240WHITEARGB"
-    ]
    },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "optgroup"
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
     },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    "white": {
+     "label": "白",
+     "color": "white"
     }
-   },
-   "review": {
-    "status": "auto"
    }
   },
-  "cooler:thermalright:frozen-warframe-360-black-argb": {
+  "cooler:thermalright:frozen-warframe-360-argb": {
    "category": "cooler",
    "brand": "利民 Thermalright",
-   "name": "Frozen Warframe 360 BLACK ARGB",
+   "name": "Frozen Warframe 360 ARGB",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "利民FROZENWARFRAME360BLACKARGB"
+     "利民FROZENWARFRAME360BLACKARGB",
+     "利民FROZENWARFRAME360WHITEARGB"
     ]
    },
    "specs": {
@@ -11386,56 +10852,26 @@
    },
    "review": {
     "status": "auto"
-   }
-  },
-  "cooler:thermalright:frozen-warframe-360-se-black-argb": {
-   "category": "cooler",
-   "brand": "利民 Thermalright",
-   "name": "Frozen Warframe 360 SE BLACK ARGB",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "利民FROZENWARFRAME360SEBLACKARGB"
-    ]
    },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "optgroup"
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
     },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    "white": {
+     "label": "白",
+     "color": "white"
     }
-   },
-   "review": {
-    "status": "auto"
    }
   },
-  "cooler:thermalright:frozen-warframe-360-se-white-argb": {
+  "cooler:thermalright:frozen-warframe-360-se-argb": {
    "category": "cooler",
    "brand": "利民 Thermalright",
-   "name": "Frozen Warframe 360 SE WHITE ARGB",
+   "name": "Frozen Warframe 360 SE ARGB",
    "status": "active",
    "aliases": {
     "model_keys": [
+     "利民FROZENWARFRAME360SEBLACKARGB",
      "利民FROZENWARFRAME360SEWHITEARGB"
     ]
    },
@@ -11468,53 +10904,27 @@
    },
    "review": {
     "status": "auto"
-   }
-  },
-  "cooler:thermalright:frozen-warframe-360-white-argb": {
-   "category": "cooler",
-   "brand": "利民 Thermalright",
-   "name": "Frozen Warframe 360 WHITE ARGB",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "利民FROZENWARFRAME360WHITEARGB"
-    ]
    },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "optgroup"
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
     },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    "white": {
+     "label": "白",
+     "color": "white"
     }
-   },
-   "review": {
-    "status": "auto"
    }
   },
-  "cooler:thermalright:frozen-warframe-420-black-argb": {
+  "cooler:thermalright:frozen-warframe-420-argb": {
    "category": "cooler",
    "brand": "利民 Thermalright",
-   "name": "Frozen Warframe 420 BLACK ARGB",
+   "name": "Frozen Warframe 420 ARGB",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "利民FROZENWARFRAME420BLACKARGB"
+     "利民FROZENWARFRAME420BLACKARGB",
+     "利民FROZENWARFRAME420WHITEARGB"
     ]
    },
    "specs": {
@@ -11546,93 +10956,26 @@
    },
    "review": {
     "status": "auto"
-   }
-  },
-  "cooler:thermalright:frozen-warframe-420-white-argb": {
-   "category": "cooler",
-   "brand": "利民 Thermalright",
-   "name": "Frozen Warframe 420 WHITE ARGB",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "利民FROZENWARFRAME420WHITEARGB"
-    ]
    },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "optgroup"
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
     },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    "white": {
+     "label": "白",
+     "color": "white"
     }
-   },
-   "review": {
-    "status": "auto"
    }
   },
-  "cooler:thermalright:grand-vision-360-argb-black": {
+  "cooler:thermalright:grand-vision-360-argb": {
    "category": "cooler",
    "brand": "利民 Thermalright",
-   "name": "Grand Vision 360 ARGB BLACK",
+   "name": "Grand Vision 360 ARGB",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "利民GRANDVISION360ARGBBLACK"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "optgroup"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:thermalright:grand-vision-360-argb-white": {
-   "category": "cooler",
-   "brand": "利民 Thermalright",
-   "name": "Grand Vision 360 ARGB WHITE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "利民GRANDVISION360ARGBBLACK",
      "利民GRANDVISION360ARGBWHITE"
     ]
    },
@@ -11665,6 +11008,16 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "cooler:thermalright:peerless-assassin-120-digital-argb": {
@@ -12143,54 +11496,14 @@
     "status": "auto"
    }
   },
-  "cooler:thermalright:trofeo-vision-360-argb-black": {
+  "cooler:thermalright:trofeo-vision-360-argb": {
    "category": "cooler",
    "brand": "利民 Thermalright",
-   "name": "Trofeo Vision 360 ARGB BLACK",
+   "name": "Trofeo Vision 360 ARGB",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "利民TROFEOVISION360ARGBBLACK"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "optgroup"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:thermalright:trofeo-vision-360-argb-white": {
-   "category": "cooler",
-   "brand": "利民 Thermalright",
-   "name": "Trofeo Vision 360 ARGB WHITE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "利民TROFEOVISION360ARGBBLACK",
      "利民TROFEOVISION360ARGBWHITE"
     ]
    },
@@ -12223,56 +11536,26 @@
    },
    "review": {
     "status": "auto"
-   }
-  },
-  "cooler:thermalright:wonder-vision-360-ub-argb-black": {
-   "category": "cooler",
-   "brand": "利民 Thermalright",
-   "name": "Wonder Vision 360 UB ARGB BLACK",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "利民WONDERVISION360UBARGBBLACK"
-    ]
    },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "optgroup"
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
     },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    "white": {
+     "label": "白",
+     "color": "white"
     }
-   },
-   "review": {
-    "status": "auto"
    }
   },
-  "cooler:thermalright:wonder-vision-360-ub-argb-white": {
+  "cooler:thermalright:wonder-vision-360-ub-argb": {
    "category": "cooler",
    "brand": "利民 Thermalright",
-   "name": "Wonder Vision 360 UB ARGB WHITE",
+   "name": "Wonder Vision 360 UB ARGB",
    "status": "active",
    "aliases": {
     "model_keys": [
+     "利民WONDERVISION360UBARGBBLACK",
      "利民WONDERVISION360UBARGBWHITE"
     ]
    },
@@ -12305,6 +11588,16 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "cooler:tryx:holo-360-argb": {

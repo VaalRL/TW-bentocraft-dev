@@ -48,6 +48,7 @@ COLORS = [
     ("燕麥", "other"), ("胡桃木", "wood"), ("木紋", "wood"), ("黑", "black"), ("白", "white"), ("銀", "silver"),
     ("灰", "gray"), ("粉", "pink"), ("藍", "blue"), ("綠", "green"), ("紅", "red"), ("紫", "purple"),
 ]
+ENGLISH_COLORS = [("WHITE|WH", "白", "white"), ("BLACK|BK", "黑", "black")]
 FF_RANK = {"Mini-ITX": 1, "M-ATX": 2, "ATX": 3, "E-ATX": 4}
 REQUIRES = {"主機板": "motherboard", "CPU": "cpu", "處理器": "cpu", "顯卡": "gpu", "顯示卡": "gpu", "記憶體": "ram"}
 
@@ -141,6 +142,11 @@ def detect_variant(text: str) -> tuple[str, dict] | None:
     for zh, color in COLORS:
         if re.search(zh + r"(?:色|化版|版)?(?:\s|$|\)|）)", name) or f"({zh})" in name:
             return color if color != "other" else slug(zh) or "other", {"label": zh, "color": color}
+    # 只寫英文的顏色（「… WHITE ARGB」「PN850M WH」）。型號鍵不去除這些字，所以白色款仍是另一個鍵，
+    # 由規格庫的 aliases 併入同一型號；這裡只負責標出報價是哪個顏色
+    for pattern, zh, color in ENGLISH_COLORS:
+        if re.search(r"(?<![A-Za-z0-9])(?:" + pattern + r")(?![A-Za-z0-9])", name, re.I):
+            return color, {"label": zh, "color": color}
     return None
 
 
