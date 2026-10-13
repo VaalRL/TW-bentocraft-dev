@@ -72,6 +72,8 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
   background: var(--bg-muted); border: 1px solid var(--border); border-radius: var(--radius);
   color: var(--text-primary); text-decoration: none;
 }
+.icon-button.has-count { width: auto; gap: 0.35rem; padding: 0 0.6rem; }
+.star-count { font-size: 0.8rem; font-variant-numeric: tabular-nums; }
 
 .banner { padding: 0.5rem 1rem; display: flex; gap: 1rem; align-items: center; }
 .banner-warn { background: color-mix(in srgb, var(--status-warn) 15%, var(--bg-surface)); }
