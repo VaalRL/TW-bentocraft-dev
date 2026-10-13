@@ -128,6 +128,9 @@ python scripts/update_prices.py --out data/prices/coolpc.json --save-html page.h
 python scripts/bootstrap_catalog.py --html page.html   # add models missing from the catalog (review via PR)
 ```
 
+### 5. Contributing to the Spec Catalog
+New models arrive every Monday as an automated PR. How to review them, fix IDs, resolve conflicts and mark models as verified is described in [`CONTRIBUTING.md`](CONTRIBUTING.md) (Traditional Chinese).
+
 ---
 
 ## ☕ Support & Sponsor

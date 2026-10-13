@@ -134,6 +134,9 @@ python scripts/update_prices.py --out data/prices/coolpc.json --save-html page.h
 python scripts/bootstrap_catalog.py --html page.html   # 新增規格庫中沒有的型號（以 PR 送審）
 ```
 
+### 5. 參與規格庫維護
+新型號每週一由自動流程開 PR。審查方式、ID 命名、規格衝突處理與標為已確認的條件，見 [`CONTRIBUTING.md`](CONTRIBUTING.md)。
+
 ---
 
 ## ☕ 贊助與支持 (Support & Sponsor)
