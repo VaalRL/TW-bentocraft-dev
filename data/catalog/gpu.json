@@ -1562,6 +1562,32 @@
     "status": "auto"
    }
   },
+  "gpu:gigabyte:rtx5060ti-windforce-oc-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti WINDFORCE OC 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "｛技嘉RTX5060TIWINDFORCEOC16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 210.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "gpu:gigabyte:rtx5060ti-windforce-oc-8g": {
    "category": "gpu",
    "brand": "技嘉 GIGABYTE",
@@ -4475,32 +4501,6 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "gpu:unknown:rtx5060ti-windforce-oc-16g-2587mhz-2": {
-   "category": "gpu",
-   "brand": "unknown",
-   "name": "｛技嘉 RTX5060Ti WINDFORCE OC 16G(2587MHz/2",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "｛技嘉RTX5060TIWINDFORCEOC16G"
-    ]
-   },
-   "specs": {
-    "length_mm": {
-     "value": 210.0,
-     "source": "title",
-     "tolerance": 10
-    },
-    "board_power_w": {
-     "value": 180,
-     "source": "inferred",
-     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {

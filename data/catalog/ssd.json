@@ -1966,10 +1966,10 @@
     "status": "auto"
    }
   },
-  "ssd:micron:crucial-p310-2tb-f0c2": {
+  "ssd:micron:crucial-p310-2tb-heatsink": {
    "category": "ssd",
    "brand": "美光 Micron",
-   "name": "Crucial P310 2TB",
+   "name": "Crucial P310 2TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -2014,10 +2014,10 @@
     "status": "auto"
    }
   },
-  "ssd:micron:crucial-p310-4tb-7d3f": {
+  "ssd:micron:crucial-p310-4tb-heatsink": {
    "category": "ssd",
    "brand": "美光 Micron",
-   "name": "Crucial P310 4TB",
+   "name": "Crucial P310 4TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -2086,10 +2086,10 @@
     "status": "auto"
    }
   },
-  "ssd:micron:crucial-p510-2tb-a2cf": {
+  "ssd:micron:crucial-p510-2tb-heatsink": {
    "category": "ssd",
    "brand": "美光 Micron",
-   "name": "Crucial P510 2TB",
+   "name": "Crucial P510 2TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -2206,10 +2206,10 @@
     "status": "auto"
    }
   },
-  "ssd:micron:crucial-t705-2tb-1164": {
+  "ssd:micron:crucial-t705-2tb-heatsink": {
    "category": "ssd",
    "brand": "美光 Micron",
-   "name": "Crucial T705 2TB",
+   "name": "Crucial T705 2TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -2254,10 +2254,10 @@
     "status": "auto"
    }
   },
-  "ssd:micron:crucial-t705-4tb-233b": {
+  "ssd:micron:crucial-t705-4tb-heatsink": {
    "category": "ssd",
    "brand": "美光 Micron",
-   "name": "Crucial T705 4TB",
+   "name": "Crucial T705 4TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -2302,10 +2302,10 @@
     "status": "auto"
    }
   },
-  "ssd:micron:crucial-t710-1tb-335f": {
+  "ssd:micron:crucial-t710-1tb-heatsink": {
    "category": "ssd",
    "brand": "美光 Micron",
-   "name": "Crucial T710 1TB",
+   "name": "Crucial T710 1TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -2374,10 +2374,10 @@
     "status": "auto"
    }
   },
-  "ssd:micron:crucial-t710-4tb-f876": {
+  "ssd:micron:crucial-t710-4tb-heatsink": {
    "category": "ssd",
    "brand": "美光 Micron",
-   "name": "Crucial T710 4TB",
+   "name": "Crucial T710 4TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -2782,10 +2782,10 @@
     "status": "auto"
    }
   },
-  "ssd:samsung:9100-pro-1tb-7254": {
+  "ssd:samsung:9100-pro-1tb-heatsink": {
    "category": "ssd",
    "brand": "三星 Samsung",
-   "name": "9100 PRO 1TB",
+   "name": "9100 PRO 1TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -2830,10 +2830,10 @@
     "status": "auto"
    }
   },
-  "ssd:samsung:9100-pro-2tb-b6cc": {
+  "ssd:samsung:9100-pro-2tb-heatsink": {
    "category": "ssd",
    "brand": "三星 Samsung",
-   "name": "9100 PRO 2TB",
+   "name": "9100 PRO 2TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -2878,10 +2878,10 @@
     "status": "auto"
    }
   },
-  "ssd:samsung:9100-pro-4tb-ccd0": {
+  "ssd:samsung:9100-pro-4tb-heatsink": {
    "category": "ssd",
    "brand": "三星 Samsung",
-   "name": "9100 PRO 4TB",
+   "name": "9100 PRO 4TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -2926,10 +2926,10 @@
     "status": "auto"
    }
   },
-  "ssd:samsung:9100-pro-8tb-c4cd": {
+  "ssd:samsung:9100-pro-8tb-heatsink": {
    "category": "ssd",
    "brand": "三星 Samsung",
-   "name": "9100 PRO 8TB",
+   "name": "9100 PRO 8TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -3046,10 +3046,10 @@
     "status": "auto"
    }
   },
-  "ssd:samsung:990-pro-1tb-124e": {
+  "ssd:samsung:990-pro-1tb-heatsink": {
    "category": "ssd",
    "brand": "三星 Samsung",
-   "name": "990 PRO 1TB",
+   "name": "990 PRO 1TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -3118,10 +3118,10 @@
     "status": "auto"
    }
   },
-  "ssd:samsung:990-pro-4tb-9e0c": {
+  "ssd:samsung:990-pro-4tb-heatsink": {
    "category": "ssd",
    "brand": "三星 Samsung",
-   "name": "990 PRO 4TB",
+   "name": "990 PRO 4TB 含散熱片",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -3250,10 +3250,10 @@
     "status": "auto"
    }
   },
-  "ssd:unknown:wd-sn8100-2tb-gen5-pcie-5-0-14900": {
+  "ssd:wd:black-sn8100-2tb": {
    "category": "ssd",
-   "brand": "unknown",
-   "name": "｛WD 黑標 SN8100 2TB/Gen5 PCIe 5.0/讀14900/寫",
+   "brand": "WD",
+   "name": "黑標 SN8100 2TB",
    "status": "active",
    "aliases": {
     "model_keys": [

@@ -7658,6 +7658,38 @@
     "status": "auto"
    }
   },
+  "motherboard:gigabyte:z890-aorus-xtreme-ai-top": {
+   "category": "motherboard",
+   "brand": "技嘉 GIGABYTE",
+   "name": "Z890 AORUS XTREME AI TOP",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "｛技嘉Z890AORUSXTREMEAITOP"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "Z890",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "motherboard:gigabyte:z890-eagle-wifi7": {
    "category": "motherboard",
    "brand": "技嘉 GIGABYTE",
@@ -11023,38 +11055,6 @@
     },
     "form_factor": {
      "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "Z890",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:unknown:z890-aorus-xtreme-ai-top-e-atx-2-10g": {
-   "category": "motherboard",
-   "brand": "unknown",
-   "name": "｛技嘉 Z890 AORUS XTREME AI TOP(E-ATX/2*10G",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "｛技嘉Z890AORUSXTREMEAITOP"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "LGA1851",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "E-ATX",
      "source": "title"
     },
     "chipset": {

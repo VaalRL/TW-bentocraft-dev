@@ -60,7 +60,7 @@ def short_hash(text: str, n: int = 8) -> str:
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:n]
 
 
-_PROMO_PREFIX_RE = re.compile(r"^\s*(?:限搭機|任搭價|限搭|任搭)\s*(?=｛)")
+_PROMO_PREFIX_RE = re.compile(r"^\s*(?:限搭機|任搭價|裝機價|限搭|任搭)\s*(?=｛)")
 
 
 def main_text(item: dict) -> str:
@@ -102,6 +102,8 @@ def split_name(text: str) -> tuple[str, str, str]:
         # 「三星 SAMSUNG｛9100 PRO 4TB｝」：品牌在前、型號在大括號；
         # 大括號在規格之後的（記憶體料號）不在 head 內，不影響
         name = f"{m.group(1).strip()} {m.group(2)}" if m else head.split("｛")[0]
+        if not name.strip() and head.lstrip().startswith("｛"):  # 「｛技嘉 Z890 …(E-ATX/…」：通路漏打右括號
+            name = head.lstrip()[1:]
     name = re.sub(r"^\[[^\]]*\]\s*", "", name).strip()
     for latin, code in LATIN_BRANDS.items():
         if name.lower().startswith(latin):
@@ -295,7 +297,7 @@ def price_fields(item: dict, fetched_year: int) -> dict:
     m = re.search(r"【任搭([^】]+)】", text)
     if m and REQUIRES.get(m.group(1)):
         out["price_condition"] = {"type": "requires_category", "requires": [REQUIRES[m.group(1)]], "note": m.group(0)}
-    elif re.search(r"組裝價|搭機價", text):
+    elif re.search(r"組裝價|裝機價|搭機價", text):
         out["price_condition"] = {"type": "assembly"}
     elif item.get("bundle_only"):
         out["price_condition"] = {"type": "unspecified", "note": (re.search(r"[*【]?\S*任搭\S*|限搭\S*|搭機\S*", text) or [""])[0][:80]}

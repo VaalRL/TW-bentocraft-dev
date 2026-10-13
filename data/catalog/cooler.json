@@ -775,7 +775,7 @@
     "status": "auto"
    }
   },
-  "cooler:asus:rog-ryujin-iii-360-argb-extreme-8342": {
+  "cooler:asus:rog-ryujin-iii-360-argb-extreme-white": {
    "category": "cooler",
    "brand": "華碩 ASUS",
    "name": "ROG RYUJIN III 360 ARGB Extreme 白龍神",
@@ -823,6 +823,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
+     "華碩ROGRYUOIV360ARGB",
      "華碩ROGRYUOIV360ARGB()龍王四代"
     ]
    },
@@ -849,40 +850,6 @@
      "source": "retailer_spec",
      "ref": "https://www.coolpc.com.tw/evaluate.php",
      "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "black": {
-     "label": "黑",
-     "color": "black"
-    },
-    "white": {
-     "label": "白",
-     "color": "white"
-    }
-   }
-  },
-  "cooler:asus:rog-ryuo-iv-360-argb-c416": {
-   "category": "cooler",
-   "brand": "華碩 ASUS",
-   "name": "ROG RYUO IV 360 ARGB",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "華碩ROGRYUOIV360ARGB"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "optgroup"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
     }
    },
    "review": {
@@ -1110,7 +1077,7 @@
     "status": "auto"
    }
   },
-  "cooler:asus:rog-strix-lc-iv-360-argb-lcd-f523": {
+  "cooler:asus:rog-strix-lc-iv-360-argb-lcd-white": {
    "category": "cooler",
    "brand": "華碩 ASUS",
    "name": "ROG STRIX LC IV 360 ARGB LCD 白龍",
@@ -1188,7 +1155,7 @@
     "status": "auto"
    }
   },
-  "cooler:asus:rog-strix-slc-iv-360-argb-lcd-d8d5": {
+  "cooler:asus:rog-strix-slc-iv-360-argb-lcd-white": {
    "category": "cooler",
    "brand": "華碩 ASUS",
    "name": "ROG STRIX SLC IV 360 ARGB LCD 白龍",
@@ -9477,59 +9444,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
+     "SAMAA40L化版散熱器",
      "SAMAA40L散熱器"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 152.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "tdp_rating_w": {
-     "value": 240,
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "black": {
-     "label": "黑",
-     "color": "black"
-    }
-   }
-  },
-  "cooler:sama:a40l-501b": {
-   "category": "cooler",
-   "brand": "SAMA",
-   "name": "A40L 散熱器",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "SAMAA40L化版散熱器"
     ]
    },
    "specs": {
@@ -9571,6 +9487,10 @@
     "white": {
      "label": "白",
      "color": "white"
+    },
+    "black": {
+     "label": "黑",
+     "color": "black"
     }
    }
   },
@@ -9971,59 +9891,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
+     "SAMAX40L化版散熱器",
      "SAMAX40L散熱器"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 134.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "tdp_rating_w": {
-     "value": 220,
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "black": {
-     "label": "黑",
-     "color": "black"
-    }
-   }
-  },
-  "cooler:sama:x40l-d040": {
-   "category": "cooler",
-   "brand": "SAMA",
-   "name": "X40L 散熱器",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "SAMAX40L化版散熱器"
     ]
    },
    "specs": {
@@ -10065,6 +9934,10 @@
     "white": {
      "label": "白",
      "color": "white"
+    },
+    "black": {
+     "label": "黑",
+     "color": "black"
     }
    }
   },
@@ -11577,48 +11450,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "利民AXP90X47下吹式"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 47.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:thermalright:axp90-x47-808e": {
-   "category": "cooler",
-   "brand": "利民 Thermalright",
-   "name": "AXP90-X47 下吹式",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "利民AXP90X47下吹式",
      "利民AXP90X47化版下吹式"
     ]
    },
@@ -11751,48 +11583,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "利民FROSTCOMMANDER140"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 160.0,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "WXZ",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "LGA1151",
-      "LGA1200",
-      "AM4",
-      "AM5",
-      "LGA1700",
-      "LGA1851"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:thermalright:frost-commander-140-4fc7": {
-   "category": "cooler",
-   "brand": "利民 Thermalright",
-   "name": "Frost Commander 140",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "利民FROSTCOMMANDER140",
      "利民FROSTCOMMANDER140化版"
     ]
    },

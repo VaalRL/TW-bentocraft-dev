@@ -3176,10 +3176,10 @@
     "status": "auto"
    }
   },
-  "ram:klevv:6000-cl30-cras-v-rgb": {
+  "ram:klevv:cras-v-rgb-32gb-ddr5-6000-cl30": {
    "category": "ram",
    "brand": "KLEVV",
-   "name": "6000/CL30 CRAS V RGB",
+   "name": "CRAS V RGB 32GB(16GB×2) DDR5-6000 CL30",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -3208,10 +3208,42 @@
     "status": "auto"
    }
   },
-  "ram:klevv:6000-cl30-cras-v-rgb-7aae": {
+  "ram:klevv:cras-v-rgb-32gb-ddr5-6400-cl32": {
    "category": "ram",
    "brand": "KLEVV",
-   "name": "6000/CL30 CRAS V RGB",
+   "name": "CRAS V RGB 32GB(16GB×2) DDR5-6400 CL32",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)32GB(雙通道16GB*2)DDR56400/CL32CRASVRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:cras-v-rgb-64gb-ddr5-6000-cl30": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "CRAS V RGB 64GB(32GB×2) DDR5-6000 CL30",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -3233,6 +3265,38 @@
     },
     "speed_mts": {
      "value": 6000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:cras-v-rgb-64gb-ddr5-6400-cl32": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "CRAS V RGB 64GB(32GB×2) DDR5-6400 CL32",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)64GB(雙通道32GB*2)DDR56400/CL32CRASVRGB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 6400,
      "source": "title"
     }
    },
@@ -3336,74 +3400,10 @@
     "status": "auto"
    }
   },
-  "ram:klevv:ddr5-6400-cl32-cras-v-rgb": {
+  "ram:klevv:urbane-v-rgb-32gb-ddr5-6400-cl32": {
    "category": "ram",
    "brand": "KLEVV",
-   "name": "DDR5 6400/CL32 CRAS V RGB",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "KLEVV(科賦)32GB(雙通道16GB*2)DDR56400/CL32CRASVRGB"
-    ]
-   },
-   "specs": {
-    "memory_type": {
-     "value": "DDR5",
-     "source": "title"
-    },
-    "capacity_gb": {
-     "value": 32,
-     "source": "title"
-    },
-    "modules": {
-     "value": 2,
-     "source": "title"
-    },
-    "speed_mts": {
-     "value": 6400,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "ram:klevv:ddr5-6400-cl32-cras-v-rgb-f5cb": {
-   "category": "ram",
-   "brand": "KLEVV",
-   "name": "DDR5 6400/CL32 CRAS V RGB",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "KLEVV(科賦)64GB(雙通道32GB*2)DDR56400/CL32CRASVRGB"
-    ]
-   },
-   "specs": {
-    "memory_type": {
-     "value": "DDR5",
-     "source": "title"
-    },
-    "capacity_gb": {
-     "value": 64,
-     "source": "title"
-    },
-    "modules": {
-     "value": 2,
-     "source": "title"
-    },
-    "speed_mts": {
-     "value": 6400,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "ram:klevv:ddr5-6400-cl32-urbane-v-rgb": {
-   "category": "ram",
-   "brand": "KLEVV",
-   "name": "DDR5 6400/CL32 URBANE V RGB",
+   "name": "URBANE V RGB 32GB(16GB×2) DDR5-6400 CL32",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -3432,10 +3432,10 @@
     "status": "auto"
    }
   },
-  "ram:klevv:ddr5-6400-cl32-urbane-v-rgb-e29c": {
+  "ram:klevv:urbane-v-rgb-48gb-ddr5-6400-cl32": {
    "category": "ram",
    "brand": "KLEVV",
-   "name": "DDR5 6400/CL32 URBANE V RGB",
+   "name": "URBANE V RGB 48GB(24GB×2) DDR5-6400 CL32",
    "status": "active",
    "aliases": {
     "model_keys": [
@@ -3496,6 +3496,62 @@
     "status": "auto"
    }
   },
+  "ram:micron:crucial-pro-oc-32gb-16gbx2-ddr5": {
+   "category": "ram",
+   "brand": "美光 Micron",
+   "name": "Crucial PRO 超頻 32GB(16GB×2) DDR5",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光｛MICRONCRUCIALPRO超頻32GB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 32,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:micron:crucial-pro-oc-64gb-32gbx2-ddr5": {
+   "category": "ram",
+   "brand": "美光 Micron",
+   "name": "Crucial PRO 超頻 64GB(32GB×2) DDR5",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光｛MICRONCRUCIALPRO超頻64GB"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "ram:micron:micron-crucial-64gb-32gb-2-ddr5-56": {
    "category": "ram",
    "brand": "美光 Micron",
@@ -3526,70 +3582,6 @@
    },
    "review": {
     "status": "auto"
-   }
-  },
-  "ram:micron:micron-crucial-pro-32gb-16gb-2": {
-   "category": "ram",
-   "brand": "美光 Micron",
-   "name": "美光｛Micron Crucial PRO 超頻 32GB(雙通16GB*2) ",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "美光｛MICRONCRUCIALPRO超頻32GB"
-    ]
-   },
-   "specs": {
-    "memory_type": {
-     "value": "DDR5",
-     "source": "title"
-    },
-    "capacity_gb": {
-     "value": 32,
-     "source": "title"
-    },
-    "modules": {
-     "value": 2,
-     "source": "title"
-    },
-    "speed_mts": {
-     "value": 6000,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "draft"
-   }
-  },
-  "ram:micron:micron-crucial-pro-64gb-32gb-2": {
-   "category": "ram",
-   "brand": "美光 Micron",
-   "name": "美光｛Micron Crucial PRO 超頻 64GB(雙通32GB*2) ",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "美光｛MICRONCRUCIALPRO超頻64GB"
-    ]
-   },
-   "specs": {
-    "memory_type": {
-     "value": "DDR5",
-     "source": "title"
-    },
-    "capacity_gb": {
-     "value": 64,
-     "source": "title"
-    },
-    "modules": {
-     "value": 2,
-     "source": "title"
-    },
-    "speed_mts": {
-     "value": 6000,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "draft"
    }
   },
   "ram:micron:micron-crucial-pro-96gb-48gb-2": {

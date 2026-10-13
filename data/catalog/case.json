@@ -1826,42 +1826,7 @@
     "status": "auto"
    }
   },
-  "case:asus:proart-pa602-0fbb": {
-   "category": "case",
-   "brand": "華碩 ASUS",
-   "name": "ProArt PA602 胡桃木-復古棕",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "華碩PROARTPA602胡桃木復古棕"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "E-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 440.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 185.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "case:asus:proart-pa602-7950": {
+  "case:asus:proart-pa602-walnut-modern": {
    "category": "case",
    "brand": "華碩 ASUS",
    "name": "ProArt PA602 胡桃木-現代",
@@ -1900,6 +1865,41 @@
      "label": "黑",
      "color": "black"
     }
+   }
+  },
+  "case:asus:proart-pa602-walnut-vintage": {
+   "category": "case",
+   "brand": "華碩 ASUS",
+   "name": "ProArt PA602 胡桃木-復古棕",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PROARTPA602胡桃木復古棕"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 440.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 185.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
    }
   },
   "case:asus:rog-cronox-argb-gr801": {
@@ -2174,51 +2174,6 @@
     }
    }
   },
-  "case:bitfenix:743dcf87": {
-   "category": "case",
-   "brand": "BitFenix",
-   "name": "小巨蛋 鐵網版",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "BITFENIX小巨蛋鐵網版"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 339.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 190.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "black": {
-     "label": "黑",
-     "color": "black"
-    },
-    "white": {
-     "label": "白",
-     "color": "white"
-    }
-   }
-  },
   "case:bitfenix:ceto-argb": {
    "category": "case",
    "brand": "BitFenix",
@@ -2285,51 +2240,6 @@
     },
     "cooler_clearance_mm": {
      "value": 165.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "black": {
-     "label": "黑",
-     "color": "black"
-    },
-    "white": {
-     "label": "白",
-     "color": "white"
-    }
-   }
-  },
-  "case:bitfenix:dea6f93d": {
-   "category": "case",
-   "brand": "BitFenix",
-   "name": "小巨蛋 幻彩版",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "BITFENIX小巨蛋幻彩版"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 339.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 190.0,
      "source": "title"
     },
     "psu_form_factors": {
@@ -2433,6 +2343,96 @@
     "black": {
      "label": "黑",
      "color": "black"
+    }
+   }
+  },
+  "case:bitfenix:xiaojudan-mesh": {
+   "category": "case",
+   "brand": "BitFenix",
+   "name": "小巨蛋 鐵網版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BITFENIX小巨蛋鐵網版"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 339.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 190.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "case:bitfenix:xiaojudan-rgb": {
+   "category": "case",
+   "brand": "BitFenix",
+   "name": "小巨蛋 幻彩版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "BITFENIX小巨蛋幻彩版"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 339.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 190.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
     }
    }
   },
@@ -2611,7 +2611,7 @@
     "status": "auto"
    }
   },
-  "case:coolermaster:elite-301-lite-94b8": {
+  "case:coolermaster:elite-301-lite-metal": {
    "category": "case",
    "brand": "酷碼 Cooler Master",
    "name": "Elite 301 Lite 金屬版",
@@ -3203,7 +3203,7 @@
     "status": "auto"
    }
   },
-  "case:coolermaster:masterbox-cm695-6296": {
+  "case:coolermaster:masterbox-cm695-tg": {
    "category": "case",
    "brand": "酷碼 Cooler Master",
    "name": "MasterBox CM695/玻璃透側",
@@ -3273,7 +3273,7 @@
     "status": "auto"
    }
   },
-  "case:coolermaster:masterbox-mb600l-v2-a65f": {
+  "case:coolermaster:masterbox-mb600l-v2-no-odd": {
    "category": "case",
    "brand": "酷碼 Cooler Master",
    "name": "MasterBox MB600L V2 無光碟機版",
@@ -3545,14 +3545,14 @@
     "status": "auto"
    }
   },
-  "case:coolermaster:masterframe-360-ac4e": {
+  "case:coolermaster:masterframe-360-lcd": {
    "category": "case",
    "brand": "酷碼 Cooler Master",
-   "name": "MasterFrame 360 舞台(開放式鏡面)",
+   "name": "MasterFrame 360 舞台(開放式LCD螢幕)",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "酷碼MASTERFRAME360舞台(開放式鏡面)"
+     "酷碼MASTERFRAME360舞台(開放式LCD螢幕)"
     ]
    },
    "specs": {
@@ -3584,14 +3584,14 @@
     "status": "auto"
    }
   },
-  "case:coolermaster:masterframe-360-lcd": {
+  "case:coolermaster:masterframe-360-open": {
    "category": "case",
    "brand": "酷碼 Cooler Master",
-   "name": "MasterFrame 360 舞台(開放式LCD螢幕)",
+   "name": "MasterFrame 360 舞台(開放式鏡面)",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "酷碼MASTERFRAME360舞台(開放式LCD螢幕)"
+     "酷碼MASTERFRAME360舞台(開放式鏡面)"
     ]
    },
    "specs": {
@@ -3957,7 +3957,7 @@
     }
    }
   },
-  "case:coolermaster:qube-500-flatpack-diy-c947": {
+  "case:coolermaster:qube-500-flatpack-diy-macaron": {
    "category": "case",
    "brand": "酷碼 Cooler Master",
    "name": "Qube 500 Flatpack DIY 馬卡龍版",
@@ -4033,7 +4033,42 @@
     }
    }
   },
-  "case:coolermaster:qube-540-6acc": {
+  "case:coolermaster:qube-540-stainless": {
+   "category": "case",
+   "brand": "酷碼 Cooler Master",
+   "name": "Qube 540 不銹鋼特別版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼QUBE540不銹鋼特別版"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 415.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 172.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "case:coolermaster:qube-540-stardust": {
    "category": "case",
    "brand": "酷碼 Cooler Master",
    "name": "Qube 540 星塵",
@@ -4072,41 +4107,6 @@
      "label": "黑",
      "color": "black"
     }
-   }
-  },
-  "case:coolermaster:qube-540-7d62": {
-   "category": "case",
-   "brand": "酷碼 Cooler Master",
-   "name": "Qube 540 不銹鋼特別版",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "酷碼QUBE540不銹鋼特別版"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 415.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 172.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
    }
   },
   "case:coolermaster:rc-343": {
@@ -5322,41 +5322,6 @@
   "case:darkflash:moti-mini": {
    "category": "case",
    "brand": "darkFlash",
-   "name": "MOTI mini 網孔版",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "DARKFLASHMOTIMINI網孔版"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 300.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 180.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "case:darkflash:moti-mini-40af": {
-   "category": "case",
-   "brand": "darkFlash",
    "name": "MOTI mini",
    "status": "active",
    "aliases": {
@@ -5397,6 +5362,41 @@
      "label": "白",
      "color": "white"
     }
+   }
+  },
+  "case:darkflash:moti-mini-mesh": {
+   "category": "case",
+   "brand": "darkFlash",
+   "name": "MOTI mini 網孔版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "DARKFLASHMOTIMINI網孔版"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 300.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 180.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
    }
   },
   "case:deepcool:cc310": {
@@ -6247,54 +6247,7 @@
     }
    }
   },
-  "case:fractal-design:era-2-a990": {
-   "category": "case",
-   "brand": "Fractal Design",
-   "name": "Era 2 午夜",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "FRACTALDESIGNERA2午夜"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "Mini-ITX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 326.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 55.0,
-     "source": "title",
-     "conditions": [
-      {
-       "value": 70.0,
-       "when": "unspecified",
-       "source": "title"
-      }
-     ]
-    },
-    "psu_form_factors": {
-     "value": [
-      "SFX"
-     ],
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "blue": {
-     "label": "藍",
-     "color": "blue"
-    }
-   }
-  },
-  "case:fractal-design:era-2-d553": {
+  "case:fractal-design:era-2-deep": {
    "category": "case",
    "brand": "Fractal Design",
    "name": "Era 2 深",
@@ -6338,6 +6291,53 @@
     "gray": {
      "label": "灰",
      "color": "gray"
+    }
+   }
+  },
+  "case:fractal-design:era-2-midnight": {
+   "category": "case",
+   "brand": "Fractal Design",
+   "name": "Era 2 午夜",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "FRACTALDESIGNERA2午夜"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "Mini-ITX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 326.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 55.0,
+     "source": "title",
+     "conditions": [
+      {
+       "value": 70.0,
+       "when": "unspecified",
+       "source": "title"
+      }
+     ]
+    },
+    "psu_form_factors": {
+     "value": [
+      "SFX"
+     ],
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "blue": {
+     "label": "藍",
+     "color": "blue"
     }
    }
   },
@@ -6399,7 +6399,8 @@
     },
     "gpu_clearance_mm": {
      "value": 349.0,
-     "source": "title"
+     "source": "title",
+     "note": "原價屋兩列分別寫 349 與 349.5 mm，取較小值"
     },
     "cooler_clearance_mm": {
      "value": 176.0,
@@ -6414,7 +6415,7 @@
     }
    },
    "review": {
-    "status": "draft"
+    "status": "auto"
    },
    "variants": {
     "black": {
@@ -6489,7 +6490,8 @@
     },
     "gpu_clearance_mm": {
      "value": 349.0,
-     "source": "title"
+     "source": "title",
+     "note": "原價屋兩列分別寫 349 與 349.5 mm，取較小值"
     },
     "cooler_clearance_mm": {
      "value": 176.0,
@@ -6504,7 +6506,7 @@
     }
    },
    "review": {
-    "status": "draft"
+    "status": "auto"
    },
    "variants": {
     "black": {
@@ -7161,7 +7163,7 @@
     }
    }
   },
-  "case:fractal-design:summit-14b8": {
+  "case:fractal-design:summit-ambient-ultimate": {
    "category": "case",
    "brand": "Fractal Design",
    "name": "Summit(環境燈) 極致",
@@ -7169,51 +7171,6 @@
    "aliases": {
     "model_keys": [
      "FRACTALDESIGNSUMMIT(環境燈)極致"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "E-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 425.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 173.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "back_connect_max_form_factor": {
-     "value": "E-ATX",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "black": {
-     "label": "黑",
-     "color": "black"
-    }
-   }
-  },
-  "case:fractal-design:summit-8807": {
-   "category": "case",
-   "brand": "Fractal Design",
-   "name": "Summit 極致",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "FRACTALDESIGNSUMMIT極致"
     ]
    },
    "specs": {
@@ -7293,6 +7250,51 @@
     "white": {
      "label": "白",
      "color": "white"
+    }
+   }
+  },
+  "case:fractal-design:summit-ultimate": {
+   "category": "case",
+   "brand": "Fractal Design",
+   "name": "Summit 極致",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "FRACTALDESIGNSUMMIT極致"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 425.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 173.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
     }
    }
   },
@@ -8035,7 +8037,42 @@
     "status": "auto"
    }
   },
-  "case:geometric-future:model-3-4ea2": {
+  "case:geometric-future:model-3-amd": {
+   "category": "case",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Model 3 哪吒 AMD信仰版",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來MODEL3哪吒AMD信仰版"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 435.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 175.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "case:geometric-future:model-3-nezha-black": {
    "category": "case",
    "brand": "幾何未來 Geometric Future",
    "name": "Model 3 哪吒 黑",
@@ -8080,7 +8117,7 @@
     }
    }
   },
-  "case:geometric-future:model-3-7f3c": {
+  "case:geometric-future:model-3-nezha-solid": {
    "category": "case",
    "brand": "幾何未來 Geometric Future",
    "name": "Model 3 哪吒 全",
@@ -8121,41 +8158,6 @@
     }
    }
   },
-  "case:geometric-future:model-3-amd": {
-   "category": "case",
-   "brand": "幾何未來 Geometric Future",
-   "name": "Model 3 哪吒 AMD信仰版",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "幾何未來MODEL3哪吒AMD信仰版"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 435.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 175.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
   "case:geometric-future:model-5": {
    "category": "case",
    "brand": "幾何未來 Geometric Future",
@@ -8189,141 +8191,6 @@
    },
    "review": {
     "status": "auto"
-   }
-  },
-  "case:geometric-future:model-5-502e": {
-   "category": "case",
-   "brand": "幾何未來 Geometric Future",
-   "name": "Model 5 悟空 蒂芬尼",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "幾何未來MODEL5悟空蒂芬尼"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "E-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 460.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 180.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "blue": {
-     "label": "藍",
-     "color": "blue"
-    }
-   }
-  },
-  "case:geometric-future:model-5-9884": {
-   "category": "case",
-   "brand": "幾何未來 Geometric Future",
-   "name": "Model 5 悟空 全",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "幾何未來MODEL5悟空全"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "E-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 460.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 180.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "white": {
-     "label": "白",
-     "color": "white"
-    }
-   }
-  },
-  "case:geometric-future:model-5-9f36": {
-   "category": "case",
-   "brand": "幾何未來 Geometric Future",
-   "name": "Model 5 悟空 黑",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "幾何未來MODEL5悟空"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "E-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 460.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 180.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "gray": {
-     "label": "灰",
-     "color": "gray"
-    },
-    "green": {
-     "label": "綠",
-     "color": "green"
-    },
-    "red": {
-     "label": "紅",
-     "color": "red"
-    },
-    "blue": {
-     "label": "藍",
-     "color": "blue"
-    }
    }
   },
   "case:geometric-future:model-5-amd": {
@@ -8402,7 +8269,7 @@
     }
    }
   },
-  "case:geometric-future:model-5-vent-5481": {
+  "case:geometric-future:model-5-vent-solid": {
    "category": "case",
    "brand": "幾何未來 Geometric Future",
    "name": "Model 5 Vent 鐵扇 全",
@@ -8440,6 +8307,141 @@
     "white": {
      "label": "白",
      "color": "white"
+    }
+   }
+  },
+  "case:geometric-future:model-5-wukong-black": {
+   "category": "case",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Model 5 悟空 黑",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來MODEL5悟空"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 460.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 180.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "gray": {
+     "label": "灰",
+     "color": "gray"
+    },
+    "green": {
+     "label": "綠",
+     "color": "green"
+    },
+    "red": {
+     "label": "紅",
+     "color": "red"
+    },
+    "blue": {
+     "label": "藍",
+     "color": "blue"
+    }
+   }
+  },
+  "case:geometric-future:model-5-wukong-solid": {
+   "category": "case",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Model 5 悟空 全",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來MODEL5悟空全"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 460.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 180.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "case:geometric-future:model-5-wukong-tiffany": {
+   "category": "case",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Model 5 悟空 蒂芬尼",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來MODEL5悟空蒂芬尼"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 460.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 180.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "blue": {
+     "label": "藍",
+     "color": "blue"
     }
    }
   },
@@ -9016,7 +9018,7 @@
     }
    }
   },
-  "case:hyte:y70-touch-infinite-99d0": {
+  "case:hyte:y70-touch-infinite-snow": {
    "category": "case",
    "brand": "HYTE",
    "name": "Y70 touch infinite 雪",
@@ -9244,7 +9246,7 @@
     "status": "auto"
    }
   },
-  "case:inwin:dlite-c40e": {
+  "case:inwin:dlite-lilac": {
    "category": "case",
    "brand": "迎廣 InWin",
    "name": "DLITE 丁香",
@@ -9330,7 +9332,7 @@
     }
    }
   },
-  "case:inwin:dubili-72d4": {
+  "case:inwin:dubili-cream-champagne": {
    "category": "case",
    "brand": "迎廣 InWin",
    "name": "DUBILI 奶油香檳",
@@ -10423,51 +10425,6 @@
   "case:jonsbo:x400": {
    "category": "case",
    "brand": "喬思伯 JONSBO",
-   "name": "X400 鈦",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "喬思伯X400鈦"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 427.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 176.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "back_connect_max_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "gray": {
-     "label": "灰",
-     "color": "gray"
-    }
-   }
-  },
-  "case:jonsbo:x400-1599": {
-   "category": "case",
-   "brand": "喬思伯 JONSBO",
    "name": "X400",
    "status": "active",
    "aliases": {
@@ -10507,6 +10464,51 @@
     "white": {
      "label": "白",
      "color": "white"
+    }
+   }
+  },
+  "case:jonsbo:x400-titanium": {
+   "category": "case",
+   "brand": "喬思伯 JONSBO",
+   "name": "X400 鈦",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯X400鈦"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 427.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 176.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "gray": {
+     "label": "灰",
+     "color": "gray"
     }
    }
   },
@@ -10554,7 +10556,41 @@
     }
    }
   },
-  "case:jonsbo:z20-19da": {
+  "case:jonsbo:z20-two-tone-black-orange": {
+   "category": "case",
+   "brand": "喬思伯 JONSBO",
+   "name": "Z20 拼色版 黑橘",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "喬思伯Z20拼色版橘"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 363.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 163.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "SFX"
+     ],
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "case:jonsbo:z20-two-tone-white": {
    "category": "case",
    "brand": "喬思伯 JONSBO",
    "name": "Z20 拼色版 白",
@@ -10592,40 +10628,6 @@
      "label": "粉",
      "color": "pink"
     }
-   }
-  },
-  "case:jonsbo:z20-deb4": {
-   "category": "case",
-   "brand": "喬思伯 JONSBO",
-   "name": "Z20 拼色版 黑橘",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "喬思伯Z20拼色版橘"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 363.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 163.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "SFX"
-     ],
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
    }
   },
   "case:lian-li:a3-matx": {
@@ -10673,7 +10675,7 @@
     }
    }
   },
-  "case:lian-li:a3-matx-e322": {
+  "case:lian-li:a3-matx-wood": {
    "category": "case",
    "brand": "聯力 Lian Li",
    "name": "A3-mATX 實木",
@@ -10806,7 +10808,7 @@
     }
    }
   },
-  "case:lian-li:b4-m-atx-288b": {
+  "case:lian-li:b4-m-atx-wood": {
    "category": "case",
    "brand": "聯力 Lian Li",
    "name": "B4 m-ATX 實木",
@@ -11316,7 +11318,7 @@
     }
    }
   },
-  "case:lian-li:o11-vision-m-ce7b": {
+  "case:lian-li:o11-vision-m-digital": {
    "category": "case",
    "brand": "聯力 Lian Li",
    "name": "O11 Vision-M 數位版",
@@ -12684,7 +12686,7 @@
     }
    }
   },
-  "case:montech:xr-193d": {
+  "case:montech:xr-beige": {
    "category": "case",
    "brand": "Montech",
    "name": "XR 米",
@@ -13863,30 +13865,6 @@
   "case:phanteks:enthoo-pro2": {
    "category": "case",
    "brand": "Phanteks",
-   "name": "Enthoo Pro2 黑(非透側)",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "PHANTEKSENTHOOPRO2(非透側)"
-    ]
-   },
-   "specs": {
-    "gpu_clearance_mm": {
-     "value": 500.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 195.0,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "case:phanteks:enthoo-pro2-7afd": {
-   "category": "case",
-   "brand": "Phanteks",
    "name": "Enthoo Pro2",
    "status": "active",
    "aliases": {
@@ -13912,6 +13890,30 @@
      "label": "黑",
      "color": "black"
     }
+   }
+  },
+  "case:phanteks:enthoo-pro2-solid-panel": {
+   "category": "case",
+   "brand": "Phanteks",
+   "name": "Enthoo Pro2 黑(非透側)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "PHANTEKSENTHOOPRO2(非透側)"
+    ]
+   },
+   "specs": {
+    "gpu_clearance_mm": {
+     "value": 500.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 195.0,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
    }
   },
   "case:phanteks:enthoo-pro2-v2": {
@@ -14212,7 +14214,7 @@
     }
    }
   },
-  "case:phanteks:xt-m3-7a71": {
+  "case:phanteks:xt-m3-3-fans": {
    "category": "case",
    "brand": "Phanteks",
    "name": "XT M3 黑(三風扇)",
@@ -14895,6 +14897,41 @@
     }
    }
   },
+  "case:sharkoon:guangyingzhe-rgb": {
+   "category": "case",
+   "brand": "旋剛 Sharkoon",
+   "name": "光影者 RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "旋剛光影者RGB"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 375.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 165.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "case:sharkoon:rev300": {
    "category": "case",
    "brand": "旋剛 Sharkoon",
@@ -14938,76 +14975,6 @@
      "label": "白",
      "color": "white"
     }
-   }
-  },
-  "case:sharkoon:rgb": {
-   "category": "case",
-   "brand": "旋剛 Sharkoon",
-   "name": "光影者 RGB",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "旋剛光影者RGB"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 375.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 165.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "case:sharkoon:rgb-c9a8": {
-   "category": "case",
-   "brand": "旋剛 Sharkoon",
-   "name": "馭風者 RGB",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "旋剛馭風者RGB"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 375.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 165.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
    }
   },
   "case:sharkoon:rgb-hex": {
@@ -15202,27 +15169,27 @@
     "status": "auto"
    }
   },
-  "case:shibotong:1c2a0bc5": {
+  "case:sharkoon:yufengzhe-rgb": {
    "category": "case",
-   "brand": "視博通",
-   "name": "小至尊",
+   "brand": "旋剛 Sharkoon",
+   "name": "馭風者 RGB",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "視博通小至尊"
+     "旋剛馭風者RGB"
     ]
    },
    "specs": {
     "max_mb_form_factor": {
-     "value": "M-ATX",
+     "value": "ATX",
      "source": "title"
     },
     "gpu_clearance_mm": {
-     "value": 330.0,
+     "value": 375.0,
      "source": "title"
     },
     "cooler_clearance_mm": {
-     "value": 140.0,
+     "value": 165.0,
      "source": "title"
     },
     "psu_form_factors": {
@@ -15237,7 +15204,42 @@
     "status": "auto"
    }
   },
-  "case:shibotong:40ef8266": {
+  "case:shibotong:ai-super-ai-100": {
+   "category": "case",
+   "brand": "視博通",
+   "name": "AI SUPER(AI-100)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "視博通AISUPER(AI100)"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 445.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 185.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "case:shibotong:canglong-zhanshi": {
    "category": "case",
    "brand": "視博通",
    "name": "蒼龍戰士",
@@ -15252,7 +15254,7 @@
     "status": "auto"
    }
   },
-  "case:shibotong:709dd2d5": {
+  "case:shibotong:huancai-nanjue": {
    "category": "case",
    "brand": "視博通",
    "name": "幻彩男爵",
@@ -15291,41 +15293,6 @@
      "label": "白",
      "color": "white"
     }
-   }
-  },
-  "case:shibotong:ai-super-ai-100": {
-   "category": "case",
-   "brand": "視博通",
-   "name": "AI SUPER(AI-100)",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "視博通AISUPER(AI100)"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "E-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 445.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 185.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
    }
   },
   "case:shibotong:lai099": {
@@ -15600,8 +15567,9 @@
      "source": "title"
     },
     "cooler_clearance_mm": {
-     "value": 166.0,
-     "source": "title"
+     "value": 160.0,
+     "source": "title",
+     "note": "原價屋兩列分別寫 166 與 160 mm，取較小值"
     },
     "psu_form_factors": {
      "value": [
@@ -15612,7 +15580,7 @@
     }
    },
    "review": {
-    "status": "draft"
+    "status": "auto"
    },
    "variants": {
     "black": {
@@ -16084,6 +16052,41 @@
     },
     "cooler_clearance_mm": {
      "value": 164.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "case:shibotong:xiaozhizun": {
+   "category": "case",
+   "brand": "視博通",
+   "name": "小至尊",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "視博通小至尊"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 330.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 140.0,
      "source": "title"
     },
     "psu_form_factors": {
@@ -16710,7 +16713,7 @@
     "status": "auto"
    }
   },
-  "case:silverstone:sg13-b029": {
+  "case:silverstone:sg13-metal-texture": {
    "category": "case",
    "brand": "銀欣 SilverStone",
    "name": "SG13 仿金屬紋版",
@@ -16941,7 +16944,7 @@
     }
    }
   },
-  "case:thermaltake:the-tower-250-160a": {
+  "case:thermaltake:the-tower-250-hydrangea": {
    "category": "case",
    "brand": "曜越 Thermaltake",
    "name": "The Tower 250 繡球花",
@@ -16975,7 +16978,7 @@
     }
    }
   },
-  "case:thermaltake:the-tower-250-46bd": {
+  "case:thermaltake:the-tower-250-matcha": {
    "category": "case",
    "brand": "曜越 Thermaltake",
    "name": "The Tower 250 抹茶",
@@ -17058,7 +17061,52 @@
     }
    }
   },
-  "case:thermaltake:the-tower-300-4f7e": {
+  "case:thermaltake:the-tower-300-bubble": {
+   "category": "case",
+   "brand": "曜越 Thermaltake",
+   "name": "The Tower 300 泡泡",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "曜越THETOWER300泡泡"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 400.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 210.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "pink": {
+     "label": "粉",
+     "color": "pink"
+    }
+   }
+  },
+  "case:thermaltake:the-tower-300-hydrangea": {
    "category": "case",
    "brand": "曜越 Thermaltake",
    "name": "The Tower 300 繡球花",
@@ -17103,7 +17151,7 @@
     }
    }
   },
-  "case:thermaltake:the-tower-300-a3d4": {
+  "case:thermaltake:the-tower-300-matcha": {
    "category": "case",
    "brand": "曜越 Thermaltake",
    "name": "The Tower 300 抹茶",
@@ -17145,51 +17193,6 @@
     "green": {
      "label": "綠",
      "color": "green"
-    }
-   }
-  },
-  "case:thermaltake:the-tower-300-e1b7": {
-   "category": "case",
-   "brand": "曜越 Thermaltake",
-   "name": "The Tower 300 泡泡",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "曜越THETOWER300泡泡"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 400.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 210.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "back_connect_max_form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "pink": {
-     "label": "粉",
-     "color": "pink"
     }
    }
   },
@@ -17249,59 +17252,7 @@
     }
    }
   },
-  "case:thermaltake:the-tower-600-213f": {
-   "category": "case",
-   "brand": "曜越 Thermaltake",
-   "name": "The Tower 600 抹茶",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "曜越THETOWER600抹茶"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 280.0,
-     "source": "title",
-     "conditions": [
-      {
-       "value": 400.0,
-       "when": "unspecified",
-       "source": "title"
-      }
-     ]
-    },
-    "cooler_clearance_mm": {
-     "value": 210.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "back_connect_max_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "green": {
-     "label": "綠",
-     "color": "green"
-    }
-   }
-  },
-  "case:thermaltake:the-tower-600-49ff": {
+  "case:thermaltake:the-tower-600-hydrangea": {
    "category": "case",
    "brand": "曜越 Thermaltake",
    "name": "The Tower 600 繡球花",
@@ -17350,6 +17301,58 @@
     "blue": {
      "label": "藍",
      "color": "blue"
+    }
+   }
+  },
+  "case:thermaltake:the-tower-600-matcha": {
+   "category": "case",
+   "brand": "曜越 Thermaltake",
+   "name": "The Tower 600 抹茶",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "曜越THETOWER600抹茶"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 280.0,
+     "source": "title",
+     "conditions": [
+      {
+       "value": 400.0,
+       "when": "unspecified",
+       "source": "title"
+      }
+     ]
+    },
+    "cooler_clearance_mm": {
+     "value": 210.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "green": {
+     "label": "綠",
+     "color": "green"
     }
    }
   },
@@ -17496,7 +17499,7 @@
     }
    }
   },
-  "case:thermaltake:view-380-xl-tg-argb-9f91": {
+  "case:thermaltake:view-380-xl-tg-argb-gravel": {
    "category": "case",
    "brand": "曜越 Thermaltake",
    "name": "View 380 XL TG ARGB 礫石沙",
@@ -17535,7 +17538,7 @@
     "status": "auto"
    }
   },
-  "case:thermaltake:view-380-xl-tg-argb-daf4": {
+  "case:thermaltake:view-380-xl-tg-argb-yellow": {
    "category": "case",
    "brand": "曜越 Thermaltake",
    "name": "View 380 XL TG ARGB 鋒芒黃",
@@ -17623,7 +17626,46 @@
     }
    }
   },
-  "case:thermaltake:view-390-air-bcfb": {
+  "case:thermaltake:view-390-air-caramel": {
+   "category": "case",
+   "brand": "曜越 Thermaltake",
+   "name": "View 390 Air 奶油焦糖",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "曜越VIEW390AIR奶油焦糖"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 420.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "case:thermaltake:view-390-air-twilight": {
    "category": "case",
    "brand": "曜越 Thermaltake",
    "name": "View 390 Air 暮光",
@@ -17666,45 +17708,6 @@
      "label": "紫",
      "color": "purple"
     }
-   }
-  },
-  "case:thermaltake:view-390-air-dbd6": {
-   "category": "case",
-   "brand": "曜越 Thermaltake",
-   "name": "View 390 Air 奶油焦糖",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "曜越VIEW390AIR奶油焦糖"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 420.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 160.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "back_connect_max_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
    }
   },
   "case:thermaltake:vision-330-cr-argb": {
