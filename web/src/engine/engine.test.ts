@@ -101,6 +101,18 @@ describe('整機檢查', () => {
     expect(buildChecks({ cpu: cpu8400f }).map(c => c.constraint)).not.toContain('C12');
   });
 
+  it('C5 一體式水冷依機殼冷排位判斷', () => {
+    const aio360 = M('cooler:x:aio-360', { cooler_type: 'aio', radiator_mm: 360 });
+    const aio420 = M('cooler:x:aio-420', { cooler_type: 'aio', radiator_mm: 420 });
+    const caseRad = M('case:x:mid', {
+      max_mb_form_factor: 'ATX', gpu_clearance_mm: 400, cooler_clearance_mm: 170, psu_form_factors: ['ATX'],
+      radiator_support: [{ position: 'front', sizes: [240, 280, 360] }, { position: 'top', sizes: [240, 360] }],
+    });
+    expect(status(evaluate(aio360, { case: caseRad }), 'C5')).toBe('pass');
+    expect(status(evaluate(aio420, { case: caseRad }), 'C5')).toBe('fail');
+    expect(status(evaluate(aio360, { case: tower300 }), 'C5')).toBe('unknown'); // 機殼冷排位未確認
+  });
+
   it('C7 功耗缺漏時為 unknown，不以預設值估算', () => {
     expect(estimateLoad({ cpu: cpu8400f, gpu: gpu5080 })).toBeNull();
     expect(status(buildChecks({ cpu: cpu8400f, gpu: gpu5080, psu: psuAtx }), 'C7')).toBe('unknown');

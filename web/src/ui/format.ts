@@ -23,6 +23,8 @@ export const formatPrice = (n: number) => `$${n.toLocaleString('zh-TW')}`;
 
 export const modelName = (m: Model) => (m.b === 'unknown' ? m.n : `${m.b} ${m.n}`);
 
+const RADIATOR_POSITION: Record<string, string> = { front: '前', top: '頂', side: '側', rear: '後', bottom: '底' };
+
 /** 數值欄位的顯示：有誤差時加「約」，推定值加「(推定)」。 */
 function val(m: Model, field: string, unit = '', fmt: (v: never) => string = v => String(v)): string | null {
   const s = spec<never>(m, field);
@@ -62,6 +64,8 @@ export function specSummary(m: Model): string {
       parts.push(val(m, 'gpu_clearance_mm', ' mm', v => `顯卡 ≤ ${v}`));
       parts.push(val(m, 'cooler_clearance_mm', ' mm', v => `散熱器 ≤ ${v}`));
       parts.push(val(m, 'psu_form_factors', ' 電源', (v: string[]) => v.join('／')));
+      parts.push(val(m, 'radiator_support', '', (v: { position: string; sizes: number[] }[]) =>
+        `冷排 ${v.map(p => `${RADIATOR_POSITION[p.position] ?? p.position} ${Math.max(...p.sizes)}`).join('／')}`));
       break;
     case 'psu':
       parts.push(val(m, 'wattage', ' W'), val(m, 'form_factor'), val(m, 'efficiency', '', (v: string) => EFFICIENCY[v] ?? v));
