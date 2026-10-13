@@ -5242,44 +5242,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "技嘉AORUSELITE1000W"
-    ]
-   },
-   "specs": {
-    "wattage": {
-     "value": 1000,
-     "source": "title"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "efficiency": {
-     "value": "platinum",
-     "source": "title"
-    },
-    "atx_version": {
-     "value": "3.0",
-     "source": "title"
-    },
-    "pcie_12v2x6": {
-     "value": 1,
-     "source": "title",
-     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "psu:gigabyte:aorus-elite-1000w-ice": {
-   "category": "psu",
-   "brand": "技嘉 GIGABYTE",
-   "name": "AORUS ELITE 1000W ICE(白色)",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "技嘉AORUSELITE1000W",
      "技嘉AORUSELITE1000WICE()"
     ]
    },
@@ -5311,8 +5274,8 @@
     "status": "auto"
    },
    "variants": {
-    "white": {
-     "label": "白",
+    "ice": {
+     "label": "ICE 白",
      "color": "white"
     }
    }
