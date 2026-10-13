@@ -66,6 +66,22 @@ jobs:
           npm test
           npm run build
 
+      # 端對端測試（固定資料，見 web/e2e/）。每日報價呼叫部署時跳過，避免瀏覽器測試拖慢或卡住報價上線。
+      - name: End-to-end tests
+        if: github.event_name == 'pull_request' || github.event_name == 'push'
+        working-directory: web
+        run: |
+          npx playwright install --with-deps chromium
+          npm run test:e2e
+
+      - uses: actions/upload-artifact@v6
+        if: failure()
+        with:
+          name: playwright-report
+          path: web/playwright-report/
+          retention-days: 7
+          if-no-files-found: ignore
+
       - uses: actions/configure-pages@v6
         if: github.event_name != 'pull_request'
       - uses: actions/upload-pages-artifact@v5

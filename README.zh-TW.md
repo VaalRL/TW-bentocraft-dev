@@ -125,6 +125,7 @@ python -m unittest discover -s tests -t .
 python scripts/build_web_data.py     # 產生 web/public/data/（規格庫與報價的前端精簡版）
 cd web && npm install && npm run dev  # http://localhost:5173
 npm test                              # 約束引擎測試
+npm run build && npm run test:e2e    # 瀏覽器端對端測試（Playwright，使用固定資料）
 ```
 
 ### 4. 抓取原價屋並更新報價快照（需能連到 coolpc.com.tw）
