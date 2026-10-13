@@ -138,7 +138,7 @@ erDiagram
 | cooler | ★`cooler_type` | 風冷／水冷分流 | 自動 |
 | | `height_mm`（風冷）、`radiator_mm`（水冷） | C5 | 自動後人工確認 |
 | | `radiator_thickness_mm` | 前置冷排扣減顯卡空間 | 自動（`厚:5.2`） |
-| | `sockets`、`mount_codes` | C6 扣具 | `【WXZ】` 圖例確認前只保存原文 |
+| | `sockets`、`mount_codes` | C6 扣具 | 品名 `【WXZ】` 代碼依原價屋圖例轉成 `sockets`（`retailer_spec`） |
 | case | ★`max_mb_form_factor`、★`gpu_clearance_mm`、★`cooler_clearance_mm`、★`psu_form_factors` | C3、C4、C5、電源規格 | 自動後人工確認條件 |
 | | `radiator_support`、`psu_max_length_mm`、`expansion_slots` | 冷排位置、電源長度、顯卡厚度 | 人工 |
 | | `back_connect_max_form_factor`、`included_psu_w` | 背插、內附電源 | 自動 |
@@ -256,7 +256,7 @@ erDiagram
 **發現的資料問題**（皆由驗證或轉換流程自動標出）：
 
 1. **規格衝突 7 筆**：同型號不同列的數值不一致。例如 Meshify 3 一列 349 mm、一列 349.5 mm；Crucial PRO 記憶體 6000 與 6400 被併為同一型號（品名無料號可區分）。衝突的型號應保持 `auto`，由人工決定。
-2. **ID 碰撞 75 筆**：中文系列名轉英數後相同，草稿以雜湊區分，發布前需人工命名。
+2. **ID 碰撞 75 筆**：中文系列名轉英數後相同，草稿以雜湊區分，發布前需人工命名。（2026-10-13 已處理：網站上線前改為可讀 ID，同型號不同色者合併為變體，衝突值取較保守者）
 3. **通路 option value 不唯一**：2,320 列中 370 個重複，不能當 `offer_id`。
 4. **電源規格多為推定**：品名未標 SFX 的電源與 ATX 機殼一律推定為 ATX（`source: inferred`），需要抽查。
 
@@ -265,6 +265,6 @@ erDiagram
 ## 十、尚未決定的事項
 
 1. **`offer_id` 跨日穩定性**：需要每日排程連續觀察。
-2. **`【WXZ】` 扣具代碼圖例**：確認後 `mount_codes` 可轉成 `sockets`，支撐 C6 約束。
+2. ~~**`【WXZ】` 扣具代碼圖例**~~：已確認。原價屋散熱器分類開頭有「散熱器支援腳位:【W=115X/1200腳位,X=AM4/AM5腳位,Z=1700/1851腳位】」，水冷另有 Y=sTR4/5；`pipeline/reference.py` 據此把 `mount_codes` 轉成 `sockets`。
 3. **原始品名是否公開**：`raw_title` 只放在 repo 內的報價檔、不進前端檔；是否連 repo 都不放，需評估（設計審查第五節）。
 4. **欣亞的對應方式**：需實測欣亞的資料結構後，確認 `vendor_refs` 與 `offer_id` 規則是否適用。
