@@ -57,18 +57,6 @@ jobs:
           cat poc/out/report.md >> "$GITHUB_STEP_SUMMARY"
           exit $code
 
-      # 暫時：列出標「熱賣」的機殼與主機板品名，挑選要查原廠規格的型號
-      - name: Dump best-selling case and motherboard titles
-        run: |
-          python - <<'PY'
-          import json
-          for line in open('poc/out/items.jsonl', encoding='utf-8'):
-              i = json.loads(line)
-              t = i.get('text', '')
-              if i.get('category') in ('case', 'motherboard') and '熱賣' in t:
-                  print(i['category'], '|', t[:110])
-          PY
-
       - name: Build draft catalog and validate against schema
         run: |
           set -o pipefail
