@@ -28,6 +28,18 @@
     "chipset": {
      "value": "A520",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/A520M-HVS/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 64,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/A520M-HVS/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -133,6 +145,18 @@
     "chipset": {
      "value": "B550",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/B550M-HDV/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 64,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/B550M-HDV/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -238,6 +262,18 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/MB/AMD/B650M%20PG%20Lightning%20wifi/index.asp",
+     "note": "產品頁 256GB；舊版手冊寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/MB/AMD/B650M%20PG%20Lightning%20wifi/index.asp",
+     "note": "產品頁 256GB；舊版手冊寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -302,6 +338,18 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/AMD/B650M%20Pro%20X3D%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/AMD/B650M%20Pro%20X3D%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -334,6 +382,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/B760M-HDVM.2/index.asp",
+     "note": "產品頁 128GB；手冊與型錄寫 96GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/B760M-HDVM.2/index.asp",
+     "note": "產品頁 128GB；手冊與型錄寫 96GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -366,6 +426,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/B760M-HDVM.2%20D4/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 64,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/B760M-HDVM.2%20D4/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -398,6 +470,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/mb/Intel/B760M%20PG%20Lightning/index.asp",
+     "note": "產品頁 256GB；手冊寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/mb/Intel/B760M%20PG%20Lightning/index.asp",
+     "note": "產品頁 256GB；手冊寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -430,6 +514,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/B760M%20Pro%20RSD4/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/B760M%20Pro%20RSD4/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -462,6 +558,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/B760M%20Steel%20Legend%20WiFi/index.asp",
+     "note": "產品頁 256GB；手冊寫 128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/B760M%20Steel%20Legend%20WiFi/index.asp",
+     "note": "產品頁 256GB；手冊寫 128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -531,6 +639,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/B850%20Challenger%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/B850%20Challenger%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -569,6 +689,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/B850%20Pro-A/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/B850%20Pro-A/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -601,6 +733,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/AMD/B850%20Pro%20RS/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/AMD/B850%20Pro%20RS/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -633,6 +777,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/B850%20Rock%20WiFi%207/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/B850%20Rock%20WiFi%207/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -703,6 +859,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/B850M%20Challenger%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/B850M%20Challenger%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -741,6 +909,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/B850M%20Pro-A/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/B850M%20Pro-A/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -773,6 +953,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/B850M%20Pro-A%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/B850M%20Pro-A%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -805,6 +997,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/B850M%20Pro%20RS/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/B850M%20Pro%20RS/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -838,6 +1042,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/B850M%20Pro%20RS%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/B850M%20Pro%20RS%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -876,6 +1092,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/mb/AMD/B850M%20Riptide%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/mb/AMD/B850M%20Riptide%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -980,6 +1208,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/B860%20Rock%20WiFi%207/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/B860%20Rock%20WiFi%207/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1012,6 +1252,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/Intel/B860%20Steel%20Legend%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/Intel/B860%20Steel%20Legend%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1117,6 +1369,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/Intel/B860M%20LiveMixer%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/Intel/B860M%20LiveMixer%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1149,6 +1413,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/Intel/B860M%20Pro%20RS%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/Intel/B860M%20Pro%20RS%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1217,6 +1493,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/Intel/B860M%20Steel%20Legend%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/Intel/B860M%20Steel%20Legend%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1285,6 +1573,18 @@
     "chipset": {
      "value": "H610",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/intel/H610M%20COMBO%20II/",
+     "note": "雙規主機板：2 條 DDR5 加 1 條 DDR4 插槽，同時只能用一種；數值為 DDR5 模式；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 96,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/intel/H610M%20COMBO%20II/",
+     "note": "雙規主機板：2 條 DDR5 加 1 條 DDR4 插槽，同時只能用一種；數值為 DDR5 模式；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1317,6 +1617,18 @@
     "chipset": {
      "value": "H610",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/H610M-H2M.2/index.asp",
+     "note": "DDR4 版；另有 H610M-H2/M.2 D5（2 槽、96GB）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 64,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/H610M-H2M.2/index.asp",
+     "note": "DDR4 版；另有 H610M-H2/M.2 D5（2 槽、96GB）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1421,6 +1733,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/AMD/X870%20Challenger%20WiFi%20White/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/MB/AMD/X870%20Challenger%20WiFi%20White/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1453,6 +1777,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/mb/AMD/X870%20Nova%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/mb/AMD/X870%20Nova%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1485,6 +1821,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/MB/AMD/X870%20Pro%20RS/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/MB/AMD/X870%20Pro%20RS/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1517,6 +1865,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/X870%20Pro%20RS%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/X870%20Pro%20RS%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1549,6 +1909,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/X870%20Steel%20Legend%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/X870%20Steel%20Legend%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5348,6 +5720,18 @@
     "chipset": {
      "value": "B550",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B550M-AORUS-ELITE-rev-10-11-12/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B550M-AORUS-ELITE-rev-10-11-12/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5380,6 +5764,18 @@
     "chipset": {
      "value": "B550",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B550M-GAMING-X-WIFI6-rev-10-11/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B550M-GAMING-X-WIFI6-rev-10-11/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5484,6 +5880,18 @@
     "chipset": {
      "value": "B650E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B650E-EAGLE-WIFI6E/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B650E-EAGLE-WIFI6E/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5594,6 +6002,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/my/Motherboard/B760M-AORUS-ARI-WIFI6E-DDR4/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/my/Motherboard/B760M-AORUS-ARI-WIFI6E-DDR4/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5626,6 +6046,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B760M-AORUS-ELITE-AX-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B760M-AORUS-ELITE-AX-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5742,6 +6174,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B760M-DS3H-WIFI6E-GEN5/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B760M-DS3H-WIFI6E-GEN5/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5842,6 +6286,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B760M-GAMING-WIFI6-PLUS-GEN5/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B760M-GAMING-WIFI6-PLUS-GEN5/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5874,6 +6330,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/nz/Motherboard/B760M-GAMING-X-WIFI6E-GEN5/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/nz/Motherboard/B760M-GAMING-X-WIFI6E-GEN5/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6050,6 +6518,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850-AI-TOP-rev-11/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850-AI-TOP-rev-11/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6082,6 +6562,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/B850-AORUS-ELITE-P-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/B850-AORUS-ELITE-P-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6115,6 +6607,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850-AORUS-ELITE-WIFI7-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850-AORUS-ELITE-WIFI7-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6206,6 +6710,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850-EAGLE-WIFI6E-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850-EAGLE-WIFI6E-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6238,6 +6754,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850-GAMING-X-WIFI6E-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850-GAMING-X-WIFI6E-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6270,6 +6798,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850M-AORUS-ELITE-WIFI6E-ICE-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850M-AORUS-ELITE-WIFI6E-ICE-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6348,6 +6888,18 @@
     "back_connect": {
      "value": true,
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850M-AORUS-STEALTH-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850M-AORUS-STEALTH-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6458,6 +7010,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850M-GAMING-X-WIFI6E-rev-10/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850M-GAMING-X-WIFI6E-rev-10/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6490,6 +7054,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B860-AORUS-ELITE-WIFI7-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B860-AORUS-ELITE-WIFI7-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6522,6 +7098,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B860-EAGLE-WIFI6E/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B860-EAGLE-WIFI6E/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6554,6 +7142,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B860-GAMING-X-WIFI6E/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B860-GAMING-X-WIFI6E/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6671,6 +7271,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/B860M-GAMING-WIFI6/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/B860M-GAMING-WIFI6/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -6703,6 +7315,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B860M-GAMING-X-WIFI6E-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B860M-GAMING-X-WIFI6E-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7072,6 +7696,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-AORUS-INFINITY/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-AORUS-INFINITY/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7109,6 +7745,18 @@
     "back_connect": {
      "value": true,
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-AORUS-STEALTH/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-AORUS-STEALTH/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7147,6 +7795,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-AORUS-TACHYON-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-AORUS-TACHYON-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7179,6 +7839,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-EAGLE-WIFI7-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-EAGLE-WIFI7-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7211,6 +7883,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-GAMING-X-WIFI7-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-GAMING-X-WIFI7-rev-1x/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7243,6 +7927,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870E-AERO-X3D-DARK-WOOD/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870E-AERO-X3D-DARK-WOOD/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7275,6 +7971,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/mx/Motherboard/X870E-AERO-X3D-WOOD/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/mx/Motherboard/X870E-AERO-X3D-WOOD/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7349,6 +8057,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870E-AORUS-MASTER-X3D-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870E-AORUS-MASTER-X3D-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
