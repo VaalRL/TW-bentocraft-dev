@@ -83,6 +83,11 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -151,6 +156,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -184,6 +194,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -217,6 +232,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -250,6 +270,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -283,6 +308,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -322,6 +352,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -355,6 +390,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -417,6 +457,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -539,6 +584,11 @@
     "efficiency": {
      "value": "silver",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -572,6 +622,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -634,6 +689,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -667,6 +727,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -706,6 +771,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -739,6 +809,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -778,6 +853,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -811,6 +891,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -849,6 +934,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -881,6 +971,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -920,6 +1015,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -953,6 +1053,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1021,6 +1126,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1060,6 +1170,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1099,6 +1214,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1138,6 +1258,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1177,6 +1302,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1245,6 +1375,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1278,6 +1413,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1310,6 +1450,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1342,6 +1487,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1374,6 +1524,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1406,6 +1561,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1440,6 +1600,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1479,6 +1644,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1512,6 +1682,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1546,6 +1721,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1585,6 +1765,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1618,6 +1803,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1651,6 +1841,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1684,6 +1879,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1717,6 +1917,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1750,6 +1955,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1816,6 +2026,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1882,6 +2097,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1915,6 +2135,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1948,6 +2173,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -1981,6 +2211,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2024,6 +2259,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2067,6 +2307,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2215,6 +2460,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2258,6 +2508,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2301,6 +2556,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2340,6 +2600,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2383,6 +2648,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2416,6 +2686,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2449,6 +2724,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2481,6 +2761,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2524,6 +2809,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2615,6 +2905,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2648,6 +2943,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2681,6 +2981,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2714,6 +3019,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2747,6 +3057,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2780,6 +3095,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2813,6 +3133,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2875,6 +3200,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -2918,6 +3248,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3019,6 +3354,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3052,6 +3392,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3085,6 +3430,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3118,6 +3468,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3151,6 +3506,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3184,6 +3544,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3217,6 +3582,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3343,6 +3713,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3377,6 +3752,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3472,6 +3852,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3505,6 +3890,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3633,6 +4023,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3666,6 +4061,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3709,6 +4109,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3742,6 +4147,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3785,6 +4195,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3828,6 +4243,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3871,6 +4291,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3941,6 +4366,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -3973,6 +4403,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4011,6 +4446,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4044,6 +4484,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4076,6 +4521,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4109,6 +4559,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4142,6 +4597,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4175,6 +4635,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4208,6 +4673,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4241,6 +4711,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4274,6 +4749,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4307,6 +4787,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4439,6 +4924,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4472,6 +4962,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4505,6 +5000,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4538,6 +5038,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4604,6 +5109,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4637,6 +5147,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4670,6 +5185,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4703,6 +5223,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4736,6 +5261,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4769,6 +5299,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4802,6 +5337,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4841,6 +5381,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4903,6 +5448,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4936,6 +5486,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -4969,6 +5524,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5002,6 +5562,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5035,6 +5600,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5068,6 +5638,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5101,6 +5676,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5134,6 +5714,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5167,6 +5752,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5206,6 +5796,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5348,6 +5943,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5381,6 +5981,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5414,6 +6019,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5447,6 +6057,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5480,6 +6095,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5513,6 +6133,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5546,6 +6171,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5579,6 +6209,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5612,6 +6247,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5645,6 +6285,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5678,6 +6323,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5717,6 +6367,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5756,6 +6411,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5795,6 +6455,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -5867,6 +6532,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6088,6 +6758,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6226,6 +6901,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6259,6 +6939,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6292,6 +6977,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6335,6 +7025,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6374,6 +7069,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6407,6 +7107,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6440,6 +7145,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6479,6 +7189,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6518,6 +7233,11 @@
     "atx_version": {
      "value": "3",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6551,6 +7271,11 @@
     "atx_version": {
      "value": "3",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6584,6 +7309,11 @@
     "atx_version": {
      "value": "3",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6617,6 +7347,11 @@
     "atx_version": {
      "value": "3",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6737,6 +7472,11 @@
     "atx_version": {
      "value": "3",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6799,6 +7539,11 @@
     "atx_version": {
      "value": "3",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6832,6 +7577,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6865,6 +7615,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6898,6 +7653,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6931,6 +7691,11 @@
     "atx_version": {
      "value": "3",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6964,6 +7729,11 @@
     "atx_version": {
      "value": "3",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -6997,6 +7767,11 @@
     "atx_version": {
      "value": "3",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7117,6 +7892,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7150,6 +7930,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7261,6 +8046,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7304,6 +8094,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7469,6 +8264,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7558,6 +8358,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7591,6 +8396,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7624,6 +8434,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7744,6 +8559,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7777,6 +8597,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7810,6 +8635,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7853,6 +8683,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7958,6 +8793,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -7991,6 +8831,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8024,6 +8869,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8057,6 +8907,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8090,6 +8945,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8133,6 +8993,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8166,6 +9031,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8205,6 +9075,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8238,6 +9113,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8281,6 +9161,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8324,6 +9209,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8357,6 +9247,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8390,6 +9285,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8423,6 +9323,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8456,6 +9361,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8489,6 +9399,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8522,6 +9437,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8555,6 +9475,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8588,6 +9513,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8621,6 +9551,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8660,6 +9595,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8693,6 +9633,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8726,6 +9671,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8759,6 +9709,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8792,6 +9747,11 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8825,6 +9785,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {
@@ -8858,6 +9823,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
     }
    },
    "review": {

@@ -125,7 +125,7 @@ erDiagram
 | :-- | :-- | :-- | :-- |
 | cpu | ★`socket` | C1 腳位 | 自動（optgroup） |
 | | ★`igpu` | 無內顯且未選顯卡 → 無法顯示 | 自動；品名未寫時人工 |
-| | `cooler_included`、`tdp_w`、`max_power_w`、`generation` | 散熱器必選、功耗、BIOS 世代 | `max_power_w`、不附散熱器的型號由對照表（manual）；其餘部分自動 |
+| | `cooler_included`、`tdp_w`、`max_power_w`、`generation` | 散熱器必選、功耗、BIOS 世代 | `cooler_included` 由品名（含風扇／無風扇／盒裝）與對照表；`max_power_w` 由對照表（manual） |
 | motherboard | ★`socket`、★`memory_type`、★`form_factor` | C1、C2、C3 | 自動（optgroup＋品名） |
 | | `chipset`、`dimm_slots`、`max_memory_gb`、`m2_slots` | 插槽與容量 | 部分自動 |
 | | `back_connect` | 背插主機板需背插機殼 | 自動 |
@@ -143,7 +143,7 @@ erDiagram
 | | `radiator_support`、`psu_max_length_mm`、`expansion_slots` | 冷排位置、電源長度、顯卡厚度 | 人工 |
 | | `back_connect_max_form_factor`、`included_psu_w` | 背插、內附電源 | 自動 |
 | psu | ★`wattage`、★`form_factor` | C7 瓦數、電源規格 ↔ 機殼 | 瓦數自動；ATX 多為推定 |
-| | `atx_version`、`pcie_12v2x6`、`efficiency`、`length_mm` | C8 接頭 | 部分自動 |
+| | `atx_version`、`pcie_12v2x6`、`efficiency`、`length_mm` | C8 接頭 | 品名標 `PCIe 5.x` 者記 `pcie_12v2x6 = 1`（至少一個原生接頭）；未標者留空 |
 | ssd | `interface`、`form_factor`、`capacity_gb` | M.2 插槽數 | 自動 |
 
 **對照表**（[`data/reference/specs.json`](data/reference/specs.json)）：功耗、是否附散熱器等值由 CPU 型號或顯卡晶片決定，品名通常不寫，改以人工整理的對照表套用（[`pipeline/reference.py`](pipeline/reference.py)）。規則：只補缺漏的欄位，不覆寫既有值，不動 `verified` 型號；每個值的 `note` 寫明依據。CPU 數值取自原廠規格（AMD 預設 PPT、Intel Maximum Turbo Power），來源標 `manual`；顯卡依晶片參考功耗推定，非公版超頻卡可能更高，來源標 `inferred`，介面會註明「依推定規格」。各來源說法不一的值（如 R9 9950X3D2 的 PPT）不填。`bootstrap_catalog.py` 新增型號時自動套用；對照表更新後以 `scripts/apply_reference.py` 回填既有型號。是否附散熱器只對品名標「盒」或原廠一律不附的型號填寫，避免把散裝 CPU 誤判為附散熱器。
@@ -258,7 +258,7 @@ erDiagram
 1. **規格衝突 7 筆**：同型號不同列的數值不一致。例如 Meshify 3 一列 349 mm、一列 349.5 mm；Crucial PRO 記憶體 6000 與 6400 被併為同一型號（品名無料號可區分）。衝突的型號應保持 `auto`，由人工決定。
 2. **ID 碰撞 75 筆**：中文系列名轉英數後相同，草稿以雜湊區分，發布前需人工命名。（2026-10-13 已處理：網站上線前改為可讀 ID，同型號不同色者合併為變體，衝突值取較保守者）
 3. **通路 option value 不唯一**：2,320 列中 370 個重複，不能當 `offer_id`。
-4. **電源規格多為推定**：品名未標 SFX 的電源與 ATX 機殼一律推定為 ATX（`source: inferred`），需要抽查。
+4. **電源規格多為推定**：品名未標 SFX 的電源與 ATX 機殼一律推定為 ATX（`source: inferred`），需要抽查。（2026-10-13 抽查：291 個推定為 ATX 的電源品名都沒有 SFX／TFX／Flex 字樣，隨機 25 個核對皆為 ATX；所有 Mini-ITX 機殼的電源規格都來自品名，沒有推定值。推定規則維持。）
 
 ---
 

@@ -82,6 +82,11 @@ describe('成對約束', () => {
     expect(c.status).toBe('fail');
     expect(c.inferred).toBe(true);
     expect(status(evaluate(psuAtx, { case: tower300 }), 'C9')).toBe('pass');
+    const sfx = M('psu:corsair:sf750', { wattage: 750, form_factor: 'SFX' });
+    const sfxl = M('psu:asus:rog-loki-850w', { wattage: 850, form_factor: 'SFX-L' });
+    expect(status(evaluate(sfx, { case: tower300 }), 'C9')).toBe('warn'); // ATX 電源位需轉接架
+    expect(status(evaluate(sfxl, { case: a4h2o }), 'C9')).toBe('warn'); // SFX 電源位不一定放得下 SFX-L
+    expect(status(evaluate(sfx, { case: a4h2o }), 'C9')).toBe('pass');
   });
 });
 

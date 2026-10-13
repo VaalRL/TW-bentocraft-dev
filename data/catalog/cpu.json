@@ -29,6 +29,11 @@
      "value": 88,
      "source": "manual",
      "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title",
+     "note": "品名標盒裝；AMD G 系列盒裝附 Wraith 散熱器"
     }
    },
    "review": {
@@ -690,6 +695,11 @@
      "value": 121,
      "source": "manual",
      "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title",
+     "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
     }
    },
    "review": {
@@ -719,6 +729,11 @@
      "value": 121,
      "source": "manual",
      "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title",
+     "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
     }
    },
    "review": {
@@ -950,6 +965,11 @@
      "value": 110,
      "source": "manual",
      "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title",
+     "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
     }
    },
    "review": {
@@ -983,6 +1003,11 @@
      "value": 117,
      "source": "manual",
      "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title",
+     "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
     }
    },
    "review": {
@@ -1016,6 +1041,11 @@
      "value": 117,
      "source": "manual",
      "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title",
+     "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
     }
    },
    "review": {
@@ -1049,6 +1079,11 @@
      "value": 148,
      "source": "manual",
      "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title",
+     "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
     }
    },
    "review": {
@@ -1082,6 +1117,11 @@
      "value": 148,
      "source": "manual",
      "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title",
+     "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
     }
    },
    "review": {
@@ -1115,6 +1155,11 @@
      "value": 219,
      "source": "manual",
      "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title",
+     "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
     }
    },
    "review": {
