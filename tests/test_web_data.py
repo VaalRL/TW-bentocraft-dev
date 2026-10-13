@@ -49,17 +49,21 @@ class WebDataTest(unittest.TestCase):
              "price_condition": {"type": "requires_category", "requires": ["motherboard"]},
              "items": [{"role": "main", "model_id": "case:thermaltake:the-tower-300", "variant": "white",
                         "match": "model_key"},
-                       {"role": "psu", "match": "unmatched", "text": "華碩 TUF 750W"}]},
+                       {"role": "psu", "match": "unmatched", "text": "華碩 TUF 750W 現省$400！"},
+                       {"role": "aio", "match": "model_key", "model_id": "cooler:nzxt:kraken-core-360-rgb",
+                        "text": "NZXT Kraken Core 360 RGB 水冷散熱器 現省$900"}]},
             {"offer_id": "coolpc:hb", "category": "gpu", "price": 1,
              "items": [{"role": "main", "match": "unmatched", "text": "未知顯卡"}]},
         ]}
-        doc = build_web_data.build_prices(prices, {"case:thermaltake:the-tower-300"})
+        models = {"case:thermaltake:the-tower-300": {"b": "曜越 Thermaltake", "n": "The Tower 300"},
+                  "cooler:nzxt:kraken-core-360-rgb": {"b": "NZXT", "n": "Kraken Core 360 RGB 水冷"}}
+        doc = build_web_data.build_prices(prices, models)
         self.assertEqual(doc["offers"], [{"m": "case:thermaltake:the-tower-300", "p": 3990, "v": "white", "d": 90,
                                           "c": {"t": "requires_category", "q": ["motherboard"]},
-                                          "x": ["華碩 TUF 750W"]}])
+                                          "x": ["華碩 TUF 750W", "NZXT Kraken Core 360 RGB 水冷"]}])
 
     def test_missing_prices(self):
-        self.assertEqual(build_web_data.build_prices(None, set())["status"], "missing")
+        self.assertEqual(build_web_data.build_prices(None, {})["status"], "missing")
 
 
 if __name__ == "__main__":

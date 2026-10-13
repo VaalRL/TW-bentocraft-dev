@@ -20,7 +20,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from pipeline.catalog import CatalogIndex, detect_variant, main_text, new_models, price_fields, specs_for, split_name  # noqa: E402
 from pipeline.coolpc import parse_items  # noqa: E402
-from pipeline.prices import build_offers, offer_id, write_prices  # noqa: E402
+from pipeline.prices import build_offers, bundled_part, offer_id, write_prices  # noqa: E402
 import update_prices  # noqa: E402
 from validate import CATALOG_VALIDATOR, PRICES_VALIDATOR, schema_errors  # noqa: E402
 
@@ -107,6 +107,39 @@ class TitleSpecsTest(unittest.TestCase):
         self.assertEqual(modules("｛威剛 32G(16G*2) D5-6000｝CL30, $3999", 32), {"value": 2, "source": "title"})
         self.assertEqual(modules("｛UMAX 16GB DDR4-3200｝, $1290", 16)["source"], "inferred")
         self.assertIsNone(modules("｛某品牌 DDR5-6000｝, $1290", None))  # 連容量都沒有就不推定
+
+
+class BundledPartTest(unittest.TestCase):
+    """組合列附帶零件：品名少了品牌或多了規格字樣時仍對應到規格庫。"""
+
+    def setUp(self):
+        def m(keys):
+            return {"aliases": {"model_keys": keys}}
+        self.index = CatalogIndex({
+            "psu": {"models": {"psu:asus:tuf-gaming-750w-evo": m(["華碩TUFGAMING750WEVO"]),
+                               "psu:asus:tuf-gaming-750w": m(["華碩TUFGAMING750W"]),
+                               "psu:montech:beta-2-750w": m(["MONTECHBETA2750W"])}},
+            "cooler": {"models": {"cooler:asus:tuf-gaming-lc-iii-360-argb-lcd": m(["華碩TUFGAMINGLCIII360ARGBLCD"]),
+                                  "cooler:asus:rog-strix-lc-iii-360-argb-lcd": m(["華碩ROGSTRIXLCIII360ARGBLCD龍"])}},
+        })
+
+    def part(self, kind, text):
+        return bundled_part({"kind": kind, "text": text}, self.index)
+
+    def test_extra_words_pick_longest_key(self):
+        self.assertEqual(self.part("psu", "華碩 TUF GAMING 750W EVO 銅牌/全模")["model_id"], "psu:asus:tuf-gaming-750w-evo")
+        self.assertEqual(self.part("psu", "Montech BETA 2 750W/銅牌/ATX3.1 現省590！")["model_id"],
+                         "psu:montech:beta-2-750w")
+
+    def test_missing_brand(self):
+        r = self.part("aio", "TUF GAMING LC III 360 ARGB LCD(白)水冷")
+        self.assertEqual((r["match"], r["model_id"]), ("model_key", "cooler:asus:tuf-gaming-lc-iii-360-argb-lcd"))
+        self.assertIn("text", r)  # 原文保留供顯示
+
+    def test_no_loose_match_for_series_names_or_fans(self):
+        self.assertEqual(self.part("aio", "LC III 360 ARGB LCD 水冷")["match"], "unmatched")  # TUF、ROG 都含這段
+        self.assertEqual(self.part("psu", "XPG REACTOR II 750W/金牌")["match"], "unmatched")
+        self.assertNotIn("model_id", self.part("fans", "MONTECH RX120 PRO(白)反向扇*2"))
 
 
 class OfferIdTest(unittest.TestCase):

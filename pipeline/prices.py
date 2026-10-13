@@ -8,7 +8,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from pipeline.catalog import CatalogIndex, detect_variant, identity, main_text, price_fields
-from pipeline.extract import split_combo
+from pipeline.extract import model_key, split_combo
 
 # 計算報價 ID 前從品名移除會隨日期變動的字樣，讓同一列商品在價格或促銷改變時保持相同 ID
 _VOLATILE_RES = [
@@ -34,6 +34,27 @@ def offer_id(item: dict) -> str:
     return "coolpc:h" + hashlib.sha1(offer_key(item).encode("utf-8")).hexdigest()[:10]
 
 
+# 組合列附帶零件的種類 → 規格庫類別（風扇沒有規格庫類別）
+PART_CATEGORY = {"psu": "psu", "aio": "cooler", "cpu": "cpu", "ram": "ram"}
+_PART_PROMO_RE = re.compile(r"\s*(?:現省|原價)\s?\$?\s?\d+！?.*$")
+
+
+def strip_part_promo(text: str) -> str:
+    return _PART_PROMO_RE.sub("", text).strip()
+
+
+def bundled_part(part: dict, index: CatalogIndex) -> dict:
+    """組合列中附帶的零件。能對應到規格庫時記錄型號（原文保留供顯示），否則記為 unmatched。"""
+    text = part["text"][:120]
+    out = {"role": part["kind"], "match": "unmatched", "text": text}
+    cat = PART_CATEGORY.get(part["kind"])
+    if cat:
+        mid = index.lookup_part(cat, model_key(strip_part_promo(part["text"])))
+        if mid:
+            out.update(match="model_key", model_id=mid)
+    return out
+
+
 def build_offers(items: list[dict], index: CatalogIndex, fetched_year: int,
                  keep_raw_title: bool = False) -> tuple[list[dict], dict]:
     """品項 → 報價列。能以型號鍵對應到規格庫的記為 model_key，否則保留原文記為 unmatched。"""
@@ -48,8 +69,7 @@ def build_offers(items: list[dict], index: CatalogIndex, fetched_year: int,
         variant = detect_variant(item["text"])
         if mid and variant:
             main["variant"] = variant[0]
-        parts = [main] + [{"role": p["kind"], "match": "unmatched", "text": p["text"][:120]}
-                          for p in (split_combo(item["text"]) or [])[1:]]
+        parts = [main] + [bundled_part(p, index) for p in (split_combo(item["text"]) or [])[1:]]
         offer = {"offer_id": offer_id(item), "category": cat,
                  "vendor_section": {"id": item.get("select", ""), "group": item.get("group", "")}}
         if keep_raw_title:

@@ -370,6 +370,23 @@ class CatalogIndex:
     def lookup(self, category: str, key: str) -> str | None:
         return self.by_key.get((category, key))
 
+    def lookup_part(self, category: str, key: str) -> str | None:
+        """組合列附帶零件的品名常少了品牌或多了規格字樣（「TUF GAMING LC III 360 ARGB LCD」
+        「華碩 TUF GAMING 750W EVO 銅牌」），完全相同的鍵找不到時放寬比對：
+        1. 品名以某個型號鍵開頭（多出規格字樣），取最長者；
+        2. 品名是某個型號鍵的一部分（少了品牌），且只對應到一個型號。
+        鍵太短或不含數字時不放寬，避免「TUF GAMING」這類系列名稱誤配。"""
+        if mid := self.lookup(category, key):
+            return mid
+        if len(key) < 8 or not re.search(r"\d", key):
+            return None
+        keys = [(k, mid) for (cat, k), mid in self.by_key.items() if cat == category]
+        prefix = [(k, mid) for k, mid in keys if len(k) >= 8 and re.search(r"\d", k) and key.startswith(k)]
+        if prefix:
+            return max(prefix, key=lambda x: len(x[0]))[1]
+        inside = {mid for k, mid in keys if key in k}
+        return inside.pop() if len(key) >= 10 and len(inside) == 1 else None
+
 
 def new_models(items: list[dict], shards: dict[str, dict]) -> tuple[dict[str, dict], dict]:
     """從品項產生規格庫中尚不存在的型號（review.status = auto）。
