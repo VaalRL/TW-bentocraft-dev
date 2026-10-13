@@ -773,6 +773,49 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.antec.com/product/case/flux-pro",
+     "note": "頂 420 與前 420 不能同時安裝（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -818,6 +861,49 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.antec.com/product/case/flux-pro",
+     "note": "頂 420 與前 420 不能同時安裝（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -1505,6 +1591,29 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/cases/asus/asus-a31-plus-case/techspec/",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -1595,6 +1704,29 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/cases/prime/asus-prime-ap201-microatx-case/techspec/",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -1640,6 +1772,21 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/cases/prime/asus-prime-ap202-argb/techspec/",
+     "note": "官方只列頂部上限 360 mm；頂部有 3×120 風扇位，120／240 依此推定（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -1965,6 +2112,35 @@
     "back_connect_max_form_factor": {
      "value": "E-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/za/cases/rog-cronox/spec/",
+     "note": "側面 120／240／360 出自 ASUS 官方 FAQ（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -1996,6 +2172,21 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/cases/rog-gr20-edition-20/",
+     "note": "開放式機殼；官方只寫最大 360 mm，位置出自零售商頁面（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -2117,6 +2308,37 @@
     "back_connect_max_form_factor": {
      "value": "E-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        140,
+        280
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/cases/tuf-gaming/tuf-gaming-gt302-argb/techspec/",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -2162,6 +2384,29 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/cases/tuf-gaming/tuf-gaming-gt502-horizon/techspec/",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -2375,6 +2620,27 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.bitfenix.com/products/chassis-2/micro-atx/prodigy-m-2022/prodigy-m-2022-specs/",
+     "note": "英文型號 Prodigy M 2022（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -2420,6 +2686,27 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.bitfenix.com/products/chassis-2/micro-atx/prodigy-m-2022/prodigy-m-2022-specs/",
+     "note": "英文型號 Prodigy M 2022（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -4299,6 +4586,35 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://cougargaming.com/us/products/cases/airface-pure-pro/",
+     "note": "前方與頂部冷排只能擇一；頂部冷排時記憶體限高 43 mm（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -4532,6 +4848,38 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://cougargaming.com/us/products/cases/duoface-rgb/",
+     "note": "280 mm 冷排只能在前方或頂部擇一（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -4683,6 +5031,47 @@
     "back_connect_max_form_factor": {
      "value": "E-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ],
+       "max_thickness_mm": 55
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://cougargaming.com/us/products/cases/fv270-rgb/",
+     "note": "底部指電源艙罩上方；側面冷排時顯卡限長 330 mm（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -5160,6 +5549,26 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        240
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.darkflash.com/product/ds900",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -5254,6 +5663,27 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.darkflash.com/product/ds950v",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -5303,6 +5733,33 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.darkflash.com/us/product/dy470",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -7648,6 +8105,25 @@
       "SFX"
      ],
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        240
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/tw/product/CST351.html",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -8031,6 +8507,21 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.geometricfuture.com/product-1/44.html",
+     "note": "官方寫最大 360 mm；頂部位置出自原廠發表新聞稿，120／240 依最大值推定（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -8245,7 +8736,15 @@
     },
     "gpu_clearance_mm": {
      "value": 460.0,
-     "source": "title"
+     "source": "title",
+     "conditions": [
+      {
+       "value": 430.0,
+       "when": "front_radiator_installed",
+       "source": "vendor_spec",
+       "ref": "https://www.geometricfuture.com/faq/17.html"
+      }
+     ]
     },
     "cooler_clearance_mm": {
      "value": 180.0,
@@ -8257,6 +8756,38 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        420
+       ]
+      },
+      {
+       "position": "front",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.geometricfuture.com/faq/17.html",
+     "note": "底部冷排會佔用 2 個擴充槽（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -11396,6 +11927,21 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://lian-li.com/product/vector-v100/",
+     "note": "頂部冷排高度需小於 60 mm（未說明是否含風扇）；120／240 依最大值推定（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -11445,6 +11991,20 @@
     "back_connect_max_form_factor": {
      "value": "M-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://lian-li.com/product/vector-v100-mini/",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -11728,7 +12288,15 @@
     },
     "gpu_clearance_mm": {
      "value": 340.0,
-     "source": "title"
+     "source": "title",
+     "conditions": [
+      {
+       "value": 310.0,
+       "when": "front_radiator_installed",
+       "source": "vendor_spec",
+       "ref": "https://www.montechpc.com/air-1000-premium"
+      }
+     ]
     },
     "cooler_clearance_mm": {
      "value": 165.0,
@@ -11740,6 +12308,38 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/air-1000-premium",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -11830,6 +12430,33 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/air-903-max",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -11973,6 +12600,28 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        240
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/hs02-pro",
+     "note": "頂部冷排最大寬度 123 mm（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -12210,6 +12859,37 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        140,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/sky-3",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -12250,11 +12930,51 @@
     },
     "gpu_clearance_mm": {
      "value": 350.0,
-     "source": "title"
+     "source": "title",
+     "conditions": [
+      {
+       "value": 310.0,
+       "when": "front_radiator_installed",
+       "source": "vendor_spec",
+       "ref": "https://www.montechpc.com/sky-one-lite"
+      }
+     ]
     },
     "cooler_clearance_mm": {
      "value": 170.0,
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/sky-one-lite",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -12341,6 +13061,34 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ],
+       "max_thickness_mm": 66
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/sky-two-gx",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -12535,6 +13283,26 @@
     "cooler_clearance_mm": {
      "value": 160.0,
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/x2-plus",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -12670,6 +13438,29 @@
     "cooler_clearance_mm": {
      "value": 175.0,
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/xr",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -12941,6 +13732,33 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/PC-Case/MAG-FORGE-M100R/Specification",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -13559,6 +14377,27 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://support.nzxt.com/hc/en-us/articles/40183529624347-H6-Flow-2023-Specs",
+     "note": "頂部冷排本體厚度限 30 mm（含風扇約 60 mm）；120／240 依最大值推定（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -14603,6 +15442,38 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/tw/shop/case/sama-sak451-b/",
+     "note": "找不到原廠規格頁，取自原價屋開箱規格；側面冷排時顯卡限長 271 mm（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -16358,6 +17229,25 @@
       "SFX"
      ],
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/computer-chassis/LD03/",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -16763,6 +17653,26 @@
     "cooler_clearance_mm": {
      "value": 182.0,
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/computer-chassis/SUGO14/",
+     "note": "240 mm 一體式水冷的水冷頭高度限 55 mm（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -17434,6 +18344,30 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        240
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.thermaltake.com/view-290-tg-argb-mid-tower-chassis.html",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
@@ -17935,6 +18869,26 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.xpg.com/us/xpg/pc-components-mesh-nano?tab=spec",
+     "note": "（數值取自原廠頁面的搜尋摘錄）"
     }
    },
    "review": {
