@@ -1355,21 +1355,6 @@
     }
    }
   },
-  "cooler:coolermaster:connect-stand": {
-   "category": "cooler",
-   "brand": "酷碼 Cooler Master",
-   "name": "Connect Stand",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "酷碼CONNECTSTAND"
-    ]
-   },
-   "specs": {},
-   "review": {
-    "status": "auto"
-   }
-  },
   "cooler:coolermaster:hyper-212-3dhp-black-argb": {
    "category": "cooler",
    "brand": "酷碼 Cooler Master",
@@ -1746,21 +1731,6 @@
     "status": "auto"
    }
   },
-  "cooler:coolermaster:lga1700-a": {
-   "category": "cooler",
-   "brand": "酷碼 Cooler Master",
-   "name": "LGA1700 空冷專用扣具(A)",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "酷碼LGA1700空冷專用扣具(A)"
-    ]
-   },
-   "specs": {},
-   "review": {
-    "status": "auto"
-   }
-  },
   "cooler:coolermaster:masterliquid-240-atmos-ii-stealth": {
    "category": "cooler",
    "brand": "酷碼 Cooler Master",
@@ -2131,21 +2101,6 @@
      "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
     }
    },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:coolermaster:notepal-ergostand-iii": {
-   "category": "cooler",
-   "brand": "酷碼 Cooler Master",
-   "name": "NotePal ErgoStand III 散熱座",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "酷碼NOTEPALERGOSTANDIII散熱座"
-    ]
-   },
-   "specs": {},
    "review": {
     "status": "auto"
    }
@@ -9390,51 +9345,6 @@
      "label": "白",
      "color": "white"
     }
-   }
-  },
-  "cooler:raymii:d301-rgb": {
-   "category": "cooler",
-   "brand": "Raymii",
-   "name": "D301 鋁合金 RGB 風扇旋轉筆電支架",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "RAYMIID301鋁合金RGB風扇旋轉筆電支架"
-    ]
-   },
-   "specs": {},
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:raymii:rnf-k02-rgb": {
-   "category": "cooler",
-   "brand": "Raymii",
-   "name": "RNF-K02 RGB雙風扇散熱筆電架",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "RAYMIIRNFK02RGB雙風扇散熱筆電架"
-    ]
-   },
-   "specs": {},
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:raymii:rnf-k6-rgb": {
-   "category": "cooler",
-   "brand": "Raymii",
-   "name": "RNF-K6 大風扇RGB散熱筆電架",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "RAYMIIRNFK6大風扇RGB散熱筆電架"
-    ]
-   },
-   "specs": {},
-   "review": {
-    "status": "auto"
    }
   },
   "cooler:sama:a40l": {

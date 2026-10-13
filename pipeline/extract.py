@@ -39,7 +39,8 @@ OUT_OF_SCOPE = {
     "motherboard": re.compile(r"TRX50|WRX90|W790|sTR5|4677"),
     "ram": re.compile(r"伺服器|筆記型|NB |DDR3|RDIMM|ECC"),
     "gpu": re.compile(r"周邊|配件|支撐架|支架|專業級|工作站"),
-    "cooler": re.compile(r"SSD|散熱膏|散熱墊|導熱|矽脂|硅脂|散熱片"),
+    # 「筆記型專用散熱座」分類是筆電散熱架；品名本身（｛｝內）是扣具的是單賣扣具，不是散熱器
+    "cooler": re.compile(r"SSD|散熱膏|散熱墊|導熱|矽脂|硅脂|散熱片|筆記型|筆電|散熱座|｛[^｝]*扣具[^｝]*｝"),
     "case": re.compile(r"機架式|NAS"),
 }
 
