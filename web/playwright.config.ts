@@ -15,7 +15,7 @@ export default defineConfig({
     launchOptions: { args: ['--no-proxy-server'] },
   },
   projects: [
-    { name: 'desktop', testMatch: 'builder.e2e.ts', use: { ...devices['Desktop Chrome'], viewport: { width: 1400, height: 900 } } },
+    { name: 'desktop', testMatch: /(builder|a11y)\.e2e\.ts/, use: { ...devices['Desktop Chrome'], viewport: { width: 1400, height: 900 } } },
     { name: 'mobile', testMatch: 'mobile.e2e.ts', use: { ...devices['Pixel 7'] } },
   ],
   webServer: {

@@ -6,12 +6,13 @@
   --border: #e7e5e4;
   --border-accent: #d97706;
   --text-primary: #1c1917;
-  --text-muted: #78716c;
-  --accent-brand: #059669;
-  --status-error: #dc2626;
-  --status-warn: #d97706;
-  --status-ok: #10b981;
-  --status-unknown: #64748b;
+  --text-muted: #6b6560;
+  --accent-brand: #047857;
+  /* 狀態色同時用於文字：在白底與選取列的淡色底上都要達 WCAG AA 4.5:1，取較深的色階 */
+  --status-error: #b91c1c;
+  --status-warn: #b45309;
+  --status-ok: #047857;
+  --status-unknown: #475569;
   --radius: 6px;
   color-scheme: light;
 }
@@ -25,7 +26,7 @@
   --text-primary: #fafaf9;
   --text-muted: #a8a29e;
   --accent-brand: #eab308;
-  --status-error: #ef4444;
+  --status-error: #f87171;
   --status-warn: #f59e0b;
   --status-ok: #34d399;
   --status-unknown: #94a3b8;
@@ -120,7 +121,8 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 }
 .candidate:hover { border-color: var(--accent-brand); }
 .candidate.is-picked { border-color: var(--accent-brand); border-left-color: var(--accent-brand); background: color-mix(in srgb, var(--accent-brand) 8%, var(--bg-surface)); }
-.candidate.status-fail { opacity: 0.6; border-left-color: var(--status-error); }
+/* 不相容的列不用 opacity 淡化（會讓文字對比不足），以左側紅線與標籤區分 */
+.candidate.status-fail { border-left-color: var(--status-error); }
 .candidate.status-warn { border-left-color: var(--status-warn); }
 .candidate-main { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
 .candidate-name { font-weight: 600; }
