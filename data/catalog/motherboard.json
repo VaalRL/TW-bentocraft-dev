@@ -2221,6 +2221,16 @@
     "chipset": {
      "value": "A520",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/my/motherboards-components/motherboards/prime/prime-a520m-k-csm/techspec/"
+    },
+    "max_memory_gb": {
+     "value": 64,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/my/motherboards-components/motherboards/prime/prime-a520m-k-csm/techspec/"
     }
    },
    "review": {
@@ -3830,6 +3840,16 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/us/motherboards/rog-maximus/rog-maximus-z890-hero/spec/"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/us/motherboards/rog-maximus/rog-maximus-z890-hero/spec/"
     }
    },
    "review": {
@@ -4522,6 +4542,16 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus/techspec"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus/techspec"
     }
    },
    "review": {
@@ -4750,6 +4780,16 @@
     "back_connect": {
      "value": true,
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850-btf-wifi-w/techspec/"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850-btf-wifi-w/techspec/"
     }
    },
    "review": {
@@ -5166,6 +5206,16 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/tw/motherboards-components/motherboards/others/z890-ayw-gaming-wifi-w/techspec/"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/tw/motherboards-components/motherboards/others/z890-ayw-gaming-wifi-w/techspec/"
     }
    },
    "review": {
@@ -5470,6 +5520,16 @@
     "chipset": {
      "value": "B650E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://download.gigabyte.com/FileList/Manual/mb_manual_b650em-force-wf6e_1001_e_v1.pdf"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://download.gigabyte.com/FileList/Manual/mb_manual_b650em-force-wf6e_1001_e_v1.pdf"
     }
    },
    "review": {
@@ -5602,6 +5662,16 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B760M-AORUS-ELITE-WIFI6E-P-GEN5/sp"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B760M-AORUS-ELITE-WIFI6E-P-GEN5/sp"
     }
    },
    "review": {
@@ -5634,6 +5704,16 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B760M-DS3H-AX-rev-1x/sp"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B760M-DS3H-AX-rev-1x/sp"
     }
    },
    "review": {
@@ -6110,6 +6190,16 @@
     "back_connect": {
      "value": true,
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850-AORUS-STEALTH-ICE-rev-10/sp"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850-AORUS-STEALTH-ICE-rev-10/sp"
     }
    },
    "review": {
@@ -6238,6 +6328,16 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850M-AORUS-ELITE-WIFI7-ICE-P/sp"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850M-AORUS-ELITE-WIFI7-ICE-P/sp"
     }
    },
    "review": {
@@ -6342,6 +6442,16 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850M-FORCE-WIFI6E-V2/sp"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B850M-FORCE-WIFI6E-V2/sp"
     }
    },
    "review": {
@@ -6502,6 +6612,16 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B860M-AORUS-ELITE-WIFI6E/sp"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B860M-AORUS-ELITE-WIFI6E/sp"
     }
    },
    "review": {
@@ -6534,6 +6654,16 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/jp/Motherboard/B860M-AORUS-ELITE-WIFI6E-ICE/sp"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/jp/Motherboard/B860M-AORUS-ELITE-WIFI6E-ICE/sp"
     }
    },
    "review": {
@@ -6986,6 +7116,16 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-AORUS-ELITE-WIFI7-ICE-rev-12/sp"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870-AORUS-ELITE-WIFI7-ICE-rev-12/sp"
     }
    },
    "review": {
@@ -7282,6 +7422,16 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870E-AORUS-MASTER/sp"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870E-AORUS-MASTER/sp"
     }
    },
    "review": {
@@ -7611,6 +7761,16 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/jp/Motherboard/Z890-AORUS-ELITE-WIFI7-ICE/sp"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/jp/Motherboard/Z890-AORUS-ELITE-WIFI7-ICE/sp"
     }
    },
    "review": {
@@ -8880,6 +9040,16 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MAG-B850M-MORTAR-WIFI/Specification"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MAG-B850M-MORTAR-WIFI/Specification"
     }
    },
    "review": {
@@ -8944,6 +9114,16 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MAG-B860-TOMAHAWK-WIFI/Specification"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MAG-B860-TOMAHAWK-WIFI/Specification"
     }
    },
    "review": {
@@ -10505,6 +10685,11 @@
     "dimm_slots": {
      "value": 2,
      "source": "title"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B860M-X/Specification"
     }
    },
    "review": {
@@ -11049,6 +11234,16 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://br.msi.com/Motherboard/PRO-Z890-S-WIFI-WHITE/Specification"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://br.msi.com/Motherboard/PRO-Z890-S-WIFI-WHITE/Specification"
     }
    },
    "review": {
