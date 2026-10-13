@@ -26,6 +26,7 @@ data/
 │   ├── cpu.json
 │   ├── motherboard.json
 │   ├── ram.json  gpu.json  cooler.json  case.json  psu.json  ssd.json
+├── reference/specs.json     ← 對照表：由型號決定、品名不寫的欄位（CPU 功耗、顯卡晶片功耗等）
 └── prices/                  ← 每日報價（Actions 產生；每通路一檔）
     ├── coolpc.json
     └── sinya.json
@@ -124,7 +125,7 @@ erDiagram
 | :-- | :-- | :-- | :-- |
 | cpu | ★`socket` | C1 腳位 | 自動（optgroup） |
 | | ★`igpu` | 無內顯且未選顯卡 → 無法顯示 | 自動；品名未寫時人工 |
-| | `cooler_included`、`tdp_w`、`max_power_w`、`generation` | 散熱器必選、功耗、BIOS 世代 | 部分自動 |
+| | `cooler_included`、`tdp_w`、`max_power_w`、`generation` | 散熱器必選、功耗、BIOS 世代 | `max_power_w`、不附散熱器的型號由對照表（manual）；其餘部分自動 |
 | motherboard | ★`socket`、★`memory_type`、★`form_factor` | C1、C2、C3 | 自動（optgroup＋品名） |
 | | `chipset`、`dimm_slots`、`max_memory_gb`、`m2_slots` | 插槽與容量 | 部分自動 |
 | | `back_connect` | 背插主機板需背插機殼 | 自動 |
@@ -132,7 +133,7 @@ erDiagram
 | ram | ★`memory_type`、★`capacity_gb`、★`modules` | C2 世代、插槽數、容量 | 自動 |
 | | `speed_mts`、`height_mm` | 塔散干涉 | 速度自動、高度人工 |
 | gpu | ★`length_mm` | C4 限長 | 自動後人工確認（品名只到公分） |
-| | `thickness_slots`、`board_power_w`、`power_connectors` | 擴充槽、功耗、C8 接頭 | 人工 |
+| | `thickness_slots`、`board_power_w`、`power_connectors` | 擴充槽、功耗、C8 接頭 | 功耗、接頭依晶片由對照表推定（inferred）；厚度人工 |
 | | `low_profile`、`external` | 外接顯卡盒不受限長約束 | 自動 |
 | cooler | ★`cooler_type` | 風冷／水冷分流 | 自動 |
 | | `height_mm`（風冷）、`radiator_mm`（水冷） | C5 | 自動後人工確認 |
@@ -144,6 +145,8 @@ erDiagram
 | psu | ★`wattage`、★`form_factor` | C7 瓦數、電源規格 ↔ 機殼 | 瓦數自動；ATX 多為推定 |
 | | `atx_version`、`pcie_12v2x6`、`efficiency`、`length_mm` | C8 接頭 | 部分自動 |
 | ssd | `interface`、`form_factor`、`capacity_gb` | M.2 插槽數 | 自動 |
+
+**對照表**（[`data/reference/specs.json`](data/reference/specs.json)）：功耗、是否附散熱器等值由 CPU 型號或顯卡晶片決定，品名通常不寫，改以人工整理的對照表套用（[`pipeline/reference.py`](pipeline/reference.py)）。規則：只補缺漏的欄位，不覆寫既有值，不動 `verified` 型號；每個值的 `note` 寫明依據。CPU 數值取自原廠規格（AMD 預設 PPT、Intel Maximum Turbo Power），來源標 `manual`；顯卡依晶片參考功耗推定，非公版超頻卡可能更高，來源標 `inferred`，介面會註明「依推定規格」。各來源說法不一的值（如 R9 9950X3D2 的 PPT）不填。`bootstrap_catalog.py` 新增型號時自動套用；對照表更新後以 `scripts/apply_reference.py` 回填既有型號。是否附散熱器只對品名標「盒」或原廠一律不附的型號填寫，避免把散裝 CPU 誤判為附散熱器。
 
 新增的約束欄位（`igpu`、`psu_form_factors`、`back_connect`、`external`）對應 [設計審查](06-design-review.md) 第二節列出、原設計遺漏的約束。
 

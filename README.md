@@ -95,11 +95,11 @@ graph LR
 
 ## 🚀 Quickstart & Local Development
 
-The frontend is not implemented yet. What runs today is the daily price pipeline ([`pipeline/`](pipeline/), [`scripts/`](scripts/)), the PoC (see [`poc/README.md`](poc/README.md)) and the spec catalog validation.
+The frontend lives in [`web/`](web/) (React + Vite + TypeScript); the data pipeline in [`pipeline/`](pipeline/) and [`scripts/`](scripts/).
 
 ### Prerequisites
-- Python 3.11+
-- `jsonschema` (catalog validation)
+- Python 3.11+ and `jsonschema` (catalog validation)
+- Node.js 22.12+ (frontend)
 
 ### 1. Clone
 ```bash
@@ -114,7 +114,14 @@ python -m unittest discover -s tests -t .
 (cd schema && python -m unittest test_schema)
 ```
 
-### 3. Fetch CoolPC and Update the Price Snapshot (needs access to coolpc.com.tw)
+### 3. Run the Frontend
+```bash
+python scripts/build_web_data.py     # writes web/public/data/ (compact catalog and prices)
+cd web && npm install && npm run dev  # http://localhost:5173
+npm test                              # constraint engine tests
+```
+
+### 4. Fetch CoolPC and Update the Price Snapshot (needs access to coolpc.com.tw)
 ```bash
 python scripts/update_prices.py --out data/prices/coolpc.json --save-html page.html
 python scripts/bootstrap_catalog.py --html page.html   # add models missing from the catalog (review via PR)

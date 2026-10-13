@@ -17,6 +17,11 @@
      "value": 270.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 160,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 16GB 參考 TBP（未標容量者取較高的 16GB 版）"
     }
    },
    "review": {
@@ -38,6 +43,11 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
     }
    },
    "review": {
@@ -59,6 +69,11 @@
      "value": 250.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 160,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 16GB 參考 TBP（未標容量者取較高的 16GB 版）"
     }
    },
    "review": {
@@ -80,6 +95,11 @@
      "value": 290.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 220,
+     "source": "inferred",
+     "note": "AMD RX 9070 參考 TBP"
     }
    },
    "review": {
@@ -101,6 +121,11 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 220,
+     "source": "inferred",
+     "note": "AMD RX 9070 GRE 參考 TBP"
     }
    },
    "review": {
@@ -122,6 +147,11 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 220,
+     "source": "inferred",
+     "note": "AMD RX 9070 GRE 參考 TBP"
     }
    },
    "review": {
@@ -143,6 +173,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 70,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3050 6GB 參考 TGP"
     }
    },
    "review": {
@@ -164,6 +199,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 170,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3060 12GB 參考 TGP"
     }
    },
    "review": {
@@ -185,6 +225,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -206,6 +251,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -227,6 +277,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -248,6 +303,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -269,6 +329,11 @@
      "value": 210.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 160,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 16GB 參考 TBP（未標容量者取較高的 16GB 版）"
     }
    },
    "review": {
@@ -290,6 +355,11 @@
      "value": 170.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 30,
+     "source": "inferred",
+     "note": "NVIDIA GT 1030 GDDR5 版 30 W（DDR4 版較低）"
     }
    },
    "review": {
@@ -311,6 +381,11 @@
      "value": 170.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 19,
+     "source": "inferred",
+     "note": "NVIDIA GT 710 參考功耗"
     }
    },
    "review": {
@@ -332,6 +407,11 @@
      "value": 148.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 49,
+     "source": "inferred",
+     "note": "NVIDIA GT 730 各版本最高 49 W"
     }
    },
    "review": {
@@ -353,6 +433,11 @@
      "value": 165.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 49,
+     "source": "inferred",
+     "note": "NVIDIA GT 730 各版本最高 49 W"
     }
    },
    "review": {
@@ -374,6 +459,11 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -395,6 +485,11 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -416,6 +511,11 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -437,6 +537,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -458,6 +570,11 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 160,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 16GB 參考 TBP（未標容量者取較高的 16GB 版）"
     }
    },
    "review": {
@@ -479,6 +596,11 @@
      "value": 320.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 220,
+     "source": "inferred",
+     "note": "AMD RX 9070 參考 TBP"
     }
    },
    "review": {
@@ -500,6 +622,11 @@
      "value": 267.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -521,6 +648,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -542,6 +681,11 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -563,6 +707,11 @@
      "value": 330.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -584,6 +733,11 @@
      "value": 330.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -604,6 +758,11 @@
     "external": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -625,6 +784,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -646,6 +817,18 @@
      "value": 320.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -667,6 +850,18 @@
      "value": 330.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -688,6 +883,11 @@
      "value": 340.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
     }
    },
    "review": {
@@ -713,6 +913,11 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 30,
+     "source": "inferred",
+     "note": "NVIDIA GT 1030 GDDR5 版 30 W（DDR4 版較低）"
     }
    },
    "review": {
@@ -734,6 +939,11 @@
      "value": 144.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 19,
+     "source": "inferred",
+     "note": "NVIDIA GT 710 參考功耗"
     }
    },
    "review": {
@@ -755,6 +965,11 @@
      "value": 180.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 70,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3050 6GB 參考 TGP"
     }
    },
    "review": {
@@ -776,6 +991,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3050 8GB 參考 TGP（未標容量者取較高的 8GB 版）"
     }
    },
    "review": {
@@ -797,6 +1017,11 @@
      "value": 198.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 170,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3060 12GB 參考 TGP"
     }
    },
    "review": {
@@ -818,6 +1043,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5050 參考 TGP"
     }
    },
    "review": {
@@ -843,6 +1073,11 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5050 參考 TGP"
     }
    },
    "review": {
@@ -864,6 +1099,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5050 參考 TGP"
     }
    },
    "review": {
@@ -885,6 +1125,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -906,6 +1151,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -927,6 +1177,11 @@
      "value": 210.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -948,6 +1203,11 @@
      "value": 210.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -975,6 +1235,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -1000,6 +1265,11 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -1021,6 +1291,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -1042,6 +1317,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -1063,6 +1343,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -1084,6 +1369,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1105,6 +1395,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1126,6 +1421,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1147,6 +1447,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1168,6 +1473,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1189,6 +1499,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1210,6 +1525,11 @@
      "value": 210.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1231,6 +1551,11 @@
      "value": 210.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1252,6 +1577,11 @@
      "value": 210.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1273,6 +1603,18 @@
      "value": 330.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1294,6 +1636,18 @@
      "value": 290.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1315,6 +1669,18 @@
      "value": 290.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1336,6 +1702,18 @@
      "value": 330.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1357,6 +1735,18 @@
      "value": 290.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1378,6 +1768,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 300,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 Ti 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1399,6 +1801,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 300,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 Ti 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1420,6 +1834,18 @@
      "value": 340.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 300,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 Ti 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1441,6 +1867,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 300,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 Ti 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1462,6 +1900,18 @@
      "value": 340.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1483,6 +1933,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1504,6 +1966,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1525,6 +1999,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 160,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 16GB 參考 TBP（未標容量者取較高的 16GB 版）"
     }
    },
    "review": {
@@ -1546,6 +2025,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 160,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 16GB 參考 TBP（未標容量者取較高的 16GB 版）"
     }
    },
    "review": {
@@ -1567,6 +2051,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 150,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 8GB 參考 TBP"
     }
    },
    "review": {
@@ -1588,6 +2077,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 160,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 16GB 參考 TBP（未標容量者取較高的 16GB 版）"
     }
    },
    "review": {
@@ -1609,6 +2103,11 @@
      "value": 290.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 220,
+     "source": "inferred",
+     "note": "AMD RX 9070 參考 TBP"
     }
    },
    "review": {
@@ -1630,6 +2129,11 @@
      "value": 290.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 220,
+     "source": "inferred",
+     "note": "AMD RX 9070 GRE 參考 TBP"
     }
    },
    "review": {
@@ -1651,6 +2155,11 @@
      "value": 290.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
     }
    },
    "review": {
@@ -1672,6 +2181,11 @@
      "value": 170.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 30,
+     "source": "inferred",
+     "note": "NVIDIA GT 1030 GDDR5 版 30 W（DDR4 版較低）"
     }
    },
    "review": {
@@ -1693,6 +2207,11 @@
      "value": 140.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 19,
+     "source": "inferred",
+     "note": "NVIDIA GT 710 參考功耗"
     }
    },
    "review": {
@@ -1718,6 +2237,11 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 49,
+     "source": "inferred",
+     "note": "NVIDIA GT 730 各版本最高 49 W"
     }
    },
    "review": {
@@ -1743,6 +2267,11 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 49,
+     "source": "inferred",
+     "note": "NVIDIA GT 730 各版本最高 49 W"
     }
    },
    "review": {
@@ -1764,6 +2293,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 70,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3050 6GB 參考 TGP"
     }
    },
    "review": {
@@ -1785,6 +2319,11 @@
      "value": 240.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3050 8GB 參考 TGP（未標容量者取較高的 8GB 版）"
     }
    },
    "review": {
@@ -1806,6 +2345,11 @@
      "value": 225.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5050 參考 TGP"
     }
    },
    "review": {
@@ -1827,6 +2371,11 @@
      "value": 250.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -1848,6 +2397,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -1869,6 +2423,11 @@
      "value": 180.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -1890,6 +2449,11 @@
      "value": 250.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1911,6 +2475,11 @@
      "value": 250.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1932,6 +2501,11 @@
      "value": 250.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -1953,6 +2527,18 @@
      "value": 340.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1974,6 +2560,18 @@
      "value": 250.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -1995,6 +2593,18 @@
      "value": 250.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2016,6 +2626,18 @@
      "value": 340.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2037,6 +2659,18 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2058,6 +2692,18 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2079,6 +2725,18 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2104,6 +2762,11 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 30,
+     "source": "inferred",
+     "note": "NVIDIA GT 1030 GDDR5 版 30 W（DDR4 版較低）"
     }
    },
    "review": {
@@ -2125,6 +2788,11 @@
      "value": 150.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 30,
+     "source": "inferred",
+     "note": "NVIDIA GT 1030 GDDR5 版 30 W（DDR4 版較低）"
     }
    },
    "review": {
@@ -2150,6 +2818,11 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 19,
+     "source": "inferred",
+     "note": "NVIDIA GT 710 參考功耗"
     }
    },
    "review": {
@@ -2171,6 +2844,11 @@
      "value": 145.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 31,
+     "source": "inferred",
+     "note": "NVIDIA GT 210 參考功耗"
     }
    },
    "review": {
@@ -2192,6 +2870,11 @@
      "value": 145.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 49,
+     "source": "inferred",
+     "note": "NVIDIA GT 730 各版本最高 49 W"
     }
    },
    "review": {
@@ -2213,6 +2896,11 @@
      "value": 150.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 49,
+     "source": "inferred",
+     "note": "NVIDIA GT 730 各版本最高 49 W"
     }
    },
    "review": {
@@ -2234,6 +2922,11 @@
      "value": 210.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 70,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3050 6GB 參考 TGP"
     }
    },
    "review": {
@@ -2255,6 +2948,11 @@
      "value": 190.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 70,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3050 6GB 參考 TGP"
     }
    },
    "review": {
@@ -2276,6 +2974,11 @@
      "value": 235.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 170,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3060 12GB 參考 TGP"
     }
    },
    "review": {
@@ -2297,6 +3000,11 @@
      "value": 210.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5050 參考 TGP"
     }
    },
    "review": {
@@ -2318,6 +3026,11 @@
      "value": 150.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5050 參考 TGP"
     }
    },
    "review": {
@@ -2339,6 +3052,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5050 參考 TGP"
     }
    },
    "review": {
@@ -2360,6 +3078,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5050 參考 TGP"
     }
    },
    "review": {
@@ -2381,6 +3104,11 @@
      "value": 160.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -2402,6 +3130,11 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -2423,6 +3156,11 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -2444,6 +3182,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -2465,6 +3208,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -2486,6 +3234,11 @@
      "value": 200.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -2507,6 +3260,11 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -2528,6 +3286,11 @@
      "value": 160.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2549,6 +3312,11 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2570,6 +3338,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2591,6 +3364,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2612,6 +3390,11 @@
      "value": 160.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2633,6 +3416,11 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2654,6 +3442,11 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2675,6 +3468,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2696,6 +3494,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2717,6 +3520,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2738,6 +3546,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2759,6 +3572,11 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -2780,6 +3598,18 @@
      "value": 340.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2801,6 +3631,18 @@
      "value": 290.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2822,6 +3664,18 @@
      "value": 240.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2843,6 +3697,18 @@
      "value": 240.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2864,6 +3730,18 @@
      "value": 240.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2885,6 +3763,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2906,6 +3796,18 @@
      "value": 290.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 300,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 Ti 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2927,6 +3829,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 300,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 Ti 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2948,6 +3862,18 @@
      "value": 290.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2969,6 +3895,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -2990,6 +3928,11 @@
      "value": 240.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 170,
+     "source": "inferred",
+     "note": "AMD RX 7650 GRE 各來源 135–170 W，取最高值"
     }
    },
    "review": {
@@ -3011,6 +3954,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 160,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 16GB 參考 TBP（未標容量者取較高的 16GB 版）"
     }
    },
    "review": {
@@ -3032,6 +3980,11 @@
      "value": 330.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 150,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 8GB 參考 TBP"
     }
    },
    "review": {
@@ -3053,6 +4006,11 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 220,
+     "source": "inferred",
+     "note": "AMD RX 9070 GRE 參考 TBP"
     }
    },
    "review": {
@@ -3074,6 +4032,11 @@
      "value": 330.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 220,
+     "source": "inferred",
+     "note": "AMD RX 9070 GRE 參考 TBP"
     }
    },
    "review": {
@@ -3095,6 +4058,11 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
     }
    },
    "review": {
@@ -3116,6 +4084,11 @@
      "value": 360.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
     }
    },
    "review": {
@@ -3137,6 +4110,11 @@
      "value": 340.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
     }
    },
    "review": {
@@ -3158,6 +4136,11 @@
      "value": 350.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
     }
    },
    "review": {
@@ -3179,6 +4162,11 @@
      "value": 340.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
     }
    },
    "review": {
@@ -3206,6 +4194,11 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 160,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 16GB 參考 TBP（未標容量者取較高的 16GB 版）"
     }
    },
    "review": {
@@ -3222,7 +4215,13 @@
      "寶石氮動NITRO+RX9070XTCRIMSONDESERT"
     ]
    },
-   "specs": {},
+   "specs": {
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
+    }
+   },
    "review": {
     "status": "auto"
    }
@@ -3242,6 +4241,11 @@
      "value": 330.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
     }
    },
    "review": {
@@ -3258,7 +4262,13 @@
      "寶石氮動NITRO+RX9070XTOC16GBPHANTOMLINK"
     ]
    },
-   "specs": {},
+   "specs": {
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
+    }
+   },
    "review": {
     "status": "auto"
    }
@@ -3278,6 +4288,11 @@
      "value": 240.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 170,
+     "source": "inferred",
+     "note": "AMD RX 7650 GRE 各來源 135–170 W，取最高值"
     }
    },
    "review": {
@@ -3299,6 +4314,11 @@
      "value": 250.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 160,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 16GB 參考 TBP（未標容量者取較高的 16GB 版）"
     }
    },
    "review": {
@@ -3320,6 +4340,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 220,
+     "source": "inferred",
+     "note": "AMD RX 9070 GRE 參考 TBP"
     }
    },
    "review": {
@@ -3341,6 +4366,11 @@
      "value": 280.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 220,
+     "source": "inferred",
+     "note": "AMD RX 9070 GRE 參考 TBP"
     }
    },
    "review": {
@@ -3362,6 +4392,11 @@
      "value": 240.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 170,
+     "source": "inferred",
+     "note": "AMD RX 7650 GRE 各來源 135–170 W，取最高值"
     }
    },
    "review": {
@@ -3383,6 +4418,11 @@
      "value": 240.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 160,
+     "source": "inferred",
+     "note": "AMD RX 9060 XT 16GB 參考 TBP（未標容量者取較高的 16GB 版）"
     }
    },
    "review": {
@@ -3404,6 +4444,11 @@
      "value": 320.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 220,
+     "source": "inferred",
+     "note": "AMD RX 9070 GRE 參考 TBP"
     }
    },
    "review": {
@@ -3425,6 +4470,11 @@
      "value": 320.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
     }
    },
    "review": {
@@ -3446,6 +4496,11 @@
      "value": 210.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -3466,6 +4521,11 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 30,
+     "source": "inferred",
+     "note": "NVIDIA GT 1030 GDDR5 版 30 W（DDR4 版較低）"
     }
    },
    "review": {
@@ -3486,6 +4546,11 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 30,
+     "source": "inferred",
+     "note": "NVIDIA GT 1030 GDDR5 版 30 W（DDR4 版較低）"
     }
    },
    "review": {
@@ -3507,6 +4572,11 @@
      "value": 157.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 19,
+     "source": "inferred",
+     "note": "NVIDIA GT 710 參考功耗"
     }
    },
    "review": {
@@ -3528,6 +4598,11 @@
      "value": 146.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 19,
+     "source": "inferred",
+     "note": "NVIDIA GT 710 參考功耗"
     }
    },
    "review": {
@@ -3549,6 +4624,11 @@
      "value": 150.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 49,
+     "source": "inferred",
+     "note": "NVIDIA GT 730 各版本最高 49 W"
     }
    },
    "review": {
@@ -3574,6 +4654,11 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 70,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3050 6GB 參考 TGP"
     }
    },
    "review": {
@@ -3595,6 +4680,11 @@
      "value": 150.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 70,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3050 6GB 參考 TGP"
     }
    },
    "review": {
@@ -3616,6 +4706,11 @@
      "value": 160.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 70,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3050 6GB 參考 TGP"
     }
    },
    "review": {
@@ -3637,6 +4732,11 @@
      "value": 150.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3050 8GB 參考 TGP（未標容量者取較高的 8GB 版）"
     }
    },
    "review": {
@@ -3658,6 +4758,11 @@
      "value": 230.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 170,
+     "source": "inferred",
+     "note": "NVIDIA RTX 3060 12GB 參考 TGP"
     }
    },
    "review": {
@@ -3679,6 +4784,11 @@
      "value": 170.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5050 參考 TGP"
     }
    },
    "review": {
@@ -3700,6 +4810,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5050 參考 TGP"
     }
    },
    "review": {
@@ -3721,6 +4836,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 130,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5050 參考 TGP"
     }
    },
    "review": {
@@ -3742,6 +4862,11 @@
      "value": 240.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -3763,6 +4888,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -3788,6 +4918,11 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -3809,6 +4944,11 @@
      "value": 170.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -3830,6 +4970,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -3851,6 +4996,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -3872,6 +5022,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -3893,6 +5048,11 @@
      "value": 300.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -3920,6 +5080,11 @@
      "value": 220.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
@@ -3941,6 +5106,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -3962,6 +5139,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -3983,6 +5172,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -4004,6 +5205,18 @@
      "value": 240.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -4025,6 +5238,18 @@
      "value": 240.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 250,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -4046,6 +5271,18 @@
      "value": 360.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 300,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 Ti 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -4067,6 +5304,18 @@
      "value": 310.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {
@@ -4083,7 +5332,20 @@
      "ZOTACRTX5080SOLIDCOREOC20THANNIVERSARYEDITION"
     ]
    },
-   "specs": {},
+   "specs": {
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
+    }
+   },
    "review": {
     "status": "auto"
    }
@@ -4103,6 +5365,18 @@
      "value": 330.0,
      "source": "title",
      "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 360,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5080 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
     }
    },
    "review": {

@@ -1,0 +1,89 @@
+name: Deploy site
+
+# 建置前端並部署到 GitHub Pages。
+# - push 到 main（程式或規格庫變更）：建置並部署
+# - pull_request：只建置與測試，不部署
+# - workflow_call：daily-prices.yml 提交報價快照後呼叫。以 GITHUB_TOKEN 推送的提交
+#   不會觸發 push 事件，所以每日報價必須由這裡直接部署。
+# 需要先在 repo 的 Settings → Pages 把 Source 設為「GitHub Actions」。
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web/**'
+      - 'data/catalog/**'
+      - 'scripts/build_web_data.py'
+      - 'pipeline/**'
+      - 'schema/**'
+      - '.github/workflows/deploy.yml'
+  pull_request:
+    paths:
+      - 'web/**'
+      - 'scripts/build_web_data.py'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # 由 daily-prices 呼叫時，必須取用剛提交報價快照後的 main，而不是觸發當下的提交
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || 'main' }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+
+      - name: Validate catalog and prices
+        run: |
+          shopt -s nullglob
+          python schema/validate.py --catalog data/catalog/*.json --prices data/prices/*.json
+
+      - name: Build data for the frontend
+        run: python scripts/build_web_data.py
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install, test, build
+        working-directory: web
+        run: |
+          npm ci
+          npm test
+          npm run build
+
+      - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: web/dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    # 放在 job 層級：被 daily-prices 呼叫時也生效；不取消進行中的部署
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

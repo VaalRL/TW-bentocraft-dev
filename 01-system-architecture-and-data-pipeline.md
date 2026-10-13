@@ -118,7 +118,7 @@ flowchart TD
 
 ### 2. Workflow
 
-> **實作狀態（2026-10）**：[`.github/workflows/daily-prices.yml`](.github/workflows/daily-prices.yml) 已實作抓取、驗證、提交與失敗開 issue；建置與部署步驟等前端完成後加入。程式在 [`pipeline/`](pipeline/) 與 [`scripts/update_prices.py`](scripts/update_prices.py)；初始規格庫由手動觸發的 [`catalog-bootstrap.yml`](.github/workflows/catalog-bootstrap.yml) 產生並以 PR 送審。下方為完成後的目標樣貌。
+> **實作狀態（2026-10）**：[`.github/workflows/daily-prices.yml`](.github/workflows/daily-prices.yml) 已實作抓取、驗證、提交與失敗開 issue，提交後呼叫 [`deploy.yml`](.github/workflows/deploy.yml) 建置並部署網站（部署為獨立 job，失敗不影響報價提交）。程式在 [`pipeline/`](pipeline/) 與 [`scripts/update_prices.py`](scripts/update_prices.py)；初始規格庫由手動觸發的 [`catalog-bootstrap.yml`](.github/workflows/catalog-bootstrap.yml) 產生並以 PR 送審。下方為完成後的目標樣貌。
 
 ```yaml
 name: Daily price update

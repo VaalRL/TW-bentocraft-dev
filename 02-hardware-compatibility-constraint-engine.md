@@ -109,6 +109,8 @@ $$P_{\text{load}} = P_{\text{cpu}} + P_{\text{gpu}} + 50\,\text{W（主機板、
 $$P_{\text{recommended}} = \left\lceil \frac{P_{\text{load}} \times 1.25}{50} \right\rceil \times 50$$
 
 - $P_{\text{cpu}}$ 用 `cpu.max_power_w`（Intel PL2／AMD PPT），$P_{\text{gpu}}$ 用 `gpu.board_power_w`。**任一缺少時結果為 `unknown`**，不以預設值估算。
+- 未選顯卡，或顯卡是自帶電源的外接顯卡盒（`external`）時，$P_{\text{gpu}} = 0$。未選 CPU 時結果為 `unknown`。
+- 顯卡功耗多為依晶片參考值推定（見 [`07`](07-spec-catalog-schema.md) 第四節對照表），此時結果標為依推定規格，提醒非公版超頻卡可能更高。
 - `psu.wattage < P_load` → **不通過**（滿載超過額定輸出）。
 - `P_load ≤ psu.wattage < P_recommended` → **警告**（餘量偏低）。
 - 其餘通過。這是穩態估算；顯卡瞬間尖峰另由 ATX 3.x 規範處理，不在此計算。

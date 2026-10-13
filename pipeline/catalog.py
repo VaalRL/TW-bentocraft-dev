@@ -13,6 +13,7 @@ from pipeline.extract import (
     extract_case_cooler_clearance, extract_case_gpu_clearance, extract_memory_type, extract_socket, model_key,
     split_combo,
 )
+from pipeline.reference import apply_reference, load_reference
 
 # 品牌：品名開頭字樣 → (顯示名稱, ID 用代號)。未列出的英文品牌直接用小寫代號。
 BRANDS = {
@@ -356,6 +357,7 @@ def new_models(items: list[dict], shards: dict[str, dict]) -> tuple[dict[str, di
 
     既有型號一律不修改：規格庫是人工審查的資料，自動流程只能新增。
     同一型號多列的規格值不一致時，型號標為 draft 並記錄衝突，留待人工判斷。
+    品名沒有的功耗等欄位，以對照表（pipeline/reference.py）補上。
     回傳 ({類別: {型號 ID: 型號}}, 統計)。
     """
     index = CatalogIndex(shards)
@@ -393,6 +395,10 @@ def new_models(items: list[dict], shards: dict[str, dict]) -> tuple[dict[str, di
             elif current["value"] != value["value"]:
                 conflicts.append(f"{mid} {field}: {current['value']} vs {value['value']}")
                 model["review"] = {"status": "draft"}
+    reference = load_reference()
+    for models in created.values():
+        for model in models.values():
+            apply_reference(model, reference)
     stats = {"models_created": sum(len(m) for m in created.values()), "id_collisions": collisions,
              "spec_conflicts": len(conflicts), "conflicts": conflicts}
     return created, stats
