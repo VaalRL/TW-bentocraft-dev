@@ -189,6 +189,7 @@ class UpdatePricesTest(unittest.TestCase):
             code, gh = self.run_main(page(repeat=2), out)
             self.assertEqual(code, 0)
             self.assertIn("crawl_ok=true", gh)
+            self.assertIn("match_warning=報價對應到規格庫的比例偏低", gh)  # 測試用的規格庫是空的
             first = json.loads(out.read_text())
             self.assertEqual(first["status"], "ok")
             self.assertEqual(schema_errors(PRICES_VALIDATOR, first), [])
@@ -219,6 +220,15 @@ class UpdatePricesTest(unittest.TestCase):
             write_prices(out, doc)
             self.assertEqual(json.loads(out.read_text()), doc)
             self.assertEqual(sum('"offer_id"' in line for line in out.read_text().splitlines()), 2)
+
+    def test_match_warning(self):
+        ok = {"cpu": {"offers": 30, "matched": 30}, "gpu": {"offers": 200, "matched": 196}}
+        self.assertEqual(update_prices.match_warning(ok), "")
+        low_cat = {"cpu": {"offers": 30, "matched": 20}, "gpu": {"offers": 400, "matched": 400}}
+        self.assertIn("cpu 67%", update_prices.match_warning(low_cat))
+        small = {"cpu": {"offers": 5, "matched": 2}, "gpu": {"offers": 400, "matched": 400}}
+        self.assertEqual(update_prices.match_warning(small), "")  # 列數太少的類別不單獨判斷
+        self.assertIn("整體", update_prices.match_warning({"gpu": {"offers": 100, "matched": 50}}))
 
     def test_robots(self):
         self.assertTrue(update_prices.robots_allows(b"User-agent: Googlebot\nDisallow: /book/\n"))
