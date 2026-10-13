@@ -7782,54 +7782,14 @@
     }
    }
   },
-  "case:fractal-design:north-chalk": {
+  "case:fractal-design:north": {
    "category": "case",
    "brand": "Fractal Design",
-   "name": "North Chalk",
+   "name": "North",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "FRACTALDESIGNNORTHCHALK"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 355.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 170.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "white": {
-     "label": "白",
-     "color": "white"
-    }
-   }
-  },
-  "case:fractal-design:north-charcoal": {
-   "category": "case",
-   "brand": "Fractal Design",
-   "name": "North Charcoal",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "FRACTALDESIGNNORTHCHALK",
      "FRACTALDESIGNNORTHCHARCOAL"
     ]
    },
@@ -7858,8 +7818,12 @@
     "status": "auto"
    },
    "variants": {
-    "black": {
-     "label": "黑",
+    "chalk": {
+     "label": "Chalk 白",
+     "color": "white"
+    },
+    "charcoal": {
+     "label": "Charcoal 黑",
      "color": "black"
     }
    }
@@ -7899,54 +7863,14 @@
     "status": "auto"
    }
   },
-  "case:fractal-design:north-xl-chalk": {
+  "case:fractal-design:north-xl": {
    "category": "case",
    "brand": "Fractal Design",
-   "name": "North XL Chalk",
+   "name": "North XL",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "FRACTALDESIGNNORTHXLCHALK"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "E-ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 413.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 185.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "white": {
-     "label": "白",
-     "color": "white"
-    }
-   }
-  },
-  "case:fractal-design:north-xl-charcoal": {
-   "category": "case",
-   "brand": "Fractal Design",
-   "name": "North XL Charcoal",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "FRACTALDESIGNNORTHXLCHALK",
      "FRACTALDESIGNNORTHXLCHARCOAL"
     ]
    },
@@ -7975,8 +7899,12 @@
     "status": "auto"
    },
    "variants": {
-    "black": {
-     "label": "黑",
+    "chalk": {
+     "label": "Chalk 白",
+     "color": "white"
+    },
+    "charcoal": {
+     "label": "Charcoal 黑",
      "color": "black"
     }
    }
@@ -8016,58 +7944,14 @@
     "status": "auto"
    }
   },
-  "case:fractal-design:north-xl-rc-chalk": {
+  "case:fractal-design:north-xl-rc": {
    "category": "case",
    "brand": "Fractal Design",
-   "name": "North XL RC Chalk",
+   "name": "North XL RC",
    "status": "active",
    "aliases": {
     "model_keys": [
-     "FRACTALDESIGNNORTHXLRCCHALK"
-    ]
-   },
-   "specs": {
-    "max_mb_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "gpu_clearance_mm": {
-     "value": 413.0,
-     "source": "title"
-    },
-    "cooler_clearance_mm": {
-     "value": 169.0,
-     "source": "title"
-    },
-    "psu_form_factors": {
-     "value": [
-      "ATX"
-     ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "back_connect_max_form_factor": {
-     "value": "ATX",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   },
-   "variants": {
-    "white": {
-     "label": "白",
-     "color": "white"
-    }
-   }
-  },
-  "case:fractal-design:north-xl-rc-charcoal": {
-   "category": "case",
-   "brand": "Fractal Design",
-   "name": "North XL RC Charcoal",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "FRACTALDESIGNNORTHXLRCCHALK",
      "FRACTALDESIGNNORTHXLRCCHARCOAL"
     ]
    },
@@ -8100,8 +7984,12 @@
     "status": "auto"
    },
    "variants": {
-    "black": {
-     "label": "黑",
+    "chalk": {
+     "label": "Chalk 白",
+     "color": "white"
+    },
+    "charcoal": {
+     "label": "Charcoal 黑",
      "color": "black"
     }
    }
