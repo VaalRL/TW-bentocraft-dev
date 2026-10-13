@@ -58,6 +58,7 @@ test.describe('桌面版配單', () => {
     await expect(page.locator('.summary-total')).not.toContainText('任搭折抵');
     await pick(page, '處理器', 'R7 9800X3D');
     await expect(page.locator('.summary-total')).toContainText('-$200');
+    await expect(page.locator('.summary-items')).toContainText('此價格為「黑」款');
   });
 
   test('分享連結可還原配單，舊 ID 經轉址還原', async ({ page, context }) => {

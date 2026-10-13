@@ -6,7 +6,8 @@
 
 抓取失敗或解析結果異常時，保留上次成功的報價列並把 status 改為 stale（fetched_at 不變）；
 只有連上次的快照都沒有時才以非零碼結束。結果寫入 GITHUB_OUTPUT 的 crawl_ok、reason，
-供 workflow 決定是否開 issue。
+供 workflow 決定是否開 issue。抓取成功但對應到規格庫的比例明顯偏低時（頁面改版或規格庫久未新增型號），
+報價照常寫出，另以 match_warning 回報。
 """
 from __future__ import annotations
 
@@ -26,6 +27,26 @@ from pipeline.prices import build_offers, write_prices  # noqa: E402
 
 MIN_ITEMS = 500          # PoC 實測約 2,300 列；低於此數視為頁面改版或抓到錯誤頁
 MIN_RATIO_OF_PREVIOUS = 0.7
+# 對應率監測（01 第三節之 3 第 4 點）：新型號每週由 bootstrap 補進規格庫，平常未對應的列應很少
+MIN_MATCH_RATIO = 0.9            # 整體
+MIN_CATEGORY_MATCH_RATIO = 0.8   # 單一類別（報價列至少 MIN_CATEGORY_ROWS 列才檢查）
+MIN_CATEGORY_ROWS = 20
+
+
+def match_warning(stats: dict) -> str:
+    """對應率偏低時回傳說明，否則回傳空字串。"""
+    total = sum(c["offers"] for c in stats.values())
+    matched = sum(c.get("matched", 0) for c in stats.values())
+    problems = []
+    if total and matched / total < MIN_MATCH_RATIO:
+        problems.append(f"整體 {matched / total:.0%}")
+    for cat, c in stats.items():
+        ratio = c.get("matched", 0) / c["offers"]
+        if c["offers"] >= MIN_CATEGORY_ROWS and ratio < MIN_CATEGORY_MATCH_RATIO:
+            problems.append(f"{cat} {ratio:.0%}")
+    if not problems:
+        return ""
+    return "報價對應到規格庫的比例偏低：" + "、".join(problems) + "。可能是頁面改版，或規格庫需要新增型號（catalog-bootstrap）"
 
 
 def now_iso() -> str:
@@ -124,11 +145,14 @@ def main() -> int:
         "offers": offers,
     }
     write_prices(args.out, doc)
-    set_output(crawl_ok="true", reason="")
+    warning = match_warning(stats)
+    set_output(crawl_ok="true", reason="", match_warning=warning)
     rows = ["## 報價更新成功", "", f"抓取時間：{attempt}，共 {len(offers)} 列", "",
             "| 類別 | 報價列 | 對應到規格庫 |", "| :-- | --: | --: |"]
     for cat, c in stats.items():
         rows.append(f"| {cat} | {c['offers']} | {c.get('matched', 0) / c['offers']:.0%} |")
+    if warning:
+        rows += ["", f"**注意**：{warning}"]
     summary(rows)
     return 0
 

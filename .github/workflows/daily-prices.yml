@@ -77,6 +77,23 @@ jobs:
             gh issue comment "$existing" --body "$(date -u +%F) 仍失敗：${REASON:-workflow 步驟失敗}（${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}）"
           fi
 
+      - name: Open issue when matching to the catalog drops
+        if: steps.crawl.outputs.match_warning != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WARNING: ${{ steps.crawl.outputs.match_warning }}
+        run: |
+          gh label create price-matching --color fbca04 --description "報價對應規格庫的比例偏低" 2>/dev/null || true
+          existing=$(gh issue list --label price-matching --state open --json number --jq '.[0].number')
+          run_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if [ -z "$existing" ]; then
+            gh issue create --label price-matching --title "報價對應率偏低 $(date -u +%F)" --body "${WARNING}
+
+          執行紀錄：${run_url}"
+          else
+            gh issue comment "$existing" --body "$(date -u +%F) 仍偏低：${WARNING}（${run_url}）"
+          fi
+
   deploy:
     needs: update
     uses: ./.github/workflows/deploy.yml
