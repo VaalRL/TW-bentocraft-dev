@@ -70,6 +70,11 @@ jobs:
           python scripts/update_prices.py --html "$RUNNER_TEMP/page.html" --out "$RUNNER_TEMP/prices.json"
           python schema/validate.py --catalog data/catalog/*.json --prices "$RUNNER_TEMP/prices.json"
 
+      # 規格完整度（Validate 已用新規格庫重新對應報價，所以含本次新增的型號）：每週一份，指出哪些欄位最值得補資料
+      - name: Spec coverage report
+        if: steps.open.outputs.pr == ''
+        run: python scripts/catalog_coverage.py --prices "$RUNNER_TEMP/prices.json" | tee "$RUNNER_TEMP/coverage.md" >> "$GITHUB_STEP_SUMMARY"
+
       - name: Push branch and open PR
         if: steps.add.outputs.changed == 'true'
         run: |
@@ -88,6 +93,8 @@ jobs:
             echo '```'
             echo
             echo "審查重點：型號 ID 與名稱、標為 draft 的規格衝突、推定（inferred）的欄位。"
+            echo
+            cat "$RUNNER_TEMP/coverage.md"
             echo "此 PR 由 GitHub Actions 建立，不會自動觸發其他 CI；schema 驗證已在本流程通過。"
             echo
             echo "執行紀錄：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

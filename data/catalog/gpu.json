@@ -48,6 +48,16 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://store.acer.com/zh-tw/acer-an-rx9070xt-oc",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -100,6 +110,15 @@
      "value": 220,
      "source": "inferred",
      "note": "AMD RX 9070 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://computerorbit.com/products/asrock-rx-9070-challenger-16gb-graphics-card",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -126,6 +145,15 @@
      "value": 220,
      "source": "inferred",
      "note": "AMD RX 9070 GRE 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://computerorbit.com/products/asrock-rx-9070-gre-steel-legend-dark-12gb-graphics-card",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -204,6 +232,15 @@
      "value": 220,
      "source": "inferred",
      "note": "AMD RX 9070 GRE 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/tw/motherboards-components/graphics-cards/asus/ats-rx9070gre-o12g/techspec/",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -634,6 +671,15 @@
      "value": 220,
      "source": "inferred",
      "note": "AMD RX 9070 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/de/motherboards-components/graphics-cards/prime/prime-rx9070-o16g-evo/techspec/",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -691,8 +737,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "retailer_spec",
+     "ref": "https://netcodex.ph/product/asus-t1-geforce-rtx-5070-oc-edition-12gb-gddr7-192-bit-sff-ready-graphics-card-t1-rtx5070-o12g-gaming/",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -827,8 +874,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Graphics-Card/GV-N5070AORUS-IF-12GD/sp",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -860,8 +908,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Graphics-Card/GV-N5070AORUS-M-12GD/sp",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -921,6 +970,16 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/in/Graphics-Card/GV-R9070XTAORUS-E-16GD/sp",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -1698,8 +1757,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Graphics-Card/GV-N5070AERO-12GD/sp",
+     "note": "原廠頁面為非 OC 版，OC 版零售商資料相同；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -1731,8 +1791,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Graphics-Card/GV-N5070EAGLEOC-ICE-12GD/sp",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -1764,8 +1825,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Graphics-Card/GV-N5070EAGLE-OC-12GD/sp",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -1797,8 +1859,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Graphics-Card/GV-N5070GAMING-OC-12GD/sp",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -1830,8 +1893,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/in/Graphics-Card/GV-N5070WF3OC-12GD/sp",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -2193,6 +2257,15 @@
      "value": 220,
      "source": "inferred",
      "note": "AMD RX 9070 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Graphics-Card/GV-R9070GAMING-OC-16GD/sp",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -2219,6 +2292,15 @@
      "value": 220,
      "source": "inferred",
      "note": "AMD RX 9070 GRE 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/es/Graphics-Card/GV-R907GREGAMING-OC-12GD/sp",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -2245,6 +2327,16 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://store.datek.co.uk/gigabyte-radeon-rx-9070-xt-gaming-oc-ice-16g-graphics-card-gv-r907xgamingocice-16gd",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -2622,8 +2714,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "retailer_spec",
+     "ref": "https://www.hardwaredealz.com/hardware/gpu/inno3d-geforce-rtx-5070-ichill-x3/preisvergleich.33594",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -2655,8 +2748,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "retailer_spec",
+     "ref": "https://www.cclonline.com/n50702-12d7x-195064n-inno3d-geforce-rtx-5070-twin-x2-oc-12gb-gddr7-graphics-card-483565/",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -2688,8 +2782,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "retailer_spec",
+     "ref": "https://www.coolblue.nl/en/product/962345/inno3d-geforce-rtx-5070-twin-x2-oc-white-12gb.html",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -3591,8 +3686,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "retailer_spec",
+     "ref": "https://www.guru3d.com/review/msi-geforce-rtx-5070-trio-oc-review/",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -3624,8 +3720,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://storage-asset.msi.com/datasheet/vga/uk/GeForce-RTX-5070-12G-INSPIRE-3X.pdf",
+     "note": "原廠規格書為非 OC 版，OC 版零售商資料相同；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3657,8 +3754,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://storage-asset.msi.com/datasheet/vga/uk/GeForce-RTX-5070-12G-SHADOW-2X-OC.pdf",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3691,8 +3789,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Graphics-Card/GeForce-RTX-5070-12G-VENTUS-2X-OC/Specification",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3730,8 +3829,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://tw.msi.com/Graphics-Card/GeForce-RTX-5070-12G-VENTUS-3X-OC/Specification",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3968,6 +4068,15 @@
      "value": 220,
      "source": "inferred",
      "note": "AMD RX 9070 GRE 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.paradigit.ie/powercolor-reaper-amd-radeon-rx-9070-gre-12gb-gddr6/21973337/product",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -3994,6 +4103,15 @@
      "value": 220,
      "source": "inferred",
      "note": "AMD RX 9070 GRE 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.paradigit.ie/powercolor-hellhound-amd-radeon-rx-9070-gre-12gb-gddr6/21973336/product",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -4020,6 +4138,15 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.microcenter.com/quickView/689903/powercolor-amd-radeon-rx-9070-xt-reaper-triple-fan-16gb-gddr6-pcie-50-graphics-card",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -4046,6 +4173,16 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.kitguru.net/components/graphic-cards/dominic-moass/powercolor-rx-9070-xt-red-devil-review/",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -4073,6 +4210,15 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.jib.co.th/web/product/readProduct/74922/",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -4105,6 +4251,15 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://pangoly.com/en/product/powercolor-hellhound-radeon-rx-9070-xt-16gb-gddr6-reva-edition",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -4152,6 +4307,14 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.club386.com/sapphire-launches-the-nitro-rx-9070-xt-crimson-desert-edition-featuring-a-cool-custom-backplate-and-fan-hubs/",
+     "note": "與 NITRO+ RX 9070 XT 相同板卡，僅外觀不同；取自零售商或評測頁面"
     }
    },
    "review": {
@@ -4178,6 +4341,14 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.club386.com/sapphire-unleashes-its-rx-9070-series-featuring-a-12v-2x6-connector",
+     "note": "附 3×8-pin 轉 12V-2x6 轉接線；取自零售商或評測頁面"
     }
    },
    "review": {
@@ -4303,6 +4474,15 @@
      "value": 220,
      "source": "inferred",
      "note": "AMD RX 9070 GRE 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.pbtech.co.nz/product/VGASAP390700/Sapphire-PULSE-AMD-Radeon-RX-9070-GRE-Gaming-OC-12",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -4407,6 +4587,15 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
+    },
+    "power_connectors": {
+     "value": [
+      "8-pin",
+      "8-pin"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.galaxus.de/en/s1/product/sapphire-pure-radeon-rx-9070-xt-gaming-oc-16-gb-gddr6-graphics-card-55629519",
+     "note": "取自零售商或評測頁面"
     }
    },
    "review": {
@@ -5022,8 +5211,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.zotac.com/tw/product/graphics_card/zotac-gaming-geforce-rtx-5070-amp-white-edition",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -5055,8 +5245,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.zotac.com/de/product/graphics_card/zotac-gaming-geforce-rtx-5070-solid-0",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -5088,8 +5279,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.zotac.com/de/product/graphics_card/zotac-gaming-geforce-rtx-5070-solid-oc-0",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -5121,8 +5313,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.zotac.com/product/graphics_card/zotac-gaming-geforce-rtx-5070-twin-edge",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -5154,8 +5347,9 @@
      "value": [
       "12V-2x6"
      ],
-     "source": "inferred",
-     "note": "RTX 5070 以上使用 12V-2x6"
+     "source": "vendor_spec",
+     "ref": "https://www.zotac.com/hk/product/graphics_card/zotac-gaming-geforce-rtx-5070-twin-edge-oc",
+     "note": "取自原廠頁面搜尋摘錄"
     }
    },
    "review": {

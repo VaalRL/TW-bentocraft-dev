@@ -173,7 +173,7 @@ erDiagram
 | `price_condition` | `~組裝價~` → `assembly`；`【任搭主機板】` → `requires_category`；`*任搭優惠價`、`任搭價` → `unspecified` | 現價**附帶購買條件** |
 | `gift` | `*送 全漢 650W(金牌)` | 贈品；可再對應到型號 |
 | `valid_until` | `▼下殺到 10/31 20:00` | 限時價截止時間（+08:00） |
-| `items[]` | 組合列拆出的零件 | `role`: `main`／`psu`／`aio`／`fans`／`cpu`／`ram`；未對應時 `match: unmatched` 並保留原文 |
+| `items[]` | 組合列拆出的零件 | `role`: `main`／`psu`／`aio`／`fans`／`cpu`／`ram`；未對應時 `match: unmatched` 並保留原文。附件（電源、水冷等）的品名常少了品牌或多了規格字樣，以放寬的型號鍵比對（`CatalogIndex.lookup_part`），對應到時記錄 `model_id` 並保留原文 |
 
 **`offer_id`**：實測原價屋 option value 在 2,320 列中有 370 個重複，不能直接當 ID。目前以正規化品名的雜湊為主，跨日穩定性待每日排程驗證。
 

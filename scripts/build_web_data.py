@@ -16,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from pipeline.catalog import load_catalog  # noqa: E402
+from pipeline.prices import strip_part_promo  # noqa: E402
 
 REVIEW = {"auto": "a", "verified": "v", "draft": "d"}
 
@@ -52,13 +53,14 @@ def build_catalog(shards: dict[str, dict]) -> dict:
     return {"models": dict(sorted(models.items())), "redirects": redirects}
 
 
-def build_prices(doc: dict | None, model_ids: set[str]) -> dict:
+def build_prices(doc: dict | None, models: dict[str, dict]) -> dict:
+    """models：build_catalog 產生的精簡型號（含品牌 b、名稱 n），用於組合附件的顯示名稱。"""
     if doc is None:
         return {"fetched_at": None, "status": "missing", "vendor": "coolpc", "offers": []}
     offers = []
     for o in doc["offers"]:
         main = o["items"][0]
-        if main.get("model_id") not in model_ids:
+        if main.get("model_id") not in models:
             continue
         row: dict = {"m": main["model_id"], "p": o["price"]}
         if main.get("variant"):
@@ -71,7 +73,9 @@ def build_prices(doc: dict | None, model_ids: set[str]) -> dict:
             row["c"] = {"t": cond["type"], **({"q": cond["requires"]} if cond.get("requires") else {})}
         if o.get("gift"):
             row["g"] = o["gift"]["text"]
-        extras = [i.get("text", i.get("model_id", "")) for i in o["items"][1:]]
+        # 對應到規格庫的附件顯示型號名稱，否則顯示去掉「現省」等促銷字樣的原文
+        extras = [f"{models[i['model_id']]['b']} {models[i['model_id']]['n']}" if i.get("model_id") in models
+                  else strip_part_promo(i.get("text", i.get("model_id", ""))) for i in o["items"][1:]]
         if extras:
             row["x"] = extras
         offers.append(row)
@@ -87,7 +91,7 @@ def main() -> int:
 
     catalog = build_catalog(load_catalog(args.catalog_dir))
     prices_doc = json.loads(args.prices.read_text(encoding="utf-8")) if args.prices.exists() else None
-    prices = build_prices(prices_doc, set(catalog["models"]))
+    prices = build_prices(prices_doc, catalog["models"])
 
     args.out.mkdir(parents=True, exist_ok=True)
     for name, doc in (("catalog.min.json", catalog), ("prices.min.json", prices)):

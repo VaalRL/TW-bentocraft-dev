@@ -80,6 +80,10 @@ ID 格式為 `<類別>:<品牌>:<型號>`，例如 `gpu:msi:rtx5080-16g-ventus-3
 
 確認時把核對過的欄位來源改為 `vendor_spec` 並附 `ref`。`verified` 的型號不會再被對照表或自動流程補值，之後的修改都要人工 PR。
 
+## 規格完整度
+
+`python scripts/catalog_coverage.py` 列出有報價的型號中，相容性檢查用到的欄位填了多少；`--missing case.radiator_support` 列出缺某個欄位的型號。缺少的欄位會讓對應的檢查顯示「未確認」，想補資料時從缺最多、影響最大的欄位開始。每週的新增型號 PR 會附上這份報告。
+
 ## 對照表（`data/reference/specs.json`）
 
 品名不寫、但由型號決定的值放在這裡，例如 CPU 功耗、顯卡晶片的參考功耗與接頭。
