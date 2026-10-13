@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { estimateLoad, recommendedWattage } from '../engine/constraints';
 import { selectionChecks, worst } from '../engine/engine';
 import { priceSelection } from '../engine/pricing';
+import { FitDiagram } from './FitDiagram';
 import { CATEGORIES, type Category, type Offer, type PricesData, type Selection, type Status } from '../engine/types';
 import { CATEGORY_LABEL, STATUS_LABEL, checkText, copyText, formatDate, formatPrice, modelName } from './format';
 
@@ -37,7 +38,8 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
 }) {
   const [copied, setCopied] = useState<string | null>(null);
   const priced = priceSelection(selection, offers, { assembly });
-  const checks = selectionChecks(selection).filter(c => c.status !== 'pass');
+  const allChecks = selectionChecks(selection);
+  const checks = allChecks.filter(c => c.status !== 'pass');
   const overall = worst(checks);
   const picked = CATEGORIES.filter(c => selection[c]);
 
@@ -107,6 +109,8 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
           </label>
         </div>
       )}
+
+      <FitDiagram selection={selection} checks={allChecks} />
 
       {picked.length > 0 && (
         <div className="summary-checks">

@@ -167,6 +167,11 @@ def specs_for(item: dict) -> dict:
             s["cooler_included"] = val(True, "title")
         elif "無風扇" in text:
             s["cooler_included"] = val(False, "title")
+        elif "盒裝" in text and re.search(r"Intel", text, re.I) and not re.search(r"\d{3,5}KF?(?![A-Za-z0-9])", text):
+            # 原價屋的 Intel 盒裝非 K 系列附原廠散熱器（K 系列另標「無風扇」）
+            s["cooler_included"] = val(True, "title", note="品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器")
+        elif "盒" in text and re.search(r"\d{4}G(?![A-Za-z0-9])", text):
+            s["cooler_included"] = val(True, "title", note="品名標盒裝；AMD G 系列盒裝附 Wraith 散熱器")
         m = re.search(r"(?<![\d.])(\d{2,3})\s?[Ww](?![a-z])", text)
         if m:
             s["tdp_w"] = val(int(m.group(1)), "title")
@@ -264,6 +269,9 @@ def specs_for(item: dict) -> dict:
         m = re.search(r"ATX\s?(3(?:\.\d)?)", text)
         if m:
             s["atx_version"] = val(m.group(1), "title")
+        if re.search(r"PCIe\s?5\.[01]", text, re.I):
+            # PCIe CEM 5.x 定義原生 12VHPWR／12V-2x6 接頭；品名不寫數量，記為至少 1
+            s["pcie_12v2x6"] = val(1, "title", note="品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示")
     elif cat == "ssd":
         g = item.get("group", "")
         m = re.search(r"PCIe\s?([345])\.0", g)

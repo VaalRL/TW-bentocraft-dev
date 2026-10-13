@@ -125,6 +125,7 @@ python -m unittest discover -s tests -t .
 python scripts/build_web_data.py     # 產生 web/public/data/（規格庫與報價的前端精簡版）
 cd web && npm install && npm run dev  # http://localhost:5173
 npm test                              # 約束引擎測試
+npm run build && npm run test:e2e    # 瀏覽器端對端測試（Playwright，使用固定資料）
 ```
 
 ### 4. 抓取原價屋並更新報價快照（需能連到 coolpc.com.tw）
@@ -132,6 +133,9 @@ npm test                              # 約束引擎測試
 python scripts/update_prices.py --out data/prices/coolpc.json --save-html page.html
 python scripts/bootstrap_catalog.py --html page.html   # 新增規格庫中沒有的型號（以 PR 送審）
 ```
+
+### 5. 參與規格庫維護
+新型號每週一由自動流程開 PR。審查方式、ID 命名、規格衝突處理與標為已確認的條件，見 [`CONTRIBUTING.md`](CONTRIBUTING.md)。
 
 ---
 

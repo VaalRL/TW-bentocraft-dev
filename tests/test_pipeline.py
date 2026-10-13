@@ -18,7 +18,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "schema"))
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from pipeline.catalog import CatalogIndex, main_text, new_models, price_fields, split_name  # noqa: E402
+from pipeline.catalog import CatalogIndex, main_text, new_models, price_fields, specs_for, split_name  # noqa: E402
 from pipeline.coolpc import parse_items  # noqa: E402
 from pipeline.prices import build_offers, offer_id, write_prices  # noqa: E402
 import update_prices  # noqa: E402
@@ -72,6 +72,27 @@ class TitleQuirksTest(unittest.TestCase):
         text = "裝機價｛華碩 PRIME B850M-A｝M-ATX, $3990 ◆ ★"
         self.assertTrue(main_text({"text": text}).startswith("｛華碩"))
         self.assertEqual(price_fields({"text": text, "price": 3990}, 2026)["price_condition"], {"type": "assembly"})
+
+
+class TitleSpecsTest(unittest.TestCase):
+    """2026-10-13 估價頁的 CPU、電源品名寫法。"""
+
+    def cooler(self, text):
+        return specs_for({"category": "cpu", "text": text}).get("cooler_included", {}).get("value")
+
+    def test_boxed_cpu_cooler(self):
+        self.assertIs(self.cooler("｛Intel i5-14400F｝【10核/16緒】2.5GHz(↑4.7G) /20M /無內顯 /65W 【代理盒裝】, $6250"), True)
+        self.assertIs(self.cooler("｛Intel Core Ultra 5 225｝【10核】3.3G(↑4.9G) /20M /內顯Xe-core【代理盒裝】, $5800"), True)
+        self.assertIs(self.cooler("｛Intel Core Ultra 7 265K｝【20核】3.9G /30M /無風扇【代理盒裝】, $10300"), False)
+        self.assertIs(self.cooler("｛AMD R5 3400G｝代理盒裝【4核/8緒】3.7G(↑4.2G)65W, $2099"), True)
+        self.assertIsNone(self.cooler("｛AMD R5 9600X｝代理盒裝【6核/12緒】3.9G(↑5.4G)65W, $8150"))  # 由對照表補「不附」
+        self.assertIsNone(self.cooler("｛Intel i5-14400｝【10核/16緒】2.5GHz /20M /UHD730 /65W, $7250"))  # 沒寫盒裝不猜
+
+    def test_psu_native_12v2x6(self):
+        spec = specs_for({"category": "psu", "text": "｛COUGAR GR 750W｝雙8/金牌/全模組/ATX3.1(PCIe 5.1)/5年保"})
+        self.assertEqual(spec["pcie_12v2x6"]["value"], 1)
+        spec = specs_for({"category": "psu", "text": "｛台達 650W 金牌｝雙8/全模組/DC-DC/10年保固"})
+        self.assertNotIn("pcie_12v2x6", spec)  # 沒寫不代表沒有，留空
 
 
 class OfferIdTest(unittest.TestCase):

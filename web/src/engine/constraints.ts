@@ -123,9 +123,13 @@ export const PAIR_CONSTRAINTS: PairConstraint[] = [
       const ff = spec<string>(p, 'form_factor'), allowed = spec<string[]>(c, 'psu_form_factors');
       if (!ff || !allowed) return result('C9', 'unknown', '電源規格未確認');
       const inferred = ff.inferred || allowed.inferred;
-      return allowed.value.includes(ff.value)
-        ? result('C9', 'pass', '', inferred)
-        : result('C9', 'fail', `機殼只能裝 ${allowed.value.join('／')} 電源，這是 ${ff.value}`, inferred);
+      if (allowed.value.includes(ff.value)) return result('C9', 'pass', '', inferred);
+      // SFX 系列比 ATX 小：裝進 ATX 電源位要轉接架；SFX-L 比 SFX 長，SFX 電源位不一定放得下
+      if (ff.value.startsWith('SFX') && allowed.value.includes('ATX'))
+        return result('C9', 'warn', `${ff.value} 電源裝入 ATX 電源位需要轉接架（部分電源有附）`, inferred);
+      if (ff.value === 'SFX-L' && allowed.value.includes('SFX'))
+        return result('C9', 'warn', 'SFX-L 比 SFX 長約 30 mm，請確認機殼的電源位放得下', inferred);
+      return result('C9', 'fail', `機殼只能裝 ${allowed.value.join('／')} 電源，這是 ${ff.value}`, inferred);
     },
   },
   {

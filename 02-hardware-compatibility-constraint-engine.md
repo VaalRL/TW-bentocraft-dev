@@ -123,6 +123,7 @@ $$P_{\text{recommended}} = \left\lceil \frac{P_{\text{load}} \times 1.25}{50} \r
 
 ### C9. 電源 ⟷ 機殼：電源規格（新增）
 - **不通過**：`psu.form_factor` 不在 `case.psu_form_factors` 中。例：聯力 A4-H2O 只能裝 SFX，配 ATX 電源不通過。
+- **警告**：SFX／SFX-L 電源配只列 ATX 的機殼（需要轉接架，部分電源有附）；SFX-L 電源配只列 SFX 的機殼（長約 30 mm，不一定放得下）。
 - PoC 發現 ITX 機殼品名常標 `【SFX】`；未標示時規格庫標為推定值（`source: inferred`），結果照常計算但在 UI 註明「推定」。
 
 ### C10. CPU 無內顯且未選顯示卡（新增）

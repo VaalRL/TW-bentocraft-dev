@@ -172,6 +172,19 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 .copied { font-size: 0.8rem; color: var(--status-ok); }
 .mobile-bar { display: none; }
 
+/* ── 尺寸比例圖 ───────────────────────────── */
+.fit { display: flex; flex-direction: column; gap: 0.6rem; }
+.fit h3 { margin: 0; font-size: 1rem; }
+.fit-row { display: flex; flex-direction: column; gap: 0.2rem; }
+.fit-head { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; font-weight: 600; }
+.fit-ruler { width: 100%; height: auto; display: block; overflow: visible; }
+.fit-space { fill: var(--bg-muted); stroke: var(--border); stroke-width: 1; }
+.fit-tolerance { fill: var(--bg-surface); opacity: 0.55; }
+.fit-limit { stroke: var(--text-primary); stroke-width: 2; }
+.fit-condition { stroke: var(--text-primary); stroke-width: 1.5; stroke-dasharray: 3 2; }
+.fit-tick { font-size: 9px; fill: var(--text-muted); font-variant-numeric: tabular-nums; }
+.fit-caption { margin: 0; font-size: 0.78rem; color: var(--text-primary); }
+
 .footer { padding: 1.5rem 1rem 5rem; text-align: center; font-size: 0.8rem; color: var(--text-muted); }
 .footer a { margin-left: 0.5rem; }
 
