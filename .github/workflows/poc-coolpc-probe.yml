@@ -57,29 +57,6 @@ jobs:
           cat poc/out/report.md >> "$GITHUB_STEP_SUMMARY"
           exit $code
 
-      # 暫時：找出散熱器【WXZ】扣具代碼的圖例
-      - name: Look for the cooler mount-code legend
-        run: |
-          python - <<'PY'
-          import re, sys
-          sys.path.insert(0, '.')
-          from pipeline.coolpc import decode_html
-          html, _ = decode_html(open('poc/out/evaluate.html', 'rb').read(), None)
-          text = re.sub(r'<[^>]+>', ' ', html)
-          seen = 0
-          for pat in (r'扣具', r'【W】', r'W\s*[:：=]', r'WXYZ', r'腳位'):
-              for m in re.finditer(pat, html):
-                  ctx = re.sub(r'\s+', ' ', html[max(0, m.start() - 200): m.end() + 300])
-                  print(f'--- {pat} @ {m.start()}: {ctx}')
-                  seen += 1
-                  if seen > 40:
-                      break
-          for m in re.finditer(r'<script[^>]*src="([^"]+)"', html):
-              print('script', m.group(1))
-          for m in re.finditer(r'<img[^>]*src="([^"]+)"', html):
-              print('img', m.group(1))
-          PY
-
       - name: Build draft catalog and validate against schema
         run: |
           set -o pipefail
