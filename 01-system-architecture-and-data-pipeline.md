@@ -118,7 +118,7 @@ flowchart TD
 
 ### 2. Workflow
 
-> **實作狀態（2026-10）**：[`.github/workflows/daily-prices.yml`](.github/workflows/daily-prices.yml) 已實作抓取、驗證、提交與失敗開 issue，提交後呼叫 [`deploy.yml`](.github/workflows/deploy.yml) 建置並部署網站（部署為獨立 job，失敗不影響報價提交）。程式在 [`pipeline/`](pipeline/) 與 [`scripts/update_prices.py`](scripts/update_prices.py)；初始規格庫由手動觸發的 [`catalog-bootstrap.yml`](.github/workflows/catalog-bootstrap.yml) 產生並以 PR 送審。下方為完成後的目標樣貌。
+> **實作狀態（2026-10）**：[`.github/workflows/daily-prices.yml`](.github/workflows/daily-prices.yml) 已實作抓取、驗證、提交與失敗開 issue，提交後呼叫 [`deploy.yml`](.github/workflows/deploy.yml) 建置並部署網站（部署為獨立 job，失敗不影響報價提交）。程式在 [`pipeline/`](pipeline/) 與 [`scripts/update_prices.py`](scripts/update_prices.py)；新型號由 [`catalog-bootstrap.yml`](.github/workflows/catalog-bootstrap.yml) 每週一自動找出並開 PR 送審（也可手動觸發）；PR 與 main 的離線檢查在 [`ci.yml`](.github/workflows/ci.yml)。下方為完成後的目標樣貌。
 
 ```yaml
 name: Daily price update
@@ -224,7 +224,7 @@ jobs:
 
 | 工作 | 頻率 | 減輕方式 |
 | :-- | :-- | :-- |
-| 新品進入規格庫 | 每週數筆 | 自動擷取產生草稿，人工只確認顯卡長度、機殼間隙等近似值 |
+| 新品進入規格庫 | 每週數筆 | 每週自動開 PR（擷取＋對照表補功耗等），人工只確認顯卡長度、機殼間隙等近似值 |
 | 處理規格衝突 | 偶爾 | 驗證流程自動標出同型號不同列的值不一致（PoC 實測 7 筆） |
 | 通路改版修爬蟲 | 不定期 | 比對率下降自動開 issue；以存檔的 HTML 做解析器回歸測試 |
 | 型號命名 | 新品上市時 | 自動產生的 ID 只是草稿，發布前人工確認（ID 一經發布不得改名） |

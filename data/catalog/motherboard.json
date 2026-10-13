@@ -60,6 +60,11 @@
     "chipset": {
      "value": "A520",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -160,6 +165,11 @@
     "chipset": {
      "value": "B550",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -648,6 +658,11 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -1072,6 +1087,11 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -1860,6 +1880,11 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -2880,6 +2905,11 @@
     "chipset": {
      "value": "H610",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -3864,6 +3894,11 @@
     "chipset": {
      "value": "B650E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -3992,6 +4027,11 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -4120,6 +4160,11 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -4152,6 +4197,11 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -7424,6 +7474,11 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -7658,6 +7713,38 @@
     "status": "auto"
    }
   },
+  "motherboard:gigabyte:z890-aorus-xtreme-ai-top": {
+   "category": "motherboard",
+   "brand": "技嘉 GIGABYTE",
+   "name": "Z890 AORUS XTREME AI TOP",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "｛技嘉Z890AORUSXTREMEAITOP"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "Z890",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "motherboard:gigabyte:z890-eagle-wifi7": {
    "category": "motherboard",
    "brand": "技嘉 GIGABYTE",
@@ -7812,6 +7899,11 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -9240,6 +9332,11 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -9304,6 +9401,11 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -9368,6 +9470,11 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -9496,6 +9603,11 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -9592,6 +9704,11 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -11023,38 +11140,6 @@
     },
     "form_factor": {
      "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "Z890",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:unknown:z890-aorus-xtreme-ai-top-e-atx-2-10g": {
-   "category": "motherboard",
-   "brand": "unknown",
-   "name": "｛技嘉 Z890 AORUS XTREME AI TOP(E-ATX/2*10G",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "｛技嘉Z890AORUSXTREMEAITOP"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "LGA1851",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "E-ATX",
      "source": "title"
     },
     "chipset": {

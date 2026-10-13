@@ -1419,40 +1419,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
+     "華碩ROGSTRIX1000W()金(EQUALIZER",
      "華碩ROGSTRIX1000W金(EQUALIZER"
-    ]
-   },
-   "specs": {
-    "wattage": {
-     "value": 1000,
-     "source": "title"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "efficiency": {
-     "value": "platinum",
-     "source": "title"
-    },
-    "atx_version": {
-     "value": "3.1",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "psu:asus:rog-strix-1000w-equalizer-90b2": {
-   "category": "psu",
-   "brand": "華碩 ASUS",
-   "name": "ROG STRIX 1000W(白色) 白金(Equalizer",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "華碩ROGSTRIX1000W()金(EQUALIZER"
     ]
    },
    "specs": {
@@ -1557,40 +1525,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
+     "華碩ROGTHORIII1200W()金ROGEQUALIZER",
      "華碩ROGTHORIII1200W金ROGEQUALIZER"
-    ]
-   },
-   "specs": {
-    "wattage": {
-     "value": 1200,
-     "source": "title"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "efficiency": {
-     "value": "platinum",
-     "source": "title"
-    },
-    "atx_version": {
-     "value": "3.1",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "psu:asus:rog-thor-iii-1200w-rog-equalizer-c5ea": {
-   "category": "psu",
-   "brand": "華碩 ASUS",
-   "name": "ROG THOR III 1200W(白色) 白金 ROG Equalizer",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "華碩ROGTHORIII1200W()金ROGEQUALIZER"
     ]
    },
    "specs": {
@@ -3293,72 +3229,6 @@
     }
    }
   },
-  "psu:delta:1100w": {
-   "category": "psu",
-   "brand": "台達 Delta",
-   "name": "超實在 1100W",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "台達超實在1100W"
-    ]
-   },
-   "specs": {
-    "wattage": {
-     "value": 1100,
-     "source": "title"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "efficiency": {
-     "value": "platinum",
-     "source": "title"
-    },
-    "atx_version": {
-     "value": "3.0",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "psu:delta:1100w-5c26": {
-   "category": "psu",
-   "brand": "台達 Delta",
-   "name": "超實在 1100W 白金",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "台達超實在1100W金"
-    ]
-   },
-   "specs": {
-    "wattage": {
-     "value": 1100,
-     "source": "title"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "inferred",
-     "note": "品名未標 SFX"
-    },
-    "efficiency": {
-     "value": "platinum",
-     "source": "title"
-    },
-    "atx_version": {
-     "value": "3.0",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
   "psu:delta:550w": {
    "category": "psu",
    "brand": "台達 Delta",
@@ -3388,7 +3258,7 @@
     "status": "auto"
    }
   },
-  "psu:delta:650w": {
+  "psu:delta:650w-bronze": {
    "category": "psu",
    "brand": "台達 Delta",
    "name": "650W 銅牌",
@@ -3417,7 +3287,7 @@
     "status": "auto"
    }
   },
-  "psu:delta:650w-12d1": {
+  "psu:delta:650w-gold": {
    "category": "psu",
    "brand": "台達 Delta",
    "name": "650W 金牌",
@@ -3472,6 +3342,40 @@
     },
     "atx_version": {
      "value": "3.1",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:delta:chaoshizai-1100w": {
+   "category": "psu",
+   "brand": "台達 Delta",
+   "name": "超實在 1100W 白金",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "台達超實在1100W",
+     "台達超實在1100W金"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1100,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
      "source": "title"
     }
    },
@@ -8093,7 +7997,7 @@
     "status": "auto"
    }
   },
-  "psu:superflower:leadex-iii-1000w-7c5b": {
+  "psu:superflower:leadex-iii-1000w-platinum": {
    "category": "psu",
    "brand": "振華 Super Flower",
    "name": "LEADEX III 1000W 白金",
@@ -8235,10 +8139,10 @@
     "status": "auto"
    }
   },
-  "psu:superflower:leadex-iii-850w-27fb": {
+  "psu:superflower:leadex-iii-850w-platinum": {
    "category": "psu",
    "brand": "振華 Super Flower",
-   "name": "LEADEX III 850W(黑色) 白金",
+   "name": "LEADEX III 850W 白金",
    "status": "active",
    "aliases": {
     "model_keys": [

@@ -1,4 +1,4 @@
-"""以 data/reference/specs.json 補齊規格庫既有型號缺漏的欄位（功耗、是否附散熱器等）。
+"""以 data/reference/specs.json 與散熱器扣具代碼圖例，補齊規格庫既有型號缺漏的欄位（功耗、支援腳位等）。
 
 用法：
     python scripts/apply_reference.py [--catalog-dir data/catalog] [--check]
@@ -30,13 +30,11 @@ def main() -> int:
     shards = load_catalog(args.catalog_dir)
     filled: Counter = Counter()
     unmatched: list[str] = []
-    for cat in reference:
-        if cat.startswith("$") or cat not in shards:
-            continue
-        for mid, model in shards[cat]["models"].items():
+    for cat, shard in shards.items():
+        for mid, model in shard["models"].items():
             fields = apply_reference(model, reference)
             filled.update(f"{cat}.{f}" for f in fields)
-            if model["status"] == "active" and match_rule(reference, cat, model["name"]) is None:
+            if cat in reference and model["status"] == "active" and match_rule(reference, cat, model["name"]) is None:
                 unmatched.append(mid)
 
     for key, n in sorted(filled.items()):

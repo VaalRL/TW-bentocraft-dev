@@ -1,0 +1,57 @@
+name: CI
+
+# PR 與 main 的離線檢查：Python 單元測試、schema 測試、規格庫驗證、對照表是否已回填。
+# 不連線原價屋（連線驗證由 poc-coolpc-probe.yml 與每日排程負責）；前端測試在 deploy.yml。
+on:
+  pull_request:
+    paths:
+      - 'pipeline/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'schema/**'
+      - 'data/**'
+      - 'requirements.txt'
+      - '.github/workflows/ci.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'pipeline/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'schema/**'
+      - 'data/**'
+      - 'requirements.txt'
+      - '.github/workflows/ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Unit tests (extraction, pipeline, reference table)
+        run: python -m unittest discover -v -s tests -t .
+
+      - name: Unit tests (catalog / prices schema)
+        working-directory: schema
+        run: python -m unittest -v test_schema
+
+      - name: Validate catalog and prices
+        run: |
+          shopt -s nullglob
+          python schema/validate.py --catalog data/catalog/*.json --prices data/prices/*.json
+
+      - name: Reference table applied to the catalog
+        run: python scripts/apply_reference.py --check

@@ -18,7 +18,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "schema"))
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from pipeline.catalog import CatalogIndex, new_models  # noqa: E402
+from pipeline.catalog import CatalogIndex, main_text, new_models, price_fields, split_name  # noqa: E402
 from pipeline.coolpc import parse_items  # noqa: E402
 from pipeline.prices import build_offers, offer_id, write_prices  # noqa: E402
 import update_prices  # noqa: E402
@@ -58,6 +58,20 @@ def page(rows=ROWS, repeat: int = 1) -> str:
         parts.append("</select></td></tr>")
     parts.append("</table></body></html>")
     return "".join(parts)
+
+
+class TitleQuirksTest(unittest.TestCase):
+    """2026-10-13 估價頁出現、首版解析器沒處理的品名寫法。"""
+
+    def test_missing_closing_brace(self):
+        self.assertEqual(split_name("｛技嘉 Z890 AORUS XTREME AI TOP(E-ATX/2*10G LAN)/DDR5"),
+                         ("技嘉 GIGABYTE", "gigabyte", "Z890 AORUS XTREME AI TOP"))
+        self.assertEqual(split_name("｛WD 黑標 SN8100 2TB/Gen5 PCIe 5.0/讀14900")[1:], ("wd", "黑標 SN8100 2TB"))
+
+    def test_assembly_prefix(self):
+        text = "裝機價｛華碩 PRIME B850M-A｝M-ATX, $3990 ◆ ★"
+        self.assertTrue(main_text({"text": text}).startswith("｛華碩"))
+        self.assertEqual(price_fields({"text": text, "price": 3990}, 2026)["price_condition"], {"type": "assembly"})
 
 
 class OfferIdTest(unittest.TestCase):
