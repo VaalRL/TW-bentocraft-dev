@@ -57,30 +57,16 @@ jobs:
           cat poc/out/report.md >> "$GITHUB_STEP_SUMMARY"
           exit $code
 
-      # 暫時：列出機殼品名中與水冷排相關的寫法、主機板品名中的插槽寫法
-      - name: Dump case and motherboard title samples
+      # 暫時：列出標「熱賣」的機殼與主機板品名，挑選要查原廠規格的型號
+      - name: Dump best-selling case and motherboard titles
         run: |
           python - <<'PY'
-          import json, re, collections
-          cases = boards = 0
-          hits = collections.Counter()
+          import json
           for line in open('poc/out/items.jsonl', encoding='utf-8'):
               i = json.loads(line)
               t = i.get('text', '')
-              if i.get('category') == 'case':
-                  cases += 1
-                  m = re.findall(r'[^/｝]{0,12}(?:水冷|冷排|排)[^/,]{0,24}', t)
-                  for x in m:
-                      hits[re.sub(r'\d', '#', x.strip())] += 1
-                  if cases <= 400 and m:
-                      print('case |', t[:170])
-              elif i.get('category') == 'motherboard':
-                  boards += 1
-                  if re.search(r'DIMM|插槽|\d\s?\*\s?DDR|DDR\d\s?x\s?\d', t, re.I):
-                      print('mb |', t[:150])
-          print('cases', cases, 'boards', boards)
-          for k, v in hits.most_common(60):
-              print('pattern', v, '|', k)
+              if i.get('category') in ('case', 'motherboard') and '熱賣' in t:
+                  print(i['category'], '|', t[:110])
           PY
 
       - name: Build draft catalog and validate against schema
