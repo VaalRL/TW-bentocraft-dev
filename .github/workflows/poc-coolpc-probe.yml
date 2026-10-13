@@ -57,6 +57,17 @@ jobs:
           cat poc/out/report.md >> "$GITHUB_STEP_SUMMARY"
           exit $code
 
+      # 暫時：列出 CPU、電源、主機板（Mini-ITX 以外）品名，供擷取規則與推定欄位抽查
+      - name: Dump CPU and PSU titles
+        run: |
+          python - <<'PY'
+          import json
+          for line in open('poc/out/items.jsonl', encoding='utf-8'):
+              i = json.loads(line)
+              if i.get('category') in ('cpu', 'psu'):
+                  print(i['category'], '|', i.get('select_label', '')[:20], '|', i['text'][:150])
+          PY
+
       - name: Build draft catalog and validate against schema
         run: |
           set -o pipefail
