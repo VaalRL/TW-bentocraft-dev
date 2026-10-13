@@ -2068,43 +2068,6 @@
     }
    }
   },
-  "cooler:coolermaster:masterliquid-pl360-tr5-sp6": {
-   "category": "cooler",
-   "brand": "酷碼 Cooler Master",
-   "name": "MasterLiquid PL360 TR5-SP6 水冷",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "酷碼MASTERLIQUIDPL360TR5SP6水冷"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "Y",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "sTR4",
-      "sTR5"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
   "cooler:coolermaster:v4-alpha-3dhp-black": {
    "category": "cooler",
    "brand": "酷碼 Cooler Master",
@@ -8220,6 +8183,15 @@
     "height_mm": {
      "value": 37.0,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://noctua.at/en/nh-l9a-am5/specification",
+     "note": "原廠相容性：AM5 與 AM4（使用 AMD 原廠背板）；品名無扣具代碼"
     }
    },
    "review": {
@@ -8245,6 +8217,15 @@
     "height_mm": {
      "value": 37.0,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://noctua.at/en/nh-l9a-am5/specification",
+     "note": "原廠相容性：AM5 與 AM4（使用 AMD 原廠背板）；品名無扣具代碼"
     }
    },
    "review": {
@@ -8585,31 +8566,6 @@
     "status": "auto"
    }
   },
-  "cooler:noctua:nh-u14s-tr5-sp6": {
-   "category": "cooler",
-   "brand": "貓頭鷹 Noctua",
-   "name": "NH-U14S TR5-SP6",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "貓頭鷹NHU14STR5SP6"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 165.0,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
   "cooler:noctua:nh-u9s": {
    "category": "cooler",
    "brand": "貓頭鷹 Noctua",
@@ -8646,26 +8602,6 @@
      "source": "retailer_spec",
      "ref": "https://www.coolpc.com.tw/evaluate.php",
      "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:noctua:nl-acf1-vrm": {
-   "category": "cooler",
-   "brand": "貓頭鷹 Noctua",
-   "name": "NL-ACF1 VRM 風扇",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "貓頭鷹NLACF1VRM風扇"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
     }
    },
    "review": {
@@ -10550,212 +10486,6 @@
     "status": "auto"
    }
   },
-  "cooler:silverstone:xe02-2066": {
-   "category": "cooler",
-   "brand": "銀欣 SilverStone",
-   "name": "XE02-2066 散熱器",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "欣XE022066散熱器"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 64.5,
-     "source": "title"
-    },
-    "tdp_rating_w": {
-     "value": 165,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:silverstone:xe02-3647n": {
-   "category": "cooler",
-   "brand": "銀欣 SilverStone",
-   "name": "XE02-3647N 散熱器",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "欣XE023647N散熱器"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 64.0,
-     "source": "title"
-    },
-    "tdp_rating_w": {
-     "value": 205,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:silverstone:xe02-3647sb": {
-   "category": "cooler",
-   "brand": "銀欣 SilverStone",
-   "name": "XE02-3647SB 散熱器",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "欣XE023647SB散熱器"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 64.0,
-     "source": "title"
-    },
-    "tdp_rating_w": {
-     "value": 205,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:silverstone:xe04-4677": {
-   "category": "cooler",
-   "brand": "銀欣 SilverStone",
-   "name": "XE04-4677 散熱器",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "欣XE044677散熱器"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 126.0,
-     "source": "title"
-    },
-    "tdp_rating_w": {
-     "value": 270,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:silverstone:xe360-4677": {
-   "category": "cooler",
-   "brand": "銀欣 SilverStone",
-   "name": "XE360-4677 水冷",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "欣XE3604677水冷"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:silverstone:xe360-tr5-v2": {
-   "category": "cooler",
-   "brand": "銀欣 SilverStone",
-   "name": "XE360-TR5-V2 水冷",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "欣XE360TR5V2水冷"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
-    },
-    "radiator_mm": {
-     "value": 360,
-     "source": "title"
-    },
-    "mount_codes": {
-     "value": "Y",
-     "source": "title"
-    },
-    "sockets": {
-     "value": [
-      "sTR4",
-      "sTR5"
-     ],
-     "source": "retailer_spec",
-     "ref": "https://www.coolpc.com.tw/evaluate.php",
-     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:silverstone:xed120-4u": {
-   "category": "cooler",
-   "brand": "銀欣 SilverStone",
-   "name": "XED120 4U散熱器",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "欣XED1204U散熱器"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "air",
-     "source": "inferred",
-     "note": "品名有高度、無冷排"
-    },
-    "height_mm": {
-     "value": 145.0,
-     "source": "title"
-    },
-    "tdp_rating_w": {
-     "value": 450,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
   "cooler:superflower:st4-argb": {
    "category": "cooler",
    "brand": "振華 Super Flower",
@@ -12571,26 +12301,6 @@
      "source": "retailer_spec",
      "ref": "https://www.coolpc.com.tw/evaluate.php",
      "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:thermaltake:t1000": {
-   "category": "cooler",
-   "brand": "曜越 Thermaltake",
-   "name": "T1000 透明水冷液",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "曜越T1000透明水冷液"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
     }
    },
    "review": {
