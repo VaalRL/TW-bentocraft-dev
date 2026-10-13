@@ -1953,6 +1953,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/X870%20Taichi%20Creator/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/X870%20Taichi%20Creator/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1985,6 +1997,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/X870E%20Challenger%20WiFi%20White/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://asrock.com/mb/AMD/X870E%20Challenger%20WiFi%20White/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2017,6 +2041,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/X870E%20Taichi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/X870E%20Taichi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2081,6 +2117,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/X870E%20Taichi%20OCF/Specification.asp",
+     "note": "OCF 超頻版僅 2 條 DIMM 插槽,最大 128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/X870E%20Taichi%20OCF/Specification.asp",
+     "note": "OCF 超頻版僅 2 條 DIMM 插槽,最大 128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2113,6 +2161,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/mb/intel/Z890%20Nova%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/mb/intel/Z890%20Nova%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2145,6 +2205,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/Z890%20Pro-A%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/Z890%20Pro-A%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2177,6 +2249,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/Z890%20Taichi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/Intel/Z890%20Taichi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2209,6 +2293,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://download.asrock.com/Manual/Z890%20Taichi%20Lite.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://download.asrock.com/Manual/Z890%20Taichi%20Lite.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2278,6 +2374,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/mb/Intel/Z890M%20Riptide%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://pg.asrock.com/mb/Intel/Z890M%20Riptide%20WiFi/index.asp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2382,6 +2490,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/others/b850-max-gaming-wifi-w/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/others/b850-max-gaming-wifi-w/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2414,6 +2534,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/others/b850m-ayw-gaming-wifi/techspec/",
+     "note": "ASUS 規格頁 128GB;2 條插槽數來自零售商轉載規格；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/others/b850m-ayw-gaming-wifi/techspec/",
+     "note": "ASUS 規格頁 128GB;2 條插槽數來自零售商轉載規格；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2518,6 +2650,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/others/b860m-max-gaming-ax/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/others/b860m-max-gaming-ax/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2550,6 +2694,18 @@
     "chipset": {
      "value": "H110",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/h110m-k/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 32,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/h110m-k/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2804,6 +2960,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b760m-a-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b760m-a-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2836,6 +3004,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b760m-a-d4-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b760m-a-d4-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2868,6 +3048,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "retailer_spec",
+     "ref": "https://netcodex.ph/product/asus-prime-b760m-a-wifi-csm-micro-atx-motherboard-intel-b760-ddr5-pcie-4-0-wifi-6-prime-b760m-a-wifi-csm/",
+     "note": "零售商規格 4 條/128GB;ASUS BIOS 1630 說明稱更新後支援最高 256GB；數值取自零售商或評測規格表"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "retailer_spec",
+     "ref": "https://netcodex.ph/product/asus-prime-b760m-a-wifi-csm-micro-atx-motherboard-intel-b760-ddr5-pcie-4-0-wifi-6-prime-b760m-a-wifi-csm/",
+     "note": "零售商規格 4 條/128GB;ASUS BIOS 1630 說明稱更新後支援最高 256GB；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -2900,6 +3092,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b760m-a-wifi-d4-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b760m-a-wifi-d4-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3112,6 +3316,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/csm/prime-b860m-a-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/csm/prime-b860m-a-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3144,6 +3360,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-b860m-a-wifi-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/csm/prime-b860m-a-wifi-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3212,6 +3440,18 @@
     "chipset": {
      "value": "H310",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-h310m-k/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 32,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-h310m-k/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3244,6 +3484,18 @@
     "chipset": {
      "value": "H510",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://asus.com/hk/motherboards-components/motherboards/prime/prime-h510m-k/techspec",
+     "note": "ASUS 規格頁同時出現 32GB 與 64GB;R2.0 與零售商皆為 64GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 64,
+     "source": "vendor_spec",
+     "ref": "https://asus.com/hk/motherboards-components/motherboards/prime/prime-h510m-k/techspec",
+     "note": "ASUS 規格頁同時出現 32GB 與 64GB;R2.0 與零售商皆為 64GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3601,6 +3853,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/csm/prime-x870-p-wifi-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/csm/prime-x870-p-wifi-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3633,6 +3897,18 @@
     "chipset": {
      "value": "Z790",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-z790-p-d4-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-z790-p-d4-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3665,6 +3941,18 @@
     "chipset": {
      "value": "Z790",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-z790-p-wifi-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 192,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/prime/prime-z790-p-wifi-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3697,6 +3985,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/csm/prime-z890-p-wifi-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/csm/prime-z890-p-wifi-csm/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3729,6 +4029,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/workstation/pro-ws-b850m-ace-se/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/workstation/pro-ws-b850m-ace-se/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3761,6 +4073,18 @@
     "chipset": {
      "value": "W680",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/workstation/pro-ws-w680-ace/techspec/",
+     "note": "規格頁 192GB;部分舊產品頁仍寫 128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 192,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/workstation/pro-ws-w680-ace/techspec/",
+     "note": "規格頁 192GB;部分舊產品頁仍寫 128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3793,6 +4117,18 @@
     "chipset": {
      "value": "W680",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/workstation/pro-ws-w680-ace-ipmi/techspec/",
+     "note": "規格頁 192GB;中東區頁面寫 128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 192,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/workstation/pro-ws-w680-ace-ipmi/techspec/",
+     "note": "規格頁 192GB;中東區頁面寫 128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3825,6 +4161,18 @@
     "chipset": {
      "value": "W680",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/workstation/pro-ws-w680m-ace-se/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 192,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/workstation/pro-ws-w680m-ace-se/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3881,6 +4229,12 @@
     "chipset": {
      "value": "W890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/workstation/pro-ws-w890-sage/",
+     "note": "8 條 RDIMM(4 通道 2DPC);官方宣稱最高 4TB,FAQ 另寫單條 256GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3905,6 +4259,12 @@
     "chipset": {
      "value": "W890E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/workstation/pro-ws-w890e-sage-se/",
+     "note": "8 條 RDIMM(8 通道);官方宣稱 4TB,QVL 僅見 8x256GB=2TB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3937,6 +4297,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/ca-en/motherboards-components/motherboards/workstation/pro-ws-z890-ace-se/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/ca-en/motherboards-components/motherboards/workstation/pro-ws-z890-ace-se/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3969,6 +4341,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/proart/proart-b850-creator-wifi-neo/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/proart/proart-b850-creator-wifi-neo/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4001,6 +4385,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/proart/proart-x870e-creator-wifi/techspec/",
+     "note": "規格頁 256GB;舊版 datasheet/產品頁寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/proart/proart-x870e-creator-wifi/techspec/",
+     "note": "規格頁 256GB;舊版 datasheet/產品頁寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4033,6 +4429,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/proart/proart-z890-creator-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/proart/proart-z890-creator-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4101,6 +4509,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-crosshair/rog-crosshair-x870e-dark-hero/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-crosshair/rog-crosshair-x870e-dark-hero/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4133,6 +4553,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-crosshair/rog-crosshair-x870e-extreme/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-crosshair/rog-crosshair-x870e-extreme/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4165,6 +4597,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/microsite/motherboard/amd-am5-ryzen-9000-x3d-x870e-x870-b850-b840/",
+     "note": "ASUS 微網站 256GB;舊產品頁與手冊寫 192GB(BIOS 更新後支援 4x64GB)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/microsite/motherboard/amd-am5-ryzen-9000-x3d-x870e-x870-b850-b840/",
+     "note": "ASUS 微網站 256GB;舊產品頁與手冊寫 192GB(BIOS 更新後支援 4x64GB)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4201,6 +4645,18 @@
     "back_connect": {
      "value": true,
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-crosshair/rog-crosshair-x870e-hero-btf/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-crosshair/rog-crosshair-x870e-hero-btf/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4275,6 +4731,18 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b650-a-gaming-wifi-model/spec/",
+     "note": "規格頁 192GB;手冊寫 128GB;BIOS 說明另提 4x64GB=256GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 192,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b650-a-gaming-wifi-model/spec/",
+     "note": "規格頁 192GB;手冊寫 128GB;BIOS 說明另提 4x64GB=256GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4344,6 +4812,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b850-a-gaming-wifi7-neo/",
+     "note": "未找到「S NEO」專屬規格頁,數值取自 B850-A GAMING WIFI7 NEO；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b850-a-gaming-wifi7-neo/",
+     "note": "未找到「S NEO」專屬規格頁,數值取自 B850-A GAMING WIFI7 NEO；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4376,6 +4856,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b850-f-gaming-wifi7-neo/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b850-f-gaming-wifi7-neo/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4408,6 +4900,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b850-g-gaming-wifi/spec/",
+     "note": "規格頁 256GB;上市新聞稿寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b850-g-gaming-wifi/spec/",
+     "note": "規格頁 256GB;上市新聞稿寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4477,6 +4981,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b860-a-gaming-wifi/spec/",
+     "note": "未找到「WIFI S」專屬規格頁,數值取自 B860-A GAMING WIFI；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b860-a-gaming-wifi/spec/",
+     "note": "未找到「WIFI S」專屬規格頁,數值取自 B860-A GAMING WIFI；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4509,6 +5025,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b860-f-gaming-wifi/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b860-f-gaming-wifi/spec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4541,6 +5069,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b860-g-gaming-wifi/spec/",
+     "note": "規格頁 256GB;規格 PDF 與上市新聞稿寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-b860-g-gaming-wifi/spec/",
+     "note": "規格頁 256GB;規格 PDF 與上市新聞稿寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4647,6 +5187,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-x870e-a-gaming-wifi7-neo/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-x870e-a-gaming-wifi7-neo/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4679,6 +5231,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi7-neo/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi7-neo/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4711,6 +5275,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-z890-a-gaming-wifi/spec/",
+     "note": "規格頁 256GB;早期 ROG 指南寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-z890-a-gaming-wifi/spec/",
+     "note": "規格頁 256GB;早期 ROG 指南寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4743,6 +5319,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-z890-f-gaming-wifi/spec/",
+     "note": "規格頁 256GB;早期 ROG 指南寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://rog.asus.com/motherboards/rog-strix/rog-strix-z890-f-gaming-wifi/spec/",
+     "note": "規格頁 256GB;早期 ROG 指南寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4775,6 +5363,18 @@
     "chipset": {
      "value": "B550",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550m-plus/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550m-plus/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4807,6 +5407,18 @@
     "chipset": {
      "value": "B550",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550m-plus-wifi-ii/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b550m-plus-wifi-ii/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4839,6 +5451,18 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650-e-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 192,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650-e-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4871,6 +5495,18 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/ca-en/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/ca-en/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4903,6 +5539,18 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-e-wifi/techspec/",
+     "note": "規格頁 192GB;BIOS 3014 說明支援 4x64GB=256GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 192,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-e-wifi/techspec/",
+     "note": "規格頁 192GB;BIOS 3014 說明支援 4x64GB=256GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4977,6 +5625,18 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus-wifi/techspec/",
+     "note": "美國/馬來西亞頁 256GB;瑞士頁寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b650m-plus-wifi/techspec/",
+     "note": "美國/馬來西亞頁 256GB;瑞士頁寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5009,6 +5669,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 192,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5041,6 +5713,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760-plus-wifi-d4/techspec/",
+     "note": "ASUS 規格頁寫 DDR4 192GB(異常,DDR4 實務上限通常 128GB);比較頁寫 128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 192,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760-plus-wifi-d4/techspec/",
+     "note": "ASUS 規格頁寫 DDR4 192GB(異常,DDR4 實務上限通常 128GB);比較頁寫 128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5073,6 +5757,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760m-e-d4/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760m-e-d4/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5105,6 +5801,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/ca-en/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760m-plus-wifi-d4/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/ca-en/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760m-plus-wifi-d4/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5137,6 +5845,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760m-plus-wifi-ii/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 192,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b760m-plus-wifi-ii/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5215,6 +5935,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5247,6 +5979,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850-pro-wifi7-w-neo/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850-pro-wifi7-w-neo/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5279,6 +6023,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850m-plus-ii/techspec",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850m-plus-ii/techspec",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5312,6 +6068,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850m-plus-wifi7/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b850m-plus-wifi7/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5350,6 +6118,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b860-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b860-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5382,6 +6162,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b860m-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-b860m-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5414,6 +6206,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x870-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x870-plus-wifi/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5446,6 +6250,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x870-pro-wifi7-w-neo/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-x870-pro-wifi7-w-neo/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5478,6 +6294,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-z890-pro-wifi/techspec/",
+     "note": "全球規格頁 256GB;菲律賓頁寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/tuf-gaming/tuf-gaming-z890-pro-wifi/techspec/",
+     "note": "全球規格頁 256GB;菲律賓頁寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5510,6 +6338,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/others/x870-ayw-gaming-wifi-w/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/others/x870-ayw-gaming-wifi-w/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5542,6 +6382,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/others/x870-max-gaming-wifi7-w/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/others/x870-max-gaming-wifi7-w/techspec/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5616,6 +6468,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/others/z890-max-gaming-wifi7/techspec/",
+     "note": "規格頁 256GB;手冊寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/motherboards/others/z890-max-gaming-wifi7/techspec/",
+     "note": "規格頁 256GB;手冊寫 192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8102,6 +8966,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870E-AORUS-PRO-rev-10/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/X870E-AORUS-PRO-rev-10/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8140,6 +9016,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/X870E-AORUS-PRO-X3D-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/X870E-AORUS-PRO-X3D-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8172,6 +9060,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/X870E-AORUS-XTREME-X3D-AI-TOP/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/X870E-AORUS-XTREME-X3D-AI-TOP/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8241,6 +9141,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-AERO-G/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-AERO-G/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8358,6 +9270,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/Z890-AORUS-ELITE-WIFI7-PLUS/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/Z890-AORUS-ELITE-WIFI7-PLUS/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8390,6 +9314,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-AORUS-MASTER/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-AORUS-MASTER/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8422,6 +9358,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/Z890-AORUS-PRO-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/us/Motherboard/Z890-AORUS-PRO-ICE/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8454,6 +9402,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-AORUS-XTREME-AI-TOP/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-AORUS-XTREME-AI-TOP/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8486,6 +9446,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-EAGLE-WIFI7/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-EAGLE-WIFI7/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8518,6 +9490,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-EAGLE-WIFI7-PLUS/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-EAGLE-WIFI7-PLUS/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8550,6 +9534,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-GAMING-X-WIFI7/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-GAMING-X-WIFI7/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8582,6 +9578,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-UD-WIFI6E/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890-UD-WIFI6E/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8651,6 +9659,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/ca/Motherboard/Z890M-FORCE-DUO-X-WIFI7/sp",
+     "note": "僅2槽,需CQDIMM四階128GB單條才達256GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/ca/Motherboard/Z890M-FORCE-DUO-X-WIFI7/sp",
+     "note": "僅2槽,需CQDIMM四階128GB單條才達256GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8683,6 +9703,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890M-GAMING-X/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/Z890M-GAMING-X/sp",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8787,6 +9819,18 @@
     "chipset": {
      "value": "B550",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://latam.msi.com/Motherboard/B550M-GAMING-PLUS-WIFI6E/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://latam.msi.com/Motherboard/B550M-GAMING-PLUS-WIFI6E/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8819,6 +9863,18 @@
     "chipset": {
      "value": "B550",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B550M-PRO-VDH-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B550M-PRO-VDH-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8887,6 +9943,18 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B650M-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B650M-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8955,6 +10023,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B760-GAMING-PLUS-WIFI/Specification",
+     "note": "規格頁256GB,舊版說明書/商店為192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B760-GAMING-PLUS-WIFI/Specification",
+     "note": "規格頁256GB,舊版說明書/商店為192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9131,6 +10211,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B760M-GAMING-PLUS-WIFI/Specification",
+     "note": "規格頁256GB,舊版說明書為192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B760M-GAMING-PLUS-WIFI/Specification",
+     "note": "規格頁256GB,舊版說明書為192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9199,6 +10291,18 @@
     "chipset": {
      "value": "B840",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B840-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B840-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9231,6 +10335,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B850-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B850-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9267,6 +10383,18 @@
     "back_connect": {
      "value": true,
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/B850GAMINGPLUSWIFIPZ_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/B850GAMINGPLUSWIFIPZ_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9299,6 +10427,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B850M-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B850M-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9331,6 +10471,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B850M-GAMING-PLUS-WIFI6E/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B850M-GAMING-PLUS-WIFI6E/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9363,6 +10515,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B850M-GAMING-WIFI6E/Specification",
+     "note": "非PLUS版僅2槽,上限128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B850M-GAMING-WIFI6E/Specification",
+     "note": "非PLUS版僅2槽,上限128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9431,6 +10595,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B860-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B860-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9463,6 +10639,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B860M-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B860M-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9495,6 +10683,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B860M-GAMING-WIFI/Specification",
+     "note": "非PLUS版僅2槽,上限128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/B860M-GAMING-WIFI/Specification",
+     "note": "非PLUS版僅2槽,上限128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9563,6 +10763,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Motherboard/MAG-B850-GAMING-PLUS-MAX-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Motherboard/MAG-B850-GAMING-PLUS-MAX-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9637,6 +10849,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MAG-B850M-MORTAR-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MAG-B850M-MORTAR-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9711,6 +10935,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://my.msi.com/Motherboard/MAG-B860M-MORTAR-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://my.msi.com/Motherboard/MAG-B860M-MORTAR-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9743,6 +10979,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MAG-X870E-GAMING-MAX-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MAG-X870E-GAMING-MAX-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9779,6 +11027,18 @@
     "back_connect": {
      "value": true,
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/MAGX870ETOMAHAWKMAXWIFIPZ_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/MAGX870ETOMAHAWKMAXWIFIPZ_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9811,6 +11071,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/MAGX870ETOMAHAWKWIFI_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/MAGX870ETOMAHAWKWIFI_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9843,6 +11115,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MAG-Z890-TOMAHAWK-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MAG-Z890-TOMAHAWK-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9875,6 +11159,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Motherboard/MEG-X870E-ACE-MAX/Specification",
+     "note": "規格頁同時出現128GB殘留字樣；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Motherboard/MEG-X870E-ACE-MAX/Specification",
+     "note": "規格頁同時出現128GB殘留字樣；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9907,6 +11203,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://jp.msi.com/Motherboard/MEG-X870E-GODLIKE-MAX/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://jp.msi.com/Motherboard/MEG-X870E-GODLIKE-MAX/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9939,6 +11247,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MEG-X870E-UNIFY-X-MAX/Specification",
+     "note": "2槽1SPC設計,上限128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MEG-X870E-UNIFY-X-MAX/Specification",
+     "note": "2槽1SPC設計,上限128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9971,6 +11291,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/MEGZ890ACE_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/MEGZ890ACE_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10003,6 +11335,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Motherboard/MEG-Z890-GODLIKE/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Motherboard/MEG-Z890-GODLIKE/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10035,6 +11379,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MEG-Z890-UNIFY-X/Specification",
+     "note": "2槽,上限128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MEG-Z890-UNIFY-X/Specification",
+     "note": "2槽,上限128GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10104,6 +11460,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MPG-B850-EDGE-TI-WIFI/Specification",
+     "note": "說明書256GB,規格頁另有128GB字樣；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MPG-B850-EDGE-TI-WIFI/Specification",
+     "note": "說明書256GB,規格頁另有128GB字樣；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10173,6 +11541,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MPG-B850M-EDGE-TI-MAX-WIFI-Rev-2/Specification",
+     "note": "規格頁標256GB,另有128GB殘留字樣；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MPG-B850M-EDGE-TI-MAX-WIFI-Rev-2/Specification",
+     "note": "規格頁標256GB,另有128GB殘留字樣；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10242,6 +11622,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://jp.msi.com/Motherboard/MPG-X870E-CARBON-MAX-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://jp.msi.com/Motherboard/MPG-X870E-CARBON-MAX-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10274,6 +11666,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MPG-X870E-CARBON-WIFI/Specification",
+     "note": "規格頁另有殘留128GB字樣,說明書為256GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/MPG-X870E-CARBON-WIFI/Specification",
+     "note": "規格頁另有殘留128GB字樣,說明書為256GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10306,6 +11710,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Motherboard/MPG-X870E-EDGE-TI-WIFI/Specification",
+     "note": "規格頁同時出現128GB殘留字樣；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Motherboard/MPG-X870E-EDGE-TI-WIFI/Specification",
+     "note": "規格頁同時出現128GB殘留字樣；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10375,6 +11791,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://latam.msi.com/Motherboard/MPG-Z890-CARBON-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://latam.msi.com/Motherboard/MPG-Z890-CARBON-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10407,6 +11835,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://in.msi.com/Motherboard/MPG-Z890-EDGE-TI-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://in.msi.com/Motherboard/MPG-Z890-EDGE-TI-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10584,6 +12024,18 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B650-S-WIFI/Specification",
+     "note": "全球規格頁256GB,美國商店V1版列192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B650-S-WIFI/Specification",
+     "note": "全球規格頁256GB,美國商店V1版列192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10652,6 +12104,18 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B760M-A-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B760M-A-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10864,6 +12328,18 @@
     "chipset": {
      "value": "B840",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B840-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B840-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10896,6 +12372,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Motherboard/PRO-B850-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Motherboard/PRO-B850-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10928,6 +12416,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://in.msi.com/Motherboard/PRO-B850M-A-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://in.msi.com/Motherboard/PRO-B850M-A-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -10964,6 +12464,18 @@
     "back_connect": {
      "value": true,
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/PROB850M-AWIFIPZ_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/PROB850M-AWIFIPZ_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11032,6 +12544,18 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B850M-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B850M-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11064,6 +12588,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B860-P/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B860-P/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11096,6 +12632,18 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B860-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-B860-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11529,6 +13077,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-X870-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-X870-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11561,6 +13121,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-X870E-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-X870E-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11593,6 +13165,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-X870E-S-EVO-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-X870E-S-EVO-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11625,6 +13209,18 @@
     "chipset": {
      "value": "Z790",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-Z790-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-Z790-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11657,6 +13253,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/PROZ890-AWIFI_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/mb/PROZ890-AWIFI_English.pdf",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11689,6 +13297,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-Z890-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-Z890-P-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11774,6 +13394,18 @@
     "back_connect": {
      "value": true,
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-Z890-S-WIFI-PZ/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/PRO-Z890-S-WIFI-PZ/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11806,6 +13438,18 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/X870-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/X870-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11838,6 +13482,18 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://uk-store.msi.com/products/x870e-gaming-plus-wifi",
+     "note": "容量取自MSI官方商店頁,資料表列4槽；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://uk-store.msi.com/products/x870e-gaming-plus-wifi",
+     "note": "容量取自MSI官方商店頁,資料表列4槽；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11870,6 +13526,18 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/Z890-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Motherboard/Z890-GAMING-PLUS-WIFI/Specification",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {

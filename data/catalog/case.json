@@ -2855,6 +2855,44 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/cosmos-alpha.html",
+     "note": "頂/底排厚度上限93mm；側面80mm，420僅限側面；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3270,6 +3308,36 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/elite-500.html",
+     "note": "前置360須拆光碟機架(E500-KG5N/KN5N)；頂部水冷排下主機板元件高度限32mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3305,6 +3373,36 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/elite-500.html",
+     "note": "前置360須拆除光碟機架；頂部水冷排下主機板元件高度限32mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3344,6 +3442,34 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/elite-502-lite.html",
+     "note": "前置排尺寸上限457x140x27mm；原廠稱頂部360或前置420擇一；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3393,6 +3519,41 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        240,
+        280
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        240,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/elite-600-with-argb-fan.html",
+     "note": "各區域官網頁面頂部/側面清單略有出入；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3515,6 +3676,36 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-au/products/elite-690-wood.html",
+     "note": "依Elite 690 Wood規格；頂部排高度上限45mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3560,6 +3751,39 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-us/products/haf-500.html",
+     "note": "前置另支援200mm排；前置與頂部可同時裝360；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3605,6 +3829,29 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-us/products/HAFII-500.html",
+     "note": "原廠標示為有條件支援；前置須使用MasterRail；360含120/180規格；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3644,6 +3891,34 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/masterbox-600.html",
+     "note": "前置排上限457x140x27mm；裝前置排時顯卡長度限360mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3689,6 +3964,36 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://legacy.coolermaster.com/ja-jp/news/masterbox-cm695/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3724,6 +4029,36 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://legacy.coolermaster.com/ja-jp/news/masterbox-cm695/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3759,6 +4094,36 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/masterbox-mb600l-v2.html",
+     "note": "前置360須拆裝光碟機支架；頂部水冷排限記憶體高度32mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3794,6 +4159,36 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/masterbox-mb600l-v2.html",
+     "note": "頂部水冷排限記憶體高度32mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3955,6 +4350,26 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://legacy.coolermaster.com/en-global/products/masterbox-q500l/",
+     "note": "頂部水冷排下主機板元件高度限35mm；前置不支援水冷排；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -3990,6 +4405,39 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/masterbox-td500-mesh-v2.html",
+     "note": "頂部水冷排建議厚度上限 55mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4031,6 +4479,37 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://us.coolermaster.com/product/Detail/case/mid-tower/mastercase-mc500.html",
+     "note": "依美國官網規格；全球頁後方僅列120；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4070,6 +4549,33 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/masterframe-360-series.html",
+     "note": "水冷排厚度上限75mm；規格列於Stage鏡面版，推定同機殼；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4109,6 +4615,33 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/masterframe-360-series.html",
+     "note": "水冷排厚度上限75mm；規格列於Stage鏡面版，推定同機殼；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4148,6 +4681,33 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/masterframe-360-series.html",
+     "note": "水冷排厚度上限75mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4183,6 +4743,27 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/masterframe-400-mesh-gold-limited-edition.html",
+     "note": "依同機殼Gold限定版規格；前置與底部不支援水冷排；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4232,6 +4813,39 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/masterframe-600.html",
+     "note": "前置排長度上限458mm；頂部不支援水冷排；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4452,6 +5066,33 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/qube-340-q300l-v3.html",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4497,6 +5138,33 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/qube-340-q300l-v3.html",
+     "note": "與Q300L V3共用規格頁；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4542,6 +5210,43 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        280
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/qube-500-flatpack-macaron-edition.html",
+     "note": "前置240/280需電源置底；頂部280限厚53mm；底部亦可裝排(尺寸未詳)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4587,6 +5292,43 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        280
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/qube-500-flatpack-macaron-edition.html",
+     "note": "前置240/280需電源置底；頂部280限厚53mm；底部亦可裝排(尺寸未詳)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4622,6 +5364,43 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        140,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        140,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        140,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/qube-540.html",
+     "note": "前/頂/底裝排需拆除I/O面板；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4663,6 +5442,43 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-us/products/qube-540-special-stainless-steel.html",
+     "note": "360需拆除I/O面板；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4698,6 +5514,43 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        140,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        140,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        140,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/qube-540.html",
+     "note": "前/頂/底裝排需拆除I/O面板；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4781,6 +5634,35 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/silencio-s400.html",
+     "note": "前置280需拆裝光碟架且可能干涉其下硬碟；頂部240需拆光碟架；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4816,6 +5698,29 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/silencio-s600.html",
+     "note": "頂部240需拆光碟機；頂部排下主機板元件高度限35mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7766,6 +8671,22 @@
       "SFX"
      ],
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://support.fractal-design.com/support/solutions/articles/4000207810-mood-aio-compatibility",
+     "note": "排長>178mm時排+風扇厚度限67mm；排寬上限148mm；裝排時無法用3.5吋架；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7857,6 +8778,35 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://support.fractal-design.com/support/solutions/articles/4000226405-north-momentum-edition-radiator-support",
+     "note": "頂部最大240，限RAM高35mm；前置下方排厚：120系55mm、140系35mm；底部硬碟可能干涉前置360；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7938,6 +8888,39 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        240,
+        280,
+        360,
+        420
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://support.fractal-design.com/support/solutions/articles/4000226400-north-xl-momentum-edition-radiator-options",
+     "note": "尺寸依同機殼North XL規格表；同時安裝上限為後120+頂280+前420；前置420排長≤465mm、厚≤40mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8023,6 +9006,27 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://support.fractal-design.com/support/solutions/articles/4000225912-pop-2-air-water-cooling-radiator-options",
+     "note": "前置不支援水冷排；頂部排長≤407mm、寬≤121mm，主機板元件高度限47mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8072,6 +9076,29 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/pop-series/pop-2-vision/pop-2-vision-black-rgb/",
+     "note": "前置與底部不支援水冷排；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8123,6 +9150,19 @@
       "SFX"
      ],
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "side",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/ridge/ridge/white/",
+     "note": "官方規格僅列側面120；支援頁稱140/240/280亦可但顯卡僅能25mm厚；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8173,6 +9213,37 @@
     "back_connect_max_form_factor": {
      "value": "E-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/summit-series/summit/summit-black-solid/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8222,6 +9293,37 @@
     "back_connect_max_form_factor": {
      "value": "E-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/summit-series/summit/summit-ambience-blackout-tg-light-tint/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8267,6 +9369,37 @@
     "back_connect_max_form_factor": {
      "value": "E-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/summit-series/summit/summit-black-solid/",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8314,6 +9447,19 @@
       "SFX"
      ],
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "side",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.fractal-design.com/products/cases/terra/terra/",
+     "note": "搭配200mm顯卡且不裝SSD時排寬上限121mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8449,6 +9595,29 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        280,
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        120,
+        140,
+        240,
+        280
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://support.fractal-design.com/support/solutions/articles/4000180220-torrent-compact-radiator-compatibility",
+     "note": "前置最大360x120/280x140，360排長≤403mm；>380mm需24mm以上風扇推風；頂部不支援；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -13584,6 +14753,29 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/king-45-pro",
+     "note": "頂部360排厚度最高可達84mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -13629,6 +14821,37 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        140,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/king-65-pro",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -13674,6 +14897,37 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        140,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/king-95-pro",
+     "note": "側面240排厚度上限60mm；新聞稿另列側面280；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -13888,6 +15142,28 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/sky-two",
+     "note": "頂部排+風扇總厚≤55mm；前置不支援水冷排(GX版才支援)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -14016,6 +15292,33 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/ten",
+     "note": "側面排需顯卡水平安裝；頂/底排支援視顯卡直立而定；底部尺寸摘錄不清；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -14065,6 +15368,36 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/tg3",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -14216,6 +15549,39 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/x5",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -14261,6 +15627,39 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        140,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/x5m",
+     "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16046,6 +17445,26 @@
     "back_connect_max_form_factor": {
      "value": "E-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/eclipse-g400a-black/",
+     "note": "前置不支援水冷排；頂部360排上限415x138x60mm、280排360x147x65mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16094,6 +17513,33 @@
      "source": "vendor_spec",
      "ref": "https://phanteks.com/product/enthoo-elite/",
      "note": "可裝雙電源；原廠未列長度上限；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        420
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        280,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/enthoo-elite/",
+     "note": "前置最大480(120系)/560(140系)；頂部最大480/420，排厚限65mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16138,6 +17584,38 @@
      "source": "vendor_spec",
      "ref": "https://phanteks.com/product/enthoo-pro-2-tg/",
      "note": "可裝雙電源；原廠未列長度上限；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        420
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/enthoo-pro-2-tg/",
+     "note": "前置最大480/420；頂部限主機板元件高55mm；右側支架可裝480(525x134x35mm)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16182,6 +17660,38 @@
      "source": "vendor_spec",
      "ref": "https://phanteks.com/product/enthoo-pro-2-tg/",
      "note": "可裝雙電源；原廠未列長度上限；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        420
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://temp.phanteks.com/products/enthoo-pro-2/",
+     "note": "前置最大480/420；頂部限主機板元件高55mm；右側支架可裝480(525x134x35mm)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16220,6 +17730,32 @@
      "source": "vendor_spec",
      "ref": "https://phanteks.com/product/enthoo-pro-2-server-v2-black/",
      "note": "可裝雙電源，另附伺服器備援電源支架；原廠未列長度上限；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        420
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120,
+        140
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/enthoo-pro-2-server-v2-black/",
+     "note": "前置最大480/420；頂部最大360(僅120系)；底部/側面支援未確認；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16259,6 +17795,19 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/evolv-s2-black/",
+     "note": "頂部360排上限410x130x38mm(間隙表另列55mm)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16304,6 +17853,19 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/evolv-x2-black/",
+     "note": "頂部排上限415x130x32mm；底部與後方不支援水冷排；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16353,6 +17915,19 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/evolv-x2-matrix-black/",
+     "note": "依Evolv X2規格推定；頂部排上限415x130x32mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16402,6 +17977,25 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/nv5-mk2-black/",
+     "note": "頂部與側面可同時裝360；底部不支援；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16443,6 +18037,19 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/nv5s-black/",
+     "note": "頂部360排上限410x130x38mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16488,6 +18095,19 @@
     "back_connect_max_form_factor": {
      "value": "M-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/xt-m3-black/",
+     "note": "頂部360排上限410x122x60mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16533,6 +18153,19 @@
     "back_connect_max_form_factor": {
      "value": "M-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/xt-m3-black/",
+     "note": "頂部360排上限410x122x60mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16568,6 +18201,19 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/xt-m5-black/",
+     "note": "頂部360排上限410x130x38mm(間隙表寬122mm)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16613,6 +18259,25 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/xt-silent-black/",
+     "note": "前置不支援水冷排；頂部360排上限415x138x60mm；規格表摘錄錯亂，後方120待確認；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16652,6 +18317,31 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        240
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/xt-pro-ultra-black/",
+     "note": "規格表摘錄錯亂；頂部360排上限415x138x60mm；後方120依XT Pro手冊；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16701,6 +18391,19 @@
     "back_connect_max_form_factor": {
      "value": "M-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/xt-v3-black/",
+     "note": "頂部360排上限410x122x60mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16746,6 +18449,19 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/xt-v5-black/",
+     "note": "頂部360排上限410x130x38mm(間隙寬122mm)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16791,6 +18507,25 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/xt-view-black/",
+     "note": "頂部360排間隙415x138x60mm(另處列410x130x38)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16840,6 +18575,25 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://phanteks.com/product/xt-view-matrix-black/",
+     "note": "頂部360排上限410x130x38mm(間隙表415x138x60)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
