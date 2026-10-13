@@ -66,7 +66,7 @@ jobs:
           hits = collections.Counter()
           for line in open('poc/out/items.jsonl', encoding='utf-8'):
               i = json.loads(line)
-              t = i['text']
+              t = i.get('text', '')
               if i.get('category') == 'case':
                   cases += 1
                   m = re.findall(r'[^/｝]{0,12}(?:水冷|冷排|排)[^/,]{0,24}', t)
