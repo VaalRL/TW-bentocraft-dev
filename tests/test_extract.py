@@ -143,6 +143,13 @@ class ExtractTest(unittest.TestCase):
     def test_cooler_scope(self):
         self.assertFalse(extract("cooler", "｛利民 HR-09 2280｝SSD 固態硬碟散熱器, $550", group_label="M.2 SSD散熱片")["in_scope"])
         self.assertEqual(extract("cooler", "NZXT Kraken 360 水冷, $5990")["radiator_mm"], 360)
+        self.assertFalse(extract("cooler", "｛Raymii RNF-K6｝大風扇RGB散熱筆電架, $999",
+                                 group_label="筆記型專用散熱座")["in_scope"])
+        self.assertFalse(extract("cooler", "｛酷碼 LGA1700 空冷專用扣具(A)｝, $99",
+                                 group_label="CoolerMaster 酷碼散熱器")["in_scope"])
+        # 品名外提到扣具（附贈、相容說明）的仍是散熱器
+        self.assertTrue(extract("cooler", "｛利民 PA120｝雙塔/高15.5cm/附1700扣具【WXZ】, $1290",
+                                group_label="Thermalright 利民散熱器")["in_scope"])
 
     def test_classify(self):
         self.assertEqual(classify_category("處理器 CPU"), "cpu")

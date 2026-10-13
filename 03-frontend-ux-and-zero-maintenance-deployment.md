@@ -140,6 +140,7 @@ export function parseShareUrl(
   - **價格以開啟當天為準**：連結只存型號，不存價格。開啟時以當日報價計算，並顯示報價日期；與分享當時的價格可能不同。
   - **隱私**：無個人資料上傳，純客戶端編碼與解碼。
   - **維運費用**：$0。
+  - **社群預覽**：`index.html` 帶 Open Graph 標籤與 1200×630 預覽圖（`web/public/og.png`），貼到 LINE、Facebook、Discord 時顯示網站名稱與說明。預覽爬蟲不執行 JS，所以每份配單的連結預覽都相同，不會顯示配單內容。
 
 ### 2. PTT PC_Shopping / 論壇標準菜單一鍵匯出
 一鍵產生符合 PTT 電腦採購板規之 Markdown / BBS 文字格式：

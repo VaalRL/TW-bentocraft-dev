@@ -132,6 +132,58 @@
     "status": "auto"
    }
   },
+  "gpu:asrock:rx9070xt-challenger-16gb": {
+   "category": "gpu",
+   "brand": "華擎 ASRock",
+   "name": "RX9070XT Challenger 16GB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎RX9070XTCHALLENGER16GB"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 290.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asrock:rx9070xt-taichi-16gb-oc": {
+   "category": "gpu",
+   "brand": "華擎 ASRock",
+   "name": "RX9070XT Taichi 16GB OC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎RX9070XTTAICHI16GBOC"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 330.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 304,
+     "source": "inferred",
+     "note": "AMD RX 9070 XT 參考 TBP"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "gpu:asus:ats-rx9070gre-o12g": {
    "category": "gpu",
    "brand": "華碩 ASUS",
@@ -1348,6 +1400,32 @@
      "value": 145,
      "source": "inferred",
      "note": "NVIDIA RTX 5060 參考 TGP"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060ti-aero-oc-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti AERO OC 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060TIAEROOC16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
     }
    },
    "review": {
