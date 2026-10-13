@@ -244,6 +244,38 @@
     "status": "auto"
    }
   },
+  "motherboard:asrock:b650m-pro-rs": {
+   "category": "motherboard",
+   "brand": "華擎 ASRock",
+   "name": "B650M Pro RS",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎B650MPRORS"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "B650",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "motherboard:asrock:b650m-pro-x3d-wifi": {
    "category": "motherboard",
    "brand": "華擎 ASRock",
@@ -1670,6 +1702,38 @@
    "aliases": {
     "model_keys": [
      "華擎X870ETAICHI"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "X870E",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "motherboard:asrock:x870e-taichi-lite": {
+   "category": "motherboard",
+   "brand": "華擎 ASRock",
+   "name": "X870E Taichi Lite",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎X870ETAICHILITE"
     ]
    },
    "specs": {
@@ -3463,6 +3527,38 @@
     },
     "chipset": {
      "value": "W680",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "motherboard:asus:pro-ws-w880-ace-se": {
+   "category": "motherboard",
+   "brand": "華碩 ASUS",
+   "name": "PRO WS W880-ACE SE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PROWSW880ACESE"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "W880",
      "source": "title"
     }
    },
@@ -5781,6 +5877,38 @@
     },
     "dimm_slots": {
      "value": 2,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "motherboard:gigabyte:b760m-gaming-plus-wifi-ddr4": {
+   "category": "motherboard",
+   "brand": "技嘉 GIGABYTE",
+   "name": "B760M GAMING PLUS WIFI DDR4",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉B760MGAMINGPLUSWIFIDDR4"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "B760",
      "source": "title"
     }
    },
