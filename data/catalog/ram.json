@@ -24,6 +24,11 @@
     "speed_mts": {
      "value": 3200,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -724,6 +729,11 @@
     "speed_mts": {
      "value": 3200,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -1072,6 +1082,11 @@
     "speed_mts": {
      "value": 3200,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -2706,6 +2721,11 @@
     "speed_mts": {
      "value": 3200,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -2734,6 +2754,11 @@
     "speed_mts": {
      "value": 3200,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -2954,6 +2979,11 @@
     "speed_mts": {
      "value": 3200,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -2982,6 +3012,11 @@
     "speed_mts": {
      "value": 3200,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -3138,6 +3173,11 @@
     "speed_mts": {
      "value": 3200,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -3702,6 +3742,11 @@
     "speed_mts": {
      "value": 6000,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -3794,6 +3839,11 @@
     "speed_mts": {
      "value": 2666,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -3822,6 +3872,11 @@
     "speed_mts": {
      "value": 3200,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -3978,6 +4033,11 @@
     "speed_mts": {
      "value": 3200,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -4102,6 +4162,11 @@
     "speed_mts": {
      "value": 2666,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {
@@ -4130,6 +4195,11 @@
     "speed_mts": {
      "value": 3200,
      "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
     }
    },
    "review": {

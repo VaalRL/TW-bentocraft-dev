@@ -48,6 +48,7 @@ COLORS = [
     ("燕麥", "other"), ("胡桃木", "wood"), ("木紋", "wood"), ("黑", "black"), ("白", "white"), ("銀", "silver"),
     ("灰", "gray"), ("粉", "pink"), ("藍", "blue"), ("綠", "green"), ("紅", "red"), ("紫", "purple"),
 ]
+MODULES_NOTE = "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
 ENGLISH_COLORS = [("WHITE|WH", "白", "white"), ("BLACK|BK", "黑", "black")]
 FF_RANK = {"Mini-ITX": 1, "M-ATX": 2, "ATX": 3, "E-ATX": 4}
 REQUIRES = {"主機板": "motherboard", "CPU": "cpu", "處理器": "cpu", "顯卡": "gpu", "顯示卡": "gpu", "記憶體": "ram"}
@@ -205,6 +206,8 @@ def specs_for(item: dict) -> dict:
             s["modules"] = val(int(m.group(1)), "title")
         elif "單條" in text:
             s["modules"] = val(1, "title")
+        elif item.get("capacity_gb"):
+            s["modules"] = val(1, "inferred", note=MODULES_NOTE)
         m = re.search(r"D(?:DR)?[45][-\s]?(\d{4})", text)
         if m:
             s["speed_mts"] = val(int(m.group(1)), "title")

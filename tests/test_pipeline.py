@@ -101,6 +101,13 @@ class TitleSpecsTest(unittest.TestCase):
         spec = specs_for({"category": "psu", "text": "｛台達 650W 金牌｝雙8/全模組/DC-DC/10年保固"})
         self.assertNotIn("pcie_12v2x6", spec)  # 沒寫不代表沒有，留空
 
+    def test_ram_modules(self):
+        def modules(text, cap):
+            return specs_for({"category": "ram", "text": text, "capacity_gb": cap}).get("modules")
+        self.assertEqual(modules("｛威剛 32G(16G*2) D5-6000｝CL30, $3999", 32), {"value": 2, "source": "title"})
+        self.assertEqual(modules("｛UMAX 16GB DDR4-3200｝, $1290", 16)["source"], "inferred")
+        self.assertIsNone(modules("｛某品牌 DDR5-6000｝, $1290", None))  # 連容量都沒有就不推定
+
 
 class OfferIdTest(unittest.TestCase):
     def test_stable_when_price_and_promotions_change(self):
