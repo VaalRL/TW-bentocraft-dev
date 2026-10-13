@@ -60,6 +60,11 @@
     "chipset": {
      "value": "A520",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -160,6 +165,11 @@
     "chipset": {
      "value": "B550",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -648,6 +658,11 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -1072,6 +1087,11 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -1860,6 +1880,11 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -2880,6 +2905,11 @@
     "chipset": {
      "value": "H610",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -3864,6 +3894,11 @@
     "chipset": {
      "value": "B650E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -3992,6 +4027,11 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -4120,6 +4160,11 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -4152,6 +4197,11 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -7424,6 +7474,11 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -7844,6 +7899,11 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -9272,6 +9332,11 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -9336,6 +9401,11 @@
     "chipset": {
      "value": "B850",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -9400,6 +9470,11 @@
     "chipset": {
      "value": "B860",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -9528,6 +9603,11 @@
     "chipset": {
      "value": "X870",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {
@@ -9624,6 +9704,11 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "inferred",
+     "note": "Mini-ITX 主機板只有 2 條記憶體插槽"
     }
    },
    "review": {

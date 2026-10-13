@@ -1,7 +1,8 @@
 """補齊規格庫缺漏的欄位：人工整理的對照表（data/reference/specs.json）與可由既有欄位推導的值。
 
 品名通常不寫功耗、是否附散熱器等資訊，但這些值由 CPU 型號或顯卡晶片決定，
-可以整理成對照表一次套用。散熱器品名的【WXZ】扣具代碼則可依原價屋圖例換成支援腳位。規則：
+可以整理成對照表一次套用。散熱器品名的【WXZ】扣具代碼則可依原價屋圖例換成支援腳位，
+Mini-ITX 主機板的記憶體插槽數固定為 2。規則：
 
 - 只補缺漏的欄位，不覆寫既有值（品名擷取或人工確認的值優先）。
 - 每個欄位都帶來源與依據（note）；顯卡依晶片推定的值標為 inferred，介面會註明。
@@ -62,6 +63,10 @@ def apply_reference(model: dict, reference: dict) -> list[str]:
             specs["sockets"] = {"value": sockets, "source": "retailer_spec", "ref": MOUNT_CODE_REF,
                                 "note": MOUNT_CODE_NOTE}
             filled.append("sockets")
+    if (model["category"] == "motherboard" and "dimm_slots" not in specs
+            and specs.get("form_factor", {}).get("value") == "Mini-ITX"):
+        specs["dimm_slots"] = {"value": 2, "source": "inferred", "note": "Mini-ITX 主機板只有 2 條記憶體插槽"}
+        filled.append("dimm_slots")
     rule = match_rule(reference, model["category"], model["name"])
     if rule is None:
         return filled

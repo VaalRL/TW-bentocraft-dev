@@ -83,6 +83,15 @@ class TestMountCodes(unittest.TestCase):
         self.assertNotIn("LGA1200", m["specs"]["sockets"]["value"])
 
 
+class TestDerived(unittest.TestCase):
+    def test_mini_itx_has_two_slots(self):
+        m = model("motherboard", "B850I", form_factor={"value": "Mini-ITX", "source": "title"})
+        self.assertEqual(apply_reference(m, REF), ["dimm_slots"])
+        self.assertEqual(m["specs"]["dimm_slots"]["value"], 2)
+        atx = model("motherboard", "X870E", form_factor={"value": "ATX", "source": "title"})
+        self.assertEqual(apply_reference(atx, REF), [])  # ATX 有 2 條也有 4 條，不推定
+
+
 class TestApply(unittest.TestCase):
     def test_existing_values_are_kept(self):
         m = model("gpu", "RTX5080 X3", board_power_w={"value": 400, "source": "manual", "note": "實測"})
@@ -107,7 +116,7 @@ class TestApply(unittest.TestCase):
 class TestCatalogInSync(unittest.TestCase):
     def test_catalog_has_reference_values_and_is_valid(self):
         shards = load_catalog(ROOT / "data/catalog")
-        for cat in ("cpu", "gpu", "cooler"):
+        for cat in ("cpu", "gpu", "cooler", "motherboard"):
             for mid, m in shards[cat]["models"].items():
                 with self.subTest(model=mid):
                     self.assertEqual(apply_reference(copy.deepcopy(m), REF), [],

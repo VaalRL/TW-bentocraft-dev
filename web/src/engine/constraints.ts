@@ -65,7 +65,9 @@ export const PAIR_CONSTRAINTS: PairConstraint[] = [
       if (gen.status !== 'pass') return gen;
       const n = spec<number>(r, 'modules'), slots = spec<number>(m, 'dimm_slots');
       if (!n || !slots) return result('C2', 'unknown', '記憶體條數或主機板插槽數未確認');
-      return n.value > slots.value ? result('C2', 'fail', `${n.value} 條超過 ${slots.value} 個插槽`) : gen;
+      return n.value > slots.value
+        ? result('C2', 'fail', `${n.value} 條超過 ${slots.value} 個插槽`, n.inferred || slots.inferred)
+        : gen;
     },
   },
   {
