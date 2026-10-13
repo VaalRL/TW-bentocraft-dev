@@ -511,38 +511,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華擎B850CHALLENGERWIFI"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "B850",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:asrock:b850-challenger-wifi-white": {
-   "category": "motherboard",
-   "brand": "華擎 ASRock",
-   "name": "B850 Challenger WiFi White",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華擎B850CHALLENGERWIFI",
      "華擎B850CHALLENGERWIFIWHITE"
     ]
    },
@@ -566,6 +535,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "motherboard:asrock:b850-pro-a": {
@@ -708,38 +683,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華擎B850MCHALLENGERWIFI"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "B850",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:asrock:b850m-challenger-wifi-white": {
-   "category": "motherboard",
-   "brand": "華擎 ASRock",
-   "name": "B850M Challenger WiFi White",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華擎B850MCHALLENGERWIFI",
      "華擎B850MCHALLENGERWIFIWHITE"
     ]
    },
@@ -763,6 +707,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "motherboard:asrock:b850m-pro-a": {
@@ -868,38 +818,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華擎B850MPRORSWIFI"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "B850",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:asrock:b850m-pro-rs-wifi-white": {
-   "category": "motherboard",
-   "brand": "華擎 ASRock",
-   "name": "B850M Pro RS WiFi White",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華擎B850MPRORSWIFI",
      "華擎B850MPRORSWIFIWHITE"
     ]
    },
@@ -923,6 +842,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "motherboard:asrock:b850m-riptide-wifi": {
@@ -4995,38 +4920,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "華碩TUFGAMINGB850MPLUSWIFI7"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "B850",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:asus:tuf-gaming-b850m-plus-wifi7-w": {
-   "category": "motherboard",
-   "brand": "華碩 ASUS",
-   "name": "TUF GAMING B850M-PLUS WIFI7 W",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "華碩TUFGAMINGB850MPLUSWIFI7",
      "華碩TUFGAMINGB850MPLUSWIFI7W"
     ]
    },
@@ -5050,6 +4944,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "motherboard:asus:tuf-gaming-b860-plus-wifi": {
@@ -6195,38 +6095,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "技嘉B850AORUSELITEWIFI7"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "B850",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:gigabyte:b850-aorus-elite-wifi7-ice": {
-   "category": "motherboard",
-   "brand": "技嘉 GIGABYTE",
-   "name": "B850 AORUS ELITE WIFI7 ICE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "技嘉B850AORUSELITEWIFI7",
      "技嘉B850AORUSELITEWIFI7ICE"
     ]
    },
@@ -6250,6 +6119,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "ice": {
+     "label": "ICE 白",
+     "color": "white"
+    }
    }
   },
   "motherboard:gigabyte:b850-aorus-stealth": {
@@ -6259,42 +6134,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "技嘉B850AORUSSTEALTH"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "B850",
-     "source": "title"
-    },
-    "back_connect": {
-     "value": true,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:gigabyte:b850-aorus-stealth-ice": {
-   "category": "motherboard",
-   "brand": "技嘉 GIGABYTE",
-   "name": "B850 AORUS STEALTH ICE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "技嘉B850AORUSSTEALTH",
      "技嘉B850AORUSSTEALTHICE"
     ]
    },
@@ -6332,6 +6172,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "ice": {
+     "label": "ICE 白",
+     "color": "white"
+    }
    }
   },
   "motherboard:gigabyte:b850-eagle-wifi6e": {
@@ -6721,48 +6567,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "技嘉B860MAORUSELITEWIFI6E"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "LGA1851",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "M-ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "B860",
-     "source": "title"
-    },
-    "dimm_slots": {
-     "value": 4,
-     "source": "vendor_spec",
-     "ref": "https://www.gigabyte.com/Motherboard/B860M-AORUS-ELITE-WIFI6E/sp"
-    },
-    "max_memory_gb": {
-     "value": 256,
-     "source": "vendor_spec",
-     "ref": "https://www.gigabyte.com/Motherboard/B860M-AORUS-ELITE-WIFI6E/sp"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:gigabyte:b860m-aorus-elite-wifi6e-ice": {
-   "category": "motherboard",
-   "brand": "技嘉 GIGABYTE",
-   "name": "B860M AORUS ELITE WIFI6E ICE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "技嘉B860MAORUSELITEWIFI6E",
      "技嘉B860MAORUSELITEWIFI6EICE"
     ]
    },
@@ -6786,16 +6591,22 @@
     "dimm_slots": {
      "value": 4,
      "source": "vendor_spec",
-     "ref": "https://www.gigabyte.com/jp/Motherboard/B860M-AORUS-ELITE-WIFI6E-ICE/sp"
+     "ref": "https://www.gigabyte.com/Motherboard/B860M-AORUS-ELITE-WIFI6E/sp"
     },
     "max_memory_gb": {
      "value": 256,
      "source": "vendor_spec",
-     "ref": "https://www.gigabyte.com/jp/Motherboard/B860M-AORUS-ELITE-WIFI6E-ICE/sp"
+     "ref": "https://www.gigabyte.com/Motherboard/B860M-AORUS-ELITE-WIFI6E/sp"
     }
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "ice": {
+     "label": "ICE 白",
+     "color": "white"
+    }
    }
   },
   "motherboard:gigabyte:b860m-eagle-v2": {
@@ -7193,38 +7004,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "技嘉X870AORUSELITEWIFI7"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "X870",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:gigabyte:x870-aorus-elite-wifi7-ice": {
-   "category": "motherboard",
-   "brand": "技嘉 GIGABYTE",
-   "name": "X870 AORUS ELITE WIFI7 ICE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "技嘉X870AORUSELITEWIFI7",
      "技嘉X870AORUSELITEWIFI7ICE"
     ]
    },
@@ -7258,6 +7038,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "ice": {
+     "label": "ICE 白",
+     "color": "white"
+    }
    }
   },
   "motherboard:gigabyte:x870-aorus-infinity": {
@@ -7299,42 +7085,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "技嘉X870AORUSSTEALTH"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "X870",
-     "source": "title"
-    },
-    "back_connect": {
-     "value": true,
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:gigabyte:x870-aorus-stealth-ice": {
-   "category": "motherboard",
-   "brand": "技嘉 GIGABYTE",
-   "name": "X870 AORUS STEALTH ICE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "技嘉X870AORUSSTEALTH",
      "技嘉X870AORUSSTEALTHICE"
     ]
    },
@@ -7362,6 +7113,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "ice": {
+     "label": "ICE 白",
+     "color": "white"
+    }
    }
   },
   "motherboard:gigabyte:x870-aorus-tachyon-ice": {
@@ -7605,38 +7362,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "技嘉X870EAORUSPRO"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "AM5",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "X870E",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:gigabyte:x870e-aorus-pro-ice": {
-   "category": "motherboard",
-   "brand": "技嘉 GIGABYTE",
-   "name": "X870E AORUS PRO ICE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "技嘉X870EAORUSPRO",
      "技嘉X870EAORUSPROICE"
     ]
    },
@@ -7660,6 +7386,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "ice": {
+     "label": "ICE 白",
+     "color": "white"
+    }
    }
   },
   "motherboard:gigabyte:x870e-aorus-pro-x3d-ice": {
@@ -7838,38 +7570,7 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "技嘉Z890AORUSELITEWIFI7"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "LGA1851",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "Z890",
-     "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:gigabyte:z890-aorus-elite-wifi7-ice": {
-   "category": "motherboard",
-   "brand": "技嘉 GIGABYTE",
-   "name": "Z890 AORUS ELITE WIFI7 ICE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
+     "技嘉Z890AORUSELITEWIFI7",
      "技嘉Z890AORUSELITEWIFI7ICE"
     ]
    },
@@ -7903,6 +7604,12 @@
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "ice": {
+     "label": "ICE 白",
+     "color": "white"
+    }
    }
   },
   "motherboard:gigabyte:z890-aorus-elite-wifi7-plus": {
@@ -11275,7 +10982,8 @@
    "status": "active",
    "aliases": {
     "model_keys": [
-     "微星PROZ890SWIFI"
+     "微星PROZ890SWIFI",
+     "微星PROZ890SWIFIWHITE"
     ]
    },
    "specs": {
@@ -11294,10 +11002,26 @@
     "chipset": {
      "value": "Z890",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://br.msi.com/Motherboard/PRO-Z890-S-WIFI-WHITE/Specification"
+    },
+    "max_memory_gb": {
+     "value": 256,
+     "source": "vendor_spec",
+     "ref": "https://br.msi.com/Motherboard/PRO-Z890-S-WIFI-WHITE/Specification"
     }
    },
    "review": {
     "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "motherboard:msi:pro-z890-s-wifi-pz": {
@@ -11330,48 +11054,6 @@
     "back_connect": {
      "value": true,
      "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:msi:pro-z890-s-wifi-white": {
-   "category": "motherboard",
-   "brand": "微星 MSI",
-   "name": "PRO Z890-S WIFI WHITE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "微星PROZ890SWIFIWHITE"
-    ]
-   },
-   "specs": {
-    "socket": {
-     "value": "LGA1851",
-     "source": "optgroup"
-    },
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "form_factor": {
-     "value": "ATX",
-     "source": "title"
-    },
-    "chipset": {
-     "value": "Z890",
-     "source": "title"
-    },
-    "dimm_slots": {
-     "value": 4,
-     "source": "vendor_spec",
-     "ref": "https://br.msi.com/Motherboard/PRO-Z890-S-WIFI-WHITE/Specification"
-    },
-    "max_memory_gb": {
-     "value": 256,
-     "source": "vendor_spec",
-     "ref": "https://br.msi.com/Motherboard/PRO-Z890-S-WIFI-WHITE/Specification"
     }
    },
    "review": {

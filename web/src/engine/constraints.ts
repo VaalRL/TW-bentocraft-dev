@@ -94,8 +94,11 @@ export const PAIR_CONSTRAINTS: PairConstraint[] = [
         const size = spec<number>(k, 'radiator_mm');
         const support = spec<{ sizes: number[] }[]>(c, 'radiator_support');
         if (!size || !support) return result('C5', 'unknown', '冷排尺寸或機殼冷排位未確認');
-        return support.value.some(p => p.sizes.includes(size.value))
-          ? result('C5', 'pass')
+        if (support.value.some(p => p.sizes.includes(size.value))) return result('C5', 'pass');
+        // 原廠常只列最大尺寸（「頂部 360/420」）：比某個冷排位的上限小、只是沒被列出時不判不相容
+        const largest = Math.max(...support.value.flatMap(p => p.sizes));
+        return size.value < largest
+          ? result('C5', 'warn', `原廠未列出 ${size.value} mm 冷排，較大的冷排位通常也能裝，請確認`)
           : result('C5', 'fail', `機殼不支援 ${size.value} mm 冷排`);
       }
       return result('C5', 'unknown', '散熱器類型未確認');

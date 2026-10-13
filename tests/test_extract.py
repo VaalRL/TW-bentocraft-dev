@@ -147,6 +147,10 @@ class ExtractTest(unittest.TestCase):
                                  group_label="筆記型專用散熱座")["in_scope"])
         self.assertFalse(extract("cooler", "｛酷碼 LGA1700 空冷專用扣具(A)｝, $99",
                                  group_label="CoolerMaster 酷碼散熱器")["in_scope"])
+        for name in ("銀欣 XE02-2066 散熱器", "酷碼 MasterLiquid PL360 TR5-SP6 水冷", "銀欣 XED120 4U散熱器",
+                     "貓頭鷹 NL-ACF1 VRM 風扇", "曜越 T1000 透明水冷液"):
+            self.assertFalse(extract("cooler", f"｛{name}｝, $1990")["in_scope"], name)
+        self.assertTrue(extract("cooler", "｛貓頭鷹 NH-U12A｝高15.8/支援LGA2066, $3990")["in_scope"])
         # 品名外提到扣具（附贈、相容說明）的仍是散熱器
         self.assertTrue(extract("cooler", "｛利民 PA120｝雙塔/高15.5cm/附1700扣具【WXZ】, $1290",
                                 group_label="Thermalright 利民散熱器")["in_scope"])
