@@ -222,8 +222,9 @@ export function ExplodedView({ selection, active, onSelect }: {
   onSelect: (c: Category) => void;
 }) {
   const [view, setView] = useState<View>(DEFAULT_VIEW);
-  const [explodeTo, setExplodeTo] = useState(1);
-  const [t, setT] = useState(1); // 分解程度 0～1（動畫用）
+  // 預設只把目前的類別（左側選單或點選的零件）拉出到最前方，其他零件組合在機殼裡；「全部分解」時全部拉出
+  const [allOut, setAllOut] = useState(false);
+  const [pull, setPull] = useState<Partial<Record<Category, number>>>({}); // 各類別的拉出程度 0～1（動畫用）
   const [hover, setHover] = useState<Category | null>(null);
   const drag = useRef<{ x: number; y: number; moved: boolean } | null>(null);
   // 收合狀態記在瀏覽器（無痕模式可能丟例外）；手機預設收合，避免把清單推到下面
@@ -239,23 +240,27 @@ export function ExplodedView({ selection, active, onSelect }: {
     return !v;
   });
 
-  // 分解／組合動畫；偏好減少動態效果時直接切換
+  // 拉出／收回動畫；偏好減少動態效果時直接切換
   useEffect(() => {
+    const target = (c: Category) => (allOut || c === active ? 1 : 0);
+    const cats = Object.keys(CATEGORY_LABEL) as Category[];
+    const to = Object.fromEntries(cats.map(c => [c, target(c)])) as Record<Category, number>;
     if (typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      setT(explodeTo);
+      setPull(to);
       return;
     }
     let raf = 0;
     const start = performance.now();
-    const from = t;
+    const from = { ...pull };
     const step = (now: number) => {
-      const k = Math.min(1, (now - start) / 350);
-      setT(from + (explodeTo - from) * (1 - (1 - k) ** 3));
+      const k = Math.min(1, (now - start) / 380);
+      const e = 1 - (1 - k) ** 3;
+      setPull(Object.fromEntries(cats.map(c => [c, (from[c] ?? 0) + (to[c] - (from[c] ?? 0)) * e])));
       if (k < 1) raf = requestAnimationFrame(step);
     };
     raf = requestAnimationFrame(step);
     return () => cancelAnimationFrame(raf);
-  }, [explodeTo]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [active, allOut]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const { width, height, list } = parts(selection);
   const project = projector(view);
@@ -270,7 +275,12 @@ export function ExplodedView({ selection, active, onSelect }: {
 
   const box = caseSolid(width, height);
   const zero: V3 = [0, 0, 0];
-  const offset = (p: Part): V3 => [p.explode[0] * t, p.explode[1] * t, p.explode[2] * t];
+  const amount = (c: Category) => pull[c] ?? 0;
+  const focus = !allOut && active !== 'case' ? active : null; // 單獨拉出的類別
+  // 單獨拉出時至少拉到側板外面，小零件（CPU、SSD）才不會卡在機殼裡
+  const pullOf = (p: Part): V3 => p.cat !== focus ? p.explode
+    : [p.explode[0], p.explode[1], Math.max(p.explode[2], DEPTH / 2 + 70 + p.solids[0].size[2] / 2 - p.solids[0].c[2])];
+  const offset = (p: Part): V3 => pullOf(p).map(v => v * amount(p.cat)) as V3;
   // 視窗：目前視角下所有頂點的外框
   let [x0, y0, x1, y1] = [Infinity, Infinity, -Infinity, -Infinity];
   for (const [solid, off] of [[box, zero] as [Solid, V3], ...list.flatMap(p => p.solids.map(q => [q, offset(p)] as [Solid, V3]))]) {
@@ -281,10 +291,12 @@ export function ExplodedView({ selection, active, onSelect }: {
     }
   }
   const vb = `${(x0 - 12).toFixed(0)} ${(y0 - 12).toFixed(0)} ${(x1 - x0 + 24).toFixed(0)} ${(y1 - y0 + 24).toFixed(0)}`;
-  // 由遠到近畫（畫家演算法）：以零件中心的深度排序
+  // 由遠到近畫（畫家演算法）：以零件中心的深度排序；單獨拉出的零件最後畫、在最前方
   const order = list
     .map((p, i) => ({ p, i, depth: project(add(p.solids[0].c, offset(p)))[2] }))
-    .sort((a, b) => a.depth - b.depth);
+    .sort((a, b) => a.depth - b.depth)
+    .filter(o => o.p.cat !== focus);
+  const focused = list.map((p, i) => ({ p, i, depth: 0 })).filter(o => o.p.cat === focus);
 
   const onPointerDown = (e: PointerEvent) => {
     drag.current = { x: e.clientX, y: e.clientY, moved: false };
@@ -321,7 +333,7 @@ export function ExplodedView({ selection, active, onSelect }: {
       role: 'button',
       tabIndex: 0,
       'aria-label': `${describe(cat)}，點選開啟${CATEGORY_LABEL[cat]}清單`,
-      className: `iso-part iso-${cat} ${s ? 'is-picked' : ''} ${active === cat ? 'is-active' : ''}`,
+      className: `iso-part iso-${cat} ${s ? 'is-picked' : ''} ${active === cat ? 'is-active' : ''} ${focus && focus !== cat ? 'is-dim' : ''}`,
       style: { '--part': s ? COLOR[s] : 'var(--text-muted)' } as CSSProperties,
       onClick: () => pick(cat),
       onKeyDown: (e: KeyboardEvent) => {
@@ -347,7 +359,7 @@ export function ExplodedView({ selection, active, onSelect }: {
     <figure className="x3d">
       <div className="x3d-toolbar">
         <span className="x3d-title">3D 分解圖</span>
-        {open && <button type="button" className="link" onClick={() => setExplodeTo(v => (v ? 0 : 1))}>{explodeTo ? '組合' : '分解'}</button>}
+        {open && <button type="button" className="link" aria-pressed={allOut} onClick={() => setAllOut(v => !v)}>{allOut ? '只拉出目前零件' : '全部分解'}</button>}
         {open && <button type="button" className="link" onClick={() => setView(DEFAULT_VIEW)}>重設視角</button>}
         <button type="button" className="link" aria-expanded={open} onClick={toggle}>{open ? '收合' : '展開'}</button>
       </div>
@@ -361,7 +373,8 @@ export function ExplodedView({ selection, active, onSelect }: {
             <g {...partProps('case')}>
               <Drawing solid={box} view={view} project={project} offset={zero} only="back" />
             </g>
-            {t > 0.05 && list.map((p, i) => {
+            {list.map((p, i) => {
+              if (amount(p.cat) < 0.05) return null;
               const a = project(p.solids[0].c), z = project(add(p.solids[0].c, offset(p)));
               return <line key={i} className="iso-guide" x1={a[0]} y1={a[1]} x2={z[0]} y2={z[1]} />;
             })}
@@ -375,10 +388,17 @@ export function ExplodedView({ selection, active, onSelect }: {
             <g className="iso-shell" aria-hidden="true">
               <Drawing solid={box} view={view} project={project} offset={zero} only="front" cls="is-outline" />
             </g>
+            {focus && focused.length > 0 && (
+              <g {...partProps(focus)}>
+                {focused.flatMap(({ p, i }) => p.solids.map((s, k) => (
+                  <Drawing key={`${i}-${k}`} solid={s} view={view} project={project} offset={offset(p)} />
+                )))}
+              </g>
+            )}
           </svg>
         </div>
         <figcaption className="x3d-caption" aria-live="polite">
-          {hover ? describe(hover) : '點零件開啟對應清單；拖曳可旋轉。外形為通用模型，已選零件依規格尺寸等比例。'}
+          {hover ? describe(hover) : (focus ? `${describe(focus)}。點其他零件可切換；拖曳可旋轉。` : '點零件開啟對應清單；拖曳可旋轉。外形為通用模型，已選零件依規格尺寸等比例。')}
         </figcaption>
       </>}
     </figure>
