@@ -17,7 +17,7 @@ interface Row {
 const ORDER: Record<Status, number> = { pass: 0, unknown: 1, warn: 2, fail: 3 };
 const PAGE = 60;
 
-export function CandidateList({ category, models, catalog, selection, offers, history, onPick }: {
+export function CandidateList({ category, models, catalog, selection, offers, history, onPick, onStartWithCase }: {
   category: Category;
   models: Model[];
   catalog: Record<Category, Model[]>;
@@ -25,6 +25,8 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
   offers: Map<string, Offer[]>;
   history?: PriceHistory;
   onPick: (m: Model) => void;
+  /** 有值時在清單上方提示小機殼可先選機殼（還沒選任何零件時） */
+  onStartWithCase?: () => void;
 }) {
   const [query, setQuery] = useState('');
   const [hideIncompatible, setHideIncompatible] = useState(true);
@@ -81,6 +83,12 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
           隱藏不相容（{hidden}）
         </label>
       </div>
+      {onStartWithCase && (
+        <p className="candidates-tip">
+          想組小機殼（ITX）？建議先選機殼，其他零件會依它的顯卡長度、散熱器高度與電源規格自動篩選。
+          <button className="link" onClick={onStartWithCase}>先選機殼</button>
+        </p>
+      )}
       <p className="candidates-count">
         {filtered.length} 個型號{filtered.length > limit ? `，顯示前 ${limit} 個` : ''}
       </p>

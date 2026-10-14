@@ -11,6 +11,18 @@ test.describe('桌面版配單', () => {
     expect(errors).toEqual([]);
   });
 
+  test('還沒選零件時提示小機殼可先選機殼，選了之後不再提示', async ({ page }) => {
+    await open(page);
+    const tip = page.locator('.candidates-tip');
+    await expect(tip).toContainText('想組小機殼');
+    await tip.getByRole('button', { name: '先選機殼' }).click();
+    await expect(page.locator('.candidates-toolbar h2')).toHaveText('機殼');
+    await expect(tip).toHaveCount(0);
+    await candidate(page, 'A4-H2O').click();
+    await category(page, '處理器');
+    await expect(tip).toHaveCount(0);
+  });
+
   test('不相容的主機板預設隱藏，取消勾選後顯示為不相容', async ({ page }) => {
     await open(page);
     await pick(page, '處理器', 'R7 9800X3D');

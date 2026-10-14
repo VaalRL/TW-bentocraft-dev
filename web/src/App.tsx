@@ -118,6 +118,7 @@ export function App() {
           offers={offers}
           history={data.prices.h}
           onPick={pick}
+          onStartWithCase={Object.keys(picks).length === 0 && active !== 'case' ? () => setActive('case') : undefined}
         />
         <Summary
           selection={selection}
