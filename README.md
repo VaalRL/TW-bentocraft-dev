@@ -1,145 +1,107 @@
 **English** | [繁體中文](README.zh-TW.md)
 
-# ComputerboxTW (TW-bentocraft): Zero-Maintenance Open-Source 3D PC Compatibility & Pricing Engine
+# 原價煮便當 (TW-bentocraft)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-brightgreen)](https://vaalrl.github.io/TW-bentocraft/)
+[![Website](https://img.shields.io/badge/website-vaalrl.github.io%2FTW--bentocraft-brightgreen)](https://vaalrl.github.io/TW-bentocraft/)
 [![GitHub Stars](https://img.shields.io/github/stars/VaalRL/TW-bentocraft?style=social)](https://github.com/VaalRL/TW-bentocraft)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-yellow.svg?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/username)
 
-> 🍱 **ComputerboxTW (Repo: `TW-bentocraft` / 中文品牌: 原價煮便當)** is an open-source, serverless 3D PC building estimator and hardware compatibility engine tailored for Taiwan's retail hardware ecosystem (CoolPC / Sinya).  
-> 
-> 🎨 **Design System & Aesthetics**:
-> - **Style Archetype**: **Model Kit Studio (Gunpla / Maker Workbench)** with runner snap aesthetics and tactical precision.
-> - **Default Light Theme**: **White-Gold-Emerald** (Crisp workbench white, emerald verification badges, elegant gold accents).
-> - **Dark Theme**: **Black-Crimson-Gold** (Obsidian metal chassis, bronze-gold frames, crimson collision alert meshes).
-> 
-> It runs 100% on **client-side edge (GitHub Pages)** with **zero hosting costs**, powered by an automated daily **GitHub Actions ETL crawler**, a deterministic **Constraint Satisfaction Engine (CSP)**, and a **React Three Fiber (R3F) Spatial 3D Assembly Stage** with clickable component hot-zones and smooth camera fly-to choreography.
+**A PC part picker for Taiwan's CoolPC (原價屋) store: today's CoolPC prices, with incompatible parts filtered out as you choose.**
 
+👉 **https://vaalrl.github.io/TW-bentocraft/** (the interface is in Traditional Chinese)
+
+![Builder screen: categories on the left, candidate parts with specs in the middle, the quote with compatibility checks and a size diagram on the right](docs/screenshot.png)
+
+> This is an unofficial open-source project, not affiliated with CoolPC. Prices and specs are for reference; CoolPC's own listing is authoritative.
 
 ---
 
-## ⚡ Core Value Proposition: Legacy Evaluators vs. OpenPCBuilder
+## What it does
 
-| Dimension | Traditional Store Evaluators (CoolPC / Sinya) | Typical Commercial Builders (PCPartPicker) | **OpenPCBuilder TW (This Project)** |
-| :--- | :--- | :--- | :--- |
-| **Hosting & Ops Cost** | Heavy dedicated web servers ($$$) | Massive AWS cloud infrastructure ($$$$) | **$0 / month (100% Serverless GitHub Pages + Actions)** |
-| **Compatibility Filtering** | None (Allows buying incompatible parts) | High (US/Global retail data focus) | **Real-time Bidirectional CSP Engine on Taiwan local parts** |
-| **User Experience (UX)** | Cluttered, 1990s table, ads, no clearance checks | Ad-heavy, complex affiliate redirects | **Default Clean Light UI, dynamic dark toggle, zero ads** |
-| **Menu Sharing** | Ephemeral, easily expired server sessions | Requires account login or database link | **Database-Free Compressed URL Hash sharing (LZ-String)** |
-| **Open Source & Extensible** | Closed source, proprietary | Closed source commercial | **100% MIT Licensed, Community Spec Ontology PRs** |
+- **Filters as you pick.** Every part you choose updates the candidate lists in the other categories; incompatible parts are hidden by default (or shown and marked). If choosing a part would leave another category with no compatible option, you are told before you pick it.
+- **Daily prices.** CoolPC's quote page is fetched every day at 11:17 Taiwan time. Conditional prices (time-limited deals, bundle discounts, the in-store assembly price) are kept apart and only count when their condition holds. Colour variants of one model are listed once at the lowest price, with the colour named.
+- **Price trends.** Each model's price is recorded daily and kept for 90 days. Candidate lists show the change from 7 days ago, and the quote shows the 30-day low (and says so when today's price is it). Trends appear once a week of history exists.
+- **Size diagram.** GPU length and air-cooler height are drawn to scale against the case limits, including conditional limits such as "with the PSU shroud installed".
+- **Share and export.** One link carries the whole build (no account; the build lives in the URL), and the build can be copied in PTT PC_Shopping format. A shared link is priced with the prices of the day it is opened.
+- Dark mode and a mobile layout.
 
----
+### Compatibility checks
 
-## 🏗️ System Architecture Topology
+| Check | What it compares |
+| :-- | :-- |
+| C1 CPU ⟷ motherboard | Socket (AM4, AM5, LGA1700, LGA1851) |
+| C2 Motherboard ⟷ RAM | DDR4/DDR5 generation; module count within the slot count |
+| C3 Motherboard ⟷ case | Form factor (Mini-ITX ⊂ M-ATX ⊂ ATX ⊂ E-ATX) |
+| C4 GPU ⟷ case | GPU length vs case limit, with listing tolerance and conditional limits |
+| C5 Cooler ⟷ case | Air-cooler height; AIO radiator size vs the case's radiator mounts |
+| C6 Cooler ⟷ CPU | Mounting bracket supports the socket |
+| C7 PSU ⟷ build | Estimated peak load and recommended wattage |
+| C8 GPU ⟷ PSU | Warns when a 16-pin (12V-2x6) GPU meets a PSU without a native cable |
+| C9 PSU ⟷ case | ATX / SFX / SFX-L PSU size |
+| C10 | CPU without integrated graphics and no GPU selected |
+| C11 Back-connect board ⟷ case | Case supports back-connect motherboards |
+| C12 | CPU sold without a cooler and no cooler selected |
 
-```mermaid
-flowchart TD
-    subgraph Pipeline["1. GitHub Actions (Daily Cron 03:17 UTC)"]
-        Cron["⏰ Daily Scheduler"] --> Runner["🐧 Ubuntu Runner (Free Tier)"]
-        Runner --> Crawler["📡 Scrape CoolPC evaluate.php / Retail APIs"]
-        Crawler --> SpecMatch["🧹 Three-Tier Sanitization & Spec Fingerprint Mapping"]
-        SpecMatch <--> SpecCatalog["📚 Immutable Spec Ontology (spec_catalog.json)"]
-        SpecMatch --> Snapshot["📦 Validate & commit data/prices/coolpc.json"]
-        Snapshot --> DeployPages["🚀 Build & deploy in the same workflow (actions/deploy-pages)"]
-    end
+Each check returns **pass, warn, fail or unknown**. Unknown means the catalog lacks the data needed to decide; it does not mean incompatible. Approximate listing values (CoolPC gives GPU length to the centimetre) warn when the result falls within their tolerance. Full rules: [`02`](02-hardware-compatibility-constraint-engine.md) (Traditional Chinese).
 
-    subgraph Distribution["2. Fastly Global Edge CDN"]
-        DeployPages --> CDN["🌐 GitHub Pages Edge CDN"]
-        CDN --> StaticAssets["📄 Single Page App (index.html + bundle.js)"]
-    end
+## Where the data comes from
 
-    subgraph ClientEdge["3. Client Browser (100% Zero-Latency CSP)"]
-        Browser["💻 User Browser"] --> LoadApp["⚡ Instant Load (< 300 KB Gzip)"]
-        LoadApp --> CSPEngine["🧠 Reactive Constraint Propagation Engine"]
-        
-        CSPEngine --> SocketCheck["🔲 Socket Match (AM5 / LGA1700)"]
-        CSPEngine --> RAMCheck["💾 Memory Generation & Slot Limit (DDR4 vs DDR5)"]
-        CSPEngine --> CaseClearance["📦 Form Factor Inclusion & GPU Clearance (mm)"]
-        CSPEngine --> CoolerCheck["❄️ Air Cooler Height & Radiator Clearance"]
-        CSPEngine --> PowerBudget["⚡ Dynamic TDP Power Budgeting & Safety Factor"]
-        CSPEngine --> ThreeJSStage["🎮 Three.js 3D Virtual Assembly (Snap-to-Fit & Collision Red Mesh)"]
-        
-        CSPEngine --> UI["🖥️ Modern Responsive UI (Default Light Mode)"]
-        ThreeJSStage --> UI
-        UI --> Share["🔗 One-Click URL Hash Sharing (LZ-String Compressed)"]
-    end
+- **Prices**: a GitHub Actions job fetches [CoolPC's quote page](https://www.coolpc.com.tw/evaluate.php) daily, maps each listing to the spec catalog, commits [`data/prices/coolpc.json`](data/prices/coolpc.json) and redeploys the site. If a fetch fails, the previous day's prices stay and an issue is opened; the site marks the price date as possibly stale.
+- **Specs**: [`data/catalog/`](data/catalog/) holds about 1,700 models. New models are extracted from listing titles and proposed in a weekly PR; values titles don't give (power draw, DIMM slots, case radiator mounts) are added by hand from manufacturer specs. Every value records its source, and inferred values are labelled as such on the site.
+- `python scripts/catalog_coverage.py` shows how complete each field is.
 
-    Pipeline --> Distribution --> ClientEdge
-```
+## Found a mistake?
+
+Wrong specs, a price mapped to the wrong model, or a wrong compatibility result: please [open an issue](https://github.com/VaalRL/TW-bentocraft/issues/new/choose), ideally with the model and a link to the manufacturer's spec page. To edit the catalog directly, see [`CONTRIBUTING.md`](CONTRIBUTING.md) (Traditional Chinese).
 
 ---
 
-## 🧩 Hardware Compatibility Constraint Matrix
+## Local development
 
-The browser-based engine evaluates candidate parts against currently selected parts. Each check returns pass, warn, fail or unknown: missing specs yield unknown instead of a default value, and approximate values (GPU lengths from listings are only accurate to the centimetre) warn within their tolerance. The core dimensions are below; the full list, including PSU form factor vs case, CPUs without integrated graphics and back-connect boards, is in [02](02-hardware-compatibility-constraint-engine.md).
+The frontend is in [`web/`](web/) (React + Vite + TypeScript); the data pipeline in [`pipeline/`](pipeline/) and [`scripts/`](scripts/). Requires Python 3.11+ and Node.js 22.12+.
 
-```mermaid
-graph LR
-    CPU["CPU"] <-->|"Socket Match"| MB["Motherboard"]
-    MB <-->|"DDR Gen & Slots"| RAM["RAM"]
-    MB <-->|"Form Factor (ATX/M-ATX/ITX)"| Case["Case"]
-    GPU["GPU"] <-->|"Length Clearance (mm)"| Case
-    Cooler["Cooler"] <-->|"Height & Radiator Size"| Case
-    CPU & GPU -->|"Dynamic Peak Wattage × 1.25"| PSU["PSU"]
-```
-
-1. **CPU ⟷ Motherboard**: Exact Socket Match (`AM4`, `AM5`, `LGA1700`, `LGA1851`). Prevents pin mismatch.
-2. **Motherboard ⟷ RAM**: Strict memory generation parity (`DDR4` vs `DDR5`) and slot count enforcement.
-3. **Case ⟷ Motherboard**: Form factor hierarchy enclosure (`E-ATX` $\supset$ `ATX` $\supset$ `M-ATX` $\supset$ `Mini-ITX`).
-4. **Case ⟷ GPU**: Physical clearance check (`GPU.length_mm` $\le$ `Case.max_gpu_length_mm`).
-5. **Cooler ⟷ CPU / Case**: Air cooler height limit (`Cooler.height_mm` $\le$ `Case.max_cooler_height_mm`) and liquid radiator mounts.
-6. **PSU ⟷ Whole Build**: Dynamic peak wattage budget + 25% safety overhead + PCIe 12V-2x6 connector verification.
-
----
-
-## 🚀 Quickstart & Local Development
-
-The frontend lives in [`web/`](web/) (React + Vite + TypeScript); the data pipeline in [`pipeline/`](pipeline/) and [`scripts/`](scripts/).
-
-### Prerequisites
-- Python 3.11+ and `jsonschema` (catalog validation)
-- Node.js 22.12+ (frontend)
-
-### 1. Clone
 ```bash
 git clone https://github.com/VaalRL/TW-bentocraft.git
 cd TW-bentocraft
 pip install -r requirements.txt
-```
 
-### 2. Run Tests
-```bash
+# tests
 python -m unittest discover -s tests -t .
 (cd schema && python -m unittest test_schema)
-```
+python schema/validate.py --catalog data/catalog/*.json --prices data/prices/coolpc.json
 
-### 3. Run the Frontend
-```bash
-python scripts/build_web_data.py     # writes web/public/data/ (compact catalog and prices)
+# frontend
+python scripts/build_web_data.py      # writes web/public/data/ (compact catalog and prices)
 cd web && npm install && npm run dev  # http://localhost:5173
 npm test                              # constraint engine tests
-npm run build && npm run test:e2e    # browser end-to-end tests (Playwright, fixture data)
+npm run build && npm run test:e2e     # browser end-to-end tests (Playwright)
 ```
 
-### 4. Fetch CoolPC and Update the Price Snapshot (needs access to coolpc.com.tw)
+Fetching CoolPC and updating prices (needs access to coolpc.com.tw):
+
 ```bash
 python scripts/update_prices.py --out data/prices/coolpc.json --save-html page.html
-python scripts/bootstrap_catalog.py --html page.html   # add models missing from the catalog (review via PR)
+python scripts/bootstrap_catalog.py --html page.html   # add models missing from the catalog
 ```
 
-### 5. Contributing to the Spec Catalog
-New models arrive every Monday as an automated PR. How to review them, fix IDs, resolve conflicts and mark models as verified is described in [`CONTRIBUTING.md`](CONTRIBUTING.md) (Traditional Chinese).
+## Design documents (Traditional Chinese)
 
----
+| Document | Covers |
+| :-- | :-- |
+| [01 System architecture and data pipeline](01-system-architecture-and-data-pipeline.md) | Daily fetch, cleaning and matching; Actions schedule and failure handling |
+| [02 Compatibility constraint engine](02-hardware-compatibility-constraint-engine.md) | Rules C1–C12, the four results, tolerances and conditional limits |
+| [03 Frontend and deployment](03-frontend-ux-and-zero-maintenance-deployment.md) | UI conventions, share links, PTT export, GitHub Pages deployment |
+| [06 Design review](06-design-review.md) | Gaps in the original design and how they were fixed; [PoC](poc/README.md) and [spot check](poc/AUDIT-2026-10-12.md) |
+| [07 Catalog and price schema](07-spec-catalog-schema.md) | Model, variant and offer layers; value sources and tolerances; validators in [`schema/`](schema/) |
+| [Sources](sources/README.md) | CoolPC page structure, PCPartPicker's constraint model, industry standards |
 
-## ☕ Support & Sponsor
+## Roadmap
 
-If this project saved your time building PCs or helped you avoid purchasing incompatible hardware, consider buying the maintainers a coffee!
+Planned, not yet built:
 
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-yellow.svg?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/username)
+- **3D build view** showing part placement and interference ([`04`](04-high-fidelity-3d-visualization-and-threejs-spec.md), [`05`](05-3d-interactive-spatial-pc-builder-architecture.md)). The size diagram is its 2D precursor.
+- Prices from other stores such as Sinya (欣亞數位).
+- Price-drop alerts.
 
----
+## License
 
-## 📄 License
-Released under the [MIT License](LICENSE).
+The license has not been chosen yet; a `LICENSE` file will be added once it is.

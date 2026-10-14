@@ -1,7 +1,7 @@
 name: CI
 
 # PR 與 main 的離線檢查：Python 單元測試、schema 測試、規格庫驗證、對照表是否已回填。
-# 不連線原價屋（連線驗證由 poc-coolpc-probe.yml 與每日排程負責）；前端測試在 deploy.yml。
+# 不連線原價屋（連線驗證由每日排程 daily-prices.yml 負責）；前端測試在 deploy.yml。
 on:
   pull_request:
     paths:
@@ -23,6 +23,11 @@ on:
       - 'requirements.txt'
       - '.github/workflows/ci.yml'
   workflow_dispatch:
+
+# 同一個 PR 連續推送時只保留最新一次
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
   contents: read

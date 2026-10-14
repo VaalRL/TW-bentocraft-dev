@@ -2,7 +2,7 @@
 import { describe, expect, it } from 'vitest';
 import { buildChecks, estimateLoad, recommendedWattage } from './constraints';
 import { deadEndChecker, evaluate, selectionChecks, worst } from './engine';
-import { indexOffers, priceSelection } from './pricing';
+import { indexOffers, priceSelection, priceTrend } from './pricing';
 import { decodeShare, encodeShare } from './share';
 import type { Category, Model, PricesData } from './types';
 
@@ -110,6 +110,8 @@ describe('整機檢查', () => {
     });
     expect(status(evaluate(aio360, { case: caseRad }), 'C5')).toBe('pass');
     expect(status(evaluate(aio420, { case: caseRad }), 'C5')).toBe('fail');
+    const noRad = evaluate(aio360, { case: M('case:x:sff', { radiator_support: [] }) }).find(r => r.constraint === 'C5');
+    expect([noRad?.status, noRad?.message]).toEqual(['fail', '機殼不支援一體式水冷']);
     const caseBig = M('case:x:big', { radiator_support: [{ position: 'top', sizes: [360, 420] }] });
     expect(status(evaluate(M('cooler:x:aio-240', { cooler_type: 'aio', radiator_mm: 240 }), { case: caseBig }), 'C5')).toBe('warn');
     expect(status(evaluate(aio360, { case: tower300 }), 'C5')).toBe('unknown'); // 機殼冷排位未確認
@@ -186,6 +188,14 @@ describe('總價', () => {
     ],
   };
   const offers = indexOffers(prices);
+
+  it('價格走勢只用於不附條件的價格', () => {
+    const h = { days: 30, m: { 'cpu:a': [4800, 5100] as [number, number | null], 'cpu:b': [900, null] as [number, number | null] } };
+    expect(priceTrend(h, 'cpu:a', { m: 'cpu:a', p: 4950 })).toEqual({ low: 4800, days: 30, change: -150 });
+    expect(priceTrend(h, 'cpu:b', { m: 'cpu:b', p: 900 })?.change).toBeNull(); // 7 天前沒有報價
+    expect(priceTrend(h, 'cpu:a', { m: 'cpu:a', p: 4450, c: { t: 'assembly' } })).toBeNull();
+    expect(priceTrend(undefined, 'cpu:a', { m: 'cpu:a', p: 4950 })).toBeNull(); // 歷史不滿 7 天
+  });
 
   it('附條件價格只在條件成立時採用', () => {
     const alone = priceSelection({ cpu: cpu8400f }, offers, { assembly: false });

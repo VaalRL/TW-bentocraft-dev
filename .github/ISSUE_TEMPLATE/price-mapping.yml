@@ -1,0 +1,25 @@
+name: 報價對應錯誤
+description: 網站上的價格對到錯的型號、顏色或組合，或原價屋有賣但網站上找不到
+title: "[報價] "
+labels: ["prices"]
+body:
+  - type: input
+    id: model_id
+    attributes:
+      label: 網站上顯示的型號
+    validations:
+      required: true
+  - type: textarea
+    id: coolpc_title
+    attributes:
+      label: 原價屋估價頁上的品名與價格
+      description: 直接複製估價頁下拉選單中的那一列
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 哪裡不對
+      placeholder: 例如：白色款的價格被標成黑色款；組合價被當成單品價
+    validations:
+      required: true

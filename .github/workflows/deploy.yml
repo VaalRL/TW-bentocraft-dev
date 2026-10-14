@@ -1,8 +1,8 @@
 name: Deploy site
 
 # 建置前端並部署到 GitHub Pages。
-# - push 到 main（程式或規格庫變更）：建置並部署
-# - pull_request：只建置與測試，不部署
+# - push 到 main（程式或規格庫變更）：建置、單元測試並部署（端對端測試已在 PR 跑過）
+# - pull_request：建置、單元測試與端對端測試，不部署
 # - workflow_call：daily-prices.yml 提交報價快照後呼叫。以 GITHUB_TOKEN 推送的提交
 #   不會觸發 push 事件，所以每日報價必須由這裡直接部署。
 # 需要先在 repo 的 Settings → Pages 把 Source 設為「GitHub Actions」。
@@ -33,6 +33,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    # 同一個 PR 連續推送時只保留最新一次；main 與每日報價各自獨立執行、不取消
+    concurrency:
+      group: ${{ github.event_name == 'pull_request' && format('build-pr-{0}', github.event.pull_request.number) || format('build-{0}', github.run_id) }}
+      cancel-in-progress: ${{ github.event_name == 'pull_request' }}
     steps:
       # 由 daily-prices 呼叫時，必須取用剛提交報價快照後的 main，而不是觸發當下的提交
       - uses: actions/checkout@v5
@@ -66,12 +70,24 @@ jobs:
           npm test
           npm run build
 
-      # 端對端測試（固定資料，見 web/e2e/）。每日報價呼叫部署時跳過，避免瀏覽器測試拖慢或卡住報價上線。
+      # 端對端測試（固定資料，見 web/e2e/）只在 PR 執行：合併到 main 與每日報價部署時跳過，
+      # 省下 Actions 時間，也避免瀏覽器測試卡住報價上線。Chromium 依 package-lock 快取。
+      - uses: actions/cache@v5
+        id: pw-cache
+        if: github.event_name == 'pull_request'
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('web/package-lock.json') }}
+
       - name: End-to-end tests
-        if: github.event_name == 'pull_request' || github.event_name == 'push'
+        if: github.event_name == 'pull_request'
         working-directory: web
         run: |
-          npx playwright install --with-deps chromium
+          if [ "${{ steps.pw-cache.outputs.cache-hit }}" = "true" ]; then
+            npx playwright install-deps chromium   # 瀏覽器已在快取中，只補系統套件
+          else
+            npx playwright install --with-deps chromium
+          fi
           npm run test:e2e
 
       - uses: actions/upload-artifact@v6

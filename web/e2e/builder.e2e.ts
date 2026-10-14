@@ -75,6 +75,34 @@ test.describe('桌面版配單', () => {
     await expect(other.locator('.summary-items')).toContainText('X870 GAMING X');
   });
 
+  test('價格走勢：清單標示與 7 天前相比的漲跌，估價單標示近期最低價', async ({ page }) => {
+    await open(page);
+    await category(page, '處理器');
+    await expect(candidate(page, 'R7 9800X3D').locator('.price-trend')).toHaveText('↓$400（與 7 天前相比）');
+    await candidate(page, 'R7 9800X3D').click();
+    await expect(page.locator('.summary-items')).toContainText('近 30 天最低價');
+    await pick(page, '顯示卡', 'RTX5080');
+    await expect(candidate(page, 'RTX5080').locator('.price-trend')).toHaveText('↑$1,000（與 7 天前相比）');
+    await expect(page.locator('.summary-items')).toContainText('近 30 天最低 $35,990');
+  });
+
+  test('回報連結會帶入型號 ID 與配單連結', async ({ page }) => {
+    await open(page);
+    await pick(page, '處理器', 'R7 9800X3D');
+    const spec = new URL((await page.getByRole('link', { name: '回報規格錯誤' }).getAttribute('href'))!);
+    expect(spec.searchParams.get('template')).toBe('spec-error.yml');
+    expect(spec.searchParams.get('model_id')).toMatch(/^cpu:/);
+    await page.context().route('https://github.com/**', r => r.fulfill({ body: '' }));
+    const [popup] = await Promise.all([
+      page.waitForEvent('popup'),
+      page.locator('.summary-checks').getByRole('link', { name: '回報' }).click(),
+    ]);
+    const check = new URL(popup.url());
+    expect(check.searchParams.get('template')).toBe('compat-check.yml');
+    expect(check.searchParams.get('build_url')).toBe(page.url());
+    expect(page.url()).toContain('#/build?b=');
+  });
+
   test('分享連結中找不到的型號會提示', async ({ page }) => {
     // {v:1, items:{case:'case:lian-li:a4-h2o-old', gpu:'gpu:x:gone'}}，以 lz-string 壓縮
     const { default: LZString } = await import('lz-string');

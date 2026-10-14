@@ -1,5 +1,5 @@
 // 總價計算：附條件價格與任搭折抵（見 07 第五節、03 第一節第 3 點）。
-import type { Category, Offer, PricesData, Selection } from './types';
+import type { Category, Offer, PriceHistory, PricesData, Selection } from './types';
 
 export interface PriceOptions {
   /** 使用者勾選「整機在原價屋組裝」時，組裝價（~組裝價~）才成立 */
@@ -29,6 +29,19 @@ export function conditionMet(o: Offer, sel: Selection, opts: PriceOptions): bool
   if (o.c.t === 'assembly') return opts.assembly;
   if (o.c.t === 'requires_category') return (o.c.q ?? []).every(cat => !!sel[cat]);
   return false; // unspecified：條件不明，不自動套用
+}
+
+export interface PriceTrend {
+  low: number; // 近 days 天的最低價
+  days: number;
+  change: number | null; // 與 7 天前相比（負數為降價）；7 天前沒有報價時為 null
+}
+
+/** 價格走勢。只適用於不附條件的價格（歷史記錄的是清單顯示的價格）。 */
+export function priceTrend(history: PriceHistory | undefined, id: string, current: Offer | null): PriceTrend | null {
+  const h = history?.m[id];
+  if (!h || !current || current.c) return null;
+  return { low: h[0], days: history!.days, change: h[1] === null ? null : current.p - h[1] };
 }
 
 /** 單一型號可採用的最低價（不看配單時用於清單顯示）。 */

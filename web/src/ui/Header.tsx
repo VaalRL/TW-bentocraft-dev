@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import type { PricesData } from '../engine/types';
 import { daysSince, formatDate } from './format';
+import { REPO } from './report';
 
-const REPO = 'VaalRL/TW-bentocraft';
 
 /** GitHub Star 數。取不到（離線、API 次數用完）時不顯示，不影響其他功能。 */
 function useStars(): number | null {

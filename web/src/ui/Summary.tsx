@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { estimateLoad, recommendedWattage } from '../engine/constraints';
 import { selectionChecks, worst } from '../engine/engine';
-import { priceSelection } from '../engine/pricing';
+import { priceSelection, priceTrend } from '../engine/pricing';
 import { FitDiagram } from './FitDiagram';
 import { CATEGORIES, type Category, type Offer, type PricesData, type Selection, type Status } from '../engine/types';
 import { CATEGORY_LABEL, STATUS_LABEL, checkText, copyText, formatDate, formatPrice, modelName } from './format';
+import { checkReportUrl, specReportUrl } from './report';
 
 const CONDITION_TEXT: Record<string, string> = {
   assembly: '整機組裝價',
@@ -25,6 +26,13 @@ function powerText(selection: Selection): string {
   if (load === null) return 'CPU 或顯卡功耗資料未確認';
   const text = `${load.watts} W，建議電源 ${recommendedWattage(load.watts)} W 以上`;
   return load.inferred ? `${text}（顯卡依晶片參考功耗推定，非公版超頻卡可能更高）` : text;
+}
+
+function PriceTrendNote({ trend, price }: { trend: ReturnType<typeof priceTrend>; price?: number }) {
+  if (!trend || price === undefined) return null;
+  return price <= trend.low
+    ? <span className="summary-note price-low">近 {trend.days} 天最低價</span>
+    : <span className="summary-note">近 {trend.days} 天最低 {formatPrice(trend.low)}</span>;
 }
 
 export function Summary({ selection, offers, prices, assembly, onAssemblyChange, onRemove, onFocus }: {
@@ -85,6 +93,7 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
                   <span className="summary-note">此價格為「{m.v[item.offer.v]}」款（各顏色中最低價）</span>
                 )}
                 {item.offer?.x && <span className="summary-note">此價格為組合價，含：{item.offer.x.join('、')}</span>}
+                <PriceTrendNote trend={priceTrend(prices.h, m.id, item.offer)} price={item.offer?.p} />
                 {item.offer?.g && <span className="summary-note">贈品：{item.offer.g}</span>}
                 {item.offer?.u && <span className="summary-note">限時價至 {formatDate(item.offer.u)}</span>}
                 {item.conditional.map((o, i) => (
@@ -92,6 +101,9 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
                     另有 {formatPrice(o.p)}（{conditionLabel(o)}），條件未成立未採用
                   </span>
                 ))}
+                <a className="summary-note summary-report" href={specReportUrl(m.id, modelName(m))} target="_blank" rel="noreferrer">
+                  回報規格錯誤
+                </a>
               </li>
             );
           })}
@@ -132,7 +144,12 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
               </li>
             ))}
           </ul>
-          <p className="muted small">「未確認」表示規格庫缺少判斷所需的資料，不代表不相容。</p>
+          <p className="muted small">
+            「未確認」表示規格庫缺少判斷所需的資料，不代表不相容。判斷有誤？
+            {/* 配單連結在畫面更新後才寫入網址，所以點擊當下才讀取 */}
+            <a href={checkReportUrl(location.href)} target="_blank" rel="noreferrer"
+              onClick={e => { e.currentTarget.href = checkReportUrl(location.href); }}>回報</a>
+          </p>
         </div>
       )}
 

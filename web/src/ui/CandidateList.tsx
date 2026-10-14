@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react';
 import { buildChecks, constraintInvolves } from '../engine/constraints';
 import { deadEndChecker, pairChecks, worst } from '../engine/engine';
-import { lowestUnconditional } from '../engine/pricing';
-import type { Category, Check, Model, Offer, Selection, Status } from '../engine/types';
+import { lowestUnconditional, priceTrend, type PriceTrend } from '../engine/pricing';
+import type { Category, Check, Model, Offer, PriceHistory, Selection, Status } from '../engine/types';
 import { CATEGORY_LABEL, STATUS_LABEL, checkText, formatPrice, modelName, specSummary } from './format';
 
 interface Row {
@@ -11,17 +11,19 @@ interface Row {
   checks: Check[];
   deadEnds: Category[];
   offer: Offer | null;
+  trend: PriceTrend | null;
 }
 
 const ORDER: Record<Status, number> = { pass: 0, unknown: 1, warn: 2, fail: 3 };
 const PAGE = 60;
 
-export function CandidateList({ category, models, catalog, selection, offers, onPick }: {
+export function CandidateList({ category, models, catalog, selection, offers, history, onPick }: {
   category: Category;
   models: Model[];
   catalog: Record<Category, Model[]>;
   selection: Selection;
   offers: Map<string, Offer[]>;
+  history?: PriceHistory;
   onPick: (m: Model) => void;
 }) {
   const [query, setQuery] = useState('');
@@ -40,7 +42,8 @@ export function CandidateList({ category, models, catalog, selection, offers, on
           ...buildChecks(trial).filter(c => c.status !== 'unknown' && constraintInvolves(c.constraint, category)),
         ].filter(c => c.status !== 'pass');
         const status = worst(checks);
-        return { model, status, checks, deadEnds: status === 'fail' ? [] : deadEnds(model), offer: lowestUnconditional(offers.get(model.id)) };
+        const offer = lowestUnconditional(offers.get(model.id));
+        return { model, status, checks, deadEnds: status === 'fail' ? [] : deadEnds(model), offer, trend: priceTrend(history, model.id, offer) };
       })
       .sort((a, b) =>
         (ORDER[a.status] + (a.deadEnds.length ? 2.5 : 0)) - (ORDER[b.status] + (b.deadEnds.length ? 2.5 : 0)) ||
@@ -48,7 +51,7 @@ export function CandidateList({ category, models, catalog, selection, offers, on
         (a.offer?.p ?? 0) - (b.offer?.p ?? 0) ||
         modelName(a.model).localeCompare(modelName(b.model), 'zh-TW'),
       );
-  }, [category, models, catalog, selection, offers]);
+  }, [category, models, catalog, selection, offers, history]);
 
   const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const matching = rows.filter(r => {
@@ -109,6 +112,12 @@ export function CandidateList({ category, models, catalog, selection, offers, on
                 </span>
                 <span className="candidate-side">
                   <span className="candidate-price">{r.offer ? formatPrice(r.offer.p) : '無報價'}</span>
+                  {r.trend?.change ? (
+                    <span className={`price-trend ${r.trend.change < 0 ? 'down' : 'up'}`} title="與 7 天前相比">
+                      {r.trend.change < 0 ? '↓' : '↑'}{formatPrice(Math.abs(r.trend.change))}
+                      <span className="visually-hidden">（與 7 天前相比）</span>
+                    </span>
+                  ) : null}
                   {r.status !== 'pass' && <span className={`badge status-${r.status}`}>{STATUS_LABEL[r.status]}</span>}
                 </span>
               </button>

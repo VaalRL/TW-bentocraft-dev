@@ -112,4 +112,6 @@ python scripts/apply_reference.py --check
 cd web && npm ci && npm test && npm run build && npm run test:e2e
 ```
 
+在 Claude Code 雲端對話中，[`.claude/hooks/session-start.sh`](.claude/hooks/session-start.sh) 會在對話開始前裝好上述 Python 與前端套件。
+
 PR 會自動跑 [`ci.yml`](.github/workflows/ci.yml)（Python 與規格庫）與 [`deploy.yml`](.github/workflows/deploy.yml) 的建置與測試。由 GitHub Actions 自動開的規格庫 PR 不會觸發 CI，但 bootstrap 流程本身已通過 schema 驗證。

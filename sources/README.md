@@ -1,6 +1,6 @@
 # 一手資料來源與研究參考文獻庫 (Sources & Technical References)
 
-本檔案彙整「GitHub Pages ✕ GitHub Actions 零維運成本台灣電腦零組件相容性組裝估價系統 (OpenPCBuilder TW)」之架構設計、資料來源逆向工程分析、國際相容性約束規格與開源授權基準。
+本檔案彙整「GitHub Pages ✕ GitHub Actions 零維運成本台灣電腦零組件相容性組裝估價系統 （原價煮便當，TW-bentocraft）」之架構設計、資料來源逆向工程分析、國際相容性約束規格與開源授權基準。
 
 ---
 

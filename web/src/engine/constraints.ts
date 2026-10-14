@@ -94,6 +94,7 @@ export const PAIR_CONSTRAINTS: PairConstraint[] = [
         const size = spec<number>(k, 'radiator_mm');
         const support = spec<{ sizes: number[] }[]>(c, 'radiator_support');
         if (!size || !support) return result('C5', 'unknown', '冷排尺寸或機殼冷排位未確認');
+        if (!support.value.length) return result('C5', 'fail', '機殼不支援一體式水冷');
         if (support.value.some(p => p.sizes.includes(size.value))) return result('C5', 'pass');
         // 原廠常只列最大尺寸（「頂部 360/420」）：比某個冷排位的上限小、只是沒被列出時不判不相容
         const largest = Math.max(...support.value.flatMap(p => p.sizes));

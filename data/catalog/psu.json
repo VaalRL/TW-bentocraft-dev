@@ -25,6 +25,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.antec.com/product/power/csk-dc-550",
+     "note": "原廠規格：2 個 8(6+2)pin PCI-E，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -54,6 +60,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://antec.com/product/power/csk-dc-650",
+     "note": "原廠規格：2 個 8(6+2)pin PCI-E，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -123,6 +135,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.antec.com/product/power/csk-750h-bronze",
+     "note": "原廠規格：4 個 8(6+2)pin PCI-E，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -1342,6 +1360,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.asus.com/motherboards-components/power-supply-units/prime/prime-750b-white/techspec/",
+     "note": "原廠規格（PRIME-750B-WHITE）：僅 6+2pin PCI-E，無 16-pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -1993,6 +2017,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "manual",
+     "note": "TUF GAMING EVO 有金牌版（1 條 12V-2x6）與銅牌版（僅 6+2-pin）；原價屋品名標銅牌，故為 0"
     }
    },
    "review": {
@@ -2064,6 +2093,11 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "manual",
+     "note": "TUF GAMING EVO 有金牌版（1 條 12V-2x6）與銅牌版（僅 6+2-pin）；原價屋品名標銅牌，故為 0"
     }
    },
    "review": {
@@ -2341,6 +2375,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/mwe-450-bronze-v2-230v.html",
+     "note": "原廠規格：2 個 PCI-e 6+2pin，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -2374,6 +2414,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/mwe-gold-v3-atx-3-1-non-modular-series/?tab=tech_spec",
+     "note": "原廠規格：12V-2x6 僅 750/850W 附；550W 為 2 個 6+2pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -2417,6 +2463,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-global/products/mwe-gold-v3-atx-3-1-non-modular-series/?tab=tech_spec",
+     "note": "原廠規格：12V-2x6 僅 750/850W 附；650W 為 4 個 6+2pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -2843,6 +2895,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://cougargaming.com/products/psus/atlas/",
+     "note": "原廠規格：ATLAS 550 為 2 個 8(6+2)pin PCI-E；新版 12V-2x6 系列無 550W；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3167,6 +3225,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://cougargaming.com/us/products/psus/vte/",
+     "note": "原廠規格：VTE400 僅 1 個 8(6+2)pin PCI-E；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3292,6 +3356,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.deepcool.com/products/PowerSupplyUnits/powersupplyunits/PK550D-80-PLUS-Bronze-Power-Supply/2022/15621.shtml/",
+     "note": "原廠規格：PCI-E (6+2)pin x2，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3321,6 +3391,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.deepcool.com/products/PowerSupplyUnits/powersupplyunits/PK650D-80-PLUS-Bronze-Power-Supply/2022/15619.shtml",
+     "note": "原廠規格：PCI-E (6+2)pin x2，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3749,6 +3825,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.enermax.com/en/products/cyberbron-ii-700",
+     "note": "原廠規格：PCIe 6+2pin（2 條線），無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3782,6 +3864,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.enermax.com/en/products/cyberg-ii-650",
+     "note": "原廠規格：650W 版 12V-2x6 數量 0，僅 750/850W 附 12V-2x6 線；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3887,6 +3975,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.enermax.com/en/products/eb450-c-450w",
+     "note": "原廠規格：ATX 2.52，PCIe 僅 6pin 線，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3920,6 +4014,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.enermax.com/en/products/eb550-c-550w",
+     "note": "原廠規格：2 條 6+2pin PCIe 線，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -3953,6 +4053,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.enermax.com/en/products/eb650-c-650w",
+     "note": "原廠規格：2 條 6+2pin PCIe 線，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -4297,6 +4403,12 @@
     "efficiency": {
      "value": "gold",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/tw/product/DAGGERPRO650W.html",
+     "note": "原廠規格（金鋼彈 DAGGER PRO SDA2-650）：2 個 PCI-E 6+2pin，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -4788,6 +4900,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/tw/news/VICBDplus/",
+     "note": "原廠：VIC BD 系列僅 750W 附 12V-2x6；550W 為 6+2pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -4821,6 +4939,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/tw/product/VICBDPLUS650W.html",
+     "note": "原廠規格：VIC BD+ 650W 僅列 PCIe 6+2pin，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -4854,6 +4978,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/tw/product/VICGD650W.html",
+     "note": "原廠規格：1 條 2 個 6+2pin；12V-2x6 僅 750/850W；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -5039,6 +5169,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/tw/product/VITAGM650W.html",
+     "note": "原廠規格：2 條 4 個 6+2pin；12V-2x6 為 750W 以上或另款 GEN5；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -5341,6 +5477,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Comparison/Consumer/Result/41?pids=7342%2C9476",
+     "note": "原廠規格：PCI-e 6+2pin x2，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -5770,6 +5912,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/news-beta-2",
+     "note": "原廠新聞稿：BETA 2 僅 850W 具原生 PCIe 5.1；550W 為 6+2pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -5803,6 +5951,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/beta-2-650w",
+     "note": "原廠規格：PCIe 1 條 2 個 6+2pin，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -5836,6 +5990,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.montechpc.com/beta-2-750w",
+     "note": "原廠規格：PCIe 2 條共 4 個 6+2pin，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -6425,6 +6585,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Power-Supply/MAG-A1000GL-PCIE5",
+     "note": "原廠規格：1 個 PCI-E 5.1 16-pin（600W）＋4 個 6+2pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -6492,6 +6658,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://download-2.msi.com/archive/mnu_exe/psu/MAG_A550BN_A650BN.pdf",
+     "note": "原廠手冊：2 個 PCIe 6+2pin，無 16-pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -6521,6 +6693,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://storage-asset.msi.com/datasheet/power-supply/global/MAG-A650BN.pdf",
+     "note": "原廠規格：2 個 PCIe 6+2pin，無 16-pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -6550,6 +6728,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Power-Supply/MAG-A650BNL",
+     "note": "原廠規格：2 個 PCI-E 6+2pin，無 16-pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -6585,6 +6769,12 @@
     "efficiency": {
      "value": "gold",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Power-Supply/MAG-A650GL/Specification",
+     "note": "原廠規格（非 PCIE5 版）：PCI-E 6+2pin，無 16-pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -6618,6 +6808,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Power-Supply/MAG-A750BN-PCIE5-III",
+     "note": "原廠規格：1 個 PCI-E 5.1 16-pin（450W）＋3 個 6+2pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -6651,6 +6847,12 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Power-Supply/MAG-A750GL-PCIE5",
+     "note": "原廠規格：1 個原生 16-pin（450W）＋3 個 8pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -6722,6 +6924,12 @@
     "atx_version": {
      "value": "3.0",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "vendor_spec",
+     "ref": "https://us.msi.com/Power-Supply/MAG-A850GL-PCIE5-WHITE",
+     "note": "原廠規格：1 個 16-pin 12V-2x6（600W）＋4 個 6+2pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -6761,6 +6969,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/Power-Supply/MPG-Ai1300TS-PCIE5",
+     "note": "原廠規格：2 個原生 12V-2x6（各 600W）；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -6794,6 +7008,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://storage-asset.msi.com/datasheet/power-supply/us/MPG-Ai1600TS-PCIE5.pdf",
+     "note": "原廠規格表：PCI-E 5.1 16-pin x2（各 600W）；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -7307,6 +7527,12 @@
     "efficiency": {
      "value": "gold",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://seasonic.com/wp-content/uploads/2024/04/FOCUS-GX-FX.pdf",
+     "note": "原廠：舊款 FOCUS GX 非 ATX 3.x，僅 6+2pin；ATX3 版無 550W；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -7336,6 +7562,12 @@
     "efficiency": {
      "value": "gold",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://seasonic.com/cable-compatibility/",
+     "note": "原廠：舊款 FOCUS GX 非 ATX 3.x，不支援原生 12V-2x6；ATX3 版自 750W 起；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -7727,6 +7959,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://seasonic.com/s12iii/",
+     "note": "原廠規格：直出線，僅 PCIe 8/6pin（6+2），無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -7756,6 +7994,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://seasonic.com/s12iii/",
+     "note": "原廠規格：直出線，僅 PCIe 8/6pin（6+2），無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -7785,6 +8029,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://seasonic.com/s12iii/",
+     "note": "原廠規格：直出線，僅 PCIe 8/6pin（6+2），無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -7894,6 +8144,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/power-supplies/at750r_bf/",
+     "note": "原廠：ATTIS 650R/750R 為 ATX 3.1 但無 12V-2x6 線材與插座，僅 8/6pin；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -7933,6 +8189,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/power-supplies/at750r_bf/",
+     "note": "原廠規格：4 個 8/6pin PCIe，無 12V-2x6 線材與插座；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -8064,6 +8326,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/power-supplies/ET450-B/",
+     "note": "原廠規格：2 個 8/6pin PCIe，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -8093,6 +8361,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/power-supplies/ET650-B/",
+     "note": "原廠規格：2～4 個 8/6pin PCIe（依版本），皆無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -8125,6 +8399,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/power-supplies/ex550r_gm/",
+     "note": "原廠：模組端 1 個原生 12V-2x6 插座（約450W），但不附線，需另購 PP14-90；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -8157,6 +8437,12 @@
     "atx_version": {
      "value": "3.1",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/power-supplies/ex650r_gm/",
+     "note": "原廠：模組端 1 個原生 12V-2x6 插座（約450W），但不附線，需另購 PP14-90；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -8223,6 +8509,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/es/product/info/power-supplies/ST30SF/",
+     "note": "原廠規格：僅 1 個 6pin PCIe，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -8251,6 +8543,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/en/product/info/power-supplies/ST45SF/",
+     "note": "原廠規格：8/6pin 與 6pin PCIe 各 1，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -8394,6 +8692,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.super-flower.com.tw/en/products/bronze-king-ii-400w-20240813143503",
+     "note": "原廠規格：1 條 PCI-E 6+2pin 直出線，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -8423,6 +8727,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.super-flower.com.tw/ja/products/bronze-king-ii-500w-20240705141658",
+     "note": "原廠規格：1 條 SLI 2x(6+2)pin 直出線，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {
@@ -8452,6 +8762,12 @@
     "efficiency": {
      "value": "bronze",
      "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.super-flower.com.tw/en/products/bronze-king-550w-20240618143718",
+     "note": "原廠規格：1 條 2 個 6+2pin，無 12V-2x6；取自原廠頁面搜尋摘錄"
     }
    },
    "review": {

@@ -16,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from pipeline.catalog import load_catalog  # noqa: E402
+from pipeline.history import load_history, summarize  # noqa: E402
 from pipeline.prices import strip_part_promo  # noqa: E402
 
 REVIEW = {"auto": "a", "verified": "v", "draft": "d"}
@@ -53,7 +54,7 @@ def build_catalog(shards: dict[str, dict]) -> dict:
     return {"models": dict(sorted(models.items())), "redirects": redirects}
 
 
-def build_prices(doc: dict | None, models: dict[str, dict]) -> dict:
+def build_prices(doc: dict | None, models: dict[str, dict], history: dict | None = None) -> dict:
     """models：build_catalog 產生的精簡型號（含品牌 b、名稱 n），用於組合附件的顯示名稱。"""
     if doc is None:
         return {"fetched_at": None, "status": "missing", "vendor": "coolpc", "offers": []}
@@ -79,7 +80,11 @@ def build_prices(doc: dict | None, models: dict[str, dict]) -> dict:
         if extras:
             row["x"] = extras
         offers.append(row)
-    return {"fetched_at": doc["fetched_at"], "status": doc["status"], "vendor": doc["vendor"], "offers": offers}
+    out = {"fetched_at": doc["fetched_at"], "status": doc["status"], "vendor": doc["vendor"], "offers": offers}
+    if history and (summary := summarize(history)):
+        # 價格歷史摘要：{"days": N, "m": {型號: [近 N 天最低價, 7 天前價格或 null]}}；累積不滿 7 天時不輸出
+        out["h"] = {"days": summary["days"], "m": {k: v for k, v in summary["m"].items() if k in models}}
+    return out
 
 
 def main() -> int:
@@ -91,7 +96,9 @@ def main() -> int:
 
     catalog = build_catalog(load_catalog(args.catalog_dir))
     prices_doc = json.loads(args.prices.read_text(encoding="utf-8")) if args.prices.exists() else None
-    prices = build_prices(prices_doc, catalog["models"])
+    history_path = args.prices.parent / "history" / args.prices.name
+    history = load_history(history_path, "coolpc") if history_path.exists() else None
+    prices = build_prices(prices_doc, catalog["models"], history)
 
     args.out.mkdir(parents=True, exist_ok=True)
     for name, doc in (("catalog.min.json", catalog), ("prices.min.json", prices)):
