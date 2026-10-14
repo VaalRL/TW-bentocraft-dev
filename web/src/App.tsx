@@ -4,6 +4,7 @@ import { decodeShare, encodeShare } from './engine/share';
 import { CATEGORIES, toModels, type CatalogData, type Category, type Model, type PricesData, type Selection } from './engine/types';
 import { CandidateList } from './ui/CandidateList';
 import { CategoryNav } from './ui/CategoryNav';
+import { ExplodedView } from './ui/ExplodedView';
 import { Header } from './ui/Header';
 import { REPO } from './ui/report';
 import { Summary } from './ui/Summary';
@@ -121,6 +122,8 @@ export function App() {
       )}
       <main className="workspace">
         <CategoryNav active={active} onSelect={setActive} selection={selection} />
+        <div className="workspace-main">
+        <ExplodedView selection={selection} active={active} onSelect={setActive} />
         <CandidateList
           key={active}
           category={active}
@@ -132,6 +135,7 @@ export function App() {
           onPick={pick}
           onStartWithCase={Object.keys(picks).length === 0 && active !== 'case' ? () => setActive('case') : undefined}
         />
+        </div>
         <Summary
           selection={selection}
           offers={offers}

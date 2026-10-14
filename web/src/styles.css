@@ -211,6 +211,30 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 .schem-tick { font-size: 13px; fill: var(--text-muted); }
 .fit-caption { margin: 0; font-size: 0.78rem; color: var(--text-primary); }
 
+/* 3D 分解圖（ExplodedView）：CSS 3D transform */
+.workspace-main { min-width: 0; }
+.x3d { --x3d-empty: var(--text-muted); margin: 0 0 0.75rem; padding: 0.5rem 0.75rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-surface); }
+.x3d-toolbar { display: flex; gap: 0.9rem; align-items: baseline; font-size: 0.85rem; }
+.x3d-title { font-weight: 600; margin-right: auto; }
+.x3d-stage { position: relative; height: 360px; max-height: 360px; perspective: 1400px; overflow: hidden; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; border-radius: var(--radius); }
+.x3d-stage:active { cursor: grabbing; }
+.x3d-stage:focus-visible { outline: 2px solid var(--accent-brand); outline-offset: 2px; }
+.x3d-scene { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d; }
+.x3d-part { all: unset; position: absolute; left: 0; top: 0; display: block; transform-style: preserve-3d; cursor: pointer; transition: transform 0.45s ease; }
+.x3d-face { position: absolute; left: 0; top: 0; box-sizing: border-box; border: 1px solid color-mix(in srgb, var(--part) 70%, #000); background: color-mix(in srgb, var(--part) 80%, var(--bg-surface)); }
+.x3d-face.t { background: color-mix(in srgb, var(--part) 60%, #fff); }
+.x3d-face.r, .x3d-face.l { background: color-mix(in srgb, var(--part) 75%, #000); }
+.x3d-face.b, .x3d-face.k { background: color-mix(in srgb, var(--part) 65%, #000); }
+.x3d-part:not(.is-picked) .x3d-face { background: color-mix(in srgb, var(--x3d-empty) 22%, transparent); border: 1px dashed var(--x3d-empty); }
+.x3d-case .x3d-face, .x3d-case:not(.is-picked) .x3d-face { background: color-mix(in srgb, var(--part) 6%, transparent); border: 1.5px solid color-mix(in srgb, var(--part) 55%, var(--text-muted)); }
+.x3d-part:hover .x3d-face, .x3d-part:focus-visible .x3d-face { border: 2px solid var(--accent-brand); }
+.x3d-part:not(.x3d-case):hover .x3d-face, .x3d-part:not(.x3d-case):focus-visible .x3d-face { background: color-mix(in srgb, var(--accent-brand) 45%, var(--bg-surface)); }
+.x3d-part.is-active .x3d-face { border: 2px solid var(--accent-brand); }
+.x3d-label { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; color: var(--text-primary); white-space: nowrap; overflow: hidden; pointer-events: none; }
+.x3d-part.is-picked .x3d-label { color: #fff; text-shadow: 0 0 2px #000; }
+.x3d-caption { margin: 0.2rem 0 0; font-size: 0.8rem; color: var(--text-muted); min-height: 1.2em; }
+@media (prefers-reduced-motion: reduce) { .x3d-part { transition: none; } }
+
 .footer { padding: 1.5rem 1rem 5rem; text-align: center; font-size: 0.8rem; color: var(--text-muted); }
 .footer a { margin-left: 0.5rem; }
 
