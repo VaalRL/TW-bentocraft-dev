@@ -160,6 +160,7 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 .summary-name { min-width: 0; overflow-wrap: anywhere; }
 .summary-price { font-variant-numeric: tabular-nums; font-weight: 600; }
 .summary-note { grid-column: 2 / -1; font-size: 0.75rem; color: var(--text-muted); }
+.summary-report { justify-self: start; color: var(--text-muted); }
 .remove { background: none; border: 0; color: var(--text-muted); font-size: 1.1rem; line-height: 1; padding: 0 0.2rem; }
 .summary-total { border-top: 1px solid var(--border); padding-top: 0.6rem; display: flex; flex-direction: column; gap: 0.25rem; }
 .summary-total > div { display: flex; justify-content: space-between; font-variant-numeric: tabular-nums; }

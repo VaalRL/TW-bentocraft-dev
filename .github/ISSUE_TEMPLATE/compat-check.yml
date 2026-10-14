@@ -1,0 +1,26 @@
+name: 相容性判斷有誤
+description: 網站把相容的組合判為不相容，或漏掉了不相容的情況
+title: "[相容性] "
+labels: ["compatibility"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        請附上配單的分享連結（網站上「複製分享連結」），我們才能重現同樣的組合。網站上相容性區塊的「回報」會自動帶入目前的配單連結。
+  - type: input
+    id: build_url
+    attributes:
+      label: 配單分享連結
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 哪一項判斷有誤
+      placeholder: 例如：網站說顯卡裝不下，但原廠寫機殼限長 400 mm、顯卡 340 mm
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 來源連結

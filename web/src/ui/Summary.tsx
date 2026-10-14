@@ -5,6 +5,7 @@ import { priceSelection } from '../engine/pricing';
 import { FitDiagram } from './FitDiagram';
 import { CATEGORIES, type Category, type Offer, type PricesData, type Selection, type Status } from '../engine/types';
 import { CATEGORY_LABEL, STATUS_LABEL, checkText, copyText, formatDate, formatPrice, modelName } from './format';
+import { checkReportUrl, specReportUrl } from './report';
 
 const CONDITION_TEXT: Record<string, string> = {
   assembly: '整機組裝價',
@@ -92,6 +93,9 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
                     另有 {formatPrice(o.p)}（{conditionLabel(o)}），條件未成立未採用
                   </span>
                 ))}
+                <a className="summary-note summary-report" href={specReportUrl(m.id, modelName(m))} target="_blank" rel="noreferrer">
+                  回報規格錯誤
+                </a>
               </li>
             );
           })}
@@ -132,7 +136,12 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
               </li>
             ))}
           </ul>
-          <p className="muted small">「未確認」表示規格庫缺少判斷所需的資料，不代表不相容。</p>
+          <p className="muted small">
+            「未確認」表示規格庫缺少判斷所需的資料，不代表不相容。判斷有誤？
+            {/* 配單連結在畫面更新後才寫入網址，所以點擊當下才讀取 */}
+            <a href={checkReportUrl(location.href)} target="_blank" rel="noreferrer"
+              onClick={e => { e.currentTarget.href = checkReportUrl(location.href); }}>回報</a>
+          </p>
         </div>
       )}
 

@@ -1,0 +1,40 @@
+name: 規格錯誤
+description: 某個型號的規格寫錯或缺少（尺寸、腳位、冷排、插槽數、電源接頭等）
+title: "[規格] "
+labels: ["catalog"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝回報！附上原廠規格頁連結能讓修正最快完成。網站上估價單的「回報規格錯誤」會自動帶入型號 ID。
+  - type: input
+    id: model_id
+    attributes:
+      label: 型號 ID 或名稱
+      description: 例如 `case:thermaltake:the-tower-300`，或網站上顯示的型號名稱
+    validations:
+      required: true
+  - type: input
+    id: field
+    attributes:
+      label: 哪一項規格有誤
+      placeholder: 例如：顯卡限長、頂部冷排支援、記憶體插槽數
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: 正確的值
+      placeholder: 例如：頂部可裝 240／280／360，前方 360
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 來源連結
+      description: 原廠規格頁或規格書最好；零售商頁面也可以
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補充
+      description: 例如安裝條件（「裝前置冷排時顯卡限長 310 mm」）
