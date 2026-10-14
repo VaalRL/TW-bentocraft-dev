@@ -239,6 +239,8 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 .iso-part:hover .iso-face, .iso-part:focus-visible .iso-face { stroke: var(--accent-brand); stroke-width: 2; stroke-dasharray: none; }
 .iso-part:not(.iso-case):hover .iso-face, .iso-part:not(.iso-case):focus-visible .iso-face { fill: color-mix(in srgb, var(--accent-brand) 25%, var(--bg-surface)); }
 .iso-part.is-active .iso-face { stroke: var(--accent-brand); stroke-width: 1.6; }
+.iso-part.is-dim { opacity: 0.45; }
+.iso-part.is-dim:hover, .iso-part.is-dim:focus-visible { opacity: 1; }
 .iso-shell { pointer-events: none; }
 .iso-shell .iso-face { fill: none; stroke: var(--text-muted); }
 .iso-shell .iso-deco { opacity: 0.35; }

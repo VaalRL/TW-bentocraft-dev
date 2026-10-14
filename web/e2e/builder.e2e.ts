@@ -46,6 +46,13 @@ test.describe('桌面版配單', () => {
     const heading = page.locator('.candidates-toolbar h2');
     await page.locator('.iso-gpu').click();
     await expect(heading).toHaveText('顯示卡');
+    // 目前的零件單獨拉出、畫在最上層，其他零件變淡
+    await expect(page.locator('.iso-part').last()).toHaveClass(/iso-gpu/);
+    await expect(page.locator('.iso-gpu')).not.toHaveClass(/is-dim/);
+    await expect(page.locator('.iso-psu')).toHaveClass(/is-dim/);
+    await page.getByRole('button', { name: '全部分解' }).click();
+    await expect(page.locator('.iso-psu')).not.toHaveClass(/is-dim/);
+    await page.getByRole('button', { name: '只拉出目前零件' }).click();
     // 機殼被其他零件擋住的部分點不到，鍵盤操作一定可以
     await page.getByRole('button', { name: /^機殼：未選擇/ }).focus();
     await page.keyboard.press('Enter');
