@@ -63,6 +63,10 @@
 
 規格寫錯、報價對錯型號、或相容性判斷有誤，請[開 issue 回報](https://github.com/VaalRL/TW-bentocraft/issues/new/choose)，附上型號與原廠規格頁連結會最快。想直接修改規格庫，請看 [`CONTRIBUTING.md`](CONTRIBUTING.md)。
 
+## 支持這個專案
+
+規格庫的資料靠人工逐一查原廠規格補上。如果這個工具幫你省了時間，歡迎[請我喝杯咖啡](https://www.buymeacoffee.com/whoami885) ☕，或幫 repo 按個星星。
+
 ---
 
 ## 本機開發

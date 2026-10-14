@@ -6,7 +6,7 @@ import { CandidateList } from './ui/CandidateList';
 import { CategoryNav } from './ui/CategoryNav';
 import { ExplodedView } from './ui/ExplodedView';
 import { Header } from './ui/Header';
-import { REPO } from './ui/report';
+import { REPO, SPONSOR_URL } from './ui/report';
 import { Summary } from './ui/Summary';
 
 export type Picks = Partial<Record<Category, { id: string; variant?: string }>>;
@@ -151,6 +151,7 @@ export function App() {
       <footer className="footer">
         本站為非官方開源專案，與原價屋、欣亞等通路無關；價格與規格僅供參考，以通路實際報價為準。
         <a href={`https://github.com/${REPO}`} target="_blank" rel="noreferrer">原始碼</a>
+        <a href={SPONSOR_URL} target="_blank" rel="noreferrer">贊助</a>
       </footer>
     </div>
   );

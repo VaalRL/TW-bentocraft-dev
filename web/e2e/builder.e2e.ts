@@ -65,6 +65,13 @@ test.describe('桌面版配單', () => {
     await expect(page.locator('.x3d-stage')).toHaveCount(0);
   });
 
+  test('贊助連結指向 Buy Me a Coffee，在新分頁開啟', async ({ page }) => {
+    await open(page);
+    const sponsor = page.getByRole('link', { name: '贊助' }).first();
+    await expect(sponsor).toHaveAttribute('href', 'https://www.buymeacoffee.com/whoami885');
+    await expect(sponsor).toHaveAttribute('target', '_blank');
+  });
+
   test('不相容的主機板預設隱藏，取消勾選後顯示為不相容', async ({ page }) => {
     await open(page);
     await pick(page, '處理器', 'R7 9800X3D');

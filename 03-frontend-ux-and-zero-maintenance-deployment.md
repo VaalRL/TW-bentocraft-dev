@@ -73,8 +73,8 @@ flowchart LR
   - 位置：右上角操作區。
   - 規格：常駐 Octocat 向量 SVG 圖標，點擊新分頁直達開源倉庫，附帶即時 GitHub Star 徽章。
 * **Buy Me a Coffee 贊助按鈕**：
-  - 統一端點：`https://www.buymeacoffee.com/<username>`。
-  - 視覺：高質感黃黑相間經典配色膠囊按鈕，點擊支持開發者持續維護規格資料庫。
+  - 端點：`https://www.buymeacoffee.com/whoami885`（常數 `SPONSOR_URL` 在 `web/src/ui/report.ts`；`.github/FUNDING.yml` 與 README 用同一個帳號）。
+  - 視覺：與 GitHub 按鈕同款的低調小按鈕「☕ 贊助」（手機上只顯示 ☕，文字留給螢幕閱讀器），不用官方黃色大按鈕，以免搶走品牌色。頁尾另有「贊助」文字連結。
 
 ### 3. 報價日期與非官方聲明
 * **報價日期**：估價單上方顯示「原價屋報價：2026-10-12 11:17 更新」，取自報價檔的 `fetched_at`。報價檔 `status` 為 `stale`（當日抓取失敗、沿用舊資料）或日期超過 2 天時，改用 `--status-warn` 色並提示「價格可能已變動，請以通路實際報價為準」。
