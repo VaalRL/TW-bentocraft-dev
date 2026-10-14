@@ -24,6 +24,11 @@ on:
       - '.github/workflows/ci.yml'
   workflow_dispatch:
 
+# 同一個 PR 連續推送時只保留最新一次
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 permissions:
   contents: read
 
