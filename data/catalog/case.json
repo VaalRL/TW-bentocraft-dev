@@ -6491,8 +6491,9 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.coolermaster.com/en-sg/products/elite-343/",
+     "note": "原廠 Elite 343 規格：Standard ATX PS2 電源（上置）；未標長度上限；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -8416,8 +8417,9 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "retailer_spec",
+     "ref": "https://www.mobile01.com/topicdetail.php?f=299&t=7114715",
+     "note": "官網規格未列電源；開箱評測：下置 ATX，建議 ≤150 mm（拆硬碟架可更長）；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -8451,14 +8453,21 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://deepcool.com/products/Cases/CC310-Mid-Tower-Micro-ATX-Case/2026/23284.shtml",
+     "note": "原廠規格：ATX PS2 電源，長度 ≤160 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     },
     "radiator_support": {
      "value": [],
      "source": "vendor_spec",
      "ref": "https://www.deepcool.com/products/Cases/CC310-Mid-Tower-Micro-ATX-Case/2026/23284.shtml",
      "note": "官網水冷排支援欄為「/」,僅前後各 120mm 風扇位；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 160,
+     "source": "vendor_spec",
+     "ref": "https://deepcool.com/products/Cases/CC310-Mid-Tower-Micro-ATX-Case/2026/23284.shtml",
+     "note": "原廠規格：ATX PS2 電源，長度 ≤160 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11471,8 +11480,9 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/en/product/CMT223S.html",
+     "note": "原廠規格：150mm ATX 電源（下置）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     },
     "radiator_support": {
      "value": [
@@ -11486,6 +11496,12 @@
      "source": "vendor_spec",
      "ref": "https://www.fsplifestyle.com/en/product/CMT223S.html",
      "note": "僅前置 240mm 水冷排；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 150,
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/en/product/CMT223S.html",
+     "note": "原廠規格：150mm ATX 電源（下置）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11519,8 +11535,9 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/tw/product/CST130%20Basic.html",
+     "note": "原廠規格：150mm ATX 電源（下置）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     },
     "radiator_support": {
      "value": [
@@ -11534,6 +11551,12 @@
      "source": "vendor_spec",
      "ref": "https://www.fsplifestyle.com/en/product/CST130Basic.html",
      "note": "僅前置 240mm 水冷排;頂部僅風扇；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 150,
+     "source": "vendor_spec",
+     "ref": "https://www.fsplifestyle.com/tw/product/CST130%20Basic.html",
+     "note": "原廠規格：150mm ATX 電源（下置）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -11933,8 +11956,15 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://shop.pnetcom.sk/wp-content/uploads/2025/11/FSP_CASE_ProductSheet_S110_20250324.pdf",
+     "note": "原廠產品規格書：140mm ATX 電源；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 140,
+     "source": "vendor_spec",
+     "ref": "https://shop.pnetcom.sk/wp-content/uploads/2025/11/FSP_CASE_ProductSheet_S110_20250324.pdf",
+     "note": "原廠產品規格書：140mm ATX 電源；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -14444,8 +14474,15 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.jonsbo.com/en/products/C6.html",
+     "note": "原廠規格：ATX 電源，長度 ≤185 mm（上置後方）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 185,
+     "source": "vendor_spec",
+     "ref": "https://www.jonsbo.com/en/products/C6.html",
+     "note": "原廠規格：ATX 電源，長度 ≤185 mm（上置後方）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -14489,8 +14526,15 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.jonsbo.com/en/products/C6MAXBlack.html",
+     "note": "原廠規格：ATX 電源，長度 140–220 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 220,
+     "source": "vendor_spec",
+     "ref": "https://www.jonsbo.com/en/products/C6MAXBlack.html",
+     "note": "原廠規格：ATX 電源，長度 140–220 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -15143,8 +15187,9 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.jonsbo.com/en/products/TK12.0Black.html",
+     "note": "原廠規格：ATX 電源，長度 ≤200 mm（部分零售標 220）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     },
     "back_connect_max_form_factor": {
      "value": "M-ATX",
@@ -15162,6 +15207,12 @@
      "source": "vendor_spec",
      "ref": "https://www.jonsbo.com/en/products/TK12.0Black.html",
      "note": "僅頂部 240；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 200,
+     "source": "vendor_spec",
+     "ref": "https://www.jonsbo.com/en/products/TK12.0Black.html",
+     "note": "原廠規格：ATX 電源，長度 ≤200 mm（部分零售標 220）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -15399,8 +15450,15 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.jonsbo.com/en/products/V12Black.html",
+     "note": "原廠規格：ATX 電源，長度 140–220 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 220,
+     "source": "vendor_spec",
+     "ref": "https://www.jonsbo.com/en/products/V12Black.html",
+     "note": "原廠規格：ATX 電源，長度 140–220 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -16713,10 +16771,11 @@
     },
     "psu_form_factors": {
      "value": [
-      "ATX"
+      "SFX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "retailer_spec",
+     "ref": "https://shop.ktnet.com.tw/Product/Detail?ICODE=CSFRUM16WH",
+     "note": "內附 400W M400-8 小電源(SFX，125x100x68)；機殼寬僅100mm，無法裝ATX（參考同系列白色款 M16W 的通路頁）；數值取自零售商或評測規格表"
     },
     "included_psu_w": {
      "value": 400,
@@ -16758,10 +16817,11 @@
     },
     "psu_form_factors": {
      "value": [
-      "ATX"
+      "SFX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "retailer_spec",
+     "ref": "https://shop.ktnet.com.tw/Product/Detail?ICODE=CSFRUM16WH",
+     "note": "內附 400W M400-8 小電源(SFX)；機殼寬僅100mm，無法裝ATX；數值取自零售商或評測規格表"
     },
     "included_psu_w": {
      "value": 400,
@@ -18825,8 +18885,9 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/PC-Case/MAG-FORGE-M100R/Specification",
+     "note": "原廠規格：ATX 電源，長度 ≤300 mm（未裝3.5吋硬碟架時）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     },
     "radiator_support": {
      "value": [
@@ -18854,6 +18915,12 @@
      "source": "vendor_spec",
      "ref": "https://www.msi.com/PC-Case/MAG-FORGE-M100R/Specification",
      "note": "（數值取自原廠頁面的搜尋摘錄）"
+    },
+    "psu_max_length_mm": {
+     "value": 300,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/PC-Case/MAG-FORGE-M100R/Specification",
+     "note": "原廠規格：ATX 電源，長度 ≤300 mm（未裝3.5吋硬碟架時）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -19562,14 +19629,21 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/PC-Case/PRO-SHIELD-M100P/Specification",
+     "note": "原廠規格：ATX 電源，長度 ≤160 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     },
     "radiator_support": {
      "value": [],
      "source": "vendor_spec",
      "ref": "https://storage-asset.msi.com/datasheet/pcc/hk/PRO-SHIELD-M100P.pdf",
      "note": "不支援冷排；後方只能裝 80/90 mm 風扇；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 160,
+     "source": "vendor_spec",
+     "ref": "https://www.msi.com/PC-Case/PRO-SHIELD-M100P/Specification",
+     "note": "原廠規格：ATX 電源，長度 ≤160 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -22566,10 +22640,18 @@
     },
     "psu_form_factors": {
      "value": [
-      "ATX"
+      "ATX",
+      "SFX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.superchannel.com.tw/products/detail/2447/SA170",
+     "note": "原廠：可裝 ATX 或 SFX 電源，長度 14/15 cm（ATX 下移時顯卡限 285mm）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 150,
+     "source": "vendor_spec",
+     "ref": "https://www.superchannel.com.tw/products/detail/2447/SA170",
+     "note": "原廠：可裝 ATX 或 SFX 電源，長度 14/15 cm（ATX 下移時顯卡限 285mm）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -22604,8 +22686,15 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "retailer_spec",
+     "ref": "https://24h.pchome.com.tw/prod/DRAE08-A900J30JB",
+     "note": "通路規格：ATX 電源 ≤160 mm（>140mm 時顯卡限 285mm）；數值取自零售商或評測規格表"
+    },
+    "psu_max_length_mm": {
+     "value": 160,
+     "source": "retailer_spec",
+     "ref": "https://24h.pchome.com.tw/prod/DRAE08-A900J30JB",
+     "note": "通路規格：ATX 電源 ≤160 mm（>140mm 時顯卡限 285mm）；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -23386,8 +23475,15 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/upload/sstedm/flp01/FLP01%20Product%20Sheet-EN.pdf",
+     "note": "原廠規格：Standard PS2(ATX)，深度 ≤170 mm（裝側扇/SSD 時 ≤160）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 170,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/upload/sstedm/flp01/FLP01%20Product%20Sheet-EN.pdf",
+     "note": "原廠規格：Standard PS2(ATX)，深度 ≤170 mm（裝側扇/SSD 時 ≤160）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -23738,8 +23834,15 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/upload/downloads/Manual/case/Multi-ML03-Manual.pdf",
+     "note": "原廠手冊：Standard PS2(ATX)，深度 ≤140 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 140,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/upload/downloads/Manual/case/Multi-ML03-Manual.pdf",
+     "note": "原廠手冊：Standard PS2(ATX)，深度 ≤140 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -23775,8 +23878,15 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/upload/downloads/Manual/case/Multi-ML04-Manual.pdf",
+     "note": "原廠手冊：Standard PS2(ATX)，深度 ≤140 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 140,
+     "source": "vendor_spec",
+     "ref": "https://www.silverstonetek.com/upload/downloads/Manual/case/Multi-ML04-Manual.pdf",
+     "note": "原廠手冊：Standard PS2(ATX)，深度 ≤140 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -24560,8 +24670,9 @@
      "value": [
       "ATX"
      ],
-     "source": "inferred",
-     "note": "品名未標 SFX"
+     "source": "vendor_spec",
+     "ref": "https://www.thermaltake.com/the-tower-600-mid-tower-chassis.html",
+     "note": "原廠規格：Standard PS2(ATX) 電源，長度 ≤220 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     },
     "back_connect_max_form_factor": {
      "value": "ATX",
@@ -24584,6 +24695,12 @@
      "source": "vendor_spec",
      "ref": "https://www.thermaltake.com/the-tower-600-mid-tower-chassis.html",
      "note": "右側 120~420;左側 120/240/360;頂部不支援冷排；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "psu_max_length_mm": {
+     "value": 220,
+     "source": "vendor_spec",
+     "ref": "https://www.thermaltake.com/the-tower-600-mid-tower-chassis.html",
+     "note": "原廠規格：Standard PS2(ATX) 電源，長度 ≤220 mm；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
