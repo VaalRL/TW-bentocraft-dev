@@ -59,7 +59,8 @@ flowchart TD
 | :--- | :--- | :--- | :--- |
 | **規格庫**（型號層） | `data/catalog/<類別>.json` | 新品上市、人工修正時 | 自動擷取產生草稿，社群以 PR 確認、修正 |
 | **報價快照**（報價層） | `data/prices/<通路>.json` | 每日 | 每日 workflow 自動產生 |
-| **前端用精簡檔** | `public/data/catalog.min.json`、`prices.min.json` | 建置時產生 | 去掉來源資訊與原始品名 |
+| **價格歷史** | `data/prices/history/<通路>.json` | 每日 | 每日 workflow 以當天快照更新（`pipeline/history.py`）：每個型號每天不附條件的最低價，只記變動，下架記 `null`，保留 90 天 |
+| **前端用精簡檔** | `public/data/catalog.min.json`、`prices.min.json` | 建置時產生 | 去掉來源資訊與原始品名；價格歷史只輸出近 30 天最低價與 7 天前價格，累積滿 7 天後才輸出 |
 
 ### 1. 為什麼分兩層
 

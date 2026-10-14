@@ -19,6 +19,7 @@
 
 - **Filters as you pick.** Every part you choose updates the candidate lists in the other categories; incompatible parts are hidden by default (or shown and marked). If choosing a part would leave another category with no compatible option, you are told before you pick it.
 - **Daily prices.** CoolPC's quote page is fetched every day at 11:17 Taiwan time. Conditional prices (time-limited deals, bundle discounts, the in-store assembly price) are kept apart and only count when their condition holds. Colour variants of one model are listed once at the lowest price, with the colour named.
+- **Price trends.** Each model's price is recorded daily and kept for 90 days. Candidate lists show the change from 7 days ago, and the quote shows the 30-day low (and says so when today's price is it). Trends appear once a week of history exists.
 - **Size diagram.** GPU length and air-cooler height are drawn to scale against the case limits, including conditional limits such as "with the PSU shroud installed".
 - **Share and export.** One link carries the whole build (no account; the build lives in the URL), and the build can be copied in PTT PC_Shopping format. A shared link is priced with the prices of the day it is opened.
 - Dark mode and a mobile layout.
@@ -99,7 +100,7 @@ Planned, not yet built:
 
 - **3D build view** showing part placement and interference ([`04`](04-high-fidelity-3d-visualization-and-threejs-spec.md), [`05`](05-3d-interactive-spatial-pc-builder-architecture.md)). The size diagram is its 2D precursor.
 - Prices from other stores such as Sinya (欣亞數位).
-- Price history and price-drop alerts.
+- Price-drop alerts.
 
 ## License
 

@@ -46,12 +46,16 @@ jobs:
           shopt -s nullglob   # 規格庫尚未建立時不傳入字面上的 *.json
           python schema/validate.py --catalog data/catalog/*.json --prices data/prices/coolpc.json
 
+      # 價格歷史：每個型號每天的最低價（只記變動、保留 90 天）。抓取失敗時不更新
+      - name: Update price history
+        run: python scripts/update_price_history.py
+
       # last_attempt_at 每次都會更新，因此每次都有變更可提交，兼作心跳（避免排程因 60 天無活動被停用）
       - name: Commit snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/prices/coolpc.json
+          git add data/prices/coolpc.json data/prices/history/coolpc.json
           git commit -m "chore(data): coolpc price snapshot $(date -u +%F)"
           for i in 1 2 3; do
             git pull --rebase --quiet origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0

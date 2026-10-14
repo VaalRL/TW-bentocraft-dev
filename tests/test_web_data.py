@@ -62,6 +62,15 @@ class WebDataTest(unittest.TestCase):
                                           "c": {"t": "requires_category", "q": ["motherboard"]},
                                           "x": ["華碩 TUF 750W", "NZXT Kraken Core 360 RGB 水冷"]}])
 
+    def test_price_history_summary(self):
+        prices = {"fetched_at": "2026-10-20T03:17:00Z", "status": "ok", "vendor": "coolpc", "offers": []}
+        history = {"vendor": "coolpc", "keep_days": 90, "since": "2026-10-01", "updated": "2026-10-20",
+                   "models": {"case:a": [["2026-10-01", 100], ["2026-10-15", 90]], "case:not-in-catalog": [["2026-10-01", 5]]}}
+        doc = build_web_data.build_prices(prices, {"case:a": {}}, history)
+        self.assertEqual(doc["h"], {"days": 19, "m": {"case:a": [90, 100]}})
+        history["since"] = "2026-10-16"  # 不滿 7 天：不輸出
+        self.assertNotIn("h", build_web_data.build_prices(prices, {"case:a": {}}, history))
+
     def test_missing_prices(self):
         self.assertEqual(build_web_data.build_prices(None, {})["status"], "missing")
 

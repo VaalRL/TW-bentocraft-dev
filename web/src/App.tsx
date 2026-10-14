@@ -115,6 +115,7 @@ export function App() {
           catalog={data.byCategory}
           selection={selection}
           offers={offers}
+          history={data.prices.h}
           onPick={pick}
         />
         <Summary

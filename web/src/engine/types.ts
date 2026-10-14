@@ -45,6 +45,13 @@ export interface PricesData {
   status: 'ok' | 'stale' | 'missing';
   vendor: string;
   offers: Offer[];
+  /** 價格歷史摘要（累積滿 7 天後才有）：型號 → [近 days 天最低價, 7 天前價格或 null] */
+  h?: PriceHistory;
+}
+
+export interface PriceHistory {
+  days: number;
+  m: Record<string, [number, number | null]>;
 }
 
 export type Selection = Partial<Record<Category, Model>>;

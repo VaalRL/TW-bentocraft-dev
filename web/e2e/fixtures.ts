@@ -78,4 +78,6 @@ export const PRICES: PricesData = {
     { m: 'psu:fsp:hydro-550w', p: 1590 },
     { m: 'psu:corsair:sf750', p: 4690 },
   ],
+  // 價格歷史：9800X3D 比 7 天前便宜 400，且是近 30 天最低；顯示卡 7 天前更便宜
+  h: { days: 30, m: { 'cpu:amd:r7-9800x3d': [15990, 16390], 'gpu:msi:rtx5080-ventus': [35990, 35990] } },
 };
