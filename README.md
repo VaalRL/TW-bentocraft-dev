@@ -63,6 +63,10 @@ Each check returns **pass, warn, fail or unknown**. Unknown means the catalog la
 
 Wrong specs, a price mapped to the wrong model, or a wrong compatibility result: please [open an issue](https://github.com/VaalRL/TW-bentocraft/issues/new/choose), ideally with the model and a link to the manufacturer's spec page. To edit the catalog directly, see [`CONTRIBUTING.md`](CONTRIBUTING.md) (Traditional Chinese).
 
+## Support the project
+
+The catalog is filled in by hand from manufacturer specs. If this tool saved you time, you can [buy me a coffee](https://www.buymeacoffee.com/whoami885) ☕ or star the repo.
+
 ---
 
 ## Local development

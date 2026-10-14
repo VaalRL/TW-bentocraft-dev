@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { logoSvg } from '../brand/logo';
 import type { PricesData } from '../engine/types';
 import { daysSince, formatDate } from './format';
-import { REPO } from './report';
+import { REPO, SPONSOR_URL } from './report';
 
 const LOGO = logoSvg({ label: '' }); // 旁邊就是站名，圖示本身不重複朗讀
 
@@ -55,6 +55,10 @@ export function Header({ prices }: { prices: PricesData }) {
           : `原價屋報價：${formatDate(prices.fetched_at)}${stale ? '（可能已變動）' : ''}`}
       </div>
       <div className="header-actions">
+        <a className="icon-button sponsor" href={SPONSOR_URL} target="_blank" rel="noreferrer">
+          <span aria-hidden="true">☕</span>
+          <span className="sponsor-label">贊助</span>
+        </a>
         <button
           className="icon-button"
           onClick={() => setTheme(t => (t === 'dark' ? 'light' : 'dark'))}
