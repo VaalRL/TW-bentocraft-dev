@@ -1,5 +1,6 @@
 import { CONDITION_LABEL, spec } from '../engine/constraints';
 import type { Check, Selection, Status } from '../engine/types';
+import { CaseSchematic } from './CaseSchematic';
 import { STATUS_LABEL, checkText } from './format';
 
 // 尺寸比例圖（04 第五節 Phase 2）：以毫米等比例畫出顯卡長度、風冷高度與機殼上限。
@@ -107,6 +108,7 @@ export function FitDiagram({ selection, checks }: { selection: Selection; checks
   return (
     <div className="fit" aria-label="尺寸比例">
       <h3>尺寸比例</h3>
+      <CaseSchematic selection={selection} checks={checks} />
       {list.map(r => (
         <div key={r.key} className="fit-row">
           <div className="fit-head">

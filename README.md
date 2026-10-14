@@ -20,7 +20,9 @@
 - **Filters as you pick.** Every part you choose updates the candidate lists in the other categories; incompatible parts are hidden by default (or shown and marked). If choosing a part would leave another category with no compatible option, you are told before you pick it.
 - **Daily prices.** CoolPC's quote page is fetched every day at 11:17 Taiwan time. Conditional prices (time-limited deals, bundle discounts, the in-store assembly price) are kept apart and only count when their condition holds. Colour variants of one model are listed once at the lowest price, with the colour named.
 - **Price trends.** Each model's price is recorded daily and kept for 90 days. Candidate lists show the change from 7 days ago, and the quote shows the 30-day low (and says so when today's price is it). Trends appear once a week of history exists.
-- **Size diagram.** GPU length and air-cooler height are drawn to scale against the case limits, including conditional limits such as "with the PSU shroud installed".
+- **Case diagram and size scales.** Once a case is chosen, a side-view diagram places the motherboard, GPU, PSU and radiator, coloured by the compatibility checks. The case outline is a generic shape; the parts are drawn to scale from their specs. Scales show GPU length and air-cooler height against the case limits, including conditional limits such as "with the PSU shroud installed".
+
+  <img src="docs/case-diagram.png" width="320" alt="Side-view case diagram: an ATX motherboard, a 310 mm GPU, a top 360 mm radiator and an ATX PSU inside a generic case outline, all green for compatible" />
 - **Share and export.** One link carries the whole build (no account; the build lives in the URL), and the build can be copied in PTT PC_Shopping format. A shared link is priced with the prices of the day it is opened.
 - Dark mode and a mobile layout.
 
@@ -98,9 +100,11 @@ python scripts/bootstrap_catalog.py --html page.html   # add models missing from
 
 Planned, not yet built:
 
-- **3D build view** showing part placement and interference ([`04`](04-high-fidelity-3d-visualization-and-threejs-spec.md), [`05`](05-3d-interactive-spatial-pc-builder-architecture.md)). The size diagram is its 2D precursor.
+- GPU slot width, PSU length, RAM height and radiator thickness, to make the case diagram more accurate.
 - Prices from other stores such as Sinya (欣亞數位).
 - Price-drop alerts.
+
+The 3D build view planned in [`04`](04-high-fidelity-3d-visualization-and-threejs-spec.md) and [`05`](05-3d-interactive-spatial-pc-builder-architecture.md) is on hold. The catalog has no case outside dimensions or interior layout, so a 3D case could only be a generic shape, and the 3D libraries would roughly triple what the site downloads. The 2D case diagram stands in for it until a source of case interior dimensions turns up.
 
 ## License
 

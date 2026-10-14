@@ -191,6 +191,22 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 .fit-limit { stroke: var(--text-primary); stroke-width: 2; }
 .fit-condition { stroke: var(--text-primary); stroke-width: 1.5; stroke-dasharray: 3 2; }
 .fit-tick { font-size: 9px; fill: var(--text-muted); font-variant-numeric: tabular-nums; }
+.schem { margin: 0 0 0.4rem; }
+.schem svg { width: 100%; height: auto; display: block; overflow: visible; }
+.schem figcaption { margin-top: 0.3rem; }
+.schem-case { fill: var(--bg-muted); stroke: var(--text-muted); stroke-width: 2; }
+.schem-shroud { stroke: var(--border); stroke-width: 2; stroke-dasharray: 6 4; }
+.schem-slot { fill: none; stroke: var(--text-muted); stroke-width: 1.5; stroke-dasharray: 4 3; }
+.schem-part { fill: var(--bg-surface); stroke: var(--text-muted); stroke-width: 1.5; }
+.schem-part.is-picked { stroke: none; opacity: 0.85; }
+.schem-board.is-picked { opacity: 0.35; }
+.schem-socket { fill: none; stroke: var(--text-muted); stroke-width: 1.5; }
+.schem-limit { stroke: var(--text-primary); stroke-width: 3; }
+.schem-condition { stroke: var(--text-primary); stroke-width: 2; stroke-dasharray: 5 3; }
+.schem-tolerance { fill: var(--bg-surface); opacity: 0.55; }
+.schem-label { font-size: 15px; fill: var(--text-primary); }
+.schem-label.on-part { fill: var(--bg-primary); font-weight: 600; }
+.schem-tick { font-size: 13px; fill: var(--text-muted); }
 .fit-caption { margin: 0; font-size: 0.78rem; color: var(--text-primary); }
 
 .footer { padding: 1.5rem 1rem 5rem; text-align: center; font-size: 0.8rem; color: var(--text-muted); }

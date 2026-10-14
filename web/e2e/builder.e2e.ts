@@ -43,6 +43,18 @@ test.describe('桌面版配單', () => {
     await expect(candidate(page, 'SF750')).not.toHaveClass(/status-fail/);
   });
 
+  test('機殼側視示意圖：零件依相容性檢查著色', async ({ page }) => {
+    await open(page);
+    await pick(page, '機殼', 'A4-H2O');
+    const schem = page.locator('.schem svg');
+    await expect(schem).toHaveAttribute('aria-label', /主機板 Mini-ITX；顯卡限長 322 mm；電源 SFX/);
+    await pick(page, '顯示卡', 'RTX5080');
+    await category(page, '電源');
+    await page.getByLabel(/隱藏不相容/).uncheck();
+    await candidate(page, 'TUF GAMING 1000W').click();
+    await expect(schem).toHaveAttribute('aria-label', /顯卡 303 mm：相容；電源 ATX：不相容/);
+  });
+
   test('電源瓦數：9800X3D ＋ RTX 5080 估計 572 W，550 W 不足', async ({ page }) => {
     await open(page);
     await pick(page, '處理器', 'R7 9800X3D');
