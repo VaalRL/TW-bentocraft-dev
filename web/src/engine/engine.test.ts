@@ -110,6 +110,8 @@ describe('整機檢查', () => {
     });
     expect(status(evaluate(aio360, { case: caseRad }), 'C5')).toBe('pass');
     expect(status(evaluate(aio420, { case: caseRad }), 'C5')).toBe('fail');
+    const noRad = evaluate(aio360, { case: M('case:x:sff', { radiator_support: [] }) }).find(r => r.constraint === 'C5');
+    expect([noRad?.status, noRad?.message]).toEqual(['fail', '機殼不支援一體式水冷']);
     const caseBig = M('case:x:big', { radiator_support: [{ position: 'top', sizes: [360, 420] }] });
     expect(status(evaluate(M('cooler:x:aio-240', { cooler_type: 'aio', radiator_mm: 240 }), { case: caseBig }), 'C5')).toBe('warn');
     expect(status(evaluate(aio360, { case: tower300 }), 'C5')).toBe('unknown'); // 機殼冷排位未確認

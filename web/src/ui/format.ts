@@ -65,7 +65,7 @@ export function specSummary(m: Model): string {
       parts.push(val(m, 'cooler_clearance_mm', ' mm', v => `散熱器 ≤ ${v}`));
       parts.push(val(m, 'psu_form_factors', ' 電源', (v: string[]) => v.join('／')));
       parts.push(val(m, 'radiator_support', '', (v: { position: string; sizes: number[] }[]) =>
-        `冷排 ${v.map(p => `${RADIATOR_POSITION[p.position] ?? p.position} ${Math.max(...p.sizes)}`).join('／')}`));
+        v.length ? `冷排 ${v.map(p => `${RADIATOR_POSITION[p.position] ?? p.position} ${Math.max(...p.sizes)}`).join('／')}` : '不支援冷排'));
       break;
     case 'psu':
       parts.push(val(m, 'wattage', ' W'), val(m, 'form_factor'), val(m, 'efficiency', '', (v: string) => EFFICIENCY[v] ?? v));
