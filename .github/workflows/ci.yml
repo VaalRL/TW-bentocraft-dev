@@ -1,7 +1,7 @@
 name: CI
 
 # PR 與 main 的離線檢查：Python 單元測試、schema 測試、規格庫驗證、對照表是否已回填。
-# 不連線原價屋（連線驗證由 poc-coolpc-probe.yml 與每日排程負責）；前端測試在 deploy.yml。
+# 不連線原價屋（連線驗證由每日排程 daily-prices.yml 負責）；前端測試在 deploy.yml。
 on:
   pull_request:
     paths:

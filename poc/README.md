@@ -29,7 +29,7 @@
 - `spec_extract.py`：相容層。擷取規則已移至 [`pipeline/extract.py`](../pipeline/extract.py)，測試在 [`tests/test_extract.py`](../tests/test_extract.py)。
 - `AUDIT-2026-10-12.md`：擷取正確率抽樣核對紀錄。
 - `to_catalog.py`：把 `coolpc_probe.py --dump-items` 輸出的品項轉成草稿規格庫與報價檔，並以 [`schema/`](../schema/) 驗證、量測檔案大小。
-- `.github/workflows/poc-coolpc-probe.yml`：推送 `poc/`、`pipeline/`、`scripts/`、`tests/`、`schema/` 下的程式時在 Actions 上執行，並以同一份頁面跑一次正式管線；原始 HTML 以 artifact 保存 14 天，不 commit 進倉庫。每日觀察已改由 `daily-prices.yml` 負責。
+- `.github/workflows/poc-coolpc-probe.yml`（已移除，2026-10-14）：PoC 期間在 Actions 上實際抓取原價屋並以同一份頁面跑一次正式管線；原始 HTML 以 artifact 保存 14 天，不 commit 進倉庫。PoC 完成後，連線與管線驗證由每日的 `daily-prices.yml` 負責。腳本仍可在本機執行：`python poc/coolpc_probe.py --out poc/out --save-html`。
 
 ## 執行
 
