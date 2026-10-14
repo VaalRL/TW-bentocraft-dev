@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+import { logoSvg } from '../brand/logo';
 import type { PricesData } from '../engine/types';
 import { daysSince, formatDate } from './format';
 import { REPO } from './report';
 
+const LOGO = logoSvg({ label: '' }); // 旁邊就是站名，圖示本身不重複朗讀
 
 /** GitHub Star 數。取不到（離線、API 次數用完）時不顯示，不影響其他功能。 */
 function useStars(): number | null {
@@ -41,8 +43,11 @@ export function Header({ prices }: { prices: PricesData }) {
   return (
     <header className="header">
       <div className="brand">
-        <span className="brand-name">原價煮便當</span>
-        <span className="brand-sub">TW-bentocraft · 原價屋報價相容性配單</span>
+        <span className="brand-logo" dangerouslySetInnerHTML={{ __html: LOGO }} />
+        <div className="brand-text">
+          <span className="brand-name">原價煮便當</span>
+          <span className="brand-sub">TW-bentocraft · 原價屋報價相容性配單</span>
+        </div>
       </div>
       <div className={`report-date ${stale ? 'is-stale' : ''}`} title={prices.status === 'stale' ? '最近一次更新失敗，沿用舊報價' : undefined}>
         {prices.status === 'missing'

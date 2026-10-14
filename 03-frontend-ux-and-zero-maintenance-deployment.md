@@ -37,18 +37,18 @@ flowchart LR
 ### 1. 模型工作室風格 (Model Kit Studio) ✕ 雙軌色系 Design Tokens
 * **預設視覺**：初次開啟為淺色模式，使用者切換後記住選擇。
 * **視覺風格**：**風格 3【模型工作室風 (Model Kit Studio)】**。UI 帶有模型拼裝工作台（Cutting Mat / Workbench）刻度感與零件板件（Runner）微切角設計，操作伴隨精準拼裝卡扣之立體反饋。
-* **色彩規範**：
-  - **預設淺色模式 (Default Light)**：**【白金綠 (White-Gold-Emerald)】**──純白潔淨組裝台底色、翡翠綠通過/相容標記、奢雅金黃重點銘牌。
-  - **深色模式 (Dark Mode)**：**【黑紅金 (Black-Crimson-Gold)】**──黑曜石工作台、古銅金奢華邊框與功能按鈕、猩紅穿模與碰撞高亮警示。
+* **色彩規範**：黑白線稿＋暖灰底，品牌色是**靛藍**（2026-10 改版）。品牌色刻意避開相容性結果使用的綠、琥珀、紅、灰，讓連結、按鈕與選取框不會被看成「相容」或「注意」。logo 的梅子紅只用在圖案裡，不當介面顏色。
+  - **Logo**：俯視的便當盒，格子是主機板配置（飯格＋梅子＝CPU、細長格＝記憶體、底下長條＝顯示卡）。原始碼在 `web/src/brand/logo.ts`；favicon、README 用圖與社群預覽圖由 `npm run brand` 產生。
 
-| Token 變數 | 淺色模式 (白金綠 White-Gold-Emerald) | 深色模式 (黑紅金 Black-Crimson-Gold) | 功用說明 |
+| Token 變數 | 淺色模式 | 深色模式 | 功用說明 |
 | :--- | :--- | :--- | :--- |
 | `--bg-primary` | `#FBFBF9` (溫潤白瓷工作台) | `#0C0A09` (曜石黑底 / Stone-950) | 全域背景底色 |
 | `--bg-surface` | `#FFFFFF` (純白零件卡片) | `#1C1917` (黑化金屬 / Stone-900) | 零件列表與卡片背景 |
-| `--border-accent` | `#D97706` (典雅金 Amber-600) | `#EAB308` (古銅金 Yellow-500) | 模型卡榫邊框與精緻金邊 |
+| `--border-accent` | `#3730A3` (靛藍 Indigo-800) | `#818CF8` (Indigo-400) | 標題列與手機底部列的分隔線 |
 | `--text-primary` | `#1C1917` (暖黑文字) | `#FAFAF9` (亮白文字) | 標題與核心品名文字 |
 | `--text-muted` | `#6B6560` (暖灰說明) | `#A8A29E` (金屬灰次要說明) | 規格次要描述與標籤 |
-| `--accent-brand` | `#047857` (翡翠綠 Emerald-700) | `#EAB308` (亮金色 Yellow-500) | 主按鈕、核取標記、通電指示 |
+| `--accent-brand` | `#3730A3` (靛藍 Indigo-800) | `#A5B4FC` (Indigo-300) | 連結、主按鈕、目前選取的類別與零件 |
+| `--on-accent` | `#FFFFFF` | `#1E1B4B` (Indigo-950) | 品牌色底上的文字 |
 | `--status-error` | `#B91C1C` (深紅警示 Red-700) | `#F87171` (猩紅碰撞 Red-400) | 3D 穿模衝突與幾何碰撞警告 |
 | `--status-warn` | `#B45309` (琥珀金 Amber-700) | `#F59E0B` (熔岩金 Amber-500) | 供電偏緊/需刷 BIOS 預警 |
 | `--status-ok` | `#047857` (健康綠 Emerald-700) | `#34D399` (螢光綠 Emerald-400) | 完全相容/安全功耗徽章 |

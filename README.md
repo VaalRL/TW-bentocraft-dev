@@ -1,5 +1,12 @@
 **English** | [繁體中文](README.zh-TW.md)
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/logo-dark.svg">
+    <img src="docs/logo.svg" width="96" alt="原價煮便當 logo: a bento box whose compartments are laid out like a motherboard">
+  </picture>
+</p>
+
 # 原價煮便當 (TW-bentocraft)
 
 [![Website](https://img.shields.io/badge/website-vaalrl.github.io%2FTW--bentocraft-brightgreen)](https://vaalrl.github.io/TW-bentocraft/)
@@ -9,7 +16,7 @@
 
 👉 **https://vaalrl.github.io/TW-bentocraft/** (the interface is in Traditional Chinese)
 
-![Builder screen: categories on the left, candidate parts with specs in the middle, the quote with compatibility checks and a size diagram on the right](docs/screenshot.png)
+![Builder screen: categories on the left, the 3D exploded view (graphics card pulled out) and the candidate list in the middle, the quote on the right](docs/screenshot.png)
 
 > This is an unofficial open-source project, not affiliated with CoolPC. Prices and specs are for reference; CoolPC's own listing is authoritative.
 
