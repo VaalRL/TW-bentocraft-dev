@@ -211,6 +211,40 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 .schem-tick { font-size: 13px; fill: var(--text-muted); }
 .fit-caption { margin: 0; font-size: 0.78rem; color: var(--text-primary); }
 
+/* 3D 分解圖（ExplodedView）：CSS 3D transform */
+.workspace-main { min-width: 0; }
+.x3d { --x3d-empty: var(--text-muted); margin: 0 0 0.75rem; padding: 0.5rem 0.75rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-surface); }
+.x3d-toolbar { display: flex; gap: 0.9rem; align-items: baseline; font-size: 0.85rem; }
+.x3d-title { font-weight: 600; margin-right: auto; }
+.x3d-stage { position: relative; overflow: hidden; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; border-radius: var(--radius); }
+.x3d-stage:active { cursor: grabbing; }
+.x3d-stage:focus-visible { outline: 2px solid var(--accent-brand); outline-offset: 2px; }
+.iso { display: block; width: 100%; height: min(360px, 80vw); overflow: visible; }
+.iso-face { fill: var(--bg-surface); stroke: var(--text-primary); stroke-width: 1; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.iso-face.iso-f, .iso-face.iso-k { fill: color-mix(in srgb, var(--text-muted) 8%, var(--bg-surface)); }
+.iso-face.iso-l, .iso-face.iso-r { fill: color-mix(in srgb, var(--text-muted) 16%, var(--bg-surface)); }
+.iso-face.iso-b { fill: color-mix(in srgb, var(--text-muted) 26%, var(--bg-surface)); }
+.iso-deco { fill: none; stroke: var(--text-primary); stroke-width: 0.6; vector-effect: non-scaling-stroke; opacity: 0.85; }
+.iso-deco.is-filled { fill: color-mix(in srgb, var(--text-muted) 20%, var(--bg-surface)); }
+.iso-part { cursor: pointer; outline: none; }
+.iso-part.is-picked .iso-face { fill: color-mix(in srgb, var(--part) 20%, var(--bg-surface)); }
+.iso-part.is-picked .iso-face.iso-f, .iso-part.is-picked .iso-face.iso-k { fill: color-mix(in srgb, var(--part) 30%, var(--bg-surface)); }
+.iso-part.is-picked .iso-face.iso-l, .iso-part.is-picked .iso-face.iso-r { fill: color-mix(in srgb, var(--part) 42%, var(--bg-surface)); }
+.iso-part.is-picked .iso-face.iso-b { fill: color-mix(in srgb, var(--part) 55%, var(--bg-surface)); }
+.iso-part.is-picked .iso-deco.is-filled { fill: color-mix(in srgb, var(--part) 50%, var(--bg-surface)); }
+.iso-part:not(.is-picked):not(.iso-case) .iso-face { stroke-dasharray: 3 2; }
+.iso-part:not(.is-picked):not(.iso-case) .iso-deco { opacity: 0.4; }
+.iso-part.iso-case .iso-face.iso-face { fill: color-mix(in srgb, var(--part) 6%, var(--bg-surface)); stroke: var(--text-muted); stroke-dasharray: none; }
+.iso-part.iso-case .iso-face.iso-b { fill: color-mix(in srgb, var(--part) 12%, var(--bg-surface)); }
+.iso-part:hover .iso-face, .iso-part:focus-visible .iso-face { stroke: var(--accent-brand); stroke-width: 2; stroke-dasharray: none; }
+.iso-part:not(.iso-case):hover .iso-face, .iso-part:not(.iso-case):focus-visible .iso-face { fill: color-mix(in srgb, var(--accent-brand) 25%, var(--bg-surface)); }
+.iso-part.is-active .iso-face { stroke: var(--accent-brand); stroke-width: 1.6; }
+.iso-shell { pointer-events: none; }
+.iso-shell .iso-face { fill: none; stroke: var(--text-muted); }
+.iso-shell .iso-deco { opacity: 0.35; }
+.iso-guide { stroke: var(--text-muted); stroke-width: 0.8; stroke-dasharray: 4 3; vector-effect: non-scaling-stroke; }
+.x3d-caption { margin: 0.2rem 0 0; font-size: 0.8rem; color: var(--text-muted); min-height: 1.2em; }
+
 .footer { padding: 1.5rem 1rem 5rem; text-align: center; font-size: 0.8rem; color: var(--text-muted); }
 .footer a { margin-left: 0.5rem; }
 

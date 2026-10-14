@@ -222,5 +222,5 @@ export class PCAssemblyViewer {
 * **Phase 1 (MVP 當前基石)**：2D 視覺化卡片、原價屋每日報價快照、[`02`](02-hardware-compatibility-constraint-engine.md) 的約束引擎（含「未知」與誤差帶）、GitHub Pages 部署。**3D 不在 MVP 範圍內**，避免拖慢第一版。
 * **Phase 2 (高程度圖像化 2.5D 尺寸比例尺)**：引入 SVG / Canvas 2D 比例尺，繪製機殼斷面圖與顯卡/塔散實體公差填充色塊（毫米級真實比例直觀對比）。
   > **實作狀態（2026-10）**：估價單內的「尺寸比例」（[`web/src/ui/FitDiagram.tsx`](web/src/ui/FitDiagram.tsx)）以 SVG 依毫米等比例畫出顯卡長度、風冷高度與機殼上限，誤差範圍以淡色區段、條件式上限以虛線標示；顏色與結論一律取自 C4／C5 結果。另有機殼側視示意圖（[`web/src/ui/CaseSchematic.tsx`](web/src/ui/CaseSchematic.tsx)）：機殼外形為通用模型，主機板、顯卡、電源與冷排依規格尺寸等比例畫入，顏色取自 C3／C4／C5／C9。真實外形的機殼斷面圖待有機殼內部尺寸資料後再做。
-  > **Phase 3（3D）暫緩**：規格庫沒有機殼外部尺寸與內部配置，3D 只能用通用外形；three ＋ R3F ＋ drei 會讓整站下載量變成約三倍。待找到機殼內部尺寸的資料來源再評估。
+  > **Phase 3（3D）**：擬真 WebGL 版本暫緩，因為規格庫沒有機殼外部尺寸與內部配置，且 three ＋ R3F ＋ drei 會讓整站下載量變成約三倍。改以程式產生的等角 SVG 線稿做通用外形的分解圖（[`web/src/ui/ExplodedView.tsx`](web/src/ui/ExplodedView.tsx)、[`isometric.ts`](web/src/ui/isometric.ts)）：零件是長方體加表面細節，依視角正投影並由遠到近繪製；點零件開啟該類別清單，增加約 7 KB（gzip）。
 * **Phase 3 (R3F 3D 虛擬機殼實驗沙盒)**：依 [`05`](05-3d-interactive-spatial-pc-builder-architecture.md) 的 R3F 架構，引入 5 款代表性機殼與通用零件之低多邊形（Low-Poly）Draco 壓縮 GLB 模型，實現 3D 磁吸拼裝，並呈現約束引擎的干涉結果。3D 程式碼延遲載入，不影響 2D 介面的首次載入。
