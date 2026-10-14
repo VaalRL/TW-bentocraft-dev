@@ -21719,6 +21719,27 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://24h.pchome.com.tw/prod/DRAE2A-A900HTKWG",
+     "note": "冷排厚度皆須小於52mm；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -22496,6 +22517,26 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        360
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://24h.pchome.com.tw/prod/DRAE08-A900IWXFV",
+     "note": "官網寫上蓋360；通路列上240/360/480(第一排HDD不裝)，厚度<55mm；前置尺寸未列；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -22537,6 +22578,12 @@
      "source": "retailer_spec",
      "ref": "https://www.coolpc.com.tw/tw/portfolio-items/%E8%A6%96%E5%8D%9A%E9%80%9A-%E8%92%BC%E9%BE%8D%E6%88%B0%E5%A3%AB-%E6%A9%9F%E6%AE%BC%E5%85%A7%E9%99%84cwt-400w%E9%9B%BB%E6%BA%90/",
      "note": "原價屋標LA-1710(B)顯卡長30/CPU高15(cm)，附CWT 400W；數值取自零售商或評測規格表"
+    },
+    "radiator_support": {
+     "value": [],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/eachview.php?IGrp=14",
+     "note": "原價屋規格列「支援水冷：無」；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -22572,6 +22619,36 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/tw/shop/case/superchannel-sw002/",
+     "note": "原價屋開箱及鮮拾規格；頂部冷排+風扇厚度建議5.5cm內；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -22725,6 +22802,19 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://24h.pchome.com.tw/prod/DRAE08-A900IGS8C",
+     "note": "上蓋可擴充240水冷排，厚度≤55mm；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -22766,6 +22856,25 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.sinya.com.tw/prod/215417",
+     "note": "上蓋可擴充240水冷排，官方建議總厚度<55mm；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -22811,6 +22920,19 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/eachview.php?IGrp=14",
+     "note": "原價屋列支援水冷240，風扇位12*2(上/側)；位置推定為頂部；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -22864,6 +22986,12 @@
      "source": "vendor_spec",
      "ref": "https://www.superchannel.com.tw/products/detail/2447/SA170",
      "note": "原廠：可裝 ATX 或 SFX 電源，長度 14/15 cm（ATX 下移時顯卡限 285mm）；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "radiator_support": {
+     "value": [],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/tw/portfolio-items/superchannel%E8%A6%96%E5%8D%9A%E9%80%9A-sa170%E3%80%90m-atx%E3%80%91%E6%A9%9F%E6%AE%BC-%E5%A4%A7%E9%9D%A2%E7%A9%8D%E7%B6%B2%E5%AD%94/",
+     "note": "原價屋規格列「支援水冷：無」；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -22907,6 +23035,12 @@
      "source": "retailer_spec",
      "ref": "https://24h.pchome.com.tw/prod/DRAE08-A900J30JB",
      "note": "通路規格：ATX 電源 ≤160 mm（>140mm 時顯卡限 285mm）；數值取自零售商或評測規格表"
+    },
+    "radiator_support": {
+     "value": [],
+     "source": "retailer_spec",
+     "ref": "https://24h.pchome.com.tw/prod/DRAE08-A900J30JB",
+     "note": "PChome註明上蓋不支援水冷；原價屋列「支援水冷：無」；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -22958,6 +23092,12 @@
      "source": "retailer_spec",
      "ref": "https://www.coolpc.com.tw/tw/portfolio-items/%E8%A6%96%E5%8D%9A%E9%80%9A-sa801%E3%80%90atx%E3%80%91%E6%A9%9F%E6%AE%BC-%E8%A6%96%E5%8D%9A%E9%80%9A-500w%E9%9B%BB%E6%BA%90/",
      "note": "原價屋標顯卡長32/CPU高15.5(cm)，不支援水冷；數值取自零售商或評測規格表"
+    },
+    "radiator_support": {
+     "value": [],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/eachview.php?IGrp=14",
+     "note": "原價屋列「支援水冷：無」，僅後置12cm風扇位；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -22993,6 +23133,12 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/eachview.php?IGrp=14",
+     "note": "原價屋列「支援水冷：無」，僅後置12cm風扇位；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -23032,6 +23178,32 @@
     "back_connect_max_form_factor": {
      "value": "ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        280,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        360
+       ]
+      },
+      {
+       "position": "bottom",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolaler.com/superturn-sac449-review/",
+     "note": "評測/新聞稿：側36、下36、上36/28公分；底部預裝3顆風扇；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -23127,6 +23299,21 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.superchannel.com.tw/products/detail/2478/SAK220(B)",
+     "note": "冷排厚度需55mm內(PChome)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -23176,6 +23363,34 @@
     "back_connect_max_form_factor": {
      "value": "M-ATX",
      "source": "title"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        240
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        120,
+        240,
+        280
+       ]
+      },
+      {
+       "position": "rear",
+       "sizes": [
+        120
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://24h.pchome.com.tw/prod/DRAE08-A900GFWS2",
+     "note": "前置冷排+風扇總厚度官方建議<52mm；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -23279,6 +23494,21 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      }
+     ],
+     "source": "vendor_spec",
+     "ref": "https://www.superchannel.com.tw/products/detail/2605/SAP320(B)",
+     "note": "冷排厚度55mm內(PChome)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -23355,6 +23585,29 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        120,
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        280
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/tw/shop/case/superchannel-sw300-b/",
+     "note": "前置360需後移硬碟架；冷排+風扇厚度建議55mm內；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -23396,6 +23649,28 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        240,
+        280,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        280
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/tw/shop/case/superchannel-sw300m-w/",
+     "note": "官方建議冷排+風扇厚度5.5cm內；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -23444,6 +23719,19 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "top",
+       "sizes": [
+        360
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://24h.pchome.com.tw/prod/DRAE08-A900HQHAW",
+     "note": "上蓋360須拆除3.5吋硬碟架；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -23479,6 +23767,12 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/eachview.php?IGrp=14",
+     "note": "原價屋列「支援水冷：無」；數值取自零售商或評測規格表"
     }
    },
    "review": {
@@ -24657,6 +24951,33 @@
      ],
      "source": "inferred",
      "note": "品名未標 SFX"
+    },
+    "radiator_support": {
+     "value": [
+      {
+       "position": "front",
+       "sizes": [
+        240,
+        360
+       ]
+      },
+      {
+       "position": "top",
+       "sizes": [
+        240,
+        360
+       ]
+      },
+      {
+       "position": "side",
+       "sizes": [
+        240
+       ]
+      }
+     ],
+     "source": "retailer_spec",
+     "ref": "https://24h.pchome.com.tw/prod/DRAE4J-A900K015X",
+     "note": "PChome規格；原價屋開箱稱亦相容280(有條件)；前置360需外移風扇/調硬碟架；數值取自零售商或評測規格表"
     }
    },
    "review": {
