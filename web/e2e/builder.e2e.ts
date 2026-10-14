@@ -23,6 +23,24 @@ test.describe('桌面版配單', () => {
     await expect(tip).toHaveCount(0);
   });
 
+  test('清空配單後可以復原；選了新零件就不再提供復原', async ({ page }) => {
+    await open(page);
+    await pick(page, '處理器', 'R7 9800X3D');
+    await pick(page, '顯示卡', 'RTX5080');
+    const items = page.locator('.summary-items li');
+    await expect(items).toHaveCount(2);
+    await page.getByRole('button', { name: '清空配單' }).click();
+    await expect(items).toHaveCount(0);
+    await expect(page).toHaveURL(/\/TW-bentocraft[^#]*\/$/);
+    await page.getByRole('button', { name: '復原' }).click();
+    await expect(items).toHaveCount(2);
+    await expect(page).toHaveURL(/#\/build\?b=/);
+    await page.getByRole('button', { name: '清空配單' }).click();
+    await pick(page, '處理器', 'i5-14400');
+    await expect(page.getByRole('button', { name: '復原' })).toHaveCount(0);
+    await expect(items).toHaveCount(1);
+  });
+
   test('不相容的主機板預設隱藏，取消勾選後顯示為不相容', async ({ page }) => {
     await open(page);
     await pick(page, '處理器', 'R7 9800X3D');

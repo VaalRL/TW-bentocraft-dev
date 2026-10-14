@@ -40,6 +40,7 @@ export function App() {
   const [missingShared, setMissingShared] = useState<string[]>([]);
   const [active, setActive] = useState<Category>('cpu');
   const [assembly, setAssembly] = useState(false);
+  const [cleared, setCleared] = useState<Picks | null>(null); // 清空前的配單，供復原
 
   useEffect(() => {
     loadData()
@@ -90,7 +91,18 @@ export function App() {
   if (error) return <div className="state-message">{error}</div>;
   if (!data) return <div className="state-message">載入規格庫與報價中…</div>;
 
-  const pick = (m: Model) => setPicks(p => ({ ...p, [m.c]: { id: m.id } }));
+  const pick = (m: Model) => {
+    setCleared(null);
+    setPicks(p => ({ ...p, [m.c]: { id: m.id } }));
+  };
+  const reset = () => {
+    setCleared(picks);
+    setPicks({});
+  };
+  const undoReset = () => {
+    if (cleared) setPicks(cleared);
+    setCleared(null);
+  };
   const unpick = (cat: Category) =>
     setPicks(p => {
       const next = { ...p };
@@ -127,6 +139,8 @@ export function App() {
           assembly={assembly}
           onAssemblyChange={setAssembly}
           onRemove={unpick}
+          onReset={reset}
+          onUndoReset={cleared ? undoReset : undefined}
           onFocus={setActive}
         />
       </main>
