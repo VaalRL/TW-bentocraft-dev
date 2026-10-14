@@ -216,24 +216,34 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 .x3d { --x3d-empty: var(--text-muted); margin: 0 0 0.75rem; padding: 0.5rem 0.75rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg-surface); }
 .x3d-toolbar { display: flex; gap: 0.9rem; align-items: baseline; font-size: 0.85rem; }
 .x3d-title { font-weight: 600; margin-right: auto; }
-.x3d-stage { position: relative; height: 360px; max-height: 360px; perspective: 1400px; overflow: hidden; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; border-radius: var(--radius); }
+.x3d-stage { position: relative; overflow: hidden; touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; border-radius: var(--radius); }
 .x3d-stage:active { cursor: grabbing; }
 .x3d-stage:focus-visible { outline: 2px solid var(--accent-brand); outline-offset: 2px; }
-.x3d-scene { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d; }
-.x3d-part { all: unset; position: absolute; left: 0; top: 0; display: block; transform-style: preserve-3d; cursor: pointer; transition: transform 0.45s ease; }
-.x3d-face { position: absolute; left: 0; top: 0; box-sizing: border-box; border: 1px solid color-mix(in srgb, var(--part) 70%, #000); background: color-mix(in srgb, var(--part) 80%, var(--bg-surface)); }
-.x3d-face.t { background: color-mix(in srgb, var(--part) 60%, #fff); }
-.x3d-face.r, .x3d-face.l { background: color-mix(in srgb, var(--part) 75%, #000); }
-.x3d-face.b, .x3d-face.k { background: color-mix(in srgb, var(--part) 65%, #000); }
-.x3d-part:not(.is-picked) .x3d-face { background: color-mix(in srgb, var(--x3d-empty) 22%, transparent); border: 1px dashed var(--x3d-empty); }
-.x3d-case .x3d-face, .x3d-case:not(.is-picked) .x3d-face { background: color-mix(in srgb, var(--part) 6%, transparent); border: 1.5px solid color-mix(in srgb, var(--part) 55%, var(--text-muted)); }
-.x3d-part:hover .x3d-face, .x3d-part:focus-visible .x3d-face { border: 2px solid var(--accent-brand); }
-.x3d-part:not(.x3d-case):hover .x3d-face, .x3d-part:not(.x3d-case):focus-visible .x3d-face { background: color-mix(in srgb, var(--accent-brand) 45%, var(--bg-surface)); }
-.x3d-part.is-active .x3d-face { border: 2px solid var(--accent-brand); }
-.x3d-label { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 600; color: var(--text-primary); white-space: nowrap; overflow: hidden; pointer-events: none; }
-.x3d-part.is-picked .x3d-label { color: #fff; text-shadow: 0 0 2px #000; }
+.iso { display: block; width: 100%; height: min(360px, 80vw); overflow: visible; }
+.iso-face { fill: var(--bg-surface); stroke: var(--text-primary); stroke-width: 1; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.iso-face.iso-f, .iso-face.iso-k { fill: color-mix(in srgb, var(--text-muted) 8%, var(--bg-surface)); }
+.iso-face.iso-l, .iso-face.iso-r { fill: color-mix(in srgb, var(--text-muted) 16%, var(--bg-surface)); }
+.iso-face.iso-b { fill: color-mix(in srgb, var(--text-muted) 26%, var(--bg-surface)); }
+.iso-deco { fill: none; stroke: var(--text-primary); stroke-width: 0.6; vector-effect: non-scaling-stroke; opacity: 0.85; }
+.iso-deco.is-filled { fill: color-mix(in srgb, var(--text-muted) 20%, var(--bg-surface)); }
+.iso-part { cursor: pointer; outline: none; }
+.iso-part.is-picked .iso-face { fill: color-mix(in srgb, var(--part) 20%, var(--bg-surface)); }
+.iso-part.is-picked .iso-face.iso-f, .iso-part.is-picked .iso-face.iso-k { fill: color-mix(in srgb, var(--part) 30%, var(--bg-surface)); }
+.iso-part.is-picked .iso-face.iso-l, .iso-part.is-picked .iso-face.iso-r { fill: color-mix(in srgb, var(--part) 42%, var(--bg-surface)); }
+.iso-part.is-picked .iso-face.iso-b { fill: color-mix(in srgb, var(--part) 55%, var(--bg-surface)); }
+.iso-part.is-picked .iso-deco.is-filled { fill: color-mix(in srgb, var(--part) 50%, var(--bg-surface)); }
+.iso-part:not(.is-picked):not(.iso-case) .iso-face { stroke-dasharray: 3 2; }
+.iso-part:not(.is-picked):not(.iso-case) .iso-deco { opacity: 0.4; }
+.iso-part.iso-case .iso-face.iso-face { fill: color-mix(in srgb, var(--part) 6%, var(--bg-surface)); stroke: var(--text-muted); stroke-dasharray: none; }
+.iso-part.iso-case .iso-face.iso-b { fill: color-mix(in srgb, var(--part) 12%, var(--bg-surface)); }
+.iso-part:hover .iso-face, .iso-part:focus-visible .iso-face { stroke: var(--accent-brand); stroke-width: 2; stroke-dasharray: none; }
+.iso-part:not(.iso-case):hover .iso-face, .iso-part:not(.iso-case):focus-visible .iso-face { fill: color-mix(in srgb, var(--accent-brand) 25%, var(--bg-surface)); }
+.iso-part.is-active .iso-face { stroke: var(--accent-brand); stroke-width: 1.6; }
+.iso-shell { pointer-events: none; }
+.iso-shell .iso-face { fill: none; stroke: var(--text-muted); }
+.iso-shell .iso-deco { opacity: 0.35; }
+.iso-guide { stroke: var(--text-muted); stroke-width: 0.8; stroke-dasharray: 4 3; vector-effect: non-scaling-stroke; }
 .x3d-caption { margin: 0.2rem 0 0; font-size: 0.8rem; color: var(--text-muted); min-height: 1.2em; }
-@media (prefers-reduced-motion: reduce) { .x3d-part { transition: none; } }
 
 .footer { padding: 1.5rem 1rem 5rem; text-align: center; font-size: 0.8rem; color: var(--text-muted); }
 .footer a { margin-left: 0.5rem; }

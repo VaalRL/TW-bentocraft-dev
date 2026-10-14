@@ -44,7 +44,7 @@ test.describe('桌面版配單', () => {
   test('3D 分解圖：點零件開啟對應清單，零件依相容性著色', async ({ page }) => {
     await open(page);
     const heading = page.locator('.candidates-toolbar h2');
-    await page.locator('.x3d-gpu').click();
+    await page.locator('.iso-gpu').click();
     await expect(heading).toHaveText('顯示卡');
     // 機殼被其他零件擋住的部分點不到，鍵盤操作一定可以
     await page.getByRole('button', { name: /^機殼：未選擇/ }).focus();
@@ -52,7 +52,7 @@ test.describe('桌面版配單', () => {
     await expect(heading).toHaveText('機殼');
     await candidate(page, 'A4-H2O').click();
     await pick(page, '電源', 'SF750');
-    await expect(page.locator('.x3d-psu')).toHaveClass(/is-picked/);
+    await expect(page.locator('.iso-psu')).toHaveClass(/is-picked/);
     await expect(page.getByRole('button', { name: /^電源：.*SF750.*（(相容|未確認)）/ })).toBeVisible();
     await page.getByRole('button', { name: '收合' }).click();
     await expect(page.locator('.x3d-stage')).toHaveCount(0);

@@ -20,7 +20,7 @@
 - **Filters as you pick.** Every part you choose updates the candidate lists in the other categories; incompatible parts are hidden by default (or shown and marked). If choosing a part would leave another category with no compatible option, you are told before you pick it.
 - **Daily prices.** CoolPC's quote page is fetched every day at 11:17 Taiwan time. Conditional prices (time-limited deals, bundle discounts, the in-store assembly price) are kept apart and only count when their condition holds. Colour variants of one model are listed once at the lowest price, with the colour named.
 - **Price trends.** Each model's price is recorded daily and kept for 90 days. Candidate lists show the change from 7 days ago, and the quote shows the 30-day low (and says so when today's price is it). Trends appear once a week of history exists.
-- **3D exploded view.** A generic exploded PC: click the case, graphics card, PSU or any other part to open that category's list. Chosen parts are drawn to scale from their specs and coloured by the compatibility checks. Drag to rotate, switch between exploded and assembled, or use the keyboard.
+- **3D exploded view.** A generic exploded PC in isometric line art: click the case, graphics card, PSU or any other part to open that category's list. Chosen parts are drawn to scale from their specs and coloured by the compatibility checks. Drag to rotate, switch between exploded and assembled, or use the keyboard.
 - **Case diagram and size scales.** Once a case is chosen, a side-view diagram places the motherboard, GPU, PSU and radiator, coloured by the compatibility checks. The case outline is a generic shape; the parts are drawn to scale from their specs. Scales show GPU length and air-cooler height against the case limits, including conditional limits such as "with the PSU shroud installed".
 
   <img src="docs/case-diagram.png" width="320" alt="Side-view case diagram: an ATX motherboard, a 310 mm GPU, a top 360 mm radiator and an ATX PSU inside a generic case outline, all green for compatible" />
@@ -105,7 +105,7 @@ Planned, not yet built:
 - Prices from other stores such as Sinya (欣亞數位).
 - Price-drop alerts.
 
-The realistic 3D view planned in [`04`](04-high-fidelity-3d-visualization-and-threejs-spec.md) and [`05`](05-3d-interactive-spatial-pc-builder-architecture.md) (WebGL, real case models) is on hold. The catalog has no case outside dimensions or interior layout, and the 3D libraries would roughly triple what the site downloads. The current exploded view draws generic shapes with CSS and needs no extra library; a realistic version waits for a source of case interior dimensions.
+The realistic 3D view planned in [`04`](04-high-fidelity-3d-visualization-and-threejs-spec.md) and [`05`](05-3d-interactive-spatial-pc-builder-architecture.md) (WebGL, real case models) is on hold. The catalog has no case outside dimensions or interior layout, and the 3D libraries would roughly triple what the site downloads. The current exploded view draws generic shapes as SVG line art in code and needs no extra library; a realistic version waits for a source of case interior dimensions.
 
 ## License
 
