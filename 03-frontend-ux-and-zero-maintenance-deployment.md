@@ -11,7 +11,7 @@
 ```mermaid
 flowchart LR
     subgraph Header["頂部常駐導航列 (Sticky Topbar)"]
-        Logo["🖥️ OpenPCBuilder TW"]
+        Logo["🍱 原價煮便當"]
         ThemeToggle["☀️/🌙 主題切換 (預設淺色 Default Light)"]
         RepoBtn["🐙 GitHub Repo Icon (直連開源庫)"]
         CoffeeBtn["☕ Buy Me a Coffee (自定義贊助按鈕)"]
