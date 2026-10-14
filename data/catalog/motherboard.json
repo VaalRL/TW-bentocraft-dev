@@ -306,6 +306,12 @@
     "chipset": {
      "value": "B650",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/B650M%20Pro%20RS/index.asp",
+     "note": "4條DDR5 DIMM，雙通道；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -2085,6 +2091,12 @@
     "chipset": {
      "value": "X870E",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.asrock.com/mb/AMD/X870E%20Taichi%20Lite/index.asp",
+     "note": "4條DDR5 DIMM，最高256GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4205,66 +4217,12 @@
     "chipset": {
      "value": "W880",
      "source": "title"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:asus:pro-ws-w890-sage": {
-   "category": "motherboard",
-   "brand": "華碩 ASUS",
-   "name": "Pro WS W890-SAGE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "華碩PROWSW890SAGE"
-    ]
-   },
-   "specs": {
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "chipset": {
-     "value": "W890",
-     "source": "title"
     },
     "dimm_slots": {
-     "value": 8,
+     "value": 4,
      "source": "vendor_spec",
-     "ref": "https://www.asus.com/motherboards-components/motherboards/workstation/pro-ws-w890-sage/",
-     "note": "8 條 RDIMM(4 通道 2DPC);官方宣稱最高 4TB,FAQ 另寫單條 256GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "motherboard:asus:pro-ws-w890e-sage-se": {
-   "category": "motherboard",
-   "brand": "華碩 ASUS",
-   "name": "Pro WS W890E-SAGE SE",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "華碩PROWSW890ESAGESE"
-    ]
-   },
-   "specs": {
-    "memory_type": {
-     "value": "DDR5",
-     "source": "optgroup"
-    },
-    "chipset": {
-     "value": "W890E",
-     "source": "title"
-    },
-    "dimm_slots": {
-     "value": 8,
-     "source": "vendor_spec",
-     "ref": "https://www.asus.com/us/motherboards-components/motherboards/workstation/pro-ws-w890e-sage-se/",
-     "note": "8 條 RDIMM(8 通道);官方宣稱 4TB,QVL 僅見 8x256GB=2TB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+     "ref": "https://www.asus.com/us/motherboards-components/motherboards/workstation/pro-ws-w880-ace-se/techspec/",
+     "note": "4條DDR5 DIMM最高256GB；官網註明目前僅支援2條配置(高頻)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -7118,6 +7076,12 @@
     "chipset": {
      "value": "B760",
      "source": "title"
+    },
+    "dimm_slots": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.gigabyte.com/Motherboard/B760M-GAMING-PLUS-WIFI-DDR4-rev-10/sp",
+     "note": "4條DDR4 DIMM，最高128GB(Rev1.0規格頁)；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {

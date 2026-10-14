@@ -4315,6 +4315,12 @@
      "source": "retailer_spec",
      "ref": "https://www.club386.com/sapphire-launches-the-nitro-rx-9070-xt-crimson-desert-edition-featuring-a-cool-custom-backplate-and-fan-hubs/",
      "note": "與 NITRO+ RX 9070 XT 相同板卡，僅外觀不同；取自零售商或評測頁面"
+    },
+    "length_mm": {
+     "value": 330.8,
+     "source": "vendor_spec",
+     "ref": "https://www.sapphiretech.com/en/consumer/nitro-radeon-rx-9070-xt-cde-16g-gddr6",
+     "note": "330.8x128.5x65.68mm，3.2槽；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4370,6 +4376,12 @@
      "value": 304,
      "source": "inferred",
      "note": "AMD RX 9070 XT 參考 TBP"
+    },
+    "length_mm": {
+     "value": 330.8,
+     "source": "vendor_spec",
+     "ref": "https://www.sapphiretech.com/en/consumer/nitro-radeon-rx-9070-xt-ple-16g-gddr6",
+     "note": "330.8x141.25x65.68mm，3.2槽；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4621,6 +4633,12 @@
      "value": 30,
      "source": "inferred",
      "note": "NVIDIA GT 1030 GDDR5 版 30 W（DDR4 版較低）"
+    },
+    "length_mm": {
+     "value": 172.5,
+     "source": "vendor_spec",
+     "ref": "https://www.zotac.com/us/product/graphics_card/zotac-geforce-gt-1030-2gb-gddr5-hdmi-dvi-low-profile",
+     "note": "ZT-P10300A-10L，172.5x111.15x16mm，單槽短版；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -4646,6 +4664,12 @@
      "value": 30,
      "source": "inferred",
      "note": "NVIDIA GT 1030 GDDR5 版 30 W（DDR4 版較低）"
+    },
+    "length_mm": {
+     "value": 172.5,
+     "source": "vendor_spec",
+     "ref": "https://www.zotac.com/download/mediadrivers/External/GraphicsCard/1030/Brochure/ZT-P10300E-10L.pdf",
+     "note": "ZT-P10300E-10L，172.5x111.15x16mm，單槽短版；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -5444,6 +5468,12 @@
      ],
      "source": "inferred",
      "note": "RTX 5070 以上使用 12V-2x6"
+    },
+    "length_mm": {
+     "value": 303.5,
+     "source": "retailer_spec",
+     "ref": "https://www.vortez.net/news_story/zotac_gaming_geforce_rtx_5080_solid_core_oc_20th_anniversary_edition_launches_in_titanium.html",
+     "note": "鈦色限量版，同SOLID CORE OC(官網303.5mm)；日本零售標304mm；數值取自零售商或評測規格表"
     }
    },
    "review": {

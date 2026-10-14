@@ -6418,6 +6418,17 @@
     "radiator_mm": {
      "value": 360,
      "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "vendor_spec",
+     "ref": "https://lian-li.com/product/hydroshift-ii-lcd-s/",
+     "note": "官方列Intel LGA1700/1851、AMD AM4/AM5；360TL為TL FLEX風扇版；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -9869,26 +9880,6 @@
      "source": "retailer_spec",
      "ref": "https://www.coolpc.com.tw/evaluate.php",
      "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
-    }
-   },
-   "review": {
-    "status": "auto"
-   }
-  },
-  "cooler:silverstone:imf70-argb": {
-   "category": "cooler",
-   "brand": "銀欣 SilverStone",
-   "name": "IMF70 ARGB 水冷",
-   "status": "active",
-   "aliases": {
-    "model_keys": [
-     "欣IMF70ARGB水冷"
-    ]
-   },
-   "specs": {
-    "cooler_type": {
-     "value": "aio",
-     "source": "title"
     }
    },
    "review": {
