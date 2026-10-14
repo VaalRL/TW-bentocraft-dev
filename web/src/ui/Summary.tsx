@@ -35,13 +35,16 @@ function PriceTrendNote({ trend, price }: { trend: ReturnType<typeof priceTrend>
     : <span className="summary-note">近 {trend.days} 天最低 {formatPrice(trend.low)}</span>;
 }
 
-export function Summary({ selection, offers, prices, assembly, onAssemblyChange, onRemove, onFocus }: {
+export function Summary({ selection, offers, prices, assembly, onAssemblyChange, onRemove, onReset, onUndoReset, onFocus }: {
   selection: Selection;
   offers: Map<string, Offer[]>;
   prices: PricesData;
   assembly: boolean;
   onAssemblyChange: (v: boolean) => void;
   onRemove: (c: Category) => void;
+  onReset: () => void;
+  /** 剛清空配單時才有值：恢復清空前的配單 */
+  onUndoReset?: () => void;
   onFocus: (c: Category) => void;
 }) {
   const [copied, setCopied] = useState<string | null>(null);
@@ -75,9 +78,18 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
 
   return (
     <aside className="summary" id="summary" aria-label="估價單">
-      <h2>估價單</h2>
+      <div className="summary-head">
+        <h2>估價單</h2>
+        {picked.length > 0 && <button className="link" onClick={onReset}>清空配單</button>}
+      </div>
       {picked.length === 0 ? (
-        <p className="muted">從左側選擇零件開始配單。可以從任何類別開始，不相容的選項會自動標示。</p>
+        onUndoReset ? (
+          <p className="muted" role="status">
+            已清空配單。<button className="link" onClick={onUndoReset}>復原</button>
+          </p>
+        ) : (
+          <p className="muted">從左側選擇零件開始配單。可以從任何類別開始，不相容的選項會自動標示。</p>
+        )
       ) : (
         <ul className="summary-items">
           {picked.map(cat => {

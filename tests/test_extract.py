@@ -63,6 +63,8 @@ class ExtractTest(unittest.TestCase):
         f = extract("motherboard", "｛X｝ATX, $1 ◆", group_label="Intel B760 / 1700腳位(DDR4)-12~14代皆支援")
         self.assertEqual((f["socket"], f["memory_type"]), ("LGA1700", "DDR4"))
         self.assertFalse(extract("motherboard", "x, $1", group_label="AMD TRX50 / Socket sTR5")["in_scope"])
+        self.assertFalse(extract("motherboard", "x, $1", group_label="Intel W890 工作站級 (4710-2腳位/DDR5)")["in_scope"])
+        self.assertTrue(extract("motherboard", "x, $1", group_label="Intel W880 工作站級 (1851腳位/DDR5)")["in_scope"])
 
     def test_case_shorthand(self):
         f = extract("case", "｛曜越 View 290 TG ARGB 黑｝顯卡長45/U高18/全景曲面玻璃/支援背插/ATX 原價$2690！, $2390 ◆ ★")
@@ -148,7 +150,7 @@ class ExtractTest(unittest.TestCase):
         self.assertFalse(extract("cooler", "｛酷碼 LGA1700 空冷專用扣具(A)｝, $99",
                                  group_label="CoolerMaster 酷碼散熱器")["in_scope"])
         for name in ("銀欣 XE02-2066 散熱器", "酷碼 MasterLiquid PL360 TR5-SP6 水冷", "銀欣 XED120 4U散熱器",
-                     "貓頭鷹 NL-ACF1 VRM 風扇", "曜越 T1000 透明水冷液"):
+                     "貓頭鷹 NL-ACF1 VRM 風扇", "曜越 T1000 透明水冷液", "銀欣 IMF70 ARGB 水冷"):
             self.assertFalse(extract("cooler", f"｛{name}｝, $1990")["in_scope"], name)
         self.assertTrue(extract("cooler", "｛貓頭鷹 NH-U12A｝高15.8/支援LGA2066, $3990")["in_scope"])
         # 品名外提到扣具（附贈、相容說明）的仍是散熱器
