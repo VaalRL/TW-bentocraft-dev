@@ -13,7 +13,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "brand": "node --experimental-strip-types scripts/brand-assets.ts"
   },
   "dependencies": {
     "lz-string": "1.5.0",

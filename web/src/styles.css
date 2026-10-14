@@ -4,10 +4,11 @@
   --bg-surface: #ffffff;
   --bg-muted: #f5f5f4;
   --border: #e7e5e4;
-  --border-accent: #d97706;
+  --border-accent: #3730a3;
   --text-primary: #1c1917;
   --text-muted: #6b6560;
-  --accent-brand: #047857;
+  --accent-brand: #3730a3; /* 靛藍：刻意不用相容性結果的綠、琥珀、紅、灰，避免把連結看成「相容」 */
+  --on-accent: #ffffff;
   /* 狀態色同時用於文字：在白底與選取列的淡色底上都要達 WCAG AA 4.5:1，取較深的色階 */
   --status-error: #b91c1c;
   --status-warn: #b45309;
@@ -22,10 +23,11 @@
   --bg-surface: #1c1917;
   --bg-muted: #292524;
   --border: #44403c;
-  --border-accent: #eab308;
+  --border-accent: #818cf8;
   --text-primary: #fafaf9;
   --text-muted: #a8a29e;
-  --accent-brand: #eab308;
+  --accent-brand: #a5b4fc;
+  --on-accent: #1e1b4b;
   --status-error: #f87171;
   --status-warn: #f59e0b;
   --status-ok: #34d399;
@@ -61,7 +63,9 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
   background: var(--bg-surface);
   border-bottom: 2px solid var(--border-accent);
 }
-.brand { display: flex; flex-direction: column; }
+.brand { display: flex; align-items: center; gap: 0.6rem; }
+.brand-logo svg { display: block; width: 2.6rem; height: 2.6rem; }
+.brand-text { display: flex; flex-direction: column; }
 .brand-name { font-weight: 700; font-size: 1.15rem; }
 .brand-sub { font-size: 0.75rem; color: var(--text-muted); }
 .report-date { margin-left: auto; font-size: 0.85rem; color: var(--text-muted); }
@@ -177,7 +181,7 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 .check .badge { flex-shrink: 0; }
 .summary-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
 .summary-actions button { padding: 0.45rem 0.8rem; background: var(--bg-muted); border: 1px solid var(--border); border-radius: var(--radius); }
-.summary-actions .primary { background: var(--accent-brand); border-color: var(--accent-brand); color: #fff; }
+.summary-actions .primary { background: var(--accent-brand); border-color: var(--accent-brand); color: var(--on-accent); }
 :root.dark .summary-actions .primary { color: #1c1917; }
 .copied { font-size: 0.8rem; color: var(--status-ok); }
 .mobile-bar { display: none; }

@@ -1,5 +1,12 @@
 [English](README.md) | **繁體中文**
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/logo-dark.svg">
+    <img src="docs/logo.svg" width="96" alt="原價煮便當 logo：便當盒的格子排成主機板的樣子">
+  </picture>
+</p>
+
 # 原價煮便當（TW-bentocraft）
 
 [![網站](https://img.shields.io/badge/網站-vaalrl.github.io%2FTW--bentocraft-brightgreen)](https://vaalrl.github.io/TW-bentocraft/)
@@ -9,7 +16,7 @@
 
 👉 **https://vaalrl.github.io/TW-bentocraft/**
 
-![配單畫面：左側選類別，中間是候選零件與規格，右側是估價單、相容性與尺寸比例圖](docs/screenshot.png)
+![配單畫面：左側選類別，中間是 3D 分解圖（顯示卡單獨拉出）與候選清單，右側是估價單](docs/screenshot.png)
 
 > 本站為非官方開源專案，與原價屋無關。價格與規格僅供參考，以原價屋公告為準。
 
