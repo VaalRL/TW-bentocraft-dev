@@ -11,7 +11,7 @@
   --on-accent: #ffffff;
   /* 狀態色同時用於文字：在白底與選取列的淡色底上都要達 WCAG AA 4.5:1，取較深的色階 */
   --status-error: #b91c1c;
-  --status-warn: #b45309;
+  --status-warn: #a14a07; /* 選取中的候選（淡靛藍底）上仍達 4.5:1 */
   --status-ok: #047857;
   --status-unknown: #475569;
   --radius: 6px;
@@ -149,7 +149,11 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 /* 不相容的列不用 opacity 淡化（會讓文字對比不足），以左側紅線與標籤區分 */
 .candidate.status-fail { border-left-color: var(--status-error); }
 .candidate.status-warn { border-left-color: var(--status-warn); }
-.candidate-main { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+.candidate-main { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; flex: 1; }
+.case-thumb { display: block; flex: none; width: 56px; height: 56px; margin-bottom: 1.2rem; }
+.case-thumb .iso-face { stroke-width: 0.8; }
+li.has-photo { position: relative; }
+.candidate-photo { position: absolute; top: calc(0.6rem + 1px + 58px); left: calc(0.75rem + 4px); width: 56px; text-align: center; font-size: 0.72rem; }
 .candidate-name { font-weight: 600; }
 .candidate-specs { font-size: 0.82rem; color: var(--text-muted); }
 .candidate-note { font-size: 0.8rem; }
@@ -346,6 +350,8 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
   .report-date { margin-left: 0; order: 3; width: 100%; }
   .candidate { flex-direction: column; gap: 0.3rem; }
   .candidate-side { flex-direction: row; align-items: center; justify-content: space-between; }
+  .candidate.has-thumb { display: grid; grid-template-columns: 56px minmax(0, 1fr); column-gap: 0.7rem; }
+  .candidate.has-thumb .candidate-side { grid-column: 1 / -1; }
   .mobile-bar {
     display: flex; justify-content: space-between; align-items: center;
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;

@@ -242,6 +242,18 @@ test.describe('桌面版配單', () => {
     await expect(names.first()).toContainText('DDR4-3200');
   });
 
+  test('機殼清單有依規格畫的示意縮圖與實品照片搜尋連結', async ({ page }) => {
+    await open(page);
+    await category(page, '機殼');
+    const item = page.locator('.candidate-list li', { hasText: 'A4-H2O' });
+    await expect(item.locator('svg.case-thumb .iso-face')).toHaveCount(3); // 側板、前板、頂板
+    const photo = item.getByRole('link', { name: /實品照片/ });
+    await expect(photo).toHaveAttribute('href', /^https:\/\/www\.google\.com\/search\?tbm=isch&q=.*A4-H2O/);
+    await expect(photo).toHaveAttribute('target', '_blank');
+    await category(page, '電源');
+    await expect(page.locator('.case-thumb')).toHaveCount(0);
+  });
+
   test('不相容的主機板預設隱藏，取消勾選後顯示為不相容', async ({ page }) => {
     await open(page);
     await pick(page, '處理器', 'R7 9800X3D');

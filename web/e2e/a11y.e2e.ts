@@ -22,6 +22,7 @@ for (const theme of ['light', 'dark'] as const) {
     await pick(page, '處理器', 'R7 9800X3D');
     await pick(page, '顯示卡', 'RTX5080');
     await pick(page, '機殼', 'The Tower 300');
+    expect(summarize((await scan(page)).violations)).toEqual([]); // 機殼清單（示意縮圖、實品照片連結）
     await category(page, '電源');
     await page.getByLabel(/隱藏不相容/).uncheck();
     await candidate(page, 'HYDRO K PRO 550W').click();
