@@ -254,6 +254,35 @@ test.describe('桌面版配單', () => {
     await expect(page.locator('.case-thumb')).toHaveCount(0);
   });
 
+  test('名詞懸停說明：滑鼠停在名詞上跳出說明，可前往名詞解釋頁', async ({ page }) => {
+    await open(page);
+    const term = candidate(page, 'R7 9800X3D').locator('.term[data-term="socket"]');
+    await term.hover();
+    const pop = page.getByRole('tooltip');
+    await expect(pop).toContainText('腳位（Socket）');
+    await expect(pop).toContainText('選購時注意');
+    await page.keyboard.press('Escape');
+    await expect(pop).toHaveCount(0);
+    await page.mouse.move(0, 0);
+    await term.hover();
+    await pop.hover(); // 可以把滑鼠移進說明框
+    await pop.getByRole('button', { name: '在名詞解釋頁查看' }).click();
+    await expect(page).toHaveURL(/#\/glossary\?t=socket$/);
+    await expect(page.locator('#term-socket')).toHaveClass(/is-focus/);
+  });
+
+  test('名詞解釋頁：分組列出並可搜尋', async ({ page }) => {
+    await open(page);
+    await page.getByRole('button', { name: '名詞' }).click();
+    await expect(page.getByRole('heading', { name: '名詞解釋' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: '電源、散熱與機殼' })).toBeVisible();
+    await page.getByLabel('搜尋名詞').fill('冷排');
+    await expect(page.locator('.glossary-entry dt')).toContainText(['一體式水冷', '冷排']);
+    await expect(page.locator('#term-pcie')).toHaveCount(0);
+    await page.getByRole('button', { name: '配單' }).click();
+    await expect(page.locator('.candidate').first()).toBeVisible();
+  });
+
   test('不相容的主機板預設隱藏，取消勾選後顯示為不相容', async ({ page }) => {
     await open(page);
     await pick(page, '處理器', 'R7 9800X3D');

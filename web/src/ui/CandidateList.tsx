@@ -4,6 +4,7 @@ import { deadEndChecker, pairChecks, worst } from '../engine/engine';
 import { lowestUnconditional, priceTrend, type PriceTrend } from '../engine/pricing';
 import type { Category, Check, CpuBench, Model, Offer, PriceHistory, Selection, Status } from '../engine/types';
 import { CaseThumb } from './CaseThumb';
+import { Annotated } from './Term';
 import { FACETS, SORTS, facetOptions, matches, thresholdSteps, type SortContext, type SortDef } from './filters';
 import { CATEGORY_LABEL, STATUS_LABEL, checkText, formatPrice, modelName, specSummary } from './format';
 
@@ -145,16 +146,16 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
             const sel = selected[f.id] ?? [];
             return options.length <= CHIP_MAX ? (
               <span key={f.id} className="chip-group" role="group" aria-label={f.label}>
-                <span className="chip-label" aria-hidden="true">{f.label}</span>
+                <span className="chip-label" aria-hidden="true"><Annotated text={f.label} /></span>
                 {options.map(o => (
                   <button type="button" key={o.value} className="chip" aria-pressed={sel.includes(o.value)} onClick={() => toggle(f.id, o.value)}>
-                    {o.label}<span className="chip-count">{o.count}</span>
+                    <Annotated text={o.label} /><span className="chip-count">{o.count}</span>
                   </button>
                 ))}
               </span>
             ) : (
               <label key={f.id} className="filter-select">
-                <span className="chip-label">{f.label}</span>
+                <span className="chip-label"><Annotated text={f.label} /></span>
                 <select value={sel[0] ?? ''} onChange={e => update(f.id, e.target.value ? [e.target.value] : [])}>
                   <option value="">不限</option>
                   {options.map(o => <option key={o.value} value={o.value}>{o.label}（{o.count}）</option>)}
@@ -167,7 +168,7 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
             if (!steps.length) return null;
             return (
               <label key={f.id} className="filter-select">
-                <span className="chip-label">{f.label}</span>
+                <span className="chip-label"><Annotated text={f.label} /></span>
                 <select value={selected[f.id]?.[0] ?? ''} onChange={e => update(f.id, e.target.value ? [e.target.value] : [])}>
                   <option value="">不限</option>
                   {steps.map(s => <option key={s} value={s}>{f.kind === 'min' ? '至少' : '不超過'} {s.toLocaleString('zh-TW')}{f.unit}</option>)}
@@ -185,7 +186,7 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
             <span className="chip-group" role="group" aria-label="條件">
               {flags.map(f => (
                 <button type="button" key={f.id} className="chip" aria-pressed={!!selected[f.id]?.length} onClick={() => update(f.id, selected[f.id]?.length ? [] : ['1'])}>
-                  {f.label}
+                  <Annotated text={f.label} />
                 </button>
               ))}
             </span>
@@ -223,14 +224,14 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
                     {r.model.r === 'd' && <span className="tag tag-warn">規格衝突待確認</span>}
                     {r.model.r === 'v' && <span className="tag tag-ok">已人工確認</span>}
                   </span>
-                  <span className="candidate-specs">{specSummary(r.model) || '規格未確認'}</span>
+                  <span className="candidate-specs">{specSummary(r.model) ? <Annotated text={specSummary(r.model)} /> : '規格未確認'}</span>
                   {isCpu && <CpuStats model={r.model} bench={cpuBench} top={topScore} />}
                   {sortDef?.show && (() => {
                     const v = sortDef.key(r.model, context(r));
                     return v !== undefined && <span className="candidate-sortval">{sortDef.show(v)}</span>;
                   })()}
                   {r.checks.map((c, i) => (
-                    <span key={i} className={`candidate-note status-${c.status}`}>{checkText(c)}</span>
+                    <span key={i} className={`candidate-note status-${c.status}`}><Annotated text={checkText(c)} /></span>
                   ))}
                   {r.deadEnds.length > 0 && (
                     <span className="candidate-note status-fail">
@@ -274,7 +275,7 @@ function CpuStats({ model, bench, top }: { model: Model; bench?: CpuBench; top: 
     <span className="candidate-stats">
       {bench && (
         <span className="stat">
-          算力{' '}
+          <Annotated text="算力" />{' '}
           {score !== undefined ? (
             <>
               <strong>{Math.round(score).toLocaleString('zh-TW')}</strong>
@@ -283,7 +284,7 @@ function CpuStats({ model, bench, top }: { model: Model; bench?: CpuBench; top: 
           ) : '樣本不足'}
         </span>
       )}
-      {power !== undefined && <span className="stat">耗電 <strong>{power} W</strong></span>}
+      {power !== undefined && <span className="stat"><Annotated text="耗電" /> <strong>{power} W</strong></span>}
     </span>
   );
 }

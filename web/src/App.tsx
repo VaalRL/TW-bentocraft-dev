@@ -6,9 +6,11 @@ import { CandidateList } from './ui/CandidateList';
 import { CategoryNav } from './ui/CategoryNav';
 import { COMPARE_PREFIX, CpuCompare } from './ui/CpuCompare';
 import { ExplodedView } from './ui/ExplodedView';
+import { GLOSSARY_PREFIX, Glossary, readGlossaryTerm } from './ui/Glossary';
 import { Header, type View } from './ui/Header';
 import { REPO, SPONSOR_URL } from './ui/report';
 import { Summary } from './ui/Summary';
+import { TermHover } from './ui/Term';
 
 export type Picks = Partial<Record<Category, { id: string; variant?: string }>>;
 
@@ -44,7 +46,10 @@ export function App() {
   const [active, setActive] = useState<Category>('cpu');
   const [assembly, setAssembly] = useState(false);
   const [cleared, setCleared] = useState<Picks | null>(null); // 清空前的配單，供復原
-  const [view, setView] = useState<View>(() => (location.hash.startsWith(COMPARE_PREFIX) ? 'compare' : 'build'));
+  const [view, setView] = useState<View>(() =>
+    location.hash.startsWith(COMPARE_PREFIX) ? 'compare' : location.hash.startsWith(GLOSSARY_PREFIX) ? 'glossary' : 'build',
+  );
+  const [glossaryTerm, setGlossaryTerm] = useState<string | null>(readGlossaryTerm);
 
   useEffect(() => {
     loadData()
@@ -115,16 +120,27 @@ export function App() {
       return next;
     });
 
+  const openGlossary = (id: string | null) => {
+    setGlossaryTerm(id);
+    setView('glossary');
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="app">
-      <Header prices={data.prices} view={view} onView={setView} />
+      <Header prices={data.prices} view={view} onView={v => (v === 'glossary' ? openGlossary(null) : setView(v))} />
+      <TermHover onMore={openGlossary} />
       {missingShared.length > 0 && (
         <div className="banner banner-warn" role="status">
           分享連結中有 {missingShared.length} 個零件已不在規格庫中，已略過。
           <button className="link" onClick={() => setMissingShared([])}>知道了</button>
         </div>
       )}
-      {view === 'compare' ? (
+      {view === 'glossary' ? (
+        <main className="glossary-page">
+          <Glossary focus={glossaryTerm} />
+        </main>
+      ) : view === 'compare' ? (
         <main className="compare-page">
           <CpuCompare
             cpus={data.byCategory.cpu}

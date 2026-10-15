@@ -26,4 +26,14 @@ test.describe('手機版', () => {
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
     expect(overflow).toBe(false);
   });
+
+  test('手機不顯示名詞底線與懸停說明，改由「名詞」頁查詢', async ({ page }) => {
+    await open(page);
+    const term = page.locator('.term').first();
+    await expect(term).toHaveCSS('text-decoration-line', 'none');
+    await page.getByRole('button', { name: '名詞' }).click();
+    await expect(page.getByRole('heading', { name: '名詞解釋' })).toBeVisible();
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
+    expect(overflow).toBe(false);
+  });
 });

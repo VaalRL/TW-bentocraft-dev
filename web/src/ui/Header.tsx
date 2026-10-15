@@ -4,8 +4,8 @@ import type { PricesData } from '../engine/types';
 import { daysSince, formatDate } from './format';
 import { REPO, SPONSOR_URL } from './report';
 
-/** 目前的頁面：配單或 CPU 比較 */
-export type View = 'build' | 'compare';
+/** 目前的頁面：配單、CPU 比較或名詞解釋 */
+export type View = 'build' | 'compare' | 'glossary';
 
 const LOGO = logoSvg({ label: '' }); // 旁邊就是站名，圖示本身不重複朗讀
 
@@ -53,7 +53,7 @@ export function Header({ prices, view, onView }: { prices: PricesData; view: Vie
         </div>
       </div>
       <nav className="view-tabs" aria-label="頁面">
-        {([['build', '配單'], ['compare', 'CPU 比較']] as [View, string][]).map(([v, label]) => (
+        {([['build', '配單'], ['compare', 'CPU 比較'], ['glossary', '名詞']] as [View, string][]).map(([v, label]) => (
           <button key={v} type="button" className={`view-tab ${view === v ? 'is-active' : ''}`}
             aria-current={view === v ? 'page' : undefined} onClick={() => onView(v)}>{label}</button>
         ))}

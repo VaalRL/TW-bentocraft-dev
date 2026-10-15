@@ -41,5 +41,10 @@ for (const theme of ['light', 'dark'] as const) {
     await page.getByRole('checkbox', { name: '顯示「製程」' }).uncheck();
     const compare = await scan(page);
     expect(summarize(compare.violations)).toEqual([]);
+
+    // 名詞解釋頁與懸停說明框
+    await page.getByRole('button', { name: '名詞' }).click();
+    await expect(page.getByRole('heading', { name: '名詞解釋' })).toBeVisible();
+    expect(summarize((await scan(page)).violations)).toEqual([]);
   });
 }
