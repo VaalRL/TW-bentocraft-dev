@@ -179,6 +179,43 @@ test.describe('桌面版配單', () => {
     await expect(page.locator('.candidate-stats')).toHaveCount(0);
   });
 
+  test('CPU 清單可依品牌、腳位與條件篩選，並依算力、價格或每千元算力排序', async ({ page }) => {
+    await open(page);
+    await category(page, '處理器');
+    const names = page.locator('.candidate-name');
+    const filters = page.getByRole('group', { name: '篩選' });
+    await expect(names).toHaveCount(2);
+
+    await filters.getByRole('button', { name: /^Intel/ }).click();
+    await expect(names).toHaveCount(1);
+    await expect(names.first()).toContainText('i5-14400');
+    await filters.getByRole('button', { name: /^AMD/ }).click(); // 同一組可複選
+    await expect(names).toHaveCount(2);
+    await filters.getByRole('button', { name: '清除篩選' }).click();
+
+    await filters.getByRole('button', { name: /^AM5/ }).click();
+    await expect(names).toHaveCount(1);
+    await expect(names.first()).toContainText('R7 9800X3D');
+    await filters.getByRole('button', { name: '附散熱器' }).click(); // 不同組須同時符合
+    await expect(names).toHaveCount(0);
+    await filters.getByRole('button', { name: '清除篩選' }).click();
+    await expect(names).toHaveCount(2);
+
+    const sort = page.getByLabel('排序');
+    await sort.selectOption({ label: '算力高到低' });
+    await expect(names.first()).toContainText('R7 9800X3D');
+    await sort.selectOption({ label: '價格低到高' });
+    await expect(names.first()).toContainText('i5-14400');
+    await sort.selectOption({ label: '每千元算力高到低' });
+    await expect(names.first()).toContainText('i5-14400'); // 280 / $6,290 ≈ 44.5
+    await expect(candidate(page, 'i5-14400')).toContainText('每千元算力 44.5');
+
+    // 主機板也有腳位篩選，但沒有 CPU 專屬的條件
+    await category(page, '主機板');
+    await expect(page.getByRole('group', { name: '腳位' })).toBeVisible();
+    await expect(page.getByRole('button', { name: '有內顯' })).toHaveCount(0);
+  });
+
   test('不相容的主機板預設隱藏，取消勾選後顯示為不相容', async ({ page }) => {
     await open(page);
     await pick(page, '處理器', 'R7 9800X3D');

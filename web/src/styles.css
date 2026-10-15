@@ -119,6 +119,14 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
   border: 1px solid var(--border); border-radius: var(--radius);
 }
 .toggle { display: inline-flex; gap: 0.35rem; align-items: center; font-size: 0.85rem; color: var(--text-muted); }
+.candidates-toolbar select, .candidate-filters select { padding: 0.25rem 0.4rem; font: inherit; font-size: 0.85rem; color: var(--text-primary); background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius); }
+.candidate-filters { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; align-items: center; margin-top: 0.6rem; }
+.candidate-filters:empty { display: none; }
+.chip-group { display: inline-flex; flex-wrap: wrap; gap: 0.3rem; }
+.chip { display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.2rem 0.65rem; font: inherit; font-size: 0.83rem; color: var(--text-primary); background: var(--bg-surface); border: 1px solid var(--border); border-radius: 999px; }
+.chip:hover { border-color: var(--accent-brand); }
+.chip[aria-pressed="true"] { color: var(--on-accent); background: var(--accent-brand); border-color: var(--accent-brand); }
+.chip-count { font-size: 0.75rem; opacity: 0.75; font-variant-numeric: tabular-nums; }
 .candidates-tip { font-size: 0.85rem; margin: 0.6rem 0 0; padding: 0.5rem 0.75rem; border-radius: var(--radius); background: var(--bg-muted); }
 .candidates-tip .link { margin-left: 0.4rem; }
 .candidates-count { font-size: 0.8rem; color: var(--text-muted); margin: 0.4rem 0; }

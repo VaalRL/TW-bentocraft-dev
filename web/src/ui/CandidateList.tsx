@@ -16,6 +16,25 @@ interface Row {
 
 const ORDER: Record<Status, number> = { pass: 0, unknown: 1, warn: 2, fail: 3 };
 const PAGE = 60;
+/** 品牌數不超過這個數量時用按鈕，否則用下拉選單 */
+const BRAND_CHIPS = 6;
+
+/** CPU 的篩選條件（勾選的條件全部都要符合） */
+const CPU_FLAGS: { id: string; label: string; test: (m: Model) => boolean }[] = [
+  { id: 'igpu', label: '有內顯', test: m => m.s.igpu === true },
+  { id: 'cooler', label: '附散熱器', test: m => m.s.cooler_included === true },
+  { id: 'unlocked', label: '可超頻', test: m => m.s.unlocked === true },
+];
+
+type SortKey = 'default' | 'price' | 'price-desc' | 'score' | 'power' | 'value';
+const SORT_LABEL: Record<SortKey, string> = {
+  default: '相容優先',
+  price: '價格低到高',
+  'price-desc': '價格高到低',
+  score: '算力高到低',
+  power: '耗電低到高',
+  value: '每千元算力高到低',
+};
 
 export function CandidateList({ category, models, catalog, selection, offers, history, bench, onPick, onStartWithCase, onCompare }: {
   category: Category;
@@ -35,6 +54,10 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
   const [query, setQuery] = useState('');
   const [hideIncompatible, setHideIncompatible] = useState(true);
   const [limit, setLimit] = useState(PAGE);
+  const [brands, setBrands] = useState<string[]>([]);
+  const [sockets, setSockets] = useState<string[]>([]);
+  const [flags, setFlags] = useState<string[]>([]);
+  const [sort, setSort] = useState<SortKey>('default');
 
   const rows: Row[] = useMemo(() => {
     const deadEnds = deadEndChecker(category, selection, catalog);
@@ -63,10 +86,35 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
   const cpuBench = category === 'cpu' ? bench : undefined;
   const topScore = cpuBench ? Math.max(0, ...models.map(m => cpuBench.m[m.id]?.[0] ?? 0)) : 0;
 
+  const isCpu = category === 'cpu';
+  const brandOptions = useMemo(() => countBy(models.map(m => m.b)), [models]);
+  // 腳位：CPU 與主機板都有
+  const socketOptions = useMemo(
+    () => (isCpu || category === 'motherboard' ? countBy(models.map(m => m.s.socket as string | undefined)) : []),
+    [models, isCpu, category],
+  );
+  const sorts: SortKey[] = isCpu ? ['default', 'price', 'price-desc', 'score', 'power', 'value'] : ['default', 'price', 'price-desc'];
+  const filtering = brands.length + sockets.length + flags.length > 0;
+  const toggle = (set: (f: (v: string[]) => string[]) => void, value: string) => {
+    set(v => (v.includes(value) ? v.filter(x => x !== value) : [...v, value]));
+    setLimit(PAGE);
+  };
+  const score = (m: Model) => cpuBench?.m[m.id]?.[0];
+  const value = (r: Row) => (r.offer && score(r.model) !== undefined ? (score(r.model)! / r.offer.p) * 1000 : undefined);
+
   const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
-  const matching = rows.filter(r => {
+  const matching = sortRows(rows.filter(r => {
     const hay = `${modelName(r.model)} ${specSummary(r.model)}`.toLowerCase();
-    return terms.every(t => hay.includes(t));
+    return terms.every(t => hay.includes(t)) &&
+      (!brands.length || brands.includes(r.model.b)) &&
+      (!sockets.length || sockets.includes(r.model.s.socket as string)) &&
+      CPU_FLAGS.every(f => !flags.includes(f.id) || f.test(r.model));
+  }), sort, {
+    price: r => r.offer?.p,
+    'price-desc': r => (r.offer ? -r.offer.p : undefined),
+    score: r => { const v = score(r.model); return v === undefined ? undefined : -v; },
+    power: r => r.model.s.max_power_w as number | undefined,
+    value: r => { const v = value(r); return v === undefined ? undefined : -v; },
   });
   const isHidden = (r: Row) => r.status === 'fail' && selection[category]?.id !== r.model.id;
   const filtered = hideIncompatible ? matching.filter(r => !isHidden(r)) : matching;
@@ -90,7 +138,53 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
           <input type="checkbox" checked={hideIncompatible} onChange={e => setHideIncompatible(e.target.checked)} />
           隱藏不相容（{hidden}）
         </label>
+        <label className="toggle">
+          排序
+          <select value={sort} onChange={e => setSort(e.target.value as SortKey)}>
+            {sorts.map(k => <option key={k} value={k}>{SORT_LABEL[k]}</option>)}
+          </select>
+        </label>
         {onCompare && <button type="button" className="link" onClick={onCompare}>規格對決</button>}
+      </div>
+      <div className="candidate-filters" role="group" aria-label="篩選">
+        {brandOptions.length > 1 && (brandOptions.length <= BRAND_CHIPS ? (
+          <span className="chip-group" role="group" aria-label="品牌">
+            {brandOptions.map(([b, n]) => (
+              <button type="button" key={b} className="chip" aria-pressed={brands.includes(b)} onClick={() => toggle(setBrands, b)}>
+                {b}<span className="chip-count">{n}</span>
+              </button>
+            ))}
+          </span>
+        ) : (
+          <label className="toggle">
+            <span className="visually-hidden">品牌</span>
+            <select value={brands[0] ?? ''} onChange={e => { setBrands(e.target.value ? [e.target.value] : []); setLimit(PAGE); }}>
+              <option value="">全部品牌</option>
+              {brandOptions.map(([b, n]) => <option key={b} value={b}>{b}（{n}）</option>)}
+            </select>
+          </label>
+        ))}
+        {socketOptions.length > 1 && (
+          <span className="chip-group" role="group" aria-label="腳位">
+            {socketOptions.map(([s, n]) => (
+              <button type="button" key={s} className="chip" aria-pressed={sockets.includes(s)} onClick={() => toggle(setSockets, s)}>
+                {s}<span className="chip-count">{n}</span>
+              </button>
+            ))}
+          </span>
+        )}
+        {isCpu && (
+          <span className="chip-group" role="group" aria-label="條件">
+            {CPU_FLAGS.map(f => (
+              <button type="button" key={f.id} className="chip" aria-pressed={flags.includes(f.id)} onClick={() => toggle(setFlags, f.id)}>
+                {f.label}
+              </button>
+            ))}
+          </span>
+        )}
+        {filtering && (
+          <button type="button" className="link" onClick={() => { setBrands([]); setSockets([]); setFlags([]); }}>清除篩選</button>
+        )}
       </div>
       {onStartWithCase && (
         <p className="candidates-tip">
@@ -121,7 +215,7 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
                     {r.model.r === 'v' && <span className="tag tag-ok">已人工確認</span>}
                   </span>
                   <span className="candidate-specs">{specSummary(r.model) || '規格未確認'}</span>
-                  {category === 'cpu' && <CpuStats model={r.model} bench={cpuBench} top={topScore} />}
+                  {isCpu && <CpuStats model={r.model} bench={cpuBench} top={topScore} value={sort === 'value' ? value(r) : undefined} />}
                   {r.checks.map((c, i) => (
                     <span key={i} className={`candidate-note status-${c.status}`}>{checkText(c)}</span>
                   ))}
@@ -154,7 +248,7 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
 }
 
 /** CPU 候選的算力與耗電 */
-function CpuStats({ model, bench, top }: { model: Model; bench?: CpuBench; top: number }) {
+function CpuStats({ model, bench, top, value }: { model: Model; bench?: CpuBench; top: number; value?: number }) {
   const score = bench?.m[model.id]?.[0];
   const power = model.s.max_power_w as number | undefined;
   if (!bench && power === undefined) return null;
@@ -172,6 +266,27 @@ function CpuStats({ model, bench, top }: { model: Model; bench?: CpuBench; top: 
         </span>
       )}
       {power !== undefined && <span className="stat">耗電 <strong>{power} W</strong></span>}
+      {value !== undefined && <span className="stat">每千元算力 <strong>{value.toFixed(1)}</strong></span>}
     </span>
   );
+}
+
+/** 值與出現次數，依次數多到少（同數依名稱） */
+function countBy(values: (string | undefined)[]): [string, number][] {
+  const counts = new Map<string, number>();
+  for (const v of values) if (v) counts.set(v, (counts.get(v) ?? 0) + 1);
+  return [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'zh-TW'));
+}
+
+/** 依選的排序方式重排；不相容的仍放最後，沒有該數值的排在有數值的後面 */
+function sortRows(rows: Row[], sort: SortKey, keys: Record<Exclude<SortKey, 'default'>, (r: Row) => number | undefined>): Row[] {
+  if (sort === 'default') return rows;
+  const key = keys[sort];
+  return [...rows].sort((a, b) => {
+    const fail = (a.status === 'fail' ? 1 : 0) - (b.status === 'fail' ? 1 : 0);
+    if (fail) return fail;
+    const x = key(a), y = key(b);
+    if (x === undefined || y === undefined) return (x === undefined ? 1 : 0) - (y === undefined ? 1 : 0);
+    return x - y;
+  });
 }
