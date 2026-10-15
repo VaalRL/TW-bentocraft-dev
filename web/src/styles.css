@@ -272,6 +272,9 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 .cmp-table tbody th { font-weight: 600; white-space: nowrap; width: 9.5rem; }
 .cmp-table td { width: 40%; }
 .cmp-table td.is-better { background: color-mix(in srgb, var(--accent-brand) 10%, var(--bg-surface)); font-weight: 600; box-shadow: inset 3px 0 0 var(--accent-brand); }
+.cmp-bar { display: block; height: 6px; margin-top: 0.35rem; border-radius: 3px; background: var(--bg-muted); overflow: hidden; }
+.cmp-bar span { display: block; height: 100%; background: var(--accent-brand); }
+.cmp-pct { font-weight: 400; color: var(--text-muted); margin-left: 0.25rem; }
 .cmp-note { display: block; font-size: 0.78rem; font-weight: 400; color: var(--text-muted); }
 @media (max-width: 700px) {
   .view-tabs { margin-left: 0.5rem; }

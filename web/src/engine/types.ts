@@ -27,6 +27,14 @@ export interface Model {
 export interface CatalogData {
   models: Record<string, Omit<Model, 'id'>>;
   redirects: Record<string, string>;
+  bench?: CpuBench;
+}
+
+/** CPU 算圖跑分（Blender Open Data）：v=Blender 版本、d=快照日期、m=型號 → [中位數, 樣本數] */
+export interface CpuBench {
+  v: string;
+  d: string | null;
+  m: Record<string, [number, number]>;
 }
 
 export interface Offer {
