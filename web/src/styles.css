@@ -139,6 +139,12 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 .candidate-name { font-weight: 600; }
 .candidate-specs { font-size: 0.82rem; color: var(--text-muted); }
 .candidate-note { font-size: 0.8rem; }
+.candidate-stats { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; font-size: 0.82rem; color: var(--text-muted); }
+.candidate-stats .stat { display: inline-flex; align-items: center; gap: 0.3rem; }
+.candidate-stats strong { color: var(--text-primary); font-variant-numeric: tabular-nums; }
+.candidate-stats .stat:first-child strong { display: inline-block; min-width: 2.2em; text-align: right; } /* 算力數字等寬，條對齊 */
+.stat-bar { display: inline-block; width: 4.5rem; height: 5px; border-radius: 3px; background: var(--bg-muted); overflow: hidden; }
+.stat-bar span { display: block; height: 100%; background: var(--accent-brand); }
 .candidate-side { display: flex; flex-direction: column; align-items: flex-end; gap: 0.3rem; flex-shrink: 0; }
 .candidate-price { font-weight: 700; font-variant-numeric: tabular-nums; }
 .price-trend { font-size: 0.75rem; font-variant-numeric: tabular-nums; }

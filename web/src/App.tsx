@@ -152,6 +152,7 @@ export function App() {
             selection={selection}
             offers={offers}
             history={data.prices.h}
+            bench={data.bench}
             onPick={pick}
             onStartWithCase={Object.keys(picks).length === 0 && active !== 'case' ? () => setActive('case') : undefined}
             onCompare={active === 'cpu' ? () => setView('compare') : undefined}
