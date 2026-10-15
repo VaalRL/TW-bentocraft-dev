@@ -23,7 +23,9 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 88,
@@ -34,6 +36,90 @@
      "value": true,
      "source": "title",
      "note": "品名標盒裝；AMD G 系列盒裝附 Wraith 散熱器"
+    },
+    "cores": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.7,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 4.2,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 2,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon RX Vega 11",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr4_mts": {
+     "value": 2933,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 3,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "12nm FinFET",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2019-07",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen+",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-3000-series/amd-ryzen-5-3400g.html",
+     "note": "Zen+ Picasso;DDR4-2933 為 2x1R 條件；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -68,6 +154,84 @@
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：無內顯"
+    },
+    "cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.7,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 4.6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 3,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 32,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr4_mts": {
+     "value": 3200,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 7nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2020-11",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 3",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html",
+     "note": "MPK=盒裝;官方頁未見 PCIe 通道數與內顯欄位,故省略；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -101,6 +265,84 @@
      "value": 88,
      "source": "manual",
      "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    },
+    "cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.7,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 32,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5200,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2023-07",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 4",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7500f.html",
+     "note": "MPK=盒裝;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -128,7 +370,9 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 88,
@@ -139,6 +383,84 @@
      "value": true,
      "source": "manual",
      "note": "盒裝附 Wraith Stealth"
+    },
+    "cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.2,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 4.7,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5200,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-04",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 4",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8400f.html",
+     "note": "無內顯;PCIe 4.0;AMD 頁面上市日 2024/04/01；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -166,7 +488,9 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 88,
@@ -177,6 +501,84 @@
      "value": true,
      "source": "manual",
      "note": "盒裝附 Wraith Stealth"
+    },
+    "cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon 740M",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5200,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 14,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 4 + Zen 4c",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html",
+     "note": "2 顆 Zen 4 + 4 顆 Zen 4c;PCIe 4.0 僅 14 條；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -204,7 +606,9 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 88,
@@ -215,6 +619,90 @@
      "value": true,
      "source": "manual",
      "note": "盒裝附 Wraith Stealth"
+    },
+    "cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.3,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon 760M",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5200,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 4",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html",
+     "note": "PCIe 4.0；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -242,7 +730,9 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 88,
@@ -253,6 +743,90 @@
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：不附散熱器"
+    },
+    "cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.9,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 32,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-08",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5600,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 5",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -276,7 +850,9 @@
     },
     "tdp_w": {
      "value": 105,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 142,
@@ -292,6 +868,78 @@
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：不附散熱器"
+    },
+    "cores": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 4.5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 96,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr4_mts": {
+     "value": 3200,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 7nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2022-04",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 3",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5800x3d.html",
+     "note": "官方頁無「可超頻」欄位,故省略 unlocked;無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -323,12 +971,98 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 88,
      "source": "manual",
      "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    },
+    "cores": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.3,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 32,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5200,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 5nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2023-01",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 4",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
+     "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -356,7 +1090,9 @@
     },
     "tdp_w": {
      "value": 120,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 162,
@@ -367,6 +1103,84 @@
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：不附散熱器"
+    },
+    "cores": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.2,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 96,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5200,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 5nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2023-04",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 4",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+     "note": "Tray=盤裝同晶片;搜尋摘要未見可超頻欄位；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -394,7 +1208,9 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 88,
@@ -405,6 +1221,90 @@
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：不附散熱器"
+    },
+    "cores": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 32,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-08",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5600,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 5",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -432,7 +1332,9 @@
     },
     "tdp_w": {
      "value": 120,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 162,
@@ -443,6 +1345,90 @@
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：不附散熱器"
+    },
+    "cores": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.7,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.2,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 96,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-11",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5600,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 5",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -470,7 +1456,9 @@
     },
     "tdp_w": {
      "value": 120,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 162,
@@ -481,6 +1469,90 @@
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：不附散熱器"
+    },
+    "cores": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.7,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 96,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2026-01",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5600,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 5",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html",
+     "note": "2026 CES 發表,9800X3D 高時脈版；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -508,7 +1580,9 @@
     },
     "tdp_w": {
      "value": 120,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 162,
@@ -519,6 +1593,90 @@
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：不附散熱器"
+    },
+    "cores": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 64,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-08",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5600,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 5",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -546,7 +1704,9 @@
     },
     "tdp_w": {
      "value": 120,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 162,
@@ -557,6 +1717,90 @@
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：不附散熱器"
+    },
+    "cores": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.4,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2025-03",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5600,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 5",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -584,7 +1828,9 @@
     },
     "tdp_w": {
      "value": 170,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 230,
@@ -595,6 +1841,90 @@
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：不附散熱器"
+    },
+    "cores": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 32,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.3,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.7,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 64,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-08",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5600,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 5",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -622,7 +1952,9 @@
     },
     "tdp_w": {
      "value": 170,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 230,
@@ -633,6 +1965,90 @@
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：不附散熱器"
+    },
+    "cores": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 32,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.3,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.7,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 128,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2025-03",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5600,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 5",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -660,12 +2076,98 @@
     },
     "tdp_w": {
      "value": 200,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "cooler_included": {
      "value": false,
      "source": "manual",
      "note": "AMD 原廠規格：不附散熱器"
+    },
+    "cores": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 32,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.3,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.6,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 192,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Radeon Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2026-04",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC 4nm",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5600,
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Zen 5",
+     "source": "vendor_spec",
+     "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html",
+     "note": "真實產品:9950X3D2 Dual Edition,雙 CCD 皆有 3D V-Cache；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {

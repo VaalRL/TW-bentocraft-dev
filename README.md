@@ -31,6 +31,7 @@
 - **Case diagram and size scales.** Once a case is chosen, a side-view diagram places the motherboard, GPU, PSU and radiator, coloured by the compatibility checks. The case outline is a generic shape; the parts are drawn to scale from their specs. Scales show GPU length and air-cooler height against the case limits, including conditional limits such as "with the PSU shroud installed".
 
   <img src="docs/case-diagram.png" width="320" alt="Side-view case diagram: an ATX motherboard, a 310 mm GPU, a top 360 mm radiator and an ATX PSU inside a generic case outline, all green for compatible" />
+- **CPU head-to-head.** Put any two CPUs side by side: cores, clocks, cache, power, integrated graphics, memory and PCIe, plus today's prices and the difference. Specs come from AMD and Intel spec pages, with links; no benchmark scores.
 - **Share and export.** One link carries the whole build (no account; the build lives in the URL), and the build can be copied in PTT PC_Shopping format. A shared link is priced with the prices of the day it is opened.
 - Dark mode and a mobile layout.
 
