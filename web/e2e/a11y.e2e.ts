@@ -34,6 +34,8 @@ for (const theme of ['light', 'dark'] as const) {
     await page.getByRole('button', { name: 'CPU 比較' }).click();
     await page.getByLabel('第 2 顆 CPU').selectOption('cpu:intel:i5-14400');
     await page.getByRole('button', { name: '＋ 加入比較' }).click();
+    await page.getByRole('button', { name: '最便宜' }).click();
+    expect(summarize((await scan(page)).violations)).toEqual([]);
     await page.getByRole('button', { name: '調整欄位順序' }).click();
     await page.getByRole('checkbox', { name: '顯示「製程」' }).uncheck();
     const compare = await scan(page);

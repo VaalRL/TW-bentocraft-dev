@@ -268,9 +268,20 @@ h3 { font-size: 1rem; margin: 0 0 0.5rem; display: flex; gap: 0.5rem; align-item
 .cmp-remove:hover { color: var(--text-primary); border-color: var(--text-muted); }
 .cmp-add { min-height: 2.3rem; font: inherit; color: var(--accent-brand); background: none; border: 1px dashed var(--border); border-radius: var(--radius); }
 .cmp-add:hover { border-color: var(--accent-brand); }
+.cmp-quick { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+.cmp-quick-label { font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-right: 0.2rem; }
+.cmp-quick button { padding: 0.3rem 0.8rem; font: inherit; font-size: 0.88rem; color: var(--text-primary); background: var(--bg-surface); border: 1px solid var(--border); border-radius: 999px; }
+.cmp-quick button:hover:not(:disabled) { border-color: var(--accent-brand); }
+.cmp-quick button[aria-pressed="true"] { color: var(--on-accent); background: var(--accent-brand); border-color: var(--accent-brand); font-weight: 600; }
+.cmp-quick button:disabled { opacity: 0.5; }
+.cmp-verdict { min-height: 1.4em; margin: 0.5rem 0 0.2rem; font-size: 0.92rem; }
+.cmp-badge { display: inline-block; margin-left: 0.4rem; padding: 0.05rem 0.5rem; font-size: 0.75rem; font-weight: 700; color: var(--on-accent); background: var(--accent-brand); border-radius: 999px; vertical-align: 1px; }
+.cmp-table thead th.is-winner { color: var(--text-primary); }
+.cmp-table tr.is-focus > th, .cmp-table tr.is-focus > td { border-top: 2px solid var(--accent-brand); border-bottom: 2px solid var(--accent-brand); }
+.cmp-table tr.is-focus > th { color: var(--accent-brand); }
 .cmp-tools { display: flex; gap: 1rem; justify-content: flex-end; margin-bottom: 0.4rem; font-size: 0.88rem; }
 .cmp-scroll { position: relative; overflow-x: auto; }
-.cmp-scroll .cmp-table tbody th { position: sticky; left: 0; z-index: 1; background: var(--bg-surface); }
+.cmp-scroll .cmp-table tbody th, .cmp-scroll .cmp-table thead th:first-child { position: sticky; left: 0; z-index: 1; background: var(--bg-surface); }
 .cmp-row-tools { display: inline-flex; gap: 0.2rem; align-items: center; margin-right: 0.4rem; vertical-align: middle; }
 .cmp-row-tools button { width: 1.6rem; height: 1.6rem; padding: 0; font: inherit; color: inherit; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 4px; }
 .cmp-row-tools button:disabled { opacity: 0.35; }

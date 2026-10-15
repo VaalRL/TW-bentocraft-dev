@@ -136,6 +136,36 @@ test.describe('桌面版配單', () => {
     await expect(page.locator('.cmp-table tbody th', { hasText: '製程' })).toHaveCount(1);
   });
 
+  test('CPU 比較：快速比較標出勝出者並把該列移到最上面', async ({ page }) => {
+    await open(page);
+    await page.evaluate(h => { location.hash = h; }, '#/compare?c=cpu%3Aamd%3Ar7-9800x3d,cpu%3Aintel%3Ai5-14400');
+    await page.reload();
+    const heads = page.locator('.cmp-table tbody th');
+    const cols = page.locator('.cmp-table thead th');
+    const verdict = page.locator('.cmp-verdict');
+
+    await page.getByRole('button', { name: '最省電' }).click();
+    await expect(heads.first()).toContainText('最大功耗');
+    await expect(cols.nth(2).locator('.cmp-badge')).toHaveText('最省電'); // i5-14400 148 W
+    await expect(cols.nth(1).locator('.cmp-badge')).toHaveCount(0);
+    await expect(verdict).toContainText('最省電：i5-14400');
+    await expect(page).toHaveURL(/&f=power$/);
+
+    await page.getByRole('button', { name: '算圖最強' }).click();
+    await expect(heads.first()).toContainText('算圖效能');
+    await expect(cols.nth(1).locator('.cmp-badge')).toHaveText('算圖最強');
+    await expect(page.getByRole('button', { name: '最省電' })).toHaveAttribute('aria-pressed', 'false');
+
+    // 分享連結保留快速比較；再按一次取消
+    await page.reload();
+    await expect(page.getByRole('button', { name: '算圖最強' })).toHaveAttribute('aria-pressed', 'true');
+    await expect(heads.first()).toContainText('算圖效能');
+    await page.getByRole('button', { name: '算圖最強' }).click();
+    await expect(heads.first()).toContainText('價格');
+    await expect(page.locator('.cmp-badge')).toHaveCount(0);
+    await expect(page).toHaveURL(/i5-14400$/);
+  });
+
   test('不相容的主機板預設隱藏，取消勾選後顯示為不相容', async ({ page }) => {
     await open(page);
     await pick(page, '處理器', 'R7 9800X3D');
