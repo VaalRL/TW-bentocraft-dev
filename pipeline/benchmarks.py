@@ -6,12 +6,19 @@ Blender Open Data 每筆結果是一台機器用某版 Blender 跑三個場景�
 """
 from __future__ import annotations
 
+import io
+import json
 import re
 import statistics
+import zipfile
 from collections import defaultdict
 from dataclasses import dataclass
+from pathlib import Path
+from typing import Iterator
 
 MIN_SAMPLES = 5
+SNAPSHOT_URL = "https://opendata.blender.org/snapshots/opendata-latest.zip"
+SCENES = ("monster", "junkshop", "classroom")  # Benchmark 3.x 的三個場景
 
 # 型號代碼：9800X3D、7500F、14400F、285K、250K Plus、5600X3D…
 _AMD = re.compile(r"\b(?:RYZEN\s+(?:THREADRIPPER\s+)?\d\s+(?:PRO\s+)?)?(\d{4}[A-Z0-9]*)\b")
@@ -21,7 +28,7 @@ _INTEL = re.compile(r"\b(?:I[3579]-|ULTRA\s+\d\s+)(\d{3,5}[A-Z]*(?:\s+PLUS)?)\b"
 @dataclass(frozen=True)
 class Result:
     device: str  # CPU 名稱，如 "AMD Ryzen 7 9800X3D 8-Core Processor"
-    blender: str  # Blender 版本，如 "4.5.0"
+    blender: str  # Blender 主要版本，如 "4.5"
     score: float  # 三個場景每分鐘樣本數的總和
 
 
@@ -53,6 +60,55 @@ def catalog_key(model_id: str, brand: str, name: str) -> str | None:
         return None
     code = m.group(1).replace(" PLUS", "PLUS")
     return "intel:" + re.sub(r"(\d+K?)F(PLUS)?$", r"\1\2", code)
+
+
+def parse_line(line: str) -> Result | None:
+    """快照的一行（一次送出的結果）→ CPU 算圖結果；不是 CPU、場景不齊、多插槽或格式不符時回傳 None。
+
+    只處理 schema v4（Blender 3.0 以後、分數是每分鐘樣本數）；v1–v3 是舊版 Benchmark，只有算圖時間。
+    判斷 CPU 或 GPU 要看 device_info.device_type：system_info.devices 會列出整台機器的所有裝置。
+    """
+    try:
+        entry = json.loads(line)
+    except ValueError:
+        return None
+    if entry.get("schema_version") != "v4" or not isinstance(entry.get("data"), list):
+        return None
+    names, versions, scores = set(), set(), {}
+    for run in entry["data"]:
+        info = run.get("device_info") or {}
+        if info.get("device_type") != "CPU" or (run.get("system_info") or {}).get("num_cpu_sockets", 1) != 1:
+            return None
+        names.update(d.get("name", "").strip() for d in info.get("compute_devices") or [])
+        # 修正版（4.5.0、4.5.1）的分數相同等級，以主要版本分組，樣本才夠
+        m = re.match(r"(\d+\.\d+)", str((run.get("blender_version") or {}).get("version") or ""))
+        versions.add(m.group(1) if m else None)
+        scene = (run.get("scene") or {}).get("label")
+        spm = (run.get("stats") or {}).get("samples_per_minute")
+        if scene in SCENES and isinstance(spm, (int, float)) and spm > 0:
+            scores[scene] = spm
+    if len(names) != 1 or len(versions) != 1 or None in versions or set(scores) != set(SCENES):
+        return None
+    return Result(device=re.sub(r"\s+", " ", names.pop()), blender=versions.pop(), score=sum(scores.values()))
+
+
+def read_snapshot(path: Path) -> tuple[Iterator[Result], str]:
+    """讀快照 zip：回傳（逐行解析的結果, JSONL 檔名）。授權不是 CC0 時拒絕使用。"""
+    zf = zipfile.ZipFile(path)
+    members = [n for n in zf.namelist() if n.endswith(".jsonl")]
+    if len(members) != 1:
+        raise ValueError(f"快照裡應該剛好有一個 .jsonl，實際：{members}")
+    licence = next((n for n in zf.namelist() if n.rsplit("/", 1)[-1].upper().startswith("LICENSE")), None)
+    if not licence or "CC0" not in zf.read(licence).decode("utf-8", "replace"):
+        raise ValueError("快照的授權檔不是 CC0，停止使用")
+
+    def results() -> Iterator[Result]:
+        with zf.open(members[0]) as raw:
+            for line in io.TextIOWrapper(raw, encoding="utf-8"):
+                r = parse_line(line)
+                if r:
+                    yield r
+    return results(), members[0]
 
 
 def pick_version(results: list[Result], keys: set[str], min_samples: int = MIN_SAMPLES) -> str | None:
