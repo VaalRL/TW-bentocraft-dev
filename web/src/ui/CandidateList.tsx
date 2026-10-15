@@ -3,6 +3,7 @@ import { buildChecks, constraintInvolves } from '../engine/constraints';
 import { deadEndChecker, pairChecks, worst } from '../engine/engine';
 import { lowestUnconditional, priceTrend, type PriceTrend } from '../engine/pricing';
 import type { Category, Check, CpuBench, Model, Offer, PriceHistory, Selection, Status } from '../engine/types';
+import { CaseThumb } from './CaseThumb';
 import { FACETS, SORTS, facetOptions, matches, thresholdSteps, type SortContext, type SortDef } from './filters';
 import { CATEGORY_LABEL, STATUS_LABEL, checkText, formatPrice, modelName, specSummary } from './format';
 
@@ -207,13 +208,15 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
       <ul className="candidate-list">
         {filtered.slice(0, limit).map(r => {
           const picked = selection[category]?.id === r.model.id;
+          const isCase = category === 'case';
           return (
-            <li key={r.model.id}>
+            <li key={r.model.id} className={isCase ? 'has-photo' : undefined}>
               <button
-                className={`candidate status-${r.status} ${picked ? 'is-picked' : ''}`}
+                className={`candidate status-${r.status} ${picked ? 'is-picked' : ''} ${isCase ? 'has-thumb' : ''}`}
                 aria-pressed={picked}
                 onClick={() => onPick(r.model)}
               >
+                {isCase && <CaseThumb model={r.model} />}
                 <span className="candidate-main">
                   <span className="candidate-name">
                     {modelName(r.model)}
@@ -246,6 +249,11 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
                   {r.status !== 'pass' && <span className={`badge status-${r.status}`}>{STATUS_LABEL[r.status]}</span>}
                 </span>
               </button>
+              {isCase && (
+                <a className="candidate-photo" href={photoSearchUrl(r.model)} target="_blank" rel="noreferrer">
+                  實品照片<span className="visually-hidden">：{modelName(r.model)}（圖片搜尋，另開視窗）</span>
+                </a>
+              )}
             </li>
           );
         })}
@@ -291,3 +299,6 @@ function sortRows(rows: Row[], key: ((r: Row) => number | undefined) | undefined
     return desc ? y - x : x - y;
   });
 }
+
+/** 實品照片：以型號名稱做圖片搜尋（本站不轉載商品照片） */
+export const photoSearchUrl = (m: Model) => `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(modelName(m))}`;

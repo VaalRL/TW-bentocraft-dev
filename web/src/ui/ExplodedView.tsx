@@ -183,7 +183,7 @@ function caseSolid(W: number, H: number): Solid {
 
 type P2 = [number, number];
 
-function Drawing({ solid, view, project, offset, cls, only }: {
+export function Drawing({ solid, view, project, offset, cls, only }: {
   solid: Solid; view: View; project: (p: V3) => V3; offset: V3;
   cls?: string; only?: 'front' | 'back';
 }) {
