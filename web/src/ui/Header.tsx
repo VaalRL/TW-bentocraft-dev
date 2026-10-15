@@ -4,6 +4,9 @@ import type { PricesData } from '../engine/types';
 import { daysSince, formatDate } from './format';
 import { REPO, SPONSOR_URL } from './report';
 
+/** 目前的頁面：配單或 CPU 比較 */
+export type View = 'build' | 'compare';
+
 const LOGO = logoSvg({ label: '' }); // 旁邊就是站名，圖示本身不重複朗讀
 
 /** GitHub Star 數。取不到（離線、API 次數用完）時不顯示，不影響其他功能。 */
@@ -24,7 +27,7 @@ function readTheme(): 'light' | 'dark' {
   return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
 }
 
-export function Header({ prices }: { prices: PricesData }) {
+export function Header({ prices, view, onView }: { prices: PricesData; view: View; onView: (v: View) => void }) {
   const [theme, setTheme] = useState(readTheme);
   const stars = useStars();
 
@@ -49,6 +52,12 @@ export function Header({ prices }: { prices: PricesData }) {
           <span className="brand-sub">TW-bentocraft · 原價屋報價相容性配單</span>
         </div>
       </div>
+      <nav className="view-tabs" aria-label="頁面">
+        {([['build', '配單'], ['compare', 'CPU 比較']] as [View, string][]).map(([v, label]) => (
+          <button key={v} type="button" className={`view-tab ${view === v ? 'is-active' : ''}`}
+            aria-current={view === v ? 'page' : undefined} onClick={() => onView(v)}>{label}</button>
+        ))}
+      </nav>
       <div className={`report-date ${stale ? 'is-stale' : ''}`} title={prices.status === 'stale' ? '最近一次更新失敗，沿用舊報價' : undefined}>
         {prices.status === 'missing'
           ? '尚無報價資料'

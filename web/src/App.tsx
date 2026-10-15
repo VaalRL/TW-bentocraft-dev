@@ -4,8 +4,9 @@ import { decodeShare, encodeShare } from './engine/share';
 import { CATEGORIES, toModels, type CatalogData, type Category, type Model, type PricesData, type Selection } from './engine/types';
 import { CandidateList } from './ui/CandidateList';
 import { CategoryNav } from './ui/CategoryNav';
+import { COMPARE_PREFIX, CpuCompare } from './ui/CpuCompare';
 import { ExplodedView } from './ui/ExplodedView';
-import { Header } from './ui/Header';
+import { Header, type View } from './ui/Header';
 import { REPO, SPONSOR_URL } from './ui/report';
 import { Summary } from './ui/Summary';
 
@@ -42,6 +43,7 @@ export function App() {
   const [active, setActive] = useState<Category>('cpu');
   const [assembly, setAssembly] = useState(false);
   const [cleared, setCleared] = useState<Picks | null>(null); // 清空前的配單，供復原
+  const [view, setView] = useState<View>(() => (location.hash.startsWith(COMPARE_PREFIX) ? 'compare' : 'build'));
 
   useEffect(() => {
     loadData()
@@ -68,14 +70,15 @@ export function App() {
   }, []);
 
   // 配單變動時同步更新網址，網址本身就是分享連結
+  // 比較頁由 CpuCompare 自己寫網址
   useEffect(() => {
-    if (!data) return;
+    if (!data || view !== 'build') return;
     const items = Object.fromEntries(
       Object.entries(picks).map(([cat, p]) => [cat, p!.variant ? `${p!.id}#${p!.variant}` : p!.id]),
     );
     const hash = Object.keys(items).length ? SHARE_PREFIX + encodeShare(items) : '';
     history.replaceState(null, '', `${location.pathname}${location.search}${hash}`);
-  }, [picks, data]);
+  }, [picks, data, view]);
 
   const selection: Selection = useMemo(() => {
     if (!data) return {};
@@ -85,7 +88,7 @@ export function App() {
       if (m) sel[cat] = m;
     }
     return sel;
-  }, [picks, data]);
+  }, [picks, data, view]);
 
   const offers = useMemo(() => (data ? indexOffers(data.prices) : new Map()), [data]);
 
@@ -113,41 +116,58 @@ export function App() {
 
   return (
     <div className="app">
-      <Header prices={data.prices} />
+      <Header prices={data.prices} view={view} onView={setView} />
       {missingShared.length > 0 && (
         <div className="banner banner-warn" role="status">
           分享連結中有 {missingShared.length} 個零件已不在規格庫中，已略過。
           <button className="link" onClick={() => setMissingShared([])}>知道了</button>
         </div>
       )}
-      <main className="workspace">
-        <CategoryNav active={active} onSelect={setActive} selection={selection} />
-        <div className="workspace-main">
-        <ExplodedView selection={selection} active={active} onSelect={setActive} />
-        <CandidateList
-          key={active}
-          category={active}
-          models={data.byCategory[active]}
-          catalog={data.byCategory}
-          selection={selection}
-          offers={offers}
-          history={data.prices.h}
-          onPick={pick}
-          onStartWithCase={Object.keys(picks).length === 0 && active !== 'case' ? () => setActive('case') : undefined}
-        />
-        </div>
-        <Summary
-          selection={selection}
-          offers={offers}
-          prices={data.prices}
-          assembly={assembly}
-          onAssemblyChange={setAssembly}
-          onRemove={unpick}
-          onReset={reset}
-          onUndoReset={cleared ? undoReset : undefined}
-          onFocus={setActive}
-        />
-      </main>
+      {view === 'compare' ? (
+        <main className="compare-page">
+          <CpuCompare
+            cpus={data.byCategory.cpu}
+            offers={offers}
+            history={data.prices.h}
+            current={selection.cpu}
+            onUse={m => {
+              pick(m);
+              setActive('cpu');
+              setView('build');
+            }}
+          />
+        </main>
+      ) : (
+        <main className="workspace">
+          <CategoryNav active={active} onSelect={setActive} selection={selection} />
+          <div className="workspace-main">
+          <ExplodedView selection={selection} active={active} onSelect={setActive} />
+          <CandidateList
+            key={active}
+            category={active}
+            models={data.byCategory[active]}
+            catalog={data.byCategory}
+            selection={selection}
+            offers={offers}
+            history={data.prices.h}
+            onPick={pick}
+            onStartWithCase={Object.keys(picks).length === 0 && active !== 'case' ? () => setActive('case') : undefined}
+            onCompare={active === 'cpu' ? () => setView('compare') : undefined}
+          />
+          </div>
+          <Summary
+            selection={selection}
+            offers={offers}
+            prices={data.prices}
+            assembly={assembly}
+            onAssemblyChange={setAssembly}
+            onRemove={unpick}
+            onReset={reset}
+            onUndoReset={cleared ? undoReset : undefined}
+            onFocus={setActive}
+          />
+        </main>
+      )}
       <footer className="footer">
         本站為非官方開源專案，與原價屋、欣亞等通路無關；價格與規格僅供參考，以通路實際報價為準。
         <a href={`https://github.com/${REPO}`} target="_blank" rel="noreferrer">原始碼</a>

@@ -40,6 +40,10 @@ def compact_model(m: dict) -> dict:
         out["x"] = extra
     if m.get("variants"):
         out["v"] = {vid: v["label"] for vid, v in m["variants"].items()}
+    # CPU 比較頁標示規格出處：取核心數欄位的原廠規格頁
+    cores = m["specs"].get("cores")
+    if m["category"] == "cpu" and cores and cores.get("ref"):
+        out["u"] = cores["ref"]
     return out
 
 

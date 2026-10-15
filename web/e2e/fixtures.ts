@@ -7,11 +7,11 @@ export const CATALOG: CatalogData = {
   models: {
     'cpu:amd:r7-9800x3d': {
       c: 'cpu', b: 'AMD', n: 'R7 9800X3D', r: 'a',
-      s: { socket: 'AM5', igpu: true, cooler_included: false, max_power_w: 162 },
+      s: { socket: 'AM5', igpu: true, cooler_included: false, max_power_w: 162, cores: 8, threads: 16, boost_clock_ghz: 5.2, l3_cache_mb: 96, ddr5_mts: 5600, igpu_name: 'Radeon Graphics', generation: 'Zen 5' },
     },
     'cpu:intel:i5-14400': {
       c: 'cpu', b: 'Intel', n: 'i5-14400', r: 'a',
-      s: { socket: 'LGA1700', igpu: true, max_power_w: 148 },
+      s: { socket: 'LGA1700', igpu: true, max_power_w: 148, cores: 10, threads: 16, p_cores: 6, e_cores: 4, boost_clock_ghz: 4.7, l3_cache_mb: 20, ddr5_mts: 4800, ddr4_mts: 3200, igpu_name: 'Intel UHD Graphics 730' },
     },
     'motherboard:gigabyte:x870-gaming-x': {
       c: 'motherboard', b: '技嘉 GIGABYTE', n: 'X870 GAMING X', r: 'a',
