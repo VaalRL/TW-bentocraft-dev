@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState, type CSSProperties, type DragEven
 import { lowestUnconditional, priceTrend } from '../engine/pricing';
 import type { CpuBench, Model, Offer, PriceHistory } from '../engine/types';
 import { formatPrice, modelName } from './format';
+import { Annotated } from './Term';
 
 // CPU 規格對決：最多 4 顆 CPU 並排比較規格、算圖效能與今天的原價屋價格。
 // 規格取自原廠規格頁（規格庫 cpu 分片的比較用欄位）；算圖效能取自 Blender Open Data。
@@ -363,7 +364,7 @@ export function CpuCompare({ cpus, offers, history, bench, current, onUse }: {
                             <button type="button" disabled={idx === order.length - 1} onClick={() => move(id, idx + 1)} aria-label={`「${row.label}」下移`}>↓</button>
                           </span>
                         )}
-                        {row.label}
+                        <Annotated text={row.label} />
                         {row.note && <span className="cmp-note">{row.note}</span>}
                       </th>
                       {models.map((m, i) => {

@@ -4,6 +4,7 @@ import { selectionChecks, worst } from '../engine/engine';
 import { priceSelection, priceTrend } from '../engine/pricing';
 import { FitDiagram } from './FitDiagram';
 import { CATEGORIES, type Category, type Offer, type PricesData, type Selection, type Status } from '../engine/types';
+import { Annotated } from './Term';
 import { CATEGORY_LABEL, STATUS_LABEL, checkText, copyText, formatDate, formatPrice, modelName } from './format';
 import { checkReportUrl, specReportUrl } from './report';
 
@@ -152,7 +153,7 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
             {ORDER.flatMap(s => checks.filter(c => c.status === s)).map((c, i) => (
               <li key={i} className={`check status-${c.status}`}>
                 <span className={`badge status-${c.status}`}>{STATUS_LABEL[c.status]}</span>
-                {checkText(c)}
+                <Annotated text={checkText(c)} />
               </li>
             ))}
           </ul>
