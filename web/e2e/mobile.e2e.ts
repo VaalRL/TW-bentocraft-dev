@@ -11,4 +11,19 @@ test.describe('手機版', () => {
     expect(overflow).toBe(false);
     expect(errors).toEqual([]);
   });
+
+  test('篩選列預設收合，點「篩選」展開，按鈕顯示已選條件數', async ({ page }) => {
+    await open(page);
+    const toggle = page.getByRole('button', { name: /^篩選/ });
+    const filters = page.getByRole('group', { name: '篩選' });
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    await expect(filters).toBeHidden();
+    await toggle.click();
+    await expect(filters).toBeVisible();
+    await filters.getByRole('button', { name: /^AM5/ }).click();
+    await expect(toggle).toHaveText('篩選（1）');
+    await expect(page.locator('.candidate-name')).toHaveCount(1);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth);
+    expect(overflow).toBe(false);
+  });
 });

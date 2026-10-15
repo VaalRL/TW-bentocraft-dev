@@ -196,8 +196,9 @@ test.describe('桌面版配單', () => {
     await filters.getByRole('button', { name: /^AM5/ }).click();
     await expect(names).toHaveCount(1);
     await expect(names.first()).toContainText('R7 9800X3D');
-    await filters.getByRole('button', { name: '附散熱器' }).click(); // 不同組須同時符合
+    await filters.getByRole('button', { name: /^Intel/ }).click(); // 不同組須同時符合
     await expect(names).toHaveCount(0);
+    await expect(filters.getByRole('button', { name: '附散熱器' })).toHaveCount(0); // 沒有型號符合的條件不列出
     await filters.getByRole('button', { name: '清除篩選' }).click();
     await expect(names).toHaveCount(2);
 
@@ -214,6 +215,31 @@ test.describe('桌面版配單', () => {
     await category(page, '主機板');
     await expect(page.getByRole('group', { name: '腳位' })).toBeVisible();
     await expect(page.getByRole('button', { name: '有內顯' })).toHaveCount(0);
+  });
+
+  test('其他零件也可篩選與排序：電源瓦數、尺寸與每瓦價格', async ({ page }) => {
+    await open(page);
+    await category(page, '電源');
+    const names = page.locator('.candidate-name');
+    const filters = page.getByRole('group', { name: '篩選' });
+    await expect(names).toHaveCount(3);
+    await filters.getByLabel('瓦數').selectOption({ label: '至少 750 W' });
+    await expect(names).toHaveCount(2);
+    await filters.getByRole('group', { name: '尺寸' }).getByRole('button', { name: /^SFX/ }).click();
+    await expect(names).toHaveCount(1);
+    await expect(names.first()).toContainText('SF750');
+    await filters.getByRole('button', { name: '清除篩選' }).click();
+    await expect(names).toHaveCount(3);
+    await page.getByLabel('排序').selectOption({ label: '每瓦價格低到高' });
+    await expect(names.first()).toContainText('550W'); // $1,590 / 550 W
+    await expect(candidate(page, 'HYDRO K PRO 550W')).toContainText('每瓦 $2.9');
+    await page.getByLabel('排序').selectOption({ label: '瓦數高到低' });
+    await expect(names.first()).toContainText('1000W');
+
+    await category(page, '記憶體');
+    await page.getByRole('group', { name: '記憶體' }).getByRole('button', { name: /^DDR4/ }).click();
+    await expect(names).toHaveCount(1);
+    await expect(names.first()).toContainText('DDR4-3200');
   });
 
   test('不相容的主機板預設隱藏，取消勾選後顯示為不相容', async ({ page }) => {

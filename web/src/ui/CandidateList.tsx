@@ -3,6 +3,7 @@ import { buildChecks, constraintInvolves } from '../engine/constraints';
 import { deadEndChecker, pairChecks, worst } from '../engine/engine';
 import { lowestUnconditional, priceTrend, type PriceTrend } from '../engine/pricing';
 import type { Category, Check, CpuBench, Model, Offer, PriceHistory, Selection, Status } from '../engine/types';
+import { FACETS, SORTS, facetOptions, matches, thresholdSteps, type SortContext, type SortDef } from './filters';
 import { CATEGORY_LABEL, STATUS_LABEL, checkText, formatPrice, modelName, specSummary } from './format';
 
 interface Row {
@@ -16,25 +17,13 @@ interface Row {
 
 const ORDER: Record<Status, number> = { pass: 0, unknown: 1, warn: 2, fail: 3 };
 const PAGE = 60;
-/** 品牌數不超過這個數量時用按鈕，否則用下拉選單 */
-const BRAND_CHIPS = 6;
+/** 選項不超過這個數量時用按鈕（可複選），否則用下拉選單 */
+const CHIP_MAX = 8;
 
-/** CPU 的篩選條件（勾選的條件全部都要符合） */
-const CPU_FLAGS: { id: string; label: string; test: (m: Model) => boolean }[] = [
-  { id: 'igpu', label: '有內顯', test: m => m.s.igpu === true },
-  { id: 'cooler', label: '附散熱器', test: m => m.s.cooler_included === true },
-  { id: 'unlocked', label: '可超頻', test: m => m.s.unlocked === true },
+const PRICE_SORTS: SortDef[] = [
+  { id: 'price', label: '價格低到高', key: (_, c) => c.price },
+  { id: 'price-desc', label: '價格高到低', key: (_, c) => c.price, desc: true },
 ];
-
-type SortKey = 'default' | 'price' | 'price-desc' | 'score' | 'power' | 'value';
-const SORT_LABEL: Record<SortKey, string> = {
-  default: '相容優先',
-  price: '價格低到高',
-  'price-desc': '價格高到低',
-  score: '算力高到低',
-  power: '耗電低到高',
-  value: '每千元算力高到低',
-};
 
 export function CandidateList({ category, models, catalog, selection, offers, history, bench, onPick, onStartWithCase, onCompare }: {
   category: Category;
@@ -54,10 +43,12 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
   const [query, setQuery] = useState('');
   const [hideIncompatible, setHideIncompatible] = useState(true);
   const [limit, setLimit] = useState(PAGE);
-  const [brands, setBrands] = useState<string[]>([]);
-  const [sockets, setSockets] = useState<string[]>([]);
-  const [flags, setFlags] = useState<string[]>([]);
-  const [sort, setSort] = useState<SortKey>('default');
+  const [selected, setSelected] = useState<Record<string, string[]>>({});
+  const [sort, setSort] = useState('default');
+  // 篩選列在窄螢幕預設收合，避免把清單擠到畫面下方
+  const [showFilters, setShowFilters] = useState(() => {
+    try { return window.matchMedia('(min-width: 701px)').matches; } catch { return true; }
+  });
 
   const rows: Row[] = useMemo(() => {
     const deadEnds = deadEndChecker(category, selection, catalog);
@@ -87,35 +78,30 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
   const topScore = cpuBench ? Math.max(0, ...models.map(m => cpuBench.m[m.id]?.[0] ?? 0)) : 0;
 
   const isCpu = category === 'cpu';
-  const brandOptions = useMemo(() => countBy(models.map(m => m.b)), [models]);
-  // 腳位：CPU 與主機板都有
-  const socketOptions = useMemo(
-    () => (isCpu || category === 'motherboard' ? countBy(models.map(m => m.s.socket as string | undefined)) : []),
-    [models, isCpu, category],
+  const facets = FACETS[category];
+  const context = (r: Row): SortContext => ({ price: r.offer?.p, score: cpuBench?.m[r.model.id]?.[0] });
+  // 沒有任何型號有數值的排序方式不列出（例如沒有跑分資料時的算力排序）
+  const sorts = useMemo(
+    () => [...PRICE_SORTS, ...SORTS[category]].filter(s => rows.some(r => s.key(r.model, context(r)) !== undefined)),
+    [category, rows, cpuBench],
   );
-  const sorts: SortKey[] = isCpu ? ['default', 'price', 'price-desc', 'score', 'power', 'value'] : ['default', 'price', 'price-desc'];
-  const filtering = brands.length + sockets.length + flags.length > 0;
-  const toggle = (set: (f: (v: string[]) => string[]) => void, value: string) => {
-    set(v => (v.includes(value) ? v.filter(x => x !== value) : [...v, value]));
+  const sortDef = sorts.find(s => s.id === sort);
+  const active = Object.values(selected).filter(v => v.length).length;
+  const filtering = active > 0;
+  const update = (id: string, values: string[]) => {
+    setSelected(s => ({ ...s, [id]: values }));
     setLimit(PAGE);
   };
-  const score = (m: Model) => cpuBench?.m[m.id]?.[0];
-  const value = (r: Row) => (r.offer && score(r.model) !== undefined ? (score(r.model)! / r.offer.p) * 1000 : undefined);
+  const toggle = (id: string, value: string) => {
+    const cur = selected[id] ?? [];
+    update(id, cur.includes(value) ? cur.filter(x => x !== value) : [...cur, value]);
+  };
 
   const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const matching = sortRows(rows.filter(r => {
     const hay = `${modelName(r.model)} ${specSummary(r.model)}`.toLowerCase();
-    return terms.every(t => hay.includes(t)) &&
-      (!brands.length || brands.includes(r.model.b)) &&
-      (!sockets.length || sockets.includes(r.model.s.socket as string)) &&
-      CPU_FLAGS.every(f => !flags.includes(f.id) || f.test(r.model));
-  }), sort, {
-    price: r => r.offer?.p,
-    'price-desc': r => (r.offer ? -r.offer.p : undefined),
-    score: r => { const v = score(r.model); return v === undefined ? undefined : -v; },
-    power: r => r.model.s.max_power_w as number | undefined,
-    value: r => { const v = value(r); return v === undefined ? undefined : -v; },
-  });
+    return terms.every(t => hay.includes(t)) && matches(r.model, facets, selected);
+  }), sortDef ? r => sortDef.key(r.model, context(r)) : undefined, sortDef?.desc);
   const isHidden = (r: Row) => r.status === 'fail' && selection[category]?.id !== r.model.id;
   const filtered = hideIncompatible ? matching.filter(r => !isHidden(r)) : matching;
   const hidden = matching.filter(isHidden).length; // 只算符合搜尋條件、因不相容而隱藏的數量
@@ -140,51 +126,71 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
         </label>
         <label className="toggle">
           排序
-          <select value={sort} onChange={e => setSort(e.target.value as SortKey)}>
-            {sorts.map(k => <option key={k} value={k}>{SORT_LABEL[k]}</option>)}
+          <select value={sort} onChange={e => setSort(e.target.value)}>
+            <option value="default">相容優先</option>
+            {sorts.map(s => <option key={s.id} value={s.id}>{s.label}</option>)}
           </select>
         </label>
+        <button type="button" className="filter-toggle" aria-expanded={showFilters} aria-controls={`filters-${category}`} onClick={() => setShowFilters(v => !v)}>
+          篩選{active ? `（${active}）` : ''}
+        </button>
         {onCompare && <button type="button" className="link" onClick={onCompare}>規格對決</button>}
       </div>
-      <div className="candidate-filters" role="group" aria-label="篩選">
-        {brandOptions.length > 1 && (brandOptions.length <= BRAND_CHIPS ? (
-          <span className="chip-group" role="group" aria-label="品牌">
-            {brandOptions.map(([b, n]) => (
-              <button type="button" key={b} className="chip" aria-pressed={brands.includes(b)} onClick={() => toggle(setBrands, b)}>
-                {b}<span className="chip-count">{n}</span>
-              </button>
-            ))}
-          </span>
-        ) : (
-          <label className="toggle">
-            <span className="visually-hidden">品牌</span>
-            <select value={brands[0] ?? ''} onChange={e => { setBrands(e.target.value ? [e.target.value] : []); setLimit(PAGE); }}>
-              <option value="">全部品牌</option>
-              {brandOptions.map(([b, n]) => <option key={b} value={b}>{b}（{n}）</option>)}
-            </select>
-          </label>
-        ))}
-        {socketOptions.length > 1 && (
-          <span className="chip-group" role="group" aria-label="腳位">
-            {socketOptions.map(([s, n]) => (
-              <button type="button" key={s} className="chip" aria-pressed={sockets.includes(s)} onClick={() => toggle(setSockets, s)}>
-                {s}<span className="chip-count">{n}</span>
-              </button>
-            ))}
-          </span>
-        )}
-        {isCpu && (
-          <span className="chip-group" role="group" aria-label="條件">
-            {CPU_FLAGS.map(f => (
-              <button type="button" key={f.id} className="chip" aria-pressed={flags.includes(f.id)} onClick={() => toggle(setFlags, f.id)}>
-                {f.label}
-              </button>
-            ))}
-          </span>
-        )}
-        {filtering && (
-          <button type="button" className="link" onClick={() => { setBrands([]); setSockets([]); setFlags([]); }}>清除篩選</button>
-        )}
+      <div className="candidate-filters" role="group" aria-label="篩選" id={`filters-${category}`} hidden={!showFilters}>
+        {facets.map(f => {
+          if (f.kind === 'group') {
+            const options = facetOptions(f, models);
+            if (options.length < 2) return null;
+            const sel = selected[f.id] ?? [];
+            return options.length <= CHIP_MAX ? (
+              <span key={f.id} className="chip-group" role="group" aria-label={f.label}>
+                <span className="chip-label" aria-hidden="true">{f.label}</span>
+                {options.map(o => (
+                  <button type="button" key={o.value} className="chip" aria-pressed={sel.includes(o.value)} onClick={() => toggle(f.id, o.value)}>
+                    {o.label}<span className="chip-count">{o.count}</span>
+                  </button>
+                ))}
+              </span>
+            ) : (
+              <label key={f.id} className="filter-select">
+                <span className="chip-label">{f.label}</span>
+                <select value={sel[0] ?? ''} onChange={e => update(f.id, e.target.value ? [e.target.value] : [])}>
+                  <option value="">不限</option>
+                  {options.map(o => <option key={o.value} value={o.value}>{o.label}（{o.count}）</option>)}
+                </select>
+              </label>
+            );
+          }
+          if (f.kind === 'min' || f.kind === 'max') {
+            const steps = thresholdSteps(f, models);
+            if (!steps.length) return null;
+            return (
+              <label key={f.id} className="filter-select">
+                <span className="chip-label">{f.label}</span>
+                <select value={selected[f.id]?.[0] ?? ''} onChange={e => update(f.id, e.target.value ? [e.target.value] : [])}>
+                  <option value="">不限</option>
+                  {steps.map(s => <option key={s} value={s}>{f.kind === 'min' ? '至少' : '不超過'} {s.toLocaleString('zh-TW')}{f.unit}</option>)}
+                </select>
+              </label>
+            );
+          }
+          return null;
+        })}
+        {(() => {
+          // 條件按鈕：全部型號都符合或都不符合的條件不列出
+          const flags = facets.filter((f): f is Extract<typeof f, { kind: 'flag' }> => f.kind === 'flag')
+            .filter(f => { const n = models.filter(f.test).length; return n > 0 && n < models.length; });
+          return flags.length > 0 && (
+            <span className="chip-group" role="group" aria-label="條件">
+              {flags.map(f => (
+                <button type="button" key={f.id} className="chip" aria-pressed={!!selected[f.id]?.length} onClick={() => update(f.id, selected[f.id]?.length ? [] : ['1'])}>
+                  {f.label}
+                </button>
+              ))}
+            </span>
+          );
+        })()}
+        {filtering && <button type="button" className="link" onClick={() => setSelected({})}>清除篩選</button>}
       </div>
       {onStartWithCase && (
         <p className="candidates-tip">
@@ -215,7 +221,11 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
                     {r.model.r === 'v' && <span className="tag tag-ok">已人工確認</span>}
                   </span>
                   <span className="candidate-specs">{specSummary(r.model) || '規格未確認'}</span>
-                  {isCpu && <CpuStats model={r.model} bench={cpuBench} top={topScore} value={sort === 'value' ? value(r) : undefined} />}
+                  {isCpu && <CpuStats model={r.model} bench={cpuBench} top={topScore} />}
+                  {sortDef?.show && (() => {
+                    const v = sortDef.key(r.model, context(r));
+                    return v !== undefined && <span className="candidate-sortval">{sortDef.show(v)}</span>;
+                  })()}
                   {r.checks.map((c, i) => (
                     <span key={i} className={`candidate-note status-${c.status}`}>{checkText(c)}</span>
                   ))}
@@ -248,7 +258,7 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
 }
 
 /** CPU 候選的算力與耗電 */
-function CpuStats({ model, bench, top, value }: { model: Model; bench?: CpuBench; top: number; value?: number }) {
+function CpuStats({ model, bench, top }: { model: Model; bench?: CpuBench; top: number }) {
   const score = bench?.m[model.id]?.[0];
   const power = model.s.max_power_w as number | undefined;
   if (!bench && power === undefined) return null;
@@ -266,27 +276,18 @@ function CpuStats({ model, bench, top, value }: { model: Model; bench?: CpuBench
         </span>
       )}
       {power !== undefined && <span className="stat">耗電 <strong>{power} W</strong></span>}
-      {value !== undefined && <span className="stat">每千元算力 <strong>{value.toFixed(1)}</strong></span>}
     </span>
   );
 }
 
-/** 值與出現次數，依次數多到少（同數依名稱） */
-function countBy(values: (string | undefined)[]): [string, number][] {
-  const counts = new Map<string, number>();
-  for (const v of values) if (v) counts.set(v, (counts.get(v) ?? 0) + 1);
-  return [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'zh-TW'));
-}
-
-/** 依選的排序方式重排；不相容的仍放最後，沒有該數值的排在有數值的後面 */
-function sortRows(rows: Row[], sort: SortKey, keys: Record<Exclude<SortKey, 'default'>, (r: Row) => number | undefined>): Row[] {
-  if (sort === 'default') return rows;
-  const key = keys[sort];
+/** 依排序鍵重排；不相容的仍放最後，沒有該數值的排在有數值的後面 */
+function sortRows(rows: Row[], key: ((r: Row) => number | undefined) | undefined, desc = false): Row[] {
+  if (!key) return rows;
   return [...rows].sort((a, b) => {
     const fail = (a.status === 'fail' ? 1 : 0) - (b.status === 'fail' ? 1 : 0);
     if (fail) return fail;
     const x = key(a), y = key(b);
     if (x === undefined || y === undefined) return (x === undefined ? 1 : 0) - (y === undefined ? 1 : 0);
-    return x - y;
+    return desc ? y - x : x - y;
   });
 }
