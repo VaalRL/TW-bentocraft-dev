@@ -77,10 +77,10 @@ export function specSummary(m: Model): string {
   return parts.filter(Boolean).join(' · ');
 }
 
-const EFFICIENCY: Record<string, string> = {
+export const EFFICIENCY: Record<string, string> = {
   white: '白牌', bronze: '銅牌', silver: '銀牌', gold: '金牌', platinum: '白金', titanium: '鈦金',
 };
-const INTERFACE: Record<string, string> = { sata: 'SATA', pcie3: 'PCIe 3.0', pcie4: 'PCIe 4.0', pcie5: 'PCIe 5.0' };
+export const INTERFACE: Record<string, string> = { sata: 'SATA', pcie3: 'PCIe 3.0', pcie4: 'PCIe 4.0', pcie5: 'PCIe 5.0' };
 
 /** 檢查結果的文字：依賴推定值的結果註明「推定」。 */
 export const checkText = (c: Check) => (c.inferred ? `${c.message}（依推定規格）` : c.message);
