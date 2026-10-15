@@ -72,17 +72,17 @@ test.describe('桌面版配單', () => {
     await expect(sponsor).toHaveAttribute('target', '_blank');
   });
 
-  test('CPU 比較：並排規格與價格，標出較好的一邊，可放入配單', async ({ page }) => {
+  test('CPU 比較：並排規格與價格，標出最好的一欄，可放入配單', async ({ page }) => {
     await open(page);
     await page.getByRole('button', { name: 'CPU 比較' }).click();
-    await page.getByLabel('左邊的 CPU').selectOption('cpu:amd:r7-9800x3d');
-    await page.getByLabel('右邊的 CPU').selectOption('cpu:intel:i5-14400');
-    await expect(page).toHaveURL(/#\/compare\?a=cpu%3Aamd%3Ar7-9800x3d&b=cpu%3Aintel%3Ai5-14400$/);
+    await page.getByLabel('第 1 顆 CPU').selectOption('cpu:amd:r7-9800x3d');
+    await page.getByLabel('第 2 顆 CPU').selectOption('cpu:intel:i5-14400');
+    await expect(page).toHaveURL(/#\/compare\?c=cpu%3Aamd%3Ar7-9800x3d,cpu%3Aintel%3Ai5-14400$/);
     const row = (label: string) => page.locator('.cmp-table tr', { has: page.locator('th', { hasText: label }) });
     await expect(row('L3 快取').locator('td').first()).toHaveClass(/is-better/);
     await expect(row('核心／執行緒').locator('td').last()).toContainText('6P＋4E');
     await expect(row('價格').locator('td').last()).toHaveClass(/is-better/); // i5 比較便宜
-    await expect(page.locator('.cmp-diff')).toContainText('R7 9800X3D 比 i5-14400 貴 $9,700');
+    await expect(row('價格').locator('td').first()).toContainText('+$9,700');
     const bench = row('算圖效能');
     await expect(bench.locator('td').first()).toHaveClass(/is-better/);
     await expect(bench.locator('td').last()).toContainText('67%');
@@ -93,6 +93,47 @@ test.describe('桌面版配單', () => {
     await page.locator('.cmp-pick').first().getByRole('button', { name: '放入配單' }).click();
     await expect(page.locator('.summary-items li')).toContainText('R7 9800X3D');
     await expect(page).toHaveURL(/#\/build\?b=/);
+  });
+
+  test('CPU 比較：最多四欄，可移除欄位；舊版 a／b 連結仍可開啟', async ({ page }) => {
+    await open(page);
+    await page.evaluate(h => { location.hash = h; }, '#/compare?a=cpu%3Aamd%3Ar7-9800x3d&b=cpu%3Aintel%3Ai5-14400');
+    await page.reload();
+    await expect(page.locator('.cmp-table thead th')).toHaveCount(3);
+    await expect(page).toHaveURL(/\?c=cpu%3Aamd%3Ar7-9800x3d,cpu%3Aintel%3Ai5-14400$/);
+    const add = page.getByRole('button', { name: '＋ 加入比較' });
+    await add.click();
+    await add.click();
+    await expect(page.getByLabel('第 4 顆 CPU')).toBeVisible();
+    await expect(add).toHaveCount(0);
+    await page.getByLabel('第 3 顆 CPU').selectOption('cpu:amd:r7-9800x3d');
+    await expect(page.locator('.cmp-table thead th')).toHaveCount(4);
+    await page.getByRole('button', { name: '移除第 1 欄' }).click();
+    await expect(page.getByLabel('第 1 顆 CPU')).toHaveValue('cpu:intel:i5-14400');
+    await expect(page).toHaveURL(/\?c=cpu%3Aintel%3Ai5-14400,cpu%3Aamd%3Ar7-9800x3d$/);
+  });
+
+  test('CPU 比較：可調整列順序與隱藏列，重新開啟後保留', async ({ page }) => {
+    await open(page);
+    await page.evaluate(h => { location.hash = h; }, '#/compare?c=cpu%3Aamd%3Ar7-9800x3d,cpu%3Aintel%3Ai5-14400');
+    await page.reload();
+    const heads = page.locator('.cmp-table tbody th');
+    await expect(heads.first()).toContainText('價格');
+    await page.getByRole('button', { name: '調整欄位順序' }).click();
+    await page.getByRole('button', { name: '「價格」下移' }).click();
+    await expect(heads.nth(0)).toContainText('算圖效能');
+    await expect(heads.nth(1)).toContainText('價格');
+    await page.getByRole('checkbox', { name: '顯示「製程」' }).uncheck();
+    await page.getByRole('button', { name: '完成' }).click();
+    await expect(page.locator('.cmp-table tbody th', { hasText: '製程' })).toHaveCount(0);
+    await page.reload();
+    await expect(heads.nth(0)).toContainText('算圖效能');
+    await expect(page.locator('.cmp-table tbody th', { hasText: '製程' })).toHaveCount(0);
+    await page.getByRole('button', { name: '調整欄位順序' }).click();
+    await page.getByRole('button', { name: '恢復預設' }).click();
+    await page.getByRole('button', { name: '完成' }).click();
+    await expect(heads.nth(0)).toContainText('價格');
+    await expect(page.locator('.cmp-table tbody th', { hasText: '製程' })).toHaveCount(1);
   });
 
   test('不相容的主機板預設隱藏，取消勾選後顯示為不相容', async ({ page }) => {

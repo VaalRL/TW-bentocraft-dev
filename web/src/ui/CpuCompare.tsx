@@ -1,32 +1,35 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, type CSSProperties, type DragEvent, type ReactNode } from 'react';
 import { lowestUnconditional, priceTrend } from '../engine/pricing';
 import type { CpuBench, Model, Offer, PriceHistory } from '../engine/types';
 import { formatPrice, modelName } from './format';
 
-// CPU 規格對決：兩顆 CPU 並排比較規格與今天的原價屋價格。
-// 規格取自原廠規格頁（規格庫 cpu 分片的比較用欄位），不做效能分數。
-// 網址 #/compare?a=<型號>&b=<型號> 可直接分享。
+// CPU 規格對決：最多 4 顆 CPU 並排比較規格、算圖效能與今天的原價屋價格。
+// 規格取自原廠規格頁（規格庫 cpu 分片的比較用欄位）；算圖效能取自 Blender Open Data。
+// 網址 #/compare?c=<型號>,<型號>… 可直接分享；列的順序與隱藏設定記在瀏覽器。
 
 export const COMPARE_PREFIX = '#/compare';
+export const MAX_CPUS = 4;
 
-type Better = 'higher' | 'lower' | null;
-
-interface Row {
+export interface Row {
+  id: string;
   label: string;
-  value: (m: Model) => string | null;
-  /** 用來判斷哪一邊較好的數值；better 為 null 時只並列不比較 */
+  note?: string;
+  value: (m: Model) => ReactNode | null;
+  /** 用來判斷哪一欄較好的數值；沒有 better 時只並列不比較 */
   num?: (m: Model) => number | undefined;
-  better?: Better;
+  better?: 'higher' | 'lower';
 }
 
 const s = <T,>(m: Model, f: string) => m.s[f] as T | undefined;
 const unit = (v: number | undefined, u: string) => (v === undefined ? null : `${v}${u}`);
 
+/** 規格列（價格與算圖效能另外依資料產生） */
 export const ROWS: Row[] = [
-  { label: '腳位', value: m => s<string>(m, 'socket') ?? null },
-  { label: '架構', value: m => s<string>(m, 'generation') ?? null },
-  { label: '製程', value: m => s<string>(m, 'process') ?? null },
+  { id: 'socket', label: '腳位', value: m => s<string>(m, 'socket') ?? null },
+  { id: 'arch', label: '架構', value: m => s<string>(m, 'generation') ?? null },
+  { id: 'process', label: '製程', value: m => s<string>(m, 'process') ?? null },
   {
+    id: 'cores',
     label: '核心／執行緒',
     value: m => {
       const c = s<number>(m, 'cores'), t = s<number>(m, 'threads');
@@ -37,17 +40,19 @@ export const ROWS: Row[] = [
     num: m => s<number>(m, 'threads') ?? s<number>(m, 'cores'),
     better: 'higher',
   },
-  { label: '最高加速時脈', value: m => unit(s(m, 'boost_clock_ghz'), ' GHz'), num: m => s(m, 'boost_clock_ghz'), better: 'higher' },
-  { label: '基礎時脈', value: m => unit(s(m, 'base_clock_ghz'), ' GHz'), num: m => s(m, 'base_clock_ghz'), better: 'higher' },
-  { label: 'L3 快取', value: m => unit(s(m, 'l3_cache_mb'), ' MB'), num: m => s(m, 'l3_cache_mb'), better: 'higher' },
-  { label: 'L2 快取', value: m => unit(s(m, 'l2_cache_mb'), ' MB'), num: m => s(m, 'l2_cache_mb'), better: 'higher' },
-  { label: 'TDP／基礎功耗', value: m => unit(s(m, 'tdp_w'), ' W') },
-  { label: '最大功耗（PPT／PL2）', value: m => unit(s(m, 'max_power_w'), ' W') },
+  { id: 'boost', label: '最高加速時脈', value: m => unit(s(m, 'boost_clock_ghz'), ' GHz'), num: m => s(m, 'boost_clock_ghz'), better: 'higher' },
+  { id: 'base', label: '基礎時脈', value: m => unit(s(m, 'base_clock_ghz'), ' GHz'), num: m => s(m, 'base_clock_ghz'), better: 'higher' },
+  { id: 'l3', label: 'L3 快取', value: m => unit(s(m, 'l3_cache_mb'), ' MB'), num: m => s(m, 'l3_cache_mb'), better: 'higher' },
+  { id: 'l2', label: 'L2 快取', value: m => unit(s(m, 'l2_cache_mb'), ' MB'), num: m => s(m, 'l2_cache_mb'), better: 'higher' },
+  { id: 'tdp', label: 'TDP／基礎功耗', value: m => unit(s(m, 'tdp_w'), ' W') },
+  { id: 'maxpower', label: '最大功耗（PPT／PL2）', value: m => unit(s(m, 'max_power_w'), ' W') },
   {
+    id: 'igpu',
     label: '內建顯示',
     value: m => (s<boolean>(m, 'igpu') === false ? '無（需獨立顯卡）' : s<string>(m, 'igpu_name') ?? (s<boolean>(m, 'igpu') ? '有' : null)),
   },
   {
+    id: 'memory',
     label: '記憶體',
     value: m => {
       const d5 = s<number>(m, 'ddr5_mts'), d4 = s<number>(m, 'ddr4_mts');
@@ -58,6 +63,7 @@ export const ROWS: Row[] = [
     better: 'higher',
   },
   {
+    id: 'pcie',
     label: 'PCIe',
     value: m => {
       const g = s<number>(m, 'pcie_gen'), l = s<number>(m, 'pcie_lanes');
@@ -66,22 +72,49 @@ export const ROWS: Row[] = [
     num: m => s(m, 'pcie_gen'),
     better: 'higher',
   },
-  { label: '倍頻', value: m => (s<boolean>(m, 'unlocked') === undefined ? null : s<boolean>(m, 'unlocked') ? '未鎖（可超頻）' : '鎖定') },
-  { label: '附散熱器', value: m => (s<boolean>(m, 'cooler_included') === undefined ? null : s<boolean>(m, 'cooler_included') ? '有' : '無') },
-  { label: '上市', value: m => s<string>(m, 'launch') ?? null },
+  { id: 'unlocked', label: '倍頻', value: m => (s<boolean>(m, 'unlocked') === undefined ? null : s<boolean>(m, 'unlocked') ? '未鎖（可超頻）' : '鎖定') },
+  { id: 'cooler', label: '附散熱器', value: m => (s<boolean>(m, 'cooler_included') === undefined ? null : s<boolean>(m, 'cooler_included') ? '有' : '無') },
+  { id: 'launch', label: '上市', value: m => s<string>(m, 'launch') ?? null },
 ];
 
-/** 某列哪一邊較好：'a'、'b' 或 null（相同、無法比較） */
-export function winner(row: Row, a: Model, b: Model): 'a' | 'b' | null {
-  if (!row.better || !row.num) return null;
-  const x = row.num(a), y = row.num(b);
-  if (x === undefined || y === undefined || x === y) return null;
-  return (x > y) === (row.better === 'higher') ? 'a' : 'b';
+export const DEFAULT_ORDER = ['price', 'bench', ...ROWS.map(r => r.id)];
+
+/** 某列最好的欄（可能多欄同分）；全部相同或少於兩欄有數值時不標 */
+export function best(row: Row, models: Model[]): Set<number> {
+  if (!row.better || !row.num) return new Set();
+  const nums = models.map(m => row.num!(m));
+  const defined = nums.filter((v): v is number => v !== undefined);
+  if (defined.length < 2 || defined.every(v => v === defined[0])) return new Set();
+  const target = row.better === 'higher' ? Math.max(...defined) : Math.min(...defined);
+  return new Set(nums.flatMap((v, i) => (v === target ? [i] : [])));
 }
 
-function readHash(): [string | null, string | null] {
+/** 讀取的列順序：沿用存下的順序，新增的列依預設位置補上，已不存在的列丟掉 */
+export function mergeOrder(saved: string[] | undefined, defaults: string[] = DEFAULT_ORDER): string[] {
+  if (!saved?.length) return defaults;
+  const known = saved.filter(id => defaults.includes(id));
+  for (const id of defaults) {
+    if (known.includes(id)) continue;
+    const before = defaults.slice(0, defaults.indexOf(id)).reverse().find(x => known.includes(x));
+    known.splice(before ? known.indexOf(before) + 1 : 0, 0, id);
+  }
+  return known;
+}
+
+const PREF_KEY = 'cmp-rows';
+function loadPrefs(): { order: string[]; hidden: string[] } {
+  try {
+    const p = JSON.parse(localStorage.getItem(PREF_KEY) ?? 'null');
+    return { order: mergeOrder(Array.isArray(p?.order) ? p.order : undefined), hidden: Array.isArray(p?.hidden) ? p.hidden : [] };
+  } catch {
+    return { order: DEFAULT_ORDER, hidden: [] };
+  }
+}
+
+function readHash(): string[] {
   const q = new URLSearchParams(location.hash.slice(COMPARE_PREFIX.length).replace(/^\?/, ''));
-  return [q.get('a'), q.get('b')];
+  const list = q.get('c')?.split(',') ?? [q.get('a'), q.get('b')]; // a／b 是舊版連結
+  return list.filter((x): x is string => !!x);
 }
 
 export function CpuCompare({ cpus, offers, history, bench, current, onUse }: {
@@ -90,153 +123,210 @@ export function CpuCompare({ cpus, offers, history, bench, current, onUse }: {
   history?: PriceHistory;
   /** Blender Open Data 的算圖跑分；沒有資料時不顯示這一列 */
   bench?: CpuBench;
-  /** 配單中已選的 CPU，作為預設的左邊 */
+  /** 配單中已選的 CPU，作為預設的第一欄 */
   current?: Model;
   onUse: (m: Model) => void;
 }) {
   const byId = useMemo(() => new Map(cpus.map(m => [m.id, m])), [cpus]);
   const sorted = useMemo(() => [...cpus].sort((x, y) => modelName(x).localeCompare(modelName(y), 'zh-Hant', { numeric: true })), [cpus]);
-  const [ids, setIds] = useState<[string | null, string | null]>(() => {
-    const [a, b] = readHash();
-    return [a && byId.has(a) ? a : current?.id ?? null, b && byId.has(b) ? b : null];
+  // 每一欄選的型號；空字串表示還沒選
+  const [ids, setIds] = useState<string[]>(() => {
+    const fromUrl = readHash().filter(id => byId.has(id)).slice(0, MAX_CPUS);
+    const start = fromUrl.length ? fromUrl : current ? [current.id] : [];
+    return [...start, ...Array(Math.max(0, 2 - start.length)).fill('')];
   });
+  const [prefs, setPrefs] = useState(loadPrefs);
+  const [editing, setEditing] = useState(false);
+  const [dragging, setDragging] = useState<string | null>(null);
 
   // 比較的型號寫進網址，網址本身就是分享連結
   useEffect(() => {
-    const q = new URLSearchParams();
-    if (ids[0]) q.set('a', ids[0]);
-    if (ids[1]) q.set('b', ids[1]);
-    const query = q.toString();
-    replaceHash(`${COMPARE_PREFIX}${query ? `?${query}` : ''}`);
+    const chosen = ids.filter(Boolean);
+    replaceHash(`${COMPARE_PREFIX}${chosen.length ? `?c=${chosen.map(encodeURIComponent).join(',')}` : ''}`);
   }, [ids]);
 
-  const [a, b] = ids.map(id => (id ? byId.get(id) : undefined));
-  const price = (m: Model) => lowestUnconditional(offers.get(m.id))?.p;
-  const side = (m: Model | undefined, i: 0 | 1) => (
-    <div className="cmp-pick">
-      <label>
-        <span className="visually-hidden">{i === 0 ? '左邊的 CPU' : '右邊的 CPU'}</span>
-        <select value={m?.id ?? ''} onChange={e => setIds(v => (i === 0 ? [e.target.value || null, v[1]] : [v[0], e.target.value || null]))}>
-          <option value="">選擇 CPU…</option>
-          {(['AMD', 'Intel'] as const).map(brand => (
-            <optgroup key={brand} label={brand}>
-              {sorted.filter(c => c.b === brand).map(c => {
-                const p = price(c);
-                return <option key={c.id} value={c.id}>{c.n}{p ? `　${formatPrice(p)}` : ''}</option>;
-              })}
-            </optgroup>
-          ))}
-        </select>
-      </label>
-      {m && (
-        <div className="cmp-price">
-          <span className="cmp-price-value">{price(m) ? formatPrice(price(m)!) : '無報價'}</span>
-          <button type="button" className="link" onClick={() => onUse(m)}>放入配單</button>
-        </div>
-      )}
-    </div>
-  );
+  const savePrefs = (next: { order: string[]; hidden: string[] }) => {
+    setPrefs(next);
+    try { localStorage.setItem(PREF_KEY, JSON.stringify(next)); } catch { /* 無痕模式等情況存不了，只影響下次開啟 */ }
+  };
+  const move = (id: string, to: number) => {
+    const order = prefs.order.filter(x => x !== id);
+    order.splice(Math.max(0, Math.min(to, order.length)), 0, id);
+    savePrefs({ ...prefs, order });
+  };
+  const toggleHidden = (id: string) =>
+    savePrefs({ ...prefs, hidden: prefs.hidden.includes(id) ? prefs.hidden.filter(x => x !== id) : [...prefs.hidden, id] });
 
-  const priceA = a && price(a), priceB = b && price(b);
-  const diff = priceA && priceB ? priceA - priceB : null;
-  const trend = (m: Model | undefined) => {
-    const t = m && priceTrend(history, m.id, lowestUnconditional(offers.get(m.id)));
-    return t ? `近 ${t.days} 天最低 ${formatPrice(t.low)}` : null;
+  const price = (m: Model) => lowestUnconditional(offers.get(m.id))?.p;
+  const models = ids.map(id => byId.get(id)).filter((m): m is Model => !!m);
+
+  const rows = new Map<string, Row>(ROWS.map(r => [r.id, r]));
+  const cheapest = Math.min(...models.map(m => price(m) ?? Infinity));
+  rows.set('price', {
+    id: 'price',
+    label: '價格',
+    num: price,
+    better: 'lower',
+    value: m => {
+      const p = price(m);
+      const t = priceTrend(history, m.id, lowestUnconditional(offers.get(m.id)));
+      return p === undefined ? null : (
+        <>
+          {formatPrice(p)}
+          {models.length > 1 && Number.isFinite(cheapest) && p > cheapest && <span className="cmp-pct">（+{formatPrice(p - cheapest)}）</span>}
+          {t && <span className="cmp-note">近 {t.days} 天最低 {formatPrice(t.low)}</span>}
+        </>
+      );
+    },
+  });
+  if (bench) {
+    const top = Math.max(0, ...models.map(m => bench.m[m.id]?.[0] ?? 0));
+    rows.set('bench', {
+      id: 'bench',
+      label: '算圖效能',
+      note: `Blender ${bench.v}`,
+      num: m => bench.m[m.id]?.[0],
+      better: 'higher',
+      value: m => {
+        const v = bench.m[m.id];
+        if (!v) return <span className="muted">樣本不足</span>;
+        const pct = top ? Math.round((v[0] / top) * 100) : 100;
+        return (
+          <>
+            {Math.round(v[0]).toLocaleString('zh-TW')}
+            {pct < 100 && <span className="cmp-pct">（{pct}%）</span>}
+            <span className="cmp-bar" aria-hidden="true"><span style={{ width: `${pct}%` }} /></span>
+            <span className="cmp-note">{v[1]} 筆結果的中位數</span>
+          </>
+        );
+      },
+    });
+  }
+  const order = prefs.order.filter(id => rows.has(id));
+  const visible = order.filter(id => !prefs.hidden.includes(id));
+
+  const picker = (id: string, i: number) => {
+    const m = byId.get(id);
+    return (
+      <div className="cmp-pick" key={i}>
+        <div className="cmp-pick-row">
+          <label>
+            <span className="visually-hidden">第 {i + 1} 顆 CPU</span>
+            <select value={id} onChange={e => setIds(v => v.map((x, j) => (j === i ? e.target.value : x)))}>
+              <option value="">選擇 CPU…</option>
+              {(['AMD', 'Intel'] as const).map(brand => (
+                <optgroup key={brand} label={brand}>
+                  {sorted.filter(c => c.b === brand).map(c => {
+                    const p = price(c);
+                    return <option key={c.id} value={c.id}>{c.n}{p ? `　${formatPrice(p)}` : ''}</option>;
+                  })}
+                </optgroup>
+              ))}
+            </select>
+          </label>
+          {ids.length > 2 && (
+            <button type="button" className="cmp-remove" aria-label={`移除第 ${i + 1} 欄`}
+              onClick={() => setIds(v => v.filter((_, j) => j !== i))}>×</button>
+          )}
+        </div>
+        {m && (
+          <div className="cmp-price">
+            <span className="cmp-price-value">{price(m) ? formatPrice(price(m)!) : '無報價'}</span>
+            <button type="button" className="link" onClick={() => onUse(m)}>放入配單</button>
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  const onDrop = (target: string) => (e: DragEvent) => {
+    e.preventDefault();
+    if (dragging && dragging !== target) move(dragging, order.filter(x => x !== dragging).indexOf(target));
+    setDragging(null);
   };
 
   return (
     <section className="cmp" aria-labelledby="cmp-title">
       <div className="cmp-head">
         <h2 id="cmp-title">CPU 規格對決</h2>
-        <p className="muted small">規格取自 AMD、Intel 原廠規格頁；價格為今天的原價屋報價。{bench ? '算圖效能取自 Blender Open Data。' : '不含效能跑分。'}</p>
+        <p className="muted small">
+          最多比較 {MAX_CPUS} 顆。規格取自 AMD、Intel 原廠規格頁；價格為今天的原價屋報價。{bench ? '算圖效能取自 Blender Open Data。' : '不含效能跑分。'}
+        </p>
       </div>
-      <div className="cmp-picks">
-        {side(a, 0)}
-        <span className="cmp-vs" aria-hidden="true">VS</span>
-        {side(b, 1)}
+      <div className="cmp-picks" style={{ '--cols': ids.length + (ids.length < MAX_CPUS ? 1 : 0) } as CSSProperties}>
+        {ids.map(picker)}
+        {ids.length < MAX_CPUS && (
+          <button type="button" className="cmp-add" onClick={() => setIds(v => [...v, ''])}>＋ 加入比較</button>
+        )}
       </div>
-      {a && b ? (
+      {models.length >= 2 ? (
         <>
-          {diff !== null && diff !== 0 && (
-            <p className="cmp-diff" role="status">
-              {diff > 0 ? `${a.n} 比 ${b.n} 貴 ${formatPrice(diff)}` : `${a.n} 比 ${b.n} 便宜 ${formatPrice(-diff)}`}
-            </p>
-          )}
-          <table className="cmp-table">
-            <thead>
-              <tr><th scope="col">規格</th><th scope="col">{a.n}</th><th scope="col">{b.n}</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">價格</th>
-                {[a, b].map((m, i) => (
-                  <td key={i} className={diff && (diff > 0) === (i === 1) ? 'is-better' : ''}>
-                    {price(m) ? formatPrice(price(m)!) : '無報價'}
-                    {trend(m) && <span className="cmp-note">{trend(m)}</span>}
-                  </td>
-                ))}
-              </tr>
-              {bench && <BenchRow bench={bench} a={a} b={b} />}
-              {ROWS.map(row => {
-                const w = winner(row, a, b);
-                return (
-                  <tr key={row.label}>
-                    <th scope="row">{row.label}</th>
-                    {[a, b].map((m, i) => {
-                      const better = w === (i === 0 ? 'a' : 'b');
-                      return (
-                        <td key={i} className={better ? 'is-better' : ''}>
-                          {row.value(m) ?? <span className="muted">—</span>}
-                          {better && <span className="visually-hidden">（較高）</span>}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+          <div className="cmp-tools">
+            <button type="button" className="link" aria-pressed={editing} onClick={() => setEditing(v => !v)}>
+              {editing ? '完成' : '調整欄位順序'}
+            </button>
+            {editing && (
+              <button type="button" className="link" onClick={() => savePrefs({ order: DEFAULT_ORDER, hidden: [] })}>恢復預設</button>
+            )}
+          </div>
+          {editing && <p className="muted small">拖曳列標題，或用 ↑ ↓ 調整順序；取消勾選可隱藏該列。設定會記在這個瀏覽器。</p>}
+          <div className="cmp-scroll">
+            <table className={`cmp-table ${editing ? 'is-editing' : ''}`}>
+              <thead>
+                <tr><th scope="col">規格</th>{models.map(m => <th scope="col" key={m.id}>{m.n}</th>)}</tr>
+              </thead>
+              <tbody>
+                {(editing ? order : visible).map((id, idx) => {
+                  const row = rows.get(id)!;
+                  const hidden = prefs.hidden.includes(id);
+                  const top = best(row, models);
+                  return (
+                    <tr key={id} className={`${hidden ? 'is-hidden' : ''} ${dragging === id ? 'is-dragging' : ''}`}
+                      draggable={editing} onDragStart={() => setDragging(id)} onDragEnd={() => setDragging(null)}
+                      onDragOver={e => editing && e.preventDefault()} onDrop={onDrop(id)}>
+                      <th scope="row">
+                        {editing && (
+                          <span className="cmp-row-tools">
+                            <input type="checkbox" checked={!hidden} onChange={() => toggleHidden(id)} aria-label={`顯示「${row.label}」`} />
+                            <button type="button" disabled={idx === 0} onClick={() => move(id, idx - 1)} aria-label={`「${row.label}」上移`}>↑</button>
+                            <button type="button" disabled={idx === order.length - 1} onClick={() => move(id, idx + 1)} aria-label={`「${row.label}」下移`}>↓</button>
+                          </span>
+                        )}
+                        {row.label}
+                        {row.note && <span className="cmp-note">{row.note}</span>}
+                      </th>
+                      {models.map((m, i) => {
+                        const isBest = top.has(i);
+                        return (
+                          <td key={m.id} className={isBest ? 'is-better' : ''}>
+                            {row.value(m) ?? <span className="muted">—</span>}
+                            {isBest && <span className="visually-hidden">（{row.better === 'lower' ? '最低' : '最高'}）</span>}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
           <p className="muted small">
-            標色的是數值較高的一邊（價格為較便宜的一邊）；時脈、核心數不等於實際效能，不同架構之間只能參考。
-            「—」表示原廠未標示或尚未補上。
+            標色的是該列數值最高的一欄（價格為最便宜的一欄），價格後的「+$」是比最便宜的貴多少；
+            時脈、核心數不等於實際效能，不同架構之間只能參考。「—」表示原廠未標示或尚未補上。
             {bench && <>
               算圖效能是 <a href="https://opendata.blender.org/" target="_blank" rel="noreferrer">Blender Open Data</a>（CC0）
-              使用者回傳的 Blender {bench.v} CPU 算圖成績（三個場景每分鐘樣本數的總和）取中位數，只代表多核心算圖這類工作，
-              不代表遊戲效能；樣本不足 5 筆的型號不顯示。
+              使用者回傳的 Blender {bench.v} CPU 算圖成績（三個場景每分鐘樣本數的總和）取中位數，括號內是相對最高者的百分比；
+              只代表多核心算圖這類工作，不代表遊戲效能；樣本不足 5 筆的型號不顯示。
             </>}
-            規格出處：{[a, b].map((m, i) => (
+            規格出處：{models.map((m, i) => (
               <span key={m.id}>{i > 0 && '、'}{m.u ? <a href={m.u} target="_blank" rel="noreferrer">{m.n}</a> : m.n}</span>
             ))}
           </p>
         </>
       ) : (
-        <p className="muted">選兩顆 CPU 開始比較。</p>
+        <p className="muted">至少選兩顆 CPU 開始比較。</p>
       )}
     </section>
-  );
-}
-
-function BenchRow({ bench, a, b }: { bench: CpuBench; a: Model; b: Model }) {
-  const [x, y] = [bench.m[a.id], bench.m[b.id]];
-  const max = Math.max(x?.[0] ?? 0, y?.[0] ?? 0);
-  const w = x && y && x[0] !== y[0] ? (x[0] > y[0] ? 0 : 1) : null;
-  return (
-    <tr>
-      <th scope="row">算圖效能<span className="cmp-note">Blender {bench.v}</span></th>
-      {[x, y].map((v, i) => (
-        <td key={i} className={w === i ? 'is-better' : ''}>
-          {v ? (
-            <>
-              {Math.round(v[0]).toLocaleString('zh-TW')}
-              {w === i && <span className="visually-hidden">（較高）</span>}
-              {w !== null && w !== i && <span className="cmp-pct">（{Math.round((v[0] / max) * 100)}%）</span>}
-              <span className="cmp-bar" aria-hidden="true"><span style={{ width: `${(v[0] / max) * 100}%` }} /></span>
-              <span className="cmp-note">{v[1]} 筆結果的中位數</span>
-            </>
-          ) : <span className="muted">樣本不足</span>}
-        </td>
-      ))}
-    </tr>
   );
 }
 
