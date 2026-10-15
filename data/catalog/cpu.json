@@ -693,13 +693,116 @@
     },
     "max_power_w": {
      "value": 121,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "cooler_included": {
      "value": true,
      "source": "title",
      "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
+    },
+    "cores": {
+     "value": 10,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 10,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.3,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 4.9,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 22,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Intel Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2025-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": false,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 6400,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC N3B",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Arrow Lake",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241070/intel-core-ultra-5-processor-225-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -727,13 +830,110 @@
     },
     "max_power_w": {
      "value": 121,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "cooler_included": {
      "value": true,
      "source": "title",
      "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
+    },
+    "cores": {
+     "value": 10,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 10,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.3,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 4.9,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 22,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "tdp_w": {
+     "value": 65,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2025-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": false,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 6400,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC N3B",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Arrow Lake",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241069/intel-core-ultra-5-processor-225f-20m-cache-up-to-4-90-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -765,8 +965,105 @@
     },
     "max_power_w": {
      "value": 159,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "cores": {
+     "value": 14,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 14,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.2,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.2,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 26,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "tdp_w": {
+     "value": 125,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-Q4",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 6400,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC N3B",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Arrow Lake",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241066/intel-core-ultra-5-processor-245kf-24m-cache-up-to-5-20-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -798,8 +1095,111 @@
     },
     "max_power_w": {
      "value": 159,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "cores": {
+     "value": 18,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 18,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.2,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.3,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 30,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 30,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "tdp_w": {
+     "value": 125,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Intel Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 7200,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC N3B",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2026-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Arrow Lake Refresh",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245694/intel-core-ultra-5-processor-250k-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus);製程取自同晶片250KF Plus官方頁；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -831,8 +1231,105 @@
     },
     "max_power_w": {
      "value": 159,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "cores": {
+     "value": 18,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 18,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 4.2,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.3,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 30,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 30,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "tdp_w": {
+     "value": 125,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 7200,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC N3B",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2026-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Arrow Lake Refresh",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245689/intel-core-ultra-5-processor-250kf-plus-30m-cache-up-to-5-30-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -864,8 +1361,111 @@
     },
     "max_power_w": {
      "value": 250,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "cores": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.9,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 36,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 30,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "tdp_w": {
+     "value": 125,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Intel Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-Q4",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 6400,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC N3B",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Arrow Lake",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -897,8 +1497,111 @@
     },
     "max_power_w": {
      "value": 250,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "cores": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.7,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 40,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 36,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "tdp_w": {
+     "value": 125,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Intel Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 7200,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC N3B",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2026-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Arrow Lake Refresh",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/245692/intel-core-ultra-7-processor-270k-plus-36m-cache-up-to-5-50-ghz/specifications.html",
+     "note": "Arrow Lake-S Refresh(200S Plus),比265K多4顆E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -930,8 +1633,111 @@
     },
     "max_power_w": {
      "value": 250,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "cores": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.7,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.7,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 40,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 36,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "tdp_w": {
+     "value": 125,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Intel Graphics",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-Q4",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": true,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 6400,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 24,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "TSMC N3B",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Arrow Lake",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -959,17 +1765,122 @@
     },
     "tdp_w": {
      "value": 60,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 110,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "cooler_included": {
      "value": true,
      "source": "title",
      "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
+    },
+    "cores": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 3.5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 4.7,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Intel UHD Graphics 730",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 4800,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr4_mts": {
+     "value": 3200,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "Intel 7",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": false,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Raptor Lake Refresh",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236774/intel-core-i3-processor-14100-12m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "4P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -997,17 +1908,122 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 117,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "cooler_included": {
      "value": true,
      "source": "title",
      "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
+    },
+    "cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 2.5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 4.4,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 7.5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 18,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Intel UHD Graphics 730",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 4800,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr4_mts": {
+     "value": 3200,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "Intel 7",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2022-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": false,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Alder Lake",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無E核；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1035,17 +2051,116 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 117,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "cooler_included": {
      "value": true,
      "source": "title",
      "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
+    },
+    "cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 0,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 2.5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 4.4,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 7.5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 18,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 4800,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr4_mts": {
+     "value": 3200,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "Intel 7",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2022-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": false,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Alder Lake",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/134587/intel-core-i512400f-processor-18m-cache-up-to-4-40-ghz/specifications.html",
+     "note": "6P+0E,無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1073,17 +2188,122 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 148,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "cooler_included": {
      "value": true,
      "source": "title",
      "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
+    },
+    "cores": {
+     "value": 10,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 2.5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 4.7,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 9.5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Intel UHD Graphics 730",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 4800,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr4_mts": {
+     "value": 3200,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "Intel 7",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": false,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Raptor Lake Refresh",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "Intel官方代號標示Raptor Lake；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1111,17 +2331,116 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 148,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "cooler_included": {
      "value": true,
      "source": "title",
      "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
+    },
+    "cores": {
+     "value": 10,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 16,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 6,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 4,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 2.5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 4.7,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 9.5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 4800,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr4_mts": {
+     "value": 3200,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "Intel 7",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": false,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Raptor Lake Refresh",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236777/intel-core-i5-processor-14400f-20m-cache-up-to-4-70-ghz/specifications.html",
+     "note": "無內顯；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {
@@ -1149,17 +2468,122 @@
     },
     "tdp_w": {
      "value": 65,
-     "source": "title"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "max_power_w": {
      "value": 219,
-     "source": "manual",
-     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     },
     "cooler_included": {
      "value": true,
      "source": "title",
      "note": "品名標盒裝；Intel 盒裝非 K 系列附原廠散熱器"
+    },
+    "cores": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "threads": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "p_cores": {
+     "value": 8,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "e_cores": {
+     "value": 12,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "base_clock_ghz": {
+     "value": 2.1,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "boost_clock_ghz": {
+     "value": 5.4,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l2_cache_mb": {
+     "value": 28,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "l3_cache_mb": {
+     "value": 33,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "igpu_name": {
+     "value": "Intel UHD Graphics 770",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr5_mts": {
+     "value": 5600,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "ddr4_mts": {
+     "value": 3200,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_gen": {
+     "value": 5,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "pcie_lanes": {
+     "value": 20,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "process": {
+     "value": "Intel 7",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "launch": {
+     "value": "2024-Q1",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "unlocked": {
+     "value": false,
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    },
+    "generation": {
+     "value": "Raptor Lake Refresh",
+     "source": "vendor_spec",
+     "ref": "https://www.intel.com/content/www/us/en/products/sku/236781/intel-core-i7-processor-14700-33m-cache-up-to-5-40-ghz/specifications.html",
+     "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
     }
    },
    "review": {

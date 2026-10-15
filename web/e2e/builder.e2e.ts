@@ -72,6 +72,25 @@ test.describe('桌面版配單', () => {
     await expect(sponsor).toHaveAttribute('target', '_blank');
   });
 
+  test('CPU 比較：並排規格與價格，標出較好的一邊，可放入配單', async ({ page }) => {
+    await open(page);
+    await page.getByRole('button', { name: 'CPU 比較' }).click();
+    await page.getByLabel('左邊的 CPU').selectOption('cpu:amd:r7-9800x3d');
+    await page.getByLabel('右邊的 CPU').selectOption('cpu:intel:i5-14400');
+    await expect(page).toHaveURL(/#\/compare\?a=cpu%3Aamd%3Ar7-9800x3d&b=cpu%3Aintel%3Ai5-14400$/);
+    const row = (label: string) => page.locator('.cmp-table tr', { has: page.locator('th', { hasText: label }) });
+    await expect(row('L3 快取').locator('td').first()).toHaveClass(/is-better/);
+    await expect(row('核心／執行緒').locator('td').last()).toContainText('6P＋4E');
+    await expect(row('價格').locator('td').last()).toHaveClass(/is-better/); // i5 比較便宜
+    await expect(page.locator('.cmp-diff')).toContainText('R7 9800X3D 比 i5-14400 貴 $9,700');
+    // 分享連結直接開啟比較頁
+    await page.reload();
+    await expect(page.locator('.cmp-table')).toBeVisible();
+    await page.locator('.cmp-pick').first().getByRole('button', { name: '放入配單' }).click();
+    await expect(page.locator('.summary-items li')).toContainText('R7 9800X3D');
+    await expect(page).toHaveURL(/#\/build\?b=/);
+  });
+
   test('不相容的主機板預設隱藏，取消勾選後顯示為不相容', async ({ page }) => {
     await open(page);
     await pick(page, '處理器', 'R7 9800X3D');

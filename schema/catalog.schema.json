@@ -224,7 +224,23 @@
         "cooler_included": { "$ref": "#/$defs/bool" },
         "tdp_w": { "$ref": "#/$defs/num" },
         "max_power_w": { "$ref": "#/$defs/num", "description": "Intel PL2 / AMD PPT，供功耗估算。" },
-        "generation": { "$ref": "#/$defs/str", "description": "如 Zen 5、Arrow Lake，供 BIOS 世代相容警示。" }
+        "generation": { "$ref": "#/$defs/str", "description": "如 Zen 5、Arrow Lake，供 BIOS 世代相容警示。" },
+        "cores": { "$ref": "#/$defs/int", "description": "以下欄位供 CPU 比較頁；取自原廠規格頁。" },
+        "threads": { "$ref": "#/$defs/int" },
+        "p_cores": { "$ref": "#/$defs/int", "description": "Intel 混合架構的效能核心數" },
+        "e_cores": { "$ref": "#/$defs/int", "description": "Intel 混合架構的效率核心數" },
+        "base_clock_ghz": { "$ref": "#/$defs/num", "description": "基礎時脈（Intel 為 P-core）" },
+        "boost_clock_ghz": { "$ref": "#/$defs/num", "description": "最高加速時脈" },
+        "l2_cache_mb": { "$ref": "#/$defs/num" },
+        "l3_cache_mb": { "$ref": "#/$defs/num", "description": "AMD 含 3D V-Cache；Intel 為 Smart Cache" },
+        "igpu_name": { "$ref": "#/$defs/str" },
+        "ddr5_mts": { "$ref": "#/$defs/int", "description": "原廠標示的 DDR5 最高速度" },
+        "ddr4_mts": { "$ref": "#/$defs/int", "description": "支援 DDR4 時的最高速度" },
+        "pcie_gen": { "$ref": "#/$defs/int" },
+        "pcie_lanes": { "$ref": "#/$defs/int", "description": "CPU 提供的 PCIe 通道總數（依原廠標示）" },
+        "process": { "$ref": "#/$defs/str", "description": "製程，如 TSMC N4P、Intel 7" },
+        "launch": { "$ref": "#/$defs/str", "description": "上市時間，YYYY-MM 或 YYYY-Q#" },
+        "unlocked": { "$ref": "#/$defs/bool", "description": "倍頻未鎖" }
       }
     },
     "motherboardSpecs": {

@@ -17,7 +17,7 @@ interface Row {
 const ORDER: Record<Status, number> = { pass: 0, unknown: 1, warn: 2, fail: 3 };
 const PAGE = 60;
 
-export function CandidateList({ category, models, catalog, selection, offers, history, onPick, onStartWithCase }: {
+export function CandidateList({ category, models, catalog, selection, offers, history, onPick, onStartWithCase, onCompare }: {
   category: Category;
   models: Model[];
   catalog: Record<Category, Model[]>;
@@ -27,6 +27,8 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
   onPick: (m: Model) => void;
   /** 有值時在清單上方提示小機殼可先選機殼（還沒選任何零件時） */
   onStartWithCase?: () => void;
+  /** 有值時在工具列顯示「規格對決」入口（目前只有 CPU） */
+  onCompare?: () => void;
 }) {
   const [query, setQuery] = useState('');
   const [hideIncompatible, setHideIncompatible] = useState(true);
@@ -82,6 +84,7 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
           <input type="checkbox" checked={hideIncompatible} onChange={e => setHideIncompatible(e.target.checked)} />
           隱藏不相容（{hidden}）
         </label>
+        {onCompare && <button type="button" className="link" onClick={onCompare}>規格對決</button>}
       </div>
       {onStartWithCase && (
         <p className="candidates-tip">

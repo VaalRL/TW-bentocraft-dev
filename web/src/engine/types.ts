@@ -21,6 +21,7 @@ export interface Model {
   x?: Record<string, SpecMeta>;
   r: 'a' | 'v' | 'd'; // 審查狀態：auto / verified / draft
   v?: Record<string, string>; // 變體 ID → 顯示名稱
+  u?: string; // 規格出處（目前只有 CPU：原廠規格頁）
 }
 
 export interface CatalogData {
