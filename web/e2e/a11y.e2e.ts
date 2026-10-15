@@ -2,7 +2,7 @@ import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 import { candidate, category, open, pick } from './helpers';
 
-// 自動無障礙檢查（axe，WCAG 2.1 A／AA）。淺色與深色模式各跑一次，涵蓋候選清單、估價單與尺寸比例圖。
+// 自動無障礙檢查（axe，WCAG 2.1 A／AA）。淺色與深色模式各跑一次，涵蓋候選清單、估價單、尺寸比例圖與 CPU 比較頁。
 const scan = (page: Parameters<typeof open>[0]) =>
   new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
 
@@ -29,5 +29,14 @@ for (const theme of ['light', 'dark'] as const) {
 
     const { violations } = await scan(page);
     expect(summarize(violations)).toEqual([]);
+
+    // CPU 比較頁（三欄，含調整列順序的編輯模式）
+    await page.getByRole('button', { name: 'CPU 比較' }).click();
+    await page.getByLabel('第 2 顆 CPU').selectOption('cpu:intel:i5-14400');
+    await page.getByRole('button', { name: '＋ 加入比較' }).click();
+    await page.getByRole('button', { name: '調整欄位順序' }).click();
+    await page.getByRole('checkbox', { name: '顯示「製程」' }).uncheck();
+    const compare = await scan(page);
+    expect(summarize(compare.violations)).toEqual([]);
   });
 }
