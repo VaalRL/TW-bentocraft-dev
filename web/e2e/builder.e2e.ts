@@ -166,6 +166,19 @@ test.describe('桌面版配單', () => {
     await expect(page).toHaveURL(/i5-14400$/);
   });
 
+  test('CPU 清單除了價格也顯示算力與耗電', async ({ page }) => {
+    await open(page);
+    await category(page, '處理器');
+    const r7 = candidate(page, 'R7 9800X3D').locator('.candidate-stats');
+    await expect(r7).toContainText('算力 420');
+    await expect(r7).toContainText('耗電 162 W');
+    await expect(r7.locator('.stat-bar span')).toHaveAttribute('style', /width: 100%/);
+    await expect(candidate(page, 'i5-14400').locator('.stat-bar span')).toHaveAttribute('style', /width: 67%/);
+    await expect(page.locator('.candidates-count')).toContainText('不代表遊戲效能');
+    await category(page, '主機板');
+    await expect(page.locator('.candidate-stats')).toHaveCount(0);
+  });
+
   test('不相容的主機板預設隱藏，取消勾選後顯示為不相容', async ({ page }) => {
     await open(page);
     await pick(page, '處理器', 'R7 9800X3D');

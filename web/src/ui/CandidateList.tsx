@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { buildChecks, constraintInvolves } from '../engine/constraints';
 import { deadEndChecker, pairChecks, worst } from '../engine/engine';
 import { lowestUnconditional, priceTrend, type PriceTrend } from '../engine/pricing';
-import type { Category, Check, Model, Offer, PriceHistory, Selection, Status } from '../engine/types';
+import type { Category, Check, CpuBench, Model, Offer, PriceHistory, Selection, Status } from '../engine/types';
 import { CATEGORY_LABEL, STATUS_LABEL, checkText, formatPrice, modelName, specSummary } from './format';
 
 interface Row {
@@ -17,13 +17,15 @@ interface Row {
 const ORDER: Record<Status, number> = { pass: 0, unknown: 1, warn: 2, fail: 3 };
 const PAGE = 60;
 
-export function CandidateList({ category, models, catalog, selection, offers, history, onPick, onStartWithCase, onCompare }: {
+export function CandidateList({ category, models, catalog, selection, offers, history, bench, onPick, onStartWithCase, onCompare }: {
   category: Category;
   models: Model[];
   catalog: Record<Category, Model[]>;
   selection: Selection;
   offers: Map<string, Offer[]>;
   history?: PriceHistory;
+  /** CPU 清單顯示的算圖跑分（Blender Open Data） */
+  bench?: CpuBench;
   onPick: (m: Model) => void;
   /** 有值時在清單上方提示小機殼可先選機殼（還沒選任何零件時） */
   onStartWithCase?: () => void;
@@ -56,6 +58,10 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
         modelName(a.model).localeCompare(modelName(b.model), 'zh-TW'),
       );
   }, [category, models, catalog, selection, offers, history]);
+
+  // CPU 的算力條以清單中最高分為 100%
+  const cpuBench = category === 'cpu' ? bench : undefined;
+  const topScore = cpuBench ? Math.max(0, ...models.map(m => cpuBench.m[m.id]?.[0] ?? 0)) : 0;
 
   const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const matching = rows.filter(r => {
@@ -94,6 +100,9 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
       )}
       <p className="candidates-count">
         {filtered.length} 個型號{filtered.length > limit ? `，顯示前 ${limit} 個` : ''}
+        {category === 'cpu' && (
+          <>。耗電為原廠標示的最大功耗（AMD PPT／Intel PL2）{cpuBench && `；算力為 Blender ${cpuBench.v} 多核心算圖分數的中位數（Blender Open Data），不代表遊戲效能`}</>
+        )}
       </p>
       <ul className="candidate-list">
         {filtered.slice(0, limit).map(r => {
@@ -112,6 +121,7 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
                     {r.model.r === 'v' && <span className="tag tag-ok">已人工確認</span>}
                   </span>
                   <span className="candidate-specs">{specSummary(r.model) || '規格未確認'}</span>
+                  {category === 'cpu' && <CpuStats model={r.model} bench={cpuBench} top={topScore} />}
                   {r.checks.map((c, i) => (
                     <span key={i} className={`candidate-note status-${c.status}`}>{checkText(c)}</span>
                   ))}
@@ -140,5 +150,28 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
         <button className="more" onClick={() => setLimit(l => l + PAGE)}>顯示更多</button>
       )}
     </section>
+  );
+}
+
+/** CPU 候選的算力與耗電 */
+function CpuStats({ model, bench, top }: { model: Model; bench?: CpuBench; top: number }) {
+  const score = bench?.m[model.id]?.[0];
+  const power = model.s.max_power_w as number | undefined;
+  if (!bench && power === undefined) return null;
+  return (
+    <span className="candidate-stats">
+      {bench && (
+        <span className="stat">
+          算力{' '}
+          {score !== undefined ? (
+            <>
+              <strong>{Math.round(score).toLocaleString('zh-TW')}</strong>
+              <span className="stat-bar" aria-hidden="true"><span style={{ width: `${top ? Math.round((score / top) * 100) : 0}%` }} /></span>
+            </>
+          ) : '樣本不足'}
+        </span>
+      )}
+      {power !== undefined && <span className="stat">耗電 <strong>{power} W</strong></span>}
+    </span>
   );
 }
