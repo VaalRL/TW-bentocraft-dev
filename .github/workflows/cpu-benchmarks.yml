@@ -40,7 +40,8 @@ jobs:
       - name: Commit
         id: commit
         run: |
-          if git diff --quiet -- data/benchmarks; then
+          # 用 status 而非 diff：第一次產生的檔案是未追蹤的新檔，diff 看不到
+          if [ -z "$(git status --porcelain -- data/benchmarks)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
