@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { indexOffers } from './engine/pricing';
 import { decodeShare, encodeShare } from './engine/share';
-import { CATEGORIES, toModels, type CatalogData, type Category, type Model, type PricesData, type Selection } from './engine/types';
+import { CATEGORIES, toModels, type CatalogData, type Category, type CpuBench, type Model, type PricesData, type Selection } from './engine/types';
 import { CandidateList } from './ui/CandidateList';
 import { CategoryNav } from './ui/CategoryNav';
 import { COMPARE_PREFIX, CpuCompare } from './ui/CpuCompare';
@@ -17,6 +17,7 @@ interface Data {
   redirects: Record<string, string>;
   byCategory: Record<Category, Model[]>;
   prices: PricesData;
+  bench?: CpuBench;
 }
 
 const SHARE_PREFIX = '#/build?b=';
@@ -32,7 +33,7 @@ async function loadData(): Promise<Data> {
   const models = toModels(catalog);
   const byCategory = Object.fromEntries(CATEGORIES.map(c => [c, [] as Model[]])) as Record<Category, Model[]>;
   for (const m of Object.values(models)) byCategory[m.c].push(m);
-  return { models, redirects: catalog.redirects, byCategory, prices };
+  return { models, redirects: catalog.redirects, byCategory, prices, bench: catalog.bench };
 }
 
 export function App() {
@@ -129,6 +130,7 @@ export function App() {
             cpus={data.byCategory.cpu}
             offers={offers}
             history={data.prices.h}
+            bench={data.bench}
             current={selection.cpu}
             onUse={m => {
               pick(m);

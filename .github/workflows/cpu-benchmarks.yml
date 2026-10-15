@@ -1,0 +1,71 @@
+name: Weekly CPU benchmarks
+
+# 每週從 Blender Open Data（CC0）下載最新快照，整理規格庫 CPU 的算圖跑分中位數，
+# 提交 data/benchmarks/blender-cpu.json 並重新部署網站（以 GITHUB_TOKEN 推送的提交不會觸發部署）。
+# 涵蓋型號異常減少或下載失敗時保留舊檔並開 issue。
+on:
+  schedule:
+    - cron: '41 4 * * 2'  # 每週二 UTC 04:41（台灣 12:41），避開每日報價
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cpu-benchmarks
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - run: pip install -r requirements.txt
+
+      - name: Build benchmark medians
+        run: python scripts/update_cpu_benchmarks.py
+
+      - name: Commit
+        id: commit
+        run: |
+          if git diff --quiet -- data/benchmarks; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/benchmarks
+          git commit -m "chore(data): Blender Open Data CPU benchmarks $(date -u +%F)"
+          for i in 1 2 3; do
+            git pull --rebase --quiet origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && { echo "changed=true" >> "$GITHUB_OUTPUT"; exit 0; }
+            sleep $((i * 5))
+          done
+          exit 1
+
+      - name: Open issue on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create benchmarks --color 5319e7 --description "CPU 跑分更新失敗" 2>/dev/null || true
+          if [ -z "$(gh issue list --label benchmarks --state open --json number --jq '.[0].number')" ]; then
+            gh issue create --label benchmarks --title "CPU 跑分更新失敗 $(date -u +%F)" \
+              --body "Blender Open Data 快照下載或整理失敗，網站沿用上一版跑分。執行紀錄：${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          fi
+
+  deploy:
+    needs: update
+    if: needs.update.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml

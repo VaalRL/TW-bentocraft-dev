@@ -12,6 +12,7 @@ on:
     paths:
       - 'web/**'
       - 'data/catalog/**'
+      - 'data/benchmarks/**'
       - 'scripts/build_web_data.py'
       - 'pipeline/**'
       - 'schema/**'

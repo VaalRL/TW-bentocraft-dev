@@ -31,7 +31,7 @@
 - **Case diagram and size scales.** Once a case is chosen, a side-view diagram places the motherboard, GPU, PSU and radiator, coloured by the compatibility checks. The case outline is a generic shape; the parts are drawn to scale from their specs. Scales show GPU length and air-cooler height against the case limits, including conditional limits such as "with the PSU shroud installed".
 
   <img src="docs/case-diagram.png" width="320" alt="Side-view case diagram: an ATX motherboard, a 310 mm GPU, a top 360 mm radiator and an ATX PSU inside a generic case outline, all green for compatible" />
-- **CPU head-to-head.** Put any two CPUs side by side: cores, clocks, cache, power, integrated graphics, memory and PCIe, plus today's prices and the difference. Specs come from AMD and Intel spec pages, with links; no benchmark scores.
+- **CPU head-to-head.** Put any two CPUs side by side: cores, clocks, cache, power, integrated graphics, memory and PCIe, plus today's prices and the difference. Specs come from AMD and Intel spec pages, with links. A render-performance row uses the median of [Blender Open Data](https://opendata.blender.org/) (CC0) user results, updated weekly; it reflects multi-core rendering, not gaming.
 - **Share and export.** One link carries the whole build (no account; the build lives in the URL), and the build can be copied in PTT PC_Shopping format. A shared link is priced with the prices of the day it is opened.
 - Dark mode and a mobile layout.
 
@@ -58,6 +58,7 @@ Each check returns **pass, warn, fail or unknown**. Unknown means the catalog la
 
 - **Prices**: a GitHub Actions job fetches [CoolPC's quote page](https://www.coolpc.com.tw/evaluate.php) daily, maps each listing to the spec catalog, commits [`data/prices/coolpc.json`](data/prices/coolpc.json) and redeploys the site. If a fetch fails, the previous day's prices stay and an issue is opened; the site marks the price date as possibly stale.
 - **Specs**: [`data/catalog/`](data/catalog/) holds about 1,700 models. New models are extracted from listing titles and proposed in a weekly PR; values titles don't give (power draw, DIMM slots, case radiator mounts) are added by hand from manufacturer specs. Every value records its source, and inferred values are labelled as such on the site.
+- **CPU render scores**: a weekly GitHub Actions job downloads the [Blender Open Data](https://opendata.blender.org/) snapshot (CC0) and writes [`data/benchmarks/blender-cpu.json`](data/benchmarks/).
 - `python scripts/catalog_coverage.py` shows how complete each field is.
 
 ## Found a mistake?

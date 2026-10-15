@@ -4,6 +4,7 @@ import type { CatalogData, PricesData } from '../src/engine/types';
 
 export const CATALOG: CatalogData = {
   redirects: { 'case:lian-li:a4-h2o-old': 'case:lian-li:a4-h2o' },
+  bench: { v: '4.5', d: '2026-10-11', m: { 'cpu:amd:r7-9800x3d': [420, 30], 'cpu:intel:i5-14400': [280, 12] } },
   models: {
     'cpu:amd:r7-9800x3d': {
       c: 'cpu', b: 'AMD', n: 'R7 9800X3D', r: 'a',

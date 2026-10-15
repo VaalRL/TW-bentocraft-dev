@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { lowestUnconditional, priceTrend } from '../engine/pricing';
-import type { Model, Offer, PriceHistory } from '../engine/types';
+import type { CpuBench, Model, Offer, PriceHistory } from '../engine/types';
 import { formatPrice, modelName } from './format';
 
 // CPU 規格對決：兩顆 CPU 並排比較規格與今天的原價屋價格。
@@ -84,10 +84,12 @@ function readHash(): [string | null, string | null] {
   return [q.get('a'), q.get('b')];
 }
 
-export function CpuCompare({ cpus, offers, history, current, onUse }: {
+export function CpuCompare({ cpus, offers, history, bench, current, onUse }: {
   cpus: Model[];
   offers: Map<string, Offer[]>;
   history?: PriceHistory;
+  /** Blender Open Data 的算圖跑分；沒有資料時不顯示這一列 */
+  bench?: CpuBench;
   /** 配單中已選的 CPU，作為預設的左邊 */
   current?: Model;
   onUse: (m: Model) => void;
@@ -146,7 +148,7 @@ export function CpuCompare({ cpus, offers, history, current, onUse }: {
     <section className="cmp" aria-labelledby="cmp-title">
       <div className="cmp-head">
         <h2 id="cmp-title">CPU 規格對決</h2>
-        <p className="muted small">規格取自 AMD、Intel 原廠規格頁；價格為今天的原價屋報價。不含效能跑分。</p>
+        <p className="muted small">規格取自 AMD、Intel 原廠規格頁；價格為今天的原價屋報價。{bench ? '算圖效能取自 Blender Open Data。' : '不含效能跑分。'}</p>
       </div>
       <div className="cmp-picks">
         {side(a, 0)}
@@ -174,6 +176,7 @@ export function CpuCompare({ cpus, offers, history, current, onUse }: {
                   </td>
                 ))}
               </tr>
+              {bench && <BenchRow bench={bench} a={a} b={b} />}
               {ROWS.map(row => {
                 const w = winner(row, a, b);
                 return (
@@ -196,6 +199,11 @@ export function CpuCompare({ cpus, offers, history, current, onUse }: {
           <p className="muted small">
             標色的是數值較高的一邊（價格為較便宜的一邊）；時脈、核心數不等於實際效能，不同架構之間只能參考。
             「—」表示原廠未標示或尚未補上。
+            {bench && <>
+              算圖效能是 <a href="https://opendata.blender.org/" target="_blank" rel="noreferrer">Blender Open Data</a>（CC0）
+              使用者回傳的 Blender {bench.v} CPU 算圖成績（三個場景每分鐘樣本數的總和）取中位數，只代表多核心算圖這類工作，
+              不代表遊戲效能；樣本不足 5 筆的型號不顯示。
+            </>}
             規格出處：{[a, b].map((m, i) => (
               <span key={m.id}>{i > 0 && '、'}{m.u ? <a href={m.u} target="_blank" rel="noreferrer">{m.n}</a> : m.n}</span>
             ))}
@@ -205,6 +213,30 @@ export function CpuCompare({ cpus, offers, history, current, onUse }: {
         <p className="muted">選兩顆 CPU 開始比較。</p>
       )}
     </section>
+  );
+}
+
+function BenchRow({ bench, a, b }: { bench: CpuBench; a: Model; b: Model }) {
+  const [x, y] = [bench.m[a.id], bench.m[b.id]];
+  const max = Math.max(x?.[0] ?? 0, y?.[0] ?? 0);
+  const w = x && y && x[0] !== y[0] ? (x[0] > y[0] ? 0 : 1) : null;
+  return (
+    <tr>
+      <th scope="row">算圖效能<span className="cmp-note">Blender {bench.v}</span></th>
+      {[x, y].map((v, i) => (
+        <td key={i} className={w === i ? 'is-better' : ''}>
+          {v ? (
+            <>
+              {Math.round(v[0]).toLocaleString('zh-TW')}
+              {w === i && <span className="visually-hidden">（較高）</span>}
+              {w !== null && w !== i && <span className="cmp-pct">（{Math.round((v[0] / max) * 100)}%）</span>}
+              <span className="cmp-bar" aria-hidden="true"><span style={{ width: `${(v[0] / max) * 100}%` }} /></span>
+              <span className="cmp-note">{v[1]} 筆結果的中位數</span>
+            </>
+          ) : <span className="muted">樣本不足</span>}
+        </td>
+      ))}
+    </tr>
   );
 }
 

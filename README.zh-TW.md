@@ -31,7 +31,7 @@
 - **機殼示意圖與尺寸比例**：選了機殼後，以側視示意圖畫出主機板、顯卡、電源與冷排的位置，顏色取自相容性檢查；機殼外形是通用模型，零件依規格尺寸等比例繪製。另以比例尺標出顯卡長度、風冷散熱器高度與機殼上限，包括「裝上電源護罩時」這類條件式上限。
 
   <img src="docs/case-diagram.png" width="320" alt="機殼側視示意圖：ATX 主機板、310 mm 顯卡、頂部 360 冷排與 ATX 電源畫在通用機殼外形中，全部標為相容的綠色" />
-- **CPU 規格對決**：任選兩顆 CPU 並排比較核心、時脈、快取、功耗、內顯、記憶體與 PCIe 規格，以及今天的價格與價差。規格取自 AMD、Intel 原廠規格頁並附出處；不含效能跑分。
+- **CPU 規格對決**：任選兩顆 CPU 並排比較核心、時脈、快取、功耗、內顯、記憶體與 PCIe 規格，以及今天的價格與價差。規格取自 AMD、Intel 原廠規格頁並附出處。另有「算圖效能」：[Blender Open Data](https://opendata.blender.org/)（CC0）使用者跑分的中位數，每週更新，只代表多核心算圖，不代表遊戲效能。
 - **分享與匯出**：一個連結就能分享整份配單（不需要帳號，資料只存在網址裡），也能一鍵複製 PTT PC_Shopping 板的菜單格式。開啟分享連結時以當天的報價計算。
 - 深色模式、手機版。
 
@@ -58,6 +58,7 @@
 
 - **報價**：GitHub Actions 每天抓取[原價屋估價頁](https://www.coolpc.com.tw/evaluate.php)，對應到規格庫後提交 [`data/prices/coolpc.json`](data/prices/coolpc.json)，接著重新部署網站。抓取失敗時沿用前一天的報價並自動開 issue，網站上的報價日期也會標示可能已變動。
 - **規格**：[`data/catalog/`](data/catalog/) 收錄約 1,700 個型號。新型號每週由自動流程從品名擷取規格、開 PR 審查；品名沒寫的值（例如功耗、記憶體插槽數、機殼冷排位置）由人工依原廠規格補上。每個值都記錄來源，推定的值在網站上會標示「依推定規格」。
+- **CPU 算圖跑分**：GitHub Actions 每週下載 [Blender Open Data](https://opendata.blender.org/) 快照（CC0），整理成 [`data/benchmarks/blender-cpu.json`](data/benchmarks/)。
 - 執行 `python scripts/catalog_coverage.py` 可以看各欄位的完整度。
 
 ## 發現錯誤？

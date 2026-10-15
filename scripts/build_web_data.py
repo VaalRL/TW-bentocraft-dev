@@ -15,6 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+from pipeline.benchmarks import catalog_key  # noqa: E402
 from pipeline.catalog import load_catalog  # noqa: E402
 from pipeline.history import load_history, summarize  # noqa: E402
 from pipeline.prices import strip_part_promo  # noqa: E402
@@ -56,6 +57,21 @@ def build_catalog(shards: dict[str, dict]) -> dict:
             else:
                 models[mid] = compact_model(m)
     return {"models": dict(sorted(models.items())), "redirects": redirects}
+
+
+def build_bench(doc: dict | None, models: dict[str, dict]) -> dict | None:
+    """CPU 算圖跑分（data/benchmarks/blender-cpu.json）對應到規格庫型號：
+    {"v": Blender 版本, "d": 快照日期, "m": {型號: [中位數, 樣本數]}}；沒有資料時回傳 None。"""
+    if not doc or not doc.get("scores"):
+        return None
+    out = {}
+    for mid, m in models.items():
+        if m["c"] != "cpu":
+            continue
+        key = catalog_key(mid, m["b"], m["n"])
+        if key in doc["scores"]:
+            out[mid] = doc["scores"][key]
+    return {"v": doc["blender_version"], "d": doc.get("snapshot_date"), "m": dict(sorted(out.items()))} if out else None
 
 
 def build_prices(doc: dict | None, models: dict[str, dict], history: dict | None = None) -> dict:
@@ -103,6 +119,10 @@ def main() -> int:
     history_path = args.prices.parent / "history" / args.prices.name
     history = load_history(history_path, "coolpc") if history_path.exists() else None
     prices = build_prices(prices_doc, catalog["models"], history)
+    bench_path = ROOT / "data/benchmarks/blender-cpu.json"
+    bench = build_bench(json.loads(bench_path.read_text(encoding="utf-8")) if bench_path.exists() else None, catalog["models"])
+    if bench:
+        catalog["bench"] = bench
 
     args.out.mkdir(parents=True, exist_ok=True)
     for name, doc in (("catalog.min.json", catalog), ("prices.min.json", prices)):

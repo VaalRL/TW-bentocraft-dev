@@ -83,6 +83,10 @@ test.describe('桌面版配單', () => {
     await expect(row('核心／執行緒').locator('td').last()).toContainText('6P＋4E');
     await expect(row('價格').locator('td').last()).toHaveClass(/is-better/); // i5 比較便宜
     await expect(page.locator('.cmp-diff')).toContainText('R7 9800X3D 比 i5-14400 貴 $9,700');
+    const bench = row('算圖效能');
+    await expect(bench.locator('td').first()).toHaveClass(/is-better/);
+    await expect(bench.locator('td').last()).toContainText('67%');
+    await expect(bench.locator('td').last()).toContainText('12 筆結果的中位數');
     // 分享連結直接開啟比較頁
     await page.reload();
     await expect(page.locator('.cmp-table')).toBeVisible();
