@@ -34,7 +34,7 @@
 - **Glossary.** A glossary page explains about 40 common terms (sockets, PCIe, DDR5, 80 PLUS, radiators, and the site's own labels such as "inferred"). With a mouse, terms underlined with dots across the site show a short explanation on hover.
 - **CPU head-to-head.** The CPU list in the builder shows each CPU's render score and maximum power next to its price, and can be filtered by brand, socket, integrated graphics, bundled cooler or unlocked multiplier, and sorted by price, render score, power or score per NT$1,000 (every part list has its own filters and sorts, e.g. GPU chip and length, PSU wattage and rating, case clearances, price per GB/TB/W). Put up to four CPUs side by side: cores, clocks, cache, power, integrated graphics, memory and PCIe, plus today's prices and how much more each costs than the cheapest. Quick-pick buttons (cheapest, fastest render, lowest power, most cores, highest clock, most cache) badge the winner and move that row to the top. You can reorder or hide rows; the layout is saved in your browser. Specs come from AMD and Intel spec pages, with links. A render-performance row uses the median of [Blender Open Data](https://opendata.blender.org/) (CC0) user results, updated weekly; it reflects multi-core rendering, not gaming.
 - **Share and export.** One link carries the whole build (no account; the build lives in the URL), and the build can be copied in PTT PC_Shopping format. A shared link is priced with the prices of the day it is opened.
-- Dark mode and a mobile layout.
+- Light "blueprint" and dark "console" themes (follows the system setting until you switch) and a mobile layout. Prices and specs use JetBrains Mono (SIL OFL), served from the site.
 
 ### Compatibility checks
 

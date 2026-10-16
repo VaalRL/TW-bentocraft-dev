@@ -81,7 +81,7 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
     <aside className="summary" id="summary" aria-label="估價單">
       <div className="summary-head">
         <h2>估價單</h2>
-        {picked.length > 0 && <button className="link" onClick={onReset}>清空配單</button>}
+        {picked.length > 0 && <span className="summary-count">{picked.length} 件</span>}
       </div>
       {picked.length === 0 ? (
         onUndoReset ? (
@@ -98,10 +98,16 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
             const item = priced.items.find(i => i.category === cat)!;
             return (
               <li key={cat}>
-                <button className="summary-cat link" onClick={() => onFocus(cat)}>{CATEGORY_LABEL[cat]}</button>
-                <span className="summary-name">{modelName(m)}</span>
+                <button className="summary-cat" onClick={() => onFocus(cat)}>{CATEGORY_LABEL[cat]}</button>
+                <span className="summary-name" title={modelName(m)}>{modelName(m)}</span>
                 <span className="summary-price">{item.offer ? formatPrice(item.offer.p) : '無報價'}</span>
-                <button className="remove" onClick={() => onRemove(cat)} aria-label={`移除${CATEGORY_LABEL[cat]}`}>×</button>
+                <span className="summary-item-actions">
+                  <a className="item-action" href={specReportUrl(m.id, modelName(m))} target="_blank" rel="noreferrer"
+                    aria-label={`回報「${modelName(m)}」規格錯誤`} title="回報規格錯誤">
+                    <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 14V2.5M3 3h8.5l-1.6 3 1.6 3H3" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" strokeLinecap="round" /></svg>
+                  </a>
+                  <button className="item-action remove" onClick={() => onRemove(cat)} aria-label={`移除${CATEGORY_LABEL[cat]}`} title="移除">×</button>
+                </span>
                 {item.offer?.v && m.v?.[item.offer.v] && (
                   <span className="summary-note">此價格為「{m.v[item.offer.v]}」款（各顏色中最低價）</span>
                 )}
@@ -114,9 +120,6 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
                     另有 {formatPrice(o.p)}（{conditionLabel(o)}），條件未成立未採用
                   </span>
                 ))}
-                <a className="summary-note summary-report" href={specReportUrl(m.id, modelName(m))} target="_blank" rel="noreferrer">
-                  回報規格錯誤
-                </a>
               </li>
             );
           })}
@@ -171,6 +174,7 @@ export function Summary({ selection, offers, prices, assembly, onAssemblyChange,
           <button className="primary" onClick={() => flash(location.href, '已複製分享連結')}>複製分享連結</button>
           <button onClick={() => flash(pttText(), '已複製 PTT 格式')}>複製 PTT 格式</button>
           {copied && <span className="copied" role="status">{copied}</span>}
+          <button className="danger-text" onClick={onReset}>清空配單</button>
         </div>
       )}
 

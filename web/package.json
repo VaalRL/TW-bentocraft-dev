@@ -17,6 +17,7 @@
     "brand": "node --experimental-strip-types scripts/brand-assets.ts"
   },
   "dependencies": {
+    "@fontsource/jetbrains-mono": "5.1.1",
     "lz-string": "1.5.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"

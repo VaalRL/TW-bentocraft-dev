@@ -31,14 +31,19 @@ export function Header({ prices, view, onView }: { prices: PricesData; view: Vie
   const [theme, setTheme] = useState(readTheme);
   const stars = useStars();
 
+  // 沒有手動切換過時跟隨系統設定；切換後才記住選擇
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark');
+  }, [theme]);
+  const toggleTheme = () => {
+    const next = theme === 'dark' ? 'light' : 'dark';
+    setTheme(next);
     try {
-      localStorage.setItem('theme', theme);
+      localStorage.setItem('theme', next);
     } catch {
       // 無痕模式等情況下無法寫入，僅本次有效
     }
-  }, [theme]);
+  };
 
   const age = daysSince(prices.fetched_at);
   const stale = prices.status === 'stale' || (age !== null && age >= 2);
@@ -59,9 +64,10 @@ export function Header({ prices, view, onView }: { prices: PricesData; view: Vie
         ))}
       </nav>
       <div className={`report-date ${stale ? 'is-stale' : ''}`} title={prices.status === 'stale' ? '最近一次更新失敗，沿用舊報價' : undefined}>
+        <span className="live-dot" aria-hidden="true" />
         {prices.status === 'missing'
           ? '尚無報價資料'
-          : `原價屋報價：${formatDate(prices.fetched_at)}${stale ? '（可能已變動）' : ''}`}
+          : <><span className="report-label">原價屋報價：</span>{formatDate(prices.fetched_at)}{stale ? '（可能已變動）' : ''}</>}
       </div>
       <div className="header-actions">
         <a className="icon-button sponsor" href={SPONSOR_URL} target="_blank" rel="noreferrer">
@@ -70,7 +76,7 @@ export function Header({ prices, view, onView }: { prices: PricesData; view: Vie
         </a>
         <button
           className="icon-button"
-          onClick={() => setTheme(t => (t === 'dark' ? 'light' : 'dark'))}
+          onClick={toggleTheme}
           aria-label={theme === 'dark' ? '切換為淺色模式' : '切換為深色模式'}
         >
           {theme === 'dark' ? '☀️' : '🌙'}

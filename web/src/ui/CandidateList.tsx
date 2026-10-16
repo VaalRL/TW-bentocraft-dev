@@ -203,7 +203,7 @@ export function CandidateList({ category, models, catalog, selection, offers, hi
       <p className="candidates-count">
         {filtered.length} 個型號{filtered.length > limit ? `，顯示前 ${limit} 個` : ''}
         {category === 'cpu' && (
-          <>。耗電為原廠標示的最大功耗（AMD PPT／Intel PL2）{cpuBench && `；算力為 Blender ${cpuBench.v} 多核心算圖分數的中位數（Blender Open Data），不代表遊戲效能`}</>
+          <>{cpuBench && ` · 算力為 Blender ${cpuBench.v} 多核心算圖分數，不代表遊戲效能`}</>
         )}
       </p>
       <ul className="candidate-list">

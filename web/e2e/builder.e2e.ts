@@ -373,7 +373,7 @@ test.describe('桌面版配單', () => {
   test('回報連結會帶入型號 ID 與配單連結', async ({ page }) => {
     await open(page);
     await pick(page, '處理器', 'R7 9800X3D');
-    const spec = new URL((await page.getByRole('link', { name: '回報規格錯誤' }).getAttribute('href'))!);
+    const spec = new URL((await page.getByRole('link', { name: /回報「.*」規格錯誤/ }).first().getAttribute('href'))!);
     expect(spec.searchParams.get('template')).toBe('spec-error.yml');
     expect(spec.searchParams.get('model_id')).toMatch(/^cpu:/);
     await page.context().route('https://github.com/**', r => r.fulfill({ body: '' }));
