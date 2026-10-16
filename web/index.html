@@ -17,15 +17,19 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="原價煮便當：原價屋報價 × 電腦零件相容性配單" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#fbfbf9" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0c0a09" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f3f6fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#070b14" media="(prefers-color-scheme: dark)" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <script>
       // 防閃爍：CSS 載入前套用主題；無痕模式下 localStorage 可能丟出例外
       (function () {
-        var theme = 'light';
-        try { theme = localStorage.getItem('theme') || 'light'; } catch (e) {}
+        // 沒有手動切換過時跟隨系統的深淺色設定
+        var theme = null;
+        try { theme = localStorage.getItem('theme'); } catch (e) {}
+        if (theme !== 'light' && theme !== 'dark') {
+          theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
         document.documentElement.classList.toggle('dark', theme === 'dark');
       })();
     </script>
