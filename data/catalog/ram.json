@@ -3216,6 +3216,38 @@
     "status": "auto"
    }
   },
+  "ram:klevv:16gb-ddr5-5600": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "單條16GB DDR5-5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)單條16GBDDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "ram:klevv:cras-v-rgb-32gb-ddr5-6000-cl30": {
    "category": "ram",
    "brand": "KLEVV",

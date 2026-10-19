@@ -349,6 +349,39 @@
     "status": "auto"
    }
   },
+  "cpu:amd:r5-7500f-mpk-9b88": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R5 7500F MPK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "[搭板專案]｛AMDR57500FMPK｝"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": false,
+     "source": "title"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "cpu:amd:r5-8400f": {
    "category": "cpu",
    "brand": "AMD",
@@ -833,6 +866,36 @@
     "status": "auto"
    }
   },
+  "cpu:amd:r5-9600x-71b5": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R5 9600X",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "[搭板專案]｛AMDR59600X｝代理盒裝【6核"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "cpu:amd:r7-5800x3d": {
    "category": "cpu",
    "brand": "AMD",
@@ -1063,6 +1126,35 @@
      "source": "vendor_spec",
      "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700.html",
      "note": "MPK=盒裝；數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r7-7700-mpk-639e": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R7 7700 MPK",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "[搭板專案]｛AMDR77700MPK｝"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "cooler_included": {
+     "value": true,
+     "source": "title"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
     }
    },
    "review": {
@@ -1311,6 +1403,36 @@
     "status": "auto"
    }
   },
+  "cpu:amd:r7-9700x-70ad": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R7 9700X",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "[搭板專案]｛AMDR79700X｝代理盒裝【8核"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "max_power_w": {
+     "value": 88,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 65 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "cpu:amd:r7-9800x3d": {
    "category": "cpu",
    "brand": "AMD",
@@ -1429,6 +1551,36 @@
      "source": "vendor_spec",
      "ref": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
      "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:amd:r7-9800x3d-d719": {
+   "category": "cpu",
+   "brand": "AMD",
+   "name": "R7 9800X3D",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "[搭板專案]｛AMDR79800X3D｝代理盒【8核"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "max_power_w": {
+     "value": 162,
+     "source": "manual",
+     "note": "AMD 預設 PPT（TDP 120 W × 1.35）"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "manual",
+     "note": "AMD 原廠規格：不附散熱器"
     }
    },
    "review": {
@@ -2968,6 +3120,39 @@
      "source": "vendor_spec",
      "ref": "https://www.intel.com/content/www/us/en/products/sku/241063/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
      "note": "數值取自原廠規格頁的搜尋摘錄（原廠網站無法直接連線）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "cpu:intel:core-ultra-7-265kf": {
+   "category": "cpu",
+   "brand": "Intel",
+   "name": "Core Ultra 7 265KF",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "INTELCOREULTRA7265KF"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "igpu": {
+     "value": false,
+     "source": "title"
+    },
+    "cooler_included": {
+     "value": false,
+     "source": "title"
+    },
+    "max_power_w": {
+     "value": 250,
+     "source": "manual",
+     "note": "Intel 最大加速功耗（Maximum Turbo Power）"
     }
    },
    "review": {

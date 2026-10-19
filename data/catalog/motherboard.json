@@ -119,6 +119,42 @@
     "status": "auto"
    }
   },
+  "motherboard:asrock:a620i-lightning-wifi": {
+   "category": "motherboard",
+   "brand": "華擎 ASRock",
+   "name": "A620I Lightning WIFI",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎A620ILIGHTNINGWIFI"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "Mini-ITX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "A620",
+     "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "motherboard:asrock:b550m-hdv": {
    "category": "motherboard",
    "brand": "華擎 ASRock",
@@ -1188,6 +1224,76 @@
     "status": "auto"
    }
   },
+  "motherboard:asrock:b860-challenger-wifi": {
+   "category": "motherboard",
+   "brand": "華擎 ASRock",
+   "name": "B860 Challenger WiFi",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎B860CHALLENGERWIFI"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "B860",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "motherboard:asrock:b860-challenger-wifi-white": {
+   "category": "motherboard",
+   "brand": "華擎 ASRock",
+   "name": "B860 Challenger WiFi White",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎B860CHALLENGERWIFIWHITE"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "B860",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
   "motherboard:asrock:b860-rock-wifi-7": {
    "category": "motherboard",
    "brand": "華擎 ASRock",
@@ -1713,6 +1819,38 @@
     "status": "auto"
    }
   },
+  "motherboard:asrock:x870-challenger-wifi": {
+   "category": "motherboard",
+   "brand": "華擎 ASRock",
+   "name": "X870 Challenger WiFi",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎X870CHALLENGERWIFI"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "X870",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "motherboard:asrock:x870-challenger-wifi-white": {
    "category": "motherboard",
    "brand": "華擎 ASRock",
@@ -1971,6 +2109,38 @@
      "source": "vendor_spec",
      "ref": "https://www.asrock.com/mb/AMD/X870%20Taichi%20Creator/index.asp",
      "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "motherboard:asrock:x870e-challenger-wifi": {
+   "category": "motherboard",
+   "brand": "華擎 ASRock",
+   "name": "X870E Challenger WiFi",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華擎X870ECHALLENGERWIFI"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "X870E",
+     "source": "title"
     }
    },
    "review": {
@@ -6676,6 +6846,38 @@
     "status": "auto"
    }
   },
+  "motherboard:gigabyte:b650-eagle-ax": {
+   "category": "motherboard",
+   "brand": "技嘉 GIGABYTE",
+   "name": "B650 EAGLE AX",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉B650EAGLEAX"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "B650",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "motherboard:gigabyte:b650e-eagle-wifi6e": {
    "category": "motherboard",
    "brand": "技嘉 GIGABYTE",
@@ -10005,6 +10207,38 @@
     "status": "auto"
    }
   },
+  "motherboard:msi:b760-gaming-plus-wifi-ddr4": {
+   "category": "motherboard",
+   "brand": "微星 MSI",
+   "name": "B760 GAMING PLUS WIFI DDR4",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星B760GAMINGPLUSWIFIDDR4"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "B760",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "motherboard:msi:b760m-bomber": {
    "category": "motherboard",
    "brand": "微星 MSI",
@@ -10187,6 +10421,38 @@
      "source": "vendor_spec",
      "ref": "https://www.msi.com/Motherboard/B760M-GAMING-PLUS-WIFI/Specification",
      "note": "規格頁256GB,舊版說明書為192GB；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "motherboard:msi:b760m-gaming-plus-wifi-ddr4": {
+   "category": "motherboard",
+   "brand": "微星 MSI",
+   "name": "B760M GAMING PLUS WIFI DDR4",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星B760MGAMINGPLUSWIFIDDR4"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "B760",
+     "source": "title"
     }
    },
    "review": {
@@ -10739,6 +11005,38 @@
      "source": "vendor_spec",
      "ref": "https://us.msi.com/Motherboard/MAG-B850-GAMING-PLUS-MAX-WIFI/Specification",
      "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "motherboard:msi:mag-b850-tomahawk-max-wifi-ii": {
+   "category": "motherboard",
+   "brand": "微星 MSI",
+   "name": "MAG B850 TOMAHAWK MAX WIFI II",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGB850TOMAHAWKMAXWIFIII"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM5",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "B850",
+     "source": "title"
     }
    },
    "review": {
@@ -11854,6 +12152,42 @@
     "status": "auto"
    }
   },
+  "motherboard:msi:pro-a520m-s": {
+   "category": "motherboard",
+   "brand": "微星 MSI",
+   "name": "PRO A520M-S",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星PROA520MS"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "AM4",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR4",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "A520",
+     "source": "title"
+    },
+    "dimm_slots": {
+     "value": 2,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "motherboard:msi:pro-b550m-b": {
    "category": "motherboard",
    "brand": "微星 MSI",
@@ -12042,6 +12376,38 @@
     "status": "auto"
    }
   },
+  "motherboard:msi:pro-b760-p-wifi-ddr4": {
+   "category": "motherboard",
+   "brand": "微星 MSI",
+   "name": "PRO B760-P WIFI DDR4",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星PROB760PWIFIDDR4"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "B760",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "motherboard:msi:pro-b760m-a-wifi": {
    "category": "motherboard",
    "brand": "微星 MSI",
@@ -12080,6 +12446,38 @@
      "source": "vendor_spec",
      "ref": "https://www.msi.com/Motherboard/PRO-B760M-A-WIFI/Specification",
      "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "motherboard:msi:pro-b760m-a-wifi-ddr4": {
+   "category": "motherboard",
+   "brand": "微星 MSI",
+   "name": "PRO B760M-A WIFI DDR4",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星PROB760MAWIFIDDR4"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "B760",
+     "source": "title"
     }
    },
    "review": {
@@ -13191,6 +13589,38 @@
     "status": "auto"
    }
   },
+  "motherboard:msi:pro-z790-p-wifi-ddr4": {
+   "category": "motherboard",
+   "brand": "微星 MSI",
+   "name": "PRO Z790-P WIFI DDR4",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星PROZ790PWIFIDDR4"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1700",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "Z790",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "motherboard:msi:pro-z890-a-wifi": {
    "category": "motherboard",
    "brand": "微星 MSI",
@@ -13370,6 +13800,38 @@
      "source": "vendor_spec",
      "ref": "https://www.msi.com/Motherboard/PRO-Z890-S-WIFI-PZ/Specification",
      "note": "數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "motherboard:msi:pro-z890-s-wifi6e": {
+   "category": "motherboard",
+   "brand": "微星 MSI",
+   "name": "PRO Z890-S WIFI6E",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星PROZ890SWIFI6E"
+    ]
+   },
+   "specs": {
+    "socket": {
+     "value": "LGA1851",
+     "source": "optgroup"
+    },
+    "memory_type": {
+     "value": "DDR5",
+     "source": "optgroup"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "chipset": {
+     "value": "Z890",
+     "source": "title"
     }
    },
    "review": {

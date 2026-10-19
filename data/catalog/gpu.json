@@ -299,6 +299,38 @@
     "status": "auto"
    }
   },
+  "gpu:asus:dual-rtx5060-8g-white": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "DUAL-RTX5060-8G-WHITE",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩DUALRTX50608GWHITE"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 230.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
   "gpu:asus:dual-rtx5060-o8g-a": {
    "category": "gpu",
    "brand": "華碩 ASUS",
@@ -508,6 +540,32 @@
      "value": 49,
      "source": "inferred",
      "note": "NVIDIA GT 730 各版本最高 49 W"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:asus:prime-rtx5060-o8g": {
+   "category": "gpu",
+   "brand": "華碩 ASUS",
+   "name": "PRIME-RTX5060-O8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PRIMERTX5060O8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 270.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
     }
    },
    "review": {
@@ -917,6 +975,72 @@
     "status": "auto"
    }
   },
+  "gpu:gigabyte:aorus-rtx5070ti-infinity-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS RTX5070Ti INFINITY 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSRTX5070TIINFINITY16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 330.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 300,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 Ti 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:aorus-rtx5070ti-master-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "AORUS RTX5070Ti MASTER 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉AORUSRTX5070TIMASTER16G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 360.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 300,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5070 Ti 參考 TGP"
+    },
+    "power_connectors": {
+     "value": [
+      "12V-2x6"
+     ],
+     "source": "inferred",
+     "note": "RTX 5070 以上使用 12V-2x6"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "gpu:gigabyte:aorus-rtx5080-infinity-wood-16g": {
    "category": "gpu",
    "brand": "技嘉 GIGABYTE",
@@ -1312,6 +1436,32 @@
     }
    }
   },
+  "gpu:gigabyte:rtx5060-gaming-oc-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060 GAMING OC 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060GAMINGOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "gpu:gigabyte:rtx5060-gaming-oc-v2-8g": {
    "category": "gpu",
    "brand": "技嘉 GIGABYTE",
@@ -1357,6 +1507,32 @@
     "low_profile": {
      "value": true,
      "source": "title"
+    },
+    "board_power_w": {
+     "value": 145,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 參考 TGP"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060-windforce-8g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060 WINDFORCE 8G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060WINDFORCE8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 200.0,
+     "source": "title",
+     "tolerance": 10
     },
     "board_power_w": {
      "value": 145,
@@ -1480,6 +1656,32 @@
    "aliases": {
     "model_keys": [
      "技嘉RTX5060TIAEROOC8G"
+    ]
+   },
+   "specs": {
+    "length_mm": {
+     "value": 280.0,
+     "source": "title",
+     "tolerance": 10
+    },
+    "board_power_w": {
+     "value": 180,
+     "source": "inferred",
+     "note": "NVIDIA RTX 5060 Ti 參考 TGP（8GB／16GB 相同）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "gpu:gigabyte:rtx5060ti-eagle-max-oc-16g": {
+   "category": "gpu",
+   "brand": "技嘉 GIGABYTE",
+   "name": "RTX5060Ti EAGLE MAX OC 16G",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "技嘉RTX5060TIEAGLEMAXOC16G"
     ]
    },
    "specs": {

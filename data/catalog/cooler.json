@@ -6592,6 +6592,104 @@
     }
    }
   },
+  "cooler:montech:cyberflow-argb-360": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "CyberFlow ARGB 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHCYBERFLOWARGB360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:cyberflow-core-360": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "CyberFlow Core 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHCYBERFLOWCORE360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
   "cooler:montech:hyperflow-argb-240": {
    "category": "cooler",
    "brand": "Montech",
@@ -10016,6 +10114,59 @@
     }
    }
   },
+  "cooler:tcomas:angl-360": {
+   "category": "cooler",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "ANGL 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASANGL360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 54.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
   "cooler:tcomas:cube-360": {
    "category": "cooler",
    "brand": "鈦鉭 TCOMAS",
@@ -10024,6 +10175,59 @@
    "aliases": {
     "model_keys": [
      "鈦鉭TCOMASCUBE360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 54.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tcomas:edge-360": {
+   "category": "cooler",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "EDGE 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASEDGE360()水冷"
     ]
    },
    "specs": {
