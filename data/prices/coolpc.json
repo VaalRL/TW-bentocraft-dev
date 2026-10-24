@@ -3,9 +3,9 @@
   "schema_version": "1.0",
   "vendor": "coolpc",
   "source_url": "https://www.coolpc.com.tw/evaluate.php",
-  "fetched_at": "2026-10-23T08:33:07Z",
+  "fetched_at": "2026-10-24T08:07:55Z",
   "status": "ok",
-  "last_attempt_at": "2026-10-23T08:33:07Z",
+  "last_attempt_at": "2026-10-24T08:07:55Z",
   "offers": [
     {"offer_id":"coolpc:h00c658b4d8","category":"case","vendor_section":{"id":"n14","group":"酷碼 CoolerMaster 機殼"},"price":2490,"items":[{"role":"main","match":"model_key","model_id":"case:coolermaster:qube-500-flatpack-diy-macaron"}]},
     {"offer_id":"coolpc:h00cb184c84","category":"case","vendor_section":{"id":"n14","group":"君主 Montech 機殼"},"price":2990,"items":[{"role":"main","match":"model_key","model_id":"case:montech:king-45-pro","variant":"white"}]},
