@@ -2673,6 +2673,44 @@
     }
    }
   },
+  "psu:coolermaster:v-platinum-3000w-workstation": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "V Platinum 3000W Workstation",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼VPLATINUM3000WWORKSTATION"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 3000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "psu:coolermaster:v-platinum-v2-1100w": {
    "category": "psu",
    "brand": "酷碼 Cooler Master",
@@ -5793,6 +5831,188 @@
     "status": "auto"
    }
   },
+  "psu:lian-li:edge-1000w-v2": {
+   "category": "psu",
+   "brand": "聯力 Lian Li",
+   "name": "EDGE 1000W V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力EDGE1000WV2"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:lian-li:edge-1200w-v2": {
+   "category": "psu",
+   "brand": "聯力 Lian Li",
+   "name": "EDGE 1200W V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力EDGE1200WV2"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:lian-li:edge-1350w-v2": {
+   "category": "psu",
+   "brand": "聯力 Lian Li",
+   "name": "EDGE 1350W V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力EDGE1350WV2"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1350,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:lian-li:edge-850w-v2": {
+   "category": "psu",
+   "brand": "聯力 Lian Li",
+   "name": "EDGE 850W V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力EDGE850WV2"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "psu:lian-li:rs1000g-1000w": {
    "category": "psu",
    "brand": "聯力 Lian Li",
@@ -6897,6 +7117,39 @@
     "status": "auto"
    }
   },
+  "psu:msi:mag-a850gl-pcie5-850w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A850GL PCIE5 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA850GLPCIE5850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "psu:msi:mag-a850gl-pcie5-white-850w": {
    "category": "psu",
    "brand": "微星 MSI",
@@ -7350,6 +7603,44 @@
      "label": "黑",
      "color": "black"
     }
+   }
+  },
+  "psu:seasonic:core-bc-750-750w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "CORE BC-750(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻COREBC750(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
    }
   },
   "psu:seasonic:core-gx-650-atx3-650w": {
@@ -9384,6 +9675,150 @@
    "aliases": {
     "model_keys": [
      "振華LEADEXVIIPRO850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:superflower:leadex-viii-pro-1000w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX VIII PRO 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXVIIIPRO1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:superflower:leadex-viii-pro-1200w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX VIII PRO 1200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXVIIIPRO1200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:superflower:leadex-viii-pro-850w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX VIII PRO 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXVIIIPRO850W"
     ]
    },
    "specs": {

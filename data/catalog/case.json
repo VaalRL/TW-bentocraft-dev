@@ -7536,6 +7536,55 @@
     "status": "auto"
    }
   },
+  "case:cougar:mx600-max-rgb": {
+   "category": "case",
+   "brand": "COUGAR",
+   "name": "MX600 MAX RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARMX600MAXRGB"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 400.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 170.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
   "case:cougar:mx600-rgb": {
    "category": "case",
    "brand": "COUGAR",

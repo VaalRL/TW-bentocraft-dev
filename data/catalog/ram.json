@@ -2732,6 +2732,39 @@
     "status": "auto"
    }
   },
+  "ram:kingston:16gb-ddr4-3200-954e": {
+   "category": "ram",
+   "brand": "金士頓 Kingston",
+   "name": "16GB DDR4-3200",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "金士頓16GBDDR43200｛KVR32N22D8"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR4",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "inferred",
+     "note": "品名未標示條數；原價屋的套裝一律寫成「16G*2」，推定為單條"
+    },
+    "speed_mts": {
+     "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "ram:kingston:16gb-ddr4-3200-fury-beast-kf432c16bb-16": {
    "category": "ram",
    "brand": "金士頓 Kingston",
@@ -3201,6 +3234,38 @@
     },
     "capacity_gb": {
      "value": 8,
+     "source": "title"
+    },
+    "modules": {
+     "value": 1,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:klevv:16gb-ddr5-5600": {
+   "category": "ram",
+   "brand": "KLEVV",
+   "name": "單條16GB DDR5-5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "KLEVV(科賦)單條16GBDDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
      "source": "title"
     },
     "modules": {
@@ -3817,6 +3882,38 @@
     "status": "auto"
    }
   },
+  "ram:umax:16gb-8gb-2-ddr5-5600": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "16GB(雙通8GB*2) DDR5 5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX16GB(雙通8GB*2)DDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 16,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "ram:umax:16gb-ddr4-2666": {
    "category": "ram",
    "brand": "UMAX",
@@ -4133,6 +4230,38 @@
     },
     "speed_mts": {
      "value": 3200,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ram:umax:64gb-32gb-2-ddr5-5600": {
+   "category": "ram",
+   "brand": "UMAX",
+   "name": "64GB(雙通32GB*2) DDR5 5600",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "UMAX64GB(雙通32GB*2)DDR55600"
+    ]
+   },
+   "specs": {
+    "memory_type": {
+     "value": "DDR5",
+     "source": "title"
+    },
+    "capacity_gb": {
+     "value": 64,
+     "source": "title"
+    },
+    "modules": {
+     "value": 2,
+     "source": "title"
+    },
+    "speed_mts": {
+     "value": 5600,
      "source": "title"
     }
    },
