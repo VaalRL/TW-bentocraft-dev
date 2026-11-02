@@ -2,6 +2,51 @@
  "schema_version": "1.0",
  "category": "cooler",
  "models": {
+  "cooler:antec:luna-360-argb": {
+   "category": "cooler",
+   "brand": "Antec",
+   "name": "Luna 360 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECLUNA360ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "cooler:antec:skeleton-240-argb": {
    "category": "cooler",
    "brand": "Antec",
@@ -100,6 +145,102 @@
      "label": "白",
      "color": "white"
     }
+   }
+  },
+  "cooler:antec:skeleton-matrix-360": {
+   "category": "cooler",
+   "brand": "Antec",
+   "name": "Skeleton Matrix 360 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECSKELETONMATRIX360水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:antec:ultra-360-argb": {
+   "category": "cooler",
+   "brand": "Antec",
+   "name": "Ultra 360 ARGB 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "ANTECULTRA360ARGB水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 52.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "WXZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "LGA1151",
+      "LGA1200",
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
    }
   },
   "cooler:antec:vortex-view-360": {
@@ -3472,6 +3613,98 @@
     }
    }
   },
+  "cooler:deepcool:ak700-vc": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AK700 VC",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AK700VC"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "cooler:deepcool:ak700-vc-wh": {
+   "category": "cooler",
+   "brand": "九州風神 DEEPCOOL",
+   "name": "AK700 VC WH",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "九州風神AK700VCWH"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "air",
+     "source": "inferred",
+     "note": "品名有高度、無冷排"
+    },
+    "height_mm": {
+     "value": 157.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
   "cooler:deepcool:assassin-iv-4": {
    "category": "cooler",
    "brand": "九州風神 DEEPCOOL",
@@ -6557,6 +6790,104 @@
     "cooler_type": {
      "value": "aio",
      "source": "optgroup"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:cyberflow-argb-360": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "CyberFlow ARGB 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHCYBERFLOWARGB360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:montech:cyberflow-core-360": {
+   "category": "cooler",
+   "brand": "Montech",
+   "name": "CyberFlow Core 360",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHCYBERFLOWCORE360"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
     },
     "radiator_mm": {
      "value": 360,
@@ -10016,6 +10347,59 @@
     }
    }
   },
+  "cooler:tcomas:angl-360": {
+   "category": "cooler",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "ANGL 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASANGL360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 54.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
   "cooler:tcomas:cube-360": {
    "category": "cooler",
    "brand": "鈦鉭 TCOMAS",
@@ -10024,6 +10408,59 @@
    "aliases": {
     "model_keys": [
      "鈦鉭TCOMASCUBE360()水冷"
+    ]
+   },
+   "specs": {
+    "cooler_type": {
+     "value": "aio",
+     "source": "title"
+    },
+    "radiator_mm": {
+     "value": 360,
+     "source": "title"
+    },
+    "radiator_thickness_mm": {
+     "value": 54.0,
+     "source": "title"
+    },
+    "mount_codes": {
+     "value": "XZ",
+     "source": "title"
+    },
+    "sockets": {
+     "value": [
+      "AM4",
+      "AM5",
+      "LGA1700",
+      "LGA1851"
+     ],
+     "source": "retailer_spec",
+     "ref": "https://www.coolpc.com.tw/evaluate.php",
+     "note": "依原價屋扣具代碼圖例：W=115X/1200、X=AM4/AM5、Y=sTR4/5、Z=1700/1851"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "cooler:tcomas:edge-360": {
+   "category": "cooler",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "EDGE 360(黑) 水冷",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASEDGE360()水冷"
     ]
    },
    "specs": {
