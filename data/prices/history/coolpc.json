@@ -2,7 +2,7 @@
   "vendor": "coolpc",
   "keep_days": 90,
   "since": "2026-10-13",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "models": {
     "case:1stplayer:sp7": [["2026-10-13",1490]],
     "case:antec:900": [["2026-10-13",5990]],
@@ -726,7 +726,7 @@
     "gpu:gigabyte:rtx3060-windforce-oc-12g-rev2-0": [["2026-10-13",15990]],
     "gpu:gigabyte:rtx5050-gaming-oc-8g": [["2026-10-13",14290]],
     "gpu:gigabyte:rtx5050-oc-low-profile-8g": [["2026-10-13",13990]],
-    "gpu:gigabyte:rtx5050-windforce-oc-8g": [["2026-10-13",13490]],
+    "gpu:gigabyte:rtx5050-windforce-oc-8g": [["2026-10-13",13490],["2026-11-07",null]],
     "gpu:gigabyte:rtx5060-aero-oc-8g": [["2026-10-13",17990],["2026-10-31",18990]],
     "gpu:gigabyte:rtx5060-eagle-max-oc-8g": [["2026-10-13",16490],["2026-10-31",17990]],
     "gpu:gigabyte:rtx5060-eagle-oc-8g": [["2026-10-13",16490],["2026-10-31",17990]],
