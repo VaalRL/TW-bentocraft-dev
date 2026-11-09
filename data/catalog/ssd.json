@@ -2086,6 +2086,30 @@
     "status": "auto"
    }
   },
+  "ssd:micron:crucial-p510-2tb-f055": {
+   "category": "ssd",
+   "brand": "美光 Micron",
+   "name": "Crucial P510 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "美光MICRONCRUCIAL｛P5102TB｝GEN5PCIE50讀10000"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie5",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "ssd:micron:crucial-p510-2tb-heatsink": {
    "category": "ssd",
    "brand": "美光 Micron",
@@ -3078,6 +3102,30 @@
    "aliases": {
     "model_keys": [
      "三星SAMSUNG｛990PRO2TB｝"
+    ]
+   },
+   "specs": {
+    "interface": {
+     "value": "pcie4",
+     "source": "optgroup"
+    },
+    "capacity_gb": {
+     "value": 2000,
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "ssd:samsung:990-pro-2tb-04e2": {
+   "category": "ssd",
+   "brand": "三星 Samsung",
+   "name": "990 PRO 2TB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "三星SAMSUNG｛990PRO2TB｝含散熱片"
     ]
    },
    "specs": {

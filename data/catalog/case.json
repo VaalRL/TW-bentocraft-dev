@@ -2804,6 +2804,96 @@
     }
    }
   },
+  "case:asus:proart-pa401-wood-mesh": {
+   "category": "case",
+   "brand": "華碩 ASUS",
+   "name": "ProArt PA401 Wood 網狀版 Mesh",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PROARTPA401WOODMESH"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 315.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "other": {
+     "label": "燕麥",
+     "color": "other"
+    }
+   }
+  },
+  "case:asus:proart-pa401-wood-tg": {
+   "category": "case",
+   "brand": "華碩 ASUS",
+   "name": "ProArt PA401 Wood 透側版 TG",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PROARTPA401WOODTG"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 315.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "other": {
+     "label": "燕麥",
+     "color": "other"
+    }
+   }
+  },
   "case:asus:proart-pa602": {
    "category": "case",
    "brand": "華碩 ASUS",
@@ -7534,6 +7624,55 @@
    },
    "review": {
     "status": "auto"
+   }
+  },
+  "case:cougar:mx600-max-rgb": {
+   "category": "case",
+   "brand": "COUGAR",
+   "name": "MX600 MAX RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARMX600MAXRGB"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 400.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 170.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "case:cougar:mx600-rgb": {
@@ -19591,6 +19730,51 @@
    },
    "review": {
     "status": "auto"
+   }
+  },
+  "case:msi:mpg-velox-300r-airflow-pz": {
+   "category": "case",
+   "brand": "微星 MSI",
+   "name": "MPG VELOX 300R AIRFLOW PZ",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MPGVELOX300RAIRFLOWPZ"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 400.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 165.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "case:msi:mpg-vixta-300r-pz": {
