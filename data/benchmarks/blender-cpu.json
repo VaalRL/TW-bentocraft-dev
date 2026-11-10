@@ -2,9 +2,9 @@
  "source": "Blender Open Data",
  "url": "https://opendata.blender.org/",
  "license": "CC0 1.0 Universal",
- "snapshot": "opendata-2026-11-03-000001+0000.jsonl",
- "snapshot_date": "2026-11-03",
- "fetched_at": "2026-11-03T12:20:22Z",
+ "snapshot": "opendata-2026-11-10-000000+0000.jsonl",
+ "snapshot_date": "2026-11-10",
+ "fetched_at": "2026-11-10T12:57:47Z",
  "blender_version": "5.1",
  "score": "三個場景（monster、junkshop、classroom）每分鐘樣本數的總和，同型號取中位數",
  "min_samples": 5,
@@ -110,8 +110,8 @@
    92
   ],
   "intel:270KPLUS": [
-   639.7,
-   151
+   639.8,
+   152
   ],
   "intel:285K": [
    609.8,
