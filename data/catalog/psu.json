@@ -1641,6 +1641,88 @@
     }
    }
   },
+  "psu:asus:rog-strix-1000w-rog-equalizer": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX 1000W 白金 ROG Equalizer",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIX1000W金ROGEQUALIZER"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:rog-strix-1000w-rog-equalizer-0173": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX 1000W(白色) 白金 ROG Equalizer",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIX1000W()金ROGEQUALIZER"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
   "psu:asus:rog-strix-1200w-equalizer": {
    "category": "psu",
    "brand": "華碩 ASUS",
@@ -1649,6 +1731,44 @@
    "aliases": {
     "model_keys": [
      "華碩ROGSTRIX1200W金(EQUALIZER"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:asus:rog-strix-1200w-rog-equalizer": {
+   "category": "psu",
+   "brand": "華碩 ASUS",
+   "name": "ROG STRIX 1200W 白金 ROG Equalizer",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩ROGSTRIX1200W金ROGEQUALIZER"
     ]
    },
    "specs": {
@@ -2671,6 +2791,44 @@
      "label": "白",
      "color": "white"
     }
+   }
+  },
+  "psu:coolermaster:v-platinum-3000w-workstation": {
+   "category": "psu",
+   "brand": "酷碼 Cooler Master",
+   "name": "V Platinum 3000W Workstation",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "酷碼VPLATINUM3000WWORKSTATION"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 3000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
    }
   },
   "psu:coolermaster:v-platinum-v2-1100w": {
@@ -5371,6 +5529,264 @@
     "status": "auto"
    }
   },
+  "psu:geometric-future:alpha-1000w": {
+   "category": "psu",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Alpha 1000W 灰黃",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來ALPHA1000W黃"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:geometric-future:alpha-1000w-d283": {
+   "category": "psu",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Alpha 1000W 灰",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來ALPHA1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "green": {
+     "label": "綠",
+     "color": "green"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:geometric-future:alpha-1200w": {
+   "category": "psu",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Alpha 1200W 灰黃",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來ALPHA1200W黃"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:geometric-future:alpha-1200w-1066": {
+   "category": "psu",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Alpha 1200W 灰",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來ALPHA1200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "green": {
+     "label": "綠",
+     "color": "green"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:geometric-future:alpha-850w": {
+   "category": "psu",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Alpha 850W 灰黃",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來ALPHA850W黃"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:geometric-future:alpha-850w-837e": {
+   "category": "psu",
+   "brand": "幾何未來 Geometric Future",
+   "name": "Alpha 850W 灰",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "幾何未來ALPHA850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "green": {
+     "label": "綠",
+     "color": "green"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
   "psu:gigabyte:aorus-elite-1000w": {
    "category": "psu",
    "brand": "技嘉 GIGABYTE",
@@ -5763,6 +6179,188 @@
    "aliases": {
     "model_keys": [
      "技嘉UD850GMPG5V2ICE(850W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:lian-li:edge-1000w-v2": {
+   "category": "psu",
+   "brand": "聯力 Lian Li",
+   "name": "EDGE 1000W V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力EDGE1000WV2"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:lian-li:edge-1200w-v2": {
+   "category": "psu",
+   "brand": "聯力 Lian Li",
+   "name": "EDGE 1200W V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力EDGE1200WV2"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:lian-li:edge-1350w-v2": {
+   "category": "psu",
+   "brand": "聯力 Lian Li",
+   "name": "EDGE 1350W V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力EDGE1350WV2"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1350,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:lian-li:edge-850w-v2": {
+   "category": "psu",
+   "brand": "聯力 Lian Li",
+   "name": "EDGE 850W V2",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "聯力EDGE850WV2"
     ]
    },
    "specs": {
@@ -6897,6 +7495,39 @@
     "status": "auto"
    }
   },
+  "psu:msi:mag-a850gl-pcie5-850w": {
+   "category": "psu",
+   "brand": "微星 MSI",
+   "name": "MAG A850GL PCIE5 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MAGA850GLPCIE5850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.0",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "psu:msi:mag-a850gl-pcie5-white-850w": {
    "category": "psu",
    "brand": "微星 MSI",
@@ -7350,6 +7981,216 @@
      "label": "黑",
      "color": "black"
     }
+   }
+  },
+  "psu:sama:g750-750w": {
+   "category": "psu",
+   "brand": "SAMA",
+   "name": "G750(750W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAG750(750W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:sama:g850-850w": {
+   "category": "psu",
+   "brand": "SAMA",
+   "name": "G850(850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAG850(850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "gold",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
+  "psu:sama:p1000-1000w": {
+   "category": "psu",
+   "brand": "SAMA",
+   "name": "P1000(1000W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAP1000(1000W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:sama:p1200-1200w": {
+   "category": "psu",
+   "brand": "SAMA",
+   "name": "P1200(1200W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "SAMAP1200(1200W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:seasonic:core-bc-750-750w": {
+   "category": "psu",
+   "brand": "海韻 Seasonic",
+   "name": "CORE BC-750(750W)",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "海韻COREBC750(750W)"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 750,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "bronze",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
    }
   },
   "psu:seasonic:core-gx-650-atx3-650w": {
@@ -9384,6 +10225,150 @@
    "aliases": {
     "model_keys": [
      "振華LEADEXVIIPRO850W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 850,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:superflower:leadex-viii-pro-1000w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX VIII PRO 1000W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXVIIIPRO1000W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1000,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:superflower:leadex-viii-pro-1200w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX VIII PRO 1200W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXVIIIPRO1200W"
+    ]
+   },
+   "specs": {
+    "wattage": {
+     "value": 1200,
+     "source": "title"
+    },
+    "form_factor": {
+     "value": "ATX",
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "efficiency": {
+     "value": "platinum",
+     "source": "title"
+    },
+    "atx_version": {
+     "value": "3.1",
+     "source": "title"
+    },
+    "pcie_12v2x6": {
+     "value": 1,
+     "source": "title",
+     "note": "品名標 PCIe 5.x，具原生 12V-2x6（12VHPWR）接頭；數量未標示"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "psu:superflower:leadex-viii-pro-850w": {
+   "category": "psu",
+   "brand": "振華 Super Flower",
+   "name": "LEADEX VIII PRO 850W",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華LEADEXVIIIPRO850W"
     ]
    },
    "specs": {
