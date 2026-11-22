@@ -2,7 +2,7 @@
   "vendor": "coolpc",
   "keep_days": 90,
   "since": "2026-10-13",
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "models": {
     "case:1stplayer:sp7": [["2026-10-13",1490]],
     "case:antec:900": [["2026-10-13",5990]],
@@ -163,7 +163,7 @@
     "case:fractal-design:north-xl-rc": [["2026-10-13",6490]],
     "case:fractal-design:pop-2-air-rgb": [["2026-10-13",3690]],
     "case:fractal-design:pop-2-vision-rgb": [["2026-10-13",3690]],
-    "case:fractal-design:ridge": [["2026-10-13",4890]],
+    "case:fractal-design:ridge": [["2026-10-13",4890],["2026-11-22",null]],
     "case:fractal-design:summit": [["2026-10-13",6399]],
     "case:fractal-design:summit-ambient-ultimate": [["2026-10-13",7599]],
     "case:fractal-design:summit-ultimate": [["2026-10-13",6399]],
