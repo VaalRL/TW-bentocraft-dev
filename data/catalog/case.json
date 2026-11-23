@@ -2804,6 +2804,96 @@
     }
    }
   },
+  "case:asus:proart-pa401-wood-mesh": {
+   "category": "case",
+   "brand": "華碩 ASUS",
+   "name": "ProArt PA401 Wood 網狀版 Mesh",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PROARTPA401WOODMESH"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 315.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "other": {
+     "label": "燕麥",
+     "color": "other"
+    }
+   }
+  },
+  "case:asus:proart-pa401-wood-tg": {
+   "category": "case",
+   "brand": "華碩 ASUS",
+   "name": "ProArt PA401 Wood 透側版 TG",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "華碩PROARTPA401WOODTG"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 315.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "other": {
+     "label": "燕麥",
+     "color": "other"
+    }
+   }
+  },
   "case:asus:proart-pa602": {
    "category": "case",
    "brand": "華碩 ASUS",
@@ -7534,6 +7624,55 @@
    },
    "review": {
     "status": "auto"
+   }
+  },
+  "case:cougar:mx600-max-rgb": {
+   "category": "case",
+   "brand": "COUGAR",
+   "name": "MX600 MAX RGB",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "COUGARMX600MAXRGB"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 400.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 170.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "case:cougar:mx600-rgb": {
@@ -17857,6 +17996,55 @@
     }
    }
   },
+  "case:montech:king-95-3d-pro": {
+   "category": "case",
+   "brand": "Montech",
+   "name": "KING 95 3D PRO",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "MONTECHKING953DPRO"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 450.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 172.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
   "case:montech:king-95-pro": {
    "category": "case",
    "brand": "Montech",
@@ -19591,6 +19779,51 @@
    },
    "review": {
     "status": "auto"
+   }
+  },
+  "case:msi:mpg-velox-300r-airflow-pz": {
+   "category": "case",
+   "brand": "微星 MSI",
+   "name": "MPG VELOX 300R AIRFLOW PZ",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "微星MPGVELOX300RAIRFLOWPZ"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "E-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 400.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 165.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
    }
   },
   "case:msi:mpg-vixta-300r-pz": {
@@ -24984,6 +25217,41 @@
     "status": "auto"
    }
   },
+  "case:superflower:m708": {
+   "category": "case",
+   "brand": "振華 Super Flower",
+   "name": "M708",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "振華M708"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 410.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 165.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    }
+   },
+   "review": {
+    "status": "auto"
+   }
+  },
   "case:superflower:m801": {
    "category": "case",
    "brand": "振華 Super Flower",
@@ -25034,6 +25302,149 @@
      "source": "vendor_spec",
      "ref": "https://www.super-flower.com.tw/en/products/m801bk",
      "note": "散熱器高≤180mm;底部與後方僅風扇位；數值取自原廠頁面的搜尋摘錄（原廠網站無法直接連線）"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "case:tcomas:flw": {
+   "category": "case",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "FLW",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASFLW"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "gpu_clearance_mm": {
+     "value": 460.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 180.0,
+     "source": "title"
+    },
+    "back_connect_max_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    }
+   }
+  },
+  "case:tcomas:upg": {
+   "category": "case",
+   "brand": "鈦鉭 TCOMAS",
+   "name": "UPG",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "鈦鉭TCOMASUPG"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "gpu_clearance_mm": {
+     "value": 430.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 160.0,
+     "source": "title"
+    },
+    "back_connect_max_form_factor": {
+     "value": "ATX",
+     "source": "title"
+    }
+   },
+   "review": {
+    "status": "auto"
+   },
+   "variants": {
+    "black": {
+     "label": "黑",
+     "color": "black"
+    },
+    "white": {
+     "label": "白",
+     "color": "white"
+    }
+   }
+  },
+  "case:thermaltake:capo-x": {
+   "category": "case",
+   "brand": "曜越 Thermaltake",
+   "name": "CAPO X 雙系統機殼",
+   "status": "active",
+   "aliases": {
+    "model_keys": [
+     "曜越CAPOX雙系統機殼"
+    ]
+   },
+   "specs": {
+    "max_mb_form_factor": {
+     "value": "M-ATX",
+     "source": "title"
+    },
+    "gpu_clearance_mm": {
+     "value": 420.0,
+     "source": "title"
+    },
+    "cooler_clearance_mm": {
+     "value": 180.0,
+     "source": "title"
+    },
+    "psu_form_factors": {
+     "value": [
+      "ATX"
+     ],
+     "source": "inferred",
+     "note": "品名未標 SFX"
+    },
+    "back_connect_max_form_factor": {
+     "value": "M-ATX",
+     "source": "title"
     }
    },
    "review": {
